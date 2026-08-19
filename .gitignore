@@ -16,3 +16,10 @@ helix-importer-ui
 .env
 .env.*
 qa/
+
+# stardust heavy working artifacts (keep ledgers/state; skip binaries)
+stardust/current/assets/screenshots/
+stardust/replica/gates/
+stardust/replica/capture/
+stardust/validation/
+node_modules
