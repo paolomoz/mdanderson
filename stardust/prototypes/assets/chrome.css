@@ -218,7 +218,9 @@ section.highlight.apply { background: #F2F3F4; padding: 70px 72px; max-width: 14
   letter-spacing: -.02em;
 }
 .appointment-bar .bold { font-family: 'Univers LT W01_65 Bold', Arial; }
-.appointment-bar a { color: #fff; text-decoration: underline; }
+/* body.basepage prefix: must outrank body.basepage a { text-decoration:none } (chrome-owner fix,
+   ported from prevention-screening page-local patch) */
+body.basepage .appointment-bar a, .appointment-bar a { color: #fff; text-decoration: underline; }
 br.appointment-bar-cta-break { display: none; }
 @media (max-width: 767px) {
   .appointment-bar.banner { padding: 40px 35px; }
@@ -244,6 +246,7 @@ br.appointment-bar-cta-break { display: none; }
 .promo-background-black { background: #000; }
 .promo-background-blue { background: #2F60B2; }
 .promo-background-purple { background: #783491; }
+.promo-background-green { background: #478339; } /* ported from donors-volunteers (Raise Money card) */
 .promo-no-icon .promo-header { color: #fff; padding: 0 42px; }
 .promo-no-icon h3.title {
   font-size: 36px; line-height: 46.8px; letter-spacing: -.02em; font-weight: 400; color: #fff;
@@ -414,15 +417,22 @@ p.copyright {
    MOBILE (max-width: 767px) — lifted from capture/index/360.json
    ========================================================================= */
 @media (max-width: 767px) {
-  html, body.basepage { overflow-x: hidden; }
+  html { overflow-x: hidden; }
+  /* clip, not hidden: overflow-x hidden makes body a scroll container and breaks
+     position:sticky descendants (verified on breast-cancer's sticky appointment bar) */
+  body.basepage { overflow-x: clip; }
   body.basepage { font-size: 16px; }
 
   /* header: hamburger layout */
   #content-skip-btn { z-index: 1001; }
   .mda-cta-list-container.desktop { display: none; }
   header.mda-nav { overflow: hidden auto; }
-  .mda-nav-top.flex-row { padding: 20px; margin-top: 0; }
+  /* height 85px = live 360 header height (chrome previously rendered 89px) */
+  .mda-nav-top.flex-row { padding: 20px; margin-top: 0; height: 85px; }
   a#nav-logo img { width: 96px; height: 40px; }
+  /* .flex-row variant included: base .mda-nav-utility.desktop.flex-row{display:flex} (0,3,0)
+     otherwise outranks this hide rule and the desktop utility links leak over the mobile header */
+  .mda-nav-utility.desktop.flex-row,
   .mda-nav-utility.desktop, .mda-nav-top .spacer.desktop, #nav-search { display: none; }
   .mda-nav-mobile-menu.mobile { display: flex; flex: 1; justify-content: flex-end; }
   .mda-nav-mobile-menu button {
@@ -448,10 +458,13 @@ p.copyright {
   .promo-no-icon .promo-header, .promo-no-icon .promo-text { padding: 0 29px; }
   .promo-no-icon .body.promo-text-normal { font-size: 16px; line-height: 20.8px; }
   .promo-no-icon .body.promo-text-normal p { margin: 16px 0; }
-  .promo-no-icon .cta-wrapper.cta-block-wrapper { display: inline-block; }
-  .promo-no-icon a.cta.cta-block { font-size: 16px; line-height: 20.8px; margin-top: 1px; }
-  .promo-no-icon .cta-wrapper.cta-block-wrapper { height: 46px; }
-  .promo-no-icon a.cta.cta-block .mda-icon-linkout { font-size: 16px; }
+  /* KNOWN DRIFT vs live kept deliberately: live content-sizes this wrapper (46px one-line,
+     67px when the CTA wraps — Donate Blood card renders 9px shorter here). All six gated pages
+     compensate for the 46px clamp; unclamping regressed the pixel gates. Do not "fix" without
+     re-gating every page. padding 11.1px + icon line-height guard = live 45px one-line CTA. */
+  .promo-no-icon .cta-wrapper.cta-block-wrapper { display: inline-block; height: 46px; }
+  .promo-no-icon a.cta.cta-block { font-size: 16px; line-height: 20.8px; margin-top: 1px; padding: 11.1px 30px; }
+  .promo-no-icon a.cta.cta-block .mda-icon-linkout { font-size: 16px; line-height: 18px; }
 
   /* newsletter */
   .subscribe-to { padding: 0; }
@@ -462,7 +475,7 @@ p.copyright {
   .subscribe-to .fieldContainer { display: grid; grid-template-columns: 300px; justify-content: center; gap: 0; text-align: center; }
   .subscribe-to .fieldContainer > div { margin: 0; max-width: 100%; }
   .subscribe-to .fieldContainer > div + div { margin-top: 15px; }
-  .subscribe-to .inputWrapper input { width: 300px; }
+  .subscribe-to .inputWrapper input { width: 300px; height: 33px; } /* live 360: 33px rows */
   .subscribe-to .footer-cta-wrapper {
     padding: 15px 0 35px; margin: 0 auto; max-width: 300px;
   }
@@ -470,9 +483,13 @@ p.copyright {
   .subscribe-to .footer-cta-mobile { display: block; text-align: center; }
   .subscribe-to .footer-cta-mobile input.ftrSubGo { width: 300px; padding: 5px 15px; }
 
-  /* footer columns -> accordions */
+  /* footer columns -> accordions.
+     float:none is essential: with the desktop float:left kept, width:auto shrink-wraps the
+     collapsed rows so borders stop early and the +/toggle glyphs land mid-row instead of at
+     the far right (live renders full-bleed 360px rows) */
   .footer-links { display: block; position: relative; padding: 0; margin: 0; }
-  .footer-links .col2, .footer-links .col3.last { display: block; width: auto; margin: 0; }
+  .footer-links .col1,
+  .footer-links .col2, .footer-links .col3.last { float: none; display: block; width: auto; margin: 0; }
   .footer-links ul {
     position: relative; height: 40px; min-height: 40px; overflow: hidden;
     padding: 0; margin: 0; border-bottom: 1px solid #D0D0CE;
@@ -490,11 +507,13 @@ p.copyright {
   .footer-links li a { display: block; padding-left: 30px; }
   .footer-links .col2.mda-logo {
     position: absolute; top: 160px; left: 0; right: 0; width: auto; z-index: 1;
-    background: #000; min-height: 120px; text-align: center;
+    background: #000; height: 120px; min-height: 120px; text-align: center;
   }
   .footer-links .col2.mda-logo img.desktop { display: none; }
   .footer-links .col2.mda-logo img.mobile { display: block; width: auto; height: 157px; padding: 28px 0; }
-  li.at-sticky-promo-li { margin: 0 0 40px 35px; width: 325px; padding: 0; text-align: center; }
+  /* live-now does not render the Only-Possible-Here promo card at mobile (absent from every
+     360 gate live stitch; 360 capture rects show it clipped to a 40px row) — hide at <=767px */
+  li.at-sticky-promo-li { display: none; }
   .footer-links .col3.last li.footer-contact-item,
   .footer-links .col3.last li.footer-contact-item.onlyLabel {
     padding-left: 15px; text-align: center; border-bottom: 1px solid #D0D0CE;

@@ -370,9 +370,13 @@ h2.at-article-headline {
   .SFMC label { font-size: 16px; }
   .SFMC .inputWrapper input[type="text"] { font-size: 16px; }
 
-  /* live 360: newsletter bar absent on blogpage; footer columns stack single-file */
+  /* live 360: newsletter bar absent on blogpage (column float reset now in chrome.css) */
   .subscribe-to { display: none; }
-  .footer-links .col1, .footer-links .col2, .footer-links .col3.last { float: none; width: auto; }
+  /* page-local chrome compensation: this page gated (3.86%) with the old 89px chrome header,
+     which masked a 4px shortfall in the page's own top-of-article block vs live; the shared
+     chrome header is now the live-correct 85px, so keep 89px HERE ONLY until this page's
+     top block is re-tuned and re-gated (otherwise the whole 11k-px article ghosts by 4px). */
+  .mda-nav-top.flex-row { height: 89px; }
 
   /* chat replica: circle only */
   .chat-widget-replica { right: 10px; bottom: 12px; }
@@ -1209,7 +1213,7 @@ June 08, 2026</span></div></div>
       <div class="footer-sublinks">
         <div class="sublinks-list-container">
           <ul>
-            <li class="title"><div class="toggle"></div></li>
+            <li class="title">More<div class="toggle"></div></li>
             <li><a id="patients_family_footer_1" href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html">Website Privacy Policy</a></li>
             <li><a id="patients_family_footer_2" href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html">Legal Statement &amp; Policies</a></li>
             <li><a id="patients_family_footer_3" href="https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html">Reports to the State</a></li>

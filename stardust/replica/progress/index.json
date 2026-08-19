@@ -1,4 +1,38 @@
 {
+  "chromeFixes": {
+    "owner": "chrome-owner consolidation pass (2026-08-19)",
+    "changes": [
+      "chrome.css mobile: footer accordion columns full-bleed — .footer-links .col1/.col2/.col3.last get float:none (desktop float:left made width:auto shrink-wrap the collapsed rows; toggles/borders misplaced). Ported from patients + cancerwise page-local patches.",
+      "chrome.html + all 6 pages' pasted CHROME:BOTTOM: footer sublinks accordion title filled in as 'More' (renders 'MORE' at <=767px via existing uppercase rule; still display:none on desktop). Was empty; live shows the MORE row.",
+      "chrome.css mobile: li.at-sticky-promo-li (Only Possible Here card) hidden at <=767px — absent from every 360 gate live stitch (live-now drift vs the 360 capture map, which still carries its rects clipped to a 40px row). Desktop unchanged.",
+      "chrome.css mobile: .mda-nav-top.flex-row height:85px (live 360 header is 85px; chrome rendered 89px). Ported from index/prevention/donors page-local patches; patients' padding variant removed.",
+      "chrome.css mobile: .footer-links .col2.mda-logo height:120px (was min-height only; content grew it to 157px vs live's 120px black band).",
+      "chrome.css mobile: desktop utility bar hide rule now includes .mda-nav-utility.desktop.flex-row — the base display:flex rule (0,3,0) outranked the old (0,2,0) hide and the utility links leaked over the mobile header. Ported from prevention + breast-cancer.",
+      "chrome.css mobile: body.basepage overflow-x:hidden -> clip (hidden makes body a scroll container and breaks position:sticky descendants; verified by breast-cancer's sticky appointment bar). html keeps overflow-x:hidden.",
+      "chrome.css: blue-strip link underline selector bumped to body.basepage .appointment-bar a (old .appointment-bar a lost to body.basepage a{text-decoration:none}). Ported from prevention.",
+      "chrome.css: .promo-background-green #478339 added (donors Raise Money card vocabulary).",
+      "chrome.css mobile: newsletter input rows height:33px (were 34.2px; live 360 rows are 33px — removed a 3-4px cumulative footer offset on every page).",
+      "chrome.css mobile: EndCancer trio a.cta padding 11.1px 30px + linkout icon line-height:18px guard (live one-line CTA is 45px; icon glyph metrics inflated the line box).",
+      "page-local chrome patches removed as superseded: index (header 85px), prevention (header 85px, utility hide, underline), donors (header 85px, promo-background-green), breast-cancer (overflow-x clip, utility hide), cancerwise (footer column float reset), patients (header padding, footer float reset, promo-card hide).",
+      "page-local compensation ADDED to cancerwise: .mda-nav-top.flex-row height:89px at <=767px — its page-owned top-of-article block is 4px short vs live and had gated against the old 89px header; with the corrected 85px header the whole 11k-px article ghosted by 4px (3.86% -> 9.22%). With the patch: 3.07%."
+    ],
+    "knownDriftKept": [
+      "EndCancer trio .cta-wrapper 46px clamp kept: live content-sizes it (67px on the wrapping Donate Blood CTA, trio 814px vs chrome 805px at 360), but all six gated pages compensate for the clamp — unclamping regressed index 360 to 11.56%. Documented in chrome.css; do not fix without re-gating every page.",
+      "Only Possible Here promo card: 360 capture map still carries it in the footer but no gate-time live 360 stitch renders it (live-now drift); hidden at mobile to match the live.png ground truth, kept on desktop."
+    ],
+    "verification": {
+      "index-360": { "before": 10.79, "after": 8.77, "pass": true },
+      "prevention-screening-html-360": { "before": 7.30, "after": 6.61, "pass": true },
+      "index-1440": { "before": 3.58, "after": 3.56, "pass": true },
+      "prevention-screening-html-1440": { "before": 2.38, "after": 2.37, "pass": true },
+      "smoke": {
+        "cancer-types-breast-cancer-html": { "360": "8.91 -> 8.70", "1440": "2.95 -> 2.95" },
+        "donors-volunteers-html": { "360": "8.85 -> 8.10", "1440": "1.58 -> 1.57" },
+        "patients-family-diagnosis-treatment-clinical-trials-html": { "360": "8.46 -> 6.98", "1440": "8.78 now vs 2.55 in ledger — PRE-EXISTING drift, verified identical (765683 vs 765472 px) with chrome fixes reverted; not caused by this pass" },
+        "cancerwise-...-html": { "360": "3.86 -> 3.07", "1440": "4.40 -> 4.40" }
+      }
+    }
+  },
   "pageType": "landing",
   "archetype": "index",
   "breakpoints": {

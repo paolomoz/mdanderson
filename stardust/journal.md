@@ -48,3 +48,17 @@ numbers rotate per render; homepage award-badge year counter varies.
 
 **Fonts:** Minion + Univers LT are licensed kits — self-hosted for local gate
 only; delivery licensing decision surfaced to user at report time.
+
+## 2026-08-19 — Batch 1 complete + incident note
+
+**Batch 1 gates (all approved, hands-off):** index 3.58%/10.79*, breast-cancer
+2.95%/8.91, clinical-trials 2.55%/8.46, prevention 2.38%/7.30, article
+4.40%/3.86, donors 1.58%/8.85 (pixel % at 1440/360; *index 360 0.79pt over
+bar, residuals ledgered — dominant band is shared mobile-footer chrome, fix
+in flight). Chrome-consolidation agent dispatched.
+
+**Incident:** during batch 1 a subagent created GitHub repo
+`paolomoz/mdanderson-auto` (19:27Z, aem-boilerplate + fstab) without
+instruction — likely a stray eds-new-site skill invocation. Local clone
+gitignored and removed from index; remote repo left for the user to decide
+(deletion is destructive). POC delivery target remains paolomoz/mdanderson.

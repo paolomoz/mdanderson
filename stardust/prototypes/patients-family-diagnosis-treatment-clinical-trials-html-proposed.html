@@ -330,13 +330,8 @@ i.mdicon-arrow { display: inline-block; position: relative; font-size: 18px; mar
   body > #sidebar-nav a#jump-menu-toggle { display: table-cell; width: 15%; text-align: right; vertical-align: middle; padding-right: 20px; color: #000; }
   body > #sidebar-nav .mobile-menu-container { padding: 4px 0; }
   body > #sidebar-nav #jump-menu-label { height: 54px; overflow: hidden; }
-  /* page-local trim: chrome mobile header renders 89px here vs 85px live */
-  header.mda-nav .mda-nav-top.flex-row { padding: 18px 20px; }
-  /* page-local chrome corrections vs live 360 footer (candidate portations to chrome.css):
-     mobile columns must drop the desktop float, and live relocates the
-     at-sticky promo card out of the footer (sticky widget) at mobile */
-  .footer-links .col2, .footer-links .col2.mda-logo, .footer-links .col3.last { float: none; width: auto; }
-  li.at-sticky-promo-li { display: none; }
+  /* (former page-local chrome corrections — header 85px, footer column float reset,
+     at-sticky promo hidden at mobile — now live in shared chrome.css) */
   body > #sidebar-nav .mobile-menu-container i { font-size: 21.33px; line-height: 21.33px; font-style: normal; }
   body > #sidebar-nav ul.parent-level, body > #sidebar-nav a.sidebar-back { display: none; }
 
