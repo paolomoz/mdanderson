@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<!-- provenance: stardust:replica — recreation of https://www.mdanderson.org/donors-volunteers.html
+     from stardust/current/pages/donors-volunteers-html.json + stardust/replica/capture/donors-volunteers-html/{1440,360}.json.
+     Recreation, not redesign: all values lifted from capture. -->
+<html lang="en" class="js flexbox flexboxlegacy">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donors &amp; Volunteers | UT MD Anderson</title>
+<meta name="description" content="Join us in our mission to eliminate cancer by making a financial donation, volunteering, donating blood or becoming a corporate partner.">
+<meta property="og:title" content="Donors &amp; Volunteers">
+<meta property="og:description" content="Join us in our mission to eliminate cancer by making a financial donation, volunteering, donating blood or becoming a corporate partner.">
+<meta property="og:image" content="https://www.mdanderson.org/mda-logo-sharable.png">
+<meta property="og:type" content="Website">
+<link rel="stylesheet" href="assets/mda-fonts.css">
+<link rel="stylesheet" href="assets/chrome.css">
+<style>
+/* == TOKEN CONTRACT (verbatim copy of assets/chrome.css :root) == */
+:root {
+  --heading-font-family: "Minion Regular", "Minion W01 Cap Regular", Arial, Georgia;
+  --body-font-family: "Minion Regular", "Minion W01 Cap Regular", Arial, Georgia;
+  --heading-xxl: 36px;
+  --heading-xl: 36px;
+  --heading-lg: 24px;
+  --heading-md: 21px;
+  --body: 18px;
+  --body-sm: 14px;
+  --line-height-heading: 1.3;
+  --line-height-body: 1.3;
+  --color-bg: #FFFFFF;
+  --color-fg: #000000;
+  --color-accent: #DA291C;
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 30px;
+  --spacing-xl: 40px;
+  --spacing-2xl: 70px;
+  --section-padding: 70px 72px;
+  --max-width: 1440px;
+  --radius: 0px;
+}
+
+/* ===== page shells ===== */
+main.mda-content { display: block; }
+section.highlight { padding: 70px 72px; max-width: 1440px; }
+section.bleed-bottom { padding: 70px 72px 0; max-width: 1440px; }
+.bleed-full { max-width: 1440px; }
+
+/* page icon-font codepoints (lifted from source CSS) */
+.mda-icon-donate::before { content: "\e60f"; }
+.mda-icon-raise_money::before { content: "\e644"; }
+.mda-icon-gifts::before { content: "\e615"; }
+.mda-icon-tips::before { content: "\e624"; }
+.mda-icon-corporate_engagements::before { content: "\e63c"; }
+.mda-icon-flag::before { content: "\e62c"; }
+i[class*="mda-icon-"]::before { font-family: 'mda-icons'; font-style: normal; }
+/* inline icon glyphs must not inflate the line box (live line boxes = text strut) */
+span.mda-icon-linkout { line-height: 18px; }
+.promo-simple a.cta-right-arrow i.mdicon-arrow { line-height: 18px; }
+
+/* ===== hero (carousel t=0 static) ===== */
+.carousel-hero { position: relative; background: #000; }
+.carousel-hero .slick-list { position: relative; overflow: hidden; }
+.carousel-hero .slick-track { display: flex; position: relative; }
+.carousel-item.medium-hero { position: relative; width: 100%; min-height: 1px; z-index: 900; }
+.carousel-hero .carousel-image.media-image {
+  position: relative; height: 450px; background-color: #D0D0CE;
+  background-size: cover; background-position: 50% 50%;
+  background-image: url("https://www.mdanderson.org/content/mda/en/donors-volunteers/jcr:content/mainparsys/herocarousel/slides/1/image.resize.1400.450.high.jpg/1783611443119.jpg");
+}
+/* medium-overlay (source: .carousel-image.mda-media-brightness.medium-overlay:before) */
+.carousel-hero .carousel-image.mda-media-brightness.medium-overlay::before {
+  content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+  background: rgba(0,0,0,.3);
+}
+.carousel-hero .carousel-body { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; }
+.carousel-hero .carousel-body-inner { display: table; width: 100%; height: 100%; }
+.carousel-hero .carousel-body-content { display: table-cell; vertical-align: middle; text-align: center; }
+h1.carousel-body-title, .carousel-body.mobile .carousel-body-title {
+  font-size: 72px; line-height: 72px; letter-spacing: -.02em; font-weight: 400;
+  text-align: center; color: #fff; margin: 0 144px;
+}
+.carousel-body-content .carousel-body-text.cta {
+  position: relative; font-size: 36px; line-height: 46.8px; letter-spacing: -.02em;
+  color: #fff; text-align: center; margin: 0;
+}
+.carousel-body-content .default-cta.cta {
+  position: relative; text-align: center; margin: 20px 144px 0; padding-top: 14px; clear: both;
+}
+.carousel-hero a.cta-block {
+  display: inline-block; padding: 15px 45px; border: 1px solid #fff; color: #fff;
+  background: rgba(0,0,0,.5); text-align: center;
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 18px; line-height: 23.4px;
+  letter-spacing: -.02em;
+}
+.carousel-hero .cta-block i.mdicon-arrow { display: none; }
+.carousel-hero .carousel-body.mobile { display: none; }
+
+/* ===== drop-cap intro ===== */
+.headline p.headline-content {
+  font-size: 36px; line-height: 1.1; letter-spacing: -.02em; color: #3F3D3D;
+  margin: 0; position: relative;
+}
+.headline p .first-large {
+  font-size: 102px; letter-spacing: -.02em; line-height: 1; margin: 0; margin-top: -7px;
+  height: 64px; float: left; padding-right: 7px; display: block;
+}
+p.headline-content-mobile { display: none; }
+
+/* ===== column tables ===== */
+.table .col-double { display: table-cell; width: 50%; vertical-align: top; }
+.table .middle { vertical-align: middle; }
+.col-double.cell-m { padding-right: 72px; }
+.col-double.last.cell-m { padding-left: 72px; padding-right: 0; }
+.col-double.cell-l { padding-right: 9px; }
+.col-double.last.cell-r { padding-left: 9px; padding-right: 0; }
+.cols-give .col-double.cell-m .module + .module { padding-top: 35px; }
+
+/* ===== promo cards (purple / green) ===== */
+.promo-background-green { background: #478339; }
+.promo-with-background { text-align: center; padding: 10px 0 60px; color: #fff; }
+.promo-with-background .promo-icon { height: 95px; }
+.promo-with-background .promo-icon .fa-stack { width: 108px; height: 95px; line-height: 108px; }
+.promo-with-background .promo-icon .mda-stack-1x { font-size: 54px; line-height: 108px; color: #fff; font-style: normal; }
+.promo-with-background .promo-header { color: #fff; padding: 0 10%; }
+.promo-with-background h3.title { font-size: 36px; line-height: 46.8px; letter-spacing: -.02em; font-weight: 400; }
+.promo-with-background .promo-text { padding: 0 10%; }
+.promo-with-background .body.promo-text-small { font-size: 21px; line-height: 27.3px; letter-spacing: -.02em; }
+.promo-with-background .body p { margin: 21px 0; }
+.promo-with-background a.cta.cta-block {
+  display: inline-block; position: relative; margin-top: 30px; padding: 11px 30px;
+  border: 1px solid #fff; color: #fff;
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 18px; line-height: 23.4px; letter-spacing: -.02em;
+}
+
+/* ===== link list (Your Gifts at Work) ===== */
+.link-list .link-list-heading.icon-heading { text-align: center; }
+.icon-circle .fa-stack.fa-3x {
+  width: 108px; height: 108px; line-height: 108px; border-radius: 50%; margin-bottom: 20px;
+}
+.icon-circle .fa-stack.fa-3x.icon-green { background: #529144; }
+.icon-circle .fa-stack.fa-3x .mda-stack-1x { font-size: 54px; line-height: 108px; color: #fff; font-style: normal; }
+h3.icon-heading {
+  font-size: 36px; line-height: 36px; letter-spacing: -.02em; font-weight: 400;
+  text-align: center; margin-bottom: 15px;
+}
+.link-list p.subtext {
+  font-size: 21px; line-height: 27.3px; letter-spacing: -.02em; color: #3F3D3D; margin: 0 0 9px;
+}
+.link-list-body ul li.link { display: table; width: 100%; }
+.link-list-body a.mdicon-linklist {
+  display: table-cell; position: relative; padding: 30px 10px 30px 0;
+  border-bottom: 1px solid #D0D0CE; font-family: 'MDIcons'; font-size: 18px;
+}
+.link-list-body li.link.top-border a.mdicon-linklist { border-top: 1px solid #D0D0CE; }
+.link-list-body a.mdicon-linklist::before {
+  content: "\e601"; position: absolute; right: 10px; top: 50%; margin-top: -9px; color: #DA291C;
+}
+.link-list-body a.mdicon-linklist img { float: left; width: 20%; margin-right: 15px; }
+h4.link-title {
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 14px; line-height: 18.2px;
+  letter-spacing: -.02em; font-weight: 400; text-transform: uppercase; color: #000; max-width: 87%;
+}
+p.link-body {
+  font-family: 'Univers LT W01_45 Light', Arial; font-size: 14px; line-height: 16.8px;
+  letter-spacing: -.02em; color: #605D5D; margin-top: 10px; max-width: 85%;
+}
+.link-list-cta { margin-top: 25px; height: 23px; }
+.link-list-cta .cta { position: relative; }
+.link-list-cta a, .rte-container span.cta a {
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 18px; line-height: 23.4px;
+  letter-spacing: -.02em; color: #DA291C;
+}
+i.fa.mdicon-arrow::before { font-family: 'MDIcons'; content: "\e608"; }
+.link-list-cta i.mdicon-arrow {
+  display: inline-block; position: relative; font-size: 18px; margin-left: 15px; color: #DA291C;
+}
+
+/* ===== rte text blocks (split bands) ===== */
+.rte-container h2 { font-size: 27px; line-height: 35.1px; font-weight: 700; margin: 22.41px 0; }
+.rte-container p { font-size: 18px; line-height: 23.4px; color: #3A3A3A; margin: 0 0 18px; }
+.rte-container p:last-child { margin-bottom: 0; }
+.rte-container span.cta { position: relative; }
+.rte-container span.cta a { color: #C50026; text-decoration: underline; }
+section[data-section="volunteers"] .rte-container span.cta a { color: #DA291C; }
+
+/* ===== video card (Where innovation meets impact) ===== */
+.media-player.media-single-small { position: relative; }
+.basic-content-media-wrapper { position: relative; }
+.basic-content-media-wrapper .media-image { background: #D0D0CE; }
+.basic-content-media-wrapper .media-image img { display: block; width: 100%; }
+#basic-video-container {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;
+  background-color: rgba(0,0,0,.5);
+  background-image: linear-gradient(rgba(0,0,0,0) 75%, #000 90%);
+}
+.media-player .media-body {
+  display: table; position: absolute; left: 18px; right: 18px; bottom: 0; height: 53px; z-index: 2;
+  width: calc(100% - 36px);
+}
+.media-player .media-body-text { display: table-cell; vertical-align: middle; text-align: left; color: #fff; padding-left: 59px; }
+.media-player .carousel-body-text {
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 16px; line-height: 20.8px;
+  letter-spacing: -.02em; color: #fff;
+}
+.media-player .carousel-body-text p { margin: 0; }
+.media-player .video-play-button { position: absolute; left: 0; top: 5px; width: 36px; height: 42px; color: #fff; }
+.media-player .video-play-button .mdicon-videoplay { font-size: 36px; line-height: 36px; }
+.media-player + .mda-hide-sm .cta, .mda-survivor-media ~ .mda-hide-sm .cta { height: 20px; }
+.video-cta-spacer .cta { position: relative; height: 20px; font-family: 'Univers LT W01_55 Roman', Arial; color: #C50026; }
+
+/* ===== adaptive images (splits) ===== */
+.bcm-standalone-image .media-image img { display: block; width: 100%; }
+
+/* ===== campaign band (Together, we're ending cancer) ===== */
+.headline-bg-image { position: relative; }
+.headline-bg-image .image-container { position: relative; height: 495px; overflow: hidden; width: 100%; }
+.headline-bg-image .image-container img {
+  display: block; width: auto; height: auto; position: absolute; min-width: 100%;
+}
+.headline-bg-image .image-container.left img { right: 0; }
+.headline-bg-image .image-container.left::before {
+  content: ""; position: absolute; top: 0; bottom: 0; left: 0; width: 70%; z-index: 1;
+  background: linear-gradient(270deg, rgba(255,255,255,.01) 0%, #000 100%);
+}
+.headline-bg-image .info-container {
+  position: absolute; width: 50%; height: 495px; top: 0; left: 0; display: block; color: #fff; z-index: 2;
+}
+.headline-bg-image .info-container .info { display: inline-block; vertical-align: middle; padding: 50px 0 25px 50px; }
+.headline-bg-image .info-container .heading {
+  font-size: 42px; line-height: 54.6px; letter-spacing: -.02em; margin: 0; font-weight: 400;
+}
+.headline-bg-image .info-container .description {
+  font-size: 21px; line-height: 27.3px; letter-spacing: -.02em; margin-top: 10px; margin-bottom: 30px;
+}
+.headline-bg-image .info-container .cta {
+  color: #fff; font-family: 'Univers LT W01_65 Bold', Arial; font-size: 18px;
+  letter-spacing: -.02em; line-height: 23.4px; position: relative;
+}
+.headline-bg-image .info-container .cta span { margin-left: 15px; }
+.headline-bg-image .info-container .cta span .visuallyhidden { margin-left: 0; }
+
+/* ===== icon trio ===== */
+.trio .table-3col .cell-t { display: table-cell; width: 33.333%; vertical-align: top; }
+.trio .table-3col .cell-t.cell-border { border-right: 1px solid #D0D0CE; }
+.trio .table-3col .cell-t:nth-child(1) { padding-right: 12px; }
+.trio .table-3col .cell-t:nth-child(2) { padding-left: 6px; padding-right: 6px; }
+.trio .table-3col .cell-t.last { padding-left: 12px; padding-right: 0; border-right: 0; }
+.promo-simple { text-align: center; }
+.promo-simple .promo-icon-orange-bg, .promo-icon-orange .fa-stack.fa-3x { background: #E96613; }
+.promo-icon-green .fa-stack.fa-3x { background: #478339; }
+.promo-icon-lightblue .fa-stack.fa-3x { background: #23B8F1; }
+.promo-simple h3.title { font-size: 36px; line-height: 46.8px; letter-spacing: -.02em; font-weight: 400; color: #000; }
+.promo-simple .body.promo-text-normal {
+  font-size: 21px; line-height: 27.3px; letter-spacing: -.02em; color: #3F3D3D;
+}
+.promo-simple .body p { margin: 21px 0; }
+.promo-simple a.cta.cta-right-arrow {
+  display: block; position: relative; text-align: center;
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 18px; line-height: 23.4px;
+  letter-spacing: -.02em; color: #DA291C;
+}
+.promo-simple a.cta.cta-right-arrow i.mdicon-arrow {
+  display: inline; position: relative; font-size: 18px; margin-left: 15px; color: #DA291C; font-style: normal;
+}
+
+/* ===== capture-state live widgets (as captured; same as chrome pages) ===== */
+a.scroll-down {
+  position: absolute; bottom: 15px; left: 50%; margin-left: -44px; z-index: 500;
+  text-align: center; color: #fff; opacity: 0;
+}
+a.scroll-down p.text {
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 16px; line-height: 1.3;
+  letter-spacing: -.02em; margin-bottom: 10px;
+}
+a.scrollToTop {
+  position: fixed; top: 82%; right: 20px; z-index: 1000; display: block;
+  width: 52px; height: 52px; padding: 10px; border-radius: 50%; background: #fff;
+  text-align: center; font-weight: bold;
+}
+.cta_icon_top {
+  position: absolute; top: 1px; left: 1px; display: inline-block; width: 50px; height: 50px;
+  border: 2px solid; border-radius: 50%; color: #222121; font-weight: normal; font-size: 35px;
+}
+.cta_icon_top::before { font-family: 'FontAwesome'; content: "\f106"; line-height: 46px; }
+.cta_top_text { position: relative; top: 14px; left: 0; font-size: 13px; color: #222121; }
+.mda-drawer-replica {
+  position: fixed; bottom: 0; right: 0; z-index: 999; opacity: 0; pointer-events: none;
+  font-family: 'Open Sans Light', Arial; font-size: 16px;
+}
+.mda-drawer-replica .drawer-more { font-size: 12px; text-transform: uppercase; }
+.mda-drawer-replica .drawer-title { font-family: 'Univers LT W01_65 Bold', Arial; }
+.mda-drawer-replica a { display: block; }
+.mda-drawer-replica .drawer-panel { display: block; }
+.mda-drawer-replica .drawer-bar a.drawer-cell { display: inline-block; }
+.mda-icon-appointments::before { content: "\e601"; }
+.mda-icon-user::before { content: "\e632"; }
+.chat-widget-replica { position: fixed; right: 20px; bottom: 30px; z-index: 998; }
+.chat-widget-replica::before {
+  content: "Chat with us."; display: inline-block; vertical-align: middle;
+  background: #3361AD; color: #fff; font-family: Arial, sans-serif; font-size: 16px;
+  padding: 8px 14px; border-radius: 4px; margin-right: 10px;
+}
+.chat-widget-replica::after {
+  content: ""; display: inline-block; vertical-align: middle; width: 50px; height: 50px;
+  border-radius: 50%; background: #2B4FA2;
+}
+
+/* =========================================================================
+   MOBILE (max-width: 767px) — lifted from capture/donors-volunteers-html/360.json
+   ========================================================================= */
+@media (min-width: 768px) { .mda-show-md { display: none; } }
+@media (max-width: 767px) {
+  .mda-hide-sm { display: none; }
+  /* live mobile reserves 75px at page end for the fixed CTA drawer bar */
+  main.mda-content { padding-bottom: 75px; }
+  section.highlight, section.bleed-bottom { padding: 0; }
+  .mda-nav-top.flex-row { height: 85px; }
+  .table, .table-3col { display: block; width: auto; }
+  .table .col-double, .trio .table-3col .cell-t { display: block; width: auto; padding: 0; border-right: 0; }
+  .table .col-double.cell-m, .table .col-double.cell-l,
+  .table .col-double.last.cell-m, .table .col-double.last.cell-r { padding-left: 0; padding-right: 0; }
+  .table .col-double.last.cell-m, .table .col-double.last.cell-r { padding-top: 48px; }
+  .cols-give .col-double.cell-m .module + .module { padding-top: 0; }
+
+  /* live mobile widgets */
+  a.scrollToTop { top: 80%; width: 42px; height: 42px; }
+  .cta_icon_top { width: 40px; height: 40px; font-size: 25px; font-weight: bold; }
+  .cta_icon_top::before { line-height: 36px; }
+  .cta_top_text { top: 11px; font-size: 11px; }
+  .mda-drawer-replica { opacity: 1; left: 0; right: 0; bottom: 0; width: 100%; background: #3361AD; }
+  .mda-drawer-replica .drawer-panel { display: none; }
+  .mda-drawer-replica .drawer-title { font-family: var(--body-font-family); }
+  .mda-drawer-replica .drawer-bar { display: flex; height: 75px; }
+  .mda-drawer-replica .drawer-bar a.drawer-cell {
+    flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    color: #fff; font-family: 'Open Sans Regular', Arial, sans-serif; font-size: 15px;
+    border-left: 1px solid rgba(255,255,255,.35); text-align: center; line-height: 22px;
+  }
+  .mda-drawer-replica .drawer-bar a.drawer-cell:first-child { border-left: 0; }
+  .mda-drawer-replica .drawer-ic { display: block; font-size: 22px; line-height: 26px; font-style: normal; }
+  .chat-widget-replica { right: 10px; bottom: 12px; z-index: 1001; }
+  .chat-widget-replica::before { display: none; }
+
+  /* hero */
+  .carousel-hero .carousel-image.media-image {
+    height: 320px;
+    background-image: url("https://www.mdanderson.org/content/mda/en/donors-volunteers/jcr:content/mainparsys/herocarousel/slides/1/imagesvp.resize.360.290.high.jpg/1783611443119.jpg");
+  }
+  .carousel-hero .carousel-body { display: none; }
+  .carousel-hero .carousel-body.mobile { display: block; }
+  .carousel-body.mobile .carousel-body-title { font-size: 36px; line-height: 36px; margin: 0 35px; }
+  .carousel-body.mobile .carousel-body-text.cta { font-size: 24px; line-height: 31.2px; margin: 0 35px; }
+  .carousel-body.mobile .default-cta.cta { margin: 20px 35px 0; }
+  .carousel-hero a.cta-block { padding: 12px 30px 10px; font-size: 16px; line-height: 20.8px; }
+
+  /* intro */
+  .headline { padding: 10px 35px 20px; }
+  .headline p.headline-content.mda-hide-md { display: none; }
+  p.headline-content-mobile {
+    display: block; font-size: 18px; line-height: 23.4px; letter-spacing: -.02em;
+    color: #3F3D3D; margin: 5px 0 0;
+  }
+
+  /* promo cards */
+  .promo-with-background { padding: 0 0 40px; }
+  .promo-with-background .promo-icon { height: 88px; }
+  .promo-with-background .promo-icon .fa-stack { width: 88px; height: 88px; line-height: 88px; }
+  .promo-with-background .promo-icon .mda-stack-1x { font-size: 48px; line-height: 88px; }
+  .promo-with-background .promo-header { padding: 0 36px; }
+  .promo-with-background h3.title { font-size: 32px; line-height: 41.6px; }
+  .promo-with-background .promo-text { padding: 0 36px; }
+  .promo-with-background .body.promo-text-small { font-size: 16px; line-height: 20.8px; }
+  .promo-with-background .body p { margin: 20px 0; }
+  .promo-with-background .cta-wrapper.cta-block-wrapper { display: inline-block; height: 46px; }
+  .promo-with-background a.cta.cta-block { margin-top: 1px; padding: 12px 30px 10px; font-size: 16px; line-height: 20.8px; }
+
+  /* link list */
+  .link-list { padding: 32px 0; }
+  .link-list .link-list-heading.icon-heading { display: table; width: 100%; box-sizing: border-box; padding: 0 35px; text-align: left; }
+  .link-list .link-list-heading .icon-circle { display: table-cell; width: 96px; vertical-align: middle; }
+  .icon-circle .fa-stack.fa-3x { width: 88px; height: 88px; line-height: 88px; margin-bottom: 0; }
+  .icon-circle .fa-stack.fa-3x .mda-stack-1x { font-size: 48px; line-height: 88px; }
+  h3.icon-heading { display: table-cell; vertical-align: middle; text-align: left; font-size: 24px; line-height: 24px; padding-left: 15px; margin: 0; }
+  .link-list .link-list-heading.icon-heading { margin-bottom: 15px; }
+  .link-list p.subtext { font-size: 16px; line-height: 20.8px; padding: 0 35px; margin: 0 0 15px; }
+  .link-list-body ul li.link { display: block; }
+  .link-list-body a.mdicon-linklist { display: block; padding: 15px 35px; font-size: 16px; }
+  .link-list-body a.mdicon-linklist::before { right: 35px; margin-top: -8px; }
+  h4.link-title { font-size: 16px; line-height: 20.8px; }
+  .link-list-cta { padding: 0 35px; margin: 20px 0 10px; height: 21px; }
+  .link-list-cta a, .rte-container span.cta a { font-size: 16px; line-height: 20.8px; }
+  .link-list-cta i.mdicon-arrow { font-size: 16px; margin-left: 5px; }
+
+  /* rte splits */
+  .rte-container.basic-content { padding: 35px; }
+  .rte-container h2 { font-size: 24px; line-height: 31.2px; margin: 20px 0; }
+  .rte-container p { font-size: 16px; line-height: 20.8px; margin-bottom: 16px; }
+
+  /* video card */
+  .media-player .media-body { left: 16px; right: 16px; height: 74px; }
+  .media-player .media-body-text { padding-left: 52px; }
+  .media-player .video-play-button { top: 31px; width: 32px; height: 37px; }
+  .media-player .video-play-button .mdicon-videoplay { font-size: 32px; line-height: 32px; }
+
+  /* stories: live mobile JS relocates the standalone image inline after the h2
+     (scroll-settled live state; 360 map captured the pre-relocation t=0 state).
+     Recreated with CSS positioning only — DOM stays as captured. */
+  section[data-section="stories"] { position: relative; }
+  section[data-section="stories"] .rte-container p:nth-of-type(1) { padding-top: 163px; }
+  section[data-section="stories"] .col-double.last .basic-content-media-wrapper,
+  section[data-section="stories"] .col-double.last .media-inner { position: static; }
+  section[data-section="stories"] .col-double.last .media-image img {
+    position: absolute; top: 137px; left: 35px; width: 290px; height: auto;
+  }
+
+  /* campaign band */
+  .headline-bg-image .image-container { height: 235px; }
+  .headline-bg-image .image-container.left::before { display: none; }
+  .headline-bg-image .info-container { position: relative; width: 100%; height: auto; background: #000; }
+  .headline-bg-image .info-container .info { padding: 40px; }
+  .headline-bg-image .info-container .heading { font-size: 21px; line-height: 27.3px; }
+  .headline-bg-image .info-container .description { font-size: 18px; line-height: 23.4px; margin-bottom: 10px; }
+
+  /* trio */
+  .promo-simple { display: flex; flex-direction: column; align-items: center; padding: 35px; }
+  .promo-simple .promo-icon-header-wrapper { display: flex; flex-direction: column; align-items: center; }
+  .promo-simple .icon-circle .fa-stack.fa-3x { margin-bottom: 0; }
+  .promo-simple h3.title { font-size: 32px; line-height: 41.6px; }
+  .promo-simple .promo-text { align-self: stretch; }
+  .promo-simple .body.promo-text-normal { font-size: 16px; line-height: 20.8px; }
+  .promo-simple .body p { margin: 20px 0; }
+  .promo-simple a.cta.cta-right-arrow { font-size: 16px; line-height: 20.8px; }
+  .promo-simple a.cta.cta-right-arrow i.mdicon-arrow { font-size: 16px; margin-left: 5px; }
+}
+</style>
+</head>
+<body class="basepage">
+<!-- CHROME:TOP (verbatim from assets/chrome.html) -->
+<header class="mda-nav" data-canon="chrome-header">
+  <a id="content-skip-btn" href="#skip">Skip to Content</a>
+  <div class="mda-cta-list-container desktop" data-canon="chrome-utility-bar">
+    <ul class="mda-cta-list">
+      <li class="mda-cta-list-item login dropdown">
+        <a class="dropdown-trigger" href="https://my.mdanderson.org/MyChart/Home/"><span class="red-my">My</span><span class="white-chart">Chart</span></a>
+      </li>
+      <li class="mda-cta-list-item appointment dropdown">
+        <button class="dropdown-trigger" type="button">Request an Appointment</button>
+      </li>
+      <li class="mda-cta-list-item donate onlypossiblehere">
+        <a class="dropdown-trigger at-element-click-tracking" href="javascript:void(0);">Donate Today<i class="fa fa-heart mda-inverse"></i></a>
+      </li>
+    </ul>
+  </div>
+  <div class="mda-nav-top flex-row">
+    <a id="nav-logo" href="https://www.mdanderson.org/">
+      <img src="https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/xmda-logo.png.pagespeed.ic.jLVBCg-7dN.webp" alt="The University of Texas MD Anderson Cancer Center">
+    </a>
+    <div class="spacer desktop"></div>
+    <ul class="mda-nav-utility desktop flex-row">
+      <li><a class="mda-nav-utility-clinical-trials" href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html">Clinical Trials</a></li>
+      <li><a class="mda-nav-utility-directions" href="https://www.mdanderson.org/about-md-anderson/our-locations.html"><span>Locations</span></a></li>
+      <li><a class="careers" href="https://jobs.mdanderson.org/">Careers<span class="mda-icon-linkout"></span></a></li>
+      <li><a class="mda-nav-utility-call" href="https://www.mdanderson.org/about-md-anderson/contact-us.html">Contact Us</a></li>
+      <li><a class="mda-nav-utility-doctors" href="https://faculty.mdanderson.org/">Our Doctors</a></li>
+      <li class="dropdown mda-sublist-container">
+        <button class="mda-nav-utility-sublist-toggle mda-nav-utility-languages dropdown-trigger" type="button">Languages</button>
+      </li>
+    </ul>
+    <div id="nav-search">
+      <form id="nav-search-form" action="#" onsubmit="return false">
+        <i class="search-icon mda-icon-search"></i>
+        <input id="site-search" type="text" placeholder="Search" autocomplete="off">
+      </form>
+      <ul id="search-results"></ul>
+      <div id="live-search-results"></div>
+      <div class="search-options"></div>
+    </div>
+    <div class="mda-nav-mobile-menu mobile">
+      <button class="mda-nav-mobile-search-button open active" type="button">
+        <i class="search-icon mda-icon-search mobile-search"></i>
+        <span class="mda-nav-mobile-search-title">Search</span>
+      </button>
+      <button class="mda-nav-mobile-menu-button open active" type="button">
+        <i class="fa fa-2x mda-icon-menu"></i>
+        <span class="mda-nav-mobile-menu-title">Menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="mda-nav" data-canon="chrome-primary-nav">
+  <div class="mda-nav-wrapper">
+    <div class="mda-nav-main">
+      <ul class="mda-nav-main-list">
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-1" href="https://www.mdanderson.org/patients-family.html">Patients &amp; Family</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-2" href="https://www.mdanderson.org/prevention-screening.html">Prevention &amp; Screening</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-3" href="https://www.mdanderson.org/donors-volunteers.html">Donors &amp; Volunteers</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-4" href="https://www.mdanderson.org/for-physicians.html">For Physicians</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-5" href="https://www.mdanderson.org/research.html">Research</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-6" href="https://www.mdanderson.org/education-training.html">Education &amp; Training</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /CHROME:TOP -->
+<div></div>
+<main class="mda-content" data-template="form">
+  <!-- Go To Top (server-rendered on live; shown on scroll) -->
+  <a href="#" class="scrollToTop"><span class="cta_icon_top fa-angle-up"></span><span class="cta_top_text">Top</span></a>
+  <!-- capture-state: live JS-injected CTA drawer (offscreen/invisible on live render) -->
+  <div class="mda-drawer-replica" data-canon="capture-state-live-widget">
+    <div class="drawer-panel">
+      <p class="drawer-more">More</p>
+      <p class="drawer-title">Let's get started.</p>
+      <a href="/about-md-anderson/contact-us/askmdanderson/appointments.html">Request an appointment online.</a>
+    </div>
+    <div class="drawer-bar">
+      <a class="drawer-cell" href="tel:+18777901139"><i class="drawer-ic mda-icon-call-stroke"></i>Call</a>
+      <a class="drawer-cell" href="/about-md-anderson/contact-us/askmdanderson/appointments.html"><i class="drawer-ic mda-icon-appointments"></i>Request appointment</a>
+      <a class="drawer-cell" href="https://my.mdanderson.org"><i class="drawer-ic mda-icon-user"></i>MyChart</a>
+    </div>
+  </div>
+  <!-- capture-state: chat widget replica (pixels only; text via pseudo-elements) -->
+  <div class="chat-widget-replica" aria-hidden="true"></div>
+  <div id="skip">
+    <div class="content">
+
+      <!-- hero -->
+      <section class="bleed-full" data-section="hero" data-intent="brand-claim" data-layout="full-bleed" data-media="background-image">
+        <div class="module m-bleed">
+          <div class="carousel-hero">
+            <div class="carousel-group carousel-config-hero slick-initialized">
+              <div class="slick-list draggable">
+                <div class="slick-track">
+                  <div class="carousel-item medium-hero slick-slide">
+                    <div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div class="carousel-image media-image mda-media-brightness medium-overlay"></div>
+                    </div>
+                    <div class="carousel-body">
+                      <div class="carousel-body-inner">
+                        <div class="carousel-body-content">
+                          <h1 class="carousel-body-title">Donors &amp; Volunteers </h1>
+                          <div class="carousel-body-text cta">Be part of what's Only Possible Here.</div>
+                          <div class="default-cta cta">
+                            <a href="https://www.mdanderson.org/donors-volunteers/donate.html" class="cta-block">Give Now <i class="mdicon-arrow" aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-body mobile">
+                      <div class="carousel-body-inner mobile">
+                        <div class="carousel-body-content mobile">
+                          <div class="carousel-body-title">Donors &amp; Volunteers</div>
+                          <div class="carousel-body-text cta">Be part of what's Only Possible Here.</div>
+                          <div class="default-cta cta">
+                            <a href="https://www.mdanderson.org/donors-volunteers/donate.html" class="cta-block">Give Now <i class="mdicon-arrow" aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="scroll-down">
+              <p class="text">Scroll Ahead</p>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- drop-cap intro -->
+      <section class="bleed-bottom" data-section="intro" data-intent="mission-statement" data-layout="single-column">
+        <div class="col-single">
+          <div class="module m-bleed-bottom">
+            <div class="headline">
+              <p class="headline-content mda-hide-md"><span class="first-large">E</span>very breakthrough, every patient story and every moment of hope begins with people like you. Whether you give, volunteer, advocate or participate in an event, your support helps accelerate breakthroughs, elevate the patient experience and expand access to lifesaving care. Join us in helping end cancer.</p>
+              <p class="headline-content-mobile mda-show-md">Every breakthrough, every patient story and every moment of hope begins with people like you. Whether you give, volunteer, advocate or participate in an event, your support helps accelerate breakthroughs, elevate the patient experience and expand access to lifesaving care. Join us in helping end cancer.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- give cards + gifts at work -->
+      <section class="highlight cols-give" data-section="give-columns" data-intent="conversion" data-layout="two-column" data-items="2">
+        <div class="table">
+          <div class="col-double cell-m">
+            <div class="module">
+              <div class="promo promo-background-purple promo-with-background promo-icon-white promo-text-center">
+                <div class="promo-icon-header-wrapper">
+                  <div class="promo-icon icon-circle" aria-hidden="true">
+                    <span class="fa-stack fa-3x"><i class="fa mda-icon-donate mda-stack-1x mda-inverse"></i></span>
+                  </div>
+                  <div class="promo-header">
+                    <h3 class="title minion-heading heading-center">Give Now</h3>
+                  </div>
+                </div>
+                <div class="promo-text">
+                  <div class="body promo-text-small">
+                    <p>Your generosity helps bring hope, healing and breakthroughs to patients and families today.<br></p>
+                  </div>
+                  <div class="cta-wrapper cta-block-wrapper">
+                    <a href="https://gifts.mdanderson.org/Default.aspx?tsid=10503&amp;noamt=true&amp;chosen=100&amp;intcmpid=mdaccorg_donate" class="cta cta-block" target="_blank" title=" Opens a new window">$100 <span class="mda-icon-linkout" aria-hidden="true"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="promo promo-background-green promo-with-background promo-icon-white promo-text-center">
+                <div class="promo-icon-header-wrapper">
+                  <div class="promo-icon icon-circle" aria-hidden="true">
+                    <span class="fa-stack fa-3x"><i class="fa mda-icon-raise_money mda-stack-1x mda-inverse"></i></span>
+                  </div>
+                  <div class="promo-header">
+                    <h3 class="title minion-heading heading-center">Raise Money</h3>
+                  </div>
+                </div>
+                <div class="promo-text">
+                  <div class="body promo-text-small">
+                    <p>Turn your passion into impact and inspire others to support the fight against cancer.<br></p>
+                  </div>
+                  <div class="cta-wrapper cta-block-wrapper">
+                    <a href="https://www.mdanderson.org/donors-volunteers/donate/raise-money.html" class="cta cta-block" title=" Opens a new window">Get started</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-double last cell-m last">
+            <div class="module">
+              <div class="link-list" data-section="gifts-at-work" data-intent="storytelling" data-items="3" data-media="thumbnails">
+                <div class="related-posts">
+                  <div class="link-list-heading icon-heading">
+                    <div class="icon-circle">
+                      <span class="fa-stack fa-3x icon-green"><i class="mda-icon-gifts mda-stack-1x mda-inverse"></i></span>
+                    </div>
+                    <h3 class="icon-heading">Your Gifts at Work</h3>
+                  </div>
+                </div>
+                <p class="subtext">UT&nbsp;MD&nbsp;Anderson relies on generous donors like you in our mission to end cancer. Take a look at the impact of gifts like yours. </p>
+                <div class="link-list-body">
+                  <ul>
+                    <li class="link top-border">
+                      <a class="mdicon-linklist" href="https://www.mdanderson.org/cancerwise/clean-scan-compels-patient-to-give-back-to-md-anderson.h00-159781179.html" aria-label=" ">
+                        <span class="mda-hide-sm">
+                          <picture>
+                            <img src="https://www.mdanderson.org/content/mda/en/donors-volunteers/jcr:content/mainparsys/columns_1489508236/column2/linklist/links/1/image.resize.250.170.high.jpg" alt="">
+                          </picture>
+                        </span>
+                        <h4 class="link-title">Compelled to give back</h4>
+                        <p class="link-body mda-hide-sm">A grateful patient's legacy gift advances UT MD Anderson’s mission.</p>
+                      </a>
+                    </li>
+                    <li class="link">
+                      <a class="mdicon-linklist" href="https://www.mdanderson.org/cancerwise/kidney-cancer-caregiver--why-i-m-excited-about-the-institute-for-data-science-in-oncology-idso.h00-159781179.html" aria-label=" ">
+                        <span class="mda-hide-sm">
+                          <picture>
+                            <img src="https://www.mdanderson.org/content/mda/en/donors-volunteers/jcr:content/mainparsys/columns_1489508236/column2/linklist/links/2/image.resize.250.170.high.jpg" alt="">
+                          </picture>
+                        </span>
+                        <h4 class="link-title">Institute for Data Science in Oncology (IDSO)</h4>
+                        <p class="link-body mda-hide-sm">Support the technology that can help unlock advances to end cancer.</p>
+                      </a>
+                    </li>
+                    <li class="link">
+                      <a class="mdicon-linklist" href="https://www.mdanderson.org/newsroom/md-anderson-s-boot-walk-to-end-cancer--raises--1-7-million-at-te.h00-159781179.html" aria-label=" ">
+                        <span class="mda-hide-sm">
+                          <picture>
+                            <img src="https://www.mdanderson.org/content/mda/en/donors-volunteers/jcr:content/mainparsys/columns_1489508236/column2/linklist/links/3/image.resize.250.170.high.jpg" alt="">
+                          </picture>
+                        </span>
+                        <h4 class="link-title">More than $2M raised at Boot Walk to End Cancer®</h4>
+                        <p class="link-body mda-hide-sm">100% of donations raised by participants go directly to support UT MD Anderson programs.</p>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="link-list-cta">
+                    <div class="cta">
+                      <a href="https://gifts.mdanderson.org/" id="donors_voluntee_linklist_make_a_gift">Make a gift <i class="fa mdicon-arrow" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- where innovation meets impact + video -->
+      <section class="highlight apply" data-section="innovation" data-intent="storytelling" data-layout="split" data-media="video-poster">
+        <div class="table">
+          <div class="col-double cell-l middle">
+            <div class="rte-container basic-content">
+              <h2>Where innovation meets impact</h2>
+              <p>Advancing what's next in cancer care takes more than expertise — it takes a community. Join those who are helping turn bold ideas into real progress for patients everywhere.</p>
+              <p><span class="cta" style="display: inline;"><a href="https://onlypossiblehere.mdanderson.org/">Discover what's Only Possible<b> Here</b>.</a>&nbsp;</span><br></p>
+            </div>
+          </div>
+          <div class="col-double last cell-r middle last">
+            <div class="module">
+              <div class="media-player media-single-small mda-survivor-media">
+                <div class="media-content" id="">
+                  <div class="media-matrix"></div>
+                  <div class="media-options">
+                    <div class="media-option basic-content-media media-group-option mda-survivor-media mda-media-brightness">
+                      <div class="basic-content-media-wrapper">
+                        <div class="cq-dd-image">
+                          <div class="media-image">
+                            <picture>
+                              <img src="https://www.mdanderson.org/content/mda/en/donors-volunteers/jcr:content/mainparsys/columns_1315525948/column2/basicvideo.resize.648.0.medium.jpg/1782832831513.jpg" alt="">
+                            </picture>
+                          </div>
+                        </div>
+                        <div id="basic-video-container">
+                          <div id="bu0NX4y9NF4" class="display-video-content"></div>
+                        </div>
+                        <div class="media-body">
+                          <div class="media-body-text">
+                            <div class="carousel-body-text">
+                              <p>How the extraordinary becomes possible. </p>
+                            </div>
+                            <div class="carousel-body-text"></div>
+                          </div>
+                          <div class="video-play-button" role="button" tabindex="0">
+                            <span class="mdicon-videoplay md-2x" title="Play Video" aria-label="Watch video"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mda-hide-sm">
+                <div class="cta"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- volunteers make healing possible -->
+      <section class="highlight" data-section="volunteers" data-intent="storytelling" data-layout="split" data-media="image">
+        <div class="table">
+          <div class="col-double cell-l middle">
+            <div class="module">
+              <div class="basic-content-media bcm-standalone-image adaptive">
+                <div class="basic-content-media-wrapper">
+                  <div class="media-inner">
+                    <div class="media-image">
+                      <picture>
+                        <img src="https://www.mdanderson.org/content/mda/en/donors-volunteers/jcr:content/mainparsys/columns/column1/adaptiveimage.resize.648.0.medium.jpg/1783629348528.jpg" alt="Cancer Donors and Volunteers">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-double last cell-r middle last">
+            <div class="rte-container basic-content">
+              <h2>Volunteers make healing possible</h2>
+              <p>A kind word, a steady presence, a helping hand — these are the moments patients and families remember. Volunteers bring comfort, connection and support throughout the cancer journey, creating a meaningful difference every day.</p>
+              <p><span class="cta" style="display: inline;"><a title="Volunteer link" href="/donors-volunteers/volunteer.html">Start your volunteer journey.</a></span><br></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- stories of hope -->
+      <section class="highlight apply" data-section="stories" data-intent="storytelling" data-layout="split" data-media="image">
+        <div class="table">
+          <div class="col-double cell-l middle">
+            <div class="rte-container basic-content">
+              <h2>Stories of hope, healing and resilience</h2>
+              <p>These are the moments that matter most — lives changed, families strengthened and futures restored. Hear directly from those who’ve experienced the difference your support can make.<br></p>
+              <p><span class="cta" style="display: inline;"><a title="Link to Only Possible Here stories" href="https://onlypossiblehere.mdanderson.org/your-stories.html">Read their journeys and be part of what comes next.</a></span><br></p>
+            </div>
+          </div>
+          <div class="col-double last cell-r middle last">
+            <div class="module">
+              <div class="basic-content-media bcm-standalone-image adaptive">
+                <div class="basic-content-media-wrapper">
+                  <div class="media-inner">
+                    <div class="media-image">
+                      <picture>
+                        <img src="https://www.mdanderson.org/content/mda/en/donors-volunteers/jcr:content/mainparsys/columns_copy/column2/adaptiveimage.resize.648.0.medium.jpg/1782758394199.jpg" alt="Cancer Donors and Volunteers">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- campaign band -->
+      <section class="bleed-full" data-section="campaign-band" data-intent="campaign" data-layout="full-bleed" data-media="image">
+        <div class="module">
+          <div class="headline-bg-image">
+            <div class="image-container left">
+              <picture>
+                <source srcset="https://www.mdanderson.org/content/mda/en/donors-volunteers/jcr:content/mainparsys/headlineandimage/lvpimage.resize.2800.990.high.jpg/1783550260977.png 2x, https://www.mdanderson.org/content/mda/en/donors-volunteers/jcr:content/mainparsys/headlineandimage/lvpimage.resize.1400.495.high.jpg/1783550260977.png 1x" media="(min-width: 993px)">
+                <source srcset="https://www.mdanderson.org/content/mda/en/donors-volunteers/jcr:content/mainparsys/headlineandimage/svpimage.resize.640.500.high.jpg/1783550360484.png 2x, https://www.mdanderson.org/content/mda/en/donors-volunteers/jcr:content/mainparsys/headlineandimage/svpimage.resize.640.500.high.jpg/1783550360484.png 1x" media="(min-width: 320px)">
+                <img src="https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/xspacer.png.pagespeed.ic.lRMfmktUso.png" alt="Geometric shapes on a purple background">
+              </picture>
+            </div>
+            <div class="info-container left">
+              <div class="info">
+                <h2 class="heading">Together, we're ending cancer</h2>
+                <p class="description">From groundbreaking research to transformative patient care, supporters like you are helping advance bold ideas, breakthrough discoveries and hope for patients everywhere. Explore the campaign priorities shaping the future of cancer care.</p>
+                <a href="https://onlypossiblehere.mdanderson.org/priorities-for-support.html" class="cta" target="_blank" aria-label="Visit The Campaign to End Cancer website Opens a new window">Discover where you can make a difference <span class="mda-icon-linkout"><span class="visuallyhidden"> Opens a new window</span></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- icon trio -->
+      <section class="highlight trio" data-section="help-trio" data-intent="wayfinding" data-layout="three-column" data-items="3">
+        <div class="table table-3col">
+          <div class="cell-t cell-border">
+            <div class="module">
+              <div class="promo promo-simple promo-icon-orange promo-text-center">
+                <div class="promo-icon-header-wrapper">
+                  <div class="promo-icon icon-circle" aria-hidden="true">
+                    <span class="fa-stack fa-3x"><i class="fa mda-icon-tips mda-stack-1x mda-inverse"></i></span>
+                  </div>
+                  <div class="promo-header">
+                    <h3 class="title minion-heading heading-center">More Ways to Help</h3>
+                  </div>
+                </div>
+                <div class="promo-text">
+                  <div class="body promo-text-normal">
+                    <p><span class="nowrap">UT MD Anderson</span> depends on your generosity and time to change the lives of cancer patients. With so many opportunities to get involved, you can partner with us to play a vital role in our mission.</p>
+                  </div>
+                  <div class="cta-wrapper cta-right-arrow-wrapper">
+                    <a href="https://www.mdanderson.org/donors-volunteers/other-ways-to-help.html" class="cta cta-right-arrow" title=" Opens a new window">Learn how to get involved <i class="mdicon-arrow"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cell-t cell-border">
+            <div class="module">
+              <div class="promo promo-simple promo-icon-green promo-text-center">
+                <div class="promo-icon-header-wrapper">
+                  <div class="promo-icon icon-circle" aria-hidden="true">
+                    <span class="fa-stack fa-3x"><i class="fa mda-icon-corporate_engagements mda-stack-1x mda-inverse"></i></span>
+                  </div>
+                  <div class="promo-header">
+                    <h3 class="title minion-heading heading-center">Corporate Alliances</h3>
+                  </div>
+                </div>
+                <div class="promo-text">
+                  <div class="body promo-text-normal">
+                    <p>Partner with us to create meaningful campaigns that engage your customers and employees while helping end cancer.<br></p>
+                  </div>
+                  <div class="cta-wrapper cta-right-arrow-wrapper">
+                    <a href="https://www.mdanderson.org/donors-volunteers/corporate-alliances.html" class="cta cta-right-arrow" title=" Opens a new window">Partner for impact <i class="mdicon-arrow"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cell-t last cell-border">
+            <div class="module">
+              <div class="promo promo-simple promo-icon-lightblue promo-text-center">
+                <div class="promo-icon-header-wrapper">
+                  <div class="promo-icon icon-circle" aria-hidden="true">
+                    <span class="fa-stack fa-3x"><i class="fa mda-icon-flag mda-stack-1x mda-inverse"></i></span>
+                  </div>
+                  <div class="promo-header">
+                    <h3 class="title minion-heading heading-center">Attend an Event</h3>
+                  </div>
+                </div>
+                <div class="promo-text">
+                  <div class="body promo-text-normal">
+                    <p>Be part of a community united by purpose - gather, connect and make a difference at our events.</p>
+                  </div>
+                  <div class="cta-wrapper cta-right-arrow-wrapper">
+                    <a href="https://www.mdanderson.org/donors-volunteers/other-ways-to-help/attend-events.html" class="cta cta-right-arrow" title=" Opens a new window">Explore events <i class="mdicon-arrow"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!-- CHROME:ENDCANCER (verbatim from assets/chrome.html; appt strip slotted per live DOM) -->
+<div class="pre-footer" data-canon="chrome-endcancer">
+  <section class="appt-section bleed-full" data-canon="chrome-blue-strip" data-section="contact-strip" data-intent="conversion" data-layout="banner">
+    <div class="module">
+      <div class="appointment-bar banner">
+        <div class="appointment-bar-wrapper">
+          <div class="during-hours">
+            <span><span class="bold">We're here for you.</span> Call us at <span class="tel"><a href="tel:+18337801379">1-833-780-1379</a></span> or<br class="appointment-bar-cta-break"> <a href="/about-md-anderson/contact-us/askmdanderson/appointments.html">request an appointment online.</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="section"></div>
+  <div class="iparys_inherited">
+    <section class="highlight apply">
+      <div class="nested-section-title">
+        <h2 class="section-title text-center">Help #EndCancer</h2>
+      </div>
+      <div class="table table-3col">
+        <div class="cell-t cell-full-height">
+          <div class="module m-bleed">
+            <div class="promo promo-no-icon promo-background-red">
+              <div class="promo-icon-header-wrapper">
+                <div class="promo-header"><h3 class="title minion-heading heading-center">Give Now</h3></div>
+              </div>
+              <div class="promo-text">
+                <div class="body promo-text-normal">Your gift will help make a tremendous difference.</div>
+                <div class="cta-wrapper cta-block-wrapper">
+                  <a class="cta cta-block" href="https://gifts.mdanderson.org/Default.aspx?tsid=37435">Donate <span class="mda-icon-linkout"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell-t cell-full-height">
+          <div class="module m-bleed">
+            <div class="promo promo-no-icon promo-background-black">
+              <div class="promo-icon-header-wrapper">
+                <div class="promo-header"><h3 class="title minion-heading heading-center">Donate Blood</h3></div>
+              </div>
+              <div class="promo-text">
+                <div class="body promo-text-normal"><p>Our patients depend on blood and platelet donations.</p></div>
+                <div class="cta-wrapper cta-block-wrapper">
+                  <a class="cta cta-block" href="https://www.mdandersonbloodbank.org/">Make an appointment <span class="mda-icon-linkout"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell-t last cell-full-height">
+          <div class="module m-bleed">
+            <div class="promo promo-no-icon promo-background-blue">
+              <div class="promo-icon-header-wrapper">
+                <div class="promo-header"><h3 class="title minion-heading heading-center">Shop UT MD Anderson</h3></div>
+              </div>
+              <div class="promo-text">
+                <div class="body promo-text-normal"><p>Show your support for our mission through branded merchandise.</p></div>
+                <div class="cta-wrapper cta-block-wrapper">
+                  <a class="cta cta-block" href="https://shop.mdanderson.org">View products <span class="mda-icon-linkout"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+    <!-- /CHROME:ENDCANCER -->
+    <!-- CHROME:BOTTOM (verbatim from assets/chrome.html) -->
+<section class="global-footer bleed-full" data-canon="chrome-footer">
+  <footer>
+    <div class="subscribe-to" data-canon="chrome-newsletter">
+      <div class="col-single inner">
+        <div class="icon-circle">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa mda-icon-email mda-stack-1x"></i>
+          </span>
+        </div>
+        <div class="subscribeTitle">Subscribe to our Cancerwise newsletter</div>
+        <form id="29" action="#" onsubmit="return false">
+          <div class="fieldContainer">
+            <div id="tfa_23-D"><div class="inputWrapper"><input id="tfa_23" type="text" placeholder="First Name *"></div></div>
+            <div id="tfa_38-D"><div class="inputWrapper"><input id="tfa_38" type="text" placeholder="Last Name *"></div></div>
+            <div id="tfa_20-D"><div class="inputWrapper"><input id="tfa_20" type="text" placeholder="Email Address *"></div></div>
+          </div>
+          <div class="footer-cta-wrapper">
+            <div class="footer-cta"><input class="ftrSubGo" type="submit" value="Get started"></div>
+            <div class="footer-cta-mobile"><input class="ftrSubGo" type="submit" value="Get started"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div class="col2 mda-logo">
+        <a href="https://www.mdanderson.org/">
+          <img class="desktop" src="https://www.mdanderson.org/content/mda/en/jcr:content/footer/xdesktoplogo.resize.png.pagespeed.ic.wmDIh2S-LF.webp" alt="UT MD Anderson logo">
+          <img class="mobile" src="https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp" alt="UT MD Anderson logo">
+        </a>
+        <li class="at-sticky-promo-li">
+              <a class="at-sticky-promo-link-wrapper" href="https://onlypossiblehere.mdanderson.org"><div class="at-sticky-promo-top"><div class="at-promo-svg-wrapper"><svg viewBox="0 0 125 26" width="125" height="26" aria-hidden="true"><style>.st0-desktop { fill: #000; }</style></svg></div><span class="at-promo-arrow"><i class="fa-solid fa-angle-right"></i></span></div><div class="at-sticky-promo-bottom"><span class="at-promo-return-text">Explore what your support makes possible</span></div></a>
+        </li>
+      </div>
+      <div class="col1"></div>
+      <div class="col2">
+        <ul>
+          <li class="title">Explore<div class="toggle"></div></li>
+          <li><a href="https://www.mdanderson.org/patients-family.html">Patients &amp; Family</a></li>
+          <li><a href="https://www.mdanderson.org/prevention-screening.html">Prevention &amp; Screening</a></li>
+          <li><a href="https://www.mdanderson.org/donors-volunteers.html">Donors &amp; Volunteers</a></li>
+          <li><a href="https://www.mdanderson.org/for-physicians.html">For Physicians</a></li>
+          <li><a href="https://www.mdanderson.org/research.html">Research</a></li>
+          <li><a href="https://www.mdanderson.org/education-training.html">Education &amp; Training</a></li>
+          <li><a href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html">Clinical Trials</a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/contact-us/languages.html">Languages</a></li>
+        </ul>
+      </div>
+      <div class="col2">
+        <ul>
+          <li class="title">About<div class="toggle"></div></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson.html">About <span class="nowrap">UT MD Anderson</span></a></li>
+          <li><a href="https://jobs.mdanderson.org/">Careers<span class="mda-icon-linkout"></span></a></li>
+          <li><a href="https://www.mdanderson.org/cancerwise.html">Blog</a></li>
+          <li><a href="https://www.mdanderson.org/newsroom.html">Newsroom</a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html">Editorial Standards</a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/employee-resources.html">For Employees</a></li>
+          <li><a href="https://shop.mdanderson.org/">Merchandise<span class="mda-icon-linkout"></span></a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html">Title IX Reporting (Sexual Misconduct)</a></li>
+          <li><a href="https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html">Price Transparency</a></li>
+        </ul>
+      </div>
+      <div class="col2">
+        <ul>
+          <li class="title">Finding Your Way<div class="toggle"></div></li>
+          <li><a href="https://faculty.mdanderson.org/">Our Doctors</a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/our-locations.html">Locations</a></li>
+          <li><a href="https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html">Directions</a></li>
+          <li><a href="https://www.mdanderson.org/patients-family/html-sitemap.html">Sitemap</a></li>
+        </ul>
+        <ul id="a11y-block">
+          <li class="title">Digital Accessibility<div class="toggle"></div></li>
+          <li>
+            <a class="a11y-link" href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html">Accessibility Policy</a>
+            <a class="a11y-icon" href="https://www.levelaccess.com/MDAnderson"><img src="https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/eA_Icon_Black.svg" alt="MD Anderson works with Level Access to ensure our website is accessible and functional for all users. Free assistive technology is provided for people with physical disabilities. To learn more or to download the assistive technology tool, visit https://www.levelaccess.com/MDAnderson" width="80" height="30" style="margin-top:20px"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col3 last">
+        <ul id="get-in-touch">
+          <li class="title">Get in Touch<div class="toggle"></div></li>
+          <li class="footer-contact-item">
+            <a class="footerTel" href="tel:+18777901139">
+              <div class="icon-circle"><span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x"></i><i class="fa mda-icon-call-stroke mda-stack-1x"></i></span></div>
+              Call
+              <div class="footer-contact-bold">1-877-790-1139</div>
+            </a>
+          </li>
+          <li class="footer-contact-item onlyLabel">
+            <a id="patients_family_footer" href="https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html">
+              <div class="icon-circle"><span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x"></i><i class="fa mda-icon-knowledgecenter mda-stack-1x"></i></span></div>
+              Ask a question
+              <div class="footer-contact-bold"></div>
+            </a>
+          </li>
+        </ul>
+        <ul id="stay-connected">
+          <li class="title">Stay Connected<div class="toggle"></div></li>
+          <li class="stay-connected">
+            <div class="col-single inner">
+              <div class="social-links-wrapper">
+                <div class="social-links">
+                  <div class="social-links-carousel slick-initialized slick-slider">
+                    <button class="slick-prev" type="button">Previous</button>
+                    <div class="slick-list draggable">
+                      <div class="slick-track">
+                        <a class="box slick-slide slick-active" href="//facebook.com/MDAnderson"><i class="fa fa-facebook-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="//x.com/UTMDAnderson"><i class="fa fa-x-twitter-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="//youtube.com/mdandersonorg"><i class="fa fa-youtube-play-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="//instagram.com/mdandersoncancercenter"><i class="fa fa-instagram-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="//linkedin.com/company/mdandersoncancercenter"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                        <a class="box slick-slide" href="http://bsky.app/profile/mdanderson.bsky.social"><i class="fa fa-bluesky-square fa-2x"></i></a>
+                        <a class="box slick-slide" href="https://threads.com/@mdandersoncancercenter"><i class="fa fa-threads-square fa-2x"></i></a>
+                      </div>
+                    </div>
+                    <button class="slick-next" type="button">Next</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul id="podcast">
+          <li class="title">Cancerwise Podcast<div class="toggle"></div></li>
+          <li class="podcast">
+            <div class="col-single inner">
+              <div class="social-links-wrapper">
+                <div class="social-links">
+                  <div class="social-links-carousel slick-initialized slick-slider">
+                    <button class="slick-prev" type="button">Previous</button>
+                    <div class="slick-list draggable">
+                      <div class="slick-track">
+                        <a class="box slick-slide slick-active" href="https://podcasts.apple.com/us/podcast/cancerwise-podcast/id1751785346"><i class="fa fa-apple-podcast-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="https://open.spotify.com/show/28rgC5nO7OpLhnPlNylNem"><i class="fa fa-spotify-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="http://www.youtube.com/playlist?list=PLKscGuVrfI9LvQrf5At-R7TewdfY4OeOP"><i class="fa fa-youtube-play-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="http://www.pandora.com/podcast/cancerwise-podcast/PC:1001088873"><i class="fa fa-pandora-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="http://www.iheart.com/podcast/269-cancerwise-podcast-185103717/"><i class="fa fa-iheart-square fa-2x"></i></a>
+                        <a class="box slick-slide" href="https://support.doctorpodcasting.com/podcastfeed/335"><i class="fa fa-rss-feed-square fa-2x"></i></a>
+                      </div>
+                    </div>
+                    <button class="slick-next" type="button">Next</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-links sublink-container">
+      <div class="footer-sublinks">
+        <div class="sublinks-list-container">
+          <ul>
+            <li class="title"><div class="toggle"></div></li>
+            <li><a id="patients_family_footer_1" href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html">Website Privacy Policy</a></li>
+            <li><a id="patients_family_footer_2" href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html">Legal Statement &amp; Policies</a></li>
+            <li><a id="patients_family_footer_3" href="https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html">Reports to the State</a></li>
+            <li><a id="patients_family_footer_4" href="https://www3.mdanderson.org/emergencyalert/">Emergency Alert Information</a></li>
+            <li><a id="patients_family_footer_5" href="https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html">State of Texas Links</a></li>
+            <li><a id="patients_family_footer_6" href="https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html">Our Cancer Network</a></li>
+            <li><a id="patients_family_footer_7" href="https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html">Vendors &amp; Suppliers</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-footer-bar" data-canon="chrome-mission-band">
+      <div class="footer-bar-logo">
+        <a href="/"><img class="logo" src="https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp" alt="UT MD Anderson logo"></a>
+      </div>
+      <div class="footer-bar-text">
+        <div class="missionstatement">The mission of The University of Texas MD Anderson Cancer Center is to eliminate cancer in Texas, the nation, and the world through outstanding programs that integrate patient care, research and prevention, and through education for undergraduate and graduate students, trainees, professionals, employees and the public.</div>
+        <p class="copyright">&copy; 2026 The University of Texas <span class="nowrap">MD Anderson</span> Cancer Center. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</section>
+    <!-- /CHROME:BOTTOM -->
+  </div>
+</main>
+</body>
+</html>

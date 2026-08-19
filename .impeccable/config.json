@@ -1,0 +1,198 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "open sans",
+        "createdAt": "2026-08-19T17:00:49.104Z",
+        "reason": "stardust:replica same-design migration — @font-face lifted verbatim from mdanderson.org's own clientlib CSS; font choice belongs to the source site, any substitution is a fidelity defect (inconsistency register is empty)"
+      },
+      {
+        "rule": "overused-font",
+        "value": "arial",
+        "createdAt": "2026-08-19T18:09:16.462Z",
+        "reason": "stardust:replica — Arial is the source site's own lifted fallback stack (mdanderson.org clientlib CSS); substitution would be a fidelity defect"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/assets/chrome.css"
+        ],
+        "createdAt": "2026-08-19T18:09:16.490Z",
+        "reason": "stardust:replica zero-delta migration — every literal color is capture-lifted from mdanderson.org's own CSS; palette normalization is forbidden by the empty inconsistency register"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/index-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:09:16.517Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/cancer-types-breast-cancer-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.561Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.590Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/patients-family-diagnosis-treatment-clinical-trials-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.616Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/prevention-screening-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.642Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/research-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.668Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/about-md-anderson-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.695Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/about-md-anderson-our-locations-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.722Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/cancerwise-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.749Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.775Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/donors-volunteers-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.801Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#3f3d3d",
+        "createdAt": "2026-08-19T18:36:08.145Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#529144",
+        "createdAt": "2026-08-19T18:36:08.177Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#3a3a3a",
+        "createdAt": "2026-08-19T18:36:08.206Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#c50026",
+        "createdAt": "2026-08-19T18:36:08.233Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#605d5d",
+        "createdAt": "2026-08-19T18:36:08.261Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#e96613",
+        "createdAt": "2026-08-19T18:36:08.287Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#23b8f1",
+        "createdAt": "2026-08-19T18:36:08.313Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#478339",
+        "createdAt": "2026-08-19T18:36:08.339Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#3361ad",
+        "createdAt": "2026-08-19T18:36:08.368Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#2b4fa2",
+        "createdAt": "2026-08-19T18:36:08.394Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#222121",
+        "createdAt": "2026-08-19T18:36:08.421Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#d0d0ce",
+        "createdAt": "2026-08-19T18:36:08.448Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#f2f3f4",
+        "createdAt": "2026-08-19T18:36:08.475Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#783491",
+        "createdAt": "2026-08-19T18:36:08.501Z"
+      }
+    ]
+  }
+}

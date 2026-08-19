@@ -1,0 +1,66 @@
+{
+  "pageType": "landing",
+  "archetype": "prevention-screening-html",
+  "breakpoints": {
+    "1440": {
+      "iterations": 3,
+      "result": {
+        "structuralRed": 2,
+        "visualFlags": "2 STRETCHED IMAGE advisories (footer logos) — chrome-canonical, identical rendering class as pathfinder's passed gate",
+        "pixelPct": 2.38,
+        "heightDelta": -5,
+        "pass": true
+      },
+      "justified": [
+        { "probe": "content-diff", "flag": "MISSING/EXTRA cta '1-8xx-xxx-xxxx' + 'Call 1-8xx-xxx-xxxx'", "why": "call-tracking phone rotates per live render (observed 1-877-365-5016 / 1-844-518-3165 / 1-855-526-9738 / 1-844-296-9573 across runs); build carries the page-JSON captured value 1-844-429-6441 — pre-justified in brief" },
+        { "probe": "content-diff", "flag": "MISSING BODY 'var utag_data=...'", "why": "live-injected inline analytics script text inside main; replica carries no analytics by contract" },
+        { "probe": "visual-diff", "flag": "STRETCHED IMAGE xdesktoplogo/xmobilelogo", "why": "chrome footer logos; same element-vs-natural measurement artifact flagged and justified on the pathfinder index gate" },
+        { "probe": "pixel-compare", "flag": "iter4 run showed 32%/24% top bands", "why": "transient network flake: hero background 404'd/timed out in one stitch (gray placeholder); immediate re-stitch with no code change returned 1.6%/1.5% — not a defect" }
+      ],
+      "residuals": [
+        { "band": "y 3000-3500", "pct": 4.2, "cause": "newsletter + footer link-column chrome: sub-pixel line metrics and rotating footer call-tracking number (live re-renders a different tel each run)", "flaggedFor": "delivery" },
+        { "band": "y 3500-3994", "pct": 7.2, "cause": "chrome footer (mission band offsets accumulate the +5px doc-height delta that lives in shared pre-footer/footer chrome, not in page content — page content sections match capture within 1px)", "flaggedFor": "delivery" }
+      ],
+      "captureState": [
+        { "what": "hero composited at ~70% luminance on live (measured uniform 0.70 factor) — replicated via source rule .mda-media-brightness.medium-overlay::before rgba(0,0,0,.3)", "where": "hero .carousel-image" },
+        { "what": "chat widget captured mid-page on live (scroll-dependent fixed offset); replicated pixels-only via pseudo-elements at fixed bottom-right", "where": ".chat-widget-replica" },
+        { "what": "JS-injected CTA drawer replicated invisible (opacity 0) at 1440 for content parity; a.scrollToTop and a.scroll-down (opacity 0) server-rendered scroll affordances replicated from live HTML + source CSS", "where": ".mda-drawer-replica / main start / hero" },
+        { "what": "live empty h2.heading (height 0) inside the orange Lyda Hill band reproduced as-is for granularity parity", "where": ".headline-with-image .info h2.heading" }
+      ]
+    },
+    "360": {
+      "iterations": 3,
+      "result": {
+        "structuralRed": 2,
+        "visualFlags": "2 STRETCHED IMAGE advisories (mobile footer logo) — chrome-canonical, same as pathfinder",
+        "pixelPct": 7.3,
+        "heightDelta": 1,
+        "pass": true
+      },
+      "justified": [
+        { "probe": "content-diff", "flag": "MISSING/EXTRA cta phone strings", "why": "call-tracking rotation (live rendered 1-888-332-0460 / 1-855-984-3746 / 1-866-921-1857 / 1-855-773-6748 across runs); build carries captured 1-844-429-6441" },
+        { "probe": "content-diff", "flag": "MISSING BODY 'var utag_data=...'", "why": "live inline analytics script text; no-analytics replica" }
+      ],
+      "residuals": [
+        { "band": "y 3500-4000", "pct": 26.4, "cause": "mobile footer accordion chrome: live collapsed-row styling (full-bleed rows, far-right toggle glyphs, 'MORE' sublinks label absent from chrome fragment) and 'Only Possible Here' promo-card offset differ from chrome.css mobile approximation — chrome-level, same residual class the pathfinder ledgered; not modifiable per-page without forking shared chrome", "flaggedFor": "delivery" },
+        { "band": "y 4000-4154", "pct": 10.8, "cause": "page-bottom overlap of drawer bar + chat bubble at slightly different fixed offsets vs live final stitch chunk, plus mission-band chrome", "flaggedFor": "delivery" },
+        { "band": "y 3000-3500", "pct": 8.9, "cause": "newsletter form + footer accordion top (chrome) and chunk-boundary chat-bubble offsets", "flaggedFor": "delivery" },
+        { "band": "y 1500-2000 / 2500-3000", "pct": 6.7, "cause": "fixed chat bubble and drawer reveal land at scroll-dependent chunk offsets in the live stitch; static replica offsets differ by a few px per chunk", "flaggedFor": "user" }
+      ],
+      "captureState": [
+        { "what": "mobile CTA drawer bar hidden at scrollY 0 and revealed on scroll on live — replicated with the brief's single allowed JS exception (class toggle at scrollY>50); eliminated the pathfinder's 19% y500-1000 residual on this page (band now 1.7%)", "where": ".mda-drawer-replica.scrolled" },
+        { "what": "mobile chat bubble measured from live stitch: 44px circle #2B3990 at right 17 / bottom 103, dot glyphs approximated", "where": ".chat-widget-replica at <=767px" },
+        { "what": "desktop utility nav leaks over the mobile header via a chrome.css specificity gap (.mda-nav-utility.desktop.flex-row beats the media-query hide) — patched page-locally; flag to chrome owner for chrome.css", "where": "page <style> mobile block" },
+        { "what": "live mobile intro paragraph uses non-breaking spaces in 'UT MD Anderson' (single plain text node, forced early wrap) — replicated with &nbsp;, not a span, for granularity parity", "where": "p.headline-content-mobile" },
+        { "what": "blue-strip links underline (live .appointment-bar a) restored page-locally: chrome base rule body.basepage a{text-decoration:none} outranks chrome's .appointment-bar a underline — flag to chrome owner", "where": "page <style>" }
+      ]
+    }
+  },
+  "portations": [],
+  "notes": [
+    "One JS exception used per brief: 3-line scroll listener toggling .scrolled on the capture-state drawer replica (live chrome morphs with scroll; hidden-at-top state verified against live 360 stitch).",
+    "Icon codepoints lifted from source CSS: mda-icon-screenings \\e647 (purple card), mda-icon-powerinnumbers \\e61a (red card), mdicon-linklist circle-arrow \\e601.",
+    "Orange split band lifted from source CSS .headline-with-image (table-cell halves, img absolute -9999px auto-centered, info padding 0 20%, #E96613; mobile: image hidden, 45px/25px/19px ramp).",
+    "Duo promo CTA wrappers height-clamped (23px desktop / 21px mobile) to the captured line boxes — MDIcons glyph otherwise inflates the line box 2.4px, which was the only page-content height delta."
+  ]
+}

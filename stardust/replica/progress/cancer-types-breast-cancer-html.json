@@ -1,0 +1,52 @@
+{
+  "pageType": "program",
+  "archetype": "cancer-types-breast-cancer-html",
+  "breakpoints": {
+    "1440": {
+      "iterations": 3,
+      "result": { "structuralRed": 2, "visualFlags": "2 STRETCHED IMAGE advisories (chrome footer logos) — identical ratios on live source side (chrome-inherited, same as index ledger)", "pixelPct": 2.95, "heightDelta": -1, "pass": true },
+      "justified": [
+        { "probe": "content-diff", "flag": "MISSING cta '1-8xx-xxx-xxxx' + 'Call 1-8xx-xxx-xxxx' / EXTRA '1-866-378-5346' + 'Call 1-877-790-1139'", "why": "call-tracking phone rotates per live render (1-855-720-1610 / 1-855-482-1338 / 1-866-988-5206 across runs); build uses page-JSON captured value — pre-justified in brief" },
+        { "probe": "content-diff", "flag": "EXTRA cta 'More'/'Less' x10", "why": "live mobile JS injects More/Less truncation toggles into the 5 rte-containers at <=767px only; the static build carries them in one DOM (display:none at 1440, required for 360 parity) — same class as index's slick-clone justification" },
+        { "probe": "content-diff", "flag": "MISSING BODY 'var utag_data=...' x2", "why": "live inline analytics script text inside main; replica is no-JS by contract — pre-justified in brief" },
+        { "probe": "content-diff", "flag": "MISSING BODY '|'", "why": "byline pipe span: live extractor isolates it as a node, build merges it into the inline byline run — text is present and pixel-identical; segmentation artifact" },
+        { "probe": "visual-diff", "flag": "STRETCHED IMAGE xdesktoplogo/xmobilelogo", "why": "chrome footer; live source side flags identical values (parity, not a defect)" }
+      ],
+      "residuals": [
+        { "band": "y 6500–7000", "pct": 6.6, "cause": "treatment link-list arrow glyph weight + featured-articles image jpeg re-encode differences", "flaggedFor": "delivery" },
+        { "band": "y 8500–9754", "pct": 4.8, "cause": "chrome pre-footer/footer inherited (+6px total vs live, EndCancer card antialiasing) — shared chrome, matches index residuals", "flaggedFor": "delivery" }
+      ],
+      "captureState": [
+        { "what": "closed accordions ('cells', 'spread') recreated closed with full hidden panel DOM incl. JS-injected 'Schedule a Screening' promo + its inline <style> text", "where": "section[data-section=classification]" },
+        { "what": "hidden share modal (#myModal), after-hours appt strip variant, sticky SVP appt bar, jump-menu label, sidebar 'Back' link, 6 hidden featured-article cards behind 'View more', 'View less' button — all live hidden DOM counted by content-diff, replicated hidden", "where": "throughout main" },
+        { "what": "chat-widget + scrollToTop replicas fixed-position as on live desktop (scroll-dependent offsets pre-justified)", "where": "main.mda-content top" }
+      ]
+    },
+    "360": {
+      "iterations": 3,
+      "result": { "structuralRed": 2, "visualFlags": "2 STRETCHED IMAGE advisories (chrome mobile footer logo) — chrome-inherited, same as index", "pixelPct": 8.91, "heightDelta": 1, "pass": true },
+      "justified": [
+        { "probe": "content-diff", "flag": "MISSING cta '1-844-497-3352' + 'Call ...' / EXTRA '1-866-378-5346' + 'Call 1-877-790-1139'", "why": "rotating call-tracking numbers — pre-justified in brief" },
+        { "probe": "content-diff", "flag": "EXTRA cta 'Back' + 5 sidebar mini-TOC links; EXTRA body 'Learn more about Breast Cancer'", "why": "live mobile JS relocates #sidebar-nav (mini-TOC + jump label + Back) OUT of main into the nav overlay; a static single-DOM recreation keeps them in main (display:none). Visible-state parity is exact — a visible jump-menu replica is rendered outside main to match live pixels" },
+        { "probe": "content-diff", "flag": "MISSING BODY utag scripts x2, '|'", "why": "same as 1440" },
+        { "probe": "pixel", "flag": "band y500–1000 21.1%", "why": "scroll-dependent live widgets in stitched capture: live chat bubble appears mid-chunk and live sticky appt bar animates in only after first scroll (h0 in chunk 1, mine static); byline wrap differs by one word — pre-justified scroll-dependent class" }
+      ],
+      "residuals": [
+        { "band": "y 11000–11500", "pct": 23.1, "cause": "chrome mobile footer: live collapses link columns behind MORE/+ toggles and hides the Only-Possible-Here card; shared chrome.css renders them expanded — chrome-inherited (index 360 recorded 10.79% overall, pass:false, same zone)", "flaggedFor": "delivery" },
+        { "band": "y 1500–2000", "pct": 14.1, "cause": "US News badge band: live sticky appt-bar overlays the badge in that live chunk; plus 496px-src hero upscale antialiasing", "flaggedFor": "delivery" }
+      ],
+      "captureState": [
+        { "what": "live mobile JS truncates the 5 rte-containers behind More/Less toggles (children beyond split get .extra-text=display:none) — replicated statically with the same split points (3/5/9/7/3) and visible 'More' buttons", "where": "about / both hidden panels / more-about / why-choose" },
+        { "what": "360 capture map (docHeight 14334) predates the live mobile hydration (collapse + sidebar relocation + sticky bar); gate stitch shows the hydrated state (docHeight 11676) — authored to the hydrated live state per gate instruments", "where": "whole page" },
+        { "what": "sticky SVP appointment bar (Call / Request appointment / MyChart) pinned at viewport bottom as last child of main, position:sticky; body overflow-x switched to clip at mobile because chrome.css's overflow-x:hidden makes body a scroll container and breaks sticky", "where": "main.mda-content end" }
+      ]
+    }
+  },
+  "portations": [],
+  "notes": [
+    "0 unjustified structural reds at either breakpoint: the only reds are the pre-justified rotating call-tracking numbers (label+href change every live render).",
+    "Hidden-DOM parity was the bulk of the work: live serves the full editorial content of both closed accordions plus a JS-injected screening promo, share modal, after-hours strip, sticky bar, drawer 'More' tab and 6 extra featured-article cards — all counted by the content probe and now replicated verbatim (lifted from live DOM, since the capture JSON only recorded visible text).",
+    "Wrap-point compensations (why-choose h2 max-width 660px, podcast header width 190px, blue duo h3 max-width 260px, mobile quote padding) offset a small font-metric drift between the self-hosted Minion and live's, matching live line breaks exactly.",
+    "chrome.css specificity fixes applied page-locally (not to shared chrome.css): .mda-nav-utility.desktop.flex-row hidden at mobile (chrome's hide rule loses to its own flex rule), .appointment-bar links underlined (chrome rule loses to body.basepage a)."
+  ]
+}

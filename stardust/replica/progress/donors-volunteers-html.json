@@ -1,0 +1,54 @@
+{
+  "pageType": "form",
+  "archetype": "donors-volunteers-html",
+  "breakpoints": {
+    "1440": {
+      "iterations": 2,
+      "result": { "structuralRed": 0, "visualFlags": "2 STRETCHED IMAGE advisories (footer logos) — chrome-canonical, identical on live source side", "pixelPct": 1.58, "heightDelta": -2, "pass": true },
+      "justified": [
+        { "probe": "content-diff", "flag": "MISSING CTA '1-855-617-1015' + 'Call 1-855-617-1015' (🔴 x2) / EXTRA '1-833-780-1379', 'Call 1-877-790-1139'", "why": "call-tracking phone rotates per live render (1-855-220-4543 / 1-855-617-1015 / 1-855-668-8099 across runs); build carries the layout-map-captured 1-833-780-1379 (blue strip) and chrome-canonical 1-877-790-1139 (footer) — pre-justified in brief" },
+        { "probe": "content-diff", "flag": "EXTRA cta 'Give Now' (iter2 only)", "why": "live hero CTA matched in iter1 with identical markup; iter2 live render dropped it from the extractor (carousel hydration timing) — live nondeterminism, not a build change" },
+        { "probe": "content-diff", "flag": "MISSING BODY 'var utag_data=...'", "why": "live-injected inline analytics script text inside main; replica is no-JS by contract — pre-justified" },
+        { "probe": "visual-diff", "flag": "STRETCHED IMAGE xdesktoplogo/xmobilelogo", "why": "live renders the same element-vs-natural ratios (source side identical) — chrome-canonical measurement artifact" }
+      ],
+      "residuals": [
+        { "band": "y 5500-5987", "pct": 5.4, "cause": "chrome footer zone: rotating footer phone string + 'Top'/chat fixed widgets at scroll-dependent chunk offsets; chrome-shared markup identical to pathfinder's passed gate", "flaggedFor": "delivery" },
+        { "band": "y 5000-5500", "pct": 2.5, "cause": "EndCancer trio offset ±2px (chrome-shared) plus chat bubble chunk-boundary ghosts", "flaggedFor": "delivery" }
+      ],
+      "captureState": [
+        { "what": "hero carousel recreated static at t=0 (single slide, medium-overlay rgba(0,0,0,.3)); a.scroll-down kept at opacity 0 as live", "where": "section[data-section=hero]" },
+        { "what": "video feature recreated as captured poster + #basic-video-container overlay (rgba(0,0,0,.5) + bottom gradient) + play affordance; no player", "where": "section[data-section=innovation] .media-player" },
+        { "what": "empty div.mda-hide-sm > div.cta (20px) after the video module replicated as captured", "where": "innovation right column" },
+        { "what": "chat widget + 'Top' + JS CTA drawer replicated as fixed capture-state widgets (drawer invisible at 1440, drawer-title Univers Bold per live 1440 render)", "where": "main.mda-content before #skip" }
+      ]
+    },
+    "360": {
+      "iterations": 3,
+      "result": { "structuralRed": 0, "visualFlags": "2 STRETCHED IMAGE advisories (mobile footer logo) — chrome-canonical, identical class as pathfinder", "pixelPct": 8.85, "heightDelta": 0, "pass": true },
+      "justified": [
+        { "probe": "content-diff", "flag": "MISSING CTA '1-855-443-1022' / '1-855-668-8099' + 'Call …' (🔴 x2) / EXTRA '1-833-780-1379', 'Call 1-877-790-1139'", "why": "call-tracking rotation per live render; build carries captured values — pre-justified" },
+        { "probe": "content-diff", "flag": "MISSING BODY 'var utag_data=...'", "why": "live inline analytics script; no-JS replica" },
+        { "probe": "pixel-compare", "flag": "height delta 75px at iters 1-2", "why": "live mobile reserves 75px in-flow at page end for the fixed CTA drawer bar (main 6989 vs children sum 6914 on live); replicated with main padding-bottom:75px at <=767px — delta now 0" }
+      ],
+      "residuals": [
+        { "band": "y 6500-7000", "pct": 27.0, "cause": "mobile footer chrome: live-now drift vs chrome capture ('Only Possible Here' promo card present in chrome/capture but absent in current live render; live full-bleed accordion row styling and 'MORE' sublinks title live-only), plus oversized mobile logo overlay zone — chrome-shared, same residual class as pathfinder ledger", "flaggedFor": "delivery" },
+        { "band": "y 5000-5500", "pct": 20.5, "cause": "blue strip rotating phone string + fixed drawer bar / 'Top' / chat bubble landing at different scroll-dependent chunk offsets in live vs static replica; EndCancer trio -10px (chrome promo p-margin, chrome-shared)", "flaggedFor": "delivery" },
+        { "band": "y 3000-3500", "pct": 12.0, "cause": "stories-section few-px ghosting (cumulative +4..7px rounding vs live) and drawer-bar chunk-boundary overlay; stories image position matches live scrolled state", "flaggedFor": "delivery" },
+        { "band": "overall", "pct": 8.85, "cause": "dominated by scroll-dependent fixed widgets and chrome footer drift; page-owned bands are all <= 8.7%", "flaggedFor": "user" }
+      ],
+      "captureState": [
+        { "what": "live mobile JS relocates the stories standalone image inline after the h2 on scroll-settle; the 360 layout map holds the pre-relocation t=0 state (image full-bleed after text). Both stitch instruments deterministically see the relocated state, so it is recreated via mobile-only CSS positioning (DOM unchanged, matches map at 1440)", "where": "section[data-section=stories] @<=767px" },
+        { "what": "mobile fixed CTA drawer bar visible (Call / Request appointment / MyChart) + 75px in-flow reservation at main end, per live scrolled render", "where": ".mda-drawer-replica / main.mda-content padding-bottom" },
+        { "what": "desktop drop-cap intro paragraph (p.headline-content.mda-hide-md) and mobile duplicate (p.headline-content-mobile.mda-show-md) both kept in DOM as live", "where": "section[data-section=intro]" },
+        { "what": "link-list thumbnails + link-body copy kept in DOM, hidden at 360 via .mda-hide-sm as live", "where": "gifts-at-work link list" }
+      ]
+    }
+  },
+  "portations": [],
+  "notes": [
+    "Chrome fragments pasted verbatim from assets/chrome.html; the blue 'We're here for you' strip slotted INSIDE div.pre-footer before div.section per this page's live DOM (main > #skip > div.pre-footer > section.appt-section).",
+    "Page-local additions to shared vocabulary: .promo-background-green (#478339, absent from chrome.css), mda-icons codepoints donate/raise_money/gifts/tips/corporate_engagements/flag, inline icon line-height guard (span.mda-icon-linkout, trio arrows) so glyph metrics don't inflate live line boxes.",
+    "Design-hook ignore-values persisted for captured live palette colors (#3f3d3d, #529144, #3a3a3a, #c50026, #605d5d, #e96613, #23b8f1, #478339, #3361ad, #2b4fa2, #222121, #d0d0ce, #f2f3f4, #783491) — recreation contract forbids palette drift toward DESIGN.json.",
+    "All media referenced via live currentSrc URLs (query strings intact); campaign band uses live <picture> sources incl. spacer img fallback; hero bg swaps to imagesvp.resize.360.290 at <=767px as live."
+  ]
+}

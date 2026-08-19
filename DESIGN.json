@@ -1,0 +1,62 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "mode": "bounded-single",
+    "writtenAt": "2026-08-19T19:00:00Z",
+    "synthesizedFrom": [
+      "stardust/current/pages/index.json",
+      "stardust/replica/capture/index/1440.json",
+      "stardust/replica/capture/css/139355bb13.css"
+    ]
+  },
+  "colors": {
+    "primary": "#DA291C",
+    "primaryAlt": "#D82C27",
+    "black": "#000000",
+    "white": "#FFFFFF",
+    "surface": "#F2F3F4",
+    "surfaceAlt": "#F7F7F7",
+    "grayLight": "#D0D0CE",
+    "grayDark": "#605D5D",
+    "purple": "#783491",
+    "purpleDark": "#614B79",
+    "blueLight": "#23B8F1",
+    "blue": "#3361AD"
+  },
+  "typography": {
+    "body": "\"Minion Regular\", \"Minion W01 Cap Regular\", Arial, Georgia",
+    "bodySemibold": "\"Minion Semi Bold\", \"Minion W01 SmBd Cap Regular\", Arial, Georgia",
+    "sans": "\"Univers LT W01_55 Roman\", Arial",
+    "sansLight": "\"Univers LT W01_45 Light\", Arial",
+    "sansBold": "\"Univers LT W01_65 Bold\", Arial",
+    "sansBoldCn": "UniversLTW01-67BoldCn, Arial",
+    "icons": "MDIcons",
+    "htmlFontSize": "16px",
+    "ramp": {
+      "display": { "family": "body", "size": "36px", "lineHeight": "46.8px", "weight": 400 },
+      "h3-card": { "family": "bodySemibold", "size": "24px", "lineHeight": "31.2px", "weight": 700 },
+      "lede": { "family": "body", "size": "21px", "lineHeight": "27.3px", "weight": 400 },
+      "bodyText": { "family": "body", "size": "18px", "lineHeight": "23.4px", "weight": 400 },
+      "nav": { "family": "sans", "size": "16px", "lineHeight": "20.8px", "weight": 400 },
+      "navBoldCn": { "family": "sansBoldCn", "size": "16px", "lineHeight": "20.8px", "weight": 400 },
+      "label": { "family": "sans", "size": "12px", "lineHeight": "15.6px", "weight": 400 },
+      "eyebrow": { "family": "sans", "size": "14px", "lineHeight": "18.2px", "weight": 400 },
+      "button": { "family": "sans", "size": "18px", "lineHeight": "23.4px", "weight": 400 }
+    }
+  },
+  "rounded": "0px",
+  "spacing": { "container": "1440px", "note": "full-bleed bands with inner max-width 1440px; content wells at 87%/85% of container" },
+  "components": ["mega-nav header", "utility bar", "hero banner (full-bleed image + overlay copy)", "blue contact strip", "alert band", "icon card trio", "highlights carousel", "duo promo cards", "#EndCancer CTA trio", "newsletter bar", "mega footer"],
+  "extensions": {
+    "fonts": {
+      "licensing": "Minion (Adobe) and Univers LT (Monotype/Linotype) are licensed commercial kits served via fonts.com-style GUID woffs. Self-hosted ONLY for local gate measurement; delivery must either use MD Anderson's own licensed kit or metric substitutes. Brand family names kept first in every font stack.",
+      "files": "stardust/current/assets/fonts/"
+    },
+    "voice": {
+      "tagline": "Making Cancer History",
+      "campaign": "Help #EndCancer",
+      "heroClaim": "#1 in the nation for cancer care"
+    },
+    "systemComponents": ["header (utility bar + logo + primary nav + mega-menu)", "blue we're-here-for-you strip (call-tracking phone rotates per render)", "Help #EndCancer trio", "newsletter signup bar", "footer (5-column + mission band)"]
+  }
+}

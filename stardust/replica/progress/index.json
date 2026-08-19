@@ -1,0 +1,66 @@
+{
+  "pageType": "landing",
+  "archetype": "index",
+  "breakpoints": {
+    "1440": {
+      "iterations": 3,
+      "result": {
+        "structuralRed": 2,
+        "visualFlags": "2 STRETCHED IMAGE advisories (footer logos) — identical values on the live source side (parity, not a defect)",
+        "pixelPct": 3.58,
+        "heightDelta": -8,
+        "pass": true
+      },
+      "justified": [
+        { "probe": "content-diff", "flag": "MISSING/EXTRA cta '1-8xx-xxx-xxxx' + 'Call 1-8xx-xxx-xxxx'", "why": "call-tracking phone rotates per live render (1-877-593-2838 / 1-866-228-3848 / 1-844-444-1890 across runs); build uses page-JSON captured value 1-877-790-1139 — pre-justified in brief" },
+        { "probe": "content-diff", "flag": "MISSING BODY 'var utag_data=...'", "why": "live-injected inline analytics script text inside main; replica is no-JS by contract" },
+        { "probe": "content-diff", "flag": "EXTRA body '15'", "why": "award badge count-up varies per live render (live stitched mid-animation as '37'); page JSON captured '15' — pre-justified" },
+        { "probe": "content-diff", "flag": "EXTRA body: 4 carousel blurbs + dots '3'-'8'", "why": "mobile-only slick clone slides and 8-dot rail required for 360 DOM parity; hidden at 1440 via CSS but extractor counts hidden DOM. Live re-inits slick per breakpoint (real DOM differs); a single static file cannot do both" },
+        { "probe": "visual-diff", "flag": "STRETCHED IMAGE xdesktoplogo/xmobilelogo", "why": "live renders the same element-vs-natural ratios (source side flags identical) — padding-in-element measurement artifact" }
+      ],
+      "residuals": [
+        { "band": "y 2500-3000", "pct": 2.0, "cause": "video feature auto-plays on live; stitched frame is zoomed vs captured poster (scrim of rgba(0,0,0,.6) replicated from measured 0.40 luminance factor)", "flaggedFor": "user" },
+        { "band": "y 5500-5805", "pct": 8.8, "cause": "live 'Top' button and chat bubble animate/fade per scroll position; static replicas sit at fixed offsets; plus footer phone-number strings differ (call tracking)", "flaggedFor": "user" }
+      ],
+      "captureState": [
+        { "what": "chat widget (blue bubble + 'Chat with us.' pill) replicated pixels-only via pseudo-elements; live text is extractor-invisible", "where": "fixed bottom-right, .chat-widget-replica" },
+        { "what": "JS-injected CTA drawer ('More', 'Let's get started.', Call / Request appointment / MyChart) replicated invisible (opacity 0) at 1440 for content parity", "where": ".mda-drawer-replica before div#skip" },
+        { "what": "server-rendered scroll affordances a.scrollToTop ('Top') and a.scroll-down ('Scroll Ahead', opacity 0) replicated from live HTML + source CSS", "where": "main start / hero" },
+        { "what": "static inputs replicate live fake-search wells and newsletter form; no JS anywhere", "where": "icon wells, subscribe-to" }
+      ]
+    },
+    "360": {
+      "iterations": 3,
+      "result": {
+        "structuralRed": 2,
+        "visualFlags": "2 STRETCHED IMAGE advisories (mobile footer logo) identical on live source side; FLUSH-LEFT clone slides at x=-575/-271 match the captured 360 slick-track offsets exactly (parity)",
+        "pixelPct": 10.79,
+        "heightDelta": -4,
+        "pass": false
+      },
+      "justified": [
+        { "probe": "content-diff", "flag": "MISSING/EXTRA cta phone strings", "why": "call-tracking rotation (live rendered 1-833-692-0515 then 1-877-601-7023 across runs); build carries captured 1-877-790-1139" },
+        { "probe": "content-diff", "flag": "MISSING BODY 'var utag_data=...' / '7'; EXTRA '15', 'Previous', 'Next'", "why": "analytics script (no-JS replica), badge count-up nondeterminism, slick arrow buttons that live's mobile init removes at t=0 but are required for 1440 content parity" }
+      ],
+      "residuals": [
+        { "band": "y 500-1000", "pct": 19.1, "cause": "live's fixed bottom CTA drawer bar slides in after a scroll threshold, so early live stitch chunks lack it while the static replica shows it in every chunk; plus rotating phone string in blue strip", "flaggedFor": "delivery" },
+        { "band": "y 2500-3000", "pct": 18.5, "cause": "video feature playing on live (zoomed frame vs captured poster)", "flaggedFor": "user" },
+        { "band": "y 6000-6410", "pct": 35.2, "cause": "live-now mobile footer differs from the 360 capture: 'Only Possible Here' promo card present in capture map (y6069) but absent in current live render; oversized mobile logo overflow zone and chat/drawer overlays land at different chunk offsets", "flaggedFor": "delivery" },
+        { "band": "overall", "pct": 10.79, "cause": "0.79pt over the 10% bar after 3 iterations; dominated by the three nondeterministic bands above", "flaggedFor": "delivery" }
+      ],
+      "captureState": [
+        { "what": "mobile fixed CTA drawer bar (Call / Request appointment / MyChart) replicated visible per live mobile render; collapsed panel strings kept in DOM (display:none) for content parity", "where": ".mda-drawer-replica .drawer-bar" },
+        { "what": "footer accordions collapsed (height 40, overflow hidden) as captured; toggle '+' glyph approximated (live glyph unverifiable from capture)", "where": ".footer-links uls at <=767px" },
+        { "what": "sublinks accordion li.title shipped empty: its text is absent from both capture maps; live mobile stitch shows 'MORE' — flagged for a follow-up fill-in (would be iteration 4)", "where": ".footer-sublinks li.title" }
+      ]
+    }
+  },
+  "portations": [],
+  "notes": [
+    "PATHFINDER deliverables: assets/chrome.css (with :root token contract), assets/chrome.html (CHROME:TOP / CHROME:ENDCANCER / CHROME:BOTTOM), index-proposed.html.",
+    "Chrome placement verified against live DOM: header + red nav sit OUTSIDE main; the Help #EndCancer trio (div.pre-footer) AND the newsletter+footer (section.global-footer) sit INSIDE main.mda-content > div#skip on every captured page, so both bottom fragments must be pasted inside each page's div#skip (chrome.html top comment instructs page agents).",
+    "Blue 'We're here for you' strip markup is per-page (slot varies); its styles live in chrome.css.",
+    "index-proposed.html chrome fragments are verbatim copies of chrome.html (plus the badge data-URI patch in page content).",
+    "Design-hook color findings on chrome.css/index-proposed.html are fidelity-lifted literals from the live-site capture (replica contract forbids palette normalization); left un-suppressed deliberately."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "pageType": "program",
+  "archetype": "patients-family-diagnosis-treatment-clinical-trials-html",
+  "breakpoints": {
+    "1440": {
+      "iterations": 3,
+      "result": { "structuralRed": 0, "visualFlags": "3 advisory, all justified", "pixelPct": 2.55, "heightDelta": 7, "pass": true },
+      "justified": [
+        { "probe": "content-diff", "flag": "MISSING CTA 'Call 1-8xx-…' / EXTRA 'Call 1-877-790-1139'", "why": "call-tracking phone rotates per live render (observed 466-1068, 636-1043, 591-0555, 513-2603 across runs); build uses the chrome-canonical number — pre-justified in brief" },
+        { "probe": "content-diff", "flag": "MISSING BODY 'var utag_data=…'", "why": "live inline analytics script text inside main — pre-justified in brief" },
+        { "probe": "visual-diff", "flag": "CONTENT GAP source 27 headings vs build 21", "why": "live keeps 6 JS-hidden 'In the News' cards (data-itemstoshow=2) in DOM; content-diff shows text parity — hidden-DOM-only delta" },
+        { "probe": "visual-diff", "flag": "STRETCHED IMAGE footer logos (x2)", "why": "chrome-canonical footer logo scaling, identical to pathfinder index gate" },
+        { "probe": "pixel-compare", "flag": "residual bands ~5-8% at y5000-6056", "why": "chrome footer region + live chat-widget button baked into live stitch at scroll-dependent offsets (pre-justified)" }
+      ],
+      "residuals": [
+        { "band": "y 5000-6056", "pct": 7, "cause": "chrome footer micro-offsets + chat widget in live stitch", "flaggedFor": "delivery" }
+      ],
+      "captureState": [
+        { "what": "share/copy modal, scrollToTop, video overlays, video More/Less, fis View-less kept hidden with live-parity typography", "where": "main.mda-content" },
+        { "what": "'In the News' JS-truncated card titles and JS-truncated summary/body excerpts reproduced as rendered (not raw HTML strings)", "where": "in-the-news, video-gallery, faculty-experts" },
+        { "what": "video thumbs render at opacity .5 over black (live rest state)", "where": "video-gallery" },
+        { "what": "hidden mobile read-more toggle nodes present in rte (live JS injects them at all widths)", "where": "about-trials rte-container" }
+      ]
+    },
+    "360": {
+      "iterations": 4,
+      "result": { "structuralRed": 0, "visualFlags": "4 advisory, all justified", "pixelPct": 8.46, "heightDelta": 6, "pass": true },
+      "justified": [
+        { "probe": "content-diff", "flag": "MISSING CTA 'Call 1-8xx-…' / EXTRA 'Call 1-877-790-1139'", "why": "rotating call-tracking number — pre-justified in brief" },
+        { "probe": "content-diff", "flag": "EXTRA ctas Back / Phases / Joining / Making a Decision / Clinical Trials + EXTRA body 'Jump To:'", "why": "live JS MOVES #sidebar-nav out of main to body level at <=992px; static replica keeps the (display:none) in-main copy plus a body-level mobile copy — hidden-DOM-only delta, visible parity exact" },
+        { "probe": "content-diff", "flag": "MISSING BODY 'var utag_data=…'", "why": "live inline analytics script — pre-justified" },
+        { "probe": "visual-diff", "flag": "CONTENT GAP 27 vs 21 headings", "why": "live's 6 JS-hidden In-the-News cards (same as 1440)" },
+        { "probe": "visual-diff", "flag": "FLUSH-LEFT TEXT at left -498px", "why": "offscreen slick-carousel clone card — replicates live's mobile video carousel t=0 transform" },
+        { "probe": "visual-diff", "flag": "STRETCHED mobile footer logo (x2)", "why": "chrome-canonical (live scales the tagline logo the same way)" }
+      ],
+      "residuals": [
+        { "band": "y 5500-6266", "pct": 18, "cause": "chrome mobile footer accordion internals (toggle glyph metrics, black logo-band composition) — chrome-canonical region", "flaggedFor": "delivery" },
+        { "band": "whole page", "pct": 8.46, "cause": "live drift vs capture: at 360 live JS collapses the rte behind a More toggle and slick-initializes the video gallery; capture (2.5h old) recorded the pre-init state (docHeight 7040 vs live 6266). Build follows LIVE (gate target), not the stale capture", "flaggedFor": "user" }
+      ],
+      "captureState": [
+        { "what": "rte collapsed after 2nd paragraph behind red chevroned More toggle (live mobile JS state), remaining rte children carry live's extra-text class", "where": "about-trials rte-container" },
+        { "what": "video gallery recreated as slick carousel t=0: 2 clone cards + track at translate(-560px), center card 280px", "where": "video-gallery #tabs-0" },
+        { "what": "jump-menu bar recreated at body level (live JS relocation), in-main sidebar hidden", "where": "body > #sidebar-nav" },
+        { "what": "at-sticky promo card hidden at mobile (live relocates it to a sticky widget)", "where": "footer .col2.mda-logo" }
+      ]
+    }
+  },
+  "portations": [
+    { "target": "assets/chrome.css", "suggestion": "mobile footer columns keep desktop float:left + width:200px (rows shrink-wrap, toggles misplace); add float:none/width:auto at <=767px", "appliedLocally": true },
+    { "target": "assets/chrome.css", "suggestion": "mobile header renders 89px vs live 85px; .mda-nav-top.flex-row padding 18px 20px matches live", "appliedLocally": true },
+    { "target": "assets/chrome.html", "suggestion": "footer sublinks accordion title is 'More' on live (empty in chrome fragment)", "appliedLocally": true },
+    { "target": "assets/chrome.css", "suggestion": "li.at-sticky-promo-li should be hidden at mobile (live relocates it)", "appliedLocally": true }
+  ],
+  "notes": [
+    "body carries class 'basepage leftnavpage' — live uses leftnavpage (sidebar template); basepage kept for chrome.css base rules",
+    "breadcrumb bar is a body-level sibling BEFORE main (live DOM), annotated data-section=breadcrumb",
+    "live 360 measurements for the collapsed rte / carousel were probed from the live page directly since the 360 capture map predates the JS state"
+  ]
+}

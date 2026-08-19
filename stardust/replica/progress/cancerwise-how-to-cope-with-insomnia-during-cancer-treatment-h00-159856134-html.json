@@ -1,0 +1,70 @@
+{
+  "pageType": "article",
+  "archetype": "cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html",
+  "breakpoints": {
+    "1440": {
+      "iterations": 3,
+      "result": {
+        "structuralRed": 1,
+        "visualFlags": "5 STRETCHED IMAGE advisories (3 more-stories thumbnails + 2 footer logos) — identical stretched:true values on the live source side (parity, not a defect)",
+        "pixelPct": 4.40,
+        "heightDelta": -7,
+        "pass": true
+      },
+      "justified": [
+        { "probe": "content-diff", "flag": "MISSING CTA 'Call 1-8xx-xxx-xxxx' -> tel: + EXTRA cta 'Call 1-855-628-7053' + MISSING body 'or call 1-8xx…' / EXTRA body 'or call 1-855-628-7053.' + EXTRA cta 'Call 1-877-790-1139' (footer)", "why": "call-tracking phone rotates per live render (observed 1-888-680-0703 / 1-844-217-6792 / 1-855-965-5907 / 1-877-515-1993 / 1-855-397-9961 across probe runs); build uses page-JSON captured values 1-855-628-7053 (article CTA + drawer) and 1-877-790-1139 (chrome footer) — pre-justified in brief" },
+        { "probe": "content-diff", "flag": "MISSING BODY 'var utag_data=…', 'if(document.querySelector('.cw-v3.blogpage'))…', 'function trigger(){ utag.link…', 'wFORMS.behaviors.prefill.skip=false;'", "why": "live inline analytics/form-runtime <script> text inside main; replica is no-JS by contract (same class as pathfinder's utag_data justification)" },
+        { "probe": "content-diff", "flag": "MISSING BODY '80/40 characters left.' x3, 'Please wait...', 'Thank you for subscribing.', 'Sorry, an error occurred…'", "why": "wFORMS runtime state strings in the SFMC subscribe card; replicated hidden in the build (display:none, exactly as served) but the extractor only credits them on the live side — hidden-node counting asymmetry, not missing content" },
+        { "probe": "visual-diff", "flag": "STRETCHED IMAGE x5", "why": "live renders the same element-vs-natural ratios (source side flags identical: 80x50 thumbnails, footer logos) — intentional fixed-thumb crop parity" }
+      ],
+      "residuals": [
+        { "band": "y 2000-2500", "pct": 9.4, "cause": "SFMC subscribe card renders ~6px taller internally (label/input line rounding) + dense 18px serif text antialiasing", "flaggedFor": "delivery" },
+        { "band": "y 7500-8622", "pct": 7.0, "cause": "footer region: rotating call-tracking digits, chat bubble + 'Top' button baked into the live stitch at scroll-dependent offsets (pre-justified), 2px EndCancer card CTA height rounding", "flaggedFor": "user" }
+      ],
+      "captureState": [
+        { "what": "chat widget (blue bubble + 'Chat with us.' pill) replicated pixels-only via pseudo-elements", "where": "fixed bottom-right, .chat-widget-replica" },
+        { "what": "server-rendered a.scrollToTop ('Top') replicated from live HTML; JS-injected CTA drawer replicated invisible (opacity 0) with only the live-rendered strings ('More', 'Call 1-8xx')", "where": "main start" },
+        { "what": "share modal (#myModal: Close / Share this article / Via social media / copy-link / Copy) replicated display:none with markup mirrored from live server HTML", "where": ".social-share-buttons" },
+        { "what": "left-rail Diseases/Cancer Topic tag accordions replicated collapsed as captured (max-height:0 overflow hidden, 94 items with live hrefs); jump-menu-label + sidebar-back replicated hidden at desktop", "where": "#sidebar-nav" }
+      ]
+    },
+    "360": {
+      "iterations": 3,
+      "result": {
+        "structuralRed": 1,
+        "visualFlags": "5 STRETCHED IMAGE advisories — identical on the live source side (parity), incl. footer logo 890x157 vs live 888x157",
+        "pixelPct": 3.86,
+        "heightDelta": -1,
+        "pass": true
+      },
+      "justified": [
+        { "probe": "content-diff", "flag": "MISSING CTA 'Call 1-8xx' + EXTRA 'Call 1-855-628-7053' / 'Call 1-877-790-1139' + MISSING/EXTRA 'or call …' body", "why": "rotating call-tracking numbers (pre-justified, same as 1440)" },
+        { "probe": "content-diff", "flag": "~95 EXTRA CTA/body flags: all Diseases/Cancer Topic tag-list items, 'Diseases', 'Cancer Topic', 'Back', 'Jump To:'", "why": "live 360 DOM never populates the sidebar tag lists (they are JS-injected only at desktop widths) and hides back/jump nodes; a single static file must keep them (display:none at 360) for 1440 content parity — extractor counts build-side hidden DOM. Same class as pathfinder's mobile slick-clone justification" },
+        { "probe": "content-diff", "flag": "MISSING BODY script texts + wFORMS state strings", "why": "same as 1440 (no-JS contract / hidden-node counting asymmetry)" },
+        { "probe": "content-diff", "flag": "FONT FORK body 'Pamela Schlembach, M.D.' Minion Semi Bold -> sys", "why": "the pull-quote module is display:none at 360 (live removes it from DOM entirely), so the build never paints that face at this width; the face loads and matches at 1440" },
+        { "probe": "visual-diff", "flag": "STRETCHED IMAGE x5", "why": "identical values on live source side (parity)" }
+      ],
+      "residuals": [
+        { "band": "y 11000-11500", "pct": 26.2, "cause": "chrome-shared mobile footer black-band internals: live shows accordion rows ('MORE') through the logo band, positions the Only-Possible-Here promo card and 'Making Cancer History' wordmark differently — shared chrome behavior (same family as pathfinder homepage 360 footer residual), not page content", "flaggedFor": "delivery" },
+        { "band": "y 0-500", "pct": 9.5, "cause": "chrome mobile header renders 89px vs live 85px (+4 page shift) + hamburger/jump-bar glyph antialiasing", "flaggedFor": "delivery" },
+        { "band": "y 9500-10500", "pct": 9.0, "cause": "pre-footer EndCancer trio internal spacing ±5px vs live-now + chat bubble at scroll-dependent offsets", "flaggedFor": "user" }
+      ],
+      "captureState": [
+        { "what": "live JS relocates the feature image above the article at mobile — replicated by placing the module before .cell-l in DOM and absolutely positioning it into the right column at desktop (space reserved via cell-r padding-top:352px)", "where": "section.table > .rail-media" },
+        { "what": "live JS reorders right-rail promos at 360 (Request an Appointment before Share Your Story) and removes the pull quote — replicated via flex order + display:none", "where": ".cell-r" },
+        { "what": "live truncates the last breadcrumb to one ellipsised line at mobile ('How to cope with...') — replicated via CSS text-overflow ellipsis (max-width 150px)", "where": ".breadcrumbs li:last-child" },
+        { "what": "live 360 renders no black newsletter subscribe bar on this template (present at 1440) — hidden at <=767px page-locally", "where": ".subscribe-to" },
+        { "what": "live drift vs capture: the 16:17Z layout map has the image in the right rail at 360 and a non-truncated breadcrumb; the live gate stitches (taken ~3h later) show the relocated/truncated variants — build follows the gate ground truth", "where": "360 layout map vs live stitch" }
+      ]
+    }
+  },
+  "portations": [],
+  "notes": [
+    "body carries class 'basepage blogpage' (live template class blogpage; chrome.css keys off basepage).",
+    "Breadcrumb bar lives OUTSIDE main (body > div.col-content-single.breadcrumb-wrapper) per live DOM, so content-diff (scoped to main.mda-content) does not cover it; pixel gates do.",
+    "All article strings verbatim from page JSON body[] with nbsp positions restored from the layout-map text fields (map text truncates at 160 chars; longer paragraphs use page-JSON text).",
+    "Duplicate form ids (form#29, tfa_20/23/38) exist in both the rail SFMC card and the chrome footer newsletter — live has the same duplication; kept for parity.",
+    "The 'Melatonin, a naturally occurring hormone…' duplicated phrase in the medications list is a live content quirk, reproduced verbatim.",
+    "Iteration 3 at each breakpoint consolidated multiple instrument-cited fixes before the final full probe re-run (notably the 360 live-drift adaptations: image relocation, breadcrumb truncation, footer column stacking)."
+  ]
+}

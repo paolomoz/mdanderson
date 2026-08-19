@@ -1,0 +1,72 @@
+{
+  "discovery": {
+    "fetchTechnique": "headless",
+    "count": 2,
+    "concurrency": 1
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "crawl": {
+    "failures": []
+  },
+  "visionCheck": [
+    {
+      "slug": "index",
+      "verdict": "ok"
+    },
+    {
+      "slug": "patients-family-html",
+      "verdict": "ok",
+      "notes": "near-duplicate of homepage template; phone number + award-badge counter differ per render (call-tracking rotation)"
+    },
+    {
+      "slug": "cancer-types-breast-cancer-html",
+      "verdict": "ok"
+    },
+    {
+      "slug": "patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html",
+      "verdict": "ok"
+    },
+    {
+      "slug": "patients-family-diagnosis-treatment-clinical-trials-html",
+      "verdict": "ok"
+    },
+    {
+      "slug": "prevention-screening-html",
+      "verdict": "ok",
+      "notes": "chat widget visible mid-page; capture-state ground truth"
+    },
+    {
+      "slug": "research-html",
+      "verdict": "ok"
+    },
+    {
+      "slug": "about-md-anderson-html",
+      "verdict": "ok"
+    },
+    {
+      "slug": "about-md-anderson-our-locations-html",
+      "verdict": "recaptured",
+      "notes": "Verint survey invite + scrim in first capture; clean after all-frame dismissal"
+    },
+    {
+      "slug": "cancerwise-html",
+      "verdict": "recaptured",
+      "notes": "Verint survey invite; clean after dismissal"
+    },
+    {
+      "slug": "cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html",
+      "verdict": "recaptured",
+      "notes": "Verint survey invite; clean after dismissal"
+    },
+    {
+      "slug": "donors-volunteers-html",
+      "verdict": "recaptured",
+      "notes": "Verint invite renders in iframe; needed all-frame dismissal, 2 recaptures"
+    }
+  ],
+  "notes": [
+    "Nondeterministic live content: call-tracking phone numbers rotate per render; homepage award-badge year counter and highlights carousel vary. Expect justified content-diff deltas on these strings at gate time."
+  ]
+}

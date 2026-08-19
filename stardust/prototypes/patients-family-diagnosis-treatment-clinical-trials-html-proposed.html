@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<!-- provenance: stardust:replica — recreation of
+     https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html
+     from stardust/current/pages/patients-family-diagnosis-treatment-clinical-trials-html.json
+     + stardust/replica/capture/patients-family-diagnosis-treatment-clinical-trials-html/{1440,360}.json.
+     Recreation, not redesign: all values lifted from capture. -->
+<html lang="en" class="js flexbox flexboxlegacy">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cancer Clinical Trials | UT MD Anderson</title>
+<meta name="description" content="UT MD Anderson uses clinical trials to prevent, diagnose and treat cancer. Search for clinical trials here and also learn about the different phases.">
+<meta property="og:title" content="Clinical Trials">
+<meta property="og:description" content="UT MD Anderson uses clinical trials to prevent, diagnose and treat cancer. Search for clinical trials here and also learn about the different phases.">
+<meta property="og:image" content="https://www.mdanderson.org/mda-logo-sharable.png">
+<meta property="og:type" content="Website">
+<link rel="stylesheet" href="assets/mda-fonts.css">
+<link rel="stylesheet" href="assets/chrome.css">
+<style>
+/* == TOKEN CONTRACT (verbatim copy of assets/chrome.css :root) ==
+   Display-ramp mapping note: DESIGN.json names 36px as the site's largest *system* display size
+   (icon-well/promo h3). We map --heading-xxl/--heading-xl to 36px (reused, not scaled up);
+   --heading-lg = 24px (card h3), --heading-md = 21px (lede/promo body). Page-local hero sizes
+   (72px hero h1, 48px/42px section titles on the homepage) are lifted per-page from capture and
+   intentionally NOT tokens. */
+:root {
+  --heading-font-family: "Minion Regular", "Minion W01 Cap Regular", Arial, Georgia;
+  --body-font-family: "Minion Regular", "Minion W01 Cap Regular", Arial, Georgia;
+  --heading-xxl: 36px;
+  --heading-xl: 36px;
+  --heading-lg: 24px;
+  --heading-md: 21px;
+  --body: 18px;
+  --body-sm: 14px;
+  --line-height-heading: 1.3;
+  --line-height-body: 1.3;
+  --color-bg: #FFFFFF;
+  --color-fg: #000000;
+  --color-accent: #DA291C;
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 30px;
+  --spacing-xl: 40px;
+  --spacing-2xl: 70px;
+  --section-padding: 70px 72px;
+  --max-width: 1440px;
+  --radius: 0px;
+}
+
+/* ===== page-local icon codepoints (lifted from capture/css/139355bb13.css) ===== */
+.mda-icon-manage_risks::before { content: "\e640"; }
+.fa-microphone::before { content: "\f130"; }
+.fa-file-text::before { content: "\f15c"; }
+.fa-mail-share::before { content: "\f2e2"; }
+.fa-share-arrow-o::before { content: "\f2e5"; color: transparent; -webkit-text-stroke: 1.2px #fff; }
+.fa-angle-left::before { content: "\f104"; }
+
+/* ===== shells ===== */
+main.mda-content { display: block; }
+/* hidden-scaffold typography parity (nodes are display:none but roles/fonts must match live) */
+#sidebar-nav a.sidebar-back {
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 14px; letter-spacing: -.02em; color: #605D5D;
+}
+.social-share-buttons .close { font-size: 28px; line-height: 36.4px; text-transform: uppercase; }
+.social-share-buttons .close .close-text { font-family: 'Univers LT W01_55 Roman', Arial; display: block; font-size: 14px; line-height: 18.2px; }
+.social-share-buttons .modal-header { background: #000; padding: 30px 40px; color: #fff; font-size: 1.5em; }
+.social-share-buttons .copy-link { padding: 20px 40px; font-size: 18px; }
+.social-share-buttons .copyButton .red {
+  background-color: #DA291C; border: none; width: 75px; height: 30px; color: #fff;
+  font-family: 'Univers LT W01_55 Roman', Arial;
+}
+.social-share-buttons .copyButton .tooltiptext { width: 140px; background: #555; color: #fff; text-align: center; }
+button.fis-articles-read-less.cta {
+  border: 1px solid #DA291C; padding: 20px; background: #fff; color: #DA291C;
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 18px; line-height: 23.4px; letter-spacing: -.02em;
+}
+.more.cta a.cta-block, .less.cta a.cta-block {
+  border: 1px solid #DA291C; color: #DA291C; background: none;
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 18px; letter-spacing: -.02em;
+  line-height: 23.4px; padding: 15px 45px; display: inline-block;
+}
+/* capture-state: hidden live scaffolding (scroll-to-top link, video overlays, share modal) */
+a.scrollToTop, #video-overlay, #yt-overlay, #myModal, .social-share-modal .spacer,
+.more.cta, .less.cta, button.fis-articles-read-less, .podcast-container .left-side,
+#sidebar-nav a.sidebar-back { display: none; }
+
+/* breadcrumb bar (outside main, mirrors live body-level slot) */
+.col-content-single.breadcrumb-wrapper { width: 100%; clear: both; }
+.blog-breadcrumbs ul.breadcrumbs { margin: 0; padding: 22px 25px; border-bottom: 1px solid #d7d7d7; overflow: hidden; }
+.breadcrumbs li {
+  display: list-item; list-style: none; float: left; margin-right: 5px;
+  font-family: 'Univers LT W01_45 Light', Arial; font-size: 14px; line-height: 18.2px;
+  letter-spacing: -.02em; color: #3F3D3D;
+}
+.breadcrumbs li a.breadcrumb_arrow { display: block; position: relative; padding-right: 20px; color: #3F3D3D; }
+.breadcrumbs li a.breadcrumb_arrow::after {
+  content: ">"; position: absolute; display: block; width: 10px; height: 13px; top: 0; right: 2px;
+}
+
+/* mobile jump bar (live JS moves #sidebar-nav to body level at <=992px; recreated statically) */
+body > #sidebar-nav { display: none; }
+
+/* left sidebar + content grid */
+section.col-content-wrapper::after { content: ""; display: block; clear: both; }
+.col-sidebar { width: 16.66667%; float: left; padding-left: 18px; }
+#sidebar-nav { padding: 30px 0; }
+#sidebar-nav #jump-menu-label { display: none; }
+#sidebar-nav ul.parent-level li.parent-link { display: list-item; position: relative; padding: 5px 0; margin: 0 0 10px; }
+#sidebar-nav li.parent-link > a {
+  display: block; border-top: 1px solid #D0D0CE; border-bottom: 1px solid #D0D0CE;
+  color: #DA291C; padding: 8px 20px 10px; margin: 0 0 10px;
+  font-family: 'Univers LT W01_65 Bold', Arial; font-size: 14px; line-height: 18.2px; letter-spacing: -.02em;
+}
+#sidebar-nav ul.child-level li { display: block; margin: 0; padding: 0; }
+#sidebar-nav ul.child-level li a {
+  display: inline-block; color: #000; padding: 8px 10px 4px;
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 14px; line-height: 18.2px; letter-spacing: -.02em;
+}
+.col-content { width: 83.33333%; float: right; padding: 0 18px 0 36px; }
+.col-content section { padding-left: 36px; padding-right: 36px; }
+
+/* share tools row */
+section.social-share-modal { padding: 20px 36px 10px; }
+.social-share-buttons { display: inline-table; }
+.social-share-buttons a { display: inline-block; position: relative; height: 40px; color: #DA291C; }
+.social-share-buttons a i {
+  display: inline-block; margin-top: 13px; height: 25px; background: #DA291C; color: #fff;
+  font-size: 15px; line-height: 25px; text-align: center; font-style: normal;
+}
+a#email-share i { width: 30px; }
+a#social-share i { width: 26px; }
+
+/* empty medical reviewer slot (capture-state: renders as 10px band on live) */
+section.medical-reviewer-component { height: 10px; padding: 0; }
+
+/* page header */
+section.page-header-stack { padding: 0 10px 70px; }
+.page-header-stack .cell-inner.middle { padding: 0 25px; }
+.page-header-stack .cell-inner.middle.page-header-wrapper { padding: 0 25px 43px; }
+.page-header { position: relative; display: block; min-height: 48px; padding-left: 106px; }
+.page-header i.header-icon {
+  position: absolute; left: 0; top: 0; display: block; font-size: 45px; line-height: 48px;
+  color: #DA291C; font-style: normal;
+}
+.page-header-title { display: block; }
+.page-header-title h1 { font-size: 48px; line-height: 48px; letter-spacing: -.02em; font-weight: 400; }
+.page-header-desc p { font-size: 24px; line-height: 31.2px; letter-spacing: -.02em; color: #605D5D; }
+
+/* search band */
+section[data-section="trial-search"] { padding-top: 0; padding-bottom: 0; }
+.clinical-trials-search { background: #2F60B2; color: #fff; padding: 50px 30px; }
+.clinical-trials-search h2 {
+  font-family: 'Univers LT W01_65 Bold', Arial; font-size: 41px; line-height: 53.3px;
+  letter-spacing: -.02em; font-weight: 400; margin: 0 0 30px;
+}
+.clinical-trials-search p { font-size: 21px; line-height: 27.3px; letter-spacing: -.02em; margin: 0 0 31px; }
+.clinical-trials-search-form { position: relative; height: 56px; }
+form#clinical-trials-search { height: 56px; }
+form#clinical-trials-search::after { content: ""; display: block; clear: both; }
+input#clinical-trials-search-box {
+  float: left; width: 70%; height: 56px; margin-right: 20px; padding: 0 0 0 20px; border: 0;
+  background: #fff; color: #605D5D; border-radius: 0;
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 18px; font-weight: 300; letter-spacing: -.02em;
+}
+input.form-search-submit {
+  float: left; display: block; width: 140px; height: 56px; background: #2F60B2;
+  border: 1px solid #fff; color: #fff; text-align: center; cursor: pointer;
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 18px; line-height: 23.4px; letter-spacing: -.02em;
+}
+ul.search-results { display: none; }
+
+/* what-are-clinical-trials two-column */
+section[data-section="about-trials"] { padding-top: 70px; padding-bottom: 70px; }
+.cell-d { display: table-cell; width: 66.66667%; vertical-align: top; padding-top: 22px; padding-right: 36px; }
+.cell-s { display: table-cell; width: 33.33333%; vertical-align: top; }
+.rte-container { text-align: left; }
+.rte-container h2 { font-size: 27px; line-height: 35.1px; font-weight: 700; margin: 0 0 22px; }
+.rte-container h3 { font-size: 21.06px; line-height: 27.378px; font-weight: 700; margin: 20px 0 22px; }
+.rte-container p { font-size: 18px; line-height: 23.4px; color: #3A3A3A; margin: 0 0 18px; }
+.rte-container p:last-child { margin-bottom: 0; }
+.rte-container ul { list-style: disc; margin: 0 0 18px; padding-left: 40px; color: #3A3A3A; }
+.rte-container ul li { display: list-item; font-size: 18px; line-height: 23.4px; }
+.rte-container a { color: #DA291C; }
+
+/* did-you-know card */
+.did-you-know {
+  display: flex; justify-content: center; align-items: center; text-align: center;
+  padding: 30px; margin: 30px 0;
+}
+.did-you-know::before { content: ''; display: block; height: 0; width: 0; padding-bottom: 70%; }
+.did-you-know.background-purple { background: #783491; color: #fff; }
+.did-you-know-content { width: 100%; }
+h3.did-you-know-title {
+  font-family: 'UniversLTW01-67BoldCn', Arial; font-size: 16px; line-height: 20.8px;
+  letter-spacing: -.02em; text-transform: uppercase; font-weight: 700;
+}
+.did-you-know-text-large { font-size: 21px; line-height: 27.3px; letter-spacing: -.02em; margin-top: 25px; }
+
+/* podcast card (right rail) */
+.cell-s section.podcast-component { padding: 0 0 70px; }
+.podcast-container {
+  display: flex; flex-direction: column; padding: 50px 20px;
+  border-top: 1px solid #D0D0CE; border-bottom: 1px solid #D0D0CE;
+}
+.podcast-container .top-side { padding-bottom: 25px; }
+.podcast-container .top-side img { display: block; width: 100%; height: auto; }
+.podcast-items { text-align: left; }
+h2.podcast-header {
+  display: table-cell; height: 30px; vertical-align: middle;
+  font-family: 'Univers LT W01_65 Bold', Arial; font-size: 15px; line-height: 19.5px;
+  letter-spacing: -.02em; font-weight: 400; color: #DA291C; text-transform: uppercase;
+}
+h2.podcast-title { font-size: 24px; line-height: 31.2px; letter-spacing: -.02em; margin: 1px 0 15px; font-weight: 700; }
+.podcast-cta.cta, .podcast-transcript-cta.cta {
+  display: inline-block; position: relative; padding: 5px 10px; border: 1.5px solid #DA291C;
+  margin: 0 15px 20px 0; font-family: 'Univers LT W01_55 Roman', Arial; font-size: 14px;
+  line-height: 18.2px; letter-spacing: -.02em; color: #DA291C;
+}
+.podcast-cta.cta a, .podcast-transcript-cta.cta a { color: #DA291C; }
+.podcast-cta.cta i, .podcast-transcript-cta.cta i { display: inline-block; position: relative; margin: 0 10px 0 0; font-style: normal; }
+
+/* icon-promo trio */
+section[data-section="trial-pathways"] { background: #F2F3F4; padding-top: 70px; padding-bottom: 70px; }
+.content .table-3col .cell-t { display: table-cell; width: 33.333%; vertical-align: top; }
+.content .table-3col .cell-t:first-child { padding-right: 12px; }
+.content .table-3col .cell-t:nth-child(2) { padding-left: 6px; padding-right: 6px; }
+.content .table-3col .cell-t.last { padding-left: 12px; padding-right: 0; }
+.promo-simple { text-align: center; }
+.promo-icon.icon-circle .fa-stack.fa-3x { width: 108px; height: 108px; border-radius: 50%; }
+.promo-icon-purple .promo-icon .fa-stack { background: #783491; }
+.promo-icon-lightblue .promo-icon .fa-stack { background: #23B8F1; }
+.promo-icon-orange .promo-icon .fa-stack { background: #E96613; }
+.promo-icon .mda-stack-1x { font-size: 54px; line-height: 108px; color: #fff; font-style: normal; }
+.promo-simple .promo-icon { margin-bottom: 20px; }
+.promo-simple .promo-header h3 { font-size: 36px; line-height: 46.8px; letter-spacing: -.02em; font-weight: 400; }
+.promo-simple .promo-text { margin-top: 21px; }
+.promo-simple .body.promo-text-normal { font-size: 21px; line-height: 27.3px; letter-spacing: -.02em; color: #3F3D3D; }
+.promo-simple .body.promo-text-normal p { margin: 0; }
+.promo-simple .cta-wrapper.cta-block-wrapper { margin-top: 21px; padding-top: 10px; }
+.promo-simple a.cta.cta-block {
+  display: inline-block; position: relative; padding: 10.8px 45px; border: 1px solid #C50026;
+  color: #C50026; font-family: 'Univers LT W01_55 Roman', Arial; font-size: 18px;
+  line-height: 23.4px; letter-spacing: -.02em;
+}
+
+/* in the news */
+section[data-section="in-the-news"] { padding-top: 70px; padding-bottom: 70px; }
+.fis-articles { margin-top: 20px; }
+h2.fis-articles-title {
+  font-family: 'Univers LT W01_65 Bold', Arial; font-size: 24px; line-height: 31.2px;
+  letter-spacing: -.02em; font-weight: 400; margin: 0 0 20px;
+}
+.article-container { overflow: hidden; }
+a.blog-summary.small.fis {
+  display: block; position: relative; float: left; width: 46%; margin: 0 4% 30px 0;
+  border: 1px solid #D0D0CE; overflow: hidden; padding-bottom: 22px;
+}
+.blog-summary.small img { width: 100%; }
+.fis .blog-summary-wrapper { padding: 18px 40px 18px 18px; }
+.fis h3.blog-title {
+  font-family: 'Minion Semi Bold', 'Minion Regular', Arial, Georgia; font-size: 24px;
+  line-height: 31.2px; letter-spacing: -.02em; font-weight: 400; color: #000; margin: 0 0 30px;
+}
+button.fis-articles-read-more.cta {
+  display: block; position: relative; float: left; border: 1px solid #DA291C; padding: 20px;
+  margin-right: 20px; background: #fff; color: #DA291C; text-align: center;
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 18px; line-height: 23.4px; letter-spacing: -.02em;
+}
+
+/* video gallery */
+section[data-section="video-gallery"] { padding-top: 59px; padding-bottom: 70px; }
+.collection.video-collection { position: relative; text-align: center; }
+h2.section-title { font-size: 41px; line-height: 53.3px; letter-spacing: -.02em; font-weight: 400; text-align: center; margin: 0 0 20px; }
+#tabs-0 { display: flex; text-align: left; }
+.collection-item { width: 50%; padding: 0 6px; }
+.collection-item.mobile-clone { display: none; }
+.collection-item a.inner { display: block; background: #F2F3F4; margin-bottom: 30px; }
+.collection-image { position: relative; background: #000; }
+/* capture-state: live renders thumbs at opacity .5 over black */
+.collection-image img { display: block; width: 100%; height: auto; opacity: .5; }
+i.video-icon {
+  display: block; position: absolute; top: 50%; left: 50%; margin: -.5em 0 0 -.5em;
+  font-size: 3em; color: rgba(255,255,255,.8); font-style: normal;
+}
+.collection-body { padding: 18px; }
+.collection-body .body-title {
+  font-family: 'Univers LT W01_65 Bold', Arial; font-size: 16px; line-height: 20.8px;
+  color: #2F60B2; text-transform: uppercase;
+}
+.collection-item:nth-child(2) a.inner { padding-bottom: 16px; }
+.collection-body .body-title p { margin: 0 0 16px; }
+.collection-body .body-text { font-size: 18px; line-height: 23.4px; color: #3F3D3D; }
+
+/* faculty experts */
+section[data-section="faculty-experts"] { padding-top: 66px; padding-bottom: 70px; }
+section[data-section="faculty-experts"] .nested-section-title h2.section-title {
+  font-size: 48px; line-height: 48px; margin: 0 0 50px;
+}
+.col-double { display: table-cell; width: 50%; vertical-align: top; }
+.col-double.cell-l { padding-right: 9px; }
+.col-double.last.cell-r { padding-left: 9px; }
+.module.m-pad .blog-summary.small { position: relative; height: 100%; border: 1px solid #D0D0CE; }
+.blog-summary-wrapper.title { padding: 18px 18px 0; }
+.module.m-pad .blog-summary.small h3.blog-title {
+  font-family: 'Minion Semi Bold', 'Minion Regular', Arial, Georgia; font-size: 24px;
+  line-height: 31.2px; letter-spacing: -.02em; font-weight: 400; color: #000; margin: 0;
+}
+.blog-summary-wrapper.text { margin-top: 18px; padding: 0 18px 18px; }
+.summary-text { font-size: 18px; line-height: 23.4px; margin-bottom: 54px; max-height: 47px; overflow: hidden; }
+.summary-text p { margin: 0; }
+.summary-cta-info { position: absolute; bottom: 18px; left: 19px; right: 19px; }
+.summary-cta-info a.cta, .podcast-cta a {
+  font-family: 'Univers LT W01_55 Roman', Arial; letter-spacing: -.02em;
+}
+.summary-cta-info a.cta { position: relative; font-size: 18px; line-height: 23.4px; color: #DA291C; }
+i.mdicon-arrow { display: inline-block; position: relative; font-size: 18px; margin-left: 15px; color: #DA291C; font-style: normal; }
+
+/* =========================================================================
+   MOBILE (max-width: 767px) — lifted from capture 360.json
+   ========================================================================= */
+@media (max-width: 767px) {
+  /* body-level jump bar (live JS relocation, recreated statically) */
+  body > #sidebar-nav { display: block; background: #F2F3F4; padding: 0; }
+  body > #sidebar-nav #jump-menu-label {
+    display: table; position: relative; width: 100%; background: #D8D9D7; padding: 10px 0;
+    font-family: 'Univers LT W01_55 Roman', Arial; font-size: 16px; line-height: 20.8px; letter-spacing: -.02em;
+  }
+  body > #sidebar-nav span.jump-menu-label-text { display: inline-block; vertical-align: middle; padding: 7px 0 0 15px; }
+  body > #sidebar-nav a#jump-menu-toggle { display: table-cell; width: 15%; text-align: right; vertical-align: middle; padding-right: 20px; color: #000; }
+  body > #sidebar-nav .mobile-menu-container { padding: 4px 0; }
+  body > #sidebar-nav #jump-menu-label { height: 54px; overflow: hidden; }
+  /* page-local trim: chrome mobile header renders 89px here vs 85px live */
+  header.mda-nav .mda-nav-top.flex-row { padding: 18px 20px; }
+  /* page-local chrome corrections vs live 360 footer (candidate portations to chrome.css):
+     mobile columns must drop the desktop float, and live relocates the
+     at-sticky promo card out of the footer (sticky widget) at mobile */
+  .footer-links .col2, .footer-links .col2.mda-logo, .footer-links .col3.last { float: none; width: auto; }
+  li.at-sticky-promo-li { display: none; }
+  body > #sidebar-nav .mobile-menu-container i { font-size: 21.33px; line-height: 21.33px; font-style: normal; }
+  body > #sidebar-nav ul.parent-level, body > #sidebar-nav a.sidebar-back { display: none; }
+
+  .blog-breadcrumbs ul.breadcrumbs { padding: 10px 15px 11px; }
+  .breadcrumbs li, .breadcrumbs li a.breadcrumb_arrow { font-size: 16px; line-height: 20.8px; }
+
+  .col-sidebar { display: none; }
+  .col-content { width: 100%; float: none; padding: 0; }
+  .col-content section { padding-left: 0; padding-right: 0; }
+
+  section.social-share-modal { padding: 20px 35px 10px; }
+
+  section.page-header-stack { padding: 20px 10px 0; }
+  .page-header-stack .cell-inner.middle.page-header-wrapper { padding: 0 25px 15px; }
+  .page-header { display: block; padding-bottom: 20px; }
+  .page-header-title h1 { font-size: 24px; line-height: 24px; }
+  .page-header-desc { padding: 20px 0; }
+  .page-header-desc p { font-size: 16px; line-height: 20.8px; }
+
+  .clinical-trials-search { padding: 20px 35px; }
+  .clinical-trials-search h2 { font-size: 21px; line-height: 27.3px; margin-bottom: 30px; }
+  .clinical-trials-search p { font-size: 16px; line-height: 20.8px; margin-bottom: 30px; }
+  input.form-search-submit { width: 25%; font-size: 16px; }
+  input#clinical-trials-search-box { font-size: 16px; margin-right: 0; }
+
+  /* capture-state: live JS collapses the rte behind a red More toggle at mobile */
+  .rte-container .extra-text { display: none; }
+  .rte-container .more.cta { display: block; text-align: center; }
+  .rte-container .more.cta a.cta-block {
+    display: inline-block; border: 0; background: none; color: #DA291C;
+    font-family: 'Univers LT W01_55 Roman', Arial; font-size: 16px; line-height: 20.8px;
+    letter-spacing: -.02em; padding: 12px 30px 10px;
+  }
+  .rte-container .more.cta a.cta-block::before,
+  .rte-container .more.cta a.cta-block::after {
+    content: "\f078"; font-family: 'FontAwesome'; font-size: 16px;
+  }
+  .rte-container .more.cta a.cta-block::before { padding-right: 10px; }
+  .rte-container .more.cta a.cta-block::after { padding-left: 10px; }
+
+  section[data-section="about-trials"] { padding-top: 0; padding-bottom: 0; }
+  .table, .cell-d, .cell-s, .col-double { display: block; width: 100%; }
+  .cell-d { padding: 0; }
+  .rte-container { padding: 55px 35px 35px; }
+  .rte-container h2 { font-size: 24px; line-height: 31.2px; margin-bottom: 20px; }
+  .rte-container h3 { font-size: 18.72px; line-height: 24.336px; margin: 19px 0; }
+  .rte-container p { font-size: 16px; line-height: 20.8px; margin-bottom: 16px; }
+  .rte-container ul { margin-bottom: 16px; }
+  .rte-container ul li { font-size: 16px; line-height: 20.8px; }
+
+  .cell-s { padding: 48px 0 0; }
+  .did-you-know { padding: 35px; }
+  .did-you-know::before { display: none; }
+  .did-you-know-text-large { font-size: 16px; line-height: 20.8px; }
+  .cell-s section.podcast-component { padding: 0; }
+  .podcast-container { padding: 35px; }
+  h2.podcast-title { font-size: 25px; line-height: 32.5px; }
+
+  section[data-section="trial-pathways"] { padding-top: 0; padding-bottom: 0; }
+  .table-3col, .content .table-3col .cell-t { display: block; width: 100%; }
+  .content .table-3col .cell-t, .content .table-3col .cell-t:first-child,
+  .content .table-3col .cell-t:nth-child(2), .content .table-3col .cell-t.last { padding: 0; }
+  .promo-simple { padding: 35px; }
+  .promo-icon.icon-circle .fa-stack.fa-3x { width: 88px; height: 88px; }
+  .promo-icon .mda-stack-1x { font-size: 48px; line-height: 88px; }
+  .promo-simple .promo-icon { margin-bottom: 0; }
+  .promo-simple .promo-header h3 { font-size: 32px; line-height: 41.6px; }
+  .promo-simple .promo-text { margin-top: 0; }
+  .promo-simple .body.promo-text-normal { margin-top: 20px; font-size: 16px; line-height: 20.8px; }
+  .promo-simple .cta-wrapper.cta-block-wrapper { display: inline-block; margin-top: 20px; padding-top: 15px; }
+  .promo-simple a.cta.cta-block { font-size: 16px; line-height: 20.8px; padding: 11.1px 30px; }
+
+  section[data-section="in-the-news"] { padding: 20px; }
+  .fis-articles { margin-top: 0; }
+  h2.fis-articles-title { font-size: 16px; line-height: 20.8px; margin-bottom: 13px; }
+  a.blog-summary.small.fis { float: none; width: 100%; margin: 0 0 31px; border: none; padding-bottom: 0; }
+  .fis .blog-summary-img-wrapper { float: left; width: 40%; height: 100px; overflow: hidden; }
+  .fis .blog-summary-img-wrapper img { height: 100%; width: auto; }
+  .fis .blog-summary-wrapper { float: right; width: 60%; padding: 16px; }
+  .fis h3.blog-title { font-size: 16px; line-height: 20.8px; }
+  button.fis-articles-read-more.cta { font-size: 16px; line-height: 20.8px; }
+
+  section[data-section="video-gallery"] { padding: 24px 0 35px; }
+  h2.section-title { font-size: 24px; line-height: 31.2px; padding: 35px; }
+  /* capture-state: live initializes a slick carousel at mobile; static t=0 offsets */
+  .mda-tabs.video-carousel { overflow: hidden; }
+  #tabs-0 { position: relative; left: -520px; width: 1680px; }
+  .collection-item, .collection-item.mobile-clone { display: block; flex: 0 0 280px; width: 280px; padding: 0 5.5px; }
+  .collection-body { padding: 16px; }
+  .collection-body .body-title p { margin-bottom: 17px; }
+
+  section[data-section="faculty-experts"] { padding: 0; }
+  section[data-section="faculty-experts"] .nested-section-title h2.section-title {
+    font-size: 24px; line-height: 24px; padding: 35px; margin: 0;
+  }
+  .col-double.cell-l, .col-double.last.cell-r { padding: 0; }
+  .col-double.last.cell-r { padding-top: 48px; }
+  .module.m-pad { padding: 0 35px; }
+  .module.m-pad .blog-summary.small { border: none; padding: 35px 0; height: auto; overflow: hidden; }
+  .module.m-pad .blog-summary-img-wrapper { float: left; width: 40%; height: 100px; overflow: hidden; }
+  .module.m-pad .blog-summary-img-wrapper img { display: block; height: 100px; width: auto; }
+  .blog-summary-wrapper.title { float: right; width: 60%; padding: 0 16px; }
+  .module.m-pad .blog-summary.small h3.blog-title { font-size: 16px; line-height: 20.8px; }
+  .blog-summary-wrapper.text { float: right; width: 60%; margin-top: 0; padding: 0 16px; }
+  .summary-text { display: none; }
+  .summary-cta-info { position: static; margin-top: 15px; }
+  .summary-cta-info a.cta { font-size: 16px; line-height: 20.8px; }
+  i.mdicon-arrow { font-size: 16px; }
+}
+</style>
+</head>
+<body class="basepage leftnavpage">
+
+<header class="mda-nav" data-canon="chrome-header">
+  <a id="content-skip-btn" href="#skip">Skip to Content</a>
+  <div class="mda-cta-list-container desktop" data-canon="chrome-utility-bar">
+    <ul class="mda-cta-list">
+      <li class="mda-cta-list-item login dropdown">
+        <a class="dropdown-trigger" href="https://my.mdanderson.org/MyChart/Home/"><span class="red-my">My</span><span class="white-chart">Chart</span></a>
+      </li>
+      <li class="mda-cta-list-item appointment dropdown">
+        <button class="dropdown-trigger" type="button">Request an Appointment</button>
+      </li>
+      <li class="mda-cta-list-item donate onlypossiblehere">
+        <a class="dropdown-trigger at-element-click-tracking" href="javascript:void(0);">Donate Today<i class="fa fa-heart mda-inverse"></i></a>
+      </li>
+    </ul>
+  </div>
+  <div class="mda-nav-top flex-row">
+    <a id="nav-logo" href="https://www.mdanderson.org/">
+      <img src="https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/xmda-logo.png.pagespeed.ic.jLVBCg-7dN.webp" alt="The University of Texas MD Anderson Cancer Center">
+    </a>
+    <div class="spacer desktop"></div>
+    <ul class="mda-nav-utility desktop flex-row">
+      <li><a class="mda-nav-utility-clinical-trials" href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html">Clinical Trials</a></li>
+      <li><a class="mda-nav-utility-directions" href="https://www.mdanderson.org/about-md-anderson/our-locations.html"><span>Locations</span></a></li>
+      <li><a class="careers" href="https://jobs.mdanderson.org/">Careers<span class="mda-icon-linkout"></span></a></li>
+      <li><a class="mda-nav-utility-call" href="https://www.mdanderson.org/about-md-anderson/contact-us.html">Contact Us</a></li>
+      <li><a class="mda-nav-utility-doctors" href="https://faculty.mdanderson.org/">Our Doctors</a></li>
+      <li class="dropdown mda-sublist-container">
+        <button class="mda-nav-utility-sublist-toggle mda-nav-utility-languages dropdown-trigger" type="button">Languages</button>
+      </li>
+    </ul>
+    <div id="nav-search">
+      <form id="nav-search-form" action="#" onsubmit="return false">
+        <i class="search-icon mda-icon-search"></i>
+        <input id="site-search" type="text" placeholder="Search" autocomplete="off">
+      </form>
+      <ul id="search-results"></ul>
+      <div id="live-search-results"></div>
+      <div class="search-options"></div>
+    </div>
+    <div class="mda-nav-mobile-menu mobile">
+      <button class="mda-nav-mobile-search-button open active" type="button">
+        <i class="search-icon mda-icon-search mobile-search"></i>
+        <span class="mda-nav-mobile-search-title">Search</span>
+      </button>
+      <button class="mda-nav-mobile-menu-button open active" type="button">
+        <i class="fa fa-2x mda-icon-menu"></i>
+        <span class="mda-nav-mobile-menu-title">Menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="mda-nav" data-canon="chrome-primary-nav">
+  <div class="mda-nav-wrapper">
+    <div class="mda-nav-main">
+      <ul class="mda-nav-main-list">
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-1" href="https://www.mdanderson.org/patients-family.html">Patients &amp; Family</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-2" href="https://www.mdanderson.org/prevention-screening.html">Prevention &amp; Screening</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-3" href="https://www.mdanderson.org/donors-volunteers.html">Donors &amp; Volunteers</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-4" href="https://www.mdanderson.org/for-physicians.html">For Physicians</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-5" href="https://www.mdanderson.org/research.html">Research</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-6" href="https://www.mdanderson.org/education-training.html">Education &amp; Training</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- mobile jump bar: live JS moves #sidebar-nav here at <=992px; recreated statically -->
+<div id="sidebar-nav" data-section="jump-menu" data-intent="wayfinding" data-layout="bar">
+  <div id="jump-menu-label">
+    <span class="jump-menu-label-text">Jump To: </span> <a id="jump-menu-toggle" aria-label="Open jump menu" role="button" href="#"><div class="mobile-menu-container"><i class="fa mda-icon-menu fa-lg"></i></div></a>
+  </div>
+  <a class="sidebar-back" href="https://www.mdanderson.org/patients-family/diagnosis-treatment.html"><i class="fa fa-angle-left"></i>Back</a>
+  <ul class="parent-level">
+    <li class="parent-link"><a href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html">Clinical Trials</a>
+      <ul class="child-level">
+        <li><a href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials/phases-of-clinical-trials.html">Phases of Clinical Trials</a></li>
+        <li><a href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials/joining-a-clinical-trial.html">Joining a Clinical Trial</a></li>
+        <li><a href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials/deciding-to-join-a-clinical-trial.html">Making a Decision</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div class="col-content-single breadcrumb-wrapper" data-section="breadcrumb" data-intent="wayfinding" data-layout="bar">
+  <div>
+    <section class="bleed-bottom blog-breadcrumbs">
+      <ul class="breadcrumbs clearfix">
+        <li>
+          <a href="https://www.mdanderson.org/patients-family/diagnosis-treatment.html" class="breadcrumb_arrow"><span>Diagnosis &amp; Treatment</span></a>
+        </li>
+        <li><span>Clinical Trials</span></li>
+      </ul>
+    </section>
+  </div>
+</div>
+<div></div>
+<main class="mda-content" data-template="program">
+  <a href="#" class="scrollToTop"><span class="cta_icon_top fa-angle-up"></span><span class="cta_top_text">Top</span></a>
+  <div id="video-overlay" class="media-overlay fade-out">
+    <i class="fa fa-times overlay-close" id="video-overlay-close"></i>
+    <div id="video-overlay-player" class="media-overlay-player"></div>
+  </div>
+  <div id="yt-overlay" class="media-overlay fade-out">
+    <i class="fa fa-times overlay-close" id="yt-overlay-close"></i>
+    <div id="yt-overlay-player" class="media-overlay-player"></div>
+  </div>
+  <div id="skip" class="page" tabindex="-1" role="region" aria-label="page content">
+    <div class="content sidebar-parent">
+      <section class="col-content-wrapper">
+        <div class="col-sidebar" data-section="section-nav" data-intent="wayfinding" data-layout="sidebar">
+          <div id="sidebar">
+            <div id="sidebar-nav">
+              <div id="jump-menu-label">
+                <span class="jump-menu-label-text">Jump To: </span> <a id="jump-menu-toggle" aria-label="Open jump menu" role="button" href="#"><div class="mobile-menu-container"><i class="fa mda-icon-menu fa-lg"></i></div></a>
+              </div>
+              <a class="sidebar-back" href="https://www.mdanderson.org/patients-family/diagnosis-treatment.html"><i class="fa fa-angle-left"></i>Back</a>
+              <ul class="parent-level">
+                <li class="parent-link"><a href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html">Clinical Trials</a>
+                  <ul class="child-level">
+                    <li><a href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials/phases-of-clinical-trials.html">Phases of Clinical Trials</a></li>
+                    <li><a href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials/joining-a-clinical-trial.html">Joining a Clinical Trial</a></li>
+                    <li><a href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials/deciding-to-join-a-clinical-trial.html">Making a Decision</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="sidebar_left_box">
+            <div class="section"></div><div class="iparys_inherited"></div>
+          </div>
+        </div>
+        <div class="col-content">
+          <section class="social-share-modal bleed-top bleed-bottom" data-section="share-tools" data-intent="social-share" data-layout="inline" data-interactive="static">
+            <span class="spacer">&nbsp;&nbsp;|&nbsp;</span>
+            <div class="social-share-buttons">
+              <a href="#" class="box email" role="button" tabindex="0" id="email-share"><i class="fa fa-mail-share mda-inverse fa-1x"></i>
+              </a>&nbsp;&nbsp;
+              <a href="#" class="box social-share" role="button" tabindex="0" id="social-share"><i class="fa fa-share-arrow-o mda-inverse fa-1x"></i>
+              </a>
+              <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close" id="closeBtn" role="button"><i class="fa fa-x mda-icon-X"></i>
+                  <span class="close-text">Close</span></span>
+                  <div class="modal-header">Share this article</div>
+                  <div class="social-icons">Via social media:
+                    <div class="col-single inner">
+                      <div class="social-links-wrapper">
+                        <div class="social-links-share">
+                          <div class="cw-social-links-carousel">
+                            <a id="fb-share" aria-label="facebook" href="#" class="box" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+                            <a id="twitter-share" aria-label="twitter" href="#" class="box" target="_blank"><i class="fa fa-x-twitter-square fa-2x"></i></a>
+                            <a id="linkedin-share" aria-label="linkedIn" href="#" class="box" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                            <a id="bluesky-share" aria-label="bluesky" href="#" class="box" target="_blank"><i class="fa fa-bluesky-square fa-2x"></i></a>
+                            <a id="threads-share" aria-label="threads" href="#" class="box" target="_blank"><i class="fa fa-threads-square fa-2x"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="copy-link">Or copy the link: <br>
+                    <input type="text" value="" id="myInput" class="copyField">
+                    <div class="copyButton">
+                      <button class="red" type="button">
+                        <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                        Copy
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="medical-reviewer-component bleed-top bleed-bottom" data-section="medical-reviewer" data-intent="metadata" data-layout="empty"></section>
+          <div class="social-share-padding">
+            <section class="table page-header-stack" data-section="page-header" data-intent="identity" data-layout="stack">
+              <div class="cell-inner middle page-header-wrapper">
+                <div class="page-header">
+                  <i class="fa mda-icon-clinical_trials_new fa-3x header-icon"></i>
+                  <div class="page-header-title with-icon">
+                    <h1>Clinical Trials at UT MD Anderson</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="cell-inner middle">
+                <div class="page-header-desc">
+                  <p>As part of our mission to eliminate cancer, UT MD Anderson researchers conduct hundreds of clinical trials to test new treatments for both common and rare cancers. Look through our database to find studies for which you may be eligible.</p>
+                </div>
+              </div>
+            </section>
+            <section class="bleed-top bleed-bottom" data-section="trial-search" data-intent="conversion" data-layout="banner" data-interactive="static-search-input">
+              <div class="clinical-trials-search-wrapper search-wrapper">
+                <div class="clinical-trials-search">
+                  <h2>Search Clinical Trials</h2>
+                  <p>Search by cancer type, treatment or drug, physician or NCT #</p>
+                  <div class="clinical-trials-search-form search-wrapper">
+                    <form name="clinical-trials-search" id="clinical-trials-search" class="search-form col-content" action="#" onsubmit="return false">
+                      <input id="clinical-trials-search-box" type="text" class="search-field" placeholder="Search Clinical Trials" size="1">
+                      <label class="visuallyhidden" for="clinical-trials-search-box">Search Clinical Trials</label>
+                      <input type="submit" value="Search" class="form-search-submit mda-btn">
+                    </form>
+                    <ul class="search-results" role="listbox"></ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class=" highlight " data-section="about-trials" data-intent="editorial" data-layout="two-column" data-media="image">
+              <div class="table">
+                <div class="cell-d cell-l">
+                  <div class="rte-container basic-content">
+                    <h2>What are clinical trials?</h2>
+                    <p>Clinical trials are research studies in which patients may volunteer to take part. <span class="nowrap">UT&nbsp;MD Anderson</span> uses clinical trials to find better ways to prevent, diagnose and treat cancer. Doctors use treatment trials to learn more about how to fight cancer. This guide is for patients who may join a treatment trial.</p>
+                    <p>Clinical trials are part of a long, careful process, which may take many years. First, doctors study a new treatment in the lab. Then they often study the treatment in animals. If a new treatment shows promise, doctors then test the treatment in people. Doctors do this in three to four steps, or phases. Your doctor may offer you a clinical trial as a treatment option.&nbsp;</p>
+                    <p class="extra-text">Is a trial right for you? <span class="nowrap">UT MD Anderson's</span>&nbsp;<a href="https://www.mdanderson.org/content/dam/mdanderson/documents/patients-and-family/diagnosis-and-treatment/treatment-options/clinical-trials-booklet.pdf">clinical trials booklet</a>&nbsp;contains a decision guide along with information on the clinical trials process.</p>
+                    <h3 class="extra-text">How am I protected?</h3>
+                    <p class="extra-text"><span class="nowrap">UT MD Anderson’s</span> most important job is to protect patients. First, <span class="nowrap">UT&nbsp;MD Anderson</span> protects patients in clinical trials by following well-planned protocols.&nbsp;</p>
+                    <p class="extra-text">A protocol:</p>
+                    <ul class="extra-text">
+                      <li>Explains the treatment plan</li>
+                      <li>Lists the medical tests patients will receive</li>
+                      <li>Gives the number of how many patients will take part in the clinical trial</li>
+                      <li>Lists eligibility criteria, which are guidelines to decide who may join the clinical trial</li>
+                      <li>Explains safety information</li>
+                    </ul>
+                    <p class="extra-text">Second, <span class="nowrap">UT&nbsp;MD Anderson</span> protects patients by using a careful informed consent process.</p>
+                    <p class="extra-text">Third, our Institutional Review Boards (IRBs) protect patients by reviewing protocols and monitoring trials. The IRBs are committees of doctors, nurses, chaplains, social workers, lawyers and patients. They make sure that trials follow federal laws and that patients are protected.</p>
+                    <p class="extra-text">The U.S. Food and Drug Administration (FDA) audits the IRBs’ files. Also, FDA officials may visit <span class="nowrap">UT&nbsp;MD Anderson</span> at any time and review anything they choose related to clinical trials.</p>
+                    <!-- capture-state: live JS injects a hidden mobile read-more toggle into the rte -->
+                    <div class="more cta">
+                      <a href="#" class="cta-block">More</a>
+                    </div>
+                    <div class="less cta hidden">
+                      <a href="#" class="cta-block">Less</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell-s last cell-r last">
+                  <div class="did-you-know background-purple" data-section="did-you-know" data-intent="credibility" data-layout="card">
+                    <div class="did-you-know-content">
+                      <h3 class="did-you-know-title">Did You Know?</h3>
+                      <div class="did-you-know-text-large">In Fiscal Year 2025, 70% of all cancer drugs approved by the FDA were tested at <span class="nowrap">UT&nbsp;MD Anderson</span> . </div>
+                    </div>
+                  </div>
+                  <br>
+                  <section class="podcast-component bleed-top" data-section="featured-podcast" data-intent="editorial" data-layout="card" data-media="image">
+                    <div class="podcast-container">
+                      <div class="top-side">
+                        <img src="https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/podcast/xCWPodcast_Wave_Hero_2400x564.jpg.pagespeed.ic.C1xNKV8Zwn.jpg" alt="Cancerwise Podcast">
+                      </div>
+                      <div class="left-side">
+                        <img src="https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/podcast/xCancerwise-Podcast.png.pagespeed.ic.gLkb_vHCGs.png" alt="Cancerwise Podcast">
+                      </div>
+                      <div class="podcast-items">
+                        <div class="podcast-display-item podcast-full-width">
+                          <h2 class="podcast-header">Featured Podcast:</h2>
+                          <h2 class="podcast-title">IBC clinical trials at UT MD Anderson</h2>
+                          <div class="podcast-cta cta">
+                            <a href="https://mdanderson.org/podcast?segitem=65445" target="_self" role="button" aria-label="View podcast episode page">
+                              <i class="fa fa-microphone" aria-hidden="true"></i>
+                              View podcast episode page
+                            </a>
+                          </div>
+                          <div class="podcast-transcript-cta cta">
+                            <a href="https://support.doctorpodcasting.com/client/texacc/item/65445-inflammatory-breast-cancer-ibc-clinical-trials-at-md-anderson?print=yes" target="_self" role="button" aria-label="Read transcript">
+                              <i class="fa fa-file-text" aria-hidden="true"></i>
+                              Read transcript
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </section>
+            <section class=" highlight " data-section="trial-pathways" data-intent="wayfinding" data-layout="three-column" data-items="3">
+              <div class="table table-3col">
+                <div class="cell-t">
+                  <div class="module">
+                    <div class="promo promo-simple promo-icon-purple promo-text-center">
+                      <div class="promo-icon-header-wrapper">
+                        <div class="promo-icon icon-circle" aria-hidden="true">
+                          <span class="fa-stack fa-3x">
+                            <i class="fa mda-icon-manage_risks mda-stack-1x mda-inverse"></i>
+                          </span>
+                        </div>
+                        <div class="promo-header">
+                          <h3 class="title minion-heading heading-center">
+                            Phases of a Trial
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="promo-text">
+                        <div class="body promo-text-normal">
+                          <p>Each clinical trial goes through several phases, each with a different purpose.</p>
+                        </div>
+                        <div class="cta-wrapper cta-block-wrapper">
+                          <a href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials/phases-of-clinical-trials.html" class="cta cta-block" target="_self" title=" Opens a new window">
+                            Clinical trial phases
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell-t">
+                  <div class="module">
+                    <div class="promo promo-simple promo-icon-lightblue promo-text-center">
+                      <div class="promo-icon-header-wrapper">
+                        <div class="promo-icon icon-circle" aria-hidden="true">
+                          <span class="fa-stack fa-3x">
+                            <i class="fa mda-icon-1on1counseling mda-stack-1x mda-inverse"></i>
+                          </span>
+                        </div>
+                        <div class="promo-header">
+                          <h3 class="title minion-heading heading-center">
+                            Joining a Trial
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="promo-text">
+                        <div class="body promo-text-normal">
+                          <p>Learn more about eligibility requirements to participate in a clinical trial.</p>
+                        </div>
+                        <div class="cta-wrapper cta-block-wrapper">
+                          <a href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials/joining-a-clinical-trial.html" class="cta cta-block" target="_self" title=" Opens a new window">
+                            Deciding to join a trial
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell-t last">
+                  <div class="module">
+                    <div class="promo promo-simple promo-icon-orange promo-text-center">
+                      <div class="promo-icon-header-wrapper">
+                        <div class="promo-icon icon-circle" aria-hidden="true">
+                          <span class="fa-stack fa-3x">
+                            <i class="fa mda-icon-knowledgecenter mda-stack-1x mda-inverse"></i>
+                          </span>
+                        </div>
+                        <div class="promo-header">
+                          <h3 class="title minion-heading heading-center">
+                            Clinical Trial FAQs
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="promo-text">
+                        <div class="body promo-text-normal">
+                          <p>Questions to ask your physician as you decide whether joining a clinical trial is right for you.</p>
+                        </div>
+                        <div class="cta-wrapper cta-block-wrapper">
+                          <a href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials/deciding-to-join-a-clinical-trial.html" class="cta cta-block" target="_self" title=" Opens a new window">
+                            Frequently asked questions
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section data-section="in-the-news" data-intent="editorial" data-layout="two-column" data-items="2">
+              <div class="fis-articles">
+                <h2 class="fis-articles-title">In the News</h2>
+                <div class="article-container">
+                  <a href="https://www.mdanderson.org/cancerwise/two-time-tongue-cancer-survivor--why-i-support-research-at-ut-mderson.h00-159854556.html" class="blog-summary small fis">
+                    <div class="blog-summary-img-wrapper">
+                      <picture>
+                        <source srcset="https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/L/CW_Lutterman_Jessica_March2026.png.resize.900.470.high.jpg 2x, https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/L/CW_Lutterman_Jessica_March2026.png.resize.450.235.high.jpg 1x" media="(min-width: 993px)">
+                        <source srcset="https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/L/CW_Lutterman_Jessica_March2026.png.resize.450.235.high.jpg" media="(min-width: 753px)">
+                        <img srcset="https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/L/xCW_Lutterman_Jessica_March2026.png.resize.220.220.high.jpg.pagespeed.ic.ejVtG35cp1.jpg 2x, https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/L/xCW_Lutterman_Jessica_March2026.png.resize.110.110.high.jpg.pagespeed.ic.bNnG8oIDB7.jpg 1x" alt="Oral cancer survivor Jessica Lutterman" src="https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/L/xCW_Lutterman_Jessica_March2026.png.resize.jpg.pagespeed.ic.uW_aaE03sM.jpg">
+                      </picture>
+                    </div>
+                    <div class="blog-summary-wrapper">
+                      <h3 class="blog-title">Two-time tongue cancer survivor: Why I support research at...</h3>
+                    </div>
+                  </a>
+                  <a href="https://www.mdanderson.org/cancerwise/astrocytoma-survivor--why-i-joined-a-targeted-therapy-clinical-trial-at-ut-md-anderson.h00-159853767.html" class="blog-summary small fis">
+                    <div class="blog-summary-img-wrapper">
+                      <picture>
+                        <source srcset="https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/B/CW_Bell_Andy_DrPrabhu_021326_Crop.jpg.resize.900.470.high.jpg 2x, https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/B/CW_Bell_Andy_DrPrabhu_021326_Crop.jpg.resize.450.235.high.jpg 1x" media="(min-width: 993px)">
+                        <source srcset="https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/B/CW_Bell_Andy_DrPrabhu_021326_Crop.jpg.resize.450.235.high.jpg" media="(min-width: 753px)">
+                        <img srcset="https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/B/xCW_Bell_Andy_DrPrabhu_021326_Crop.jpg.resize.220.220.high.jpg.pagespeed.ic.R46vzasgwy.jpg 2x, https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/B/xCW_Bell_Andy_DrPrabhu_021326_Crop.jpg.resize.110.110.high.jpg.pagespeed.ic.dWPdwAYRER.jpg 1x" alt="Astrocytoma survivor Andy Bell (right) with Sujit Prabhu, M.D." src="https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/B/xCW_Bell_Andy_DrPrabhu_021326_Crop.jpg.resize.jpg.pagespeed.ic.BHpaYMf3Vc.jpg">
+                      </picture>
+                    </div>
+                    <div class="blog-summary-wrapper">
+                      <h3 class="blog-title">Astrocytoma survivor: Why I joined a targeted therapy clinical...</h3>
+                    </div>
+                  </a>
+                  <!-- capture-state: live JS removes fis items beyond data-itemstoshow=2 from the DOM -->
+                  <div class="clearfix">
+                    <button class="fis-articles-read-more cta" type="button">View more</button>
+                    <button class="fis-articles-read-less cta" type="button">View less</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section data-section="video-gallery" data-intent="storytelling" data-layout="two-column" data-items="2" data-media="video-poster" data-interactive="static-t0">
+              <div class="module">
+                <div class="collection video-collection">
+                  <div><h2 class="section-title">Video Gallery </h2></div>
+                  <div class="mda-tabs video-carousel ui-tabs">
+                    <div class="collection-group video-collection two-only collapse" id="tabs-0">
+                      <!-- capture-state: live slick carousel clones (mobile t=0 state); hidden on desktop -->
+                      <div class="collection-item slick-slide slick-cloned mobile-clone" aria-hidden="true">
+                        <a class="inner" href="https://www.mdanderson.org/content/dam/mdanderson/video/youtube/6/6sgh1UIs3Hw" tabindex="-1">
+                          <div class="collection-image">
+                            <img src="https://i.ytimg.com/vi/6sgh1UIs3Hw/mqdefault.jpg" alt=" ">
+                            <div class="video-play-button" role="button">
+                              <i class="mdicon-videoplay md-2x video-icon" title="Play Video"></i>
+                            </div>
+                          </div>
+                          <div class="collection-body">
+                            <div class="body-title">
+                              <p>How clinical trials advance innovative cancer care</p>
+                            </div>
+                            <div class="body-text">Clinical trials are essential for delivering new and better cancer treatments...</div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="collection-item slick-slide slick-cloned mobile-clone" aria-hidden="true">
+                        <a class="inner" href="https://www.mdanderson.org/content/dam/mdanderson/video/youtube/i/IqZtJcdOcCw" tabindex="-1">
+                          <div class="collection-image">
+                            <img src="https://i.ytimg.com/vi/IqZtJcdOcCw/mqdefault.jpg" alt=" ">
+                            <div class="video-play-button" role="button">
+                              <i class="mdicon-videoplay md-2x video-icon" title="Play Video"></i>
+                            </div>
+                          </div>
+                          <div class="collection-body">
+                            <div class="body-title">Breast cancer patient describes clinical trial...</div>
+                            <div class="body-text">“There’s so much research going on,” said metastatic breast cancer patient...</div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="collection-item">
+                        <a class="inner" href="https://www.mdanderson.org/content/dam/mdanderson/video/youtube/6/6sgh1UIs3Hw" aria-label="Play video: How clinical trials advance innovative cancer care">
+                          <div class="collection-image">
+                            <img src="https://i.ytimg.com/vi/6sgh1UIs3Hw/mqdefault.jpg" alt=" ">
+                            <div class="video-play-button" role="button">
+                              <i class="mdicon-videoplay md-2x video-icon" title="Play Video"></i>
+                            </div>
+                          </div>
+                          <div class="collection-body">
+                            <div class="body-title">
+                              <p>How clinical trials advance innovative cancer care</p>
+                            </div>
+                            <div class="body-text">Clinical trials are essential for delivering new and better cancer treatments...</div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="collection-item">
+                        <a class="inner" href="https://www.mdanderson.org/content/dam/mdanderson/video/youtube/i/IqZtJcdOcCw" aria-label="Play video: Breast cancer patient describes clinical trial experience during COVID-19">
+                          <div class="collection-image">
+                            <img src="https://i.ytimg.com/vi/IqZtJcdOcCw/mqdefault.jpg" alt=" ">
+                            <div class="video-play-button" role="button">
+                              <i class="mdicon-videoplay md-2x video-icon" title="Play Video"></i>
+                            </div>
+                          </div>
+                          <div class="collection-body">
+                            <div class="body-title">Breast cancer patient describes clinical trial...</div>
+                            <div class="body-text">“There’s so much research going on,” said metastatic breast cancer patient...</div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="more cta">
+                        <a href="#" class="cta-block">More</a>
+                      </div>
+                      <div class="less cta hidden">
+                        <a href="#" class="cta-block">Less</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class=" highlight " data-section="faculty-experts" data-intent="editorial" data-layout="two-column" data-items="2">
+              <div class="nested-section-title">
+                <h2 class="section-title text-center">From our Faculty Experts</h2>
+              </div>
+              <div class="table">
+                <div class="col-double cell-l">
+                  <div>
+                    <div>
+                      <div class="module m-pad">
+                        <div class="blog-summary small">
+                          <a href="https://www.mdanderson.org/cancerwise/meeting-with-a-research-nurse-during-a-clinical-trial--what-to-know.h00-159695178.html" id="clinical_trials_summarycomponen_imgmeeting_with" aria-label="Meeting with a research nurse during a clinical trial: What to know">
+                            <div class="blog-summary-img-wrapper">
+                              <picture>
+                                <source srcset="https://www.mdanderson.org/content/mda/en/cancerwise/2024/02/meeting-with-a-research-nurse-during-a-clinical-trial--what-to-know/jcr:content/blog/adaptiveimage.resize.900.0.high.jpg/1758899241907.png 2x, https://www.mdanderson.org/content/mda/en/cancerwise/2024/02/meeting-with-a-research-nurse-during-a-clinical-trial--what-to-know/jcr:content/blog/adaptiveimage.resize.450.0.high.jpg/1758899241907.png 1x" media="(min-width: 993px)">
+                                <source srcset="https://www.mdanderson.org/content/mda/en/cancerwise/2024/02/meeting-with-a-research-nurse-during-a-clinical-trial--what-to-know/jcr:content/blog/adaptiveimage.resize.450.0.high.jpg" media="(min-width: 753px)">
+                                <img srcset="https://www.mdanderson.org/content/mda/en/cancerwise/2024/02/meeting-with-a-research-nurse-during-a-clinical-trial--what-to-know/jcr:content/blog/adaptiveimage.resize.900.0.high.jpg/1758899241907.png 2x,https://www.mdanderson.org/content/mda/en/cancerwise/2024/02/meeting-with-a-research-nurse-during-a-clinical-trial--what-to-know/jcr:content/blog/adaptiveimage.resize.450.0.high.jpg/1758899241907.png 1x" src="https://www.mdanderson.org/content/mda/en/cancerwise/2024/02/meeting-with-a-research-nurse-during-a-clinical-trial--what-to-know/jcr:content/blog/xadaptiveimage.resize.jpg.pagespeed.ic.RQH73wCwF9.jpg">
+                              </picture>
+                            </div>
+                            <div class="blog-summary-wrapper title">
+                              <h3 class="blog-title ">
+                                Meeting with a research nurse during a clinical trial: What to know
+                              </h3>
+                            </div>
+                          </a>
+                          <div class="blog-summary-wrapper text">
+                            <div>
+                              <div class="summary-text"><p>Enrolling in a clinical trial is one way to access cancer treatment that may not yet be broadly available while helping future cancer...</p></div>
+                            </div>
+                            <div class="summary-cta-info">
+                              <div>
+                                <a href="https://www.mdanderson.org/cancerwise/meeting-with-a-research-nurse-during-a-clinical-trial--what-to-know.h00-159695178.html" class="cta">Read more<i class="mdicon-arrow"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-double last cell-r last">
+                  <div>
+                    <div>
+                      <div class="module m-pad">
+                        <div class="blog-summary small">
+                          <a href="https://www.mdanderson.org/cancerwise/gastrointestinal-medical-oncologist-and-researcher-driven-to-help-patients-live-longer.h00-159701490.html" id="clinical_trials_summarycomponen_imggastrointest" aria-label="Gastrointestinal medical oncologist and researcher driven to help patients live longer">
+                            <div class="blog-summary-img-wrapper">
+                              <picture>
+                                <source srcset="https://www.mdanderson.org/content/mda/en/cancerwise/2024/10/gastrointestinal-medical-oncologist-and-researcher-driven-to-help-patients-live-longer/jcr:content/blog/adaptiveimage.resize.900.0.high.jpg 2x, https://www.mdanderson.org/content/mda/en/cancerwise/2024/10/gastrointestinal-medical-oncologist-and-researcher-driven-to-help-patients-live-longer/jcr:content/blog/adaptiveimage.resize.450.0.high.jpg 1x" media="(min-width: 993px)">
+                                <source srcset="https://www.mdanderson.org/content/mda/en/cancerwise/2024/10/gastrointestinal-medical-oncologist-and-researcher-driven-to-help-patients-live-longer/jcr:content/blog/adaptiveimage.resize.450.0.high.jpg" media="(min-width: 753px)">
+                                <img srcset="https://www.mdanderson.org/content/mda/en/cancerwise/2024/10/gastrointestinal-medical-oncologist-and-researcher-driven-to-help-patients-live-longer/jcr:content/blog/xadaptiveimage.resize.900.0.high.jpg.pagespeed.ic.OnFpJHqfsV.jpg 2x, https://www.mdanderson.org/content/mda/en/cancerwise/2024/10/gastrointestinal-medical-oncologist-and-researcher-driven-to-help-patients-live-longer/jcr:content/blog/xadaptiveimage.resize.450.0.high.jpg.pagespeed.ic.cmkmpw-ao4.jpg 1x" src="https://www.mdanderson.org/content/mda/en/cancerwise/2024/10/gastrointestinal-medical-oncologist-and-researcher-driven-to-help-patients-live-longer/jcr:content/blog/xadaptiveimage.resize.jpg.pagespeed.ic.fWDPNlTd7K.jpg">
+                              </picture>
+                            </div>
+                            <div class="blog-summary-wrapper title">
+                              <h3 class="blog-title ">
+                                Gastrointestinal medical oncologist and researcher driven to help patients live longer
+                              </h3>
+                            </div>
+                          </a>
+                          <div class="blog-summary-wrapper text">
+                            <div>
+                              <div class="summary-text"><p>Van Morris, M.D., is driven to offer more to patients.<br>“I am reminded every day about the opportunities for improving treatments for...</p></div>
+                            </div>
+                            <div class="summary-cta-info">
+                              <div>
+                                <a href="https://www.mdanderson.org/cancerwise/gastrointestinal-medical-oncologist-and-researcher-driven-to-help-patients-live-longer.h00-159701490.html" class="cta">Read more<i class="mdicon-arrow"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div><!-- /div.content -->
+
+<!-- CHROME:ENDCANCER -->
+<div class="pre-footer" data-canon="chrome-endcancer">
+  <div class="section"></div>
+  <div class="iparys_inherited">
+    <section class="highlight apply">
+      <div class="nested-section-title">
+        <h2 class="section-title text-center">Help #EndCancer</h2>
+      </div>
+      <div class="table table-3col">
+        <div class="cell-t cell-full-height">
+          <div class="module m-bleed">
+            <div class="promo promo-no-icon promo-background-red">
+              <div class="promo-icon-header-wrapper">
+                <div class="promo-header"><h3 class="title minion-heading heading-center">Give Now</h3></div>
+              </div>
+              <div class="promo-text">
+                <div class="body promo-text-normal">Your gift will help make a tremendous difference.</div>
+                <div class="cta-wrapper cta-block-wrapper">
+                  <a class="cta cta-block" href="https://gifts.mdanderson.org/Default.aspx?tsid=37435">Donate <span class="mda-icon-linkout"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell-t cell-full-height">
+          <div class="module m-bleed">
+            <div class="promo promo-no-icon promo-background-black">
+              <div class="promo-icon-header-wrapper">
+                <div class="promo-header"><h3 class="title minion-heading heading-center">Donate Blood</h3></div>
+              </div>
+              <div class="promo-text">
+                <div class="body promo-text-normal"><p>Our patients depend on blood and platelet donations.</p></div>
+                <div class="cta-wrapper cta-block-wrapper">
+                  <a class="cta cta-block" href="https://www.mdandersonbloodbank.org/">Make an appointment <span class="mda-icon-linkout"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell-t last cell-full-height">
+          <div class="module m-bleed">
+            <div class="promo promo-no-icon promo-background-blue">
+              <div class="promo-icon-header-wrapper">
+                <div class="promo-header"><h3 class="title minion-heading heading-center">Shop UT MD Anderson</h3></div>
+              </div>
+              <div class="promo-text">
+                <div class="body promo-text-normal"><p>Show your support for our mission through branded merchandise.</p></div>
+                <div class="cta-wrapper cta-block-wrapper">
+                  <a class="cta cta-block" href="https://shop.mdanderson.org">View products <span class="mda-icon-linkout"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<!-- /CHROME:ENDCANCER -->
+
+<!-- CHROME:BOTTOM -->
+<section class="global-footer bleed-full" data-canon="chrome-footer">
+  <footer>
+    <div class="subscribe-to" data-canon="chrome-newsletter">
+      <div class="col-single inner">
+        <div class="icon-circle">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa mda-icon-email mda-stack-1x"></i>
+          </span>
+        </div>
+        <div class="subscribeTitle">Subscribe to our Cancerwise newsletter</div>
+        <form id="29" action="#" onsubmit="return false">
+          <div class="fieldContainer">
+            <div id="tfa_23-D"><div class="inputWrapper"><input id="tfa_23" type="text" placeholder="First Name *"></div></div>
+            <div id="tfa_38-D"><div class="inputWrapper"><input id="tfa_38" type="text" placeholder="Last Name *"></div></div>
+            <div id="tfa_20-D"><div class="inputWrapper"><input id="tfa_20" type="text" placeholder="Email Address *"></div></div>
+          </div>
+          <div class="footer-cta-wrapper">
+            <div class="footer-cta"><input class="ftrSubGo" type="submit" value="Get started"></div>
+            <div class="footer-cta-mobile"><input class="ftrSubGo" type="submit" value="Get started"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div class="col2 mda-logo">
+        <a href="https://www.mdanderson.org/">
+          <img class="desktop" src="https://www.mdanderson.org/content/mda/en/jcr:content/footer/xdesktoplogo.resize.png.pagespeed.ic.wmDIh2S-LF.webp" alt="UT MD Anderson logo">
+          <img class="mobile" src="https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp" alt="UT MD Anderson logo">
+        </a>
+        <li class="at-sticky-promo-li">
+              <a class="at-sticky-promo-link-wrapper" href="https://onlypossiblehere.mdanderson.org"><div class="at-sticky-promo-top"><div class="at-promo-svg-wrapper"><svg viewBox="0 0 125 26" width="125" height="26" aria-hidden="true"><style>.st0-desktop { fill: #000; }</style></svg></div><span class="at-promo-arrow"><i class="fa-solid fa-angle-right"></i></span></div><div class="at-sticky-promo-bottom"><span class="at-promo-return-text">Explore what your support makes possible</span></div></a>
+        </li>
+      </div>
+      <div class="col1"></div>
+      <div class="col2">
+        <ul>
+          <li class="title">Explore<div class="toggle"></div></li>
+          <li><a href="https://www.mdanderson.org/patients-family.html">Patients &amp; Family</a></li>
+          <li><a href="https://www.mdanderson.org/prevention-screening.html">Prevention &amp; Screening</a></li>
+          <li><a href="https://www.mdanderson.org/donors-volunteers.html">Donors &amp; Volunteers</a></li>
+          <li><a href="https://www.mdanderson.org/for-physicians.html">For Physicians</a></li>
+          <li><a href="https://www.mdanderson.org/research.html">Research</a></li>
+          <li><a href="https://www.mdanderson.org/education-training.html">Education &amp; Training</a></li>
+          <li><a href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html">Clinical Trials</a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/contact-us/languages.html">Languages</a></li>
+        </ul>
+      </div>
+      <div class="col2">
+        <ul>
+          <li class="title">About<div class="toggle"></div></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson.html">About <span class="nowrap">UT MD Anderson</span></a></li>
+          <li><a href="https://jobs.mdanderson.org/">Careers<span class="mda-icon-linkout"></span></a></li>
+          <li><a href="https://www.mdanderson.org/cancerwise.html">Blog</a></li>
+          <li><a href="https://www.mdanderson.org/newsroom.html">Newsroom</a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html">Editorial Standards</a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/employee-resources.html">For Employees</a></li>
+          <li><a href="https://shop.mdanderson.org/">Merchandise<span class="mda-icon-linkout"></span></a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html">Title IX Reporting (Sexual Misconduct)</a></li>
+          <li><a href="https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html">Price Transparency</a></li>
+        </ul>
+      </div>
+      <div class="col2">
+        <ul>
+          <li class="title">Finding Your Way<div class="toggle"></div></li>
+          <li><a href="https://faculty.mdanderson.org/">Our Doctors</a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/our-locations.html">Locations</a></li>
+          <li><a href="https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html">Directions</a></li>
+          <li><a href="https://www.mdanderson.org/patients-family/html-sitemap.html">Sitemap</a></li>
+        </ul>
+        <ul id="a11y-block">
+          <li class="title">Digital Accessibility<div class="toggle"></div></li>
+          <li>
+            <a class="a11y-link" href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html">Accessibility Policy</a>
+            <a class="a11y-icon" href="https://www.levelaccess.com/MDAnderson"><img src="https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/eA_Icon_Black.svg" alt="MD Anderson works with Level Access to ensure our website is accessible and functional for all users. Free assistive technology is provided for people with physical disabilities. To learn more or to download the assistive technology tool, visit https://www.levelaccess.com/MDAnderson" width="80" height="30" style="margin-top:20px"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col3 last">
+        <ul id="get-in-touch">
+          <li class="title">Get in Touch<div class="toggle"></div></li>
+          <li class="footer-contact-item">
+            <a class="footerTel" href="tel:+18777901139">
+              <div class="icon-circle"><span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x"></i><i class="fa mda-icon-call-stroke mda-stack-1x"></i></span></div>
+              Call
+              <div class="footer-contact-bold">1-877-790-1139</div>
+            </a>
+          </li>
+          <li class="footer-contact-item onlyLabel">
+            <a id="patients_family_footer" href="https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html">
+              <div class="icon-circle"><span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x"></i><i class="fa mda-icon-knowledgecenter mda-stack-1x"></i></span></div>
+              Ask a question
+              <div class="footer-contact-bold"></div>
+            </a>
+          </li>
+        </ul>
+        <ul id="stay-connected">
+          <li class="title">Stay Connected<div class="toggle"></div></li>
+          <li class="stay-connected">
+            <div class="col-single inner">
+              <div class="social-links-wrapper">
+                <div class="social-links">
+                  <div class="social-links-carousel slick-initialized slick-slider">
+                    <button class="slick-prev" type="button">Previous</button>
+                    <div class="slick-list draggable">
+                      <div class="slick-track">
+                        <a class="box slick-slide slick-active" href="//facebook.com/MDAnderson"><i class="fa fa-facebook-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="//x.com/UTMDAnderson"><i class="fa fa-x-twitter-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="//youtube.com/mdandersonorg"><i class="fa fa-youtube-play-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="//instagram.com/mdandersoncancercenter"><i class="fa fa-instagram-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="//linkedin.com/company/mdandersoncancercenter"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                        <a class="box slick-slide" href="http://bsky.app/profile/mdanderson.bsky.social"><i class="fa fa-bluesky-square fa-2x"></i></a>
+                        <a class="box slick-slide" href="https://threads.com/@mdandersoncancercenter"><i class="fa fa-threads-square fa-2x"></i></a>
+                      </div>
+                    </div>
+                    <button class="slick-next" type="button">Next</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul id="podcast">
+          <li class="title">Cancerwise Podcast<div class="toggle"></div></li>
+          <li class="podcast">
+            <div class="col-single inner">
+              <div class="social-links-wrapper">
+                <div class="social-links">
+                  <div class="social-links-carousel slick-initialized slick-slider">
+                    <button class="slick-prev" type="button">Previous</button>
+                    <div class="slick-list draggable">
+                      <div class="slick-track">
+                        <a class="box slick-slide slick-active" href="https://podcasts.apple.com/us/podcast/cancerwise-podcast/id1751785346"><i class="fa fa-apple-podcast-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="https://open.spotify.com/show/28rgC5nO7OpLhnPlNylNem"><i class="fa fa-spotify-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="http://www.youtube.com/playlist?list=PLKscGuVrfI9LvQrf5At-R7TewdfY4OeOP"><i class="fa fa-youtube-play-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="http://www.pandora.com/podcast/cancerwise-podcast/PC:1001088873"><i class="fa fa-pandora-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="http://www.iheart.com/podcast/269-cancerwise-podcast-185103717/"><i class="fa fa-iheart-square fa-2x"></i></a>
+                        <a class="box slick-slide" href="https://support.doctorpodcasting.com/podcastfeed/335"><i class="fa fa-rss-feed-square fa-2x"></i></a>
+                      </div>
+                    </div>
+                    <button class="slick-next" type="button">Next</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-links sublink-container">
+      <div class="footer-sublinks">
+        <div class="sublinks-list-container">
+          <ul>
+            <li class="title">More<div class="toggle"></div></li>
+            <li><a id="patients_family_footer_1" href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html">Website Privacy Policy</a></li>
+            <li><a id="patients_family_footer_2" href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html">Legal Statement &amp; Policies</a></li>
+            <li><a id="patients_family_footer_3" href="https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html">Reports to the State</a></li>
+            <li><a id="patients_family_footer_4" href="https://www3.mdanderson.org/emergencyalert/">Emergency Alert Information</a></li>
+            <li><a id="patients_family_footer_5" href="https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html">State of Texas Links</a></li>
+            <li><a id="patients_family_footer_6" href="https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html">Our Cancer Network</a></li>
+            <li><a id="patients_family_footer_7" href="https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html">Vendors &amp; Suppliers</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-footer-bar" data-canon="chrome-mission-band">
+      <div class="footer-bar-logo">
+        <a href="/"><img class="logo" src="https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp" alt="UT MD Anderson logo"></a>
+      </div>
+      <div class="footer-bar-text">
+        <div class="missionstatement">The mission of The University of Texas MD Anderson Cancer Center is to eliminate cancer in Texas, the nation, and the world through outstanding programs that integrate patient care, research and prevention, and through education for undergraduate and graduate students, trainees, professionals, employees and the public.</div>
+        <p class="copyright">&copy; 2026 The University of Texas <span class="nowrap">MD Anderson</span> Cancer Center. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</section>
+<!-- /CHROME:BOTTOM -->
+  </div><!-- /div#skip -->
+</main>
+</body>
+</html>

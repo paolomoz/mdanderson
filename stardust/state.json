@@ -1,0 +1,307 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:stardust",
+    "writtenAt": "2026-08-19T00:00:00Z",
+    "stardustVersion": "0.18.1",
+    "note": "Initialized for MD Anderson EDS migration POC. Hands-off replica + uplift run."
+  },
+  "site": {
+    "originUrl": "https://www.mdanderson.org",
+    "deployUrl": null,
+    "extractedAt": "2026-08-19T18:30:00Z",
+    "pageCap": 12,
+    "totalDiscovered": 12,
+    "crawled": 12
+  },
+  "direction": {
+    "resolvedAt": null,
+    "phrase": "POC: migrate mdanderson.org to EDS \u2014 replica (same-design) + uplift shine variants on homepage",
+    "directionFile": "stardust/direction.md",
+    "iaFidelity": "preserved"
+  },
+  "handsOff": true,
+  "pages": [
+    {
+      "slug": "index",
+      "url": "https://www.mdanderson.org/",
+      "title": null,
+      "type": "landing",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-08-19T18:30:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-08-19T20:05:00Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-08-19T20:05:00Z",
+          "approvedBy": "hands-off"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "role": "archetype",
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": "stardust/prototypes/index-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "patients-family-html",
+      "url": "https://www.mdanderson.org/patients-family.html",
+      "title": null,
+      "type": "landing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-08-19T18:30:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "role": "sibling:index",
+      "currentStatePath": "stardust/current/pages/patients-family-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "cancer-types-breast-cancer-html",
+      "url": "https://www.mdanderson.org/cancer-types/breast-cancer.html",
+      "title": null,
+      "type": "program",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-08-19T18:30:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-08-19T22:30:00Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-08-19T22:30:00Z",
+          "approvedBy": "hands-off"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "role": "archetype",
+      "currentStatePath": "stardust/current/pages/cancer-types-breast-cancer-html.json",
+      "prototypePath": "stardust/prototypes/cancer-types-breast-cancer-html-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html",
+      "url": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/breast-center.html",
+      "title": null,
+      "type": "program",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-08-19T18:30:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "role": "archetype",
+      "currentStatePath": "stardust/current/pages/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "patients-family-diagnosis-treatment-clinical-trials-html",
+      "url": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html",
+      "title": null,
+      "type": "program",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-08-19T18:30:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-08-19T21:20:00Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-08-19T21:20:00Z",
+          "approvedBy": "hands-off"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "role": "archetype",
+      "currentStatePath": "stardust/current/pages/patients-family-diagnosis-treatment-clinical-trials-html.json",
+      "prototypePath": "stardust/prototypes/patients-family-diagnosis-treatment-clinical-trials-html-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "prevention-screening-html",
+      "url": "https://www.mdanderson.org/prevention-screening.html",
+      "title": null,
+      "type": "landing",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-08-19T18:30:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-08-19T21:00:00Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-08-19T21:00:00Z",
+          "approvedBy": "hands-off"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "role": "archetype",
+      "currentStatePath": "stardust/current/pages/prevention-screening-html.json",
+      "prototypePath": "stardust/prototypes/prevention-screening-html-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "research-html",
+      "url": "https://www.mdanderson.org/research.html",
+      "title": null,
+      "type": "landing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-08-19T18:30:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "role": "archetype",
+      "currentStatePath": "stardust/current/pages/research-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "about-md-anderson-html",
+      "url": "https://www.mdanderson.org/about-md-anderson.html",
+      "title": null,
+      "type": "static",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-08-19T18:30:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "role": "archetype",
+      "currentStatePath": "stardust/current/pages/about-md-anderson-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "about-md-anderson-our-locations-html",
+      "url": "https://www.mdanderson.org/about-md-anderson/our-locations.html",
+      "title": null,
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-08-19T18:30:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "role": "archetype",
+      "currentStatePath": "stardust/current/pages/about-md-anderson-our-locations-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "cancerwise-html",
+      "url": "https://www.mdanderson.org/cancerwise.html",
+      "title": null,
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-08-19T18:30:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "role": "archetype",
+      "currentStatePath": "stardust/current/pages/cancerwise-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html",
+      "url": "https://www.mdanderson.org/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134.html",
+      "title": null,
+      "type": "article",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-08-19T18:30:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-08-19T22:00:00Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-08-19T22:00:00Z",
+          "approvedBy": "hands-off"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "role": "archetype",
+      "currentStatePath": "stardust/current/pages/cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html.json",
+      "prototypePath": "stardust/prototypes/cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "donors-volunteers-html",
+      "url": "https://www.mdanderson.org/donors-volunteers.html",
+      "title": null,
+      "type": "form",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-08-19T18:30:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-08-19T21:40:00Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-08-19T21:40:00Z",
+          "approvedBy": "hands-off"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "role": "archetype",
+      "currentStatePath": "stardust/current/pages/donors-volunteers-html.json",
+      "prototypePath": "stardust/prototypes/donors-volunteers-html-proposed.html",
+      "migratedPath": null
+    }
+  ]
+}

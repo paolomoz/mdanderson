@@ -1,0 +1,1115 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-08-19T16:12:27.001Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "cancer-types-breast-cancer-html",
+  "url": "https://www.mdanderson.org/cancer-types/breast-cancer.html",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-08-19T16:12:27.001Z",
+  "finalUrl": "https://www.mdanderson.org/cancer-types/breast-cancer.html",
+  "title": "Breast Cancer: Symptoms, Risk Factors & Treatments | UT MD Anderson",
+  "description": "Breast cancer occurs when a cell in the breast mutates and starts multiplying rapidly. There are more than 275,000 breast cancer diagnoses in the United States each year. Learn about breast cancer signs, diagnosis, causes, risk factors, and treatment options.",
+  "og": {
+    "title": "Breast Cancer",
+    "description": "Breast cancer occurs when a cell in the breast mutates and starts multiplying rapidly. There are more than 275,000 breast cancer diagnoses in the United States each year. Learn about breast cancer signs, diagnosis, causes, risk factors, and treatment options.",
+    "image": "https://www.mdanderson.org/mda-logo-sharable.png",
+    "type": "Website"
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Breast Cancer"
+    },
+    {
+      "tag": "h2",
+      "text": "About breast cancer"
+    },
+    {
+      "tag": "h2",
+      "text": "Types of breast cancer"
+    },
+    {
+      "tag": "h3",
+      "text": "UT MD Anderson is #1 in Cancer Care"
+    },
+    {
+      "tag": "h3",
+      "text": "Classifying by molecular features"
+    },
+    {
+      "tag": "h3",
+      "text": "Hormone receptor-positive breast cancer"
+    },
+    {
+      "tag": "h3",
+      "text": "HER2-positive breast cancer"
+    },
+    {
+      "tag": "h3",
+      "text": "Triple-negative breast cancer"
+    },
+    {
+      "tag": "h3",
+      "text": "Classifying by cells where the disease starts"
+    },
+    {
+      "tag": "h3",
+      "text": "Classifying by how far the cancer has spread"
+    },
+    {
+      "tag": "h2",
+      "text": "More about breast cancer"
+    },
+    {
+      "tag": "h2",
+      "text": "Symptoms"
+    },
+    {
+      "tag": "h2",
+      "text": "Diagnosis"
+    },
+    {
+      "tag": "h3",
+      "text": "Typical treatment options"
+    },
+    {
+      "tag": "h2",
+      "text": "Who gets breast cancer?"
+    },
+    {
+      "tag": "h2",
+      "text": "Breast cancer survival rates"
+    },
+    {
+      "tag": "h2",
+      "text": "Risk factors"
+    },
+    {
+      "tag": "h2",
+      "text": "Is breast cancer hereditary?"
+    },
+    {
+      "tag": "h2",
+      "text": "Featured Podcast:"
+    },
+    {
+      "tag": "h2",
+      "text": "Why are more women under 50 getting cancer?"
+    },
+    {
+      "tag": "h2",
+      "text": "Facing radiation therapy as a breast cancer doctor and survivor"
+    },
+    {
+      "tag": "h2",
+      "text": "Why choose UT MD Anderson for your breast cancer treatment?"
+    },
+    {
+      "tag": "h3",
+      "text": "Treatment at UT MD Anderson"
+    },
+    {
+      "tag": "h4",
+      "text": "Nellie B. Connally Breast Center"
+    },
+    {
+      "tag": "h4",
+      "text": "UT MD Anderson League City"
+    },
+    {
+      "tag": "h4",
+      "text": "UT MD Anderson in Sugar Land"
+    },
+    {
+      "tag": "h4",
+      "text": "UT MD Anderson West Houston"
+    },
+    {
+      "tag": "h4",
+      "text": "UT MD Anderson The Woodlands"
+    },
+    {
+      "tag": "h2",
+      "text": "Featured Articles"
+    },
+    {
+      "tag": "h3",
+      "text": "Breast cancer risk assessments: What to know"
+    },
+    {
+      "tag": "h3",
+      "text": "How to manage body image concerns after breast cancer surgery"
+    },
+    {
+      "tag": "h3",
+      "text": "Clinical Trials"
+    },
+    {
+      "tag": "h3",
+      "text": "Becoming Our Patient"
+    },
+    {
+      "tag": "h3",
+      "text": "myCancerConnection"
+    },
+    {
+      "tag": "h3",
+      "text": "Prevention & Screening"
+    },
+    {
+      "tag": "h3",
+      "text": "Counseling"
+    },
+    {
+      "tag": "h2",
+      "text": "Help #EndCancer"
+    },
+    {
+      "tag": "h3",
+      "text": "Give Now"
+    },
+    {
+      "tag": "h3",
+      "text": "Donate Blood"
+    },
+    {
+      "tag": "h3",
+      "text": "Shop UT MD Anderson"
+    }
+  ],
+  "body": [
+    "Diagnosis & Treatment",
+    "Cancer Types",
+    "Breast Cancer",
+    "Breast Cancer Breast Cancer Symptoms Breast Cancer Diagnosis Breast Cancer Stages Breast Cancer Treatment",
+    "Breast Cancer Symptoms",
+    "Breast Cancer Diagnosis",
+    "Breast Cancer Stages",
+    "Breast Cancer Treatment",
+    "Get details about our clinical trials that are currently enrolling patients.",
+    "Breast cancer is the most common cancer in the United States. It occurs when a cell in the breast mutates and starts multiplying rapidly.",
+    "Everyone, regardless of biological sex, has at least a small amount of breast tissue. The breasts sit on top of your pectoralis muscles (chest muscles). They are made of fatty tissue and some connective tissue that give breasts their shape. Breasts also contain lymph nodes. These small, bean-shaped organs help transport immune cells and remove waste from tissue.",
+    "In women, breasts also have specialized glands that can produce milk. These glands are called lobules. They are connected to the nipple by a series of small channels called ducts.",
+    "Breast cancer occurs when cells in the breast mutate and begin to multiply rapidly. While most cases are diagnosed in women, men can develop breast cancer, too. Learn more about male breast cancer.",
+    "There are several different ways to classify breast cancer. A single breast cancer can fall into more than one category. These categories include:",
+    "The molecular features of the cancer cells",
+    "The cells where the disease starts",
+    "How far the cancer has spread",
+    "Breast cancer can be diagnosed by its features on a molecular level.",
+    "Receptors are molecules that are found inside or on the surface of cancer cells. They interact with specific substances in your body, such as proteins and hormones. This is called recognition.",
+    "Researchers have identified receptors that fuel the growth and spread of breast cancer when they \"recognize” specific proteins and hormones. The disease’s growth can be slowed or stopped with drugs that interfere with this process.",
+    "Currently, three major receptor subtypes play important roles in breast cancer prognosis and treatment.",
+    "Hormone receptor-positive breast cancer is the most common molecular subtype. This disease has receptors that bind with one of two naturally occurring hormones, estrogen and progesterone. These hormones fuel the growth of the cancer by binding to these receptors.",
+    "Hormone blockers interfere with this receptor/hormone recognition. This stops or slows the growth of the cancer.",
+    "Thanks to hormone blockers and targeted therapy, it can be treated successfully even in patients with advanced cancer.",
+    "HER2 (Human epidermal growth factor receptor 2) is a protein involved in cell growth. Breast cancers with high levels of HER2 on the surface of the cancer cells are HER2-positive. When two HER2 proteins bond with each other, they send a signal to the cell to grow and multiply.",
+    "HER2-positive breast cancer accounts for about 15%-20% of all breast cancers.",
+    "About half of HER2-positive cancers are also hormone receptor-positive/ER positive. These patients receive treatments that target both molecular receptors. They are classified as HER2-positive since doctors believe HER2 is the main driver of the disease.",
+    "New targeted therapy drugs have significantly improved treatment outcomes and survival in patients with HER2-positive breast cancer.",
+    "Triple-negative breast cancer (TNBC) includes breast cancers that are not HER2-positive or hormone receptor positive. As a result, there are fewer targeted therapy drugs to treat TNBC.",
+    "Today, many TNBC patients are successfully treated with immune checkpoint inhibitors. If your cancer is related to a BRCA gene mutation, you may be given a targeted therapy known as a PARP inhibitor.",
+    "Learn more about triple-negative breast cancer.",
+    "Breast cancer symptoms include a lump in the breast, skin changes and discharge from the nipple. Learn more about breast cancer symptoms, including other possible diagnoses and when to see a doctor on our breast cancer symptoms page.",
+    "Breast cancer is diagnosed through imaging exams like a mammogram and by studying suspected cancer tissue under a microscope. Read more about how doctors diagnose breast cancer.",
+    "Treatments for breast cancer include surgery, radiation therapy and cancer drugs like chemotherapy, hormone blockers, immunotherapy and targeted therapy. Doctors make your treatment plan based on your specific diagnosis. Learn more about breast cancer treatment.",
+    "While breast cancer can develop in men and women, most cases are diagnosed in women aged 60 or older. People with a family history of breast cancer are at an increased risk.",
+    "For women, breast cancer’s five-year survival rate is nearly 92%. That figure changes based on how advanced the cancer is when it is diagnosed and the cancer’s molecular subtype.",
+    "If the cancer is confined to the breast, the survival rate is nearly 100%. If it has spread to nearby lymph nodes, the survival rate is about 87%. Breast cancer that has spread to distant parts of the body, such as the lung, liver or brain, has a survival rate of about 33%. In some cases, even advanced breast cancer is still curable, however.",
+    "Talk to your care team about how your exact diagnosis impacts your prognosis.",
+    "A risk factor is anything that increases the chances of developing a specific disease. Key breast cancer risk factors and causes include:",
+    "Age: As women age, their breast cancer risk increases. Most breast cancers are diagnosed after age 60.",
+    "Inherited genetic mutations: Specific gene mutations that are passed down from parent to child can increase the risk of developing breast cancer. These include BRCA1 and BRCA2 mutations. Normal BRCA1 and BRCA2 genes repair damaged DNA. When these genes are mutated in certain ways, they fail at DNA repair, which could lead to breast and/or ovarian cancer. Other mutations that can lead to breast cancer are PALB2, another DNA repair gene; and CHEK2 and PTEN, which suppress tumors. Learn more about hereditary cancer syndromes.",
+    "Family history: A woman’s odds of developing breast cancer are higher if a parent, sibling or child has had the disease.",
+    "Early menstruation: Women who began menstruating before age 12 have a higher risk of developing breast cancer.",
+    "Women who have no full-term pregnancies or have their first pregnancy after age 30 are at a higher risk of breast cancer.",
+    "Previous breast cancer diagnosis: A woman who has had breast cancer once has an increased risk of developing cancer again.",
+    "Previous radiation therapy: People who had radiation therapy to the chest in childhood or early adulthood to treat another cancer are at a higher risk of developing breast cancer. The benefits of these earlier radiation treatments far outweigh the risks, however.",
+    "Obesity: Obesity, particularly after menopause, increases a woman’s breast cancer risk.",
+    "Dense breast tissue: Dense breast tissue, which is based on its appearance in a mammogram, is a known risk factor for breast cancer.",
+    "Postmenopausal hormone therapy: Some women use hormone therapies containing estrogen and progesterone to treat the symptoms of menopause. This may increase the risk of breast cancer.",
+    "Drinking alcohol.",
+    "Some breast cancers can are caused by genetic changes that can be passed down from parent to child. Learn more about these hereditary cancer syndromes and genetic counseling and testing.",
+    "Choosing the right hospital may be the most important decision you make as a breast cancer patient. At UT MD Anderson you’ll get treatment from one of the nation’s top-ranked cancer centers. Our expertise starts with the ability to accurately diagnose and stage even extremely rare cancers, then carries on through groundbreaking treatment and into survivorship.",
+    "At other centers and hospitals, doctors may be expected to develop treatment plans or perform surgery on patients with several different types of cancer and/or non-cancerous conditions. At UT MD Anderson, our core mission is to eliminate cancer. UT MD Anderson breast cancer care is provided by surgeons, radiation oncologists and medical oncologists who are focused exclusively on curing breast cancer, extending the life of breast cancer patients and maximizing their quality of life.",
+    "This allows them to develop a tremendous amount of experience and skill in treating breast cancer patients, including those with rare forms of the disease. Each doctor brings their skills to our multidisciplinary teams, where they work together to develop treatment plans that address the unique nature of each breast cancer case and patient.",
+    "As a top-ranked cancer hospital, UT MD Anderson is also a leader in innovating new and better ways to care for patients. Our breast cancer doctors have helped develop new treatments and therapies that have improved survival rates, decreased side effects and resulted in better cosmetic outcomes for breast cancer patients.",
+    "And at UT MD Anderson you will be surrounded by the strength of one of the nation's largest and most experienced cancer centers. From support groups to nutrition counseling to integrative medicine care, we have all the services needed to treat not just the disease, but the whole person.",
+    "Cancer is mentally and physically challenging, but don't let it shut you down. Dust yourself off and get back up, even if you have to crawl. This is your life, after all, and it's worth fighting for.",
+    "Mariana Torrado",
+    "Survivor",
+    "UT MD Anderson breast cancer patients can get treatment at the following locations.",
+    "Nellie B. Connally Breast Center",
+    "UT MD Anderson League City",
+    "UT MD Anderson in Sugar Land",
+    "UT MD Anderson West Houston",
+    "UT MD Anderson The Woodlands",
+    "UT MD Anderson patients have access to clinical trials offering promising new treatments that cannot be found anywhere else.",
+    "Get information on patient appointments, insurance and billing, and directions to and around UT MD Anderson.",
+    "Talk to someone who shares your cancer diagnosis and be matched with a survivor.",
+    "Many cancers can be prevented with lifestyle changes and regular screening.",
+    "UT MD Anderson has licensed social workers to help patients and their loved ones cope with cancer.",
+    "Our patients depend on blood and platelet donations.",
+    "Show your support for our mission through branded merchandise.",
+    ".st0-desktop { fill: #000; }Explore what your support makes possible",
+    "Explore",
+    "Patients & Family",
+    "Prevention & Screening",
+    "Donors & Volunteers",
+    "For Physicians",
+    "Research",
+    "Education & Training",
+    "Clinical Trials",
+    "Languages",
+    "About",
+    "About UT MD Anderson",
+    "Careers",
+    "Blog",
+    "Newsroom",
+    "Editorial Standards",
+    "For Employees",
+    "Merchandise",
+    "Title IX Reporting (Sexual Misconduct)",
+    "Price Transparency",
+    "Finding Your Way",
+    "Our Doctors",
+    "Locations",
+    "Directions",
+    "Sitemap",
+    "DIGITAL ACCESSIBILITY",
+    "Accessibility Policy",
+    "GET IN TOUCH",
+    "Call 1-866-378-5346",
+    "Ask a question",
+    "Stay Connected",
+    "PreviousNext",
+    "Cancerwise Podcast",
+    "PreviousNext",
+    "Website Privacy Policy",
+    "Legal Statement & Policies",
+    "Reports to the State",
+    "Emergency Alert Information",
+    "State of Texas Links",
+    "Our Cancer Network",
+    "Vendors & Suppliers",
+    "© 2026 The University of Texas MD Anderson Cancer Center. All rights reserved."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "MyChart",
+      "href": "https://my.mdanderson.org/MyChart/Home/"
+    },
+    {
+      "label": "Request an Appointment",
+      "href": null
+    },
+    {
+      "label": "Donate Today",
+      "href": "https://gifts.mdanderson.org/Default.aspx?tsid=37435"
+    },
+    {
+      "label": "Clinical Trials",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+      "label": "Locations",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+      "label": "Careers",
+      "href": "https://jobs.mdanderson.org/"
+    },
+    {
+      "label": "Contact Us",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us.html"
+    },
+    {
+      "label": "Our Doctors",
+      "href": "https://faculty.mdanderson.org/"
+    },
+    {
+      "label": "Languages",
+      "href": null
+    },
+    {
+      "label": "Patients & Family",
+      "href": "https://www.mdanderson.org/patients-family.html"
+    },
+    {
+      "label": "Prevention & Screening",
+      "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+      "label": "Donors & Volunteers",
+      "href": "https://www.mdanderson.org/donors-volunteers.html"
+    },
+    {
+      "label": "For Physicians",
+      "href": "https://www.mdanderson.org/for-physicians.html"
+    },
+    {
+      "label": "Research",
+      "href": "https://www.mdanderson.org/research.html"
+    },
+    {
+      "label": "Education & Training",
+      "href": "https://www.mdanderson.org/education-training.html"
+    },
+    {
+      "label": "1-866-378-5346",
+      "href": "tel:+18555269738"
+    },
+    {
+      "label": "request an appointment online.",
+      "href": "/about-md-anderson/contact-us/askmdanderson/appointments.html"
+    },
+    {
+      "label": "Diagnosis & Treatment",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment.html"
+    },
+    {
+      "label": "Cancer Types",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/cancer-types.html"
+    },
+    {
+      "label": "Breast Cancer",
+      "href": "https://www.mdanderson.org/cancer-types/breast-cancer.html"
+    },
+    {
+      "label": "Breast Cancer Symptoms",
+      "href": "https://www.mdanderson.org/cancer-types/breast-cancer/breast-cancer-symptoms.html"
+    },
+    {
+      "label": "Breast Cancer Diagnosis",
+      "href": "https://www.mdanderson.org/cancer-types/breast-cancer/breast-cancer-diagnosis.html"
+    },
+    {
+      "label": "Breast Cancer Stages",
+      "href": "https://www.mdanderson.org/cancer-types/breast-cancer/breast-cancer-stages.html"
+    },
+    {
+      "label": "Breast Cancer Treatment",
+      "href": "https://www.mdanderson.org/cancer-types/breast-cancer/breast-cancer-treatment.html"
+    },
+    {
+      "label": "View Clinical Trials",
+      "href": "https://www.mdanderson.org/patients-family/search-results.html?searchType=clinical%20trials&q=Breast%20Cancer"
+    },
+    {
+      "label": "Senthil Damodaran, MD, PhD.",
+      "href": "http://faculty.mdanderson.org/profiles/senthil_damodaran.html"
+    },
+    {
+      "label": "Melissa P Mitchell, M.D., Ph.D.",
+      "href": "http://faculty.mdanderson.org/profiles/melissa_mitchell.html"
+    },
+    {
+      "label": "Linda M. Pak, M.D.",
+      "href": "http://faculty.mdanderson.org/profiles/linda_pak.html"
+    },
+    {
+      "label": "Learn more about male breast cancer.",
+      "href": "/cancer-types/breast-cancer/male-breast-cancer.html"
+    },
+    {
+      "label": "The molecular features of the cancer cells",
+      "href": "/cancer-types/breast-cancer.html#molecular"
+    },
+    {
+      "label": "The cells where the disease starts",
+      "href": "/cancer-types/breast-cancer.html#cells"
+    },
+    {
+      "label": "How far the cancer has spread",
+      "href": "/cancer-types/breast-cancer.html#spread"
+    },
+    {
+      "label": "Find out what makes us different",
+      "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/why-md-anderson.html"
+    },
+    {
+      "label": "Classifying by molecular features",
+      "href": null
+    },
+    {
+      "label": "targeted therapy",
+      "href": "/treatment-options/targeted-therapy.html"
+    },
+    {
+      "label": "targeted therapy",
+      "href": "/treatment-options/targeted-therapy.html"
+    },
+    {
+      "label": "immune checkpoint inhibitors",
+      "href": "/treatment-options/immune-checkpoint-inhibitors.html"
+    },
+    {
+      "label": "BRCA gene mutation",
+      "href": "/prevention-screening/family-history/hereditary-cancer-syndromes/hereditary-breast-and-ovarian-cancer-syndrome.html"
+    },
+    {
+      "label": "Learn more about triple-negative breast cancer.",
+      "href": "/cancer-types/breast-cancer/triple-negative-breast-cancer.html"
+    },
+    {
+      "label": "Classifying by cells where the disease starts",
+      "href": null
+    },
+    {
+      "label": "Classifying by how far the cancer has spread",
+      "href": null
+    },
+    {
+      "label": "breast cancer symptoms page.",
+      "href": "/cancer-types/breast-cancer/breast-cancer-symptoms.html"
+    },
+    {
+      "label": "Read more about how doctors diagnose breast cancer.",
+      "href": "/cancer-types/breast-cancer/breast-cancer-diagnosis.html"
+    },
+    {
+      "label": "Learn more about breast cancer treatment.",
+      "href": "/cancer-types/breast-cancer/breast-cancer-treatment.html"
+    },
+    {
+      "label": "BRCA1 and BRCA2 mutations",
+      "href": "/prevention-screening/family-history/hereditary-cancer-syndromes/hereditary-breast-and-ovarian-cancer-syndrome.html"
+    },
+    {
+      "label": "Learn more about hereditary cancer syndromes",
+      "href": "/prevention-screening/family-history/hereditary-cancer-syndromes.html"
+    },
+    {
+      "label": "radiation therapy",
+      "href": "/treatment-options/radiation-therapy.html"
+    },
+    {
+      "label": "Learn more about these hereditary cancer syndromes and genetic counseling and testing.",
+      "href": "/prevention-screening/family-history.html"
+    },
+    {
+      "label": "View podcast episode page",
+      "href": "https://mdanderson.org/podcast?segitem=66494"
+    },
+    {
+      "label": "Read transcript",
+      "href": "https://support.doctorpodcasting.com/client/texacc/item/66494-why-are-more-women-under-50-getting-cancer?print=yes"
+    },
+    {
+      "label": "View podcast episode page",
+      "href": "https://mdanderson.org/podcast?segitem=68095"
+    },
+    {
+      "label": "Read transcript",
+      "href": "https://support.doctorpodcasting.com/client/texacc/item/68095-facing-radiation-therapy-as-a-breast-cancer-doctor-and-survivor?print=yes"
+    },
+    {
+      "label": "support groups",
+      "href": "/patients-family/diagnosis-treatment/patient-support/support-groups.html"
+    },
+    {
+      "label": "nutrition counseling",
+      "href": "/patients-family/diagnosis-treatment/patient-support/clinical-nutrition.html"
+    },
+    {
+      "label": "integrative medicine care",
+      "href": "/patients-family/diagnosis-treatment/care-centers-clinics/integrative-medicine-center.html"
+    },
+    {
+      "label": "Nellie B. Connally Breast Center",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/breast-center.html"
+    },
+    {
+      "label": "UT MD Anderson League City",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations/league-city.html"
+    },
+    {
+      "label": "UT MD Anderson in Sugar Land",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations/sugar-land.html"
+    },
+    {
+      "label": "UT MD Anderson West Houston",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations/west-houston.html"
+    },
+    {
+      "label": "UT MD Anderson The Woodlands",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations/the-woodlands.html"
+    },
+    {
+      "label": "Breast cancer risk assessments: What to know",
+      "href": "https://www.mdanderson.org/cancerwise/breast-cancer-risk-assessments-what-to-know.h00-159854556.html"
+    },
+    {
+      "label": "How to manage body image concerns after breast cancer surgery",
+      "href": "https://www.mdanderson.org/cancerwise/how-to-manage-body-image-concerns-after-breast-cancer-surgery.h00-159852978.html"
+    },
+    {
+      "label": "View more",
+      "href": null
+    },
+    {
+      "label": "View Clinical Trials",
+      "href": "https://www.mdanderson.org/patients-family/search-results.html?searchType=clinical%20trials&q=Breast%20Cancer"
+    },
+    {
+      "label": "View new patient resources",
+      "href": "https://www.mdanderson.org/patients-family/becoming-our-patient.html"
+    },
+    {
+      "label": "Connect with a cancer survivor",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/mycancerconnection.html"
+    },
+    {
+      "label": "View health and screening resources",
+      "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+      "label": "Visit the social work page",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/social-work.html"
+    },
+    {
+      "label": "Donate",
+      "href": "https://gifts.mdanderson.org/Default.aspx?tsid=37435"
+    },
+    {
+      "label": "Make an appointment",
+      "href": "https://www.mdandersonbloodbank.org/"
+    },
+    {
+      "label": "View products",
+      "href": "https://shop.mdanderson.org"
+    },
+    {
+      "label": ".st0-desktop { fill: #000; }Explore what your support makes possible",
+      "href": "https://onlypossiblehere.mdanderson.org"
+    },
+    {
+      "label": "Patients & Family",
+      "href": "https://www.mdanderson.org/patients-family.html"
+    },
+    {
+      "label": "Prevention & Screening",
+      "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+      "label": "Donors & Volunteers",
+      "href": "https://www.mdanderson.org/donors-volunteers.html"
+    },
+    {
+      "label": "For Physicians",
+      "href": "https://www.mdanderson.org/for-physicians.html"
+    },
+    {
+      "label": "Research",
+      "href": "https://www.mdanderson.org/research.html"
+    },
+    {
+      "label": "Education & Training",
+      "href": "https://www.mdanderson.org/education-training.html"
+    },
+    {
+      "label": "Clinical Trials",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+      "label": "Languages",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html"
+    },
+    {
+      "label": "About UT MD Anderson",
+      "href": "https://www.mdanderson.org/about-md-anderson.html"
+    },
+    {
+      "label": "Careers",
+      "href": "https://jobs.mdanderson.org/"
+    },
+    {
+      "label": "Blog",
+      "href": "https://www.mdanderson.org/cancerwise.html"
+    },
+    {
+      "label": "Newsroom",
+      "href": "https://www.mdanderson.org/newsroom.html"
+    },
+    {
+      "label": "Editorial Standards",
+      "href": "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html"
+    },
+    {
+      "label": "For Employees",
+      "href": "https://www.mdanderson.org/about-md-anderson/employee-resources.html"
+    },
+    {
+      "label": "Merchandise",
+      "href": "https://shop.mdanderson.org/"
+    },
+    {
+      "label": "Title IX Reporting (Sexual Misconduct)",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html"
+    },
+    {
+      "label": "Price Transparency",
+      "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html"
+    },
+    {
+      "label": "Our Doctors",
+      "href": "https://faculty.mdanderson.org/"
+    },
+    {
+      "label": "Locations",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+      "label": "Directions",
+      "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html"
+    },
+    {
+      "label": "Sitemap",
+      "href": "https://www.mdanderson.org/patients-family/html-sitemap.html"
+    },
+    {
+      "label": "Accessibility Policy",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html"
+    },
+    {
+      "label": "Call 1-866-378-5346",
+      "href": "tel:+18555269738"
+    },
+    {
+      "label": "Ask a question",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html"
+    },
+    {
+      "label": "Website Privacy Policy",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html"
+    },
+    {
+      "label": "Legal Statement & Policies",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html"
+    },
+    {
+      "label": "Reports to the State",
+      "href": "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html"
+    },
+    {
+      "label": "Emergency Alert Information",
+      "href": "https://www3.mdanderson.org/emergencyalert/"
+    }
+  ],
+  "links": [
+    "https://www.mdanderson.org/cancer-types/breast-cancer.html#skip",
+    "https://my.mdanderson.org/MyChart/Home/",
+    "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/appointments.html",
+    "https://my.mdanderson.org/RequestAppointment",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/returning-patients.html",
+    "https://my.mdanderson.org/physicianreferral",
+    "https://gifts.mdanderson.org/Default.aspx?tsid=37435",
+    "https://www.mdanderson.org/",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations.html",
+    "https://jobs.mdanderson.org/",
+    "https://www.mdanderson.org/about-md-anderson/contact-us.html",
+    "https://faculty.mdanderson.org/",
+    "https://www.mdanderson.org/es/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/ar/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/zh/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/tr/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/cancer-types/breast-cancer.html#",
+    "https://www.mdanderson.org/patients-family.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/why-md-anderson.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/while-youre-here.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/international-center.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/services-amenities.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/insurance-billing.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/second-opinion-appointments.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/cancer-types.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/a-new-diagnosis.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/treatment-options.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/emotional-physical-effects.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/caregiver-roles-challenges.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/supporting-children-teens.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/taking-care-of-yourself.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/Helping-mdanderson-patient.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/dealing-with-loss.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/followup-care-after-cancer-treatment.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/long-term-effects.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/social-emotional-impacts.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/legal-financial-impacts.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/survivorship-week.html",
+    "https://www.mdanderson.org/prevention-screening.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/tobacco-control-at-md-anderson.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/diet.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/body-weight.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/physical-activity.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/skin-safety.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/hpv.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/hepatitis.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/alcohol.html",
+    "https://www.mdanderson.org/prevention-screening/family-history.html",
+    "https://www.mdanderson.org/prevention-screening/family-history/genetic-testing.html",
+    "https://www.mdanderson.org/prevention-screening/family-history/hereditary-cancer-syndromes.html",
+    "https://www.mdanderson.org/prevention-screening/family-history/faqs.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/breast-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/cervical-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/colorectal-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/endometrial-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/liver-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/lung-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/mobile-mammography.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/ovarian-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/prostate-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/skin-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/women-screening-exams.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/men-screening-exams.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/cancer-prevention-center.html",
+    "https://www.mdanderson.org/donors-volunteers.html",
+    "https://www.mdanderson.org/donors-volunteers/donate.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/raise-money.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/honor-loved-ones.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/planned-giving.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/endowments.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/md-anderson-caring-fund.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/matching-gifts.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/foundation-and-corporation-relations.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/why-volunteer.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/on-site-volunteers.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/endowments.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/patient-experience.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/teen-volunteer-leadership-program.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/childrens-cancer-hospital-councils.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/give-blood.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/shop-md-anderson.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/childrens-art-project.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/donate-goods-or-services.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/attend-events.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/cord-blood-bank.html",
+    "https://www.mdanderson.org/donors-volunteers/corporate-alliances.html",
+    "https://www.mdanderson.org/donors-volunteers/corporate-alliances/current-alliances.html",
+    "https://onlypossiblehere.mdanderson.org/",
+    "https://www.mdanderson.org/for-physicians.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/health-care-provider-resource-center.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/referring-provider-team.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/insurance-information.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/international-referrals.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/mymdanderson-for-physicians.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/second-opinion-pathology.html",
+    "https://www.mdanderson.org/for-physicians/clinical-trials.html",
+    "https://www.mdanderson.org/for-physicians/clinical-tools-resources.html",
+    "https://www.mdanderson.org/for-physicians/clinical-tools-resources/clinical-calculators.html",
+    "https://www.mdanderson.org/for-physicians/clinical-tools-resources/clinical-practice-algorithms.html",
+    "https://www.mdanderson.org/research.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/labs.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/programs-centers.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/institutes.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/spores.html",
+    "https://www.mdanderson.org/research/research-areas.html",
+    "https://www.mdanderson.org/research/research-areas/basic-science.html",
+    "https://www.mdanderson.org/research/research-areas/translational-research.html",
+    "https://www.mdanderson.org/research/research-areas/clinical-research.html",
+    "https://www.mdanderson.org/research/research-areas/prevention-personalized-risk-assessment.html",
+    "https://www.mdanderson.org/research/research-resources.html",
+    "https://www.mdanderson.org/research/research-resources/excellence-in-science.html",
+    "https://www.mdanderson.org/research/research-resources/core-facilities.html",
+    "https://www.mdanderson.org/research/research-resources/conferences-seminars.html",
+    "https://www.mdanderson.org/research/research-resources/why-research.html",
+    "https://www.mdanderson.org/research/research-resources/stride.html",
+    "https://www.mdanderson.org/research/research-resources/nci-designated-cancer-center.html",
+    "https://www.mdanderson.org/research/research-resources/data-resources.html",
+    "https://www.mdanderson.org/education-training.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools/school-of-health-professions.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools/graduate-school-of-biomedical-sciences.html",
+    "https://www.mdanderson.org/education-training/education-resources.html",
+    "https://www.mdanderson.org/education-training/education-resources/alumni-relations.html",
+    "https://www.mdanderson.org/education-training/education-resources/education-design-services.html",
+    "https://www.mdanderson.org/education-training/education-resources/awards-recognitions.html",
+    "https://www.mdanderson.org/education-training/education-resources/academic-mentoring-council.html",
+    "https://www.mdanderson.org/education-training/education-resources/why-train-at-md-anderson-houston.html",
+    "https://www.mdanderson.org/education-training/research-training.html",
+    "https://www.mdanderson.org/education-training/research-training/early-career-pathway-programs.html",
+    "https://www.mdanderson.org/education-training/research-training/predoctoral-training.html",
+    "https://www.mdanderson.org/education-training/research-training/postdoctoral-training.html",
+    "https://www.mdanderson.org/education-training/research-training/mentored-faculty-programs.html",
+    "https://www.mdanderson.org/education-training/research-training/career-development.html",
+    "https://www.mdanderson.org/education-training/clinical-training.html",
+    "https://www.mdanderson.org/education-training/clinical-training/graduate-medical-education.html",
+    "https://www.mdanderson.org/education-training/clinical-training/clinical-education-for-non-physicians.html",
+    "https://www.mdanderson.org/education-training/clinical-training/nursing-education.html",
+    "https://www.mdanderson.org/education-training/clinical-training/certificate-programs-review-courses.html",
+    "https://www.mdanderson.org/education-training/clinical-training/simulation-center.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/continuing-professional-education-conferences.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/administrative-internships-fellowships.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/cancer-survivorship-program.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/leadership-institute.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/patient-home-visits.html",
+    "https://www.mdanderson.org/education-training/outreach-programs.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/project-echo.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/observer-programs.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/comparative-effectiveness-research-training.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/faculty-speakers-bureau.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools/school-of-health-professions/prospective-students.html",
+    "https://www.mdanderson.org/education-training/clinical-training/graduate-medical-education/residencies-fellowships.html",
+    "tel:+18555269738",
+    "https://www.mdanderson.org/cancer-types/breast-cancer.html",
+    "https://www.mdanderson.org/cancer-types/breast-cancer/breast-cancer-facts.html",
+    "https://www.mdanderson.org/cancer-types/breast-cancer/breast-cancer-symptoms.html",
+    "https://www.mdanderson.org/cancer-types/breast-cancer/breast-cancer-diagnosis.html",
+    "https://www.mdanderson.org/cancer-types/breast-cancer/breast-cancer-stages.html",
+    "https://www.mdanderson.org/cancer-types/breast-cancer/breast-cancer-treatment.html",
+    "https://www.mdanderson.org/patients-family/search-results.html?searchType=clinical%20trials&q=Breast%20Cancer",
+    "mailto:?subject=UT%20MD%20Anderson%20:%20Breast%20Cancer&body=I%20thought%20you%27d%20like%20to%20read%20this%3A%20https%3A%2F%2Fwww.mdanderson.org%2Fcancer-types%2Fbreast-cancer.html",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.mdanderson.org%2Fcancer-types%2Fbreast-cancer.html",
+    "https://x.com/share?url=https%3A%2F%2Fwww.mdanderson.org%2Fcancer-types%2Fbreast-cancer.html",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.mdanderson.org%2Fcancer-types%2Fbreast-cancer.html",
+    "https://bsky.app/intent/compose?text=https%3A%2F%2Fwww.mdanderson.org%2Fcancer-types%2Fbreast-cancer.html",
+    "https://www.threads.com/intent/post?text=https%3A%2F%2Fwww.mdanderson.org%2Fcancer-types%2Fbreast-cancer.html",
+    "http://faculty.mdanderson.org/profiles/senthil_damodaran.html",
+    "http://faculty.mdanderson.org/profiles/melissa_mitchell.html",
+    "http://faculty.mdanderson.org/profiles/linda_pak.html",
+    "https://www.mdanderson.org/cancer-types/breast-cancer/male-breast-cancer.html",
+    "https://www.mdanderson.org/cancer-types/breast-cancer.html#molecular",
+    "https://www.mdanderson.org/cancer-types/breast-cancer.html#cells",
+    "https://www.mdanderson.org/cancer-types/breast-cancer.html#spread",
+    "https://www.mdanderson.org/treatment-options/targeted-therapy.html",
+    "https://www.mdanderson.org/treatment-options/immune-checkpoint-inhibitors.html",
+    "https://www.mdanderson.org/prevention-screening/family-history/hereditary-cancer-syndromes/hereditary-breast-and-ovarian-cancer-syndrome.html",
+    "https://www.mdanderson.org/cancer-types/breast-cancer/triple-negative-breast-cancer.html",
+    "https://www.mdanderson.org/cancer-types/breast-cancer/ductal-carcinoma-in-situ.html",
+    "https://www.mdanderson.org/cancer-types/breast-cancer/paget-disease-of-the-breast.html",
+    "https://www.mdanderson.org/cancer-types/breast-cancer/invasive-lobular-carcinoma.html",
+    "https://www.mdanderson.org/cancer-types/soft-tissue-sarcoma.html",
+    "https://www.mdanderson.org/cancer-types/breast-cancer/phyllodes-tumors.html",
+    "https://www.mdanderson.org/cancer-types/breast-cancer/metaplastic-breast-cancer.html",
+    "https://www.mdanderson.org/cancer-types/inflammatory-breast-cancer.html",
+    "https://www.mdanderson.org/treatment-options/radiation-therapy.html",
+    "https://mdanderson.org/podcast?segitem=66494",
+    "https://support.doctorpodcasting.com/client/texacc/item/66494-why-are-more-women-under-50-getting-cancer?print=yes",
+    "https://mdanderson.org/podcast?segitem=68095",
+    "https://support.doctorpodcasting.com/client/texacc/item/68095-facing-radiation-therapy-as-a-breast-cancer-doctor-and-survivor?print=yes",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/support-groups.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/clinical-nutrition.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/integrative-medicine-center.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/breast-center.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations/league-city.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations/sugar-land.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations/west-houston.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations/the-woodlands.html",
+    "https://www.mdanderson.org/cancerwise/breast-cancer-risk-assessments-what-to-know.h00-159854556.html",
+    "https://www.mdanderson.org/cancerwise/how-to-manage-body-image-concerns-after-breast-cancer-surgery.h00-159852978.html",
+    "https://www.mdanderson.org/cancerwise/breast-cancer-survivor--oral-cancer-caregiver---i-m-so-grateful.h00-159781968.html",
+    "https://www.mdanderson.org/cancerwise/why-is-breast-cancer-so-common.h00-159781968.html",
+    "https://www.mdanderson.org/cancerwise/young-mother-overcomes-inflammatory-breast-cancer-during-pregnan.h00-159781179.html",
+    "https://www.mdanderson.org/cancerwise/stage-ii-breast-cancer-survivor--why-i-encourage-people-to-support-md-anderson.h00-159781179.html",
+    "https://www.mdanderson.org/cancerwise/austin-breast-cancer-survivor--why-i-went-to-md-anderson-for-my-lymphedema-treatment.h00-159780390.html",
+    "https://www.mdanderson.org/cancerwise/young-adult-stage-ii-breast-cancer-survivor--why-i-sought-treatment-at-md-anderson.h00-159780390.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/mycancerconnection.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/social-work.html",
+    "https://www.mdandersonbloodbank.org/",
+    "https://shop.mdanderson.org/",
+    "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html",
+    "https://www.mdanderson.org/about-md-anderson.html",
+    "https://www.mdanderson.org/cancerwise.html",
+    "https://www.mdanderson.org/newsroom.html",
+    "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html",
+    "https://www.mdanderson.org/about-md-anderson/employee-resources.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html",
+    "https://www.mdanderson.org/patients-family/html-sitemap.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html",
+    "https://www.levelaccess.com/MDAnderson",
+    "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html",
+    "https://facebook.com/MDAnderson",
+    "https://x.com/UTMDAnderson",
+    "https://youtube.com/mdandersonorg",
+    "https://instagram.com/mdandersoncancercenter",
+    "https://linkedin.com/company/mdandersoncancercenter",
+    "http://bsky.app/profile/mdanderson.bsky.social",
+    "https://threads.com/@mdandersoncancercenter",
+    "https://podcasts.apple.com/us/podcast/cancerwise-podcast/id1751785346",
+    "https://open.spotify.com/show/28rgC5nO7OpLhnPlNylNem",
+    "http://www.youtube.com/playlist?list=PLKscGuVrfI9LvQrf5At-R7TewdfY4OeOP",
+    "http://www.pandora.com/podcast/cancerwise-podcast/PC:1001088873",
+    "http://www.iheart.com/podcast/269-cancerwise-podcast-185103717/",
+    "https://support.doctorpodcasting.com/podcastfeed/335",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html",
+    "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html",
+    "https://www3.mdanderson.org/emergencyalert/",
+    "https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html",
+    "https://my.mdanderson.org/"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/xmda-logo.png.pagespeed.ic.jLVBCg-7dN.webp",
+        "alt": "The University of Texas MD Anderson Cancer Center",
+        "w": 1527,
+        "h": 639
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/focused-on-health/2015/WEB-Tanya-Moseley-3D-mammo.jpg.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 216,
+        "h": 122
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/hero-images/Integrated%20Media/oph-web-promo-image-tagline.png.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 216,
+        "h": 122
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/l2-l3-hero/sujit_prabhu_physicians_nav.jpg.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 216,
+        "h": 122
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/moonshots/researchplatforms/Clinical-Trial/CLL_Jan_Burger_175_resized.jpg.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 216,
+        "h": 122
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/patients-family/diagnosis-treatment/cancer-types/breast-cancer/jcr:content/mainparsys/columns_2/column2/adaptiveimage_1167547583.resize.648.0.medium.jpg/1785795051452.jpg",
+        "alt": "U.S. News & World Report Best Cancer Hospital badge",
+        "w": 648,
+        "h": 648
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/patients-family/diagnosis-treatment/cancer-types/breast-cancer/jcr:content/mainparsys/accordioncontainer/01-col1/textimage.resize.jpg/1786555370592.jpg",
+        "alt": "",
+        "w": 800,
+        "h": 466
+      },
+      {
+        "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/podcast/xCWPodcast_Wave_Hero_2400x564.jpg.pagespeed.ic.qj8ogjaHXl.webp",
+        "alt": "Cancerwise Podcast",
+        "w": 2800,
+        "h": 564
+      },
+      {
+        "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/podcast/xPodcast_CWandSoundwave_Combo_800x418.png.pagespeed.ic.jrS6Ntr3h_.webp",
+        "alt": "Cancerwise Podcast",
+        "w": 778,
+        "h": 191
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/Generics/IM_BreastCancerRiskAssessmentTools_IMG.jpg.resize.450.235.high.jpg",
+        "alt": "Illustration of woman in purple dress wearing a pink ribbon surrounded by flowers and foliage.",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/B/CW_Body_Image_Mirror_2025_DamDeL.jpg.resize.450.235.high.jpg",
+        "alt": "Unidentified woman sits facing a mirror",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/H/CW_Harrison_AlexNKami_Arizona_April2025.jpg.resize.450.235.high.jpg",
+        "alt": "Alex & Kami Harrison in Arizona, April 2025",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/Generics/SC_IM_BreastCancer_IMG.jpg.resize.450.235.high.jpg",
+        "alt": "Pink square with a question mark inside of it on a light pink background",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/C/CW_Curry_Savannah_112025.jpg.resize.450.235.high.jpg",
+        "alt": "A man and a woman sit in the grass with two baby boys",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/T/CW_Thomas_Dwan_021_Oct2025_CWCrop.jpg.resize.450.235.high.jpg",
+        "alt": "Survivor and donor Dwan Thomas",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/B/CW_Beckworth_Stacey_Oct2025_027.jpg.resize.450.235.high.jpg",
+        "alt": "Breast cancer survivor Stacey Beckworth",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/C/CW_Cormier_Nicole_May2025.jpg.resize.450.235.high.jpg",
+        "alt": "Breast cancer survivor Nicole Cormier",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/jcr:content/footer/xdesktoplogo.resize.png.pagespeed.ic.wmDIh2S-LF.webp",
+        "alt": "UT MD Anderson logo",
+        "w": 1280,
+        "h": 535
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp",
+        "alt": "UT MD Anderson logo",
+        "w": 837,
+        "h": 95
+      },
+      {
+        "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/eA_Icon_Black.svg",
+        "alt": "MD Anderson works with Level Access to ensure our website is accessible and functional for all users. Free assistive technology is provided for people with physical disabilities. To learn more or to download the assistive technology tool, visit https://www.levelaccess.com/MDAnderson",
+        "w": 300,
+        "h": 113
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp",
+        "alt": "UT MD Anderson logo",
+        "w": 837,
+        "h": 95
+      }
+    ],
+    "allImgCount": 21,
+    "cssBackgrounds": [
+      "https://www.mdanderson.org/content/mda/en/patients-family/diagnosis-treatment/cancer-types/breast-cancer/jcr:content/heroparsys/herocontent.resize.1400.282.high.jpg/1768775564462.jpg"
+    ],
+    "modals": [
+      "Close Share this article Via social media: Or copy the link: Copy to clipboard Copy",
+      "Close Share this article Via social media: Or copy the link: Copy to clipboard Copy"
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {},
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 40,
+    "mainTextLen": 20030,
+    "realImageCount": 21,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "screenshot": "assets/screenshots/cancer-types-breast-cancer-html.png"
+}
