@@ -1,0 +1,2328 @@
+<!DOCTYPE html>
+<!-- provenance: stardust:replica agent — recreation of https://www.mdanderson.org/cancerwise.html
+     from stardust/current/pages/cancerwise-html.json + stardust/replica/capture/cancerwise-html/{1440,360}.json
+     + source CSS stardust/replica/capture/css/139355bb13.css. Recreation, not redesign: all values lifted from capture. -->
+<html lang="en" class="js flexbox flexboxlegacy">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cancerwise Blog | UT MD Anderson</title>
+<meta name="description" content="UT MD Anderson's Cancerwise blog features cancer patient and caregiver stories, expert insight, research breakthroughs and clinical innovations, healthy living information and the latest news and cancer updates.">
+<meta property="og:title" content="Cancerwise Blog">
+<meta property="og:description" content="Cancerwise is UT MD Anderson’s blog features stories from survivors and caregivers, and our experts’ insights on cancer treatment, research breakthroughs, healthy living and more.">
+<meta property="og:image" content="https://www.mdanderson.org/images/publications/cancerwise/Graphics/EndCancerDoodles.png">
+<meta property="og:type" content="Website">
+<link rel="stylesheet" href="assets/mda-fonts.css">
+<link rel="stylesheet" href="assets/chrome.css">
+<style>
+/* == TOKEN CONTRACT (verbatim copy of assets/chrome.css :root) ==
+   Display-ramp mapping note: DESIGN.json names 36px as the site's largest *system* display size
+   (icon-well/promo h3). We map --heading-xxl/--heading-xl to 36px (reused, not scaled up);
+   --heading-lg = 24px (card h3), --heading-md = 21px (lede/promo body). Page-local hero sizes
+   (72px hero h1, 48px/42px section titles on the homepage) are lifted per-page from capture and
+   intentionally NOT tokens. */
+:root {
+  --heading-font-family: "Minion Regular", "Minion W01 Cap Regular", Arial, Georgia;
+  --body-font-family: "Minion Regular", "Minion W01 Cap Regular", Arial, Georgia;
+  --heading-xxl: 36px;
+  --heading-xl: 36px;
+  --heading-lg: 24px;
+  --heading-md: 21px;
+  --body: 18px;
+  --body-sm: 14px;
+  --line-height-heading: 1.3;
+  --line-height-body: 1.3;
+  --color-bg: #FFFFFF;
+  --color-fg: #000000;
+  --color-accent: #DA291C;
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 30px;
+  --spacing-xl: 40px;
+  --spacing-2xl: 70px;
+  --section-padding: 70px 72px;
+  --max-width: 1440px;
+  --radius: 0px;
+}
+
+/* ===== page shells ===== */
+main.mda-content { display: block; }
+section.bleed-top { padding-top: 0; }
+section.bleed-bottom { padding-bottom: 0; }
+section.col-content-wrapper { padding: 0; max-width: 1440px; }
+.cw-v3 .col-content-single { padding-left: 0; padding-right: 0; }
+
+/* page-local icon codepoints (lifted from source CSS content rules) */
+.mda-icon-appointments::before { content: "\e601"; }
+.mda-icon-iPad_apps::before { content: "\e63e"; }
+.mda-icon-podcast::before { content: "\e635"; }
+
+/* ===== Cancerwise hero (source: .cw-hero rules, 139355bb13.css) ===== */
+.cw-hero {
+  display: block; width: 100%; position: relative; text-align: left;
+  padding-top: 1em; padding-left: 2em; padding-right: 2em;
+}
+.cw-hero .cw-title {
+  font-family: var(--heading-font-family); font-size: 125px; font-weight: 400;
+  line-height: 1.3; letter-spacing: -.02em; margin: 0;
+}
+.cw-hero .cw-title a { color: #000; text-decoration: none; }
+.cw-hero .cw-title .color { color: #DA291C; }
+.cw-hero .cw-summary {
+  width: 50%; font-family: var(--body-font-family); font-size: 18px;
+  letter-spacing: -.02em; line-height: 1.3; padding-bottom: 2em;
+}
+
+/* ===== blog search (cw-v3 variant) ===== */
+.blog-search-filter {
+  padding: 0 2em 20px;
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 16px;
+  letter-spacing: -.02em; line-height: 1.3;
+}
+.blog-search { min-height: 35px; height: 50px; position: relative; }
+.blog-search-mask {
+  position: absolute; top: 0; right: 0; width: 100%; max-width: 100%;
+  z-index: 300; overflow-x: hidden;
+}
+.mda-blog-search.search-wrapper { position: relative; overflow: hidden; }
+.search-form { height: 50px; border: 1px solid #3F3D3D; margin: 0; }
+.search-form .search-label { font-size: 0; }
+.search-form .form-search-submit { display: none; }
+.search-wrapper .placeholder {
+  display: block; position: absolute; top: 50%; transform: translate3d(0, -42%, 0);
+  color: #605D5D; text-align: left; padding: 0 10px 0 35px; pointer-events: none;
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 16px; line-height: 1.3;
+}
+.search-wrapper .search-field {
+  position: absolute; width: 99.8%; height: 48px; padding: 9px 10px 9px 40px;
+  color: #605D5D; background-color: #F2F3F4; border: none; border-radius: 0;
+  outline: none; appearance: none;
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 18px; font-weight: 300;
+  letter-spacing: -.02em; line-height: 25px;
+}
+.search-wrapper .search-field::placeholder { color: #605D5D; opacity: 1; line-height: 1.7; font-size: 18px; }
+.blog-search-mask i.search-icon.fa-search {
+  position: absolute; top: -12px; left: 5px; margin-top: 26px; margin-left: 10px;
+  font-size: 18px; line-height: 18px; color: #DA291C;
+}
+ul.search-results { position: static; margin: 0 0 16px; overflow: hidden; }
+
+/* ===== featured split (section.table.d-pad-top-small.v3) ===== */
+section.table.d-pad-top-small.v3 {
+  display: table; width: 100%; table-layout: fixed; height: auto;
+  padding: 25px 30px 0; max-width: 1440px;
+}
+.cw-v3 .table .cell-l {
+  display: table-cell; vertical-align: top; width: 66.66667%;
+  padding-right: 8em; padding-left: 0;
+}
+.cw-v3 .table .cell-r.last {
+  display: table-cell; vertical-align: top; width: 41.66667%;
+  padding-right: 0; padding-left: 0;
+}
+.module.m-pad { padding-left: 0; padding-right: 0; }
+
+/* featured article card */
+.blog-summary { position: relative; }
+.blog-summary.featured-article { height: 100%; position: relative; }
+.blog-summary.small.featured-article { border: none; }
+.blog-summary.featured-article .blog-summary-wrapper { padding: 1em 1em 1em 0; }
+.blog-summary.featured-article .blog-summary-wrapper a { color: #000; }
+.blog-summary.small img { width: 100%; }
+.blog-summary.featured-article.small .blog-title {
+  padding: 2em 0 0; margin: 0; color: #000;
+  font-family: 'Minion Semi Bold', 'Minion W01 SmBd Cap', Arial;
+  font-size: 24px; font-weight: 400; letter-spacing: -.02em; line-height: 1.3;
+}
+.blog-summary.featured-article.small .summary-text {
+  clear: both; margin-top: 1em; margin-bottom: 3em; font-size: 18px; line-height: 1.3;
+}
+.blog-summary.featured-article.small .summary-text p { margin: 1em 0; }
+.blog-summary.featured-article.small .summary-text p a { color: #DA291C; }
+.blog-summary.small .summary-cta-info { clear: both; position: absolute; bottom: 1em; left: 1em; right: 1em; }
+.blog-summary.small .summary-cta-info a.cta {
+  color: #DA291C; font-family: 'Univers LT W01_55 Roman', Arial; font-size: 18px;
+  letter-spacing: -.02em; line-height: 1.3; position: relative;
+}
+.summary-cta-info a.cta i.mdicon-arrow { font-size: 18px; position: relative; top: 2px; margin-left: 14px; }
+
+/* ===== right column: latest/top stories tabs ===== */
+section.highlight.stories { padding-top: 0; padding-bottom: 70px; max-width: 1440px; }
+section.highlight.stories::after { content: ""; display: table; clear: both; }
+.cw-v3 .col-single.stories { padding-right: 0; padding-left: 1em; }
+.cw-collection.stories { position: relative; text-align: center; width: 100%; float: right; }
+.cw-collection.stories::after { content: ""; display: table; clear: both; }
+ul.cw-tab-menu.stories {
+  display: table; width: 100%; margin: 0 0 20px; padding: 0;
+  border-spacing: 5px; cursor: pointer;
+}
+.cw-tab-menu.stories li {
+  display: table-cell; padding: 5px 0; margin: 0; background: none; border-bottom: 0;
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 18px; letter-spacing: -.02em; line-height: 1.3;
+}
+.cw-tab-menu.stories li a { margin: 0; padding-bottom: 5px; }
+.cw-tab-menu.stories li.ui-tabs-active a {
+  font-family: 'Minion Semi Bold', 'Minion W01 SmBd Cap', Arial; font-size: 24px;
+  letter-spacing: -.02em; line-height: 1.3;
+}
+.cw-tab-menu.stories li a h3 {
+  font-family: 'Minion Semi Bold', 'Minion W01 SmBd Cap', Arial; font-size: 24px;
+  letter-spacing: -.02em; line-height: 1.3; color: #605D5D; font-weight: 400; margin: 0;
+}
+.cw-tab-menu.stories li.ui-tabs-active { background: #fff; border-bottom: 5px solid #DA291C; }
+.cw-tab-menu.stories li.ui-tabs-active a h3 { color: #000; font-weight: 700; }
+
+.cw-collection.stories .collection-group { display: block; width: 100%; text-align: left; }
+.cw-collection.stories .collection-group::after { content: ""; display: table; clear: both; }
+.cw-collection.stories .collection-group .cw-collection-item { display: block; vertical-align: top; }
+.cw-collection.stories .collection-group .cw-collection-item .module.m-pad { overflow: hidden; padding-top: 5px; }
+.blog-summary.small.stories { border: none; border-bottom: 1px solid #D0D0CC; padding-bottom: 0; position: relative; }
+.blog-summary-wrapper.stories { padding: 1em; }
+.blog-category { font-size: 16px; letter-spacing: -.02em; line-height: 1.3; }
+.blog-category.patientCare { color: #DA291C; }
+.blog-category.diag-treatment { color: #2F60B2; }
+.blog-category.research { color: #49823C; }
+.blog-category.expert-insights { color: #CB6015; }
+.blog-category.healthy-living { color: #783491; }
+.blog-category.philanthropy { color: #23B8F1; }
+h3.blog-title.stories {
+  margin: 0; font-family: 'Minion Semi Bold', 'Minion W01 SmBd Cap', Arial;
+  font-size: 18px; font-weight: 400; letter-spacing: -.02em; line-height: 1.3;
+}
+h3.blog-title.stories a { color: #000; }
+/* capture-state: Top Stories panel (Adobe Target-populated on live, hidden non-active panel) */
+#top { display: none; }
+#top .at-table { display: table; width: 100%; border-spacing: 5px; table-layout: fixed; }
+#top .at-table-row { display: table-row; width: 100%; clear: both; padding: 10px; }
+#top .at-table-column {
+  display: block; padding: 10px 10px 10px 20px; width: 100%; word-wrap: break-word;
+  border-bottom: 1px solid #D0D0CE; font-weight: 400; letter-spacing: -.02em; line-height: 1.3;
+  margin: 0 0 10px; position: relative;
+}
+#top .at-table-column a {
+  color: #000; font-family: 'Minion Semi Bold', 'Minion W01 SmBd Cap', Arial;
+  font-size: 18px; letter-spacing: -.02em; line-height: 1.3;
+}
+#top .at-category { font-size: 16px; color: #000; }
+#top .at-category.patientCare { color: #DA291C; }
+#top .at-category.diag-treatment { color: #2F60B2; }
+#top .at-category.research { color: #49823C; }
+#top .at-category.expert-insights { color: #CB6015; }
+#top .at-category.healthy-living { color: #783491; }
+#top .at-category.philanthropy { color: #23B8F1; }
+
+/* ===== blue link ribbon ===== */
+.cw-v3 .link-ribbon-section { padding-bottom: 50px; max-width: 1440px; }
+.link-ribbon {
+  font-family: 'Minion Semi Bold', 'Minion W01 SmBd Cap', Arial; font-size: 21px;
+  letter-spacing: -.02em; line-height: 1.3; background-color: #3361AD; color: #fff;
+  text-align: center; padding: 30px 1em;
+}
+.link-ribbon .button-block { display: inline-block; width: 32%; margin: 0; padding: 15px 0; }
+.link-ribbon .button-block a.link-ribbon-cta {
+  display: inline-flex; align-items: center; justify-content: flex-start;
+  color: #fff; text-align: left;
+}
+.link-ribbon .button-block a.link-ribbon-cta .cta-inner { display: flex; }
+.link-ribbon .cta-inner .promo-icon { margin-right: 1em; display: flex; align-items: center; flex-shrink: 0; }
+.link-ribbon .cta-inner .promo-icon .fa-lg { display: block; font-size: 28px; line-height: 21px; }
+.link-ribbon .cta-inner .promo-icon i { display: inline-block; font-size: 28px; line-height: 28px; color: #fff; }
+.link-ribbon .cta-inner .text { display: block; text-align: left; word-break: break-word; }
+
+/* ===== find stories by topic (cw-tabs) ===== */
+section.bleed-bottom.cw-tabs { padding-top: 0; padding-bottom: 0; max-width: 1440px; }
+section.bleed-bottom.cw-tabs > section.cw-tabs { padding-top: 0; padding-bottom: 70px; max-width: 1440px; }
+.cw-v3 .col-single.cw-tabs { padding-right: 2em; padding-left: 2em; }
+.cw-collection.tabbed { position: relative; text-align: center; background-color: #fff; }
+.cw-collection.tabbed::after { content: ""; display: table; clear: both; }
+.cw-collection.tabbed .section-title h2 {
+  font-family: var(--heading-font-family); font-size: 48px; letter-spacing: -.02em;
+  line-height: 1.3; font-weight: 400; margin: 0; text-align: center;
+}
+ul.cw-tab-menu.cw-tabs {
+  display: table; width: 100%; margin: 15px 0 0; padding: 0; border-spacing: 5px; cursor: pointer;
+}
+.cw-tab-menu.cw-tabs li {
+  display: table-cell; padding: 5px 0; margin: 0; background: #F2F3F4; border-bottom: 0;
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 18px; letter-spacing: -.02em; line-height: 1.3;
+}
+.cw-tab-menu.cw-tabs li.patientCare { border-top: 5px solid #DA291C; }
+.cw-tab-menu.cw-tabs li.diag-treatment { border-top: 5px solid #2F60B2; }
+.cw-tab-menu.cw-tabs li.research { border-top: 5px solid #529144; }
+.cw-tab-menu.cw-tabs li.expert-insights { border-top: 5px solid #CB6015; }
+.cw-tab-menu.cw-tabs li.healthy-living { border-top: 5px solid #783491; }
+.cw-tab-menu.cw-tabs li.philanthropy { border-top: 5px solid #23B8F1; }
+.cw-tab-menu.cw-tabs li.ui-tabs-active { background: #fff; }
+.cw-tab-menu.cw-tabs li a { margin: 0; padding-bottom: 5px; color: #000; }
+.cw-tab-menu.cw-tabs li a h3 {
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 18px; letter-spacing: -.02em;
+  line-height: 1.3; font-weight: 400; margin: 0;
+}
+.cw-tab-menu.cw-tabs li.ui-tabs-active a h3 { font-family: 'Univers LT W01_65 Bold', Arial; }
+
+.cw-collection.tabbed .collection-group { display: block; width: 100%; text-align: left; margin-bottom: 0; }
+.cw-collection.tabbed .collection-group::after { content: ""; display: table; clear: both; }
+.cw-collection.tabbed .collection-group .cwheadline { font-size: 18px; padding: 0 50px; margin: 20px 0; text-align: left; }
+.cw-collection.tabbed .collection-group .cwheadline p { font-size: 20px; margin: 0; overflow-wrap: break-word; }
+.cw-collection.tabbed .collection-group .collection-item-tab { display: block; vertical-align: top; columns: 4; }
+.cw-collection.tabbed .collection-group .collection-item-tab .module.m-pad {
+  padding-top: 10px; overflow: hidden; height: 400px; break-inside: avoid;
+}
+.cw-collection.tabbed .collection-item-tab .blog-summary.small { border: 1px solid #D0D0CC; }
+.cw-collection.tabbed .collection-item-tab .blog-summary.small.patientCare { border-top: 5px solid #DA291C; }
+.cw-collection.tabbed .collection-item-tab .blog-summary.small.diag-treatment { border-top: 5px solid #2F60B2; }
+.cw-collection.tabbed .collection-item-tab .blog-summary.small.research { border-top: 5px solid #529144; }
+.cw-collection.tabbed .collection-item-tab .blog-summary.small.expert-insights { border-top: 5px solid #CB6015; }
+.cw-collection.tabbed .collection-item-tab .blog-summary.small.healthy-living { border-top: 5px solid #783491; }
+.cw-collection.tabbed .collection-item-tab .blog-summary.small.philanthropy { border-top: 5px solid #23B8F1; }
+.blog-summary-wrapper.cwtabcontainer { padding: 1em; }
+h3.blog-title.cwtabcontainer {
+  margin: 0; font-family: 'Minion Semi Bold', 'Minion W01 SmBd Cap', Arial;
+  font-size: 18px; font-weight: 400; letter-spacing: -.02em; line-height: 1.3;
+}
+h3.blog-title.cwtabcontainer a { color: #000; }
+p.author-date { margin: 1em 0; font-size: 18px; letter-spacing: -.02em; line-height: 1.3; }
+/* outline buttons */
+.cw-collection.tabbed .collection-group .cta {
+  display: block; background: #F2F3F4; color: #000; border: 1px solid #000;
+  padding: 5px 20px; font-weight: 400; max-width: 50%; min-width: 25%; width: auto;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  margin: 25px auto 0; text-align: center;
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: inherit; letter-spacing: -.02em; line-height: 1.3;
+}
+.cw-collection.tabbed .collection-group .cta.patientCare { border-top: 5px solid #DA291C; }
+.cw-collection.tabbed .collection-group .cta.diag-treatment { border-top: 5px solid #2F60B2; }
+.cw-collection.tabbed .collection-group .cta.research { border-top: 5px solid #529144; }
+.cw-collection.tabbed .collection-group .cta.expert-insights { border-top: 5px solid #CB6015; }
+.cw-collection.tabbed .collection-group .cta.healthy-living { border-top: 5px solid #783491; }
+.cw-collection.tabbed .collection-group .cta.philanthropy { border-top: 5px solid #23B8F1; }
+.cw-collection.tabbed .collection-group .cta a { color: #000; }
+/* non-active tab panels (jQuery UI hides on live; static t=0 state) */
+#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5 { display: none; }
+
+/* ===== capture-state: Go To Top widget (server-rendered on live) ===== */
+a.scrollToTop {
+  position: fixed; top: 82%; right: 20px; z-index: 1000; display: block;
+  width: 52px; height: 52px; padding: 10px; border-radius: 50%; background: #fff;
+  text-align: center; font-weight: bold;
+}
+.cta_icon_top {
+  position: absolute; top: 1px; left: 1px; display: inline-block; width: 50px; height: 50px;
+  border: 2px solid; border-radius: 50%; color: #222121; font-weight: normal; font-size: 35px;
+}
+.cta_icon_top::before { font-family: 'FontAwesome'; content: "\f106"; line-height: 46px; }
+.cta_top_text { position: relative; top: 14px; left: 0; font-size: 13px; color: #222121; }
+
+/* ===== capture-state: chat widget replica (pixels only; live widget is JS-injected) ===== */
+.chat-widget-replica { position: fixed; right: 20px; bottom: 30px; z-index: 998; }
+.chat-widget-replica::before {
+  content: "Chat with us."; display: inline-block; vertical-align: middle;
+  background: #3361AD; color: #fff; font-family: Arial, sans-serif; font-size: 16px;
+  padding: 8px 14px; border-radius: 4px; margin-right: 10px;
+}
+.chat-widget-replica::after {
+  content: ""; display: inline-block; vertical-align: middle; width: 50px; height: 50px;
+  border-radius: 50%; background: #2B4FA2;
+}
+
+/* chrome gap (ledgered for chrome owner): the remote footer logo loads after the
+   stitcher's height measurement, reflowing the mission band (+34px @360, +36 @1440).
+   Reserve the loaded box height so measurement is deterministic. */
+.footer-bar-logo img.logo { height: 86px; }
+
+/* =========================================================================
+   MOBILE (max-width: 767px) — lifted from capture/cancerwise-html/360.json
+   ========================================================================= */
+@media (max-width: 767px) {
+  /* hero */
+  .cw-hero .cw-title { font-size: 65px; }
+  .cw-hero .cw-summary { display: block; width: 100%; }
+
+  /* content gutter */
+  .cw-v3 .col-content-single { padding-left: 1em; padding-right: 1em; }
+
+  /* search: absolute overlay row, 20px-tall filter shell (as live) */
+  .blog-search-filter { position: relative; display: block; height: auto; padding: 0 0 20px; }
+  .blog-search { position: absolute; top: 0; left: 0; margin: 0; padding: 0; width: 100%; }
+  .blog-search-mask {
+    position: relative; float: right; top: 0; height: 70px; width: 100%; max-width: 100%;
+    overflow: hidden;
+  }
+  .search-wrapper .search-field { width: 99%; margin-top: 0; font-size: 16px; }
+  .search-wrapper .search-field::placeholder { font-size: 16px; }
+  .blog-search-mask i.search-icon.fa-search { top: 15px; margin-top: 0; }
+  ul.search-results { margin-top: 35px; }
+
+  /* featured split stacks */
+  section.table.d-pad-top-small.v3 { display: block; height: auto; padding: 0; }
+  .cw-v3 .table .cell-l { display: block; width: auto; padding: 0 1em; }
+  .cw-v3 .table .cell-r.last { display: block; width: auto; padding: 0; }
+
+  .blog-summary.featured-article.small { border: none; overflow: hidden; padding-top: 4em; padding-bottom: 0; }
+  .blog-summary.featured-article.small .blog-summary-img-wrapper {
+    width: 100%; display: inline-block; float: left; height: 100%; overflow: hidden; padding: 0 0 2em;
+  }
+  .blog-summary.featured-article.small .blog-summary-img-wrapper img { height: 100%; width: 100%; }
+  .blog-summary.featured-article.small .blog-summary-wrapper { float: left; width: 100%; padding: 10px 0 0; }
+  .blog-summary.featured-article.small .summary-text { display: table; margin-bottom: 1em; }
+  .blog-summary.featured-article.small .summary-cta-info {
+    margin-top: 15px; position: static; left: auto; right: auto; padding-bottom: 35px;
+  }
+  .blog-summary.small .summary-cta-info a.cta { font-size: 16px; }
+  .summary-cta-info a.cta i.mdicon-arrow { font-size: 16px; }
+
+  /* stories column */
+  .cw-v3 .col-single.stories { padding-right: 1em; padding-left: 1em; }
+  .cw-collection.stories { margin: 0; padding-top: 35px; padding-bottom: 35px; }
+  section.highlight.stories { padding-bottom: 0; }
+  #latest { margin-bottom: 30px; }
+  ul.cw-tab-menu.stories {
+    margin: -1px 0 20px; display: table; min-width: 120px;
+    text-align: center; white-space: nowrap; overflow: hidden; overflow-x: auto;
+    -webkit-overflow-scrolling: touch; scrollbar-width: none;
+  }
+  .cw-tab-menu.stories li { padding: 5px; font-size: 16px; border-top-width: 3px; }
+  .cw-tab-menu.stories li a h3 { font-size: 21px; }
+  .cw-tab-menu.stories li.ui-tabs-active a { font-size: 21px; }
+  /* live 360 renders the semibold face without synthetic bold (face registered across weights) */
+  .cw-tab-menu.stories li.ui-tabs-active a h3 { font-weight: 400; }
+  /* live 360: image line-box gap collapses (752 img{height:100%} branch) */
+  .blog-summary.small .blog-summary-img-wrapper img { display: block; }
+  .cw-tab-menu.stories li.ui-tabs-active a h3 { font-size: 21px; }
+  .cw-collection.stories .collection-group .cw-collection-item { margin: 0; height: auto; }
+  .cw-collection.stories .cw-collection-item .module.m-pad { height: auto; }
+  .blog-summary.small.stories { padding-top: 0; }
+  .blog-summary.small.stories img { width: 100%; }
+  .blog-summary.small.stories .blog-summary-img-wrapper { height: auto; overflow: hidden; float: none; width: 100%; display: block; }
+  .blog-summary.small.stories .blog-summary-wrapper { padding: 1em; float: left; width: 100%; }
+  .blog-category { font-size: 18px; }
+  h3.blog-title.stories { font-size: 16px; }
+
+  /* link ribbon stacks */
+  .link-ribbon .button-block { width: 70%; margin: 0 auto; font-size: 18px; }
+  .link-ribbon .button-block a.link-ribbon-cta { display: flex; justify-content: center; width: 100%; }
+  .link-ribbon .button-block a.link-ribbon-cta .cta-inner { align-items: flex-start; text-align: left; max-width: 250px; width: 100%; }
+  .link-ribbon .cta-inner .promo-icon .fa-lg { font-size: 24px; line-height: 24px; }
+  .link-ribbon .cta-inner .promo-icon i { font-size: 24px; line-height: 24px; }
+
+  /* cw-tabs */
+  section.cw-tabs, section.bleed-bottom.cw-tabs > section.cw-tabs { padding-bottom: 0; }
+  .cw-v3 .col-single.cw-tabs { padding-right: 1em; padding-left: 1em; }
+  .cw-collection.tabbed { margin: 0; padding-top: 35px; padding-bottom: 35px; }
+  .cw-collection.tabbed .section-title h2 { font-size: 28px; }
+  ul.cw-tab-menu.cw-tabs {
+    position: absolute; left: 0; width: 100%; display: inline-block; min-width: 120px;
+    margin: 0 5px; padding: 0; text-align: center; white-space: nowrap;
+    overflow: hidden; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none;
+  }
+  ul.cw-tab-menu.cw-tabs::-webkit-scrollbar { display: none; }
+  .cw-tab-menu.cw-tabs li {
+    text-align: center; padding: 5px; margin-top: 5px; font-size: 16px;
+    border-top-width: 3px; border-radius: 0; background-color: #F2F3F4;
+  }
+  .cw-tab-menu.cw-tabs li.ui-tabs-active { background-color: #fff; }
+  .cw-tab-menu.cw-tabs li a h3 { font-size: 16px; }
+  .cw-collection.tabbed .collection-group { padding-top: 50px; }
+  .cw-collection.tabbed .collection-group .cwheadline { font-size: 16px; padding: 15px 0 20px; margin: 0; }
+  .cw-collection.tabbed .collection-group .cwheadline p { font-size: 20px; margin: 20px 0; }
+  .cw-collection.tabbed .collection-group .collection-item-tab { columns: 1; margin: 0; height: auto; }
+  .cw-collection.tabbed .collection-group .collection-item-tab .module.m-pad { height: auto; }
+  .cw-collection.tabbed .collection-item-tab .blog-summary.small { padding-top: 0; padding-bottom: 35px; overflow: hidden; }
+  .cw-collection.tabbed .collection-item-tab .blog-summary.small img { width: 100%; }
+  .cw-collection.tabbed .collection-item-tab .blog-summary-img-wrapper.cwtabcontainer {
+    height: auto; overflow: hidden; float: none; width: 100%; display: block;
+  }
+  .blog-summary-wrapper.cwtabcontainer { padding: 1em; float: left; width: 100%; }
+  h3.blog-title.cwtabcontainer { font-size: 16px; }
+  p.author-date { font-size: 16px; }
+  .cw-collection.tabbed .collection-group .cta { width: auto; padding: 5px 20px; max-width: 100%; min-width: 25%; }
+
+  /* live 360: newsletter bar absent on blogpage */
+  .subscribe-to { display: none; }
+  .footer-bar-logo img.logo { height: 84px; }
+
+  /* chat replica: circle only */
+  .chat-widget-replica { right: 10px; bottom: 12px; }
+  .chat-widget-replica::before { display: none; }
+}
+
+</style>
+</head>
+<body class="basepage cw-v3 blogpage">
+<!-- CHROME:TOP -->
+<header class="mda-nav" data-canon="chrome-header">
+  <a id="content-skip-btn" href="#skip">Skip to Content</a>
+  <div class="mda-cta-list-container desktop" data-canon="chrome-utility-bar">
+    <ul class="mda-cta-list">
+      <li class="mda-cta-list-item login dropdown">
+        <a class="dropdown-trigger" href="https://my.mdanderson.org/MyChart/Home/"><span class="red-my">My</span><span class="white-chart">Chart</span></a>
+      </li>
+      <li class="mda-cta-list-item appointment dropdown">
+        <button class="dropdown-trigger" type="button">Request an Appointment</button>
+      </li>
+      <li class="mda-cta-list-item donate onlypossiblehere">
+        <a class="dropdown-trigger at-element-click-tracking" href="javascript:void(0);">Donate Today<i class="fa fa-heart mda-inverse"></i></a>
+      </li>
+    </ul>
+  </div>
+  <div class="mda-nav-top flex-row">
+    <a id="nav-logo" href="https://www.mdanderson.org/">
+      <img src="https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/xmda-logo.png.pagespeed.ic.jLVBCg-7dN.webp" alt="The University of Texas MD Anderson Cancer Center">
+    </a>
+    <div class="spacer desktop"></div>
+    <ul class="mda-nav-utility desktop flex-row">
+      <li><a class="mda-nav-utility-clinical-trials" href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html">Clinical Trials</a></li>
+      <li><a class="mda-nav-utility-directions" href="https://www.mdanderson.org/about-md-anderson/our-locations.html"><span>Locations</span></a></li>
+      <li><a class="careers" href="https://jobs.mdanderson.org/">Careers<span class="mda-icon-linkout"></span></a></li>
+      <li><a class="mda-nav-utility-call" href="https://www.mdanderson.org/about-md-anderson/contact-us.html">Contact Us</a></li>
+      <li><a class="mda-nav-utility-doctors" href="https://faculty.mdanderson.org/">Our Doctors</a></li>
+      <li class="dropdown mda-sublist-container">
+        <button class="mda-nav-utility-sublist-toggle mda-nav-utility-languages dropdown-trigger" type="button">Languages</button>
+      </li>
+    </ul>
+    <div id="nav-search">
+      <form id="nav-search-form" action="#" onsubmit="return false">
+        <i class="search-icon mda-icon-search"></i>
+        <input id="site-search" type="text" placeholder="Search" autocomplete="off">
+      </form>
+      <ul id="search-results"></ul>
+      <div id="live-search-results"></div>
+      <div class="search-options"></div>
+    </div>
+    <div class="mda-nav-mobile-menu mobile">
+      <button class="mda-nav-mobile-search-button open active" type="button">
+        <i class="search-icon mda-icon-search mobile-search"></i>
+        <span class="mda-nav-mobile-search-title">Search</span>
+      </button>
+      <button class="mda-nav-mobile-menu-button open active" type="button">
+        <i class="fa fa-2x mda-icon-menu"></i>
+        <span class="mda-nav-mobile-menu-title">Menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="mda-nav" data-canon="chrome-primary-nav">
+  <div class="mda-nav-wrapper">
+    <div class="mda-nav-main">
+      <ul class="mda-nav-main-list">
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-1" href="https://www.mdanderson.org/patients-family.html">Patients &amp; Family</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-2" href="https://www.mdanderson.org/prevention-screening.html">Prevention &amp; Screening</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-3" href="https://www.mdanderson.org/donors-volunteers.html">Donors &amp; Volunteers</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-4" href="https://www.mdanderson.org/for-physicians.html">For Physicians</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-5" href="https://www.mdanderson.org/research.html">Research</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-6" href="https://www.mdanderson.org/education-training.html">Education &amp; Training</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /CHROME:TOP -->
+<div></div>
+<main class="mda-content" data-template="listing">
+  <!-- Go To Top (server-rendered on live; shown on scroll) -->
+  <a href="#" class="scrollToTop"><span class="cta_icon_top fa-angle-up"></span><span class="cta_top_text">Top</span></a>
+  <!-- capture-state: chat widget replica (pixels only; live widget is JS-injected) -->
+  <div class="chat-widget-replica" aria-hidden="true"></div>
+  <div id="skip">
+    <div class="content">
+<section class="bleed-full" data-transition="fadeIn" data-section="cancerwise-hero" data-intent="masthead" data-layout="full-bleed">
+<div class="module ">
+<div>
+<div class="cw-hero clearfix">
+<h1 class="cw-title">
+<a href="/cancerwise.html">Cancer<span class="color">wise</span></a>
+</h1>
+<div class="cw-summary"> UT MD Anderson’s blog features stories from survivors and caregivers, and our experts’ insights on cancer treatment, research breakthroughs, healthy living and more.</div>
+</div>
+</div>
+</div>
+</section>
+<section class="col-content-wrapper blog-content" data-section="blog-listing" data-intent="browse" data-layout="single-column">
+<div class="col-content-single">
+<div><!--
+
+  Blog: Main component 
+
+-->
+<!--
+
+  Listing component
+
+-->
+<section class="bleed-full" data-section="blog-search" data-intent="search" data-layout="full-width" data-interactive="search">
+<div class="col-content-single">
+<div class="module">
+<div class="blog-search-filter">
+<div class="blog-search col12 last">
+<div>
+<div></div>
+<div class="blog-search-mask">
+<div class="mda-blog-search search-wrapper" data-searchresultspageurl="/patients-family/search-results.v2.html?q=" data-predictiveurl="mda_aem_prod AND pagetype:blog" data-predictivetype="cancerwise">
+<form class="search-form" id="" name="">
+<span class="placeholder"></span>
+<label class="search-label" for="cw-search">Search UT MD Anderson</label>
+<input type="text" size="1" class="search-field" value="" id="cw-search" placeholder="I’m looking for information on cancer treatment, research, side effects, healthy living and more..."/> <input type="submit" class="form-search-submit mda-btn" value="Go"/> <i class="search-icon fa fa-search"></i>
+</form>
+<ul role="listbox" class="search-results"></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="table d-pad-top-small v3 bleed-top bleed-bottom" data-section="featured-stories" data-intent="feature" data-layout="two-column" data-items="7" data-media="photo">
+<div class="cell-l">
+<div>
+<div>
+<!-- WITH IMAGE -->
+<div class="module m-pad">
+<div class="blog-summary small featured-article">
+<div class="blog-summary-wrapper">
+<a href="/cancerwise/20-year-breast-cancer-survivor--it-s-never-too-late-to-volunteer-at-ut-md-anderson.h00-159857712.html" id="cancerwise_featuredarticle_img20_year_brea" aria-label="20-year breast cancer survivor: It’s never too late to volunteer at UT MD Anderson">
+<div class="blog-summary-img-wrapper featured-article">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/505919f0bcf9.jpg 2x, assets/media/cancerwise-html/7edc5f762af3.jpg 1x" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/7edc5f762af3.jpg" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/8884c7d00c5a.jpg 2x, assets/media/cancerwise-html/b816b82a9c85.jpg 1x" src="assets/media/cancerwise-html/07c845d3f55e.jpg"/>
+</picture>
+</div>
+<h3 class="blog-title featured-article">
+20-year breast cancer survivor: It’s never too late to volunteer at UT MD Anderson
+</h3></a>
+<div>
+<div class="summary-text featured-article"><p>When I was going through <a href="/cancer-types/breast-cancer/breast-cancer-treatment.html" target="_self" rel="noopener noreferrer">breast cancer treatment</a> in 2006, I remember a <a href="/donors-volunteers/volunteer.html" target="_self" rel="noopener noreferrer">volunteer</a> coming into my room while I was receiving <a href="/treatment-options/chemotherapy.html" target="_self" rel="noopener noreferrer">chemotherapy</a> at UT MD Anderson.</p>
+<p>She was a <a href="/cancer-types/breast-cancer.html" target="_self" rel="noopener noreferrer">breast cancer</a> survivor, someone who had already been through what I was going through. So, I wanted to be her — <a href="/cancerwise/remission--cancer-free--no-evidence-of-disease--what-is-the-difference-when-talking-about-cancer-treatment-effectiveness-and-results.h00-159460845.html" target="_self" rel="noopener noreferrer">cancer-free</a>, looking great and past all the <a href="/treatment-options.html" target="_self" rel="noopener noreferrer">treatments</a>.</p>
+</div>
+</div>
+<div class="summary-cta-info">
+<div>
+<a href="/cancerwise/20-year-breast-cancer-survivor--it-s-never-too-late-to-volunteer-at-ut-md-anderson.h00-159857712.html" class="cta">Keep reading<i class="mdicon-arrow"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--<div data-sly-test="true">
+	<div data-sly-include="featuredarticlesummaryitem_twocolumn.html"></div>
+</div>-->
+</div>
+<div class="cell-r last">
+<section class="highlight stories">
+<div class="col-single stories">
+<div class="module ">
+<div class="cw-collection stories">
+<div class="mda-tabs stories">
+<ul class="cw-tab-menu stories">
+<li class="cw-latest ui-tabs-active">
+<a href="#latest"><h3>Read the latest stories</h3></a>
+</li>
+<li class="cw-top">
+<a href="#top"><h3>Top Stories</h3></a>
+</li>
+</ul>
+<div>
+<div class="module stories" id="latest">
+<div class='collection-group first-story one-columns resources ui-tabs-panel'>
+<div class="cw-collection-item">
+<div class="module m-pad">
+<div class="blog-summary small stories">
+<div class="blog-summary-img-wrapper stories">
+<a href="/cancerwise/glp-1s-and-anesthesia--what-to-know-before-surgery.h00-159857712.html" id="cancerwise_stories_imgglp_1s_and_a">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/997d01f8e9b6.jpg 2x, assets/media/cancerwise-html/074a3becd65d.jpg 1x" alt="GLP-1 injector floating through a spiral tape measure" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/074a3becd65d.jpg" alt="GLP-1 injector floating through a spiral tape measure" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/36df58ac73a4.jpg 2x, assets/media/cancerwise-html/57d6707dd9df.jpg 1x" alt="GLP-1 injector floating through a spiral tape measure" src="assets/media/cancerwise-html/b97df3e737d1.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper stories">
+<div class="blog-category diag-treatment">
+Diagnosis &amp; Treatment
+</div>
+<h3 class="blog-title stories">
+<a href="/cancerwise/glp-1s-and-anesthesia--what-to-know-before-surgery.h00-159857712.html" id="cancerwise_stories_glp_1s_and_anes">
+GLP-1s and anesthesia: What to know before surgery
+</a>
+</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='collection-group one-columns resources ui-tabs-panel'>
+<div class="cw-collection-item">
+<div class="module m-pad">
+<div class="blog-summary small stories">
+<div class="blog-summary-wrapper stories">
+<div class="blog-category philanthropy">
+Philanthropy
+</div>
+<h3 class="blog-title stories">
+<a href="/cancerwise/austin-banking-leader-and-prostate-cancer-survivor-driven-to-support-ut-md-anderson.h00-159857712.html" id="cancerwise_stories_austin_banking_">
+Austin banking leader and prostate cancer survivor driven to support UT MD Anderson
+</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary small stories">
+<div class="blog-summary-wrapper stories">
+<div class="blog-category diag-treatment">
+Diagnosis &amp; Treatment
+</div>
+<h3 class="blog-title stories">
+<a href="/cancerwise/3-reasons-why-an-accurate-bladder-cancer-diagnosis-matters.h00-159857712.html" id="cancerwise_stories_3_reasons_why_a">
+3 reasons why an accurate bladder cancer diagnosis matters
+</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary small stories">
+<div class="blog-summary-wrapper stories">
+<div class="blog-category patientCare">
+Patient &amp; Caregiver Stories
+</div>
+<h3 class="blog-title stories">
+<a href="/cancerwise/20-year-breast-cancer-survivor--it-s-never-too-late-to-volunteer-at-ut-md-anderson.h00-159857712.html" id="cancerwise_stories_20_year_breast_">
+20-year breast cancer survivor: It’s never too late to volunteer at UT MD Anderson
+</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary small stories">
+<div class="blog-summary-wrapper stories">
+<div class="blog-category healthy-living">
+Healthy Living
+</div>
+<h3 class="blog-title stories">
+<a href="/cancerwise/what-is-white-coat-syndrome.h00-159857712.html" id="cancerwise_stories_what_is_white_c">
+What is white coat syndrome?
+</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary small stories">
+<div class="blog-summary-wrapper stories">
+<div class="blog-category patientCare">
+Patient &amp; Caregiver Stories
+</div>
+<h3 class="blog-title stories">
+<a href="/cancerwise/first-patient-on-phase-1-clinical-trial-thankful-for-ut-md-anderson.h00-159857712.html" id="cancerwise_stories_first_patient_o">
+First patient on clinical trial thankful for UT MD Anderson
+</a>
+</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="collection-group one-columns resources ui-tabs-panel ui-widget-content ui-corner-bottom" id="top" aria-labelledby="ui-id-2" role="tabpanel" aria-hidden="true" style="display: none;">
+<div class="cw-collection-item at-element-marker"><div>
+<style type="text/css">
+        #adobe-target.at-table {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          width: auto;
+          border-spacing: 5px;
+          margin: 0 auto;
+          max-width: 300px;
+        }
+
+        #adobe-target .at-table-row {
+          display: table-row;
+          width: auto;
+          clear: both;
+          padding: 10px;
+        }
+
+        #adobe-target .at-table-column {
+          padding: 10px;
+          max-width: 300px;
+          word-wrap: break-word;
+        }
+
+        #adobe-target .at-thumbnail {
+          max-width: 758px;
+          max-height: 300px;
+        }
+
+        #adobe-target .at-light {
+          font-weight: lighter;
+          margin-top: -10px;
+          size: 10em;
+        }
+
+        #adobe-target .at-thumbnail {
+          width: 100%;
+        }
+      </style>
+    <div>
+      <table class="at-table">
+        <tbody><tr class="at-table-row">
+          <th class="at-table-column">
+            <div class="at-category healthy-living">
+              Healthy Living</div>
+            <div>
+              <a href="https://www.mdanderson.org/cancerwise/6-tips-to-lower-your-blood-sugar.h00-159856923.html"> <!-- https://www.mdanderson.org/cancerwise/6-tips-to-lower-your-blood-sugar.h00-159856923.html -->
+                <div>6 tips to lower your blood sugar</div>
+              </a>
+            </div>
+          </th>
+        </tr>
+        <tr class="at-table-row">
+          <th class="at-table-column">
+            <div class="at-category healthy-living">
+              Healthy Living</div>
+            <div>
+              <a href=" https://www.mdanderson.org/cancerwise/what-are-the-benefits-of-drinking-chlorophyll-6-things-to-know.h00-159855345.html"> <!-- https://www.mdanderson.org/cancerwise/what-are-the-benefits-of-drinking-chlorophyll-6-things-to-know.h00-159855345.html -->
+                <div>6 things to know about chlorophyll</div>
+              </a>
+            </div>
+          </th>
+        </tr>
+        <tr class="at-table-row">
+          <th class="at-table-column">
+            <div class="at-category diag-treatment">
+              Diagnosis &amp; Treatment</div>
+            <div>
+              <a href="https://www.mdanderson.org/cancerwise/swollen-collar-bone--supraclavicular--lymph-nodes--4-things-to-know.h00-159856134.html"> <!-- https://www.mdanderson.org/cancerwise/swollen-collar-bone--supraclavicular--lymph-nodes--4-things-to-know.h00-159856134.html -->
+                <div>Swollen collar bone (supraclavicular) lymph nodes: 4 things to know</div>
+              </a>
+            </div>
+          </th>
+        </tr>
+        <tr class="at-table-row">
+          <th class="at-table-column">
+            <div class="at-category diag-treatment">
+              Diagnosis &amp; Treatment</div>
+            <div>
+              <a href="https://www.mdanderson.org/cancerwise/-how-i-knew-i-had-endometrial-cancer---six-survivors-share-their-symptoms-stories.h00-159856134.html"> <!-- https://www.mdanderson.org/cancerwise/-how-i-knew-i-had-endometrial-cancer---six-survivors-share-their-symptoms-stories.h00-159856134.html -->
+                <div>‘How I knew I had endometrial cancer’: Survivors share their stories</div>
+              </a>
+            </div>
+          </th>
+        </tr>
+        <tr class="at-table-row">
+          <th class="at-table-column">
+            <div class="at-category healthy-living">
+              Healthy Living</div>
+            <div>
+              <a href="https://www.mdanderson.org/cancerwise/debunking-the-health-benefits-of-nicotine.h00-159856134.html"> <!-- https://www.mdanderson.org/cancerwise/debunking-the-health-benefits-of-nicotine.h00-159856134.html -->
+                <div>Debunking the benefits of nicotine</div>
+              </a>
+            </div>
+          </th>
+        </tr>
+      </tbody></table>
+      </div></div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+<section class="bleed-full">
+<!--googleoff: snippet-->
+<section class="link-ribbon-section bleed-full" data-section="link-ribbon" data-intent="cta" data-layout="three-up">
+<div class="module">
+<div class="link-ribbon">
+<div class="button-block btn-link-1">
+<a href="https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/appointments.html" class="link-ribbon-cta" target="_self">
+<div class="cta-inner">
+<div class="promo-icon icon-circle">
+<span class="fa-lg">
+<i class="fa mda-icon-appointments mda-inverse"></i>
+</span>
+</div>
+<div class="text"> Request an Appointment</div>
+</div>
+</a>
+</div>
+<div class="button-block btn-link-2">
+<a href="https://www.mdanderson.org/publications.html" class="link-ribbon-cta" target="_self">
+<div class="cta-inner">
+<div class="promo-icon icon-circle">
+<span class="fa-lg">
+<i class="fa mda-icon-iPad_apps mda-inverse"></i>
+</span>
+</div>
+<div class="text"> Subscribe to Newsletters</div>
+</div>
+</a>
+</div>
+<div class="button-block btn-link-3">
+<a href="https://www.mdanderson.org/podcast.html" class="link-ribbon-cta" target="_self">
+<div class="cta-inner">
+<div class="promo-icon icon-circle">
+<span class="fa-lg">
+<i class="fa mda-icon-podcast mda-inverse"></i>
+</span>
+</div>
+<div class="text"> Listen to our podcast</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section class="bleed-bottom cw-tabs" data-section="stories-by-topic" data-intent="browse" data-layout="tabbed-grid" data-items="8" data-media="photo" data-interactive="tabs">
+<section class="cw-tabs"><!--class="highlight"-->
+<div class="col-single cw-tabs">
+<div class="module ">
+<div class="cw-collection tabbed">
+<div class="section-title">
+<h2>Find stories by topic</h2>
+</div>
+<div class="mda-tabs cw-tabs">
+<ul class="cw-tab-menu cw-tabs">
+<li class='diag-treatment ui-tabs-active'>
+<a href='#tabs-0'><h3>Diagnosis &amp; Treatment</h3></a>
+</li>
+<li class='patientCare'>
+<a href='#tabs-1'><h3>Patients &amp; Caregivers</h3></a>
+</li>
+<li class='healthy-living'>
+<a href='#tabs-2'><h3>Healthy Living</h3></a>
+</li>
+<li class='research'>
+<a href='#tabs-3'><h3>Research</h3></a>
+</li>
+<li class='expert-insights'>
+<a href='#tabs-4'><h3>Expert Insights</h3></a>
+</li>
+<li class='philanthropy'>
+<a href='#tabs-5'><h3>Philanthropy</h3></a>
+</li>
+</ul>
+<div class='collection-group four-columns diag-treatment resources ui-tabs-panel' id="tabs-0">
+<div class="cwheadline"><p>Find out everything you need to know to navigate a cancer diagnosis and treatment from UT MD Anderson’s experts.</p>
+</div>
+<div class="collection-item-tab">
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small diag-treatment">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/glp-1s-and-anesthesia--what-to-know-before-surgery.h00-159857712.html" id="cancerwise_blog_tabs_imgglp_1s_and_a">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/997d01f8e9b6.jpg 2x, assets/media/cancerwise-html/074a3becd65d.jpg 1x" alt="GLP-1 injector floating through a spiral tape measure" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/074a3becd65d.jpg" alt="GLP-1 injector floating through a spiral tape measure" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/36df58ac73a4.jpg 2x, assets/media/cancerwise-html/57d6707dd9df.jpg 1x" alt="GLP-1 injector floating through a spiral tape measure" src="assets/media/cancerwise-html/b97df3e737d1.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/glp-1s-and-anesthesia--what-to-know-before-surgery.h00-159857712.html" id="cancerwise_blog_tabs_glp_1s_and_anes">
+GLP-1s and anesthesia: What to know before surgery
+</a>
+</h3>
+<p class="author-date">August 19, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small diag-treatment">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/3-reasons-why-an-accurate-bladder-cancer-diagnosis-matters.h00-159857712.html" id="cancerwise_blog_tabs_img3_reasons_wh">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/3b933842a424.jpg 2x, assets/media/cancerwise-html/9b782511f31c.jpg 1x" alt="Zoomed-in view of waist with bladder drawing superimposed" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/9b782511f31c.jpg" alt="Zoomed-in view of waist with bladder drawing superimposed" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/2d75f351007f.jpg 2x, assets/media/cancerwise-html/8cfac5ab8f79.jpg 1x" alt="Zoomed-in view of waist with bladder drawing superimposed" src="assets/media/cancerwise-html/157ee47fdb36.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/3-reasons-why-an-accurate-bladder-cancer-diagnosis-matters.h00-159857712.html" id="cancerwise_blog_tabs_3_reasons_why_a">
+3 reasons why an accurate bladder cancer diagnosis matters
+</a>
+</h3>
+<p class="author-date">August 17, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small diag-treatment">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/benign-vs--malignant-tumors--their-differences--explained.h00-159857712.html" id="cancerwise_blog_tabs_imgbenign_vs_ma">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/8aec3b3fb40f.jpg 2x, assets/media/cancerwise-html/4809c1b451a3.jpg 1x" alt="An illustration comparing benign and malignant tumors. The benign tumor on the left appears as a small, localized purple mass, while the malignant tumor on the right is larger, irregularly shaped and supported by newly formed blood vessels." media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/4809c1b451a3.jpg" alt="An illustration comparing benign and malignant tumors. The benign tumor on the left appears as a small, localized purple mass, while the malignant tumor on the right is larger, irregularly shaped and supported by newly formed blood vessels." media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/e85885d63986.jpg 2x, assets/media/cancerwise-html/1b4d2e48393a.jpg 1x" alt="An illustration comparing benign and malignant tumors. The benign tumor on the left appears as a small, localized purple mass, while the malignant tumor on the right is larger, irregularly shaped and supported by newly formed blood vessels." src="assets/media/cancerwise-html/32f924095323.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/benign-vs--malignant-tumors--their-differences--explained.h00-159857712.html" id="cancerwise_blog_tabs_benign_vs_malig">
+Benign vs. malignant tumors: Their differences, explained
+</a>
+</h3>
+<p class="author-date">August 10, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small diag-treatment">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/shifting-opponents-from-fighting-cancer-to-fighting-sepsis.h00-159857712.html" id="cancerwise_blog_tabs_imgdoes_having_">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/82f9c64e0d68.jpg 2x, assets/media/cancerwise-html/f228714ca2f9.jpg 1x" alt="Graphic: doctor holding magnifying glass showing different bacteria " media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/f228714ca2f9.jpg" alt="Graphic: doctor holding magnifying glass showing different bacteria " media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/6fef4a872f71.jpg 2x, assets/media/cancerwise-html/d7b7508fcfc4.jpg 1x" alt="Graphic: doctor holding magnifying glass showing different bacteria " src="assets/media/cancerwise-html/a41c54d39dfe.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/shifting-opponents-from-fighting-cancer-to-fighting-sepsis.h00-159857712.html" id="cancerwise_blog_tabs_does_having_can">
+Does having cancer put you at higher risk of developing sepsis?
+</a>
+</h3>
+<p class="author-date">August 05, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small diag-treatment">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/what-is-a-cytokine-storm.h00-159857712.html" id="cancerwise_blog_tabs_imgwhat_is_a_cy">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/abbb7b8a7752.jpg 2x, assets/media/cancerwise-html/b80791d96ac0.jpg 1x" alt="Anonymous cartoon woman shows symptoms of a cytokine storm" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/b80791d96ac0.jpg" alt="Anonymous cartoon woman shows symptoms of a cytokine storm" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/c97b57af2c18.jpg 2x, assets/media/cancerwise-html/bece0e29c0f4.jpg 1x" alt="Anonymous cartoon woman shows symptoms of a cytokine storm" src="assets/media/cancerwise-html/b560c8e9931e.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/what-is-a-cytokine-storm.h00-159857712.html" id="cancerwise_blog_tabs_what_is_a_cytok">
+What is a cytokine storm?
+</a>
+</h3>
+<p class="author-date">August 04, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small diag-treatment">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/3-benefits-of-personalized-ovarian-cancer-treatment.h00-159856923.html" id="cancerwise_blog_tabs_img3_benefits_o">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/f1d0a9f77bd9.jpg 2x, assets/media/cancerwise-html/e4fb8108999e.jpg 1x" alt="CGI of floating internal female reproductive system with doctor in background" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/e4fb8108999e.jpg" alt="CGI of floating internal female reproductive system with doctor in background" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/826a4997d2e9.jpg 2x, assets/media/cancerwise-html/181952f022fc.jpg 1x" alt="CGI of floating internal female reproductive system with doctor in background" src="assets/media/cancerwise-html/6a35e5164eb7.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/3-benefits-of-personalized-ovarian-cancer-treatment.h00-159856923.html" id="cancerwise_blog_tabs_3_benefits_of_p">
+3 benefits of personalized ovarian cancer treatment
+</a>
+</h3>
+<p class="author-date">July 30, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small diag-treatment">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/does-red-light-therapy-work-for-peripheral-neuropathy.h00-159856923.html" id="cancerwise_blog_tabs_imgdoes_red_lig">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/e53ef5468cdb.jpg 2x, assets/media/cancerwise-html/136d47330fdb.jpg 1x" alt="Pain management specialist Billy Huh, M.D., Ph.D., demonstrates using red light therapy for peripheral neuropathy on a person&#39;s hands." media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/136d47330fdb.jpg" alt="Pain management specialist Billy Huh, M.D., Ph.D., demonstrates using red light therapy for peripheral neuropathy on a person&#39;s hands." media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/281cbf4b1156.jpg 2x, assets/media/cancerwise-html/cebdc6901d4e.jpg 1x" alt="Pain management specialist Billy Huh, M.D., Ph.D., demonstrates using red light therapy for peripheral neuropathy on a person&#39;s hands." src="assets/media/cancerwise-html/6eb2367df950.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/does-red-light-therapy-work-for-peripheral-neuropathy.h00-159856923.html" id="cancerwise_blog_tabs_does_red_light_">
+Does red light therapy work for peripheral neuropathy?
+</a>
+</h3>
+<p class="author-date">July 20, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small diag-treatment">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/what-is-the-blood-brain-barrier--and-how-can-we-get-past-it-to-treat-cancer.h00-159856923.html" id="cancerwise_blog_tabs_imgwhat_is_the_">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/5900782cafed.jpg 2x, assets/media/cancerwise-html/7ea748e15551.jpg 1x" alt="Illustration of a doctor standing on a ladder holding up a magnifying glass to an enlarged brain while another doctor looks on" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/7ea748e15551.jpg" alt="Illustration of a doctor standing on a ladder holding up a magnifying glass to an enlarged brain while another doctor looks on" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/eb7790a44002.jpg 2x, assets/media/cancerwise-html/33563a2fe748.jpg 1x" alt="Illustration of a doctor standing on a ladder holding up a magnifying glass to an enlarged brain while another doctor looks on" src="assets/media/cancerwise-html/ccffb33015be.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/what-is-the-blood-brain-barrier--and-how-can-we-get-past-it-to-treat-cancer.h00-159856923.html" id="cancerwise_blog_tabs_what_is_the_blo">
+What is the blood-brain barrier, and how can we get past it to treat cancer?
+</a>
+</h3>
+<p class="author-date">July 16, 2026</p>
+</div>
+</div>
+</div>
+</div>
+<div class='cta diag-treatment'>
+<a href='https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/publications/cancerwise/diagnosis-treatment'>Read more diagnosis and treatment articles</a>
+</div>
+<div class='cta diag-treatment subscribe'>
+<a href='https://www.mdanderson.org/publications/subscribe-to-cancerwise.html'>Subscribe to Cancerwise newsletter</a>
+</div>
+</div>
+<div class='collection-group four-columns patientCare resources ui-tabs-panel' id="tabs-1">
+<div class="cwheadline"><p>Read inspiring stories from patients and caregivers – and get their advice to help you or a loved one through cancer.</p></div>
+<div class="collection-item-tab">
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small patientCare">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/20-year-breast-cancer-survivor--it-s-never-too-late-to-volunteer-at-ut-md-anderson.h00-159857712.html" id="cancerwise_blog_tabs_img20_year_brea">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/5beff58ded54.jpg 2x, assets/media/cancerwise-html/fcee7fdeb951.jpg 1x" alt="Breast cancer survivor and volunteer Naomi Arbel-Brodd with her son, Ari" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/fcee7fdeb951.jpg" alt="Breast cancer survivor and volunteer Naomi Arbel-Brodd with her son, Ari" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/b816b82a9c85.jpg 2x, assets/media/cancerwise-html/8884c7d00c5a.jpg 1x" alt="Breast cancer survivor and volunteer Naomi Arbel-Brodd with her son, Ari" src="assets/media/cancerwise-html/07c845d3f55e.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/20-year-breast-cancer-survivor--it-s-never-too-late-to-volunteer-at-ut-md-anderson.h00-159857712.html" id="cancerwise_blog_tabs_20_year_breast_">
+20-year breast cancer survivor: It’s never too late to volunteer at UT MD Anderson
+</a>
+</h3>
+<p class="author-date">August 14, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small patientCare">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/first-patient-on-phase-1-clinical-trial-thankful-for-ut-md-anderson.h00-159857712.html" id="cancerwise_blog_tabs_imgfirst_patien">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/3beef0c9a2ed.jpg 2x, assets/media/cancerwise-html/aaa5328eaffe.jpg 1x" alt="Colorectal cancer survivor Cindy Mette" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/aaa5328eaffe.jpg" alt="Colorectal cancer survivor Cindy Mette" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/897ebf34c8ad.jpg 2x, assets/media/cancerwise-html/b9df936f7050.jpg 1x" alt="Colorectal cancer survivor Cindy Mette" src="assets/media/cancerwise-html/40187e4cad60.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/first-patient-on-phase-1-clinical-trial-thankful-for-ut-md-anderson.h00-159857712.html" id="cancerwise_blog_tabs_first_patient_o">
+First patient on clinical trial thankful for UT MD Anderson
+</a>
+</h3>
+<p class="author-date">August 12, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small patientCare">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/from-cancer-care-professional-to-patient--two-time-survivor-choo.h00-159857712.html" id="cancerwise_blog_tabs_imgfrom_cancer_">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/1adbf3149b7c.jpg 2x, assets/media/cancerwise-html/3a43f18dfd3c.jpg 1x" alt="Two men stand together in a classroom holding a journal report" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/3a43f18dfd3c.jpg" alt="Two men stand together in a classroom holding a journal report" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/c2015f1bd4c8.jpg 2x, assets/media/cancerwise-html/cda478b5e294.jpg 1x" alt="Two men stand together in a classroom holding a journal report" src="assets/media/cancerwise-html/aa1e9c6e50fe.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/from-cancer-care-professional-to-patient--two-time-survivor-choo.h00-159857712.html" id="cancerwise_blog_tabs_from_cancer_car">
+From cancer care professional to patient: Two-time survivor chooses proton therapy at UT MD Anderson
+</a>
+</h3>
+<p class="author-date">August 03, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small patientCare">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/clinical-psychologist--a-hodgkin-lymphoma-cancer-diagnosis-as-a-young-adult-changed-my-life.h00-159856923.html" id="cancerwise_blog_tabs_imgclinical_psy">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/f2d6e7647ef5.jpg 2x, assets/media/cancerwise-html/f3d8d99cb524.jpg 1x" alt="Hodgkin lymphoma survivor Catherine Powers, Ph.D." media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/f3d8d99cb524.jpg" alt="Hodgkin lymphoma survivor Catherine Powers, Ph.D." media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/a339d702b2dc.jpg 2x, assets/media/cancerwise-html/b7b85f3d6400.jpg 1x" alt="Hodgkin lymphoma survivor Catherine Powers, Ph.D." src="assets/media/cancerwise-html/b8f5db259bc5.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/clinical-psychologist--a-hodgkin-lymphoma-cancer-diagnosis-as-a-young-adult-changed-my-life.h00-159856923.html" id="cancerwise_blog_tabs_clinical_psycho">
+Clinical psychologist: A Hodgkin lymphoma diagnosis as a young adult changed my life
+</a>
+</h3>
+<p class="author-date">July 29, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small patientCare">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/doctor--stomach-cancer-survivor--3-things-that-impressed-me-about-ut-md-anderson.h00-159856923.html" id="cancerwise_blog_tabs_imgdoctor_stoma">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/b35c6fa673e7.jpg 2x, assets/media/cancerwise-html/b35c5ee81996.jpg 1x" alt="A man wearing a black sweatshirt stands against a wall" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/b35c5ee81996.jpg" alt="A man wearing a black sweatshirt stands against a wall" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/ac819ebfbb6c.jpg 2x, assets/media/cancerwise-html/2bd33d44a4f8.jpg 1x" alt="A man wearing a black sweatshirt stands against a wall" src="assets/media/cancerwise-html/b5743bfaf9b1.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/doctor--stomach-cancer-survivor--3-things-that-impressed-me-about-ut-md-anderson.h00-159856923.html" id="cancerwise_blog_tabs_doctor_stomach_">
+Doctor, stomach cancer survivor: 3 things that impressed me about UT MD Anderson
+</a>
+</h3>
+<p class="author-date">July 23, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small patientCare">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/4-time-cancer-survivor-finds-security-and-comfort-at-ut-md-anderson.h00-159856923.html" id="cancerwise_blog_tabs_img4_time_cance">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/ba1f5aff6f8c.jpg 2x, assets/media/cancerwise-html/47985466052a.jpg 1x" alt="Woman with binoculars around her neck stands next to an RV. " media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/47985466052a.jpg" alt="Woman with binoculars around her neck stands next to an RV. " media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/e603ac2e8b80.jpg 2x, assets/media/cancerwise-html/7ad6772a72b9.jpg 1x" alt="Woman with binoculars around her neck stands next to an RV. " src="assets/media/cancerwise-html/6a45a84f6fbc.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/4-time-cancer-survivor-finds-security-and-comfort-at-ut-md-anderson.h00-159856923.html" id="cancerwise_blog_tabs_4_time_cancer_s">
+4-time cancer survivor finds security and comfort at UT MD Anderson
+</a>
+</h3>
+<p class="author-date">July 15, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small patientCare">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/2-time-cancer-survivor-thankful-for-ut-md-anderson-s-guidance-an.h00-159856923.html" id="cancerwise_blog_tabs_img2_time_cance">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/ff1e09684da9.jpg 2x, assets/media/cancerwise-html/47884a39d7e7.jpg 1x" alt="A man and woman stand in front of a door decorated for the holidays" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/47884a39d7e7.jpg" alt="A man and woman stand in front of a door decorated for the holidays" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/041bb5b5f2d2.jpg 2x, assets/media/cancerwise-html/79df0eabfb18.jpg 1x" alt="A man and woman stand in front of a door decorated for the holidays" src="assets/media/cancerwise-html/6cb8e4dd4950.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/2-time-cancer-survivor-thankful-for-ut-md-anderson-s-guidance-an.h00-159856923.html" id="cancerwise_blog_tabs_2_time_cancer_s">
+2-time cancer survivor thankful for UT MD Anderson’s guidance and expertise
+</a>
+</h3>
+<p class="author-date">July 06, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small patientCare">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/doctor-and-stage-4-stomach-cancer-survivor-thankful-for-clinical.h00-159856923.html" id="cancerwise_blog_tabs_imgdoctor_and_s">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/3c478e2aaed9.jpg 2x, assets/media/cancerwise-html/d03cd65b0191.jpg 1x" alt="A smiling man and woman stand next to each other" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/d03cd65b0191.jpg" alt="A smiling man and woman stand next to each other" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/49772e142dd4.jpg 2x, assets/media/cancerwise-html/0767f5a9cf4f.jpg 1x" alt="A smiling man and woman stand next to each other" src="assets/media/cancerwise-html/48615d9629df.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/doctor-and-stage-4-stomach-cancer-survivor-thankful-for-clinical.h00-159856923.html" id="cancerwise_blog_tabs_doctor_and_stag">
+Doctor and stage 4 stomach cancer survivor thankful for clinical trial at UT MD Anderson
+</a>
+</h3>
+<p class="author-date">July 01, 2026</p>
+</div>
+</div>
+</div>
+</div>
+<div class='cta patientCare'>
+<a href='https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/publications/cancerwise/patient-caregiver-stories'>Read more patient and caregiver stories</a>
+</div>
+<div class='cta patientCare subscribe'>
+<a href='https://www.mdanderson.org/publications/subscribe-to-cancerwise.html'>Subscribe to Cancerwise newsletter</a>
+</div>
+</div>
+<div class='collection-group four-columns healthy-living resources ui-tabs-panel' id="tabs-2">
+<div class="cwheadline"><p>Get UT MD Anderson experts’ advice to help you stay healthy and reduce your risk of diseases like cancer.</p>
+</div>
+<div class="collection-item-tab">
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small healthy-living">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/what-is-white-coat-syndrome.h00-159857712.html" id="cancerwise_blog_tabs_imgwhat_is_whit">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/7b7d65fcd79e.jpg 2x, assets/media/cancerwise-html/62a23bdd1e59.jpg 1x" alt="A medical professional wearing gloves and a white jacket checks a woman&#39;s blood pressure" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/62a23bdd1e59.jpg" alt="A medical professional wearing gloves and a white jacket checks a woman&#39;s blood pressure" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/c28d4eb0520b.jpg 2x, assets/media/cancerwise-html/5b3fe9498176.jpg 1x" alt="A medical professional wearing gloves and a white jacket checks a woman&#39;s blood pressure" src="assets/media/cancerwise-html/3c3ba56fd728.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/what-is-white-coat-syndrome.h00-159857712.html" id="cancerwise_blog_tabs_what_is_white_c">
+What is white coat syndrome?
+</a>
+</h3>
+<p class="author-date">August 13, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small healthy-living">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/alternatives-to-meal-prepping--a-simpler-approach-to-healthy-eating.h00-159857712.html" id="cancerwise_blog_tabs_imgalternatives">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/35494936f165.jpg 2x, assets/media/cancerwise-html/8fd9e5082f38.jpg 1x" alt="Photo of hands chopping vegetables and putting them into containers." media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/8fd9e5082f38.jpg" alt="Photo of hands chopping vegetables and putting them into containers." media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/22f3340427f9.jpg 2x, assets/media/cancerwise-html/fbd918aff47a.jpg 1x" alt="Photo of hands chopping vegetables and putting them into containers." src="assets/media/cancerwise-html/38ffa95ac26e.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/alternatives-to-meal-prepping--a-simpler-approach-to-healthy-eating.h00-159857712.html" id="cancerwise_blog_tabs_alternatives_to">
+Alternatives to meal prepping: A simpler approach to healthy eating
+</a>
+</h3>
+<p class="author-date">August 11, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small healthy-living">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/how-to-get-men-to-go-to-the-doctor--3-tips-from-our-doctors.h00-159857712.html" id="cancerwise_blog_tabs_imghow_to_get_m">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/e1db7571bbb8.jpg 2x, assets/media/cancerwise-html/e1bfae8fc5e8.jpg 1x" alt="Conceptual drawing of a man with medical paraphernalia" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/e1bfae8fc5e8.jpg" alt="Conceptual drawing of a man with medical paraphernalia" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/371e526ff338.jpg 2x, assets/media/cancerwise-html/64585b06b624.jpg 1x" alt="Conceptual drawing of a man with medical paraphernalia" src="assets/media/cancerwise-html/9a64f29200ef.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/how-to-get-men-to-go-to-the-doctor--3-tips-from-our-doctors.h00-159857712.html" id="cancerwise_blog_tabs_how_to_get_men_">
+How to get men to go to the doctor: 3 tips from our doctors
+</a>
+</h3>
+<p class="author-date">August 07, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small healthy-living">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/how-to-make-colonoscopy-prep-better.h00-159857712.html" id="cancerwise_blog_tabs_imghow_to_make_">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/3d3d7195d669.jpg 2x, assets/media/cancerwise-html/e133bc6ca2ec.jpg 1x" alt="Person in plaid shirt pours a gallon of yellow liquid into a clear glass" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/e133bc6ca2ec.jpg" alt="Person in plaid shirt pours a gallon of yellow liquid into a clear glass" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/5d67ef49a903.jpg 2x, assets/media/cancerwise-html/876d847d0720.jpg 1x" alt="Person in plaid shirt pours a gallon of yellow liquid into a clear glass" src="assets/media/cancerwise-html/e91ad78b5b84.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/how-to-make-colonoscopy-prep-better.h00-159857712.html" id="cancerwise_blog_tabs_how_to_make_you">
+How to make your colonoscopy prep better
+</a>
+</h3>
+<p class="author-date">August 06, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small healthy-living">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/bosu-ball-basics--7-things-to-know-about-this--two-faced--exercise-equipment.h00-159856134.html" id="cancerwise_blog_tabs_imgbosu_ball_ba">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/b5d26996ef2f.jpg 2x, assets/media/cancerwise-html/876610cd6d64.jpg 1x" alt="Three people work out with BOSU balls at a gym class." media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/876610cd6d64.jpg" alt="Three people work out with BOSU balls at a gym class." media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/aa636d692e29.jpg 2x, assets/media/cancerwise-html/509f20b60b9c.jpg 1x" alt="Three people work out with BOSU balls at a gym class." src="assets/media/cancerwise-html/13927610562b.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/bosu-ball-basics--7-things-to-know-about-this--two-faced--exercise-equipment.h00-159856134.html" id="cancerwise_blog_tabs_bosu_ball_basic">
+BOSU ball basics: 7 things to know about this ‘two-faced’ exercise equipment
+</a>
+</h3>
+<p class="author-date">July 31, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small healthy-living">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/vitamin-k-and-cancer--is-there-a-connection.h00-159856923.html" id="cancerwise_blog_tabs_imgvitamin_k_an">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/f049b9361860.jpg 2x, assets/media/cancerwise-html/47dcd3b14a78.jpg 1x" alt="Leafy greens, a good source of vitamin K" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/47dcd3b14a78.jpg" alt="Leafy greens, a good source of vitamin K" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/e6b34353f8b9.jpg 2x, assets/media/cancerwise-html/c15ef5c31bec.jpg 1x" alt="Leafy greens, a good source of vitamin K" src="assets/media/cancerwise-html/15fee333add7.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/vitamin-k-and-cancer--is-there-a-connection.h00-159856923.html" id="cancerwise_blog_tabs_vitamin_k_and_c">
+Vitamin K and cancer: Is there a connection?
+</a>
+</h3>
+<p class="author-date">July 28, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small healthy-living">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/screening-vs--diagnostic-mammogram--what-is-the-difference.h00-159856923.html" id="cancerwise_blog_tabs_imgscreening_vs">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/2cd514a2d10c.jpg 2x, assets/media/cancerwise-html/c86bc96271e1.jpg 1x" alt="Illustration of a woman at a mammography machine with a radiologist behind glass" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/c86bc96271e1.jpg" alt="Illustration of a woman at a mammography machine with a radiologist behind glass" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/0f766a09584d.jpg 2x, assets/media/cancerwise-html/b3bf36f26e69.jpg 1x" alt="Illustration of a woman at a mammography machine with a radiologist behind glass" src="assets/media/cancerwise-html/a683253a9c20.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/screening-vs--diagnostic-mammogram--what-is-the-difference.h00-159856923.html" id="cancerwise_blog_tabs_screening_vs_di">
+Screening vs. diagnostic mammogram: What’s the difference?
+</a>
+</h3>
+<p class="author-date">July 27, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small healthy-living">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/what-is-the-dash-diet-to-treat-high-blood-pressure.h00-159856923.html" id="cancerwise_blog_tabs_imgwhat_is_the_">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/60e673b5905f.jpg 2x, assets/media/cancerwise-html/2cdd866a4219.jpg 1x" alt="woman eating a healthy DASH diet meal of lean proteins and leafy greens" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/2cdd866a4219.jpg" alt="woman eating a healthy DASH diet meal of lean proteins and leafy greens" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/df2206d310b3.jpg 2x, assets/media/cancerwise-html/7ad855a5006e.jpg 1x" alt="woman eating a healthy DASH diet meal of lean proteins and leafy greens" src="assets/media/cancerwise-html/76911cdb9282.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/what-is-the-dash-diet-to-treat-high-blood-pressure.h00-159856923.html" id="cancerwise_blog_tabs_what_is_the_das">
+What is the DASH diet to treat high blood pressure?
+</a>
+</h3>
+<p class="author-date">July 22, 2026</p>
+</div>
+</div>
+</div>
+</div>
+<div class='cta healthy-living'>
+<a href='https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/publications/cancerwise/healthy-living'>Get more healthy living advice</a>
+</div>
+<div class='cta healthy-living subscribe'>
+<a href='https://www.mdanderson.org/publications/subscribe-to-focused-on-health.html'>Subscribe to our Focused on Health newsletter</a>
+</div>
+</div>
+<div class='collection-group four-columns research resources ui-tabs-panel' id="tabs-3">
+<div class="cwheadline"><p>Learn how UT MD Anderson researchers are advancing our understanding and treatment of cancer – and get to know the scientists behind this research.</p>
+</div>
+<div class="collection-item-tab">
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small research">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/cell-therapy-clinical-trial-could-bring-hope-for-patients-with-t-cell-lymphoma-and-beyond.h00-159856923.html" id="cancerwise_blog_tabs_imgcell_therapy">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/810eb8ae1570.jpg 2x, assets/media/cancerwise-html/4f4f84871a0e.jpg 1x" alt="Sattva Neelapu, M.D." media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/4f4f84871a0e.jpg" alt="Sattva Neelapu, M.D." media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/eec795b7ab9e.jpg 2x, assets/media/cancerwise-html/25a7028b7174.jpg 1x" alt="Sattva Neelapu, M.D." src="assets/media/cancerwise-html/4f4285ac7f6f.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/cell-therapy-clinical-trial-could-bring-hope-for-patients-with-t-cell-lymphoma-and-beyond.h00-159856923.html" id="cancerwise_blog_tabs_cell_therapy_cl">
+Cell therapy clinical trial could bring hope for patients with T cell lymphoma and beyond
+</a>
+</h3>
+<p class="author-date">July 21, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small research">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/what-is-the-blood-brain-barrier--and-how-can-we-get-past-it-to-treat-cancer.h00-159856923.html" id="cancerwise_blog_tabs_imgwhat_is_the_">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/5900782cafed.jpg 2x, assets/media/cancerwise-html/7ea748e15551.jpg 1x" alt="Illustration of a doctor standing on a ladder holding up a magnifying glass to an enlarged brain while another doctor looks on" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/7ea748e15551.jpg" alt="Illustration of a doctor standing on a ladder holding up a magnifying glass to an enlarged brain while another doctor looks on" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/eb7790a44002.jpg 2x, assets/media/cancerwise-html/33563a2fe748.jpg 1x" alt="Illustration of a doctor standing on a ladder holding up a magnifying glass to an enlarged brain while another doctor looks on" src="assets/media/cancerwise-html/ccffb33015be.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/what-is-the-blood-brain-barrier--and-how-can-we-get-past-it-to-treat-cancer.h00-159856923.html" id="cancerwise_blog_tabs_what_is_the_blo">
+What is the blood-brain barrier, and how can we get past it to treat cancer?
+</a>
+</h3>
+<p class="author-date">July 16, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small research">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/mentorship-makes-the-difference-for-physician-microbiome-researcher.h00-159856134.html" id="cancerwise_blog_tabs_imgmentorship_m">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/84811c3f41f2.jpg 2x, assets/media/cancerwise-html/3d6c81a69e81.jpg 1x" alt="Erez Baruch, M.D., Ph.D." media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/3d6c81a69e81.jpg" alt="Erez Baruch, M.D., Ph.D." media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/7d71a0dd7e88.jpg 2x, assets/media/cancerwise-html/af579a7e8365.jpg 1x" alt="Erez Baruch, M.D., Ph.D." src="assets/media/cancerwise-html/414a57bd86b8.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/mentorship-makes-the-difference-for-physician-microbiome-researcher.h00-159856134.html" id="cancerwise_blog_tabs_mentorship_make">
+Mentorship makes the difference for physician-microbiome researcher
+</a>
+</h3>
+<p class="author-date">June 18, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small research">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/top-5-asco-studies-advancing-personalized-medicine.h00-159855345.html" id="cancerwise_blog_tabs_imgtop_5_asco_s">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/572026ae2c7f.jpg 2x, assets/media/cancerwise-html/82d1632442f8.jpg 1x" alt="Red cancer cell next to blue strand of DNA" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/82d1632442f8.jpg" alt="Red cancer cell next to blue strand of DNA" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/21a70139ac7e.jpg 2x, assets/media/cancerwise-html/2061e74cb905.jpg 1x" alt="Red cancer cell next to blue strand of DNA" src="assets/media/cancerwise-html/93cc171fa6f6.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/top-5-asco-studies-advancing-personalized-medicine.h00-159855345.html" id="cancerwise_blog_tabs_top_5_asco_stud">
+Top 5 ASCO studies advancing personalized medicine
+</a>
+</h3>
+<p class="author-date">May 28, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small research">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/head-and-neck-surgeon-scientist---we-can-make-a-real-difference.h00-159855345.html" id="cancerwise_blog_tabs_imghead_and_nec">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/7a43911a3149.jpg 2x, assets/media/cancerwise-html/7be4bfe6cb86.jpg 1x" alt="A male and female in a lab wearing physician&#39;s coats" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/7be4bfe6cb86.jpg" alt="A male and female in a lab wearing physician&#39;s coats" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/5f5f99d96ca7.jpg 2x, assets/media/cancerwise-html/56055dc64c92.jpg 1x" alt="A male and female in a lab wearing physician&#39;s coats" src="assets/media/cancerwise-html/99a66a67b68a.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/head-and-neck-surgeon-scientist---we-can-make-a-real-difference.h00-159855345.html" id="cancerwise_blog_tabs_head_and_neck_s">
+Head and neck surgeon-scientist: ‘We can make a real difference’
+</a>
+</h3>
+<p class="author-date">May 11, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small research">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/top-3-ut-md-anderson-abstracts-at-aacr-2026.h00-159854556.html" id="cancerwise_blog_tabs_imgtop_3_ut_md_">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/c0576a9db249.jpg 2x, assets/media/cancerwise-html/6626aea5776f.jpg 1x" alt="Illustration of a cancer cell" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/6626aea5776f.jpg" alt="Illustration of a cancer cell" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/4f356b58755b.jpg 2x, assets/media/cancerwise-html/6f20e9f5e176.jpg 1x" alt="Illustration of a cancer cell" src="assets/media/cancerwise-html/7a10f03b17b9.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/top-3-ut-md-anderson-abstracts-at-aacr-2026.h00-159854556.html" id="cancerwise_blog_tabs_top_3_ut_md_and">
+Top 3 UT MD Anderson abstracts at AACR 2026
+</a>
+</h3>
+<p class="author-date">April 15, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small research">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/how-digital-twins-are-making-cancer-surgery-safer.h00-159853767.html" id="cancerwise_blog_tabs_imghow_digital_">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/c838a05c43b3.jpg 2x, assets/media/cancerwise-html/1e99295a5ed9.jpg 1x" alt="Siewerdsen in the lab with a model of the spine" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/1e99295a5ed9.jpg" alt="Siewerdsen in the lab with a model of the spine" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/15af5780e9d6.jpg 2x, assets/media/cancerwise-html/4ee43d173bc0.jpg 1x" alt="Siewerdsen in the lab with a model of the spine" src="assets/media/cancerwise-html/9f2dcd716931.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/how-digital-twins-are-making-cancer-surgery-safer.h00-159853767.html" id="cancerwise_blog_tabs_how_digital_twi">
+How digital twins are making cancer surgery safer
+</a>
+</h3>
+<p class="author-date">March 13, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small research">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/new-research-advances-in-our-understanding-of-cancer-metabolism.h00-159852189.html" id="cancerwise_blog_tabs_imgnew_advances">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/15046529d950.jpg 2x, assets/media/cancerwise-html/d7db5294e6d4.jpg 1x" alt="Microscopic view (enlarged at left) of metastatic bone tumor (bone metastasis) from a breast cancer patient showing strong immunohistochemical staining of the ACBP protein (brown). Image courtesy of Li Ma, Ph.D." media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/d7db5294e6d4.jpg" alt="Microscopic view (enlarged at left) of metastatic bone tumor (bone metastasis) from a breast cancer patient showing strong immunohistochemical staining of the ACBP protein (brown). Image courtesy of Li Ma, Ph.D." media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/a3d25c823486.jpg 2x, assets/media/cancerwise-html/7e337f8fd24d.jpg 1x" alt="Microscopic view (enlarged at left) of metastatic bone tumor (bone metastasis) from a breast cancer patient showing strong immunohistochemical staining of the ACBP protein (brown). Image courtesy of Li Ma, Ph.D." src="assets/media/cancerwise-html/062d999276c7.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/new-research-advances-in-our-understanding-of-cancer-metabolism.h00-159852189.html" id="cancerwise_blog_tabs_new_advances_in">
+New advances in our understanding of cancer metabolism
+</a>
+</h3>
+<p class="author-date">January 26, 2026</p>
+</div>
+</div>
+</div>
+</div>
+<div class='cta research'>
+<a href='https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/publications/cancerwise/research'>Read more research articles</a>
+</div>
+<div class='cta research subscribe'>
+<a href='https://www.mdanderson.org/publications/subscribe-to-frontline.html'>Subscribe to our Cancer Frontline newsletter</a>
+</div>
+</div>
+<div class='collection-group four-columns expert-insights resources ui-tabs-panel' id="tabs-4">
+<div class="cwheadline"><p>Read insights on the latest news and trending topics from UT MD Anderson experts, and see what drives us to end cancer.</p>
+</div>
+<div class="collection-item-tab">
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small expert-insights">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/glp-1s-and-anesthesia--what-to-know-before-surgery.h00-159857712.html" id="cancerwise_blog_tabs_imgglp_1s_and_a">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/997d01f8e9b6.jpg 2x, assets/media/cancerwise-html/074a3becd65d.jpg 1x" alt="GLP-1 injector floating through a spiral tape measure" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/074a3becd65d.jpg" alt="GLP-1 injector floating through a spiral tape measure" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/36df58ac73a4.jpg 2x, assets/media/cancerwise-html/57d6707dd9df.jpg 1x" alt="GLP-1 injector floating through a spiral tape measure" src="assets/media/cancerwise-html/b97df3e737d1.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/glp-1s-and-anesthesia--what-to-know-before-surgery.h00-159857712.html" id="cancerwise_blog_tabs_glp_1s_and_anes">
+GLP-1s and anesthesia: What to know before surgery
+</a>
+</h3>
+<p class="author-date">August 19, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small expert-insights">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/how-to-get-men-to-go-to-the-doctor--3-tips-from-our-doctors.h00-159857712.html" id="cancerwise_blog_tabs_imghow_to_get_m">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/e1db7571bbb8.jpg 2x, assets/media/cancerwise-html/e1bfae8fc5e8.jpg 1x" alt="Conceptual drawing of a man with medical paraphernalia" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/e1bfae8fc5e8.jpg" alt="Conceptual drawing of a man with medical paraphernalia" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/371e526ff338.jpg 2x, assets/media/cancerwise-html/64585b06b624.jpg 1x" alt="Conceptual drawing of a man with medical paraphernalia" src="assets/media/cancerwise-html/9a64f29200ef.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/how-to-get-men-to-go-to-the-doctor--3-tips-from-our-doctors.h00-159857712.html" id="cancerwise_blog_tabs_how_to_get_men_">
+How to get men to go to the doctor: 3 tips from our doctors
+</a>
+</h3>
+<p class="author-date">August 07, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small expert-insights">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/sexual-dysfunction-after-cancer-treatment--4-things-to-know.h00-159856923.html" id="cancerwise_blog_tabs_imgsexual_dysfu">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/bfa6b5c251f8.jpg 2x, assets/media/cancerwise-html/53f5f23ca28f.jpg 1x" alt="Visibly frustrated unidentified man sits on edge of bed with blurry woman in background" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/53f5f23ca28f.jpg" alt="Visibly frustrated unidentified man sits on edge of bed with blurry woman in background" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/b4eef8763e7d.jpg 2x, assets/media/cancerwise-html/70f6cac68c54.jpg 1x" alt="Visibly frustrated unidentified man sits on edge of bed with blurry woman in background" src="assets/media/cancerwise-html/60ffce3cf62a.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/sexual-dysfunction-after-cancer-treatment--4-things-to-know.h00-159856923.html" id="cancerwise_blog_tabs_sexual_dysfunct">
+Sexual dysfunction after cancer treatment: 4 things to know
+</a>
+</h3>
+<p class="author-date">July 24, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small expert-insights">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/12-things-to-know-about-donating-platelets.h00-159856134.html" id="cancerwise_blog_tabs_img12_things_to">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/2ab1643734d7.jpg 2x, assets/media/cancerwise-html/3820157c9157.jpg 1x" alt="Illustration of red blood cells flowing through a blood vessel" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/3820157c9157.jpg" alt="Illustration of red blood cells flowing through a blood vessel" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/b136663ec076.jpg 2x, assets/media/cancerwise-html/8137e726cf96.jpg 1x" alt="Illustration of red blood cells flowing through a blood vessel" src="assets/media/cancerwise-html/b115942a4a3a.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/12-things-to-know-about-donating-platelets.h00-159856134.html" id="cancerwise_blog_tabs_12_things_to_kn">
+12 things to know about donating platelets
+</a>
+</h3>
+<p class="author-date">June 30, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small expert-insights">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/feeling-alone-after-a-cancer-diagnosis--here-is-how-to-break-through-that-isolation.h00-159856134.html" id="cancerwise_blog_tabs_imgfeeling_alon">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/1b7b35aa5e3f.jpg 2x, assets/media/cancerwise-html/5861c4c5ab95.jpg 1x" alt="Sad blonde cartoon woman in the middle of a crowd of indifferent blue men" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/5861c4c5ab95.jpg" alt="Sad blonde cartoon woman in the middle of a crowd of indifferent blue men" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/33cef030d6d5.jpg 2x, assets/media/cancerwise-html/3058a6919954.jpg 1x" alt="Sad blonde cartoon woman in the middle of a crowd of indifferent blue men" src="assets/media/cancerwise-html/86a56648d50d.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/feeling-alone-after-a-cancer-diagnosis--here-is-how-to-break-through-that-isolation.h00-159856134.html" id="cancerwise_blog_tabs_feeling_alone_a">
+Feeling alone after a cancer diagnosis? Here’s how to break through that isolation
+</a>
+</h3>
+<p class="author-date">June 19, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small expert-insights">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/finding-the-right-therapist-for-you--3-tips-from-our-experts.h00-159856134.html" id="cancerwise_blog_tabs_imgfinding_the_">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/f12a162dee4c.jpg 2x, assets/media/cancerwise-html/61466cc1b42e.jpg 1x" alt="Man in an orange chair speaks with female therapist in a green chair" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/61466cc1b42e.jpg" alt="Man in an orange chair speaks with female therapist in a green chair" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/0992dddc4e29.jpg 2x, assets/media/cancerwise-html/fa42fe6aa5ff.jpg 1x" alt="Man in an orange chair speaks with female therapist in a green chair" src="assets/media/cancerwise-html/bd4dd8bbb7fa.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/finding-the-right-therapist-for-you--3-tips-from-our-experts.h00-159856134.html" id="cancerwise_blog_tabs_finding_the_rig">
+Finding the right therapist for you: 3 tips from our experts
+</a>
+</h3>
+<p class="author-date">June 04, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small expert-insights">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/a-passion-for-personalized-medicine-and-lung-cancer-care.h00-159854556.html" id="cancerwise_blog_tabs_imga_passion_fo">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/e5ad6a5e8ae6.jpg 2x, assets/media/cancerwise-html/54351fd22e01.jpg 1x" alt="Doctor uses a stethoscope to perform an exam on a female patient" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/54351fd22e01.jpg" alt="Doctor uses a stethoscope to perform an exam on a female patient" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/d911485a5565.jpg 2x, assets/media/cancerwise-html/fffa8c6cd842.jpg 1x" alt="Doctor uses a stethoscope to perform an exam on a female patient" src="assets/media/cancerwise-html/646169728b18.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/a-passion-for-personalized-medicine-and-lung-cancer-care.h00-159854556.html" id="cancerwise_blog_tabs_a_passion_for_p">
+A passion for personalized medicine and lung cancer care
+</a>
+</h3>
+<p class="author-date">April 21, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small expert-insights">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/what-does-a-clinical-ethicist-do--learn-about-their-role-in-patient-care.h00-159854556.html" id="cancerwise_blog_tabs_imgwhat_does_a_">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/fbd488e5473a.jpg 2x, assets/media/cancerwise-html/ee308b44ac3c.jpg 1x" alt="Man sits at a table talking to a nurse" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/ee308b44ac3c.jpg" alt="Man sits at a table talking to a nurse" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/fee02283a517.jpg 2x, assets/media/cancerwise-html/5888cf1591a0.jpg 1x" alt="Man sits at a table talking to a nurse" src="assets/media/cancerwise-html/196366446d4b.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/what-does-a-clinical-ethicist-do--learn-about-their-role-in-patient-care.h00-159854556.html" id="cancerwise_blog_tabs_what_does_a_cli">
+What does a clinical ethicist do? Learn about their role in patient care
+</a>
+</h3>
+<p class="author-date">April 17, 2026</p>
+</div>
+</div>
+</div>
+</div>
+<div class='cta expert-insights'>
+<a href='https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/publications/cancerwise/expert-insights'>Get more expert insights</a>
+</div>
+<div class='cta expert-insights subscribe'>
+<a href='https://www.mdanderson.org/publications/subscribe-to-cancerwise.html'>Subscribe to Cancerwise newsletter</a>
+</div>
+</div>
+<div class='collection-group four-columns philanthropy resources ui-tabs-panel' id="tabs-5">
+<div class="cwheadline"><p>Find out what inspires our donors to give to UT MD Anderson, and learn how their generous support advances our mission to end cancer.</p></div>
+<div class="collection-item-tab">
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small philanthropy">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/austin-banking-leader-and-prostate-cancer-survivor-driven-to-support-ut-md-anderson.h00-159857712.html" id="cancerwise_blog_tabs_imgaustin_banki">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/68ffb76dd7f0.jpg 2x, assets/media/cancerwise-html/2e7a1822f084.jpg 1x" alt="A woman and man stand side-by-side with a sunset in the background" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/2e7a1822f084.jpg" alt="A woman and man stand side-by-side with a sunset in the background" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/e5d98878184c.jpg 2x, assets/media/cancerwise-html/13b9dab0f223.jpg 1x" alt="A woman and man stand side-by-side with a sunset in the background" src="assets/media/cancerwise-html/7e37146a1250.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/austin-banking-leader-and-prostate-cancer-survivor-driven-to-support-ut-md-anderson.h00-159857712.html" id="cancerwise_blog_tabs_austin_banking_">
+Austin banking leader and prostate cancer survivor driven to support UT MD Anderson
+</a>
+</h3>
+<p class="author-date">August 18, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small philanthropy">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/why-my-husband-and-i-support-cancer-research-at-ut-md-anderson.h00-159856923.html" id="cancerwise_blog_tabs_imgwhy_my_husba">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/c1f3bcdd7dc3.jpg 2x, assets/media/cancerwise-html/da56cc354e0a.jpg 1x" alt="Wendi &amp; Brian Kushner in July 2025" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/da56cc354e0a.jpg" alt="Wendi &amp; Brian Kushner in July 2025" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/fdc7ef98d617.jpg 2x, assets/media/cancerwise-html/4c910a30679d.jpg 1x" alt="Wendi &amp; Brian Kushner in July 2025" src="assets/media/cancerwise-html/45f36d8d4fb4.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/why-my-husband-and-i-support-cancer-research-at-ut-md-anderson.h00-159856923.html" id="cancerwise_blog_tabs_why_my_husband_">
+Why my husband and I support cancer research at UT MD Anderson
+</a>
+</h3>
+<p class="author-date">July 10, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small philanthropy">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/leukemia-caregiver-ensures-her-husband-s-legacy-lives-on.h00-159855345.html" id="cancerwise_blog_tabs_imgleukemia_car">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/7a56bbc18b14.jpg 2x, assets/media/cancerwise-html/acd807a55953.jpg 1x" alt="Woman holds a framed picture of a man" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/acd807a55953.jpg" alt="Woman holds a framed picture of a man" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/acd9e7d996b2.jpg 2x, assets/media/cancerwise-html/991fe6b3485f.jpg 1x" alt="Woman holds a framed picture of a man" src="assets/media/cancerwise-html/e3424347d04d.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/leukemia-caregiver-ensures-her-husband-s-legacy-lives-on.h00-159855345.html" id="cancerwise_blog_tabs_leukemia_caregi">
+Leukemia caregiver ensures her husband’s legacy lives on
+</a>
+</h3>
+<p class="author-date">May 15, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small philanthropy">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/49-year-leukemia-survivor--why-i-support-immunotherapy-research-at-ut-md-anderson.h00-159855345.html" id="cancerwise_blog_tabs_img49_year_leuk">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/35149c57d70a.jpg 2x, assets/media/cancerwise-html/9ac9e51efd78.jpg 1x" alt="Leukemia survivor Lori Bremner aboard the Crystal Serenity in February 2026" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/9ac9e51efd78.jpg" alt="Leukemia survivor Lori Bremner aboard the Crystal Serenity in February 2026" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/a0ebb445dba9.jpg 2x, assets/media/cancerwise-html/1c8d98362aaa.jpg 1x" alt="Leukemia survivor Lori Bremner aboard the Crystal Serenity in February 2026" src="assets/media/cancerwise-html/33afd3a30a9a.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/49-year-leukemia-survivor--why-i-support-immunotherapy-research-at-ut-md-anderson.h00-159855345.html" id="cancerwise_blog_tabs_49_year_leukemi">
+49-year leukemia survivor: Why I support immunotherapy research at UT MD Anderson
+</a>
+</h3>
+<p class="author-date">May 08, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small philanthropy">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/follicular-lymphoma-survivor--why-i-participate-in-ut-md-anderson-boot-walk-to-end-cancer.h00-159854556.html" id="cancerwise_blog_tabs_imgfollicular_l">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/83977c3fdfbf.jpg 2x, assets/media/cancerwise-html/ddbb2de3cffd.jpg 1x" alt="Margie King at UT MD Anderson&#39;s Boot Walk to End Cancer in November 2025" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/ddbb2de3cffd.jpg" alt="Margie King at UT MD Anderson&#39;s Boot Walk to End Cancer in November 2025" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/b282717d45e9.jpg 2x, assets/media/cancerwise-html/0811b7ddf3fc.jpg 1x" alt="Margie King at UT MD Anderson&#39;s Boot Walk to End Cancer in November 2025" src="assets/media/cancerwise-html/51d532674194.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/follicular-lymphoma-survivor--why-i-participate-in-ut-md-anderson-boot-walk-to-end-cancer.h00-159854556.html" id="cancerwise_blog_tabs_follicular_lymp">
+Follicular lymphoma survivor: Why I participate in UT MD Anderson’s Boot Walk to End Cancer®
+</a>
+</h3>
+<p class="author-date">April 27, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small philanthropy">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/two-time-tongue-cancer-survivor--why-i-support-research-at-ut-mderson.h00-159854556.html" id="cancerwise_blog_tabs_imgtwo_time_ton">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/af0b88f0c5ee.jpg 2x, assets/media/cancerwise-html/19e27cd3c08a.jpg 1x" alt="Oral cancer survivor Jessica Lutterman" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/19e27cd3c08a.jpg" alt="Oral cancer survivor Jessica Lutterman" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/f5db3da455e8.jpg 2x, assets/media/cancerwise-html/abbc6c701b3c.jpg 1x" alt="Oral cancer survivor Jessica Lutterman" src="assets/media/cancerwise-html/1541c102722e.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/two-time-tongue-cancer-survivor--why-i-support-research-at-ut-mderson.h00-159854556.html" id="cancerwise_blog_tabs_two_time_tongue">
+Two-time tongue cancer survivor: Why I support research at UT MD Anderson
+</a>
+</h3>
+<p class="author-date">April 16, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small philanthropy">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/7-ways-to-support-md-anderson.h00-159852978.html" id="cancerwise_blog_tabs_img7_ways_to_su">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/13ce71de933d.jpg 2x, assets/media/cancerwise-html/76d5942fd51f.jpg 1x" alt="Volunteer Irabor Oshotse" media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/76d5942fd51f.jpg" alt="Volunteer Irabor Oshotse" media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/dfc945359883.jpg 2x, assets/media/cancerwise-html/42824e5c95b8.jpg 1x" alt="Volunteer Irabor Oshotse" src="assets/media/cancerwise-html/e06d60a23f72.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/7-ways-to-support-md-anderson.h00-159852978.html" id="cancerwise_blog_tabs_7_ways_to_suppo">
+7 ways to support UT MD Anderson
+</a>
+</h3>
+<p class="author-date">February 09, 2026</p>
+</div>
+</div>
+</div>
+<div class="module m-pad">
+<div class="blog-summary cwtabcontainer small philanthropy">
+<div class="blog-summary-img-wrapper cwtabcontainer">
+<a href="/cancerwise/after-losing-their-son-to-cancer--parents-support-kinder-childrens-cancer-center.h00-159852189.html" id="cancerwise_blog_tabs_imgafter_losing">
+<picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="assets/media/cancerwise-html/80bd5f699b14.jpg 2x, assets/media/cancerwise-html/7ef97fe5e17e.jpg 1x" alt="A woman and man stand together. The man holds a photo of a young boy. The woman holds a Rubik&#39;s cube." media="(min-width: 993px)"/>
+<source srcset="assets/media/cancerwise-html/7ef97fe5e17e.jpg" alt="A woman and man stand together. The man holds a photo of a young boy. The woman holds a Rubik&#39;s cube." media="(min-width: 753px)"/>
+<!--[if IE 9]></video><![endif]-->
+<img srcset="assets/media/cancerwise-html/345f8ee5845c.jpg 2x, assets/media/cancerwise-html/284fe0c3288c.jpg 1x" alt="A woman and man stand together. The man holds a photo of a young boy. The woman holds a Rubik&#39;s cube." src="assets/media/cancerwise-html/41ee343ce11e.jpg"/>
+</picture>
+</a>
+</div>
+<div class="blog-summary-wrapper cwtabcontainer">
+<h3 class="blog-title cwtabcontainer">
+<a href="/cancerwise/after-losing-their-son-to-cancer--parents-support-kinder-childrens-cancer-center.h00-159852189.html" id="cancerwise_blog_tabs_after_losing_th">
+After losing their son to cancer, parents support Kinder Children’s Cancer Center
+</a>
+</h3>
+<p class="author-date">January 22, 2026</p>
+</div>
+</div>
+</div>
+</div>
+<div class='cta philanthropy'>
+<a href='https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/publications/cancerwise/philanthropy'>Read more donor stories</a>
+</div>
+<div class='cta philanthropy subscribe'>
+<a href='https://www.mdanderson.org/publications/subscribe-to-cancerwise.html'>Subscribe to Cancerwise newsletter</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</div>
+</div>
+</section>
+
+    </div>
+<!-- CHROME:ENDCANCER -->
+<div class="pre-footer" data-canon="chrome-endcancer">
+  <div class="section"></div>
+  <div class="iparys_inherited">
+    <section class="highlight apply">
+      <div class="nested-section-title">
+        <h2 class="section-title text-center">Help #EndCancer</h2>
+      </div>
+      <div class="table table-3col">
+        <div class="cell-t cell-full-height">
+          <div class="module m-bleed">
+            <div class="promo promo-no-icon promo-background-red">
+              <div class="promo-icon-header-wrapper">
+                <div class="promo-header"><h3 class="title minion-heading heading-center">Give Now</h3></div>
+              </div>
+              <div class="promo-text">
+                <div class="body promo-text-normal">Your gift will help make a tremendous difference.</div>
+                <div class="cta-wrapper cta-block-wrapper">
+                  <a class="cta cta-block" href="https://gifts.mdanderson.org/Default.aspx?tsid=37435">Donate <span class="mda-icon-linkout"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell-t cell-full-height">
+          <div class="module m-bleed">
+            <div class="promo promo-no-icon promo-background-black">
+              <div class="promo-icon-header-wrapper">
+                <div class="promo-header"><h3 class="title minion-heading heading-center">Donate Blood</h3></div>
+              </div>
+              <div class="promo-text">
+                <div class="body promo-text-normal"><p>Our patients depend on blood and platelet donations.</p></div>
+                <div class="cta-wrapper cta-block-wrapper">
+                  <a class="cta cta-block" href="https://www.mdandersonbloodbank.org/">Make an appointment <span class="mda-icon-linkout"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell-t last cell-full-height">
+          <div class="module m-bleed">
+            <div class="promo promo-no-icon promo-background-blue">
+              <div class="promo-icon-header-wrapper">
+                <div class="promo-header"><h3 class="title minion-heading heading-center">Shop UT MD Anderson</h3></div>
+              </div>
+              <div class="promo-text">
+                <div class="body promo-text-normal"><p>Show your support for our mission through branded merchandise.</p></div>
+                <div class="cta-wrapper cta-block-wrapper">
+                  <a class="cta cta-block" href="https://shop.mdanderson.org">View products <span class="mda-icon-linkout"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<!-- /CHROME:ENDCANCER -->
+<!-- CHROME:BOTTOM -->
+<section class="global-footer bleed-full" data-canon="chrome-footer">
+  <footer>
+    <div class="subscribe-to" data-canon="chrome-newsletter">
+      <div class="col-single inner">
+        <div class="icon-circle">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa mda-icon-email mda-stack-1x"></i>
+          </span>
+        </div>
+        <div class="subscribeTitle">Subscribe to our Cancerwise newsletter</div>
+        <form id="29" action="#" onsubmit="return false">
+          <div class="fieldContainer">
+            <div id="tfa_23-D"><div class="inputWrapper"><input id="tfa_23" type="text" placeholder="First Name *"></div></div>
+            <div id="tfa_38-D"><div class="inputWrapper"><input id="tfa_38" type="text" placeholder="Last Name *"></div></div>
+            <div id="tfa_20-D"><div class="inputWrapper"><input id="tfa_20" type="text" placeholder="Email Address *"></div></div>
+          </div>
+          <div class="footer-cta-wrapper">
+            <div class="footer-cta"><input class="ftrSubGo" type="submit" value="Get started"></div>
+            <div class="footer-cta-mobile"><input class="ftrSubGo" type="submit" value="Get started"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div class="col2 mda-logo">
+        <a href="https://www.mdanderson.org/">
+          <img class="desktop" src="https://www.mdanderson.org/content/mda/en/jcr:content/footer/xdesktoplogo.resize.png.pagespeed.ic.wmDIh2S-LF.webp" alt="UT MD Anderson logo">
+          <img class="mobile" src="https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp" alt="UT MD Anderson logo">
+        </a>
+        <li class="at-sticky-promo-li">
+              <a class="at-sticky-promo-link-wrapper" href="https://onlypossiblehere.mdanderson.org"><div class="at-sticky-promo-top"><div class="at-promo-svg-wrapper"><svg viewBox="0 0 125 26" width="125" height="26" aria-hidden="true"><style>.st0-desktop { fill: #000; }</style></svg></div><span class="at-promo-arrow"><i class="fa-solid fa-angle-right"></i></span></div><div class="at-sticky-promo-bottom"><span class="at-promo-return-text">Explore what your support makes possible</span></div></a>
+        </li>
+      </div>
+      <div class="col1"></div>
+      <div class="col2">
+        <ul>
+          <li class="title">Explore<div class="toggle"></div></li>
+          <li><a href="https://www.mdanderson.org/patients-family.html">Patients &amp; Family</a></li>
+          <li><a href="https://www.mdanderson.org/prevention-screening.html">Prevention &amp; Screening</a></li>
+          <li><a href="https://www.mdanderson.org/donors-volunteers.html">Donors &amp; Volunteers</a></li>
+          <li><a href="https://www.mdanderson.org/for-physicians.html">For Physicians</a></li>
+          <li><a href="https://www.mdanderson.org/research.html">Research</a></li>
+          <li><a href="https://www.mdanderson.org/education-training.html">Education &amp; Training</a></li>
+          <li><a href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html">Clinical Trials</a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/contact-us/languages.html">Languages</a></li>
+        </ul>
+      </div>
+      <div class="col2">
+        <ul>
+          <li class="title">About<div class="toggle"></div></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson.html">About <span class="nowrap">UT MD Anderson</span></a></li>
+          <li><a href="https://jobs.mdanderson.org/">Careers<span class="mda-icon-linkout"></span></a></li>
+          <li><a href="https://www.mdanderson.org/cancerwise.html">Blog</a></li>
+          <li><a href="https://www.mdanderson.org/newsroom.html">Newsroom</a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html">Editorial Standards</a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/employee-resources.html">For Employees</a></li>
+          <li><a href="https://shop.mdanderson.org/">Merchandise<span class="mda-icon-linkout"></span></a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html">Title IX Reporting (Sexual Misconduct)</a></li>
+          <li><a href="https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html">Price Transparency</a></li>
+        </ul>
+      </div>
+      <div class="col2">
+        <ul>
+          <li class="title">Finding Your Way<div class="toggle"></div></li>
+          <li><a href="https://faculty.mdanderson.org/">Our Doctors</a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/our-locations.html">Locations</a></li>
+          <li><a href="https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html">Directions</a></li>
+          <li><a href="https://www.mdanderson.org/patients-family/html-sitemap.html">Sitemap</a></li>
+        </ul>
+        <ul id="a11y-block">
+          <li class="title">Digital Accessibility<div class="toggle"></div></li>
+          <li>
+            <a class="a11y-link" href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html">Accessibility Policy</a>
+            <a class="a11y-icon" href="https://www.levelaccess.com/MDAnderson"><img src="https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/eA_Icon_Black.svg" alt="MD Anderson works with Level Access to ensure our website is accessible and functional for all users. Free assistive technology is provided for people with physical disabilities. To learn more or to download the assistive technology tool, visit https://www.levelaccess.com/MDAnderson" width="80" height="30" style="margin-top:20px"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col3 last">
+        <ul id="get-in-touch">
+          <li class="title">Get in Touch<div class="toggle"></div></li>
+          <li class="footer-contact-item">
+            <a class="footerTel" href="tel:+18777901139">
+              <div class="icon-circle"><span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x"></i><i class="fa mda-icon-call-stroke mda-stack-1x"></i></span></div>
+              Call
+              <div class="footer-contact-bold">1-877-790-1139</div>
+            </a>
+          </li>
+          <li class="footer-contact-item onlyLabel">
+            <a id="patients_family_footer" href="https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html">
+              <div class="icon-circle"><span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x"></i><i class="fa mda-icon-knowledgecenter mda-stack-1x"></i></span></div>
+              Ask a question
+              <div class="footer-contact-bold"></div>
+            </a>
+          </li>
+        </ul>
+        <ul id="stay-connected">
+          <li class="title">Stay Connected<div class="toggle"></div></li>
+          <li class="stay-connected">
+            <div class="col-single inner">
+              <div class="social-links-wrapper">
+                <div class="social-links">
+                  <div class="social-links-carousel slick-initialized slick-slider">
+                    <button class="slick-prev" type="button">Previous</button>
+                    <div class="slick-list draggable">
+                      <div class="slick-track">
+                        <a class="box slick-slide slick-active" href="//facebook.com/MDAnderson"><i class="fa fa-facebook-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="//x.com/UTMDAnderson"><i class="fa fa-x-twitter-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="//youtube.com/mdandersonorg"><i class="fa fa-youtube-play-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="//instagram.com/mdandersoncancercenter"><i class="fa fa-instagram-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="//linkedin.com/company/mdandersoncancercenter"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                        <a class="box slick-slide" href="http://bsky.app/profile/mdanderson.bsky.social"><i class="fa fa-bluesky-square fa-2x"></i></a>
+                        <a class="box slick-slide" href="https://threads.com/@mdandersoncancercenter"><i class="fa fa-threads-square fa-2x"></i></a>
+                      </div>
+                    </div>
+                    <button class="slick-next" type="button">Next</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul id="podcast">
+          <li class="title">Cancerwise Podcast<div class="toggle"></div></li>
+          <li class="podcast">
+            <div class="col-single inner">
+              <div class="social-links-wrapper">
+                <div class="social-links">
+                  <div class="social-links-carousel slick-initialized slick-slider">
+                    <button class="slick-prev" type="button">Previous</button>
+                    <div class="slick-list draggable">
+                      <div class="slick-track">
+                        <a class="box slick-slide slick-active" href="https://podcasts.apple.com/us/podcast/cancerwise-podcast/id1751785346"><i class="fa fa-apple-podcast-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="https://open.spotify.com/show/28rgC5nO7OpLhnPlNylNem"><i class="fa fa-spotify-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="http://www.youtube.com/playlist?list=PLKscGuVrfI9LvQrf5At-R7TewdfY4OeOP"><i class="fa fa-youtube-play-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="http://www.pandora.com/podcast/cancerwise-podcast/PC:1001088873"><i class="fa fa-pandora-square fa-2x"></i></a>
+                        <a class="box slick-slide slick-active" href="http://www.iheart.com/podcast/269-cancerwise-podcast-185103717/"><i class="fa fa-iheart-square fa-2x"></i></a>
+                        <a class="box slick-slide" href="https://support.doctorpodcasting.com/podcastfeed/335"><i class="fa fa-rss-feed-square fa-2x"></i></a>
+                      </div>
+                    </div>
+                    <button class="slick-next" type="button">Next</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-links sublink-container">
+      <div class="footer-sublinks">
+        <div class="sublinks-list-container">
+          <ul>
+            <li class="title">More<div class="toggle"></div></li>
+            <li><a id="patients_family_footer_1" href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html">Website Privacy Policy</a></li>
+            <li><a id="patients_family_footer_2" href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html">Legal Statement &amp; Policies</a></li>
+            <li><a id="patients_family_footer_3" href="https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html">Reports to the State</a></li>
+            <li><a id="patients_family_footer_4" href="https://www3.mdanderson.org/emergencyalert/">Emergency Alert Information</a></li>
+            <li><a id="patients_family_footer_5" href="https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html">State of Texas Links</a></li>
+            <li><a id="patients_family_footer_6" href="https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html">Our Cancer Network</a></li>
+            <li><a id="patients_family_footer_7" href="https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html">Vendors &amp; Suppliers</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-footer-bar" data-canon="chrome-mission-band">
+      <div class="footer-bar-logo">
+        <a href="/"><img class="logo" src="https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp" alt="UT MD Anderson logo"></a>
+      </div>
+      <div class="footer-bar-text">
+        <div class="missionstatement">The mission of The University of Texas MD Anderson Cancer Center is to eliminate cancer in Texas, the nation, and the world through outstanding programs that integrate patient care, research and prevention, and through education for undergraduate and graduate students, trainees, professionals, employees and the public.</div>
+        <p class="copyright">&copy; 2026 The University of Texas <span class="nowrap">MD Anderson</span> Cancer Center. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</section>
+<!-- /CHROME:BOTTOM -->
+  </div>
+</main>
+</body>
+</html>

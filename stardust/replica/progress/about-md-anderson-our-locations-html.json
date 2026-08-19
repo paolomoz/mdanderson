@@ -1,0 +1,137 @@
+{
+  "pageType": "listing",
+  "archetype": "about-md-anderson-our-locations-html",
+  "breakpoints": {
+    "1440": {
+      "iterations": 3,
+      "result": {
+        "structuralRed": 0,
+        "structuralRedRaw": "2 (rotating call-tracking tel links — pre-justified nondeterminism per brief)",
+        "visualFlags": "2 STRETCHED IMAGE advisories (chrome footer logos) — chrome-canonical, identical class as pathfinder's passed gate",
+        "pixelPct": 2.05,
+        "heightDelta": -5,
+        "pass": true
+      },
+      "justified": [
+        {
+          "probe": "content-diff",
+          "flag": "MISSING/EXTRA cta '1-8xx-xxx-xxxx' + 'Call 1-8xx-xxx-xxxx'",
+          "why": "call-tracking phone rotates per live render (observed 1-855-485-3674 / 1-877-512-2461 / 1-877-632-6789 across runs); build carries page-JSON captured 1-855-628-7053 (strip) and chrome 1-877-790-1139 (footer) — pre-justified in brief"
+        },
+        {
+          "probe": "content-diff",
+          "flag": "MISSING BODY 'var utag_data=...' and '1-8xx-xxx-xxxx' body / EXTRA body '1-833-992-0708'",
+          "why": "live-injected inline analytics script text, and the Proton Therapy Center phone is also invoca call-tracking (rotates per render); build carries the captured 1-833-992-0708"
+        },
+        {
+          "probe": "content-diff",
+          "flag": "EXTRA eyebrow 'More'",
+          "why": "drawer-panel label of the replicated JS-injected CTA drawer (capture-state widget, invisible at 1440); live's injected drawer is not classified as an eyebrow by the probe"
+        },
+        {
+          "probe": "visual-diff",
+          "flag": "STRETCHED IMAGE xdesktoplogo/xmobilelogo",
+          "why": "chrome footer logos; same element-vs-natural measurement artifact flagged and justified on the pathfinder index gate"
+        }
+      ],
+      "residuals": [
+        {
+          "band": "y 5500-6429",
+          "pct": 6.9,
+          "cause": "chrome newsletter/footer link columns: sub-pixel line metrics, rotating footer call-tracking number, and the shared +5px chrome doc-height delta accumulating at the tail",
+          "flaggedFor": "delivery"
+        },
+        {
+          "band": "y 3500-5000",
+          "pct": 2.8,
+          "cause": "cancer-network partner rows + icon trio: self-hosted Univers/Minion render ~6% narrower than live's, shifting uppercase line breaks by a word at equal row heights",
+          "flaggedFor": "delivery"
+        }
+      ],
+      "captureState": [
+        {
+          "what": "TMC 'MORE +' dropdown replicated closed (#dropDown height:0 overflow:hidden) with all 7 minfo items in DOM, as captured",
+          "where": "#dropDown / #minfo-container"
+        },
+        {
+          "what": "hero composited at ~50% luminance on live (measured 0.508 channel ratio) — replicated via source rule .mda-media-brightness:before background rgba(0,0,0,.5)",
+          "where": ".static-hero .hero-image"
+        },
+        {
+          "what": "JS-injected CTA drawer replicated invisible (opacity 0) at 1440 for content parity; a.scrollToTop server-rendered scroll affordance replicated from live HTML; chat widget replicated pixels-only via pseudo-elements",
+          "where": ".mda-drawer-replica / a.scrollToTop / .chat-widget-replica"
+        }
+      ]
+    },
+    "360": {
+      "iterations": 3,
+      "result": {
+        "structuralRed": 0,
+        "structuralRedRaw": "2 (same rotating call-tracking tel links as 1440 — pre-justified)",
+        "visualFlags": "2 STRETCHED IMAGE advisories (chrome mobile footer logo, incl. live-identical 890x157 render) — chrome-canonical, same as siblings",
+        "pixelPct": 5.8,
+        "heightDelta": 2,
+        "pass": true
+      },
+      "justified": [
+        {
+          "probe": "content-diff + stitch-shot",
+          "flag": "one 360 run served an entirely different mobile locations block (uppercase link rows, 'Northwest Houston Surgical and Specialty Care', absolute hrefs; live stitch 360x6878)",
+          "why": "Adobe Target A/B experience served intermittently at mobile widths (at-element-marker hooks in the section); direct DOM probes and the immediate re-run both returned the captured card DOM (docHeight 7495 = capture). Build follows the capture per brief; re-run instruments passed against the captured variant"
+        },
+        {
+          "probe": "pixel-compare",
+          "flag": "iter2 run: hot bands every ~900px (14-20%)",
+          "why": "live bakes the scroll-triggered mobile CTA drawer (Call/Request/MyChart, 75px) at the bottom of every stitch chunk after chunk 0; replicated with the brief's one-JS-exception scroll toggle (same class, scrollY>0 threshold) so the bakes align — bands fell to <10%"
+        },
+        {
+          "probe": "pixel-compare",
+          "flag": "proto stitched 34px short without --settle (fonts race clipped the footer tail)",
+          "why": "DOM heights verified equal at both viewports (7493 vs live 7495); proto re-stitched with --settle for a symmetric measurement"
+        }
+      ],
+      "residuals": [
+        {
+          "band": "y 7000-7493",
+          "pct": 11.9,
+          "cause": "chrome footer accordion rows + mission band: live composites the CTA drawer over the copyright in its last chunk, and footer line metrics differ sub-pixel",
+          "flaggedFor": "delivery"
+        },
+        {
+          "band": "y 3000-3500 / y 6500-7000",
+          "pct": 9.7,
+          "cause": "diagnostic-labs text band and chrome footer columns: self-hosted Minion/Univers render ~6% narrower than live's fonts (verified via canvas measurement), shifting word-wrap positions at equal block heights",
+          "flaggedFor": "delivery"
+        },
+        {
+          "band": "scattered right-edge",
+          "pct": 0.5,
+          "cause": "live Genesys chat bubble baked intermittently at scroll-dependent offsets; replica draws its pixels-only stand-in every chunk",
+          "flaggedFor": "delivery"
+        }
+      ],
+      "captureState": [
+        {
+          "what": "mobile location cards drop images and 'MORE +' dropdown stays closed, as captured; card titles pinned to live line breaks (gyneco title max-width 240px, partner h4 max-width 228px) because local font metrics run ~6% narrow",
+          "where": "#menu-container / .sub-item / #cancer-network h4.link-title"
+        },
+        {
+          "what": "mobile CTA drawer visible once scrolled via 7-line scroll toggle (the brief's single JS exception; lifted behavior: same class, scrollY>0); Top button hidden at mobile (never appears in live 360 stitches)",
+          "where": ".mda-drawer-replica / a.scrollToTop"
+        },
+        {
+          "what": "right cancer-network column carries a 77px top inset before its first row on live mobile (unexplained by lifted CSS; reproduced page-locally as padding-top to match live geometry)",
+          "where": "#cancer-network .col-double.last .link-list"
+        }
+      ]
+    }
+  },
+  "portations": [
+    "18 page images (hero bg, 7 location thumbs, 3 split-band images, 7 partner thumbs) 301/403 from localhost context — downloaded with real-Chrome UA + referer into stardust/prototypes/assets/media/about-md-anderson-our-locations-html/ and referenced relatively"
+  ],
+  "notes": [
+    "Locations section is an Adobe Target surface: a mobile-width A/B variant (uppercase link list) can replace the captured card grid on live renders; if a future gate run fails hugely at 360 in the y550-1770 band, re-take the live capture before touching the build",
+    "Live DOM binds the card-title arrow with two &nbsp; (title&nbsp;&nbsp;<i class=mdicon-arrow>); reproduced — it controls the 2-line wrap of the Northwest Houston card at mobile",
+    "No chrome gaps found; footer logo stretch advisories and the +5px (1440) / mission-band (360) tail deltas are the known shared-chrome class"
+  ]
+}

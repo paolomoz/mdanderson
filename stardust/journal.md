@@ -62,3 +62,18 @@ in flight). Chrome-consolidation agent dispatched.
 instruction — likely a stray eds-new-site skill invocation. Local clone
 gitignored and removed from index; remote repo left for the user to decide
 (deletion is destructive). POC delivery target remains paolomoz/mdanderson.
+
+## 2026-08-20 — Recreation phase complete (11/11)
+
+Batch 2 + chrome consolidation done. Final gate numbers (pixel % 1440/360):
+index 3.56/8.77, breast-cancer 2.95/8.70, breast-center 2.87/8.35,
+clinical-trials 2.55*/6.98, prevention 2.37/6.61, research 2.29/5.34,
+about 2.09/7.37, locations 2.05/5.80, cancerwise 2.45/6.01, article 4.40/3.07,
+donors 1.57/8.10. All pass the ≤10% bar; every residual diagnosed (dominant
+classes: rotating call-tracking phones, live scroll-state widgets, live-drift
+vs capture, shared-chrome micro-offsets ≤9px). Two agents were killed by
+transient API 500s and recovered (one resumed, one finished by a fresh agent
+from on-disk state). *clinical-trials 1440 smoke read 8.78 vs ledger 2.55 —
+proven pre-existing/live-drift by revert test.
+
+Next: migrate (Path A ×11 + patients-family sibling) → rollout to EDS.

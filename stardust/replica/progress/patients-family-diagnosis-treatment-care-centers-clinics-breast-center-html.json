@@ -1,0 +1,55 @@
+{
+  "pageType": "program",
+  "archetype": "patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html",
+  "breakpoints": {
+    "1440": {
+      "iterations": 4,
+      "result": { "structuralRed": 2, "visualFlags": "2 stretched-logo flags (chrome desktop/mobile wordmark) — identical stretch on the live source side, fidelity match", "pixelPct": 2.87, "heightDelta": -6, "pass": true },
+      "justified": [
+        { "probe": "content-diff", "flag": "2 structural MISSING CTA (tel 1-877-632-6789 / 1-866-467-0332 / rotates per render) + EXTRA build ctas 1-888-499-4417, Call 1-877-790-1139", "why": "call-tracking phone numbers rotate per live render; build uses the values captured in the page JSON — pre-justified nondeterminism, both reds are this one phone pair" },
+        { "probe": "content-diff", "flag": "MISSING BODY 'var utag_data={}...' and '|'", "why": "live inline utag analytics script text counted as body copy; not content, pre-justified" },
+        { "probe": "content-diff", "flag": "MISSING/EXTRA body '713-792-2360 (Current patients) 8xx-xxx-xxxx (New patients)'", "why": "same string modulo the rotating call-tracking number" },
+        { "probe": "content-diff", "flag": "EXTRA build ctas 'More'/'Less'", "why": "mobile rte-truncation toggle links exist hidden in the static build DOM at 1440; live injects them via JS only at mobile widths — granularity artifact, invisible at 1440 (pixel-verified)" },
+        { "probe": "content-diff", "flag": "EXTRA build cta '.st0-desktop { fill: #000; }Explore what your su…'", "why": "differ counts the <style> inside the inline SVG of the survivorship CTA as anchor text; live serves the same SVG externally so its style text is not counted — markup-granularity artifact, visual parity unaffected" },
+        { "probe": "visual-diff", "flag": "STRETCHED IMAGE desktoplogo 1280x535→200x74, mobilelogo 837x95→377x86", "why": "live renders the same chrome wordmark images at the same stretched dimensions (source-side metrics identical) — replicating the live stretch is the fidelity requirement" }
+      ],
+      "residuals": [
+        { "band": "y 5500-5834", "pct": 7.4, "cause": "footer/newsletter band: text antialias + live drift since capture; under the 10% bar", "flaggedFor": "delivery" }
+      ],
+      "captureState": [
+        { "what": "live chat widget button replicated as captured (bottom-right bubble)", "where": "chat-widget-replica, desktop only" },
+        { "what": "empty medically-reviewed slot rendered empty as on live", "where": "section.medical-reviewer-component" }
+      ]
+    },
+    "360": {
+      "iterations": 5,
+      "result": { "structuralRed": 2, "visualFlags": "2 stretched mobilelogo flags (chrome) — same stretch present on live source side", "pixelPct": 8.35, "heightDelta": -1, "pass": true },
+      "justified": [
+        { "probe": "content-diff", "flag": "2 structural MISSING CTA (tel 1-866-499-8634, rotates) + EXTRA 1-888-499-4417 / Call 1-877-790-1139", "why": "rotating call-tracking numbers; build carries the page-JSON captured values — pre-justified" },
+        { "probe": "content-diff", "flag": "EXTRA build ctas Back / Breast Center / Meet Our Team / Inflammatory Breast Cancer Clinic / High Risk Screening and Genetics Clinic / Breast Cancer Survivorship Clinics / Advanced Breast Cancer Webinars + EXTRA body 'Jump To:'", "why": "live mobile JS relocates #sidebar-nav out of main into the Jump To dropdown, so those links leave the content root on live; the static build keeps them inside main (rendered as the jump-menu replica). Content-root scoping artifact, visual parity holds" },
+        { "probe": "content-diff", "flag": "MISSING BODY 'var utag_data...', '|', '0.16 / 2.57 MB'", "why": "inline analytics text and the video player's transient byte-counter readout (hydration state at live probe time) — capture-state, pre-justified" },
+        { "probe": "pixel-compare", "flag": "band y 500-1000 = 17.5%", "why": "sticky appointment CTA bar (Call/Request appointment/MyChart): build replicates it position:sticky in flow so the stitcher bakes it at every 900px chunk bottom (first at y~825-900); live shows it only after scroll, so chunk 1 lacks it. Scroll-dependent widget offset — pre-justified class; also elevates bands 1500-2000/2500-3000/3500-4000 a few points" },
+        { "probe": "pixel-compare", "flag": "band y 4000-4500 = 25.6%", "why": "full-bleed prevention-promo photo sits ~10px lower locally than in the live stitch (accumulated small text-metric drift above), and any offset over a photo diffs the whole photo area; plus live-only chat bubble baked at its scroll offset in this band. Layout verified: image now full-width 360 matching live (cell padding leak fixed)" }
+      ],
+      "residuals": [
+        { "band": "y 500-1000", "pct": 17.5, "cause": "sticky CTA bar chunk-baking asymmetry (see justified)", "flaggedFor": "delivery" },
+        { "band": "y 4000-4500", "pct": 25.6, "cause": "photo-amplified ~10px local vertical offset + live chat bubble", "flaggedFor": "delivery" },
+        { "band": "y 2000-2500", "pct": 9.3, "cause": "pull-quote/panorama text antialias + minor offsets; under bar", "flaggedFor": "delivery" }
+      ],
+      "captureState": [
+        { "what": "intro paragraph 3 collapsed behind More toggle as live mobile renders it", "where": ".rte-container .extra-text + .more.cta" },
+        { "what": "chat widget and Top button hidden at mobile behind sticky bar, as live", "where": ".chat-widget-replica, a.scrollToTop" },
+        { "what": "jump-menu (Jump To:) replica of live's JS-relocated #sidebar-nav", "where": ".jump-menu-replica" }
+      ]
+    }
+  },
+  "portations": [],
+  "notes": [
+    "Resumed after prior agent died mid-gate (transient API error). Prior gate rounds counted toward cap: 3 per breakpoint; resumption authorized up to 2 more rounds per breakpoint. Used +1 on 1440 (probe refresh only, no page change) and +2 on 360 (probe refresh; one fix round).",
+    "Fix round (360): the mobile cell padding leak the prior agent flagged (content boxes 351px/9px-offset from .col-double cell padding surviving the mobile collapse) was already corrected in the file; verified fixed — visual-diff contentBoxes now byte-identical to live (360/0, 288/36, 220/70) and mainHeight 7085 = live 7085.",
+    "Reverted the prior agent's last edit: a '.footer-bar-text { padding-bottom: 57px }' mobile 'chrome-gap compensation'. Against the gate instrument (live.png stitch) the live mission band is NOT 32px taller — the rule inverted the height delta to -33px. Without it: delta -1px.",
+    "Instrument note: stitch-shot measures document height before scrolling; on a cold server cache a late-loading resource left 34px of footer out of the canvas (proto stitched 7190 vs settled 7224). Warm re-stitch is deterministic at 7224. No page defect.",
+    "CHROME GAPS (for chrome owner, not re-patched per brief): (1) at 360 the pre-footer 'Help #EndCancer' h2 renders 48px in shared chrome vs 24px on live mobile; (2) footer-bar-logo mobile wordmark renders 890x157 (stretched) in chrome vs hidden/360x84 on live; (3) live 360 mission band region differs slightly in bottom padding (copyright sits under the fixed CTA bar on live). Bottom-band pixels still within bar (2.8-9.3%).",
+    "Probes this session ran with --wait-until load on the live side (default domcontentloaded measured live before hydration, manufacturing extra/missing findings such as the video byte-counter)."
+  ]
+}

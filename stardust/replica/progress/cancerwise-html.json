@@ -1,0 +1,111 @@
+{
+  "pageType": "listing",
+  "archetype": "cancerwise-html",
+  "breakpoints": {
+    "1440": {
+      "iterations": 3,
+      "result": {
+        "structuralRed": 0,
+        "visualFlags": "2 advisory (chrome footer logos render stretched — identical on live)",
+        "pixelPct": 2.45,
+        "heightDelta": -6,
+        "pass": true,
+        "structuralRedRaw": "1 (rotating call-tracking tel — pre-justified nondeterminism per brief)"
+      },
+      "justified": [
+        {
+          "probe": "content-diff",
+          "flag": "🔴 MISSING CTA 'Call 1-8xx-…' / 🟠 EXTRA 'Call 1-877-790-1139'",
+          "why": "call-tracking phone rotates per live render (pre-justified in brief); chrome carries the number captured in the page JSON era"
+        },
+        {
+          "probe": "content-diff",
+          "flag": "🟡 MISSING BODY utag_data / .cw-v3 inline scripts",
+          "why": "live inline analytics/Adobe-Target runtime script text inside main; no-JS recreation intentionally omits (pre-justified)"
+        },
+        {
+          "probe": "visual-diff",
+          "flag": "STRETCHED IMAGE xdesktoplogo/xmobilelogo footer logos",
+          "why": "chrome-owned footer logos; live renders the same boxes (padding-driven), not a recreation defect"
+        }
+      ],
+      "residuals": [
+        {
+          "band": "y 3500–4416",
+          "pct": 7.2,
+          "cause": "chrome-owned footer: +2px pre-footer / +3px footer cumulative line ghosting and rotated call-tracking number",
+          "flaggedFor": "delivery"
+        }
+      ],
+      "captureState": [
+        {
+          "what": "Top Stories tab (li.cw-top) rendered visible; hidden in the 1440 layout map but visible in the ground-truth screenshot and every live gate render (Adobe Target un-hide)",
+          "where": "ul.cw-tab-menu.stories"
+        },
+        {
+          "what": "#top panel replicated from live rendered DOM (Adobe Target-populated top-stories list; URLs match capture links[]), kept display:none as non-active tab panel",
+          "where": "#top"
+        },
+        {
+          "what": "featured-story summary truncated to first 2 paragraphs — matches rendered live DOM and capture body[] (live JS trims the rest)",
+          "where": ".summary-text.featured-article"
+        },
+        {
+          "what": "search input carries the long marketing placeholder text live JS injects ('I'm looking for information on…')",
+          "where": "#cw-search"
+        },
+        {
+          "what": "chat widget + Go-To-Top replicas (pixels only, live widgets are JS-injected); jQuery-UI tab active states baked statically (t=0)",
+          "where": "body/main"
+        },
+        {
+          "what": "all 227 page media downloaded to assets/media/cancerwise-html/ (remote hotlinks loaded flakily and collapsed ratio-sized images mid-stitch)",
+          "where": "img/srcset"
+        }
+      ]
+    },
+    "360": {
+      "iterations": 3,
+      "result": {
+        "structuralRed": 0,
+        "visualFlags": "2 advisory (chrome footer logo boxes)",
+        "pixelPct": 6.01,
+        "heightDelta": 8,
+        "pass": true,
+        "structuralRedRaw": "1 (rotating call-tracking tel — pre-justified nondeterminism per brief)"
+      },
+      "justified": [
+        {
+          "probe": "content-diff",
+          "flag": "🔴/🟠 rotating call-tracking numbers, 🟡 inline utag/Target scripts",
+          "why": "same pre-justified nondeterminism as 1440"
+        }
+      ],
+      "residuals": [
+        {
+          "band": "y 6500–7000",
+          "pct": 20.0,
+          "cause": "chrome-owned: pre-footer renders 9px shorter than live (documented Donate-Blood 46px CTA clamp in chrome.css — all gated pages share it) shifting the whole footer 9px; plus live paints STAY CONNECTED / CANCERWISE PODCAST accordion labels above the black logo band while chrome CSS stacks the band on top",
+          "flaggedFor": "delivery"
+        }
+      ],
+      "captureState": [
+        {
+          "what": "stories tab strip nowrap/overflow (live 752px rules) with semibold face rendered without synthetic bold — live face registers across weights, self-hosted face is 400-only, so fw400 reproduces live metrics",
+          "where": "ul.cw-tab-menu.stories"
+        },
+        {
+          "what": "newsletter bar hidden at 360 (absent from live blogpage 360 render, same as article-page replica)",
+          "where": ".subscribe-to"
+        }
+      ]
+    }
+  },
+  "portations": [],
+  "notes": [
+    "CHROME GAP (for chrome owner): the remote footer logo (xmobilelogo webp) loads after stitch-shot measures page height, reflowing the mission band (+34px @360 / +36px @1440) and destabilizing gate heights. Patched page-locally with an explicit box-height reserve (.footer-bar-logo img.logo { height: 86px; 84px @mobile }) matching the loaded live box; recommend adopting in chrome.css.",
+    "CHROME GAP (minor, for chrome owner): at 360 live shows STAY CONNECTED / CANCERWISE PODCAST accordion titles painted above the absolute black mda-logo band; chrome stacks the band above them (z-index:1). Not patched locally — gate passes; contributes to the explained y6500–7000 residual on every page with this footer.",
+    "Live-drift policy: story cards matched live at gate time (capture 5h old, zero drift during gating); daily-publishing drift on this dynamic blog index remains a pre-justified residual for future re-gates.",
+    "Adobe Target nondeterminism: li.cw-top visibility and #top population depend on Target firing; replica bakes the fired state (matches screenshot + all live gate renders)."
+  ]
+}

@@ -192,6 +192,12 @@
         "rule": "design-system-color",
         "value": "#783491",
         "createdAt": "2026-08-19T18:36:08.501Z"
+      },
+      {
+        "rule": "overused-font",
+        "value": "helvetica",
+        "createdAt": "2026-08-19T23:20:57.333Z",
+        "reason": "stardust:replica — Helvetica appears in mdanderson.org's own clientlib CSS (pannellum panorama widget rules, 14 occurrences in harvested source); lifted verbatim, substitution would be a fidelity defect"
       }
     ]
   }

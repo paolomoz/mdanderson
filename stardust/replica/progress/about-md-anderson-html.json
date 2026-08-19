@@ -1,0 +1,50 @@
+{
+  "pageType": "static",
+  "archetype": "about-md-anderson-html",
+  "breakpoints": {
+    "1440": {
+      "iterations": 3,
+      "result": { "structuralRed": 0, "visualFlags": "2 chrome-canonical footer-logo stretched-image advisories only", "pixelPct": 2.09, "heightDelta": -6, "pass": true },
+      "justified": [
+        { "probe": "content-diff", "flag": "MISSING CTA 1-877-632-6789 / Call 1-877-632-6789 + EXTRA 1-866-463-3080 / Call 1-877-790-1139", "why": "call-tracking phone numbers rotate per live render (pre-justified in brief); build uses the values captured in the page JSON" },
+        { "probe": "content-diff", "flag": "MISSING BODY var utag_data=...", "why": "live inline analytics script text (pre-justified nondeterminism)" },
+        { "probe": "content-diff", "flag": "EXTRA cta More/Less + eyebrow More", "why": "live mobile-hydration nodes (rte More/Less toggle, CTA-drawer label) replicated hidden for 360 parity; live desktop DOM omits them per render — same nodes were flagged MISSING at 360 when absent" },
+        { "probe": "visual-diff", "flag": "STRETCHED IMAGE xdesktoplogo/xmobilelogo", "why": "chrome-canonical footer logo markup (data-canon), identical on every gated page" }
+      ],
+      "residuals": [
+        { "band": "y 5000-5891", "pct": 7.0, "cause": "chrome footer region: -6px cumulative chrome height drift doubles text rows + rotating footer phone + newsletter AA; page content bands all <= 3.0%", "flaggedFor": "delivery" },
+        { "band": "chunk seams", "pct": 1.5, "cause": "live sticky utility bar + chat/Top widgets drawn at scrolled-chunk tops/bottoms in the live stitch (scroll-dependent, pre-justified)", "flaggedFor": "delivery" }
+      ],
+      "captureState": [
+        { "what": "appt-bar-sticky markup present but display:none (not visible in 1440 capture)", "where": "after section[data-section=appointment-bar]" },
+        { "what": "scrollToTop + chat-widget replicas fixed at live offsets", "where": "main.mda-content start" },
+        { "what": "second static-hero (badge band) has empty media-body-text as captured; no brightness overlay (live JS adds it only to hero 1)", "where": "section[data-section=badge-band]" }
+      ]
+    },
+    "360": {
+      "iterations": 3,
+      "result": { "structuralRed": 0, "visualFlags": "2 chrome-canonical footer-logo stretched-image advisories only", "pixelPct": 7.37, "heightDelta": -9, "pass": true },
+      "justified": [
+        { "probe": "content-diff", "flag": "MISSING/EXTRA rotating phone CTAs", "why": "call-tracking rotation (pre-justified)" },
+        { "probe": "content-diff", "flag": "EXTRA eyebrow More (drawer label)", "why": "live hydration varies per render — flagged MISSING when the node was absent, EXTRA when present; kept to match the canonical hydrated DOM" },
+        { "probe": "pixel-compare", "flag": "height delta reported 43px by stitcher", "why": "real DOM delta is -9px (probed: proto body 6735 vs live 6744; all footer landmarks offset exactly -9); stitcher under-measures the proto page by ~34px when the fixed bottom drawer bar is present. The -9px itself is the chrome-documented EndCancer 'Donate Blood card renders 9px shorter' clamp accepted across all gated pages" },
+        { "probe": "pixel-compare", "flag": "y 500-1000 band 15.9%", "why": "proto shows the fixed appointment drawer bar in the first stitched chunk; live only hydrates it after first scroll (from chunk 2 on) — scroll-dependent widget state, pre-justified" }
+      ],
+      "residuals": [
+        { "band": "y 5500-6701", "pct": 20, "cause": "chrome footer/mission band doubled by the -9px chrome EndCancer drift + tail crop from stitcher height quirk; page-content bands are all <= 5%", "flaggedFor": "delivery" }
+      ],
+      "captureState": [
+        { "what": "live mobile hydration collapses the Mission/Vision/Core Values rte after the Caring list: Integrity..Stewardship blocks get .extra-text (display:none) and a More/Less toggle appears; authored in this hydrated collapsed state (probed live @360)", "where": "section[data-section=mission-vision-values] .rte-container" },
+        { "what": "fixed blue appointment drawer bar (Call / Request appointment / MyChart) + round chat bubble replicated as always-visible at mobile (live shows them scroll-hydrated)", "where": ".appt-bar-sticky / .chat-widget-replica" },
+        { "what": "live mobile serves upscaled resize.278 renditions for the three split-band photos; local copies used (facts/careers/community-278.jpg) to match live blur", "where": "assets/media/about-md-anderson-html/" }
+      ]
+    }
+  },
+  "portations": [],
+  "notes": [
+    "All media localized to stardust/prototypes/assets/media/about-md-anderson-html/ (remote hotlinking made stitch captures nondeterministic - images raced the screenshot).",
+    "For chrome owner: (1) chrome.css .promo-no-icon { padding:60px 0; height:100% } and its mobile block leak into non-EndCancer .promo-no-icon promos (this page's split bands) - page-local .col-double-scoped overrides were required; consider scoping the chrome rules to .pre-footer. (2) The documented 9px EndCancer clamp drift is the entire mobile height delta on this page.",
+    "Live 360 capture map (replica/capture/360.json) was taken in the EXPANDED rte state; the live gate state is COLLAPSED behind More/Less - the collapsed hydrated state was probed live and authored, per brief guidance.",
+    "The two page heroes share one component: hero 1 carries .mda-media-brightness (JS-added, 0.5 overlay), hero 2 (badge band) does not."
+  ]
+}

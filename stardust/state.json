@@ -101,18 +101,27 @@
       "url": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/breast-center.html",
       "title": null,
       "type": "program",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
           "at": "2026-08-19T18:30:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-08-20T02:30:00Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-08-20T02:30:00Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "role": "archetype",
       "currentStatePath": "stardust/current/pages/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html-proposed.html",
       "migratedPath": null
     },
     {
@@ -176,18 +185,27 @@
       "url": "https://www.mdanderson.org/research.html",
       "title": null,
       "type": "landing",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
           "at": "2026-08-19T18:30:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-08-20T01:30:00Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-08-20T01:30:00Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "role": "archetype",
       "currentStatePath": "stardust/current/pages/research-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/research-html-proposed.html",
       "migratedPath": null
     },
     {
@@ -195,18 +213,27 @@
       "url": "https://www.mdanderson.org/about-md-anderson.html",
       "title": null,
       "type": "static",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
           "at": "2026-08-19T18:30:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-08-20T02:00:00Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-08-20T02:00:00Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "role": "archetype",
       "currentStatePath": "stardust/current/pages/about-md-anderson-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/about-md-anderson-html-proposed.html",
       "migratedPath": null
     },
     {
@@ -214,18 +241,27 @@
       "url": "https://www.mdanderson.org/about-md-anderson/our-locations.html",
       "title": null,
       "type": "listing",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
           "at": "2026-08-19T18:30:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-08-20T03:00:00Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-08-20T03:00:00Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "role": "archetype",
       "currentStatePath": "stardust/current/pages/about-md-anderson-our-locations-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/about-md-anderson-our-locations-html-proposed.html",
       "migratedPath": null
     },
     {
@@ -233,18 +269,27 @@
       "url": "https://www.mdanderson.org/cancerwise.html",
       "title": null,
       "type": "listing",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
           "at": "2026-08-19T18:30:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-08-20T01:30:00Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-08-20T01:30:00Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "role": "archetype",
       "currentStatePath": "stardust/current/pages/cancerwise-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/cancerwise-html-proposed.html",
       "migratedPath": null
     },
     {

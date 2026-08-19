@@ -1,0 +1,66 @@
+{
+  "pageType": "landing",
+  "archetype": "research-html",
+  "breakpoints": {
+    "1440": {
+      "iterations": 3,
+      "result": {
+        "structuralRed": 1,
+        "structuralRedNote": "footer 'Call 1-8xx-xxx-xxxx' tel link — rotating call-tracking number (pre-justified nondeterminism); text/href pair can never match a fixed recreation",
+        "visualFlags": "3 advisory: heading 'Research Areas' surface/ground pairing artifact (duplicate heading text: black link-list h3 vs white trio-card h3, both exist on live); 2x chrome footer logo aspect (live renders the same dims — chrome-owned)",
+        "pixelPct": 2.29,
+        "heightDelta": -3,
+        "pass": true
+      },
+      "justified": [
+        { "probe": "content-diff", "flag": "MISSING CTA 'Call 1-877-632-6789' + EXTRA 'Call 1-877-790-1139'", "why": "call-tracking phone number rotates per live render (observed 1-844-545-7268 / 1-888-924-5972 / 1-877-632-6789 across three runs); chrome canonical value kept" },
+        { "probe": "content-diff", "flag": "MISSING BODY 'var utag_data=...'", "why": "live inline analytics script text, not page content" },
+        { "probe": "content-diff", "flag": "EXTRA body '3'..'8' (dots) + 4 clone body-texts", "why": "slick carousel DOM is breakpoint-dependent on live (desktop: 2 dots, no clones; mobile: 8 dots + clones); the static no-JS recreation carries the superset, hidden at desktop" },
+        { "probe": "visual-diff", "flag": "SURFACE/GROUND 'Research Areas'", "why": "matcher paired the black link-list h3 with the white trio-card h3; both headings exist with identical text on live and build" },
+        { "probe": "visual-diff", "flag": "STRETCHED footer logos", "why": "chrome-owned footer rendering; live renders identical dims (advisory on both sides)" }
+      ],
+      "residuals": [
+        { "band": "y 3500–4500", "pct": 3.3, "cause": "stat-tile numerals/descriptions ghosted a few px horizontally — local Univers woff metrics vs live's (fonts are gate instrumentation)", "flaggedFor": "delivery" },
+        { "band": "y 6000–6500", "pct": 6.4, "cause": "footer sits ~4px lower (cumulative +3–4px content drift above) + fixed widgets (Top / chat) baked at different chunk seams", "flaggedFor": "delivery" }
+      ],
+      "captureState": [
+        { "what": "hero fade-carousel frozen at t=0 slide 1; slides 2–4 in DOM at opacity 0 (as on live)", "where": "section[data-section=hero]" },
+        { "what": "Research Highlights carousel static at t=0 with slick clones + opacity-0 prev/next, as captured", "where": "section[data-section=highlights-carousel]" },
+        { "what": "video rendered as poster + 0.5-black/gradient overlay + play glyph; empty div.cta (h20) below card kept as captured", "where": "section[data-section=mission-prose]" },
+        { "what": "scrollToTop 'Top' widget + chat-widget replica (pseudo-element text only)", "where": "main.mda-content, before #skip" }
+      ]
+    },
+    "360": {
+      "iterations": 2,
+      "result": {
+        "structuralRed": 1,
+        "structuralRedNote": "same rotating call-tracking footer tel link as 1440",
+        "visualFlags": "advisory only: same heading-pair + chrome mobile-logo flags (live renders 888x157 too); FLUSH-LEFT h3 at x-575/-271 = slick clones off-canvas, matching live's clone positions",
+        "pixelPct": 5.34,
+        "heightDelta": -1,
+        "pass": true
+      },
+      "justified": [
+        { "probe": "content-diff", "flag": "MISSING 'Call 1-877-632-6789' + EXTRA 'Call 1-877-790-1139'", "why": "rotating call-tracking number (same as 1440)" },
+        { "probe": "content-diff", "flag": "EXTRA body 'Previous'/'Next' x2", "why": "live mobile slick removes arrow buttons from DOM; desktop live has them (matched at 1440) — breakpoint-dependent slick DOM in a static recreation" },
+        { "probe": "content-diff", "flag": "MISSING BODY 'var utag_data=...'", "why": "live inline analytics script text" },
+        { "probe": "pixel-compare", "flag": "y 6000–6500 13.0%", "why": "live-capture artifact: stitcher's parked mouse hovered the full-width 'Research Seminars' link row in that chunk, baking a gray hover background into live.png; remainder of band is ~2px text offset" }
+      ],
+      "residuals": [
+        { "band": "y 3500–4000", "pct": 11.9, "cause": "ASTRO purple band 23px shorter: description wraps to 7 lines in local Univers vs 8 on live (identical breaks on lines 1–6; last-line word fits locally) — font-metric wrap; offset propagates through the pull-quote section and re-converges by the stats section", "flaggedFor": "delivery" },
+        { "band": "y 8000–8213", "pct": 13.7, "cause": "chrome mission band ~2px vertical offset + fixed widgets (Top / chat) at scroll-dependent positions in the stitch", "flaggedFor": "delivery" }
+      ],
+      "captureState": [
+        { "what": "mobile hero uses .carousel-body.mobile variants (short CTA clauses on slides 2/4, aria-label \"_self\") exactly as live DOM", "where": "section[data-section=hero]" },
+        { "what": "mobile highlights carousel frozen at live t=0 offset (translateX(-608px), 2 clones each side, 8 dots)", "where": "section[data-section=highlights-carousel]" }
+      ]
+    }
+  },
+  "portations": [],
+  "notes": [
+    "Pre-footer trio is PAGE-SPECIFIC and intentionally diverges from the chrome ENDCANCER fragment, mirroring the capture: no 'Help #EndCancer' title; cards = Give Now (blue, mda-icon-donate, 'Donate' + linkout) / Research Areas (black, mda-icon-genetictesting, 'Learn more' + arrow) / Subscribe (purple, mda-icon-email, 'Sign up' + arrow) with icon circles and plain text CTAs (cta-right-arrow), sitting at div#skip level after div.content, followed by empty div.section + div.iparys_inherited as captured.",
+    "Hero desktop CTAs carry the full sentence as link text with descriptive aria-labels; mobile bodies carry shortened clauses with aria-label '_self' — lifted verbatim from live DOM (curl inspection), which reconciled the page-JSON labels with the map rects.",
+    "No chrome-local patches were needed; chrome fragments included verbatim.",
+    "Stitch robustness: carousel/poster imgs carry intrinsic width/height attrs (+ CSS height:auto) and hero slide-1 backgrounds are <link rel=preload>'d — without these the stitcher measured a pre-image-load height and cropped the mission band (recorded false-measurement trap)."
+  ]
+}
