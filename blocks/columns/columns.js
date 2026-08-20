@@ -14,6 +14,13 @@
  *   image-left / image-right: cell = <p><img></p>, other cell = prose.
  *
  * "UT MD Anderson" is re-wrapped in span.nowrap (presentational, #39).
+ *
+ * wave-2 additions (STATIC/LISTING/FUNNEL cluster, log §12 pattern):
+ *   `promo` — about-md-anderson split bands: promo type ramp (36px title,
+ *   21px body) + the text CTA renders as a red arrow link (external →
+ *   linkout glyph); `center` centers the prose cell; `tinted` = gray
+ *   section ground (replica .highlight.apply). Index `badge` behavior
+ *   unchanged. Schema: stardust/eds-schema/about-md-anderson-html.json.
  */
 
 const NOWRAP_RE = /UT MD Anderson/;
@@ -62,21 +69,46 @@ function buildBadgeCell(cell) {
   return col;
 }
 
-function buildProseCell(cell, last) {
+function isExternal(a) {
+  try {
+    const u = new URL(a.getAttribute('href'), 'https://www.mdanderson.org/');
+    return u.hostname !== 'www.mdanderson.org';
+  } catch { return false; }
+}
+
+function buildProseCell(cell, last, arrow, nowrapHeadings) {
   const col = el('div', `col-double${last ? ' last' : ''} cell-m`);
   const rte = el('div', 'rte-container basic-content', col);
   [...cell.children].forEach((node) => {
     const copy = node.cloneNode(true);
     const a = copy.querySelector?.('a');
     if (copy.tagName === 'P' && a && copy.textContent.trim() === a.textContent.trim()) {
-      // text CTA — replica renders it inside span.cta (red underline link)
-      const span = el('span', 'cta');
       a.removeAttribute('class');
       wrapNowrap(a);
-      span.append(a);
       copy.textContent = '';
-      copy.append(span);
-    } else {
+      if (arrow) {
+        // wave-2 `promo` bands: red arrow CTA (replica cta-right-arrow)
+        const wrap = el('div', 'cta-wrapper cta-right-arrow-wrapper');
+        a.className = 'cta cta-right-arrow';
+        if (isExternal(a)) {
+          a.append(document.createTextNode(' '));
+          el('span', 'mda-icon-linkout', a).setAttribute('aria-hidden', 'true');
+        } else {
+          a.append(document.createTextNode(' '));
+          el('i', 'mdicon-arrow', a).setAttribute('aria-hidden', 'true');
+        }
+        wrap.append(a);
+        copy.append(wrap);
+      } else {
+        // text CTA — replica renders it inside span.cta (red underline link)
+        const span = el('span', 'cta');
+        span.append(a);
+        copy.append(span);
+      }
+    } else if (nowrapHeadings || !/^H[1-6]$/.test(copy.tagName)) {
+      // wave-2: generic-split headings keep one text node (their replica
+      // sections use &nbsp;, not a span); the index badge band's replica
+      // heading DOES carry span.nowrap, so the badge path keeps wrapping
       wrapNowrap(copy);
     }
     rte.append(copy);
@@ -97,16 +129,17 @@ export default async function decorate(block) {
     const badgeIdx = cells.findIndex((c) => c.querySelector('picture, img'));
     const proseIdx = badgeIdx === 0 ? 1 : 0;
     if (cells[badgeIdx]) table.append(buildBadgeCell(cells[badgeIdx]));
-    if (cells[proseIdx]) table.append(buildProseCell(cells[proseIdx], true));
+    if (cells[proseIdx]) table.append(buildProseCell(cells[proseIdx], true, false, true));
   } else {
     // generic image/prose split (image-left / image-right reusers)
+    const arrow = block.classList.contains('promo');
     cells.forEach((cell, i) => {
       const col = el('div', `col-double${i === cells.length - 1 ? ' last' : ''} cell-m`, table);
       if (cell.querySelector('picture, img')) {
         const media = el('div', 'module col-media', col);
         media.append(...cell.childNodes);
       } else {
-        col.append(buildProseCell(cell, false).firstElementChild);
+        col.append(buildProseCell(cell, false, arrow).firstElementChild);
       }
     });
   }

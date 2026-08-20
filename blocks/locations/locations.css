@@ -1,0 +1,200 @@
+/* locations — Houston-area location listing (our-locations replica CSS,
+   scoped under .locations). Featured campus card + MORE/LESS building
+   dropdown + sub-location card grid (one empty spacer card, replica parity). */
+
+main .section.locations-container > div {
+  max-width: var(--max-width);
+  padding: 140px 72px;
+}
+
+/* featured campus card */
+.locations .menu-container {
+  display: flex;
+  align-items: center;
+  height: 180px;
+  margin: 0 26px;
+  background: #f2f3f5;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.locations .mimage {
+  width: 180px;
+  height: 180px;
+  background: #d6d6d6;
+  flex: none;
+}
+
+.locations .mimage img {
+  display: block;
+  width: 181px;
+  height: 181px;
+  object-fit: cover;
+}
+
+.locations .maddress-container { margin-left: 20px; }
+
+.locations .maddress {
+  display: flex;
+  flex-direction: column;
+  font-size: 16.2px;
+  line-height: 21.06px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-accent);
+}
+
+.locations .maddress a { text-decoration: none; }
+
+.locations .mtitle {
+  font-size: 22.6667px;
+  line-height: 29.4667px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 700;
+  color: var(--color-fg);
+  margin: 0;
+}
+
+.locations .mtitle i.mdicon-arrow {
+  color: #c50026;
+  font-weight: 400;
+  line-height: 1em;
+  font-style: normal;
+}
+
+.locations i.mdicon-arrow::before {
+  font-family: MDIcons, sans-serif;
+  content: "\e608";
+}
+
+.locations a.mtext {
+  font-size: 17.82px;
+  line-height: 26.73px;
+  color: #c50026;
+  text-decoration: underline;
+}
+
+.locations .moreless {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.locations a.more-less-link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14.4px;
+  font-weight: 600;
+  line-height: 18.72px;
+  color: #c50026;
+  text-decoration: none;
+}
+
+/* MORE/LESS building dropdown */
+.locations .drop-down {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  margin: 0 26px;
+  background: #f2f3f5;
+  border-radius: 0 0 15px 15px;
+}
+
+.locations .drop-down.open { height: auto; }
+
+.locations .minfo-container {
+  background: var(--color-bg);
+  border-radius: 0 0 15px 15px;
+  padding: 20px;
+}
+
+.locations .minfo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.locations .mitem {
+  width: 48%;
+  padding: 0 20px 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 30.6px;
+}
+
+.locations .minfo-title {
+  font-family: var(--sans-font-family);
+  font-size: 14px;
+  line-height: 18.2px;
+  text-transform: uppercase;
+}
+
+.locations a.minfo-addr {
+  font-size: 14.4px;
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.locations .mseparator {
+  display: block;
+  height: 20px;
+  border-bottom: 1px solid #bcbcbc;
+}
+
+/* sub-location card grid */
+.locations .sub-container-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 6.5px 0;
+  padding: 10px 0;
+  row-gap: 20px;
+}
+
+.locations .sub-item {
+  display: flex;
+  align-items: center;
+  width: 603px;
+  height: 180px;
+  background: #f2f3f5;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.locations .sub-item:empty { height: 0; }
+
+@media (width <= 991px) {
+  main .section.locations-container > div { padding: 0; }
+
+  .locations .menu-container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 165px;
+    margin: 0 18px;
+    padding: 15px 20px 15px 40px;
+  }
+
+  .locations .mimage { display: none; }
+  .locations .maddress-container { margin-left: 0; }
+  .locations .maddress { font-size: 14.4px; line-height: 18.72px; }
+  .locations .maddress br { line-height: 14px; }
+  .locations .mtitle { font-size: 24.48px; line-height: 31.82px; }
+  .locations a.mtext { font-size: 15.84px; line-height: 23.76px; }
+  .locations .moreless { margin: 15px 0 0; }
+  .locations a.more-less-link { font-size: 12.8px; line-height: 16.64px; }
+  .locations .drop-down { margin: 0 18px; }
+  .locations a.minfo-addr { font-size: 12.8px; }
+  .locations .sub-container-main { margin: 10px 2px 0; }
+
+  .locations .sub-item {
+    width: 321px;
+    height: auto;
+    min-height: 129px;
+    padding: 15px 0 15px 40px;
+  }
+
+  .locations .sub-item:empty {
+    min-height: 0;
+    height: 0;
+    padding: 0;
+  }
+}

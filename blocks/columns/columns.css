@@ -158,3 +158,85 @@ main .section.columns-container > div {
 
   .columns .rte-container p { font-size: 16px; line-height: 20.8px; margin-bottom: 16px; }
 }
+
+/* ==========================================================================
+   wave-2 additions — STATIC/LISTING/FUNNEL cluster (log §12 pattern).
+   Variants added: `tinted` gray ground (replica .highlight.apply), `promo`
+   (about split bands: promo type ramp + red arrow CTA), `center` (centered
+   prose). Index `badge` behavior unchanged; regression roundtrip re-run
+   clean on index (owning page).
+   ========================================================================== */
+
+main .section:has(> div > .columns.tinted) {
+  background: var(--color-surface);
+}
+
+/* promo bands (about facts-history / careers / community-outreach) */
+.columns.promo .rte-container h2,
+.columns.promo .rte-container h3 {
+  font-size: 36px;
+  line-height: 46.8px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  color: var(--color-fg);
+  margin: 0;
+}
+
+.columns.promo .rte-container p {
+  font-size: 21px;
+  line-height: 27.3px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-gray-text);
+  margin: 21px 0;
+}
+
+.columns.promo a.cta.cta-right-arrow {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: var(--letter-spacing);
+  color: #c50026;
+  text-decoration: none;
+}
+
+.columns.promo a.cta.cta-right-arrow:hover { text-decoration: underline; }
+
+.columns.promo a.cta.cta-right-arrow i.mdicon-arrow {
+  display: inline;
+  position: relative;
+  font-size: 18px;
+  line-height: 18px;
+  margin-left: 15px;
+  color: #c50026;
+  font-style: normal;
+}
+
+.columns i.mdicon-arrow::before {
+  font-family: MDIcons, sans-serif;
+  content: "\e608";
+}
+
+.columns .mda-icon-linkout::before {
+  font-family: mda-icons, sans-serif;
+  font-style: normal;
+  content: "\e618";
+}
+
+.columns.center .rte-container { text-align: center; }
+.columns.center .rte-container .cta-wrapper { text-align: left; }
+
+@media (width <= 991px) {
+  .columns.promo .rte-container h2,
+  .columns.promo .rte-container h3 { font-size: 32px; line-height: 41.6px; margin: 0; }
+  .columns.promo .rte-container p { font-size: 16px; line-height: 20.8px; margin: 20px 0; }
+  .columns.promo a.cta.cta-right-arrow { font-size: 16px; line-height: 20.8px; }
+
+  .columns.promo a.cta.cta-right-arrow i.mdicon-arrow {
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 5px;
+  }
+}

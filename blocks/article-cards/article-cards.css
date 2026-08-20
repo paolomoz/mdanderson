@@ -229,3 +229,435 @@ main .section.article-cards-container:has(.article-cards.experts) > .default-con
     font-size: 16px;
   }
 }
+
+/* ==========================================================================
+   EDITORIAL-CLUSTER variant additions (cancerwise listing + article, wave 2).
+   `featured` / `rail-tab` / `topic` / `rail` variants + the tab UI the block
+   JS groups consecutive instances into. Scoped to the new variant classes
+   (and body.blog-listing for the section split), so grid/news/experts pages
+   are unaffected. Spec: stardust/prototypes/cancerwise-html-proposed.html
+   (.blog-summary.featured-article, .cw-tab-menu.stories, .cw-collection.tabbed)
+   and …insomnia…-proposed.html (.at-article-list).
+   ========================================================================== */
+
+/* closed topic → color map (§7 fingerprint: colored category tag; class =
+   slugified category). Tag text colors: */
+.article-cards .ac-cat { font-family: var(--sans-font-family); font-size: 16px; letter-spacing: var(--letter-spacing); line-height: 1.3; }
+.article-cards .ac-cat.cat-diagnosis-treatment { color: var(--color-blue-promo); }
+.article-cards .ac-cat.cat-patients-caregivers { color: var(--color-accent); }
+.article-cards .ac-cat.cat-healthy-living { color: var(--color-purple); }
+.article-cards .ac-cat.cat-research { color: #49823c; }
+.article-cards .ac-cat.cat-expert-insights { color: #cb6015; }
+.article-cards .ac-cat.cat-philanthropy { color: var(--color-blue-light); }
+
+/* --- featured split: featured card left, latest/top tabs right ----------- */
+body.blog-listing main .section:has(> div > .article-cards.featured) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 41.67%);
+  align-items: start;
+  padding: 25px 30px 0;
+}
+
+body.blog-listing main .section:has(> div > .article-cards.featured) > .article-cards-wrapper:has(.featured) {
+  grid-column: 1;
+  padding-right: 128px;
+}
+
+body.blog-listing main .section:has(> div > .article-cards.featured) > .article-cards-wrapper:has(.rail-tab) {
+  grid-column: 2;
+  padding-left: 16px;
+}
+
+.article-cards.featured .ac-container,
+.article-cards.rail-tab .ac-container,
+.article-cards.rail .ac-container {
+  display: block;
+}
+
+.article-cards.featured .ac-card {
+  border: none;
+  position: relative;
+  padding-bottom: 60px;
+  height: 100%;
+}
+
+.article-cards.featured .ac-card-link {
+  display: block;
+  text-decoration: none;
+}
+
+.article-cards.featured .ac-media img { width: 100%; height: auto; display: block; }
+
+.article-cards.featured .ac-title { padding: 0; }
+
+.article-cards.featured .ac-title h3 {
+  padding: 2em 0 0;
+  margin: 0;
+  color: var(--color-fg);
+  font-family: var(--body-font-semibold);
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+}
+
+.article-cards.featured .ac-text { padding: 1em 1em 1em 0; }
+
+.article-cards.featured .ac-summary {
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-fg);
+  margin: 1em 0;
+  max-height: none;
+  overflow: visible;
+}
+
+.article-cards.featured .ac-summary a:any-link { color: var(--color-accent); }
+
+.article-cards.featured .ac-cta {
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  margin: 0;
+}
+
+.article-cards.featured .ac-cta a {
+  color: var(--color-accent);
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.article-cards.featured .ac-cta .ac-arrow { margin-left: 14px; top: 2px; }
+
+/* --- tab UI (shared by rail-tab + topic groups) --------------------------- */
+.article-cards .ac-tab-menu {
+  display: flex;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 0;
+  gap: 5px;
+  list-style: none;
+}
+
+.article-cards .ac-tab { flex: 1; text-align: center; padding: 5px 0; }
+
+.article-cards .ac-tab button {
+  background: none;
+  border: 0;
+  padding: 0 0 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.article-cards .ac-panels { position: relative; }
+
+/* non-active panels park offscreen (not display:none) so the grouped block
+   elements keep a rendered box for the runtime/QA probes; visual parity with
+   the replica's display-gated panels is identical */
+.article-cards .ac-panel-hidden {
+  position: absolute;
+  left: -99999px;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+}
+
+/* rail-tab menu: Minion SmBd 24px, gray inactive, red underline active */
+.article-cards.rail-tab .ac-tab button {
+  font-family: var(--body-font-semibold);
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  color: var(--color-gray-dark);
+}
+
+.article-cards.rail-tab .ac-tab.ac-tab-active { border-bottom: 5px solid var(--color-accent); }
+
+.article-cards.rail-tab .ac-tab.ac-tab-active button {
+  color: var(--color-fg);
+  font-weight: 700;
+}
+
+/* rail-tab cards: stacked bordered rows w/ category tag */
+.article-cards.rail-tab .ac-card {
+  display: block;
+  border: none;
+  border-bottom: 1px solid var(--color-gray-light);
+  text-align: left;
+  margin-top: 5px;
+}
+
+.article-cards.rail-tab .ac-media img { width: 100%; height: auto; display: block; }
+
+.article-cards.rail-tab .ac-card-body { padding: 1em; }
+
+.article-cards.rail-tab .ac-title { padding: 0; }
+
+.article-cards.rail-tab .ac-title h3 {
+  margin: 0;
+  font-family: var(--body-font-semibold);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  color: var(--color-fg);
+}
+
+.article-cards.rail-tab .ac-title h3 a,
+.article-cards.topic .ac-title h3 a {
+  color: var(--color-fg);
+  text-decoration: none;
+}
+
+.article-cards.rail-tab .ac-title h3 a:hover,
+.article-cards.topic .ac-title h3 a:hover {
+  text-decoration: underline;
+}
+
+.article-cards.rail-tab .ac-media-link,
+.article-cards.topic .ac-media-link {
+  display: block;
+}
+
+/* --- topic tabs (Find stories by topic) ----------------------------------- */
+main .section.article-cards-container:has(> div > .article-cards.topic) {
+  padding: 0 32px 70px;
+}
+
+main .section.article-cards-container:has(> div > .article-cards.topic) > .default-content-wrapper h2 {
+  font-family: var(--heading-font-family);
+  font-size: 48px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  margin: 0 0 15px;
+  text-align: center;
+  color: var(--color-fg);
+}
+
+.article-cards.topic .ac-tab-menu { margin: 0; }
+
+.article-cards.topic .ac-tab {
+  background: var(--color-surface);
+  border-top: 5px solid var(--color-gray-light);
+}
+
+.article-cards.topic .ac-tab button {
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  color: var(--color-fg);
+}
+
+.article-cards.topic .ac-tab.ac-tab-active { background: var(--color-bg); }
+.article-cards.topic .ac-tab.ac-tab-active button { font-family: var(--sans-bold-font-family); }
+
+/* tab + card top-border topic colors (prototype .cw-tab-menu.cw-tabs li.*) */
+.article-cards.topic .ac-tab.cat-patients-caregivers,
+.article-cards.topic .ac-panel.cat-patients-caregivers .ac-card { border-top-color: var(--color-accent); }
+.article-cards.topic .ac-tab.cat-diagnosis-treatment,
+.article-cards.topic .ac-panel.cat-diagnosis-treatment .ac-card { border-top-color: var(--color-blue-promo); }
+.article-cards.topic .ac-tab.cat-research,
+.article-cards.topic .ac-panel.cat-research .ac-card { border-top-color: #529144; }
+.article-cards.topic .ac-tab.cat-expert-insights,
+.article-cards.topic .ac-panel.cat-expert-insights .ac-card { border-top-color: #cb6015; }
+.article-cards.topic .ac-tab.cat-healthy-living,
+.article-cards.topic .ac-panel.cat-healthy-living .ac-card { border-top-color: var(--color-purple); }
+.article-cards.topic .ac-tab.cat-philanthropy,
+.article-cards.topic .ac-panel.cat-philanthropy .ac-card { border-top-color: var(--color-blue-light); }
+
+.article-cards.topic .ac-headline {
+  font-size: 20px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  text-align: left;
+  padding: 0 50px;
+  margin: 20px 0;
+}
+
+.article-cards.topic .ac-container {
+  display: block;
+  columns: 4;
+  column-gap: 10px;
+  text-align: left;
+}
+
+.article-cards.topic .ac-card {
+  display: block;
+  height: 390px;
+  overflow: hidden;
+  break-inside: avoid;
+  margin: 0 0 10px;
+  border: 1px solid var(--color-gray-light);
+  border-top-width: 5px;
+  border-top-style: solid;
+  text-align: left;
+}
+
+.article-cards.topic .ac-media img { width: 100%; height: auto; display: block; }
+
+.article-cards.topic .ac-card-body { padding: 1em; }
+
+.article-cards.topic .ac-title { padding: 0; }
+
+.article-cards.topic .ac-title h3 {
+  margin: 0;
+  font-family: var(--body-font-semibold);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  color: var(--color-fg);
+}
+
+.article-cards.topic .ac-date {
+  font-size: 18px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  color: var(--color-fg);
+  margin: 1em 0 0;
+}
+
+/* panel CTA buttons ("Read more …" / "Subscribe …") below the card columns */
+.article-cards.topic .ac-panel-cta {
+  display: block;
+  background: var(--color-surface);
+  border: 1px solid var(--color-fg);
+  border-top-width: 5px;
+  border-top-style: solid;
+  padding: 5px 20px;
+  max-width: 50%;
+  min-width: 25%;
+  width: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 25px auto 0;
+  text-align: center;
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+}
+
+.article-cards.topic .ac-panel-cta a {
+  color: var(--color-fg);
+  text-decoration: none;
+}
+
+.article-cards.topic .ac-panel-cta a:hover { text-decoration: underline; }
+
+.article-cards.topic .ac-panel.cat-patients-caregivers .ac-panel-cta { border-top-color: var(--color-accent); }
+.article-cards.topic .ac-panel.cat-diagnosis-treatment .ac-panel-cta { border-top-color: var(--color-blue-promo); }
+.article-cards.topic .ac-panel.cat-research .ac-panel-cta { border-top-color: #529144; }
+.article-cards.topic .ac-panel.cat-expert-insights .ac-panel-cta { border-top-color: #cb6015; }
+.article-cards.topic .ac-panel.cat-healthy-living .ac-panel-cta { border-top-color: var(--color-purple); }
+.article-cards.topic .ac-panel.cat-philanthropy .ac-panel-cta { border-top-color: var(--color-blue-light); }
+
+/* --- rail (article "More stories from Cancerwise" thumb rows) ------------ */
+.article-cards.rail .ac-head {
+  font-family: var(--heading-font-family);
+  font-size: 24px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  font-weight: 700;
+  color: var(--color-fg);
+  margin: 0 0 15px;
+}
+
+.article-cards.rail .ac-card {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-bottom: 2px solid #e8e8e8;
+  padding: 10px 0;
+}
+
+.article-cards.rail a.ac-card:first-of-type { border-top: 2px solid #e8e8e8; }
+
+.article-cards.rail .ac-media { flex: 0 0 80px; margin-right: 10px; }
+
+.article-cards.rail .ac-media img {
+  display: block;
+  width: 80px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.article-cards.rail .ac-title { padding: 0; }
+
+.article-cards.rail .ac-title h3 {
+  font-family: var(--heading-font-family);
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 4px 0;
+  color: var(--color-fg);
+}
+
+/* --- mobile ---------------------------------------------------------------- */
+@media (width <= 767px) {
+  body.blog-listing main .section:has(> div > .article-cards.featured) {
+    display: block;
+    padding: 0;
+  }
+
+  body.blog-listing main .section:has(> div > .article-cards.featured) > .article-cards-wrapper:has(.featured) {
+    padding: 4em 16px 0;
+  }
+
+  body.blog-listing main .section:has(> div > .article-cards.featured) > .article-cards-wrapper:has(.rail-tab) {
+    padding: 35px 16px;
+  }
+
+  .article-cards.featured .ac-card { padding-bottom: 0; }
+  .article-cards.featured .ac-cta { position: static; padding-bottom: 35px; }
+  .article-cards.featured .ac-cta a { font-size: 16px; }
+
+  .article-cards.rail-tab .ac-tab button,
+  .article-cards.rail-tab .ac-tab.ac-tab-active button { font-size: 21px; font-weight: 400; }
+  .article-cards.rail-tab .ac-title h3 { font-size: 16px; }
+  .article-cards.rail-tab .ac-cat { font-size: 18px; }
+
+  main .section.article-cards-container:has(> div > .article-cards.topic) { padding: 35px 16px; }
+
+  main .section.article-cards-container:has(> div > .article-cards.topic) > .default-content-wrapper h2 {
+    font-size: 28px;
+  }
+
+  .article-cards.topic .ac-tab-menu {
+    display: block;
+    white-space: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    text-align: center;
+  }
+
+  .article-cards.topic .ac-tab {
+    display: inline-block;
+    padding: 5px;
+    margin-top: 5px;
+    border-top-width: 3px;
+  }
+
+  .article-cards.topic .ac-tab button { font-size: 16px; width: auto; }
+  .article-cards.topic .ac-headline { font-size: 16px; padding: 15px 0 20px; margin: 0; }
+  .article-cards.topic .ac-container { columns: 1; }
+  .article-cards.topic .ac-card { height: auto; padding-bottom: 35px; }
+  .article-cards.topic .ac-title h3 { font-size: 16px; }
+  .article-cards.topic .ac-date { font-size: 16px; }
+
+  .article-cards.topic .ac-panel-cta {
+    width: auto;
+    max-width: 100%;
+    padding: 5px 20px;
+  }
+}

@@ -398,3 +398,144 @@ runs exit 0 on the three pages.
   col-content-wrapper / highlight / global-footer) — the actual unit counts
   render (verified: closing 3, trio 3, duo 2, breadcrumbs 3, risk-list 11,
   exactly one h1 per page).
+
+## 13. Static/listing/funnel-cluster notes (about-md-anderson / our-locations / donors-volunteers, written 2026-08-20)
+
+Converted per §5: `locations` (our-locations houston-locations — reconstructive;
+3-cell location-card rows [image | name+url | address+maps-url] + 2-cell campus
+building rows [NAME | maps-url address] rendered into the featured card's
+MORE/LESS dropdown, wired in block JS; a trailing empty `.sub-item` spacer is
+BLOCK-emitted for replica grid parity — the fingerprint's image-less/empty
+sub-item is also tolerated on the decode side); `link-list (thumbs)` (donors
+gifts-at-work — icon-circle head row + subtext + image link rows + trailing
+list CTA). All per-block AND whole-page `block-roundtrip` runs exit 0 on the
+three pages (per-instance maps recorded in the runs; the prototypes carry no
+`data-section` on the EndCancer/newsletter chrome, mapped via `data-canon`).
+
+- **Reused-block additions (§12 pattern, marked banners in the owning files;
+  regression roundtrips re-run clean on index, prevention-screening, research,
+  patients-family, breast-cancer, breast-center, clinical-trials):**
+  - `cards.css`: `give` (donors stacked promo duo, purple/green), icon-circle
+    palettes `resources` (about orange/lightblue/green), `visitor`
+    (our-locations purple/red/blue-promo), `help` (donors orange/green/
+    lightblue), `quicklinks` (about rail blue-promo/orange/green); `tinted`
+    gray section ground via `:has()`; `icon rail` = about mission prose+rail
+    pairing (2fr/1fr section grid, gray rail); icon-card body/CTA typography
+    + wave-2 cicon codepoints + trio card dividers.
+  - `cards.js` (additive): a CTA is an anchor ALONE in its paragraph — body
+    paragraphs may carry inline links (our-locations Directions app-store
+    links) and are kept as body copy; whitespace separators in whole-card
+    anchors (title/body word separation for classification).
+  - `columns.js/.css` (additive): `promo` (about split bands — promo type
+    ramp + red arrow/linkout CTA), `center`, `tinted`; `wrapNowrap` no longer
+    wraps HEADINGS in the generic path (their replica headings use `&nbsp;`,
+    a span split the classified heading text) — the index `badge` path keeps
+    wrapping (its replica heading carries span.nowrap).
+  - `hero.css` (additive): `static:not(.compact)` = 276px band, 50% scrim,
+    mobile 100px/24px (about + our-locations full title-band heros).
+  - `link-list.js/.css` (additive): row thumbnails inside link anchors
+    (our-locations partner rows + thumbs), `thumbs` variant, `external` head
+    styling (cancer-network DC head), donors give-columns pairing
+    (`.section.cards-container.link-list-container` grid).
+  - `promo-band.js/.css` (additive): external CTAs render the linkout glyph +
+    a `.visuallyhidden` "Opens a new window" span (replica parity); `left` =
+    donors campaign-band full-bleed image + gradient scrim + overlaid panel.
+- **Media**: about + our-locations staged from local migrated assets
+  (`media-staging/{about,locations}/`); donors images downloaded with a
+  real-Chrome UA + referer (all 200 after following 301s) into
+  `media-staging/donors/`; the campaign `lvpimage...png` is actually JPEG —
+  staged as `campaign-1400.jpg`.
+- **Deliberate drops** (locked in §1/§6 or replica artifacts): More/Less
+  prose expanders (about mission, our-locations locations MORE/LESS is the
+  ONE kept expander — block-owned UI, authored content fully expanded);
+  donors innovation video machinery (play button, YouTube id, poster caption)
+  — §6.11 locks the section as `columns` image band, poster authored as the
+  image; the badge-band mobile crop (`badges-496`) — single desktop image
+  authored, scales down; sticky appt bar / chat / drawer replica widgets (§1);
+  urldefense wrappers on the two app-store links (unwrapped, §12 precedent).
+- **Known harness limits re-confirmed** (not defects): section-style classes
+  (dark/lede/bleed) are pipeline-rendered so the harness shows unstyled
+  bands; content.da.live images 401 anonymously; chrome header/footer render
+  empty (qa-gate ✗ ×2/page); the order-based schema unit matcher misaligns
+  (about `mission-vision-values` ≥4 vs 3 rail cards; donors help-trio/
+  highlight/global-footer shifted) — actual unit counts verified by DOM
+  probe: mission 5 uls/15 lis/3 h2s + 3 rail cards in a 2-col grid; donors
+  give 2 + thumbs 3 + trio 3 + closing 3; our-locations 7 sub-items (1 empty
+  spacer) + 7 dropdown buildings + 7 partner rows (4+3) + MORE/LESS drive
+  toggles; exactly one h1 per page.
+- **Location metadata contract**: NOT applied — our-locations is a listing
+  page; §9 locks the city/address/phone rows to production location DETAIL
+  pages only (none in the POC).
+
+## 13. Editorial-cluster notes (cancerwise listing + insomnia article, written 2026-08-20)
+
+Converted per §5/§6.9–6.10: `article-header` (new block, template-slotted, own
+share-modal machinery), `search (blog)`, `article-cards (featured / rail-tab /
+topic / rail)`, `cards (ribbon)`, `newsletter (focused)`, `section-nav (topics)`,
+`callout (boxed)` finalized to the prototype spec (red 1.5px border, 5px radius).
+All per-block AND whole-page `block-roundtrip` runs exit 0 on both pages;
+index / breast-cancer / clinical-trials regression roundtrips re-run clean
+after the shared-block edits (the index whole-page run shows a pre-existing
+default-selector artifact: `.banner` matches the contact-strip; with
+`--map banner=[data-section="alert-band"]` the banner closes clean).
+
+- **Tab grouping (rail-tab/topic)**: consecutive instances in one section are
+  grouped client-side — the FIRST instance builds the tab UI; each later
+  instance's whole BLOCK element becomes its panel and moves into the group
+  (element survives → runtime lifecycle + roundtrip tags intact); the emptied
+  wrapper is removed. Non-active panels park offscreen
+  (`position:absolute; visibility:hidden`), NOT `display:none`, so grouped
+  blocks keep a rendered box for the QA probes; visual parity identical.
+  First instance = active (§7). Topic panels carry the replica's two trailing
+  CTA buttons ("Read more …" / "Subscribe …") as link-only rows (no heading);
+  card rows are heading-bearing rows.
+- **Topic → color map** (closed set, §7): CSS classes are the CANONICAL slugs
+  (`diagnosis-treatment`, `patients-caregivers`, `healthy-living`, `research`,
+  `expert-insights`, `philanthropy` — matching the §9 category metadata /
+  helix-query contract), mapped from display text in article-cards.js
+  (`Patient & Caregiver Stories` → patients-caregivers).
+- **blog-article template layout** lives in blocks/section-nav/section-nav.css
+  (EDITORIAL banner, §12 pattern): 240px/1fr grid keyed off
+  `.section-nav-container`; the article-body section (the page's only
+  `.quote-container`) is a nested grid — article column left, rail (feature
+  image / quote / 3 story promos / focused signup) right, explicit grid-rows;
+  last two sections full width. blog-listing styles (cw-hero 125px wordmark,
+  `h1 em` red accent) ride blocks/search/search.css (`body.blog-listing`
+  scoped). Marked banners also appended to article-cards / cards / newsletter
+  CSS.
+- **Article promos**: authored as THREE single-card `cards (icon, rail, story)`
+  instances (§6.10 "singles" honored — also keeps the roundtrip's positional
+  pairing 1:1); circle colors ride the authored icon via
+  `:has(.cicon-*)` (green/blue/purple), dividers ride wrapper adjacency.
+- **"More stories from Cancerwise" head**: authored as DC (trailing h2 of the
+  prose wrapper); the `rail` variant REABSORBS it at decorate time so the
+  decorated DOM matches the replica's `.at-article-list` (h2 inside).
+- **Article metadata (B2 contract)**: author / publishdate 2026-06-08 (ISO) /
+  category `expert-insights` (editorial call — the piece is expert
+  side-effect-coping advice, same genre as the replica's expert-insights tab
+  items; no category is exposed in the capture) / image (DA feature URL) /
+  readtime 8 / reviewer / reviewdate, matching helix-query.yaml selectors.
+- **Media**: listing images staged from migrated assets (best-res 2x variant)
+  under media-staging/cancerwise/ (47 files incl. the og card); article feature
+  image + 5 more-stories thumbs downloaded (Chrome-UA + referer, all 200) to
+  media-staging/insomnia/ (6 files). No live-CDN URLs kept.
+- **Redirects**: /cancerwise.html → /cancerwise and the article's `.h00-…`
+  dotted leaf → /cancerwise/how-to-cope-with-insomnia-during-cancer-treatment
+  (Gate 3), recorded in stardust/redirects.tsv.
+- **Deliberate drops** (replica artifacts): scrollToTop / chat-widget /
+  mda-drawer replicas (§1); the Adobe-Target `<style>` text inside the Top
+  Stories panel (code-as-text, D15 — flagged 🟡 MISSING BODY in the roundtrip,
+  correct); the blog search's separate visually-hidden label ("Search UT MD
+  Anderson") — the input's aria-label derives from the placeholder; featured
+  summary links' target/rel wrappers stripped; the pull quote is hidden ≤991px
+  per the live 360 DOM (CSS only — content stays authored).
+- **Known harness limits hit** (same classes as §12, not defects): chrome
+  header/footer empty (qa-gate ✗ ×2/page); section-metadata (`tinted`) and the
+  body template classes are pipeline-rendered, so the harness shows the
+  listing hero unstyled and the article single-column; content.da.live images
+  401 anonymously; qa-gate's order-based schema matcher misaligns on the giant
+  blog-listing/blog-article schema sections — actual unit counts verified by
+  probe (featured 1, Latest 6 / Top 5, 6 topic tabs × 8 cards + 2 CTAs,
+  ribbon 3, closing 3, article: 94 topic-tree links, rail 5, promos 3,
+  exactly one h1 per page; tab switching + topics accordion driven and
+  asserted).

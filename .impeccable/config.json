@@ -131,17 +131,20 @@
       {
         "rule": "design-system-color",
         "value": "#529144",
-        "createdAt": "2026-08-19T18:36:08.177Z"
+        "createdAt": "2026-08-19T18:36:08.177Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
       },
       {
         "rule": "design-system-color",
         "value": "#3a3a3a",
-        "createdAt": "2026-08-19T18:36:08.206Z"
+        "createdAt": "2026-08-19T18:36:08.206Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
       },
       {
         "rule": "design-system-color",
         "value": "#c50026",
-        "createdAt": "2026-08-19T18:36:08.233Z"
+        "createdAt": "2026-08-19T18:36:08.233Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
       },
       {
         "rule": "design-system-color",
@@ -232,22 +235,26 @@
       {
         "rule": "design-system-color",
         "value": "#d8d9d7",
-        "createdAt": "2026-08-20T01:42:31.509Z"
+        "createdAt": "2026-08-20T01:42:31.509Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
       },
       {
         "rule": "design-system-color",
         "value": "#d7d7d7",
-        "createdAt": "2026-08-20T01:43:04.478Z"
+        "createdAt": "2026-08-20T01:43:04.478Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
       },
       {
         "rule": "design-system-color",
         "value": "#529214",
-        "createdAt": "2026-08-20T01:44:21.155Z"
+        "createdAt": "2026-08-20T01:44:21.155Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
       },
       {
         "rule": "design-system-color",
         "value": "#dddcd2",
-        "createdAt": "2026-08-20T01:45:50.212Z"
+        "createdAt": "2026-08-20T01:45:50.212Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
       },
       {
         "rule": "design-system-color",
@@ -260,6 +267,36 @@
         "value": "#666",
         "createdAt": "2026-08-20T02:21:03.332Z",
         "reason": "stardust:replica EDS conversion — canon-verbatim newsletter input-field value from mdanderson.org capture"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#d6d6d6",
+        "createdAt": "2026-08-20T03:59:13.169Z",
+        "reason": "stardust:replica EDS conversion — replica-lifted literal in locations block (capture fidelity)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#bcbcbc",
+        "createdAt": "2026-08-20T03:59:13.198Z",
+        "reason": "stardust:replica EDS conversion — replica-lifted literal in locations block (capture fidelity)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#49823c",
+        "createdAt": "2026-08-20T04:18:04.205Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#cb6015",
+        "createdAt": "2026-08-20T04:18:04.261Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#e8e8e8",
+        "createdAt": "2026-08-20T04:18:04.287Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
       }
     ]
   }

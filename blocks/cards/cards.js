@@ -21,6 +21,9 @@
  *   `screen` (purple/red), `closing` (red/black/blue), `prefooter`
  *   (blue/black/purple); icon trio circles cycle red/lightblue/green.
  *   `arrow`: CTAs render as arrow text links (external → linkout glyph).
+ *   EDITORIAL-cluster additions (wave 2): `ribbon` (cancerwise blue link
+ *   ribbon — one row per CTA: icon token + link; whole unit is the link),
+ *   `story` (article rail promo palette green/blue/purple).
  */
 
 function el(tag, cls, parent) {
@@ -67,9 +70,19 @@ function collectCard(row) {
   const iconSpan = row.querySelector('span.icon');
   const heading = row.querySelector('h1, h2, h3, h4, h5, h6');
   const headingA = heading ? heading.querySelector('a') : null;
-  const cta = [...row.querySelectorAll('a')].find((a) => !heading || !heading.contains(a));
+  // wave-2 STATIC/LISTING/FUNNEL addition: a CTA is an anchor ALONE in its
+  // paragraph (em/strong wrappers tolerated) — body paragraphs may carry
+  // INLINE links (our-locations Directions app-store links) and are kept
+  // as body copy instead of being mistaken for the CTA / dropped.
+  const ctaP = [...row.querySelectorAll('p')].find((p) => {
+    const a = p.querySelector('a');
+    return a && !(heading && heading.contains(a))
+      && p.textContent.trim() === a.textContent.trim();
+  });
+  const cta = ctaP ? ctaP.querySelector('a') : null;
   const bodyPs = [...row.querySelectorAll('p')]
-    .filter((p) => p.textContent.trim() && !p.querySelector('a, span.icon, picture, img') && !iconTokenOf(p));
+    .filter((p) => p.textContent.trim() && p !== ctaP
+      && !p.querySelector('span.icon, picture, img') && !iconTokenOf(p));
   let icon = iconSpan
     ? ([...iconSpan.classList].find((c) => c.startsWith('icon-') && c !== 'icon') || '').replace('icon-', '')
     : null;
@@ -85,11 +98,15 @@ function collectCard(row) {
 /** body paragraphs + CTA into a promo-text div (shared by both card kinds) */
 function fillPromoText(text, card, arrow) {
   if (card.bodyPs.length) {
+    // whitespace separator keeps whole-card anchor text word-separated
+    // (wave-2: title/body/CTA boundaries — invisible in rendering)
+    text.append(document.createTextNode(' '));
     const body = el('div', 'body promo-text-normal', text);
     card.bodyPs.forEach((p) => {
       const copy = p.cloneNode(true);
       wrapNowrap(copy);
       body.append(copy);
+      body.append(document.createTextNode(' '));
     });
   }
   if (card.cta) {
@@ -130,6 +147,30 @@ export default async function decorate(block) {
   const cards = [...block.children].map(collectCard).filter((c) => c.heading || c.cta);
   if (!cards.length) return;
 
+  // EDITORIAL-cluster addition: `ribbon` — blue band of icon CTA buttons
+  // (cancerwise link-ribbon). One authored row per CTA: :icon-x: + <a>.
+  if (block.classList.contains('ribbon')) {
+    const ribbon = el('div', 'link-ribbon');
+    cards.forEach((card, i) => {
+      if (!card.cta) return;
+      const blockDiv = el('div', `button-block btn-link-${i + 1}`, ribbon);
+      const a = document.createElement('a');
+      a.href = card.cta.getAttribute('href');
+      a.className = 'link-ribbon-cta';
+      const inner = el('div', 'cta-inner', a);
+      if (card.icon) {
+        const iconWrap = el('div', 'promo-icon icon-circle', inner);
+        const span = el('span', 'fa-lg', iconWrap);
+        el('i', `fa card-icon cicon-${card.icon}`, span).setAttribute('aria-hidden', 'true');
+      }
+      const text = el('div', 'text', inner);
+      text.textContent = card.cta.textContent.trim();
+      blockDiv.append(a);
+    });
+    block.replaceChildren(ribbon);
+    return;
+  }
+
   const table = el('div', 'table cards-table');
 
   cards.forEach((card) => {
@@ -160,6 +201,7 @@ export default async function decorate(block) {
       const header = el('div', 'promo-header', headWrap);
       const h = el('h3', 'title minion-heading heading-center', header);
       h.textContent = card.heading ? card.heading.textContent.trim() : '';
+      promo.append(document.createTextNode(' '));
       const text = el('div', 'promo-text', promo);
       fillPromoText(text, card, arrow);
       return;

@@ -102,6 +102,27 @@ export default async function decorate(block) {
     toggle.setAttribute('aria-expanded', String(open));
   });
 
+  // EDITORIAL-cluster addition (wave 2): `topics` — the article page's
+  // category/topic filter tree renders parent rows as collapsed accordions
+  // (replica data-interactive="accordion-collapsed"); a plus glyph marks
+  // each parent and click toggles the child list.
+  if (block.classList.contains('topics')) {
+    nav.classList.add('topics');
+    nav.querySelectorAll('ul.parent-level > li.parent-link > a').forEach((a) => {
+      const plus = document.createElement('i');
+      plus.className = 'sn-plus';
+      plus.setAttribute('aria-hidden', 'true');
+      a.append(plus);
+      a.setAttribute('aria-expanded', 'false');
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const li = a.closest('li');
+        const open = li.classList.toggle('open');
+        a.setAttribute('aria-expanded', String(open));
+      });
+    });
+  }
+
   block.replaceChildren(nav);
 
   if (promoParts.length) {

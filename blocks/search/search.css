@@ -91,3 +91,114 @@
     font-size: 16px;
   }
 }
+
+/* ==========================================================================
+   EDITORIAL-CLUSTER variant additions (cancerwise listing, wave 2).
+   `blog` search band + blog-listing template styles that ride this block's
+   CSS (the search block is the first block on the listing page). All rules
+   are .search.blog- or body.blog-listing-scoped; trials pages unaffected.
+   Spec: stardust/prototypes/cancerwise-html-proposed.html (.blog-search-*,
+   .cw-hero). Deploy consolidation may move these into a template sheet.
+   ========================================================================== */
+
+.search.blog .search-band {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  padding: 0 32px 20px;
+}
+
+.search.blog .search-form {
+  position: relative;
+  height: 50px;
+  gap: 0;
+  border: 1px solid var(--color-gray-text);
+}
+
+.search.blog .search-field {
+  height: 48px;
+  padding: 9px 10px 9px 40px;
+  background: var(--color-surface);
+  color: var(--color-gray-dark);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.search.blog .search-field::placeholder {
+  color: var(--color-gray-dark);
+  opacity: 1;
+}
+
+/* live parity: the submit is hidden; the red glyph marks the field */
+.search.blog .search-submit {
+  display: none;
+}
+
+.search.blog .search-form::before {
+  content: '\f002';
+  font-family: FontAwesome, sans-serif;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--color-accent);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* --- blog-listing template: cancerwise hero (DC + tinted, log §6.9) ------ */
+body.blog-listing main .section.tinted > .default-content-wrapper {
+  padding: 16px 32px 0;
+}
+
+body.blog-listing main .section.tinted h1 {
+  font-family: var(--heading-font-family);
+  font-size: 125px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  margin: 0;
+}
+
+body.blog-listing main .section.tinted h1 a:any-link {
+  color: var(--color-fg);
+  text-decoration: none;
+}
+
+body.blog-listing main .section.tinted h1 em {
+  font-style: normal;
+  color: var(--color-accent);
+}
+
+body.blog-listing main .section.tinted p {
+  width: 50%;
+  font-size: 18px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  margin: 0;
+  padding-bottom: 32px;
+}
+
+@media (width <= 767px) {
+  .search.blog .search-band {
+    padding: 0 16px 20px;
+  }
+
+  .search.blog .search-field,
+  .search.blog .search-field::placeholder {
+    font-size: 16px;
+  }
+
+  body.blog-listing main .section.tinted > .default-content-wrapper {
+    padding: 16px 16px 0;
+  }
+
+  body.blog-listing main .section.tinted h1 {
+    font-size: 65px;
+  }
+
+  body.blog-listing main .section.tinted p {
+    width: 100%;
+  }
+}

@@ -40,24 +40,50 @@
   margin: 0;
 }
 
-/* boxed variant (article key-takeaways): bordered white card, left-aligned */
+/* boxed variant (article key-takeaways): red-bordered white card, left-
+   aligned — EDITORIAL-cluster spec from the insomnia prototype .keytakeaway */
 .callout.boxed .callout-inner {
   background: var(--color-bg);
-  border: 2px solid var(--color-gray-light);
+  border: 1.5px solid var(--color-accent);
+  border-radius: 5px;
   text-align: left;
   align-items: flex-start;
   color: var(--color-fg);
+  padding: 25px 25px 20px;
+  margin: 0 0 20px;
+  min-height: 0;
+}
+
+.callout.boxed .callout-title {
+  font-family: var(--heading-font-family);
+  font-size: 24px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  font-weight: 700;
+  text-transform: none;
+  color: var(--color-fg);
+  padding: 0 11px;
 }
 
 .callout.boxed .callout-body {
   font-size: 18px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .callout.boxed .callout-body ul {
-  margin: 0;
-  padding-left: 22px;
+  margin: 0 0 1em;
+  padding-left: 25px;
+  list-style: disc;
 }
+
+.callout.boxed .callout-body ul li {
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: left;
+  margin: 0;
+}
+
+.callout.boxed .callout-body ul li + li { margin-top: 5px; }
 
 @media (width <= 991px) {
   .callout .callout-inner {
@@ -71,4 +97,10 @@
   .callout .callout-body {
     font-size: 16px;
   }
+}
+
+@media (width <= 991px) {
+  .callout.boxed .callout-inner { padding: 25px 25px 20px; }
+  .callout.boxed .callout-body { font-size: 16px; margin: 20px 0 0; }
+  .callout.boxed .callout-body ul li { font-size: 16px; }
 }

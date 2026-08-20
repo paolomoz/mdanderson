@@ -57,8 +57,20 @@ export default async function decorate(block) {
       const a = link.cloneNode(true);
       a.className = 'cta';
       a.append(document.createTextNode(''));
-      const i = el('i', 'teaser-more mdicon-arrow', a);
-      i.setAttribute('aria-hidden', 'true');
+      // wave-2 addition: external CTAs get the linkout glyph (donors
+      // campaign-band); internal keep the arrow (prevention unchanged)
+      let external = false;
+      try {
+        external = new URL(a.getAttribute('href'), 'https://www.mdanderson.org/').hostname !== 'www.mdanderson.org';
+      } catch { external = false; }
+      if (external) {
+        const s = el('span', 'mda-icon-linkout', a);
+        const hidden = el('span', 'visuallyhidden', s);
+        hidden.textContent = ' Opens a new window';
+      } else {
+        const i = el('i', 'teaser-more mdicon-arrow', a);
+        i.setAttribute('aria-hidden', 'true');
+      }
       info.append(a);
     }
   }

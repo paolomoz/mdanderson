@@ -7,6 +7,10 @@
  *
  * Authoring: one row, one cell: <p>Band title</p>
  * (fields First/Last/Email + "Get started" are fixed in the template).
+ *
+ * EDITORIAL-cluster addition (wave 2): `focused` — the article rail's green
+ * "Subscribe to Focused on Health" card. Authoring rows: title + intro copy;
+ * fields Email/First/Last + Submit are fixed in the template.
  */
 
 function el(tag, cls, parent) {
@@ -22,8 +26,49 @@ export default async function decorate(block) {
   // guard: variant classes of OTHER blocks may match this class token in
   // class-selector harnesses; only decorate our own block element
   if (block.dataset && block.dataset.blockName && block.dataset.blockName !== 'newsletter') return;
-  const title = (block.textContent || '').trim() || 'Subscribe to our Cancerwise newsletter';
   uid += 1;
+
+  // EDITORIAL-cluster addition: `focused` — green rail card (article page)
+  if (block.classList.contains('focused')) {
+    const cells = [...block.querySelectorAll(':scope > div > div')]
+      .map((c) => c.textContent.trim()).filter(Boolean);
+    const [fTitle = 'Subscribe to Focused on Health', intro = ''] = cells;
+    const card = el('div', 'focused-card');
+    const circle = el('div', 'focused-icon', card);
+    const stack = el('span', 'fa-stack fa-3x', circle);
+    el('i', 'fa nl-icon-email mda-stack-1x', stack).setAttribute('aria-hidden', 'true');
+    const h3 = el('h3', 'focused-title', card);
+    h3.textContent = fTitle;
+    const form = el('form', 'focused-form', card);
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      form.classList.add('submitted');
+    });
+    if (intro) {
+      const introDiv = el('div', 'focused-intro', form);
+      introDiv.textContent = intro;
+    }
+    [['Email', 'email'], ['First Name', 'text'], ['Last Name', 'text']].forEach(([lbl, type], i) => {
+      const field = el('div', 'focused-field', form);
+      const labelEl = el('label', '', field);
+      const id = `newsletter-${uid}-ff${i}`;
+      labelEl.setAttribute('for', id);
+      labelEl.textContent = `${lbl}*`;
+      const wrap = el('div', 'focused-input', field);
+      const input = el('input', '', wrap);
+      input.type = type;
+      input.id = id;
+      input.required = true;
+    });
+    const actions = el('div', 'focused-actions', form);
+    const submit = el('input', '', actions);
+    submit.type = 'submit';
+    submit.value = 'Submit';
+    block.replaceChildren(card);
+    return;
+  }
+
+  const title = (block.textContent || '').trim() || 'Subscribe to our Cancerwise newsletter';
 
   const band = el('div', 'subscribe-to');
   const inner = el('div', 'col-single inner', band);

@@ -403,3 +403,31 @@ main .section.hero-container > div {
     border-radius: 12px;
   }
 }
+
+/* ==========================================================================
+   wave-2 additions — STATIC/LISTING/FUNNEL cluster (log §12 pattern).
+   `static` (non-compact) = about / our-locations full title-band hero:
+   276px black band, 50% scrim, 72px title (compact keeps its 220px band).
+   Regression roundtrips re-run clean on index (owning page).
+   ========================================================================== */
+
+.hero.static:not(.compact) .carousel-image.media-image { height: 276px; }
+
+.hero.static:not(.compact) .carousel-image.mda-media-brightness::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  display: block;
+  inset: 0;
+  background: rgb(0 0 0 / 50%);
+}
+
+@media (width <= 991px) {
+  .hero.static:not(.compact) .carousel-image.media-image { height: 100px; }
+
+  .hero.static:not(.compact) .carousel-body.mobile .carousel-body-title {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0 35px;
+  }
+}

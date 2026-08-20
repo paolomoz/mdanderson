@@ -2,14 +2,15 @@
  * search — site search band; the form is BUILT IN BLOCK JS (interactive, never
  * authored — D15/#20). Template-slotted (#95). Converts on
  * patients-family/diagnosis-treatment/clinical-trials as `trials`; the
- * cancerwise cluster reuses it as `blog`.
- * Schema: stardust/eds-schema/patients-family-diagnosis-treatment-clinical-trials-html.json
- * (trial-search section).
+ * EDITORIAL cluster adds `blog` (cancerwise full-width band: no title/lede,
+ * placeholder + red search glyph, hidden submit — live parity).
+ * Schemas: stardust/eds-schema/patients-family-diagnosis-treatment-clinical-trials-html.json
+ * (trial-search section), cancerwise-html.json (blog-search section).
  *
  * Authoring rows (classified):
- *   - heading row (h2)              → band title ("Search Clinical Trials")
- *   - first link-free text row      → lede sentence
- *   - second link-free text row     → input placeholder (short)
+ *   - heading row (h2, optional)    → band title ("Search Clinical Trials")
+ *   - first link-free text row      → lede sentence (only when TWO text rows)
+ *   - last link-free text row       → input placeholder
  *   - link row                      → the search TARGET (D4 opaque URL token);
  *                                     the link's text is the submit label
  */
@@ -19,17 +20,21 @@ export default async function decorate(block) {
   const texts = [...block.querySelectorAll(':scope > div > div')]
     .filter((c) => !c.querySelector('a') && !c.querySelector('h1,h2,h3,h4,h5,h6') && c.textContent.trim())
     .map((c) => c.textContent.trim());
-  const lede = texts[0] || '';
-  const placeholder = texts[1] || texts[0] || 'Search';
+  // EDITORIAL-cluster addition (blog variant): a single text row is the
+  // placeholder, not a lede — trials (two rows) is unaffected
+  const lede = texts.length > 1 ? texts[0] : '';
+  const placeholder = (texts.length > 1 ? texts[1] : texts[0]) || 'Search';
   const target = link ? link.getAttribute('href') : '#';
   const submitLabel = link ? link.textContent.trim() : 'Search';
 
   const band = document.createElement('div');
   band.className = 'search-band';
 
-  const h = document.createElement('h2');
-  h.textContent = heading ? heading.textContent.trim() : '';
-  band.append(h);
+  if (heading) {
+    const h = document.createElement('h2');
+    h.textContent = heading.textContent.trim();
+    band.append(h);
+  }
 
   if (lede) {
     const p = document.createElement('p');

@@ -267,3 +267,235 @@ main .section.link-list-container:has(.link-list.boxed) > .default-content-wrapp
   .link-list a.text-border p.description { font-size: 16px; line-height: 20.8px; margin: 16px 0; }
   .link-list a.text-border i.teaser-more.mdicon-arrow { font-size: 16px; line-height: 16px; }
 }
+
+/* ==========================================================================
+   wave-2 additions — STATIC/LISTING/FUNNEL cluster (log §12 pattern):
+   row thumbnails (our-locations partner rows), `external` head styling
+   (our-locations cancer-network), `thumbs` variant (donors gifts-at-work).
+   Regression roundtrips re-run clean on prevention + research (owners).
+   ========================================================================== */
+
+/* row thumbnails inside link anchors (columns + thumbs) */
+.link-list .link-list-body a img {
+  float: left;
+  width: 20%;
+  margin-right: 15px;
+  height: auto;
+  display: block;
+}
+
+/* cancer-network head (DC above the `columns external` list):
+   Univers title + serif description + red arrow CTA (replica #cancer-network) */
+main .section.link-list-container:has(.link-list.external) > .default-content-wrapper {
+  padding: 95px 72px 0;
+}
+
+main .section.link-list-container:has(.link-list.external) > .default-content-wrapper h2 {
+  font-family: var(--sans-bold-font-family);
+  font-size: 29px;
+  line-height: 37.7px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  text-align: left;
+  margin: 0 0 20px;
+}
+
+main .section.link-list-container:has(.link-list.external) > .default-content-wrapper p {
+  font-size: 21px;
+  line-height: 27.3px;
+  letter-spacing: var(--letter-spacing);
+  margin: 0 0 21px;
+}
+
+main .section.link-list-container:has(.link-list.external) > .default-content-wrapper p:last-of-type {
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  line-height: 23.4px;
+  margin-bottom: 0;
+}
+
+main .section.link-list-container:has(.link-list.external) > .default-content-wrapper p:last-of-type a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+main .section.link-list-container:has(.link-list.external) > .default-content-wrapper p:last-of-type a::after {
+  font-family: MDIcons, sans-serif;
+  content: "\e608";
+  font-size: 18px;
+  line-height: 18px;
+  padding-left: 10px;
+}
+
+main .section.link-list-container:has(.link-list.external) > div:last-child {
+  padding-bottom: 70px;
+}
+
+/* external columns keep the replica's divided-column rhythm */
+.link-list.external .col-double.cell-m {
+  border-right: 1px solid var(--color-gray-light);
+  padding-right: 0;
+}
+
+.link-list.external .col-double.cell-m .link-list { margin-right: 73px; }
+.link-list.external .col-double.last.cell-m { padding-left: 72px; }
+.link-list.external h4.link-title { max-width: 87%; }
+
+/* ── thumbs (donors gifts-at-work; single column, icon heading) ──────────── */
+.link-list.thumbs .link-list-heading.icon-heading { text-align: center; }
+
+.link-list.thumbs .icon-circle .fa-stack.fa-3x {
+  display: inline-block;
+  width: 108px;
+  height: 108px;
+  line-height: 108px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  background: #529144; /* replica gifts-at-work green */
+}
+
+.link-list.thumbs .icon-circle .fa-stack.fa-3x .mda-stack-1x {
+  display: block;
+  font-size: 54px;
+  line-height: 108px;
+  color: var(--color-bg);
+  font-style: normal;
+}
+
+.link-list .llicon-gifts::before {
+  font-family: mda-icons, sans-serif;
+  content: "\e615";
+}
+
+.link-list.thumbs h3.icon-heading {
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 15px;
+}
+
+.link-list.thumbs p.subtext {
+  color: var(--color-gray-text);
+  margin: 0 0 9px;
+}
+
+.link-list.thumbs .link-list-cta {
+  margin-top: 25px;
+  height: 23px;
+}
+
+.link-list.thumbs .link-list-cta a {
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.link-list.thumbs .link-list-cta i.mdicon-arrow {
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  margin-left: 15px;
+  color: var(--color-accent);
+  font-style: normal;
+}
+
+/* donors give-columns pairing: cards (promo give) beside link-list (thumbs)
+   in ONE section — the section carries both container classes */
+main .section.cards-container.link-list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 18px;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 70px 72px;
+}
+
+main .section.cards-container.link-list-container > div {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+@media (width <= 991px) {
+  main .section.link-list-container:has(.link-list.external) > .default-content-wrapper {
+    padding: 18px 35px 0;
+  }
+
+  main .section.link-list-container:has(.link-list.external) > .default-content-wrapper h2 {
+    font-size: 21px;
+    line-height: 27.3px;
+    margin: 0;
+  }
+
+  main .section.link-list-container:has(.link-list.external) > .default-content-wrapper p {
+    font-size: 16px;
+    line-height: 20.8px;
+    margin: 17px 0 16px;
+  }
+
+  main .section.link-list-container:has(.link-list.external) > .default-content-wrapper p:last-of-type {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  main .section.link-list-container:has(.link-list.external) > div:last-child {
+    padding-bottom: 0;
+  }
+
+  .link-list.external .col-double.cell-m { border-right: 0; }
+  .link-list.external .col-double.cell-m .link-list { margin-right: 0; }
+  .link-list.external .col-double.last.cell-m { padding-left: 0; }
+  .link-list .link-list-body a img { display: none; }
+
+  .link-list.thumbs .link-list-heading.icon-heading {
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  .link-list.thumbs .icon-circle .fa-stack.fa-3x {
+    width: 88px;
+    height: 88px;
+    line-height: 88px;
+    margin-bottom: 0;
+  }
+
+  .link-list.thumbs .icon-circle .fa-stack.fa-3x .mda-stack-1x {
+    font-size: 48px;
+    line-height: 88px;
+  }
+
+  .link-list.thumbs h3.icon-heading {
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 15px;
+    margin: 0;
+  }
+
+  .link-list.thumbs .link-list-cta {
+    padding: 0 35px;
+    margin: 20px 0 10px;
+    height: 21px;
+  }
+
+  .link-list.thumbs .link-list-cta a { font-size: 16px; line-height: 20.8px; }
+  .link-list.thumbs .link-list-cta i.mdicon-arrow { font-size: 16px; margin-left: 5px; }
+
+  main .section.cards-container.link-list-container {
+    display: block;
+    padding: 0;
+  }
+
+  main .section.cards-container.link-list-container > .link-list-wrapper {
+    padding-top: 48px;
+  }
+}

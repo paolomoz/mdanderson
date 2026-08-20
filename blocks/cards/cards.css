@@ -302,3 +302,322 @@ main .section.cards-container:has(.cards.closing) > .cards-wrapper {
   .cards.icon .promo-icon .fa-stack { margin-bottom: 20px; }
   .cards.icon .promo-simple h3.title { font-size: 32px; line-height: 41.6px; }
 }
+
+/* ==========================================================================
+   wave-2 additions — STATIC/LISTING/FUNNEL cluster (log §12 pattern).
+   Variants added: `give` (donors stacked promo duo, purple/green),
+   icon-circle palettes `resources` (about trio), `visitor` (our-locations
+   trio), `help` (donors trio), `quicklinks` (about rail); `tinted` gray
+   ground; `icon rail` = about mission prose+rail pairing (body.static).
+   Regression roundtrips re-run clean on index (owning page).
+   ========================================================================== */
+
+/* gray section ground for per-instance tinted bands (replica .highlight.apply) */
+main .section:has(> div > .cards.tinted) {
+  background: var(--color-surface);
+}
+
+/* icon-card body + arrow CTA (replica .promo-simple; index trio is
+   title-only so this is additive there) */
+.cards.icon .promo-text .body {
+  font-size: 21px;
+  line-height: 27.3px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-gray-text);
+  margin: 20px 0;
+}
+
+.cards.icon .promo-text .body p { margin: 21px 0; }
+
+.cards.icon a.cta.cta-right-arrow,
+.cards.icon a.cta.cta-right-arrow:hover,
+.cards.icon a.cta.cta-right-arrow i.mdicon-arrow {
+  color: var(--color-accent);
+}
+
+/* inline links inside icon-card body copy (app-store links) */
+.cards.icon .promo-text .body a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* card dividers on the wave-2 trios (replica .cell-t.cell-border) */
+.cards.icon.trio.resources .card-col:not(:last-child),
+.cards.icon.trio.visitor .card-col:not(:last-child),
+.cards.icon.trio.help .card-col:not(:last-child) {
+  border-right: 1px solid var(--color-gray-light);
+}
+
+/* icon-circle palettes (closed set — D6; nth-child cycles, never authored) */
+.cards.icon.trio.resources .card-col:nth-child(1) .fa-stack { background: #e96613; }
+.cards.icon.trio.resources .card-col:nth-child(2) .fa-stack { background: var(--color-blue-light); }
+.cards.icon.trio.resources .card-col:nth-child(3) .fa-stack { background: var(--color-green); }
+.cards.icon.trio.visitor .card-col:nth-child(1) .fa-stack { background: var(--color-purple); }
+.cards.icon.trio.visitor .card-col:nth-child(2) .fa-stack { background: var(--color-accent); }
+.cards.icon.trio.visitor .card-col:nth-child(3) .fa-stack { background: var(--color-blue-promo); }
+.cards.icon.trio.help .card-col:nth-child(1) .fa-stack { background: #e96613; }
+.cards.icon.trio.help .card-col:nth-child(2) .fa-stack { background: var(--color-green); }
+.cards.icon.trio.help .card-col:nth-child(3) .fa-stack { background: var(--color-blue-light); }
+
+/* icon-font codepoints for the wave-2 pages' authored icons */
+.cards .cicon-raise-money::before { content: "\e644"; }
+.cards .cicon-tips::before { content: "\e624"; }
+.cards .cicon-corporate-engagements::before { content: "\e63c"; }
+.cards .cicon-flag::before { content: "\e62c"; }
+.cards .cicon-legal-financial::before { content: "\e63f"; }
+.cards .cicon-recommendedpages::before { content: "\e631"; }
+.cards .cicon-directions-fill::before { content: "\e60c"; }
+.cards .cicon-wayfinding::before { content: "\e60e"; }
+.cards .cicon-cadaceus::before { content: "\e62e"; }
+.cards .cicon-international::before { content: "\e616"; }
+
+/* ── give: donors stacked promo duo (left column of give-columns) ────────── */
+.cards.give .cards-table { display: block; }
+.cards.give .card-col { display: block; width: auto; padding: 0; }
+.cards.give .card-col + .card-col { padding-top: 35px; }
+.cards.give .card-col:nth-child(1) .promo { background: var(--color-purple); }
+.cards.give .card-col:nth-child(2) .promo { background: var(--color-green); }
+
+/* ── icon rail: about quick-links rail beside the mission prose (log §4) ── */
+main .section.cards-container:has(> div > .cards.icon.rail) {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 70px 72px;
+}
+
+main .section.cards-container:has(> div > .cards.icon.rail) > div {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+/* the paired DC is the mission prose, not a centered section head */
+main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper {
+  text-align: left;
+  padding: 0 36px 0 0;
+}
+
+main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper h2 {
+  font-size: 27px;
+  line-height: 35.1px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 700;
+  text-align: left;
+  color: var(--color-fg);
+  margin: 22.41px 0;
+}
+
+main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper p {
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: var(--letter-spacing);
+  color: #3a3a3a;
+  margin: 0 0 18px;
+}
+
+main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper ul {
+  list-style: disc;
+  margin: 0 0 18px;
+  padding: 0 0 0 40px;
+}
+
+main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper ul li {
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: var(--letter-spacing);
+  color: #3a3a3a;
+}
+
+main .section.cards-container:has(> div > .cards.icon.rail) > .cards-wrapper {
+  background: var(--color-surface);
+  padding: 20px 0 50px;
+}
+
+.cards.icon.rail .cards-table { display: block; }
+.cards.icon.rail .card-col { display: block; width: auto; margin: 0; }
+.cards.icon.rail .card-col + .card-col { padding-top: 35px; }
+.cards.icon.rail .promo-simple { padding: 35px 18px 0; }
+.cards.icon.rail .card-col > .module > a { color: inherit; text-decoration: none; }
+
+.cards.icon.rail.quicklinks .card-col:nth-child(1) .fa-stack { background: var(--color-blue-promo); }
+.cards.icon.rail.quicklinks .card-col:nth-child(2) .fa-stack { background: #e96613; }
+.cards.icon.rail.quicklinks .card-col:nth-child(3) .fa-stack { background: var(--color-green); }
+
+@media (width <= 991px) {
+  main .section.cards-container:has(> div > .cards.icon.rail) {
+    display: block;
+    padding: 0;
+  }
+
+  main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper {
+    padding: 35px;
+  }
+
+  main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper h2 {
+    font-size: 24px;
+    line-height: 31.2px;
+    margin: 20px 0;
+  }
+
+  main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper p,
+  main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper ul li {
+    font-size: 16px;
+    line-height: 20.8px;
+  }
+
+  main .section.cards-container:has(> div > .cards.icon.rail) > .cards-wrapper {
+    padding: 48px 0 0;
+  }
+
+  .cards.icon.rail .card-col + .card-col { padding-top: 0; }
+  .cards.icon.rail .promo-simple { padding: 35px 16px; }
+  .cards.give .card-col + .card-col { padding-top: 48px; }
+}
+
+/* ==========================================================================
+   EDITORIAL-CLUSTER variant additions (cancerwise listing + article, wave 2).
+   `ribbon` (blue link ribbon) + `story` rail promo palette + the article's
+   icon codepoints. Scoped to the new variant classes only.
+   Spec: stardust/prototypes/cancerwise-html-proposed.html (.link-ribbon) and
+   …insomnia…-proposed.html (.promo.promo-simple / .promo-icon-*).
+   ========================================================================== */
+
+.cards .cicon-appointments::before { content: '\e601'; }
+.cards .cicon-newsletters::before { content: '\e63e'; }
+.cards .cicon-podcast::before { content: '\e635'; }
+.cards .cicon-sharestory::before { content: '\e620'; }
+
+/* --- ribbon: blue band of 3 icon CTAs ------------------------------------ */
+main .section.cards-container:has(> div > .cards.ribbon) > div {
+  padding: 0 32px 50px;
+}
+
+.cards.ribbon .link-ribbon {
+  background: var(--color-blue);
+  color: var(--color-bg);
+  text-align: center;
+  padding: 30px 16px;
+  font-family: var(--body-font-semibold);
+  font-size: 21px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+}
+
+.cards.ribbon .button-block {
+  display: inline-block;
+  width: 32%;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.cards.ribbon a.link-ribbon-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--color-bg);
+  text-align: left;
+  text-decoration: none;
+}
+
+.cards.ribbon .cta-inner { display: flex; }
+
+.cards.ribbon .promo-icon {
+  margin-right: 1em;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: auto;
+}
+
+.cards.ribbon .promo-icon .fa-lg { display: block; font-size: 28px; line-height: 21px; }
+
+.cards.ribbon .promo-icon i {
+  display: inline-block;
+  font-size: 28px;
+  line-height: 28px;
+  color: var(--color-bg);
+  font-style: normal;
+}
+
+.cards.ribbon .text { display: block; text-align: left; word-break: break-word; }
+
+/* --- story: article rail icon promos (green/blue/purple circle cycle) ---- */
+.cards.rail.story .promo,
+.cards.rail.story .promo.promo-simple {
+  border-bottom: none;
+  text-align: center;
+  padding: 35px 0 36px;
+  margin: 0 auto;
+  color: var(--color-fg);
+}
+
+/* the article authors THREE single-card story instances (log §6.10) —
+   the divider rides wrapper adjacency, the circle color rides the authored
+   icon (an nth-child cycle cannot span separate instances) */
+.cards.rail.story .card-col + .card-col .promo,
+.cards-wrapper + .cards-wrapper .cards.rail.story .promo {
+  border-top: 1px solid #d7d7d7;
+  padding-top: 34px;
+}
+
+.cards.rail.story .promo-icon { height: auto; margin-bottom: 20px; line-height: 0; }
+
+.cards.rail.story .promo-icon .fa-stack {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  font-size: 54px;
+  line-height: 108px;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+
+.cards.rail.story .fa-stack:has(.cicon-sharestory) { background: var(--color-green); }
+.cards.rail.story .fa-stack:has(.cicon-appointments) { background: var(--color-blue-promo); }
+.cards.rail.story .fa-stack:has(.cicon-screenings) { background: var(--color-purple); }
+
+.cards.rail.story .promo-header { margin-top: 0; padding: 0; color: var(--color-fg); }
+
+.cards.rail.story h3.title {
+  font-family: var(--heading-font-family);
+  font-size: 36px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  font-weight: 400;
+  margin: 0;
+  color: var(--color-fg);
+}
+
+@media (width <= 767px) {
+  main .section.cards-container:has(> div > .cards.ribbon) > div { padding: 0 16px 50px; }
+
+  .cards.ribbon .button-block {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  .cards.ribbon a.link-ribbon-cta { display: flex; justify-content: center; width: 100%; }
+  .cards.ribbon .cta-inner { align-items: flex-start; text-align: left; max-width: 250px; width: 100%; }
+  .cards.ribbon .promo-icon .fa-lg { font-size: 24px; line-height: 24px; }
+  .cards.ribbon .promo-icon i { font-size: 24px; line-height: 24px; }
+
+  .cards.rail.story .promo,
+  .cards.rail.story .promo.promo-simple {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 35px;
+  }
+
+  .cards.rail.story .card-col + .card-col .promo,
+  .cards-wrapper + .cards-wrapper .cards.rail.story .promo { border-top: 0; padding-top: 15px; }
+  .cards.rail.story .promo-icon { margin-bottom: 0; }
+  .cards.rail.story .promo-icon .fa-stack { width: 88px; height: 88px; font-size: 48px; line-height: 88px; }
+  .cards.rail.story .promo-icon .mda-stack-1x { font-size: 48px; line-height: 88px; }
+  .cards.rail.story h3.title { font-size: 32px; }
+}
