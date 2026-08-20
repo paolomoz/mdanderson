@@ -26,3 +26,15 @@
 {"t":"2026-08-20T04:31:59.846Z","path":"/patients-family","step":"verify","ok":true}
 {"t":"2026-08-20T04:32:02.544Z","path":"/prevention-screening","step":"verify","ok":true}
 {"t":"2026-08-20T04:32:04.220Z","path":"/research","step":"verify","ok":true}
+{"t":"2026-08-20T19:05:46.512Z","path":"/about-md-anderson","step":"verify","ok":true}
+{"t":"2026-08-20T19:05:46.522Z","path":"/about-md-anderson/our-locations","step":"verify","ok":true}
+{"t":"2026-08-20T19:05:46.643Z","path":"/cancer-types/breast-cancer","step":"verify","ok":true}
+{"t":"2026-08-20T19:05:47.052Z","path":"/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment","step":"verify","ok":true}
+{"t":"2026-08-20T19:05:52.684Z","path":"/donors-volunteers","step":"verify","ok":true}
+{"t":"2026-08-20T19:05:52.776Z","path":"/patients-family/diagnosis-treatment/care-centers-clinics/breast-center","step":"verify","ok":true}
+{"t":"2026-08-20T19:05:53.758Z","path":"/index","step":"verify","ok":true}
+{"t":"2026-08-20T19:05:53.898Z","path":"/cancerwise","step":"verify","ok":true}
+{"t":"2026-08-20T19:05:59.165Z","path":"/prevention-screening","step":"verify","ok":true}
+{"t":"2026-08-20T19:05:59.555Z","path":"/patients-family/diagnosis-treatment/clinical-trials","step":"verify","ok":true}
+{"t":"2026-08-20T19:05:59.634Z","path":"/patients-family","step":"verify","ok":true}
+{"t":"2026-08-20T19:06:00.165Z","path":"/research","step":"verify","ok":true}
