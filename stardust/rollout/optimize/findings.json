@@ -1,7 +1,7 @@
 {
   "_provenance": {
-    "writtenBy": "stardust:rollout/optimize",
-    "writtenAt": "2026-08-20T05:29:21.012Z",
+    "writtenBy": "stardust:rollout/findings",
+    "writtenAt": "2026-08-20T06:34:16.721Z",
     "stardustVersion": "0.0.0"
   },
   "runs": [
@@ -81,7 +81,7 @@
       "evidence": "Block variant class 'icon' on .cards collides with the global .icon utility (styles/styles.css:381 display:inline-block;24x24). Block box computes 24x24; children overflow. Visible: letter-stacked rail text on /about-md-anderson + insomnia article; heading/band overlaps on /about-md-anderson/our-locations, /cancer-types/breast-cancer, /donors-volunteers; card-col overflow to 1679px at 1440; trio cards clipped at 390.",
       "fixability": "platform-migration",
       "recommendedMove": "Rename the variant (e.g. .cards.icon -> .cards.icon-cards) in blocks/cards/cards.css lines 201-206 AND in the 8 content instances, then republish; or scope the global utility to span.icon. Requires a code-branch commit — out of POC no-commit constraint.",
-      "status": "accepted",
+      "status": "fixed",
       "autofix": {
         "available": false,
         "target": "aem-eds",
@@ -92,7 +92,11 @@
         "at": null,
         "detail": null
       },
-      "resolvedBy": null,
+      "resolvedBy": {
+        "phase": "rollout",
+        "at": "2026-08-20T06:34:16.692Z",
+        "note": "Scoped the boilerplate .icon utility to span.icon/span.icon img (decorateIcons output) in styles/styles.css so .cards.icon block variants no longer collapse to 24x24. Also fixed three residues the collision masked: .cards.icon.trio cols now flex-shrink (was 1679px overflow on breast-cancer/clinical-trials), trailing full-width bands rule out-specifies the interior/blog column-2 rule (newsletter form ~80px bleed on insomnia/breast-center), mobile icon cards stack (51px bleed at 390), carousel gutter clipped at mobile (+12px). Re-shot all 12 pages at 1440+390: zero horizontal overflow, rails/trios/bands render per replica."
+      },
       "firstSeenRun": "recorded"
     },
     {
@@ -409,7 +413,7 @@
       "evidence": "~20 icon tokens reference /icons/<name>.svg files never added to the code repo (publications, donate, raise-money, tips, flag, sharestory, appointments, wayfinding, directions-fill, legal-financial, recommendedpages, corporate-engagements, gifts, ...). They render as broken-image placeholder boxes up to 417px (visible on index, patients-family, donors, about, insomnia).",
       "fixability": "platform-migration",
       "recommendedMove": "Add the missing SVGs to icons/ (or hide .cards .card-media img in cards.css since the visible glyphs come from the mda-icons font). Requires a code-branch commit.",
-      "status": "accepted",
+      "status": "fixed",
       "autofix": {
         "available": false,
         "target": "aem-eds",
@@ -420,7 +424,11 @@
         "at": null,
         "detail": null
       },
-      "resolvedBy": null,
+      "resolvedBy": {
+        "phase": "rollout",
+        "at": "2026-08-20T06:34:16.721Z",
+        "note": "Extracted all 23 missing icon SVGs from fonts/mda-icons.ttf via fontTools (same 1000x1000 viewBox / #fff fill / 560px fit-box conventions as the existing 10): appointments cadaceus cancertypes corporate-engagements directions-fill donate drop email flag genetictesting international legal-financial newsletters planning podcast powerinnumbers publications raise-money recommendedpages sharestory tips user wayfinding. Every :name: token in content/ now resolves (33/33); broken-imgs=0 on all 12 pages at 1440."
+      },
       "firstSeenRun": "recorded"
     },
     {

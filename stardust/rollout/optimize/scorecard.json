@@ -1,12 +1,12 @@
 {
   "_provenance": {
-    "writtenBy": "stardust:rollout/optimize",
-    "writtenAt": "2026-08-20T05:29:21.012Z",
+    "writtenBy": "stardust:rollout/findings",
+    "writtenAt": "2026-08-20T06:34:16.721Z",
     "stardustVersion": "0.0.0"
   },
   "current": {
     "runId": "run-2",
-    "at": "2026-08-20T05:29:21.012Z",
+    "at": "2026-08-20T06:34:16.721Z",
     "overall": 72,
     "dimensions": {
       "brand-tensions": null,
@@ -23,8 +23,8 @@
       "P3": 1
     },
     "fixed": {
-      "P1": 0,
-      "P2": 2,
+      "P1": 1,
+      "P2": 3,
       "P3": 0
     }
   },
