@@ -1,0 +1,876 @@
+{
+  "source": "http://localhost:8791/index-proposed.html",
+  "width": 1280,
+  "profile": "eds",
+  "sections": [
+    {
+      "section": "hero",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "#1 in the nation for cancer care"
+        },
+        {
+          "role": "cta",
+          "order": 1,
+          "text": "Learn more about this ranking",
+          "href": "https://www.mdanderson.org/newsroom/ut-md-anderson-ranks-number-one-in-the-nation-for-cancer-care-for-12th-year-in-a-row.h00-159857712.html"
+        },
+        {
+          "role": "body",
+          "order": 2,
+          "text": "#1 in the nation for cancer care"
+        },
+        {
+          "role": "cta",
+          "order": 3,
+          "text": "Learn more aboutthis ranking",
+          "href": "https://www.mdanderson.org/newsroom/ut-md-anderson-ranks-number-one-in-the-nation-for-cancer-care-for-12th-year-in-a-row.h00-159857712.html"
+        },
+        {
+          "role": "cta",
+          "order": 4,
+          "text": "Scroll Ahead",
+          "href": "#"
+        }
+      ],
+      "imgCount": 0,
+      "repeats": [
+        {
+          "unitSelector": "DIV.carousel-body",
+          "count": 2,
+          "unit": {
+            "headings": 1,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 2
+          },
+          "uniform": false
+        }
+      ]
+    },
+    {
+      "section": "contact-strip",
+      "items": [
+        {
+          "role": "body",
+          "order": 0,
+          "text": "Call us at or"
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "We're here for you."
+        },
+        {
+          "role": "cta",
+          "order": 2,
+          "text": "1-877-790-1139",
+          "href": "tel:+18777901139"
+        },
+        {
+          "role": "cta",
+          "order": 3,
+          "text": "request an appointment online.",
+          "href": "/about-md-anderson/contact-us/askmdanderson/appointments.html"
+        }
+      ],
+      "imgCount": 0,
+      "repeats": []
+    },
+    {
+      "section": "alert-band",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Donate blood. Save a life."
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "Family members, friends and the community are encouraged to donate whole blood and platelets for patients."
+        },
+        {
+          "role": "body",
+          "order": 2,
+          "text": "UT MD Anderson"
+        },
+        {
+          "role": "cta",
+          "order": 3,
+          "text": "Schedule a blood donation appointment Opens a new window",
+          "href": "https://www.mdandersonbloodbank.org/"
+        }
+      ],
+      "imgCount": 0,
+      "repeats": []
+    },
+    {
+      "section": "icon-wells",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Search Cancer Types"
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "Search by type of cancer or condition"
+        },
+        {
+          "role": "cta",
+          "order": 2,
+          "text": "Browse cancer types",
+          "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/cancer-types.html"
+        },
+        {
+          "role": "heading",
+          "order": 3,
+          "text": "Search Clinical Trials"
+        },
+        {
+          "role": "body",
+          "order": 4,
+          "text": "Search Clinical Trials"
+        },
+        {
+          "role": "cta",
+          "order": 5,
+          "text": "Browse clinical trials",
+          "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+        },
+        {
+          "role": "heading",
+          "order": 6,
+          "text": "Plan Your Care"
+        },
+        {
+          "role": "cta",
+          "order": 7,
+          "text": "Prepare for your first visit We know getting ready to visit UT MD Anderson may be stressful, so we've created a list to make things easier for you.",
+          "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/prepare-for-your-first-visit.html"
+        },
+        {
+          "role": "cta",
+          "order": 8,
+          "text": "Check Insurance Coverage View our list of accepted health insurance plans to determine if you are covered.",
+          "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/insurance-plans.html"
+        },
+        {
+          "role": "cta",
+          "order": 9,
+          "text": "Plan Travel and Lodging We can arrange domestic and international travel to and from Houston and help you find nearby accommodations.",
+          "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/traveling-to-houston.html"
+        },
+        {
+          "role": "cta",
+          "order": 10,
+          "text": "View planning resources",
+          "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care.html"
+        }
+      ],
+      "imgCount": 0,
+      "repeats": [
+        {
+          "unitSelector": "DIV.col-double",
+          "count": 2,
+          "unit": {
+            "headings": 2,
+            "ctas": 2,
+            "imgs": 0,
+            "textRuns": 6
+          },
+          "uniform": false
+        }
+      ]
+    },
+    {
+      "section": "award-why-choose",
+      "items": [
+        {
+          "role": "body",
+          "order": 0,
+          "text": "15"
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "Years"
+        },
+        {
+          "role": "body",
+          "order": 2,
+          "text": "Best Hospitals in Cancer Care"
+        },
+        {
+          "role": "body",
+          "order": 3,
+          "text": "U.S. News & World Report"
+        },
+        {
+          "role": "heading",
+          "order": 4,
+          "text": "Why Choose"
+        },
+        {
+          "role": "body",
+          "order": 5,
+          "text": "UT MD Anderson"
+        },
+        {
+          "role": "body",
+          "order": 6,
+          "text": "Every day, people like you choose for cancer treatment. But it’s more than our decades of experience, top national rankings and leadership in cancer prevention that set us apart. It goes beyond our groundbreaking research and innovative clinical care that provide new therapies years before they become standard in the community. It’s because we put all of our focus on you."
+        },
+        {
+          "role": "body",
+          "order": 7,
+          "text": "UT MD Anderson"
+        },
+        {
+          "role": "cta",
+          "order": 8,
+          "text": "Learn more about UT MD Anderson",
+          "href": "/patients-family/becoming-our-patient/why-md-anderson.html"
+        }
+      ],
+      "imgCount": 1,
+      "repeats": [
+        {
+          "unitSelector": "DIV.col-double",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 4
+          },
+          "uniform": false
+        }
+      ]
+    },
+    {
+      "section": "video-feature",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Father inspires daughter’s career path at UT MD Anderson"
+        }
+      ],
+      "imgCount": 1,
+      "repeats": []
+    },
+    {
+      "section": "highlights-carousel",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "UT MD Anderson Highlights"
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "Previous"
+        },
+        {
+          "role": "body",
+          "order": 2,
+          "text": "Support our effort to transform bold ideas into real impact"
+        },
+        {
+          "role": "body",
+          "order": 3,
+          "text": "What to know before deciding to enroll"
+        },
+        {
+          "role": "body",
+          "order": 4,
+          "text": "UT MD Anderson earns U.S. News & World Report's top ranking"
+        },
+        {
+          "role": "body",
+          "order": 5,
+          "text": "What six survivors noticed before diagnosis"
+        },
+        {
+          "role": "body",
+          "order": 6,
+          "text": "One caregiver's reasons for giving back"
+        },
+        {
+          "role": "body",
+          "order": 7,
+          "text": "Podcast: Preventing skin cancer with UPF clothing"
+        },
+        {
+          "role": "body",
+          "order": 8,
+          "text": "Breaking through isolation after a cancer diagnosis"
+        },
+        {
+          "role": "body",
+          "order": 9,
+          "text": "Ways to improve sleep during treatment"
+        },
+        {
+          "role": "body",
+          "order": 10,
+          "text": "Support our effort to transform bold ideas into real impact"
+        },
+        {
+          "role": "body",
+          "order": 11,
+          "text": "What to know before deciding to enroll"
+        },
+        {
+          "role": "body",
+          "order": 12,
+          "text": "UT MD Anderson earns U.S. News & World Report's top ranking"
+        },
+        {
+          "role": "body",
+          "order": 13,
+          "text": "What six survivors noticed before diagnosis"
+        },
+        {
+          "role": "body",
+          "order": 14,
+          "text": "Next"
+        },
+        {
+          "role": "body",
+          "order": 15,
+          "text": "1"
+        },
+        {
+          "role": "body",
+          "order": 16,
+          "text": "2"
+        },
+        {
+          "role": "body",
+          "order": 17,
+          "text": "3"
+        },
+        {
+          "role": "body",
+          "order": 18,
+          "text": "4"
+        },
+        {
+          "role": "body",
+          "order": 19,
+          "text": "5"
+        },
+        {
+          "role": "body",
+          "order": 20,
+          "text": "6"
+        },
+        {
+          "role": "body",
+          "order": 21,
+          "text": "7"
+        },
+        {
+          "role": "body",
+          "order": 22,
+          "text": "8"
+        }
+      ],
+      "imgCount": 12,
+      "repeats": [
+        {
+          "unitSelector": "DIV.carousel-item",
+          "count": 12,
+          "unit": {
+            "headings": 1,
+            "ctas": 0,
+            "imgs": 2,
+            "textRuns": 2
+          },
+          "uniform": true
+        },
+        {
+          "unitSelector": "LI.",
+          "count": 7,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "support-duo",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "myCancerConnection"
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "Talk to someone who shares your cancer diagnosis and be matched with a survivor."
+        },
+        {
+          "role": "cta",
+          "order": 2,
+          "text": "Request a match",
+          "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/mycancerconnection.html"
+        },
+        {
+          "role": "heading",
+          "order": 3,
+          "text": "One-on-One Counseling"
+        },
+        {
+          "role": "body",
+          "order": 4,
+          "text": "Take advantage of short-term counseling provided free of charge by our clinical social workers."
+        },
+        {
+          "role": "cta",
+          "order": 5,
+          "text": "Find a support coach",
+          "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/social-work.html"
+        }
+      ],
+      "imgCount": 0,
+      "repeats": [
+        {
+          "unitSelector": "DIV.col-double",
+          "count": 2,
+          "unit": {
+            "headings": 1,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 3
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "icon-trio",
+      "items": [
+        {
+          "role": "cta",
+          "order": 0,
+          "text": "Find Our Locations",
+          "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+        },
+        {
+          "role": "cta",
+          "order": 1,
+          "text": "Read Our Blog",
+          "href": "https://www.mdanderson.org/cancerwise.html"
+        },
+        {
+          "role": "cta",
+          "order": 2,
+          "text": "Ask a Question",
+          "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html"
+        }
+      ],
+      "imgCount": 0,
+      "repeats": [
+        {
+          "unitSelector": "DIV.col4",
+          "count": 3,
+          "unit": {
+            "headings": 1,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "highlight",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Help #EndCancer"
+        },
+        {
+          "role": "heading",
+          "order": 1,
+          "text": "Give Now"
+        },
+        {
+          "role": "body",
+          "order": 2,
+          "text": "Your gift will help make a tremendous difference."
+        },
+        {
+          "role": "cta",
+          "order": 3,
+          "text": "Donate",
+          "href": "https://gifts.mdanderson.org/Default.aspx?tsid=37435"
+        },
+        {
+          "role": "heading",
+          "order": 4,
+          "text": "Donate Blood"
+        },
+        {
+          "role": "body",
+          "order": 5,
+          "text": "Our patients depend on blood and platelet donations."
+        },
+        {
+          "role": "cta",
+          "order": 6,
+          "text": "Make an appointment",
+          "href": "https://www.mdandersonbloodbank.org/"
+        },
+        {
+          "role": "heading",
+          "order": 7,
+          "text": "Shop UT MD Anderson"
+        },
+        {
+          "role": "body",
+          "order": 8,
+          "text": "Show your support for our mission through branded merchandise."
+        },
+        {
+          "role": "cta",
+          "order": 9,
+          "text": "View products",
+          "href": "https://shop.mdanderson.org"
+        }
+      ],
+      "imgCount": 0,
+      "repeats": [
+        {
+          "unitSelector": "DIV.cell-t",
+          "count": 3,
+          "unit": {
+            "headings": 1,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 3
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "global-footer",
+      "items": [
+        {
+          "role": "body",
+          "order": 0,
+          "text": "Subscribe to our Cancerwise newsletter"
+        },
+        {
+          "role": "cta",
+          "order": 1,
+          "text": ".st0-desktop { fill: #000; }Explore what your support makes possible",
+          "href": "https://onlypossiblehere.mdanderson.org"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "Explore"
+        },
+        {
+          "role": "cta",
+          "order": 3,
+          "text": "Patients & Family",
+          "href": "https://www.mdanderson.org/patients-family.html"
+        },
+        {
+          "role": "cta",
+          "order": 4,
+          "text": "Prevention & Screening",
+          "href": "https://www.mdanderson.org/prevention-screening.html"
+        },
+        {
+          "role": "cta",
+          "order": 5,
+          "text": "Donors & Volunteers",
+          "href": "https://www.mdanderson.org/donors-volunteers.html"
+        },
+        {
+          "role": "cta",
+          "order": 6,
+          "text": "For Physicians",
+          "href": "https://www.mdanderson.org/for-physicians.html"
+        },
+        {
+          "role": "cta",
+          "order": 7,
+          "text": "Research",
+          "href": "https://www.mdanderson.org/research.html"
+        },
+        {
+          "role": "cta",
+          "order": 8,
+          "text": "Education & Training",
+          "href": "https://www.mdanderson.org/education-training.html"
+        },
+        {
+          "role": "cta",
+          "order": 9,
+          "text": "Clinical Trials",
+          "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+        },
+        {
+          "role": "cta",
+          "order": 10,
+          "text": "Languages",
+          "href": "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 11,
+          "text": "About"
+        },
+        {
+          "role": "cta",
+          "order": 12,
+          "text": "About UT MD Anderson",
+          "href": "https://www.mdanderson.org/about-md-anderson.html"
+        },
+        {
+          "role": "cta",
+          "order": 13,
+          "text": "Careers",
+          "href": "https://jobs.mdanderson.org/"
+        },
+        {
+          "role": "cta",
+          "order": 14,
+          "text": "Blog",
+          "href": "https://www.mdanderson.org/cancerwise.html"
+        },
+        {
+          "role": "cta",
+          "order": 15,
+          "text": "Newsroom",
+          "href": "https://www.mdanderson.org/newsroom.html"
+        },
+        {
+          "role": "cta",
+          "order": 16,
+          "text": "Editorial Standards",
+          "href": "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html"
+        },
+        {
+          "role": "cta",
+          "order": 17,
+          "text": "For Employees",
+          "href": "https://www.mdanderson.org/about-md-anderson/employee-resources.html"
+        },
+        {
+          "role": "cta",
+          "order": 18,
+          "text": "Merchandise",
+          "href": "https://shop.mdanderson.org/"
+        },
+        {
+          "role": "cta",
+          "order": 19,
+          "text": "Title IX Reporting (Sexual Misconduct)",
+          "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html"
+        },
+        {
+          "role": "cta",
+          "order": 20,
+          "text": "Price Transparency",
+          "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 21,
+          "text": "Finding Your Way"
+        },
+        {
+          "role": "cta",
+          "order": 22,
+          "text": "Our Doctors",
+          "href": "https://faculty.mdanderson.org/"
+        },
+        {
+          "role": "cta",
+          "order": 23,
+          "text": "Locations",
+          "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+        },
+        {
+          "role": "cta",
+          "order": 24,
+          "text": "Directions",
+          "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html"
+        },
+        {
+          "role": "cta",
+          "order": 25,
+          "text": "Sitemap",
+          "href": "https://www.mdanderson.org/patients-family/html-sitemap.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 26,
+          "text": "Digital Accessibility"
+        },
+        {
+          "role": "cta",
+          "order": 27,
+          "text": "Accessibility Policy",
+          "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 28,
+          "text": "Get in Touch"
+        },
+        {
+          "role": "cta",
+          "order": 29,
+          "text": "Call 1-877-790-1139",
+          "href": "tel:+18777901139"
+        },
+        {
+          "role": "cta",
+          "order": 30,
+          "text": "Ask a question",
+          "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 31,
+          "text": "Stay Connected"
+        },
+        {
+          "role": "body",
+          "order": 32,
+          "text": "Previous"
+        },
+        {
+          "role": "body",
+          "order": 33,
+          "text": "Next"
+        },
+        {
+          "role": "eyebrow",
+          "order": 34,
+          "text": "Cancerwise Podcast"
+        },
+        {
+          "role": "body",
+          "order": 35,
+          "text": "Previous"
+        },
+        {
+          "role": "body",
+          "order": 36,
+          "text": "Next"
+        },
+        {
+          "role": "eyebrow",
+          "order": 37,
+          "text": "More"
+        },
+        {
+          "role": "cta",
+          "order": 38,
+          "text": "Website Privacy Policy",
+          "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html"
+        },
+        {
+          "role": "cta",
+          "order": 39,
+          "text": "Legal Statement & Policies",
+          "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html"
+        },
+        {
+          "role": "cta",
+          "order": 40,
+          "text": "Reports to the State",
+          "href": "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html"
+        },
+        {
+          "role": "cta",
+          "order": 41,
+          "text": "Emergency Alert Information",
+          "href": "https://www3.mdanderson.org/emergencyalert/"
+        },
+        {
+          "role": "cta",
+          "order": 42,
+          "text": "State of Texas Links",
+          "href": "https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html"
+        },
+        {
+          "role": "cta",
+          "order": 43,
+          "text": "Our Cancer Network",
+          "href": "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html"
+        },
+        {
+          "role": "cta",
+          "order": 44,
+          "text": "Vendors & Suppliers",
+          "href": "https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html"
+        },
+        {
+          "role": "body",
+          "order": 45,
+          "text": "The mission of The University of Texas MD Anderson Cancer Center is to eliminate cancer in Texas, the nation, and the world through outstanding programs that integrate patient care, research and prevention, and through education for undergraduate and graduate students, trainees, professionals, employees and the public."
+        },
+        {
+          "role": "body",
+          "order": 46,
+          "text": "© 2026 The University of Texas Cancer Center. All rights reserved."
+        },
+        {
+          "role": "body",
+          "order": 47,
+          "text": "MD Anderson"
+        }
+      ],
+      "imgCount": 4,
+      "repeats": [
+        {
+          "unitSelector": "DIV.footer-links",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 25,
+            "imgs": 3,
+            "textRuns": 39
+          },
+          "uniform": false
+        },
+        {
+          "unitSelector": "DIV.col2",
+          "count": 4,
+          "unit": {
+            "headings": 0,
+            "ctas": 1,
+            "imgs": 2,
+            "textRuns": 2
+          },
+          "uniform": false
+        }
+      ]
+    }
+  ],
+  "_note": "Generated from http://localhost:8791/index-proposed.html — patients-family is a same-design sibling of index (identical section structure per the replica); no dedicated patients-family prototype exists."
+}

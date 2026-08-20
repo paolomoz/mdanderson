@@ -1,0 +1,784 @@
+{
+ "source": "http://localhost:8791/patients-family-diagnosis-treatment-clinical-trials-html-proposed.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "col-content-wrapper",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Jump To:"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Back",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment.html"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Clinical Trials",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Phases of Clinical Trials",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials/phases-of-clinical-trials.html"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Joining a Clinical Trial",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials/joining-a-clinical-trial.html"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Making a Decision",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials/deciding-to-join-a-clinical-trial.html"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "|"
+    },
+    {
+     "role": "eyebrow",
+     "order": 7,
+     "text": "Close"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "Share this article"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "Via social media:"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "Or copy the link:"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "Copy"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "Copy to clipboard"
+    },
+    {
+     "role": "heading",
+     "order": 13,
+     "text": "Clinical Trials at UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "As part of our mission to eliminate cancer, UT MD Anderson researchers conduct hundreds of clinical trials to test new treatments for both common and rare cancers. Look through our database to find studies for which you may be eligible."
+    },
+    {
+     "role": "heading",
+     "order": 15,
+     "text": "Search Clinical Trials"
+    },
+    {
+     "role": "body",
+     "order": 16,
+     "text": "Search by cancer type, treatment or drug, physician or NCT #"
+    },
+    {
+     "role": "body",
+     "order": 17,
+     "text": "Search Clinical Trials"
+    },
+    {
+     "role": "heading",
+     "order": 18,
+     "text": "What are clinical trials?"
+    },
+    {
+     "role": "body",
+     "order": 19,
+     "text": "Clinical trials are research studies in which patients may volunteer to take part. uses clinical trials to find better ways to prevent, diagnose and treat cancer. Doctors use treatment trials to learn more about how to fight cancer. This guide is for patients who may join a treatment trial."
+    },
+    {
+     "role": "body",
+     "order": 20,
+     "text": "UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 21,
+     "text": "Clinical trials are part of a long, careful process, which may take many years. First, doctors study a new treatment in the lab. Then they often study the treatment in animals. If a new treatment shows promise, doctors then test the treatment in people. Doctors do this in three to four steps, or phases. Your doctor may offer you a clinical trial as a treatment option."
+    },
+    {
+     "role": "body",
+     "order": 22,
+     "text": "Is a trial right for you? contains a decision guide along with information on the clinical trials process."
+    },
+    {
+     "role": "body",
+     "order": 23,
+     "text": "UT MD Anderson's"
+    },
+    {
+     "role": "cta",
+     "order": 24,
+     "text": "clinical trials booklet",
+     "href": "https://www.mdanderson.org/content/dam/mdanderson/documents/patients-and-family/diagnosis-and-treatment/treatment-options/clinical-trials-booklet.pdf"
+    },
+    {
+     "role": "heading",
+     "order": 25,
+     "text": "How am I protected?"
+    },
+    {
+     "role": "body",
+     "order": 26,
+     "text": "most important job is to protect patients. First, protects patients in clinical trials by following well-planned protocols."
+    },
+    {
+     "role": "body",
+     "order": 27,
+     "text": "UT MD Anderson’s"
+    },
+    {
+     "role": "body",
+     "order": 28,
+     "text": "UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 29,
+     "text": "A protocol:"
+    },
+    {
+     "role": "body",
+     "order": 30,
+     "text": "Explains the treatment plan"
+    },
+    {
+     "role": "body",
+     "order": 31,
+     "text": "Lists the medical tests patients will receive"
+    },
+    {
+     "role": "body",
+     "order": 32,
+     "text": "Gives the number of how many patients will take part in the clinical trial"
+    },
+    {
+     "role": "body",
+     "order": 33,
+     "text": "Lists eligibility criteria, which are guidelines to decide who may join the clinical trial"
+    },
+    {
+     "role": "body",
+     "order": 34,
+     "text": "Explains safety information"
+    },
+    {
+     "role": "body",
+     "order": 35,
+     "text": "Second, protects patients by using a careful informed consent process."
+    },
+    {
+     "role": "body",
+     "order": 36,
+     "text": "UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 37,
+     "text": "Third, our Institutional Review Boards (IRBs) protect patients by reviewing protocols and monitoring trials. The IRBs are committees of doctors, nurses, chaplains, social workers, lawyers and patients. They make sure that trials follow federal laws and that patients are protected."
+    },
+    {
+     "role": "body",
+     "order": 38,
+     "text": "The U.S. Food and Drug Administration (FDA) audits the IRBs’ files. Also, FDA officials may visit at any time and review anything they choose related to clinical trials."
+    },
+    {
+     "role": "body",
+     "order": 39,
+     "text": "UT MD Anderson"
+    },
+    {
+     "role": "cta",
+     "order": 40,
+     "text": "More",
+     "href": "#"
+    },
+    {
+     "role": "cta",
+     "order": 41,
+     "text": "Less",
+     "href": "#"
+    },
+    {
+     "role": "heading",
+     "order": 42,
+     "text": "Did You Know?"
+    },
+    {
+     "role": "body",
+     "order": 43,
+     "text": "In Fiscal Year 2025, 70% of all cancer drugs approved by the FDA were tested at ."
+    },
+    {
+     "role": "body",
+     "order": 44,
+     "text": "UT MD Anderson"
+    },
+    {
+     "role": "heading",
+     "order": 45,
+     "text": "Featured Podcast:"
+    },
+    {
+     "role": "heading",
+     "order": 46,
+     "text": "IBC clinical trials at UT MD Anderson"
+    },
+    {
+     "role": "cta",
+     "order": 47,
+     "text": "View podcast episode page",
+     "href": "https://mdanderson.org/podcast?segitem=65445"
+    },
+    {
+     "role": "cta",
+     "order": 48,
+     "text": "Read transcript",
+     "href": "https://support.doctorpodcasting.com/client/texacc/item/65445-inflammatory-breast-cancer-ibc-clinical-trials-at-md-anderson?print=yes"
+    },
+    {
+     "role": "heading",
+     "order": 49,
+     "text": "Phases of a Trial"
+    },
+    {
+     "role": "body",
+     "order": 50,
+     "text": "Each clinical trial goes through several phases, each with a different purpose."
+    },
+    {
+     "role": "cta",
+     "order": 51,
+     "text": "Clinical trial phases",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials/phases-of-clinical-trials.html"
+    },
+    {
+     "role": "heading",
+     "order": 52,
+     "text": "Joining a Trial"
+    },
+    {
+     "role": "body",
+     "order": 53,
+     "text": "Learn more about eligibility requirements to participate in a clinical trial."
+    },
+    {
+     "role": "cta",
+     "order": 54,
+     "text": "Deciding to join a trial",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials/joining-a-clinical-trial.html"
+    },
+    {
+     "role": "heading",
+     "order": 55,
+     "text": "Clinical Trial FAQs"
+    },
+    {
+     "role": "body",
+     "order": 56,
+     "text": "Questions to ask your physician as you decide whether joining a clinical trial is right for you."
+    },
+    {
+     "role": "cta",
+     "order": 57,
+     "text": "Frequently asked questions",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials/deciding-to-join-a-clinical-trial.html"
+    },
+    {
+     "role": "heading",
+     "order": 58,
+     "text": "In the News"
+    },
+    {
+     "role": "body",
+     "order": 59,
+     "text": "View more"
+    },
+    {
+     "role": "body",
+     "order": 60,
+     "text": "View less"
+    },
+    {
+     "role": "heading",
+     "order": 61,
+     "text": "Video Gallery"
+    },
+    {
+     "role": "cta",
+     "order": 62,
+     "text": "More",
+     "href": "#"
+    },
+    {
+     "role": "cta",
+     "order": 63,
+     "text": "Less",
+     "href": "#"
+    },
+    {
+     "role": "heading",
+     "order": 64,
+     "text": "From our Faculty Experts"
+    },
+    {
+     "role": "body",
+     "order": 65,
+     "text": "Enrolling in a clinical trial is one way to access cancer treatment that may not yet be broadly available while helping future cancer..."
+    },
+    {
+     "role": "cta",
+     "order": 66,
+     "text": "Read more",
+     "href": "https://www.mdanderson.org/cancerwise/meeting-with-a-research-nurse-during-a-clinical-trial--what-to-know.h00-159695178.html"
+    },
+    {
+     "role": "body",
+     "order": 67,
+     "text": "Van Morris, M.D., is driven to offer more to patients. “I am reminded every day about the opportunities for improving treatments for..."
+    },
+    {
+     "role": "cta",
+     "order": 68,
+     "text": "Read more",
+     "href": "https://www.mdanderson.org/cancerwise/gastrointestinal-medical-oncologist-and-researcher-driven-to-help-patients-live-longer.h00-159701490.html"
+    }
+   ],
+   "imgCount": 10,
+   "repeats": [
+    {
+     "unitSelector": "DIV.",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 5,
+      "imgs": 0,
+      "textRuns": 6
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "SECTION.",
+     "count": 5,
+     "unit": {
+      "headings": 5,
+      "ctas": 5,
+      "imgs": 2,
+      "textRuns": 31
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.cell-inner",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "highlight",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Help #EndCancer"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Give Now"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Your gift will help make a tremendous difference."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Donate",
+     "href": "https://gifts.mdanderson.org/Default.aspx?tsid=37435"
+    },
+    {
+     "role": "heading",
+     "order": 4,
+     "text": "Donate Blood"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Our patients depend on blood and platelet donations."
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Make an appointment",
+     "href": "https://www.mdandersonbloodbank.org/"
+    },
+    {
+     "role": "heading",
+     "order": 7,
+     "text": "Shop UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "Show your support for our mission through branded merchandise."
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "View products",
+     "href": "https://shop.mdanderson.org"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.cell-t",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "global-footer",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Subscribe to our Cancerwise newsletter"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": ".st0-desktop { fill: #000; }Explore what your support makes possible",
+     "href": "https://onlypossiblehere.mdanderson.org"
+    },
+    {
+     "role": "eyebrow",
+     "order": 2,
+     "text": "Explore"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Patients & Family",
+     "href": "https://www.mdanderson.org/patients-family.html"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Prevention & Screening",
+     "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Donors & Volunteers",
+     "href": "https://www.mdanderson.org/donors-volunteers.html"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "For Physicians",
+     "href": "https://www.mdanderson.org/for-physicians.html"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "Research",
+     "href": "https://www.mdanderson.org/research.html"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Education & Training",
+     "href": "https://www.mdanderson.org/education-training.html"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Clinical Trials",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "Languages",
+     "href": "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 11,
+     "text": "About"
+    },
+    {
+     "role": "cta",
+     "order": 12,
+     "text": "About UT MD Anderson",
+     "href": "https://www.mdanderson.org/about-md-anderson.html"
+    },
+    {
+     "role": "cta",
+     "order": 13,
+     "text": "Careers",
+     "href": "https://jobs.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 14,
+     "text": "Blog",
+     "href": "https://www.mdanderson.org/cancerwise.html"
+    },
+    {
+     "role": "cta",
+     "order": 15,
+     "text": "Newsroom",
+     "href": "https://www.mdanderson.org/newsroom.html"
+    },
+    {
+     "role": "cta",
+     "order": 16,
+     "text": "Editorial Standards",
+     "href": "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html"
+    },
+    {
+     "role": "cta",
+     "order": 17,
+     "text": "For Employees",
+     "href": "https://www.mdanderson.org/about-md-anderson/employee-resources.html"
+    },
+    {
+     "role": "cta",
+     "order": 18,
+     "text": "Merchandise",
+     "href": "https://shop.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 19,
+     "text": "Title IX Reporting (Sexual Misconduct)",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html"
+    },
+    {
+     "role": "cta",
+     "order": 20,
+     "text": "Price Transparency",
+     "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 21,
+     "text": "Finding Your Way"
+    },
+    {
+     "role": "cta",
+     "order": 22,
+     "text": "Our Doctors",
+     "href": "https://faculty.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 23,
+     "text": "Locations",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+     "role": "cta",
+     "order": 24,
+     "text": "Directions",
+     "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html"
+    },
+    {
+     "role": "cta",
+     "order": 25,
+     "text": "Sitemap",
+     "href": "https://www.mdanderson.org/patients-family/html-sitemap.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 26,
+     "text": "Digital Accessibility"
+    },
+    {
+     "role": "cta",
+     "order": 27,
+     "text": "Accessibility Policy",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 28,
+     "text": "Get in Touch"
+    },
+    {
+     "role": "cta",
+     "order": 29,
+     "text": "Call 1-877-790-1139",
+     "href": "tel:+18777901139"
+    },
+    {
+     "role": "cta",
+     "order": 30,
+     "text": "Ask a question",
+     "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 31,
+     "text": "Stay Connected"
+    },
+    {
+     "role": "body",
+     "order": 32,
+     "text": "Previous"
+    },
+    {
+     "role": "body",
+     "order": 33,
+     "text": "Next"
+    },
+    {
+     "role": "eyebrow",
+     "order": 34,
+     "text": "Cancerwise Podcast"
+    },
+    {
+     "role": "body",
+     "order": 35,
+     "text": "Previous"
+    },
+    {
+     "role": "body",
+     "order": 36,
+     "text": "Next"
+    },
+    {
+     "role": "eyebrow",
+     "order": 37,
+     "text": "More"
+    },
+    {
+     "role": "cta",
+     "order": 38,
+     "text": "Website Privacy Policy",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html"
+    },
+    {
+     "role": "cta",
+     "order": 39,
+     "text": "Legal Statement & Policies",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html"
+    },
+    {
+     "role": "cta",
+     "order": 40,
+     "text": "Reports to the State",
+     "href": "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html"
+    },
+    {
+     "role": "cta",
+     "order": 41,
+     "text": "Emergency Alert Information",
+     "href": "https://www3.mdanderson.org/emergencyalert/"
+    },
+    {
+     "role": "cta",
+     "order": 42,
+     "text": "State of Texas Links",
+     "href": "https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html"
+    },
+    {
+     "role": "cta",
+     "order": 43,
+     "text": "Our Cancer Network",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html"
+    },
+    {
+     "role": "cta",
+     "order": 44,
+     "text": "Vendors & Suppliers",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html"
+    },
+    {
+     "role": "body",
+     "order": 45,
+     "text": "The mission of The University of Texas MD Anderson Cancer Center is to eliminate cancer in Texas, the nation, and the world through outstanding programs that integrate patient care, research and prevention, and through education for undergraduate and graduate students, trainees, professionals, employees and the public."
+    },
+    {
+     "role": "body",
+     "order": 46,
+     "text": "© 2026 The University of Texas Cancer Center. All rights reserved."
+    },
+    {
+     "role": "body",
+     "order": 47,
+     "text": "MD Anderson"
+    }
+   ],
+   "imgCount": 4,
+   "repeats": [
+    {
+     "unitSelector": "DIV.footer-links",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 25,
+      "imgs": 3,
+      "textRuns": 39
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.col2",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 2,
+      "textRuns": 2
+     },
+     "uniform": false
+    }
+   ]
+  }
+ ]
+}

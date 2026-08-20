@@ -198,6 +198,36 @@
         "value": "helvetica",
         "createdAt": "2026-08-19T23:20:57.333Z",
         "reason": "stardust:replica — Helvetica appears in mdanderson.org's own clientlib CSS (pannellum panorama widget rules, 14 occurrences in harvested source); lifted verbatim, substitution would be a fidelity defect"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#ea0118",
+        "createdAt": "2026-08-20T01:15:59.109Z",
+        "reason": "stardust:replica EDS conversion — canon-verbatim value lifted from mdanderson.org capture (MyChart red / OPH promo card / derived hover shade); replica contract forbids palette normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#808080",
+        "createdAt": "2026-08-20T01:15:59.139Z",
+        "reason": "stardust:replica EDS conversion — canon-verbatim value lifted from mdanderson.org capture (MyChart red / OPH promo card / derived hover shade); replica contract forbids palette normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#333",
+        "createdAt": "2026-08-20T01:15:59.166Z",
+        "reason": "stardust:replica EDS conversion — canon-verbatim value lifted from mdanderson.org capture (MyChart red / OPH promo card / derived hover shade); replica contract forbids palette normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#624b79",
+        "createdAt": "2026-08-20T01:15:59.193Z",
+        "reason": "stardust:replica EDS conversion — canon-verbatim value lifted from mdanderson.org capture (MyChart red / OPH promo card / derived hover shade); replica contract forbids palette normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#274f91",
+        "createdAt": "2026-08-20T01:15:59.219Z",
+        "reason": "stardust:replica EDS conversion — canon-verbatim value lifted from mdanderson.org capture (MyChart red / OPH promo card / derived hover shade); replica contract forbids palette normalization"
       }
     ]
   }

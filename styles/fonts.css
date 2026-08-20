@@ -1,36 +1,46 @@
+/*
+ * ⚠️ FONT LICENSING REQUIRED BEFORE GOING LIVE — see fonts/LICENSING.md.
+ * Minion (Adobe) and Univers LT (Monotype/Linotype) are licensed commercial
+ * kits. Self-hosted here for POC-preview fidelity ONLY. Do not publish beyond
+ * the POC preview until licensing is confirmed. Remove path: delete the woff
+ * files + these @font-face rules; every stack falls back to the metric-matched
+ * minion-fallback / univers-fallback faces declared in styles/styles.css.
+ *
+ * Loaded by loadFonts() AFTER first paint — never referenced from head.html.
+ */
+
 /* stylelint-disable max-line-length */
-@font-face {
-  font-family: roboto-condensed;
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('../fonts/roboto-condensed-bold.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
 
-@font-face {
-  font-family: roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('../fonts/roboto-bold.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+/* Minion (Adobe — licensed) */
+@font-face { font-family: 'Minion Regular'; src: url('../fonts/minion-regular.woff') format('woff'); font-weight: 400; font-display: swap; }
 
-@font-face {
-  font-family: roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('../fonts/roboto-medium.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+@font-face { font-family: 'Minion Semi Bold'; src: url('../fonts/minion-semibold.woff') format('woff'); font-weight: 400; font-display: swap; }
 
-@font-face {
-  font-family: roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('../fonts/roboto-regular.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+@font-face { font-family: 'Minion Bold'; src: url('../fonts/minion-bold.woff') format('woff'); font-weight: 400; font-display: swap; }
+
+@font-face { font-family: 'Minion W01 Cap Regular'; src: url('../fonts/minion-w01-cap-regular.woff') format('woff'); font-weight: 400; font-display: swap; }
+
+@font-face { font-family: 'Minion W01 SmBd Cap'; src: url('../fonts/minion-w01-smbd-cap.woff') format('woff'); font-weight: 400; font-display: swap; }
+
+@font-face { font-family: 'Minion W01 SmBd Cap Regular'; src: url('../fonts/minion-w01-smbd-cap.woff') format('woff'); font-weight: 400; font-display: swap; }
+
+/* Univers LT (Monotype/Linotype — licensed) */
+@font-face { font-family: 'Univers LT W01_45 Light'; src: url('../fonts/univers-45-light.woff') format('woff'); font-weight: 400; font-display: swap; }
+
+@font-face { font-family: 'Univers LT W01_55 Roman'; src: url('../fonts/univers-55-roman.woff') format('woff'); font-weight: 400; font-display: swap; }
+
+@font-face { font-family: 'Univers LT W01_65 Bold'; src: url('../fonts/univers-65-bold.woff') format('woff'); font-weight: 400; font-display: swap; }
+
+@font-face { font-family: 'UniversLTW01-67BoldCn'; src: url('../fonts/univers-67-boldcn.woff') format('woff'); font-weight: 400; font-display: swap; }
+
+/* Icon fonts (MD Anderson clientlib) */
+@font-face { font-family: MDIcons; src: url('../fonts/mdicons.woff') format('woff'); font-weight: normal; font-display: block; }
+
+@font-face { font-family: mda-icons; src: url('../fonts/mda-icons.woff') format('woff'); font-weight: normal; font-display: block; }
+
+@font-face { font-family: FontAwesome; src: url('../fonts/fontawesome-webfont.woff') format('woff'); font-weight: normal; font-display: block; }
+
+/* Open Sans (Apache 2.0 — free) — used by cancerwise/article typography */
+@font-face { font-family: 'Open Sans Light'; src: url('../fonts/open-sans-300.woff2') format('woff2'); font-weight: 300; font-display: swap; }
+
+@font-face { font-family: 'Open Sans Regular'; src: url('../fonts/open-sans-regular.woff') format('woff'); font-weight: 400; font-display: swap; }

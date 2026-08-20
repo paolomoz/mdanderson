@@ -1,0 +1,136 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/plan",
+    "writtenAt": "2026-08-20T00:20:35.548Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-08-20T00:20:35.548Z",
+  "fragments": [],
+  "deliveryOrder": [
+    "index",
+    "patients-family-html",
+    "prevention-screening-html",
+    "research-html",
+    "cancer-types-breast-cancer-html",
+    "patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html",
+    "patients-family-diagnosis-treatment-clinical-trials-html",
+    "about-md-anderson-our-locations-html",
+    "cancerwise-html",
+    "cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html",
+    "donors-volunteers-html",
+    "about-md-anderson-html"
+  ],
+  "steps": [
+    {
+      "slug": "index",
+      "path": "/",
+      "templateId": "landing",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    },
+    {
+      "slug": "patients-family-html",
+      "path": "/patients-family",
+      "templateId": "landing",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    },
+    {
+      "slug": "prevention-screening-html",
+      "path": "/prevention-screening",
+      "templateId": "landing",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    },
+    {
+      "slug": "research-html",
+      "path": "/research",
+      "templateId": "landing",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    },
+    {
+      "slug": "cancer-types-breast-cancer-html",
+      "path": "/cancer-types/breast-cancer",
+      "templateId": "program",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    },
+    {
+      "slug": "patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html",
+      "path": "/patients-family/diagnosis-treatment/care-centers-clinics/breast-center",
+      "templateId": "program",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    },
+    {
+      "slug": "patients-family-diagnosis-treatment-clinical-trials-html",
+      "path": "/patients-family/diagnosis-treatment/clinical-trials",
+      "templateId": "program",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    },
+    {
+      "slug": "about-md-anderson-our-locations-html",
+      "path": "/about-md-anderson/our-locations",
+      "templateId": "listing",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    },
+    {
+      "slug": "cancerwise-html",
+      "path": "/cancerwise",
+      "templateId": "listing",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    },
+    {
+      "slug": "cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html",
+      "path": "/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134",
+      "templateId": "article",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    },
+    {
+      "slug": "donors-volunteers-html",
+      "path": "/donors-volunteers",
+      "templateId": "form",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    },
+    {
+      "slug": "about-md-anderson-html",
+      "path": "/about-md-anderson",
+      "templateId": "static",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    }
+  ]
+}

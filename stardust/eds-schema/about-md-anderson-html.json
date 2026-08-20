@@ -1,0 +1,840 @@
+{
+ "source": "http://localhost:8791/about-md-anderson-html-proposed.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "hero",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "About UT MD Anderson"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": []
+  },
+  {
+   "section": "appointment-bar",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Call us at or"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "We're here for you."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "1-866-463-3080",
+     "href": "tel:+18664633080"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "request an appointment online.",
+     "href": "/about-md-anderson/contact-us/askmdanderson/appointments.html"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Let's get started."
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Request an appointment online.",
+     "href": "/about-md-anderson/contact-us/askmdanderson/appointments.html"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": []
+  },
+  {
+   "section": "intro",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "art of the University of Texas System, UT MD Anderson is one of the world’s most respected centers devoted exclusively to cancer patient care, research, education and prevention."
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "P"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Part of the University of Texas System, UT MD Anderson is one of the world’s most respected centers devoted exclusively to cancer patient care, research, education and prevention."
+    }
+   ],
+   "imgCount": 0,
+   "repeats": []
+  },
+  {
+   "section": "mission-vision-values",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Mission"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "The mission of is to eliminate cancer in Texas, the nation, and the world through outstanding programs that integrate patient care, research and prevention, and through education for undergraduate and graduate students, trainees, professionals, employees and the public."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "UT MD Anderson"
+    },
+    {
+     "role": "heading",
+     "order": 3,
+     "text": "Vision"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "We shall be the premier cancer center in the world, based on the excellence of our people, our research-driven patient care and our science. We are ."
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Making Cancer History®"
+    },
+    {
+     "role": "heading",
+     "order": 6,
+     "text": "Core Values"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Caring: By our words and actions we demonstrate caring toward everyone."
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "We are sensitive to the concerns of our patients, their loved ones and our colleagues."
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "We are respectful and courteous to each other and practice humility."
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "We promote and reward teamwork and inclusion."
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "Integrity: We work together with professionalism to merit the trust of our colleagues and those we serve in all that we do."
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "We hold ourselves, and each other, accountable for our work – decisions and data – and for practicing our values and ethics."
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "We advocate for our workforce, for those we serve and for our community."
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "We communicate frequently, honestly, openly and responsibly."
+    },
+    {
+     "role": "body",
+     "order": 15,
+     "text": "Discovery: We embrace creativity and seek new knowledge from different perspectives."
+    },
+    {
+     "role": "body",
+     "order": 16,
+     "text": "We encourage continuous learning, seeking out information and new ideas."
+    },
+    {
+     "role": "body",
+     "order": 17,
+     "text": "We team with each other to identify and resolve problems."
+    },
+    {
+     "role": "body",
+     "order": 18,
+     "text": "We seek personal growth and enable others to do so."
+    },
+    {
+     "role": "body",
+     "order": 19,
+     "text": "Safety: We provide a safe environment — physically and psychologically — for our patients, for our colleagues and for our community."
+    },
+    {
+     "role": "body",
+     "order": 20,
+     "text": "We create a sense of security and empowerment and are committed to keeping one another free from harm."
+    },
+    {
+     "role": "body",
+     "order": 21,
+     "text": "We embrace a framework and best practices for the highest quality of care and service."
+    },
+    {
+     "role": "body",
+     "order": 22,
+     "text": "We inspire trust by modeling excellence in our work and acceptance of each person’s contributions."
+    },
+    {
+     "role": "body",
+     "order": 23,
+     "text": "Stewardship: We protect and preserve our institutional reputation and the precious resources – people, time, financial and environmental — entrusted to us."
+    },
+    {
+     "role": "body",
+     "order": 24,
+     "text": "We prioritize the health and well-being of each other."
+    },
+    {
+     "role": "body",
+     "order": 25,
+     "text": "We act responsibly to safeguard the institution’s finances."
+    },
+    {
+     "role": "body",
+     "order": 26,
+     "text": "We ensure the proper care and use of time, data, materials, equipment and property afforded to us."
+    },
+    {
+     "role": "cta",
+     "order": 27,
+     "text": "More",
+     "href": "#"
+    },
+    {
+     "role": "cta",
+     "order": 28,
+     "text": "Less",
+     "href": "#"
+    },
+    {
+     "role": "cta",
+     "order": 29,
+     "text": "UT MD Anderson Locations UT MD Anderson has many convenient locations, whether you are seeking treatment or visiting a loved one.",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+     "role": "cta",
+     "order": 30,
+     "text": "Contact Us Contact UT MD Anderson with your messages, questions and comments.",
+     "href": "https://www.mdanderson.org/about-md-anderson/contact-us.html"
+    },
+    {
+     "role": "cta",
+     "order": 31,
+     "text": "Find Your Way Around Are you having a hard time getting where you need to go? We can help!",
+     "href": "https://www.mdanderson.org/about-md-anderson/finding-your-way-around.html"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "P.",
+     "count": 3,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "P.extra-text",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "UL.extra-text",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.module",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "facts-history",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "UT MD Anderson Facts & History"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Learn more about the history of and get information about our Strategic Plan, institutional profile and more."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "UT MD Anderson"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Read about UT MD Anderson",
+     "href": "https://www.mdanderson.org/about-md-anderson/facts-history.html"
+    }
+   ],
+   "imgCount": 1,
+   "repeats": [
+    {
+     "unitSelector": "DIV.col-double",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 2,
+      "textRuns": 0
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "careers",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Careers at UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "employs nearly 25,000 people, including more than 1,900 faculty members. With faculty and staff working in more than 25 buildings in Houston and Central Texas, is one of the largest cancer centers in the world."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "UT MD Anderson"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Search career opportunities",
+     "href": "https://www.mdanderson.org/about-md-anderson/careers.html"
+    }
+   ],
+   "imgCount": 1,
+   "repeats": [
+    {
+     "unitSelector": "DIV.col-double",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 5
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "community-outreach",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Community Outreach"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "offers free outreach programs to teach people ways to reduce their risk, help students learn about careers in health care, and educate patients and families about their cancer care."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "UT MD Anderson"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "View community offerings",
+     "href": "https://www.mdanderson.org/about-md-anderson/community-services.html"
+    }
+   ],
+   "imgCount": 1,
+   "repeats": [
+    {
+     "unitSelector": "DIV.col-double",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 2,
+      "textRuns": 0
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "resources-trio",
+   "items": [
+    {
+     "role": "cta",
+     "order": 0,
+     "text": "Business & Legal Find resources for vendors and suppliers as well as our institutional policies and legal statements.",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal.html"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Innovation Learn how we are working collaboratively to shape the future of cancer care across the world.",
+     "href": "https://www.mdanderson.org/about-md-anderson/innovation.html"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Employee Resources These pages provide UT MD Anderson employees access to quick-reference resources and information.",
+     "href": "https://www.mdanderson.org/about-md-anderson/employee-resources.html"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.cell-t",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 2
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "badge-band",
+   "items": [],
+   "imgCount": 0,
+   "repeats": []
+  },
+  {
+   "section": "highlight",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Help #EndCancer"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Give Now"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Your gift will help make a tremendous difference."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Donate",
+     "href": "https://gifts.mdanderson.org/Default.aspx?tsid=37435"
+    },
+    {
+     "role": "heading",
+     "order": 4,
+     "text": "Donate Blood"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Our patients depend on blood and platelet donations."
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Make an appointment",
+     "href": "https://www.mdandersonbloodbank.org/"
+    },
+    {
+     "role": "heading",
+     "order": 7,
+     "text": "Shop UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "Show your support for our mission through branded merchandise."
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "View products",
+     "href": "https://shop.mdanderson.org"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.cell-t",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "global-footer",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Subscribe to our Cancerwise newsletter"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": ".st0-desktop { fill: #000; }Explore what your support makes possible",
+     "href": "https://onlypossiblehere.mdanderson.org"
+    },
+    {
+     "role": "eyebrow",
+     "order": 2,
+     "text": "Explore"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Patients & Family",
+     "href": "https://www.mdanderson.org/patients-family.html"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Prevention & Screening",
+     "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Donors & Volunteers",
+     "href": "https://www.mdanderson.org/donors-volunteers.html"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "For Physicians",
+     "href": "https://www.mdanderson.org/for-physicians.html"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "Research",
+     "href": "https://www.mdanderson.org/research.html"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Education & Training",
+     "href": "https://www.mdanderson.org/education-training.html"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Clinical Trials",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "Languages",
+     "href": "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 11,
+     "text": "About"
+    },
+    {
+     "role": "cta",
+     "order": 12,
+     "text": "About UT MD Anderson",
+     "href": "https://www.mdanderson.org/about-md-anderson.html"
+    },
+    {
+     "role": "cta",
+     "order": 13,
+     "text": "Careers",
+     "href": "https://jobs.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 14,
+     "text": "Blog",
+     "href": "https://www.mdanderson.org/cancerwise.html"
+    },
+    {
+     "role": "cta",
+     "order": 15,
+     "text": "Newsroom",
+     "href": "https://www.mdanderson.org/newsroom.html"
+    },
+    {
+     "role": "cta",
+     "order": 16,
+     "text": "Editorial Standards",
+     "href": "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html"
+    },
+    {
+     "role": "cta",
+     "order": 17,
+     "text": "For Employees",
+     "href": "https://www.mdanderson.org/about-md-anderson/employee-resources.html"
+    },
+    {
+     "role": "cta",
+     "order": 18,
+     "text": "Merchandise",
+     "href": "https://shop.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 19,
+     "text": "Title IX Reporting (Sexual Misconduct)",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html"
+    },
+    {
+     "role": "cta",
+     "order": 20,
+     "text": "Price Transparency",
+     "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 21,
+     "text": "Finding Your Way"
+    },
+    {
+     "role": "cta",
+     "order": 22,
+     "text": "Our Doctors",
+     "href": "https://faculty.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 23,
+     "text": "Locations",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+     "role": "cta",
+     "order": 24,
+     "text": "Directions",
+     "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html"
+    },
+    {
+     "role": "cta",
+     "order": 25,
+     "text": "Sitemap",
+     "href": "https://www.mdanderson.org/patients-family/html-sitemap.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 26,
+     "text": "Digital Accessibility"
+    },
+    {
+     "role": "cta",
+     "order": 27,
+     "text": "Accessibility Policy",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 28,
+     "text": "Get in Touch"
+    },
+    {
+     "role": "cta",
+     "order": 29,
+     "text": "Call 1-877-790-1139",
+     "href": "tel:+18777901139"
+    },
+    {
+     "role": "cta",
+     "order": 30,
+     "text": "Ask a question",
+     "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 31,
+     "text": "Stay Connected"
+    },
+    {
+     "role": "body",
+     "order": 32,
+     "text": "Previous"
+    },
+    {
+     "role": "body",
+     "order": 33,
+     "text": "Next"
+    },
+    {
+     "role": "eyebrow",
+     "order": 34,
+     "text": "Cancerwise Podcast"
+    },
+    {
+     "role": "body",
+     "order": 35,
+     "text": "Previous"
+    },
+    {
+     "role": "body",
+     "order": 36,
+     "text": "Next"
+    },
+    {
+     "role": "eyebrow",
+     "order": 37,
+     "text": "More"
+    },
+    {
+     "role": "cta",
+     "order": 38,
+     "text": "Website Privacy Policy",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html"
+    },
+    {
+     "role": "cta",
+     "order": 39,
+     "text": "Legal Statement & Policies",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html"
+    },
+    {
+     "role": "cta",
+     "order": 40,
+     "text": "Reports to the State",
+     "href": "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html"
+    },
+    {
+     "role": "cta",
+     "order": 41,
+     "text": "Emergency Alert Information",
+     "href": "https://www3.mdanderson.org/emergencyalert/"
+    },
+    {
+     "role": "cta",
+     "order": 42,
+     "text": "State of Texas Links",
+     "href": "https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html"
+    },
+    {
+     "role": "cta",
+     "order": 43,
+     "text": "Our Cancer Network",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html"
+    },
+    {
+     "role": "cta",
+     "order": 44,
+     "text": "Vendors & Suppliers",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html"
+    },
+    {
+     "role": "body",
+     "order": 45,
+     "text": "The mission of The University of Texas MD Anderson Cancer Center is to eliminate cancer in Texas, the nation, and the world through outstanding programs that integrate patient care, research and prevention, and through education for undergraduate and graduate students, trainees, professionals, employees and the public."
+    },
+    {
+     "role": "body",
+     "order": 46,
+     "text": "© 2026 The University of Texas Cancer Center. All rights reserved."
+    },
+    {
+     "role": "body",
+     "order": 47,
+     "text": "MD Anderson"
+    }
+   ],
+   "imgCount": 4,
+   "repeats": [
+    {
+     "unitSelector": "DIV.footer-links",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 25,
+      "imgs": 3,
+      "textRuns": 39
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.col2",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 2,
+      "textRuns": 2
+     },
+     "uniform": false
+    }
+   ]
+  }
+ ]
+}

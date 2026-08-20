@@ -1,0 +1,241 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-08-20T00:20:01.962Z",
+    "readArtifacts": [
+      "stardust/migrated"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-08-20T00:20:01.962Z",
+  "pages": [
+    {
+      "slug": "about-md-anderson-html",
+      "path": "/about-md-anderson",
+      "title": "About UT MD Anderson | UT MD Anderson",
+      "templateId": "static",
+      "source": {
+        "migratedHtml": "stardust/migrated/about-md-anderson.html",
+        "metaJson": "stardust/migrated/about-md-anderson._meta.json",
+        "sourceHash": "sha256:467b90cd3f231922ab0adb1494abe191ff22a7366e56ef2068c4dd21648ac3eb"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "about-md-anderson-our-locations-html",
+      "path": "/about-md-anderson/our-locations",
+      "title": "Our Locations | UT MD Anderson",
+      "templateId": "listing",
+      "source": {
+        "migratedHtml": "stardust/migrated/about-md-anderson/our-locations.html",
+        "metaJson": "stardust/migrated/about-md-anderson/our-locations._meta.json",
+        "sourceHash": "sha256:d23c5db87456e1bbadc19c71da1b795ca924a8761adb771c5c666ecaa63c3e2f"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "cancer-types-breast-cancer-html",
+      "path": "/cancer-types/breast-cancer",
+      "title": "Breast Cancer: Symptoms, Risk Factors &amp; Treatments | UT MD Anderson",
+      "templateId": "program",
+      "source": {
+        "migratedHtml": "stardust/migrated/cancer-types/breast-cancer.html",
+        "metaJson": "stardust/migrated/cancer-types/breast-cancer._meta.json",
+        "sourceHash": "sha256:86022c6157e4d1d0ff48e45efb683661fca0c8c7b7920aed040295562663939f"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html",
+      "path": "/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134",
+      "title": "Insomnia during cancer treatment: Causes, symptoms, coping | UT MD Anderson",
+      "templateId": "article",
+      "source": {
+        "migratedHtml": "stardust/migrated/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134.html",
+        "metaJson": "stardust/migrated/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134._meta.json",
+        "sourceHash": "sha256:3ff65eb4e6e29c762b315510a363d78121f18621d0e4ff06fe22c565ba9c1d96"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "cancerwise-html",
+      "path": "/cancerwise",
+      "title": "Cancerwise Blog | UT MD Anderson",
+      "templateId": "listing",
+      "source": {
+        "migratedHtml": "stardust/migrated/cancerwise.html",
+        "metaJson": "stardust/migrated/cancerwise._meta.json",
+        "sourceHash": "sha256:ad4f6d7b6f840534fc7088f3b2e103f1f51bc1af4c6cce91200f59975225d863"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "donors-volunteers-html",
+      "path": "/donors-volunteers",
+      "title": "Donors &amp; Volunteers | UT MD Anderson",
+      "templateId": "form",
+      "source": {
+        "migratedHtml": "stardust/migrated/donors-volunteers.html",
+        "metaJson": "stardust/migrated/donors-volunteers._meta.json",
+        "sourceHash": "sha256:6eb228c15bd479ca83a2c361aef79c4a02c06b7981a201c604b470081da840da"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "index",
+      "path": "/",
+      "title": "UT MD Anderson: Cancer Treatment &amp; Cancer Research Hospital | UT MD Anderson",
+      "templateId": "landing",
+      "source": {
+        "migratedHtml": "stardust/migrated/index.html",
+        "metaJson": "stardust/migrated/_meta.json",
+        "sourceHash": "sha256:56b14d7c0978c3d3f7339bda1130d6396e8155bfb70363d5ce87b8512b226575"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html",
+      "path": "/patients-family/diagnosis-treatment/care-centers-clinics/breast-center",
+      "title": "Nellie B. Connally Breast Center | UT MD Anderson",
+      "templateId": "program",
+      "source": {
+        "migratedHtml": "stardust/migrated/patients-family/diagnosis-treatment/care-centers-clinics/breast-center.html",
+        "metaJson": "stardust/migrated/patients-family/diagnosis-treatment/care-centers-clinics/breast-center._meta.json",
+        "sourceHash": "sha256:84a216ab54f1ffd6196cf09c5c0d8624afe3d411125d0cd63071591b55a21d8b"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "patients-family-diagnosis-treatment-clinical-trials-html",
+      "path": "/patients-family/diagnosis-treatment/clinical-trials",
+      "title": "Cancer Clinical Trials | UT MD Anderson",
+      "templateId": "program",
+      "source": {
+        "migratedHtml": "stardust/migrated/patients-family/diagnosis-treatment/clinical-trials.html",
+        "metaJson": "stardust/migrated/patients-family/diagnosis-treatment/clinical-trials._meta.json",
+        "sourceHash": "sha256:b2a4bef39102cded1a05bbbdbafb0d019c0b4e5816fbdf326190bd17a7e66536"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "patients-family-html",
+      "path": "/patients-family",
+      "title": "UT MD Anderson: Cancer Treatment &amp; Cancer Research Hospital | UT MD Anderson",
+      "templateId": "landing",
+      "source": {
+        "migratedHtml": "stardust/migrated/patients-family.html",
+        "metaJson": "stardust/migrated/patients-family._meta.json",
+        "sourceHash": "sha256:a9d6fb5291311bee61e23556d9cf163723fb768ea911783f26b65aea0953f9d3"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "prevention-screening-html",
+      "path": "/prevention-screening",
+      "title": "Cancer Prevention | UT MD Anderson",
+      "templateId": "landing",
+      "source": {
+        "migratedHtml": "stardust/migrated/prevention-screening.html",
+        "metaJson": "stardust/migrated/prevention-screening._meta.json",
+        "sourceHash": "sha256:9a6cd1d3a47f09b991bd5ac51f1a7bf4065e16cccaf7f7f78132225ef1fea51e"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "research-html",
+      "path": "/research",
+      "title": "Translational, Preventative, Clinical &amp; Basic Science Cancer Research | UT MD Anderson",
+      "templateId": "landing",
+      "source": {
+        "migratedHtml": "stardust/migrated/research.html",
+        "metaJson": "stardust/migrated/research._meta.json",
+        "sourceHash": "sha256:b2f4fd4855a3c0802007a44db7b66b14a487373502ddce038f7e7a0572196824"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,1109 @@
+{
+ "source": "http://localhost:8791/research-html-proposed.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "hero",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Research at UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Institute for Cell Therapy Discovery & Innovation"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Advancing impactful cell therapies for patients in need",
+     "href": "https://www.mdanderson.org/research/departments-labs-institutes/institutes/institute-for-cell-therapy-discovery-and-innovation.html"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Research at UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Institute for Cell Therapy Discovery & Innovation"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Advancing impactful cell therapies for patients in need",
+     "href": "https://www.mdanderson.org/research/departments-labs-institutes/institutes/institute-for-cell-therapy-discovery-and-innovation.html"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "Research at UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Hundreds of labs working to end cancer"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "From basic discoveries to impacts in the clinic and back to the lab, our clinicians and scientists create a virtuous cycle of research collaboration, innovation and connectivity only possible here",
+     "href": "https://www.mdanderson.org/research/departments-labs-institutes/labs.html"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "Research at UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "Hundreds of labs working to end cancer"
+    },
+    {
+     "role": "cta",
+     "order": 11,
+     "text": "Our clinicians and scientists create a virtuous cycle of research collaboration, innovation and connectivity",
+     "href": "https://www.mdanderson.org/research/departments-labs-institutes/labs.html"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "Research at UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "Allison Institute"
+    },
+    {
+     "role": "cta",
+     "order": 14,
+     "text": "Conducting translational and clinical research to integrate immunobiology across disciplines",
+     "href": "https://www.mdanderson.org/research/departments-labs-institutes/institutes/allison-institute.html"
+    },
+    {
+     "role": "body",
+     "order": 15,
+     "text": "Research at UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 16,
+     "text": "Allison Institute"
+    },
+    {
+     "role": "cta",
+     "order": 17,
+     "text": "Conducting translational and clinical research to integrate immunobiology across disciplines",
+     "href": "https://www.mdanderson.org/research/departments-labs-institutes/institutes/allison-institute.html"
+    },
+    {
+     "role": "body",
+     "order": 18,
+     "text": "Research at UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 19,
+     "text": "Creating a virtuous cycle of innovation"
+    },
+    {
+     "role": "cta",
+     "order": 20,
+     "text": "From the first spark of an idea to its translation in our world-leading clinics, we remain invested and determined in our collective focus to end cancer",
+     "href": "https://www.mdanderson.org/research/research-areas.html"
+    },
+    {
+     "role": "body",
+     "order": 21,
+     "text": "Research at UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 22,
+     "text": "Creating a virtuous cycle of innovation"
+    },
+    {
+     "role": "cta",
+     "order": 23,
+     "text": "We remain invested and determined in our collective focus to end cancer",
+     "href": "https://www.mdanderson.org/research/research-areas.html"
+    },
+    {
+     "role": "body",
+     "order": 24,
+     "text": "Previous"
+    },
+    {
+     "role": "body",
+     "order": 25,
+     "text": "Next"
+    },
+    {
+     "role": "body",
+     "order": 26,
+     "text": "1"
+    },
+    {
+     "role": "body",
+     "order": 27,
+     "text": "2"
+    },
+    {
+     "role": "body",
+     "order": 28,
+     "text": "3"
+    },
+    {
+     "role": "body",
+     "order": 29,
+     "text": "4"
+    },
+    {
+     "role": "cta",
+     "order": 30,
+     "text": "Scroll Ahead",
+     "href": "#"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.carousel-item",
+     "count": 4,
+     "unit": {
+      "headings": 1,
+      "ctas": 2,
+      "imgs": 0,
+      "textRuns": 6
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.carousel-body",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.carousel-body",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.carousel-body",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.carousel-body",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "LI.",
+     "count": 3,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "mission-prose",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Research with one goal: end cancer"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "At UT MD Anderson, some of the best minds in the world work in partnership with our patients to enable groundbreaking research to better treat and prevent cancer. Here, researchers have the freedom and support to follow a hypothesis and test new theories that can yield breakthroughs that transform the field and the lives of patients. Embedded in the fourth-largest U.S. city — and the most ethnically diverse — our teams work with our neighbors in the Texas Medical Center, the world’s largest medical center, and around the globe to advance our science and to serve our patients. From the first spark of an idea to its translation in our world-leading clinics, we remain invested and determined in our collective focus to end cancer."
+    },
+    {
+     "role": "heading",
+     "order": 2,
+     "text": "Breakthroughs in cancer treatment"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Showcasing our Cycle of Innovation"
+    }
+   ],
+   "imgCount": 1,
+   "repeats": [
+    {
+     "unitSelector": "DIV.col-double",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 2
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "highlights-carousel",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Research Highlights"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Previous"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Predicting who with triple-negative breast cancer responds"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Innovating to catch oral cancer before it starts"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Physician-microbiome researcher studied fecal transplants"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Drug demonstrates anti-tumor activity in pancreatic cancer"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "CCLI will help decode the behavior of cancer cells"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "New all-oral combination therapy for AML shows promise"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "Pre-operative radiation therapy improves treatment response"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "Copper-induced cell death activates immune system"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "Predicting who with triple-negative breast cancer responds"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "Innovating to catch oral cancer before it starts"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "Physician-microbiome researcher studied fecal transplants"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "Drug demonstrates anti-tumor activity in pancreatic cancer"
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "Next"
+    },
+    {
+     "role": "body",
+     "order": 15,
+     "text": "1"
+    },
+    {
+     "role": "body",
+     "order": 16,
+     "text": "2"
+    },
+    {
+     "role": "body",
+     "order": 17,
+     "text": "3"
+    },
+    {
+     "role": "body",
+     "order": 18,
+     "text": "4"
+    },
+    {
+     "role": "body",
+     "order": 19,
+     "text": "5"
+    },
+    {
+     "role": "body",
+     "order": 20,
+     "text": "6"
+    },
+    {
+     "role": "body",
+     "order": 21,
+     "text": "7"
+    },
+    {
+     "role": "body",
+     "order": 22,
+     "text": "8"
+    }
+   ],
+   "imgCount": 12,
+   "repeats": [
+    {
+     "unitSelector": "DIV.carousel-item",
+     "count": 12,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 2,
+      "textRuns": 2
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "LI.",
+     "count": 7,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "why-research-band",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Why Research at UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "See how our culture of collaboration, connectivity and data-based science provides the ideal research environment."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Learn more",
+     "href": "https://www.mdanderson.org/research/research-resources/why-research.html"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": []
+  },
+  {
+   "section": "departments-labs-institutes",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Departments, Labs and Institutes"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "UT MD Anderson has many parts, including departments, labs and institutes, but the sum of those parts is ending cancer."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Departments & Divisions UT MD Anderson faculty and staff work within a wide variety of disciplines.",
+     "href": "https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions.html"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Labs Our laboratories cover the full breadth of cancer research. They’re led by some of the leading scientists and physicians in the world.",
+     "href": "https://www.mdanderson.org/research/departments-labs-institutes/labs.html"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Institutes Scientists from different disciplines come together to focus on a common area in our research institutes.",
+     "href": "https://www.mdanderson.org/research/departments-labs-institutes/institutes.html"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Programs & Centers Our research programs and centers focus their efforts on a diverse range of cancer research topics and initiatives.",
+     "href": "https://www.mdanderson.org/research/departments-labs-institutes/programs-centers.html"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.border-item-wrapper",
+     "count": 4,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 2
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "astro-band",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "UT MD Anderson at ASTRO"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "At the American Society for Radiation Oncology (ASTRO) Annual Meeting, our experts showcase their pacesetting research and join colleagues for discussion on the latest advances in radiation oncology."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Find out more about ASTRO",
+     "href": "https://www.mdanderson.org/research/research-resources/conferences-seminars/md-anderson-at-astro.html"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": []
+  },
+  {
+   "section": "pull-quote",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "A sense of community"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Katy Rezvani, M.D., Ph.D."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Professor, Department of Stem Cell Transplantation"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Head, Institute for Cell Therapy Innovation and Discovery"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "There is a sense of community in terms of ‘let’s come together and develop treatments for our patients that could be life-changing.'"
+    }
+   ],
+   "imgCount": 1,
+   "repeats": []
+  },
+  {
+   "section": "stats",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Research by the Numbers"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "$1.3B"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "invested in research"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "140"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "patents awarded to UT MD Anderson in FY25"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "1,579"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "clinical trials in FY25"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "UT MD Anderson's research and training are also aided by more than $217 million in NIH grant funding, which helps power our mission to end cancer."
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "View our NIH award summary Opens a new window",
+     "href": "https://report.nih.gov/award/index.cfm?ot=&fy=2025&state=&ic=&fm=&orgid=578407&distr=&rfa=&om=n&pid=&view=state"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.stat-item",
+     "count": 3,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 2
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "investigators-band",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Explore the work of our investigators"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "UT MD Anderson faculty focus on a variety of research topics that contribute to our goal of ending cancer."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Search faculty",
+     "href": "https://faculty.mdanderson.org/"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": []
+  },
+  {
+   "section": "areas-resources",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Research Areas"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Since 1941, UT MD Anderson has been home to some of the brightest minds across a variety of cancer research areas."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Basic Science",
+     "href": "https://www.mdanderson.org/research/research-areas/basic-science.html"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Translational Research",
+     "href": "https://www.mdanderson.org/research/research-areas/translational-research.html"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Clinical Research",
+     "href": "https://www.mdanderson.org/research/research-areas/clinical-research.html"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Prevention and Personalized Risk Assessment",
+     "href": "https://www.mdanderson.org/research/research-areas/prevention-personalized-risk-assessment.html"
+    },
+    {
+     "role": "heading",
+     "order": 6,
+     "text": "Resources"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "UT MD Anderson provides research tools and resources to fuel the discoveries of our scientists."
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Core Facilities",
+     "href": "https://www.mdanderson.org/research/research-resources/core-facilities.html"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Research Seminars",
+     "href": "https://www.mdanderson.org/research/research-resources/conferences-seminars.html"
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "Office of Sponsored Programs",
+     "href": "https://www.mdanderson.org/research/research-resources/sponsored-programs.html"
+    },
+    {
+     "role": "cta",
+     "order": 11,
+     "text": "Research Medical Library",
+     "href": "http://www3.mdanderson.org/library/"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.col-double",
+     "count": 2,
+     "unit": {
+      "headings": 5,
+      "ctas": 4,
+      "imgs": 0,
+      "textRuns": 6
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "pre-footer-trio",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Give Now"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Your gift will help make a tremendous difference."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Donate",
+     "href": "https://gifts.mdanderson.org/Default.aspx?tsid=37435"
+    },
+    {
+     "role": "heading",
+     "order": 3,
+     "text": "Research Areas"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Find out about the four types of research taking place at UT"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "MD Anderson."
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Learn more",
+     "href": "https://www.mdanderson.org/research/research-areas.html"
+    },
+    {
+     "role": "heading",
+     "order": 7,
+     "text": "Subscribe"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "Get the latest information on our cancer breakthroughs."
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Sign up",
+     "href": "https://www.mdanderson.org/publications/subscribe-to-frontline.html"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.cell-t",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "global-footer",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Subscribe to our Cancerwise newsletter"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": ".st0-desktop { fill: #000; }Explore what your support makes possible",
+     "href": "https://onlypossiblehere.mdanderson.org"
+    },
+    {
+     "role": "eyebrow",
+     "order": 2,
+     "text": "Explore"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Patients & Family",
+     "href": "https://www.mdanderson.org/patients-family.html"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Prevention & Screening",
+     "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Donors & Volunteers",
+     "href": "https://www.mdanderson.org/donors-volunteers.html"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "For Physicians",
+     "href": "https://www.mdanderson.org/for-physicians.html"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "Research",
+     "href": "https://www.mdanderson.org/research.html"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Education & Training",
+     "href": "https://www.mdanderson.org/education-training.html"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Clinical Trials",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "Languages",
+     "href": "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 11,
+     "text": "About"
+    },
+    {
+     "role": "cta",
+     "order": 12,
+     "text": "About UT MD Anderson",
+     "href": "https://www.mdanderson.org/about-md-anderson.html"
+    },
+    {
+     "role": "cta",
+     "order": 13,
+     "text": "Careers",
+     "href": "https://jobs.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 14,
+     "text": "Blog",
+     "href": "https://www.mdanderson.org/cancerwise.html"
+    },
+    {
+     "role": "cta",
+     "order": 15,
+     "text": "Newsroom",
+     "href": "https://www.mdanderson.org/newsroom.html"
+    },
+    {
+     "role": "cta",
+     "order": 16,
+     "text": "Editorial Standards",
+     "href": "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html"
+    },
+    {
+     "role": "cta",
+     "order": 17,
+     "text": "For Employees",
+     "href": "https://www.mdanderson.org/about-md-anderson/employee-resources.html"
+    },
+    {
+     "role": "cta",
+     "order": 18,
+     "text": "Merchandise",
+     "href": "https://shop.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 19,
+     "text": "Title IX Reporting (Sexual Misconduct)",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html"
+    },
+    {
+     "role": "cta",
+     "order": 20,
+     "text": "Price Transparency",
+     "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 21,
+     "text": "Finding Your Way"
+    },
+    {
+     "role": "cta",
+     "order": 22,
+     "text": "Our Doctors",
+     "href": "https://faculty.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 23,
+     "text": "Locations",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+     "role": "cta",
+     "order": 24,
+     "text": "Directions",
+     "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html"
+    },
+    {
+     "role": "cta",
+     "order": 25,
+     "text": "Sitemap",
+     "href": "https://www.mdanderson.org/patients-family/html-sitemap.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 26,
+     "text": "Digital Accessibility"
+    },
+    {
+     "role": "cta",
+     "order": 27,
+     "text": "Accessibility Policy",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 28,
+     "text": "Get in Touch"
+    },
+    {
+     "role": "cta",
+     "order": 29,
+     "text": "Call 1-877-790-1139",
+     "href": "tel:+18777901139"
+    },
+    {
+     "role": "cta",
+     "order": 30,
+     "text": "Ask a question",
+     "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 31,
+     "text": "Stay Connected"
+    },
+    {
+     "role": "body",
+     "order": 32,
+     "text": "Previous"
+    },
+    {
+     "role": "body",
+     "order": 33,
+     "text": "Next"
+    },
+    {
+     "role": "eyebrow",
+     "order": 34,
+     "text": "Cancerwise Podcast"
+    },
+    {
+     "role": "body",
+     "order": 35,
+     "text": "Previous"
+    },
+    {
+     "role": "body",
+     "order": 36,
+     "text": "Next"
+    },
+    {
+     "role": "eyebrow",
+     "order": 37,
+     "text": "More"
+    },
+    {
+     "role": "cta",
+     "order": 38,
+     "text": "Website Privacy Policy",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html"
+    },
+    {
+     "role": "cta",
+     "order": 39,
+     "text": "Legal Statement & Policies",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html"
+    },
+    {
+     "role": "cta",
+     "order": 40,
+     "text": "Reports to the State",
+     "href": "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html"
+    },
+    {
+     "role": "cta",
+     "order": 41,
+     "text": "Emergency Alert Information",
+     "href": "https://www3.mdanderson.org/emergencyalert/"
+    },
+    {
+     "role": "cta",
+     "order": 42,
+     "text": "State of Texas Links",
+     "href": "https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html"
+    },
+    {
+     "role": "cta",
+     "order": 43,
+     "text": "Our Cancer Network",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html"
+    },
+    {
+     "role": "cta",
+     "order": 44,
+     "text": "Vendors & Suppliers",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html"
+    },
+    {
+     "role": "body",
+     "order": 45,
+     "text": "The mission of The University of Texas MD Anderson Cancer Center is to eliminate cancer in Texas, the nation, and the world through outstanding programs that integrate patient care, research and prevention, and through education for undergraduate and graduate students, trainees, professionals, employees and the public."
+    },
+    {
+     "role": "body",
+     "order": 46,
+     "text": "© 2026 The University of Texas Cancer Center. All rights reserved."
+    },
+    {
+     "role": "body",
+     "order": 47,
+     "text": "MD Anderson"
+    }
+   ],
+   "imgCount": 4,
+   "repeats": [
+    {
+     "unitSelector": "DIV.footer-links",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 25,
+      "imgs": 3,
+      "textRuns": 39
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.col2",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 2,
+      "textRuns": 2
+     },
+     "uniform": false
+    }
+   ]
+  }
+ ]
+}

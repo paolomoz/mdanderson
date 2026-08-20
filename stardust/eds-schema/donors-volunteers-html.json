@@ -1,0 +1,772 @@
+{
+ "source": "http://localhost:8791/donors-volunteers-html-proposed.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "hero",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Donors & Volunteers"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Be part of what's Only Possible Here."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Give Now",
+     "href": "https://www.mdanderson.org/donors-volunteers/donate.html"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Donors & Volunteers"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Be part of what's Only Possible Here."
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Give Now",
+     "href": "https://www.mdanderson.org/donors-volunteers/donate.html"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Scroll Ahead",
+     "href": "#"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.carousel-body",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "intro",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "very breakthrough, every patient story and every moment of hope begins with people like you. Whether you give, volunteer, advocate or participate in an event, your support helps accelerate breakthroughs, elevate the patient experience and expand access to lifesaving care. Join us in helping end cancer."
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "E"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Every breakthrough, every patient story and every moment of hope begins with people like you. Whether you give, volunteer, advocate or participate in an event, your support helps accelerate breakthroughs, elevate the patient experience and expand access to lifesaving care. Join us in helping end cancer."
+    }
+   ],
+   "imgCount": 0,
+   "repeats": []
+  },
+  {
+   "section": "give-columns",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Give Now"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Your generosity helps bring hope, healing and breakthroughs to patients and families today."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "$100",
+     "href": "https://gifts.mdanderson.org/Default.aspx?tsid=10503&noamt=true&chosen=100&intcmpid=mdaccorg_donate"
+    },
+    {
+     "role": "heading",
+     "order": 3,
+     "text": "Raise Money"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Turn your passion into impact and inspire others to support the fight against cancer."
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Get started",
+     "href": "https://www.mdanderson.org/donors-volunteers/donate/raise-money.html"
+    },
+    {
+     "role": "heading",
+     "order": 6,
+     "text": "Your Gifts at Work"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "UT MD Anderson relies on generous donors like you in our mission to end cancer. Take a look at the impact of gifts like yours."
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Make a gift",
+     "href": "https://gifts.mdanderson.org/"
+    }
+   ],
+   "imgCount": 3,
+   "repeats": [
+    {
+     "unitSelector": "DIV.col-double",
+     "count": 2,
+     "unit": {
+      "headings": 2,
+      "ctas": 2,
+      "imgs": 0,
+      "textRuns": 6
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.module",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "innovation",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Where innovation meets impact"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Advancing what's next in cancer care takes more than expertise — it takes a community. Join those who are helping turn bold ideas into real progress for patients everywhere."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Discover what's Only Possible Here.",
+     "href": "https://onlypossiblehere.mdanderson.org/"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "How the extraordinary becomes possible."
+    }
+   ],
+   "imgCount": 1,
+   "repeats": [
+    {
+     "unitSelector": "DIV.col-double",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 4
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "volunteers",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Volunteers make healing possible"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "A kind word, a steady presence, a helping hand — these are the moments patients and families remember. Volunteers bring comfort, connection and support throughout the cancer journey, creating a meaningful difference every day."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Start your volunteer journey.",
+     "href": "/donors-volunteers/volunteer.html"
+    }
+   ],
+   "imgCount": 1,
+   "repeats": [
+    {
+     "unitSelector": "DIV.col-double",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 2,
+      "textRuns": 0
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "stories",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Stories of hope, healing and resilience"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "These are the moments that matter most — lives changed, families strengthened and futures restored. Hear directly from those who’ve experienced the difference your support can make."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Read their journeys and be part of what comes next.",
+     "href": "https://onlypossiblehere.mdanderson.org/your-stories.html"
+    }
+   ],
+   "imgCount": 1,
+   "repeats": [
+    {
+     "unitSelector": "DIV.col-double",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "campaign-band",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Together, we're ending cancer"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "From groundbreaking research to transformative patient care, supporters like you are helping advance bold ideas, breakthrough discoveries and hope for patients everywhere. Explore the campaign priorities shaping the future of cancer care."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Discover where you can make a difference Opens a new window",
+     "href": "https://onlypossiblehere.mdanderson.org/priorities-for-support.html"
+    }
+   ],
+   "imgCount": 1,
+   "repeats": []
+  },
+  {
+   "section": "help-trio",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "More Ways to Help"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "depends on your generosity and time to change the lives of cancer patients. With so many opportunities to get involved, you can partner with us to play a vital role in our mission."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "UT MD Anderson"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Learn how to get involved",
+     "href": "https://www.mdanderson.org/donors-volunteers/other-ways-to-help.html"
+    },
+    {
+     "role": "heading",
+     "order": 4,
+     "text": "Corporate Alliances"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Partner with us to create meaningful campaigns that engage your customers and employees while helping end cancer."
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Partner for impact",
+     "href": "https://www.mdanderson.org/donors-volunteers/corporate-alliances.html"
+    },
+    {
+     "role": "heading",
+     "order": 7,
+     "text": "Attend an Event"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "Be part of a community united by purpose - gather, connect and make a difference at our events."
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Explore events",
+     "href": "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/attend-events.html"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.cell-t",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 4
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "contact-strip",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Call us at or"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "We're here for you."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "1-833-780-1379",
+     "href": "tel:+18337801379"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "request an appointment online.",
+     "href": "/about-md-anderson/contact-us/askmdanderson/appointments.html"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": []
+  },
+  {
+   "section": "highlight",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Help #EndCancer"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Give Now"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Your gift will help make a tremendous difference."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Donate",
+     "href": "https://gifts.mdanderson.org/Default.aspx?tsid=37435"
+    },
+    {
+     "role": "heading",
+     "order": 4,
+     "text": "Donate Blood"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Our patients depend on blood and platelet donations."
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Make an appointment",
+     "href": "https://www.mdandersonbloodbank.org/"
+    },
+    {
+     "role": "heading",
+     "order": 7,
+     "text": "Shop UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "Show your support for our mission through branded merchandise."
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "View products",
+     "href": "https://shop.mdanderson.org"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.cell-t",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "global-footer",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Subscribe to our Cancerwise newsletter"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": ".st0-desktop { fill: #000; }Explore what your support makes possible",
+     "href": "https://onlypossiblehere.mdanderson.org"
+    },
+    {
+     "role": "eyebrow",
+     "order": 2,
+     "text": "Explore"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Patients & Family",
+     "href": "https://www.mdanderson.org/patients-family.html"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Prevention & Screening",
+     "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Donors & Volunteers",
+     "href": "https://www.mdanderson.org/donors-volunteers.html"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "For Physicians",
+     "href": "https://www.mdanderson.org/for-physicians.html"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "Research",
+     "href": "https://www.mdanderson.org/research.html"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Education & Training",
+     "href": "https://www.mdanderson.org/education-training.html"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Clinical Trials",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "Languages",
+     "href": "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 11,
+     "text": "About"
+    },
+    {
+     "role": "cta",
+     "order": 12,
+     "text": "About UT MD Anderson",
+     "href": "https://www.mdanderson.org/about-md-anderson.html"
+    },
+    {
+     "role": "cta",
+     "order": 13,
+     "text": "Careers",
+     "href": "https://jobs.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 14,
+     "text": "Blog",
+     "href": "https://www.mdanderson.org/cancerwise.html"
+    },
+    {
+     "role": "cta",
+     "order": 15,
+     "text": "Newsroom",
+     "href": "https://www.mdanderson.org/newsroom.html"
+    },
+    {
+     "role": "cta",
+     "order": 16,
+     "text": "Editorial Standards",
+     "href": "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html"
+    },
+    {
+     "role": "cta",
+     "order": 17,
+     "text": "For Employees",
+     "href": "https://www.mdanderson.org/about-md-anderson/employee-resources.html"
+    },
+    {
+     "role": "cta",
+     "order": 18,
+     "text": "Merchandise",
+     "href": "https://shop.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 19,
+     "text": "Title IX Reporting (Sexual Misconduct)",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html"
+    },
+    {
+     "role": "cta",
+     "order": 20,
+     "text": "Price Transparency",
+     "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 21,
+     "text": "Finding Your Way"
+    },
+    {
+     "role": "cta",
+     "order": 22,
+     "text": "Our Doctors",
+     "href": "https://faculty.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 23,
+     "text": "Locations",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+     "role": "cta",
+     "order": 24,
+     "text": "Directions",
+     "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html"
+    },
+    {
+     "role": "cta",
+     "order": 25,
+     "text": "Sitemap",
+     "href": "https://www.mdanderson.org/patients-family/html-sitemap.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 26,
+     "text": "Digital Accessibility"
+    },
+    {
+     "role": "cta",
+     "order": 27,
+     "text": "Accessibility Policy",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 28,
+     "text": "Get in Touch"
+    },
+    {
+     "role": "cta",
+     "order": 29,
+     "text": "Call 1-877-790-1139",
+     "href": "tel:+18777901139"
+    },
+    {
+     "role": "cta",
+     "order": 30,
+     "text": "Ask a question",
+     "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 31,
+     "text": "Stay Connected"
+    },
+    {
+     "role": "body",
+     "order": 32,
+     "text": "Previous"
+    },
+    {
+     "role": "body",
+     "order": 33,
+     "text": "Next"
+    },
+    {
+     "role": "eyebrow",
+     "order": 34,
+     "text": "Cancerwise Podcast"
+    },
+    {
+     "role": "body",
+     "order": 35,
+     "text": "Previous"
+    },
+    {
+     "role": "body",
+     "order": 36,
+     "text": "Next"
+    },
+    {
+     "role": "eyebrow",
+     "order": 37,
+     "text": "More"
+    },
+    {
+     "role": "cta",
+     "order": 38,
+     "text": "Website Privacy Policy",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html"
+    },
+    {
+     "role": "cta",
+     "order": 39,
+     "text": "Legal Statement & Policies",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html"
+    },
+    {
+     "role": "cta",
+     "order": 40,
+     "text": "Reports to the State",
+     "href": "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html"
+    },
+    {
+     "role": "cta",
+     "order": 41,
+     "text": "Emergency Alert Information",
+     "href": "https://www3.mdanderson.org/emergencyalert/"
+    },
+    {
+     "role": "cta",
+     "order": 42,
+     "text": "State of Texas Links",
+     "href": "https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html"
+    },
+    {
+     "role": "cta",
+     "order": 43,
+     "text": "Our Cancer Network",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html"
+    },
+    {
+     "role": "cta",
+     "order": 44,
+     "text": "Vendors & Suppliers",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html"
+    },
+    {
+     "role": "body",
+     "order": 45,
+     "text": "The mission of The University of Texas MD Anderson Cancer Center is to eliminate cancer in Texas, the nation, and the world through outstanding programs that integrate patient care, research and prevention, and through education for undergraduate and graduate students, trainees, professionals, employees and the public."
+    },
+    {
+     "role": "body",
+     "order": 46,
+     "text": "© 2026 The University of Texas Cancer Center. All rights reserved."
+    },
+    {
+     "role": "body",
+     "order": 47,
+     "text": "MD Anderson"
+    }
+   ],
+   "imgCount": 4,
+   "repeats": [
+    {
+     "unitSelector": "DIV.footer-links",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 25,
+      "imgs": 3,
+      "textRuns": 39
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.col2",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 2,
+      "textRuns": 2
+     },
+     "uniform": false
+    }
+   ]
+  }
+ ]
+}

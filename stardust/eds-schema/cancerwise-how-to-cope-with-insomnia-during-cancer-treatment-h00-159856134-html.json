@@ -1,0 +1,1850 @@
+{
+ "source": "http://localhost:8791/cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html-proposed.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "blog-article",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Jump To:"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Back",
+     "href": "/cancerwise.html"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Diseases",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Acoustic Neuroma (18)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/acoustic-neuroma"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Adrenal Gland Tumor (18)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/adrenal-gland-tumor"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Anal Cancer (70)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/anal-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Anemia (2)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/anemia"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "Appendix Cancer (18)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/appendix-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Bile Duct Cancer (24)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/bile-duct-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Bladder Cancer (70)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/bladder-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "Brain Metastases (26)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/brain-metastases"
+    },
+    {
+     "role": "cta",
+     "order": 11,
+     "text": "Brain Tumor (240)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/brain-tumor"
+    },
+    {
+     "role": "cta",
+     "order": 12,
+     "text": "Breast Cancer (708)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/breast-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 13,
+     "text": "Breast Implant-Associated Anaplastic Large Cell Lymphoma (2)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/breast-implant-associated-anaplastic-large-cell-lymphoma"
+    },
+    {
+     "role": "cta",
+     "order": 14,
+     "text": "Cancer of Unknown Primary (4)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/cancer-of-unknown-primary"
+    },
+    {
+     "role": "cta",
+     "order": 15,
+     "text": "Carcinoid Tumor (10)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/carcinoid-tumor"
+    },
+    {
+     "role": "cta",
+     "order": 16,
+     "text": "Cervical Cancer (150)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/cervical-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 17,
+     "text": "Colon Cancer (166)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/colon-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 18,
+     "text": "Colorectal Cancer (144)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/colorectal-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 19,
+     "text": "Endocrine Tumor (4)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/endocrine-tumor"
+    },
+    {
+     "role": "cta",
+     "order": 20,
+     "text": "Endometrial Cancer (84)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/uterine-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 21,
+     "text": "Esophageal Cancer (44)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/esophageal-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 22,
+     "text": "Eye Cancer (38)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/eye-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 23,
+     "text": "Fallopian Tube Cancer (10)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/fallopian-tube-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 24,
+     "text": "Germ Cell Tumor (2)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/germ-cell-tumor"
+    },
+    {
+     "role": "cta",
+     "order": 25,
+     "text": "Gestational Trophoblastic Disease (2)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/gestational-trophoblastic-disease"
+    },
+    {
+     "role": "cta",
+     "order": 26,
+     "text": "Head and Neck Cancer (30)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/head-and-neck-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 27,
+     "text": "Kidney Cancer (132)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/kidney-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 28,
+     "text": "Leukemia (330)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/leukemia"
+    },
+    {
+     "role": "cta",
+     "order": 29,
+     "text": "Liver Cancer (56)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/liver-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 30,
+     "text": "Lung Cancer (248)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/lung-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 31,
+     "text": "Lymphoma (294)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/lymphoma"
+    },
+    {
+     "role": "cta",
+     "order": 32,
+     "text": "Mesothelioma (12)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/mesothelioma"
+    },
+    {
+     "role": "cta",
+     "order": 33,
+     "text": "Metastasis (30)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/metastasis"
+    },
+    {
+     "role": "cta",
+     "order": 34,
+     "text": "Multiple Myeloma (106)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/multiple-myeloma"
+    },
+    {
+     "role": "cta",
+     "order": 35,
+     "text": "Myelodysplastic Syndrome (54)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/myelodysplastic-syndrome"
+    },
+    {
+     "role": "cta",
+     "order": 36,
+     "text": "Myeloproliferative Neoplasm (6)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/myeloproliferative-disorder"
+    },
+    {
+     "role": "cta",
+     "order": 37,
+     "text": "Neuroendocrine Tumors (16)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/neuroendocrine-tumors"
+    },
+    {
+     "role": "cta",
+     "order": 38,
+     "text": "Oral Cancer (110)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/oral-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 39,
+     "text": "Ovarian Cancer (164)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/ovarian-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 40,
+     "text": "Pancreatic Cancer (126)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/pancreatic"
+    },
+    {
+     "role": "cta",
+     "order": 41,
+     "text": "Parathyroid Disease (2)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/parathyroid-disease"
+    },
+    {
+     "role": "cta",
+     "order": 42,
+     "text": "Penile Cancer (8)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/penile-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 43,
+     "text": "Pituitary Tumor (6)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/pituitary-tumor"
+    },
+    {
+     "role": "cta",
+     "order": 44,
+     "text": "Prostate Cancer (156)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/prostate-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 45,
+     "text": "Rectal Cancer (60)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/rectal-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 46,
+     "text": "Renal Medullary Carcinoma (6)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/renal-medullary-carcinoma"
+    },
+    {
+     "role": "cta",
+     "order": 47,
+     "text": "Salivary Gland Cancer (16)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/salivary-gland-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 48,
+     "text": "Sarcoma (246)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/sarcoma"
+    },
+    {
+     "role": "cta",
+     "order": 49,
+     "text": "Skin Cancer (306)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/skin-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 50,
+     "text": "Skull Base Tumors (62)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/skull-base-tumors"
+    },
+    {
+     "role": "cta",
+     "order": 51,
+     "text": "Spinal Tumor (14)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/spinal-tumor"
+    },
+    {
+     "role": "cta",
+     "order": 52,
+     "text": "Stomach Cancer (66)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/stomach-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 53,
+     "text": "Testicular Cancer (30)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/testicular-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 54,
+     "text": "Throat Cancer (86)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/throat-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 55,
+     "text": "Thymoma (8)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/thymoma"
+    },
+    {
+     "role": "cta",
+     "order": 56,
+     "text": "Thyroid Cancer (96)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/thyroid-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 57,
+     "text": "Tonsil Cancer (32)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/tonsil-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 58,
+     "text": "Vaginal Cancer (20)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/vaginal-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 59,
+     "text": "Vulvar Cancer (28)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/diseases/vulvar-cancer"
+    },
+    {
+     "role": "cta",
+     "order": 60,
+     "text": "Cancer Topic",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html"
+    },
+    {
+     "role": "cta",
+     "order": 61,
+     "text": "Adolescent and Young Adult Cancer Issues (38)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/adolescent-and-young-adult-cancer-issues"
+    },
+    {
+     "role": "cta",
+     "order": 62,
+     "text": "Advance Care Planning (16)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/advance-care-planning-advanced-directives"
+    },
+    {
+     "role": "cta",
+     "order": 63,
+     "text": "Blood Donation (38)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/blood-donation"
+    },
+    {
+     "role": "cta",
+     "order": 64,
+     "text": "Bone Health (10)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/bone-health"
+    },
+    {
+     "role": "cta",
+     "order": 65,
+     "text": "COVID-19 (360)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/covid-19"
+    },
+    {
+     "role": "cta",
+     "order": 66,
+     "text": "Cancer Recurrence (126)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/cancer-recurrence"
+    },
+    {
+     "role": "cta",
+     "order": 67,
+     "text": "Childhood Cancer Issues (114)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/childhood-cancer-issues"
+    },
+    {
+     "role": "cta",
+     "order": 68,
+     "text": "Clinical Trials (622)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/clinical-trials"
+    },
+    {
+     "role": "cta",
+     "order": 69,
+     "text": "Complementary Integrative Medicine (24)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/complementary-integrative-medicine"
+    },
+    {
+     "role": "cta",
+     "order": 70,
+     "text": "Cytogenetics (2)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/cytogenetics"
+    },
+    {
+     "role": "cta",
+     "order": 71,
+     "text": "DNA Methylation (2)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/dna-methylation"
+    },
+    {
+     "role": "cta",
+     "order": 72,
+     "text": "Diagnosis (250)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/diagnosis"
+    },
+    {
+     "role": "cta",
+     "order": 73,
+     "text": "Epigenetics (4)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/epigenetics"
+    },
+    {
+     "role": "cta",
+     "order": 74,
+     "text": "Fertility (68)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/fertility"
+    },
+    {
+     "role": "cta",
+     "order": 75,
+     "text": "Follow-up Guidelines (2)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/follow-up-guidelines"
+    },
+    {
+     "role": "cta",
+     "order": 76,
+     "text": "Health Disparities (12)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/health-disparities"
+    },
+    {
+     "role": "cta",
+     "order": 77,
+     "text": "Hereditary Cancer Syndromes (124)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/hereditary-cancer-syndromes"
+    },
+    {
+     "role": "cta",
+     "order": 78,
+     "text": "Immunology (12)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/immunology"
+    },
+    {
+     "role": "cta",
+     "order": 79,
+     "text": "Li-Fraumeni Syndrome (6)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/li-fraumeni-syndrome"
+    },
+    {
+     "role": "cta",
+     "order": 80,
+     "text": "Mental Health (136)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/mental-health"
+    },
+    {
+     "role": "cta",
+     "order": 81,
+     "text": "Molecular Diagnostics (8)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/molecular-diagnostics"
+    },
+    {
+     "role": "cta",
+     "order": 82,
+     "text": "Pain Management (60)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/pain-management"
+    },
+    {
+     "role": "cta",
+     "order": 83,
+     "text": "Palliative Care (10)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/palliative-care"
+    },
+    {
+     "role": "cta",
+     "order": 84,
+     "text": "Pathology (10)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/pathology"
+    },
+    {
+     "role": "cta",
+     "order": 85,
+     "text": "Physical Therapy (18)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/physical-therapy"
+    },
+    {
+     "role": "cta",
+     "order": 86,
+     "text": "Pregnancy (20)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/pregnancy"
+    },
+    {
+     "role": "cta",
+     "order": 87,
+     "text": "Prevention (1046)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/prevention"
+    },
+    {
+     "role": "cta",
+     "order": 88,
+     "text": "Research (248)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/research"
+    },
+    {
+     "role": "cta",
+     "order": 89,
+     "text": "Second Opinion (92)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/second-opinion"
+    },
+    {
+     "role": "cta",
+     "order": 90,
+     "text": "Sexuality (20)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/sexuality"
+    },
+    {
+     "role": "cta",
+     "order": 91,
+     "text": "Side Effects (656)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/side-effects"
+    },
+    {
+     "role": "cta",
+     "order": 92,
+     "text": "Sleep Disorders (12)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/sleep-disorders"
+    },
+    {
+     "role": "cta",
+     "order": 93,
+     "text": "Stem Cell Transplantation Cellular Therapy (208)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/stem-cell-transplantation-cellular-therapy"
+    },
+    {
+     "role": "cta",
+     "order": 94,
+     "text": "Support (428)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/support"
+    },
+    {
+     "role": "cta",
+     "order": 95,
+     "text": "Survivorship (332)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/survivorship"
+    },
+    {
+     "role": "cta",
+     "order": 96,
+     "text": "Symptoms (186)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/symptoms"
+    },
+    {
+     "role": "cta",
+     "order": 97,
+     "text": "Treatment (1772)",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/cancer-topics/treatment"
+    },
+    {
+     "role": "heading",
+     "order": 98,
+     "text": "How to cope with insomnia during cancer treatment"
+    },
+    {
+     "role": "eyebrow",
+     "order": 99,
+     "text": "BY"
+    },
+    {
+     "role": "cta",
+     "order": 100,
+     "text": "Roman Gokhman",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/author/Roman%20Gokhman"
+    },
+    {
+     "role": "body",
+     "order": 101,
+     "text": "|"
+    },
+    {
+     "role": "eyebrow",
+     "order": 102,
+     "text": "Close"
+    },
+    {
+     "role": "body",
+     "order": 103,
+     "text": "Share this article"
+    },
+    {
+     "role": "body",
+     "order": 104,
+     "text": "Via social media:"
+    },
+    {
+     "role": "body",
+     "order": 105,
+     "text": "Or copy the link:"
+    },
+    {
+     "role": "body",
+     "order": 106,
+     "text": "Copy"
+    },
+    {
+     "role": "body",
+     "order": 107,
+     "text": "Copy to clipboard"
+    },
+    {
+     "role": "body",
+     "order": 108,
+     "text": "8 minute read | Published"
+    },
+    {
+     "role": "body",
+     "order": 109,
+     "text": "June 08, 2026"
+    },
+    {
+     "role": "body",
+     "order": 110,
+     "text": "Medically Reviewed"
+    },
+    {
+     "role": "body",
+     "order": 111,
+     "text": "|"
+    },
+    {
+     "role": "body",
+     "order": 112,
+     "text": "Last reviewed by"
+    },
+    {
+     "role": "cta",
+     "order": 113,
+     "text": "Pamela Schlembach, M.D.,",
+     "href": "http://faculty.mdanderson.org/profiles/pamela_schlembach.html"
+    },
+    {
+     "role": "body",
+     "order": 114,
+     "text": "on June 08, 2026"
+    },
+    {
+     "role": "heading",
+     "order": 115,
+     "text": "Key takeaways:"
+    },
+    {
+     "role": "body",
+     "order": 116,
+     "text": "Insomnia is common during cancer treatment. Side effects, medications and stress often disrupt sleep."
+    },
+    {
+     "role": "body",
+     "order": 117,
+     "text": "Start with lifestyle changes. Sleep routines, exercise and limiting caffeine can help you sleep better."
+    },
+    {
+     "role": "body",
+     "order": 118,
+     "text": "Treat the root cause, if needed. Therapy or medications may help when insomnia persists."
+    },
+    {
+     "role": "body",
+     "order": 119,
+     "text": "Insomnia is a sleep disorder that makes it difficult to fall or stay asleep. It’s common in the general population, but it can also affect you if you’re undergoing like and . That’s because pain and other physical side effects from cancer treatment can disrupt sleep. So can stress and anxiety."
+    },
+    {
+     "role": "cta",
+     "order": 120,
+     "text": "cancer treatment",
+     "href": "https://www.mdanderson.org/treatment-options.html"
+    },
+    {
+     "role": "cta",
+     "order": 121,
+     "text": "chemotherapy",
+     "href": "https://www.mdanderson.org/treatment-options/chemotherapy.html"
+    },
+    {
+     "role": "cta",
+     "order": 122,
+     "text": "radiation therapy",
+     "href": "https://www.mdanderson.org/treatment-options/radiation-therapy.html"
+    },
+    {
+     "role": "body",
+     "order": 123,
+     "text": "Sleep allows your body and mind to recover from the previous day. If you don’t get enough sleep, your body and brain can’t perform important daily tasks."
+    },
+    {
+     "role": "body",
+     "order": 124,
+     "text": "There are two main types of insomnia: long-term (chronic) insomnia lasts for three months or longer; acute insomnia occurs for fewer than three months."
+    },
+    {
+     "role": "body",
+     "order": 125,
+     "text": "There are many reasons you may develop insomnia. These include underlying health conditions, genetics and lifestyle factors."
+    },
+    {
+     "role": "body",
+     "order": 126,
+     "text": "Fortunately, it’s possible to treat insomnia."
+    },
+    {
+     "role": "body",
+     "order": 127,
+     "text": "Here‘s what you need to know about insomnia’s causes and symptoms, as well as how to manage it while you’re going through cancer treatment."
+    },
+    {
+     "role": "body",
+     "order": 128,
+     "text": "Insomnia causes during cancer treatment"
+    },
+    {
+     "role": "body",
+     "order": 129,
+     "text": "In people undergoing cancer treatment, is usually a side effect of medications, treatments like radiation therapy or chemotherapy, or the stress of coping with a cancer diagnosis."
+    },
+    {
+     "role": "cta",
+     "order": 130,
+     "text": "insomnia",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/emotional-physical-effects/sleep-loss.html"
+    },
+    {
+     "role": "body",
+     "order": 131,
+     "text": "“If you're taking steroids for pain or inflammation, that can cause disruption in your sleep,” says radiation oncologist , who sees patients at . “Additionally, some chemotherapy medications can directly affect neurotransmitters that regulate sleep.”"
+    },
+    {
+     "role": "cta",
+     "order": 132,
+     "text": "Pamela Schlembach, M.D.",
+     "href": "http://faculty.mdanderson.org/Pamela_Schlembach/Default.asp?"
+    },
+    {
+     "role": "cta",
+     "order": 133,
+     "text": "UT MD Anderson The Woodlands",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations/the-woodlands.html"
+    },
+    {
+     "role": "body",
+     "order": 134,
+     "text": "Pain and other side effects of cancer treatment — such as , vomiting, frequent nighttime urination and hot flashes — can also keep you up at night."
+    },
+    {
+     "role": "cta",
+     "order": 135,
+     "text": "nausea",
+     "href": "https://www.mdanderson.org/cancerwise/how-to-manage-nausea-caused-by-cancer-treatment.h00-159459267.html"
+    },
+    {
+     "role": "body",
+     "order": 136,
+     "text": "Your environment can also be a factor, Schlembach says. If you’re sleeping in a hospital, your schedule may be interrupted by your cancer treatment or the bustle of your surroundings."
+    },
+    {
+     "role": "body",
+     "order": 137,
+     "text": "“Of course, the psychological and emotional stress of living with cancer can lead to anxiety, or ,” she says."
+    },
+    {
+     "role": "cta",
+     "order": 138,
+     "text": "depression",
+     "href": "https://www.mdanderson.org/cancerwise/depression-during-cancer-treatment--when-it-s-more-than-the-blues.h00-159225723.html"
+    },
+    {
+     "role": "cta",
+     "order": 139,
+     "text": "fear of recurrence",
+     "href": "https://www.mdanderson.org/cancerwise/how-to-manage-the-fear-of-cancer-recurrence.h00-159617067.html"
+    },
+    {
+     "role": "body",
+     "order": 140,
+     "text": "Insomnia may also be due to an underlying cause not related to cancer or cancer treatment, such as , obstructive sleep apnea and bipolar disorder, as well as from lifestyle factors like jet lag or irregular work schedules."
+    },
+    {
+     "role": "cta",
+     "order": 141,
+     "text": "acid reflux",
+     "href": "https://www.mdanderson.org/cancerwise/acid-reflux--barretts-esophagus-and-esophageal-cancer--what-is-the-link.h00-159387468.html"
+    },
+    {
+     "role": "body",
+     "order": 142,
+     "text": "Before starting treatment for insomnia, your healthcare team will work to determine the cause of your sleep issues."
+    },
+    {
+     "role": "heading",
+     "order": 143,
+     "text": "Insomnia symptoms during cancer treatment"
+    },
+    {
+     "role": "body",
+     "order": 144,
+     "text": "The symptoms of insomnia are the same regardless of its cause. They include:"
+    },
+    {
+     "role": "body",
+     "order": 145,
+     "text": "Daytime sleepiness"
+    },
+    {
+     "role": "body",
+     "order": 146,
+     "text": "Difficulty concentrating"
+    },
+    {
+     "role": "body",
+     "order": 147,
+     "text": "Anxiety"
+    },
+    {
+     "role": "body",
+     "order": 148,
+     "text": "Difficulty falling asleep at night"
+    },
+    {
+     "role": "body",
+     "order": 149,
+     "text": "Irritability and mood changes"
+    },
+    {
+     "role": "heading",
+     "order": 150,
+     "text": "Insomnia treatments during cancer treatment"
+    },
+    {
+     "role": "body",
+     "order": 151,
+     "text": "There are several ways to treat insomnia. They range from improving your nighttime routine and lifestyle habits (read more on that below) to medical treatments, such as:"
+    },
+    {
+     "role": "body",
+     "order": 152,
+     "text": "of your insomnia, such as another medical condition or pain due to cancer or your treatment."
+    },
+    {
+     "role": "body",
+     "order": 153,
+     "text": "Treating the underlying cause"
+    },
+    {
+     "role": "body",
+     "order": 154,
+     "text": ", a type of talk therapy that helps you reframe negative or stressful thoughts that can disrupt your rest. This can help you address your worries about illness, treatment and outlook."
+    },
+    {
+     "role": "body",
+     "order": 155,
+     "text": "Cognitive behavioral therapy"
+    },
+    {
+     "role": "body",
+     "order": 156,
+     "text": ", such as:"
+    },
+    {
+     "role": "body",
+     "order": 157,
+     "text": "Medications"
+    },
+    {
+     "role": "body",
+     "order": 158,
+     "text": ", a naturally occurring hormone that helps to regulate sleep, a naturally occurring hormone that helps to regulate sleep"
+    },
+    {
+     "role": "cta",
+     "order": 159,
+     "text": "Melatonin",
+     "href": "https://www.mdanderson.org/cancerwise/is-it-safe-to-take-melatonin-during-cancer-treatment.h00-159539745.html"
+    },
+    {
+     "role": "body",
+     "order": 160,
+     "text": "Dual orexin receptor antagonists, such as suvorexant and lemborexant, which regulate wakefulness by blocking orexin, a chemical involved in wakefulness"
+    },
+    {
+     "role": "body",
+     "order": 161,
+     "text": "Sedatives like zolpidem, which act on gamma-aminobutyric acid receptors to induce sleep"
+    },
+    {
+     "role": "body",
+     "order": 162,
+     "text": "Tricyclic antidepressants like mirtazapine, trazodone or benzodiazepines, which have sedating effects"
+    },
+    {
+     "role": "body",
+     "order": 163,
+     "text": "“Sleeping medications need to be monitored by a physician, and it's something you typically don't want to be on long-term due to their side effects,” Schlembach says."
+    },
+    {
+     "role": "heading",
+     "order": 164,
+     "text": "How to get better sleep when you’re going through cancer treatment"
+    },
+    {
+     "role": "body",
+     "order": 165,
+     "text": "There are some things you can do during the day to help you sleep better at night. These include practicing mindfulness, getting daily exercise and making healthy lifestyle choices."
+    },
+    {
+     "role": "heading",
+     "order": 166,
+     "text": "Practicing mindfulness"
+    },
+    {
+     "role": "body",
+     "order": 167,
+     "text": "may include doing your favorite hobbies like painting, spending time with loved ones, doing breathing exercises or meditating."
+    },
+    {
+     "role": "cta",
+     "order": 168,
+     "text": "Mindfulness",
+     "href": "https://www.mdanderson.org/cancerwise/how-mindfulness-can-help-cancer-patients-find-happiness.h00-158985867.html"
+    },
+    {
+     "role": "heading",
+     "order": 169,
+     "text": "Exercise"
+    },
+    {
+     "role": "body",
+     "order": 170,
+     "text": "can be as simple as going on a walk, riding a bike, stretching, doing yoga or using light weights. Physical activity helps your body to ease stress so you can sleep better. Aim for 150 minutes of moderate physical activity or 75 minutes of vigorous physical activity each week, Schlembach says."
+    },
+    {
+     "role": "cta",
+     "order": 171,
+     "text": "Exercise",
+     "href": "https://www.mdanderson.org/prevention-screening/manage-your-risk/physical-activity.html"
+    },
+    {
+     "role": "body",
+     "order": 172,
+     "text": "“It’s really important to get some physical activity so you’re actually tired at the end of the day,” she says. “But not too late in the evening; that can interfere with sleep.”"
+    },
+    {
+     "role": "heading",
+     "order": 173,
+     "text": "Lifestyle changes"
+    },
+    {
+     "role": "body",
+     "order": 174,
+     "text": "Eating a healthy rich in vegetables, fruits, whole grains, nuts and seeds, with lean proteins like chicken and fish is important to your health, including your sleep health."
+    },
+    {
+     "role": "cta",
+     "order": 175,
+     "text": "diet",
+     "href": "https://www.mdanderson.org/cancerwise/your-diet-taking-small-steps-to-improve-your-health.h00-158827278.html"
+    },
+    {
+     "role": "body",
+     "order": 176,
+     "text": "Schlembach says to also look for healthy fats like those from olive or avocado oil, adding that it’s best to limit food with added sugar, sodium and refined carbohydrates."
+    },
+    {
+     "role": "body",
+     "order": 177,
+     "text": "Additionally, decreasing or avoiding , may lead to better sleep. Alcohol and tobacco products also have been linked to problems with sleep and many other health problems, including cancer. Avoid all tobacco products and aim to drink less often and have fewer drinks – for cancer prevention, it’s best to avoid all alcohol."
+    },
+    {
+     "role": "cta",
+     "order": 178,
+     "text": "caffeine",
+     "href": "https://www.mdanderson.org/cancerwise/8-foods-that-impact-stress.h00-159459267.html"
+    },
+    {
+     "role": "heading",
+     "order": 179,
+     "text": "How to fall asleep when dealing with insomnia during cancer treatment"
+    },
+    {
+     "role": "body",
+     "order": 180,
+     "text": "It’s important to get at least nine hours of sleep on most nights, Schlembach says. Practicing healthy and developing a nighttime routine may help you fall asleep and stay asleep at night. Here is a list of some things you can do to create a comfortable sleep environment."
+    },
+    {
+     "role": "cta",
+     "order": 181,
+     "text": "sleep hygiene",
+     "href": "https://www.mdanderson.org/cancerwise/healthy-sleep-habits.h00-159778812.html"
+    },
+    {
+     "role": "body",
+     "order": 182,
+     "text": "As a rule of thumb, it’s important to associate your bedroom with sleep. So, try not to use it as an office, gym, craft center or a movie theater."
+    },
+    {
+     "role": "heading",
+     "order": 183,
+     "text": "Before bed"
+    },
+    {
+     "role": "body",
+     "order": 184,
+     "text": "Keep them to 30 minutes or less. And don't take a nap within several hours of bedtime. This can make it harder to fall asleep at night."
+    },
+    {
+     "role": "body",
+     "order": 185,
+     "text": "Avoid daytime naps."
+    },
+    {
+     "role": "body",
+     "order": 186,
+     "text": "Avoid heavy meals, alcohol, chocolate or caffeinated products, such as soda, coffee or tea."
+    },
+    {
+     "role": "body",
+     "order": 187,
+     "text": "Limit your food and drink intake three to four hours before bedtime."
+    },
+    {
+     "role": "body",
+     "order": 188,
+     "text": "Keep a bedtime and wake-up ritual, even on the weekends. Every night around the same time, take a bath, read a book or listen to music. Then, it's lights out."
+    },
+    {
+     "role": "body",
+     "order": 189,
+     "text": "Set a sleep schedule."
+    },
+    {
+     "role": "body",
+     "order": 190,
+     "text": "This can increase your cortisol and adrenaline levels when you need to relax."
+    },
+    {
+     "role": "body",
+     "order": 191,
+     "text": "Avoid exercise too close to bedtime."
+    },
+    {
+     "role": "body",
+     "order": 192,
+     "text": "The blue light from cell phones, tablets, TVs and computer screens suppresses melatonin, which directly interferes with sleep. So, shut off your electronic devices in the evening, and leave them off until morning. If you can't say “no,” purchase a blue light filter to help reduce eyestrain."
+    },
+    {
+     "role": "body",
+     "order": 193,
+     "text": "Cut off screen time."
+    },
+    {
+     "role": "heading",
+     "order": 194,
+     "text": "At bedtime"
+    },
+    {
+     "role": "body",
+     "order": 195,
+     "text": "Some research shows that the optimal bedroom temperature should be between 65 to 72 degrees F for sound sleep."
+    },
+    {
+     "role": "body",
+     "order": 196,
+     "text": "Cool down your bedroom."
+    },
+    {
+     "role": "body",
+     "order": 197,
+     "text": "Your bedroom should be like a cave: dark, cool and quiet. Blackout blinds, shades and fabric can minimize ambient light and help you sleep. Also be sure to cover clocks or other electronic devices that emit light in your bedroom."
+    },
+    {
+     "role": "body",
+     "order": 198,
+     "text": "Pull down the shades."
+    },
+    {
+     "role": "body",
+     "order": 199,
+     "text": "Make sure you’re wearing comfortable fabrics that don’t irritate your skin and keep you at a comfortable body temperature. If your feet are cold, wear socks. Cold feet increase mental arousal."
+    },
+    {
+     "role": "body",
+     "order": 200,
+     "text": "Wear comfortable clothing."
+    },
+    {
+     "role": "body",
+     "order": 201,
+     "text": ". If you’re sensitive to background noise, a fan or white noise device may calm your mind and block out ambient noise."
+    },
+    {
+     "role": "body",
+     "order": 202,
+     "text": "Try a white noise machine"
+    },
+    {
+     "role": "heading",
+     "order": 203,
+     "text": "If you can’t fall asleep"
+    },
+    {
+     "role": "body",
+     "order": 204,
+     "text": "If you can’t sleep within five to 10 minutes of lying down, get out of bed and read a magazine or book that’s soothing or boring. If you're using a tablet or a phone, use a blue light filter. Spend time in mindfulness or use stress-relieving techniques. Once you feel tired again, go back to bed."
+    },
+    {
+     "role": "body",
+     "order": 205,
+     "text": "Leave the room."
+    },
+    {
+     "role": "body",
+     "order": 206,
+     "text": "Keep a pen and paper next to your bed if you’re prone to wake up and worry about the next day's events. Jot down your reminder and fall back to sleep."
+    },
+    {
+     "role": "body",
+     "order": 207,
+     "text": "Write it out."
+    },
+    {
+     "role": "heading",
+     "order": 208,
+     "text": "When to contact your doctor about insomnia if you’re going through cancer treatment"
+    },
+    {
+     "role": "body",
+     "order": 209,
+     "text": "If you’re doing all of this and you’re still not getting enough quality sleep, contact your doctor."
+    },
+    {
+     "role": "body",
+     "order": 210,
+     "text": "Sometimes they can prescribe a sleep aid temporarily, but it should not be used for a long time."
+    },
+    {
+     "role": "body",
+     "order": 211,
+     "text": "Also contact your healthcare team if you’re experiencing pain due to your medications. They can suggest changing your medications or dosage. Together, you can come up with a plan to help you sleep soundly and pain-free."
+    },
+    {
+     "role": "heading",
+     "order": 212,
+     "text": "Frequently asked questions about coping with insomnia during cancer treatment"
+    },
+    {
+     "role": "body",
+     "order": 213,
+     "text": "Here are some more commonly asked questions about coping with insomnia."
+    },
+    {
+     "role": "heading",
+     "order": 214,
+     "text": "What is the best cure for insomnia?"
+    },
+    {
+     "role": "body",
+     "order": 215,
+     "text": "Schlembach says the best way to treat insomnia is to begin with lifestyle changes to improve your sleep hygiene."
+    },
+    {
+     "role": "body",
+     "order": 216,
+     "text": "“If those things don't work, then it's best to contact your doctor to determine whether there’s another underlying cause,” she says."
+    },
+    {
+     "role": "heading",
+     "order": 217,
+     "text": "What is the 3-3-3 rule for insomnia?"
+    },
+    {
+     "role": "body",
+     "order": 218,
+     "text": "The 3-3-3 rule for insomnia is a self-measurement tool. It asks if you have experienced poor sleep for at least three nights within a seven-day period, have had poor sleep hygiene for at least three months, and have had poor sleep impact your day-to-day functioning in at least three ways — such as fatigue, brain fog, mood changes or a lack of concentration."
+    },
+    {
+     "role": "body",
+     "order": 219,
+     "text": "“If the answers are yes to all three, then you need to contact a doctor,” Schlembach says."
+    },
+    {
+     "role": "heading",
+     "order": 220,
+     "text": "How do medical professionals diagnose insomnia?"
+    },
+    {
+     "role": "body",
+     "order": 221,
+     "text": "Your care team will begin by taking a detailed medical history, asking you about your symptoms, your medications, existing medical conditions, physical stressors and lifestyle factors."
+    },
+    {
+     "role": "body",
+     "order": 222,
+     "text": "They may also perform a physical exam to help them determine whether your symptoms are related to your cancer or cancer treatment."
+    },
+    {
+     "role": "body",
+     "order": 223,
+     "text": "They may ask you to keep a sleep journal, in which you will record the times you wake up and cannot fall asleep, as well as your symptoms and physical surroundings during that time."
+    },
+    {
+     "role": "body",
+     "order": 224,
+     "text": "If necessary, your doctor will order a sleep study, which measures nighttime wakefulness."
+    },
+    {
+     "role": "heading",
+     "order": 225,
+     "text": "Curbing insomnia is a process"
+    },
+    {
+     "role": "body",
+     "order": 226,
+     "text": "If you’re having trouble sleeping, it can take time to fix that. Addressing insomnia is a process."
+    },
+    {
+     "role": "body",
+     "order": 227,
+     "text": "If these suggestions don’t work, Schlembach says it’s best to contact your healthcare team to see if cognitive behavioral therapy, sleep aid medications, or a referral to a sleep specialist might be your next step."
+    },
+    {
+     "role": "body",
+     "order": 228,
+     "text": "If you are a UT MD Anderson patient with sleep issues, ask your care team for a referral to a sleep specialist at ."
+    },
+    {
+     "role": "cta",
+     "order": 229,
+     "text": "UT MD Anderson's Sleep Center",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/cardiopulmonary-center/sleep-center.html"
+    },
+    {
+     "role": "body",
+     "order": 230,
+     "text": "or call 1-855-628-7053."
+    },
+    {
+     "role": "cta",
+     "order": 231,
+     "text": "Request an appointment at UT MD Anderson online",
+     "href": "https://my.mdanderson.org/RequestAppointment"
+    },
+    {
+     "role": "heading",
+     "order": 232,
+     "text": "More stories from Cancerwise"
+    },
+    {
+     "role": "body",
+     "order": 233,
+     "text": "Don't hesitate to discuss insomnia and other sleep issues with your doctor."
+    },
+    {
+     "role": "body",
+     "order": 234,
+     "text": "Pamela Schlembach, M.D."
+    },
+    {
+     "role": "body",
+     "order": 235,
+     "text": "Physician"
+    },
+    {
+     "role": "cta",
+     "order": 236,
+     "text": "Share Your Story",
+     "href": "https://www4.mdanderson.org/cancer_survivors/Story.cfc?method=index"
+    },
+    {
+     "role": "cta",
+     "order": 237,
+     "text": "Request an Appointment",
+     "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/appointments.html"
+    },
+    {
+     "role": "cta",
+     "order": 238,
+     "text": "Reduce Your Cancer Risk",
+     "href": "https://www.mdanderson.org/prevention-screening/manage-your-risk.html"
+    },
+    {
+     "role": "heading",
+     "order": 239,
+     "text": "Subscribe to Focused on Health"
+    },
+    {
+     "role": "body",
+     "order": 240,
+     "text": "Stay informed. Get cancer prevention tips and healthy living updates from UT MD Anderson's experts."
+    },
+    {
+     "role": "body",
+     "order": 241,
+     "text": "Email*"
+    },
+    {
+     "role": "body",
+     "order": 242,
+     "text": "First Name*"
+    },
+    {
+     "role": "body",
+     "order": 243,
+     "text": "Last Name*"
+    }
+   ],
+   "imgCount": 6,
+   "repeats": [
+    {
+     "unitSelector": "LI.parent-link",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 58,
+      "imgs": 0,
+      "textRuns": 58
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "SECTION.bleed-bottom",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 12
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "P.",
+     "count": 41,
+     "unit": {
+      "headings": 0,
+      "ctas": 3,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "H2.",
+     "count": 8,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "UL.",
+     "count": 5,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 5
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "LI.",
+     "count": 3,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "LI.",
+     "count": 5,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "LI.",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "LI.",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.at-article",
+     "count": 5,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 1,
+      "textRuns": 1
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.",
+     "count": 6,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "highlight",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Help #EndCancer"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Give Now"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Your gift will help make a tremendous difference."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Donate",
+     "href": "https://gifts.mdanderson.org/Default.aspx?tsid=37435"
+    },
+    {
+     "role": "heading",
+     "order": 4,
+     "text": "Donate Blood"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Our patients depend on blood and platelet donations."
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Make an appointment",
+     "href": "https://www.mdandersonbloodbank.org/"
+    },
+    {
+     "role": "heading",
+     "order": 7,
+     "text": "Shop UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "Show your support for our mission through branded merchandise."
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "View products",
+     "href": "https://shop.mdanderson.org"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.cell-t",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "global-footer",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Subscribe to our Cancerwise newsletter"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": ".st0-desktop { fill: #000; }Explore what your support makes possible",
+     "href": "https://onlypossiblehere.mdanderson.org"
+    },
+    {
+     "role": "eyebrow",
+     "order": 2,
+     "text": "Explore"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Patients & Family",
+     "href": "https://www.mdanderson.org/patients-family.html"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Prevention & Screening",
+     "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Donors & Volunteers",
+     "href": "https://www.mdanderson.org/donors-volunteers.html"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "For Physicians",
+     "href": "https://www.mdanderson.org/for-physicians.html"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "Research",
+     "href": "https://www.mdanderson.org/research.html"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Education & Training",
+     "href": "https://www.mdanderson.org/education-training.html"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Clinical Trials",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "Languages",
+     "href": "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 11,
+     "text": "About"
+    },
+    {
+     "role": "cta",
+     "order": 12,
+     "text": "About UT MD Anderson",
+     "href": "https://www.mdanderson.org/about-md-anderson.html"
+    },
+    {
+     "role": "cta",
+     "order": 13,
+     "text": "Careers",
+     "href": "https://jobs.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 14,
+     "text": "Blog",
+     "href": "https://www.mdanderson.org/cancerwise.html"
+    },
+    {
+     "role": "cta",
+     "order": 15,
+     "text": "Newsroom",
+     "href": "https://www.mdanderson.org/newsroom.html"
+    },
+    {
+     "role": "cta",
+     "order": 16,
+     "text": "Editorial Standards",
+     "href": "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html"
+    },
+    {
+     "role": "cta",
+     "order": 17,
+     "text": "For Employees",
+     "href": "https://www.mdanderson.org/about-md-anderson/employee-resources.html"
+    },
+    {
+     "role": "cta",
+     "order": 18,
+     "text": "Merchandise",
+     "href": "https://shop.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 19,
+     "text": "Title IX Reporting (Sexual Misconduct)",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html"
+    },
+    {
+     "role": "cta",
+     "order": 20,
+     "text": "Price Transparency",
+     "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 21,
+     "text": "Finding Your Way"
+    },
+    {
+     "role": "cta",
+     "order": 22,
+     "text": "Our Doctors",
+     "href": "https://faculty.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 23,
+     "text": "Locations",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+     "role": "cta",
+     "order": 24,
+     "text": "Directions",
+     "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html"
+    },
+    {
+     "role": "cta",
+     "order": 25,
+     "text": "Sitemap",
+     "href": "https://www.mdanderson.org/patients-family/html-sitemap.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 26,
+     "text": "Digital Accessibility"
+    },
+    {
+     "role": "cta",
+     "order": 27,
+     "text": "Accessibility Policy",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 28,
+     "text": "Get in Touch"
+    },
+    {
+     "role": "cta",
+     "order": 29,
+     "text": "Call 1-877-790-1139",
+     "href": "tel:+18777901139"
+    },
+    {
+     "role": "cta",
+     "order": 30,
+     "text": "Ask a question",
+     "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 31,
+     "text": "Stay Connected"
+    },
+    {
+     "role": "body",
+     "order": 32,
+     "text": "Previous"
+    },
+    {
+     "role": "body",
+     "order": 33,
+     "text": "Next"
+    },
+    {
+     "role": "eyebrow",
+     "order": 34,
+     "text": "Cancerwise Podcast"
+    },
+    {
+     "role": "body",
+     "order": 35,
+     "text": "Previous"
+    },
+    {
+     "role": "body",
+     "order": 36,
+     "text": "Next"
+    },
+    {
+     "role": "eyebrow",
+     "order": 37,
+     "text": "More"
+    },
+    {
+     "role": "cta",
+     "order": 38,
+     "text": "Website Privacy Policy",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html"
+    },
+    {
+     "role": "cta",
+     "order": 39,
+     "text": "Legal Statement & Policies",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html"
+    },
+    {
+     "role": "cta",
+     "order": 40,
+     "text": "Reports to the State",
+     "href": "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html"
+    },
+    {
+     "role": "cta",
+     "order": 41,
+     "text": "Emergency Alert Information",
+     "href": "https://www3.mdanderson.org/emergencyalert/"
+    },
+    {
+     "role": "cta",
+     "order": 42,
+     "text": "State of Texas Links",
+     "href": "https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html"
+    },
+    {
+     "role": "cta",
+     "order": 43,
+     "text": "Our Cancer Network",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html"
+    },
+    {
+     "role": "cta",
+     "order": 44,
+     "text": "Vendors & Suppliers",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html"
+    },
+    {
+     "role": "body",
+     "order": 45,
+     "text": "The mission of The University of Texas MD Anderson Cancer Center is to eliminate cancer in Texas, the nation, and the world through outstanding programs that integrate patient care, research and prevention, and through education for undergraduate and graduate students, trainees, professionals, employees and the public."
+    },
+    {
+     "role": "body",
+     "order": 46,
+     "text": "© 2026 The University of Texas Cancer Center. All rights reserved."
+    },
+    {
+     "role": "body",
+     "order": 47,
+     "text": "MD Anderson"
+    }
+   ],
+   "imgCount": 4,
+   "repeats": [
+    {
+     "unitSelector": "DIV.footer-links",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 25,
+      "imgs": 3,
+      "textRuns": 39
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.col2",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 2,
+      "textRuns": 2
+     },
+     "uniform": false
+    }
+   ]
+  }
+ ]
+}

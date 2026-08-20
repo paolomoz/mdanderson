@@ -1,0 +1,41 @@
+# DRAFT — production artifact (Phase B2, stardust:deploy central run 2026-08-20).
+# Article index for the Cancerwise listing blocks (article-cards variants, section-nav topics).
+# NOT active for the 12-page POC: an index over 12 published pages would render the
+# listing rails near-empty, so all listing blocks ship static/editorial for now
+# (see stardust/rollout/dynamic-blocks-map.md). The metadata rows each article page
+# emits (author/publishdate/category/image/readtime — conversion log §9) are exactly
+# what this index selects, so enabling it at production scale requires no content change.
+version: 1
+
+indices:
+  cancerwise-articles:
+    include:
+      - '/cancerwise/**'
+    exclude:
+      - '/cancerwise'
+    target: /cancerwise/query-index.json
+    properties:
+      title:
+        select: head > meta[property="og:title"]
+        value: attribute(el, 'content')
+      image:
+        select: head > meta[property="og:image"]
+        value: attribute(el, 'content')
+      description:
+        select: head > meta[name="description"]
+        value: attribute(el, 'content')
+      author:
+        select: head > meta[name="author"]
+        value: attribute(el, 'content')
+      publishdate:
+        select: head > meta[name="publishdate"]
+        value: attribute(el, 'content')
+      category:
+        select: head > meta[name="category"]
+        value: attribute(el, 'content')
+      readtime:
+        select: head > meta[name="readtime"]
+        value: attribute(el, 'content')
+      lastModified:
+        select: none
+        value: parseTimestamp(headers['last-modified'], 'ddd, DD MMM YYYY hh:mm:ss GMT')

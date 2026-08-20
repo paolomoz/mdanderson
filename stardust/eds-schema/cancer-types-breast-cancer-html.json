@@ -1,0 +1,1641 @@
+{
+ "source": "http://localhost:8791/cancer-types-breast-cancer-html-proposed.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "hero",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Breast Cancer"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": []
+  },
+  {
+   "section": "appointment-bar",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Call us at or"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "We're here for you."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "1-866-378-5346",
+     "href": "tel:+18555269738"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "request an appointment online.",
+     "href": "/about-md-anderson/contact-us/askmdanderson/appointments.html"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Let's get started."
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Request an appointment online.",
+     "href": "/about-md-anderson/contact-us/askmdanderson/appointments.html"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": []
+  },
+  {
+   "section": "breadcrumbs",
+   "items": [
+    {
+     "role": "cta",
+     "order": 0,
+     "text": "Diagnosis & Treatment",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment.html"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Cancer Types",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/cancer-types.html"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Breast Cancer"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "LI.",
+     "count": 3,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "page-body",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Learn more about Breast Cancer"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Back",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/cancer-types.html"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Breast Cancer",
+     "href": "https://www.mdanderson.org/cancer-types/breast-cancer.html"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Breast Cancer Symptoms",
+     "href": "https://www.mdanderson.org/cancer-types/breast-cancer/breast-cancer-symptoms.html"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Breast Cancer Diagnosis",
+     "href": "https://www.mdanderson.org/cancer-types/breast-cancer/breast-cancer-diagnosis.html"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Breast Cancer Stages",
+     "href": "https://www.mdanderson.org/cancer-types/breast-cancer/breast-cancer-stages.html"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Breast Cancer Treatment",
+     "href": "https://www.mdanderson.org/cancer-types/breast-cancer/breast-cancer-treatment.html"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Get details about our clinical trials that are currently enrolling patients."
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "View Clinical Trials",
+     "href": "https://www.mdanderson.org/patients-family/search-results.html?searchType=clinical%20trials&q=Breast%20Cancer"
+    },
+    {
+     "role": "eyebrow",
+     "order": 9,
+     "text": "Close"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "Share this article"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "Via social media:"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "Or copy the link:"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "Copy"
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "Copy to clipboard"
+    },
+    {
+     "role": "body",
+     "order": 15,
+     "text": "Medically Reviewed"
+    },
+    {
+     "role": "body",
+     "order": 16,
+     "text": "|"
+    },
+    {
+     "role": "body",
+     "order": 17,
+     "text": "Last reviewed by"
+    },
+    {
+     "role": "cta",
+     "order": 18,
+     "text": "Senthil Damodaran, MD, PhD.",
+     "href": "http://faculty.mdanderson.org/profiles/senthil_damodaran.html"
+    },
+    {
+     "role": "body",
+     "order": 19,
+     "text": ","
+    },
+    {
+     "role": "cta",
+     "order": 20,
+     "text": "Melissa P Mitchell, M.D., Ph.D.",
+     "href": "http://faculty.mdanderson.org/profiles/melissa_mitchell.html"
+    },
+    {
+     "role": "body",
+     "order": 21,
+     "text": "and"
+    },
+    {
+     "role": "cta",
+     "order": 22,
+     "text": "Linda M. Pak, M.D.",
+     "href": "http://faculty.mdanderson.org/profiles/linda_pak.html"
+    },
+    {
+     "role": "body",
+     "order": 23,
+     "text": "on August 12, 2026"
+    },
+    {
+     "role": "body",
+     "order": 24,
+     "text": "reast cancer is the most common cancer in the United States. It occurs when a cell in the breast mutates and starts multiplying rapidly."
+    },
+    {
+     "role": "body",
+     "order": 25,
+     "text": "B"
+    },
+    {
+     "role": "body",
+     "order": 26,
+     "text": "Breast cancer is the most common cancer in the United States. It occurs when a cell in the breast mutates and starts multiplying rapidly."
+    },
+    {
+     "role": "heading",
+     "order": 27,
+     "text": "About breast cancer"
+    },
+    {
+     "role": "body",
+     "order": 28,
+     "text": "Everyone, regardless of biological sex, has at least a small amount of breast tissue. The breasts sit on top of your pectoralis muscles (chest muscles). They are made of fatty tissue and some connective tissue that give breasts their shape. Breasts also contain lymph nodes. These small, bean-shaped organs help transport immune cells and remove waste from tissue."
+    },
+    {
+     "role": "body",
+     "order": 29,
+     "text": "In women, breasts also have specialized glands that can produce milk. These glands are called lobules. They are connected to the nipple by a series of small channels called ducts."
+    },
+    {
+     "role": "body",
+     "order": 30,
+     "text": "Breast cancer occurs when cells in the breast mutate and begin to multiply rapidly. While most cases are diagnosed in women, men can develop breast cancer, too."
+    },
+    {
+     "role": "cta",
+     "order": 31,
+     "text": "Learn more about male breast cancer.",
+     "href": "/cancer-types/breast-cancer/male-breast-cancer.html"
+    },
+    {
+     "role": "heading",
+     "order": 32,
+     "text": "Types of breast cancer"
+    },
+    {
+     "role": "body",
+     "order": 33,
+     "text": "There are several different ways to classify breast cancer. A single breast cancer can fall into more than one category. These categories include:"
+    },
+    {
+     "role": "cta",
+     "order": 34,
+     "text": "The molecular features of the cancer cells",
+     "href": "/cancer-types/breast-cancer.html#molecular"
+    },
+    {
+     "role": "cta",
+     "order": 35,
+     "text": "The cells where the disease starts",
+     "href": "/cancer-types/breast-cancer.html#cells"
+    },
+    {
+     "role": "cta",
+     "order": 36,
+     "text": "How far the cancer has spread",
+     "href": "/cancer-types/breast-cancer.html#spread"
+    },
+    {
+     "role": "cta",
+     "order": 37,
+     "text": "More",
+     "href": "#"
+    },
+    {
+     "role": "cta",
+     "order": 38,
+     "text": "Less",
+     "href": "#"
+    },
+    {
+     "role": "heading",
+     "order": 39,
+     "text": "UT MD Anderson is #1 in Cancer Care"
+    },
+    {
+     "role": "cta",
+     "order": 40,
+     "text": "Find out what makes us different",
+     "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/why-md-anderson.html"
+    },
+    {
+     "role": "body",
+     "order": 41,
+     "text": "Classifying by molecular features"
+    },
+    {
+     "role": "body",
+     "order": 42,
+     "text": "(Click to enlarge.) High levels of the HER2 receptor or receptors for estrogen and progesterone can fuel the growth and multiplication of breast cancer cells. Targeted therapy drugs can slow or stop this growth."
+    },
+    {
+     "role": "body",
+     "order": 43,
+     "text": "Breast cancer can be diagnosed by its features on a molecular level."
+    },
+    {
+     "role": "body",
+     "order": 44,
+     "text": "Receptors are molecules that are found inside or on the surface of cancer cells. They interact with specific substances in your body, such as proteins and hormones. This is called recognition."
+    },
+    {
+     "role": "body",
+     "order": 45,
+     "text": "Researchers have identified receptors that fuel the growth and spread of breast cancer when they \"recognize” specific proteins and hormones. The disease’s growth can be slowed or stopped with drugs that interfere with this process."
+    },
+    {
+     "role": "body",
+     "order": 46,
+     "text": "Currently, three major receptor subtypes play important roles in breast cancer prognosis and treatment."
+    },
+    {
+     "role": "heading",
+     "order": 47,
+     "text": "Hormone receptor-positive breast cancer"
+    },
+    {
+     "role": "body",
+     "order": 48,
+     "text": "Hormone receptor-positive breast cancer is the most common molecular subtype. This disease has receptors that bind with one of two naturally occurring hormones, estrogen and progesterone. These hormones fuel the growth of the cancer by binding to these receptors."
+    },
+    {
+     "role": "body",
+     "order": 49,
+     "text": "Hormone blockers interfere with this receptor/hormone recognition. This stops or slows the growth of the cancer."
+    },
+    {
+     "role": "body",
+     "order": 50,
+     "text": "Thanks to hormone blockers and , it can be treated successfully even in patients with advanced cancer."
+    },
+    {
+     "role": "cta",
+     "order": 51,
+     "text": "targeted therapy",
+     "href": "/treatment-options/targeted-therapy.html"
+    },
+    {
+     "role": "heading",
+     "order": 52,
+     "text": "HER2-positive breast cancer"
+    },
+    {
+     "role": "body",
+     "order": 53,
+     "text": "HER2 (Human epidermal growth factor receptor 2) is a protein involved in cell growth. Breast cancers with high levels of HER2 on the surface of the cancer cells are HER2-positive. When two HER2 proteins bond with each other, they send a signal to the cell to grow and multiply."
+    },
+    {
+     "role": "body",
+     "order": 54,
+     "text": "HER2-positive breast cancer accounts for about 15%-20% of all breast cancers."
+    },
+    {
+     "role": "body",
+     "order": 55,
+     "text": "About half of HER2-positive cancers are also hormone receptor-positive/ER positive. These patients receive treatments that target both molecular receptors. They are classified as HER2-positive since doctors believe HER2 is the main driver of the disease."
+    },
+    {
+     "role": "body",
+     "order": 56,
+     "text": "New drugs have significantly improved treatment outcomes and survival in patients with HER2-positive breast cancer."
+    },
+    {
+     "role": "cta",
+     "order": 57,
+     "text": "targeted therapy",
+     "href": "/treatment-options/targeted-therapy.html"
+    },
+    {
+     "role": "heading",
+     "order": 58,
+     "text": "Triple-negative breast cancer"
+    },
+    {
+     "role": "body",
+     "order": 59,
+     "text": "Triple-negative breast cancer (TNBC) includes breast cancers that are not HER2-positive or hormone receptor positive. As a result, there are fewer targeted therapy drugs to treat TNBC."
+    },
+    {
+     "role": "body",
+     "order": 60,
+     "text": "Today, many TNBC patients are successfully treated with . If your cancer is related to a , you may be given a targeted therapy known as a PARP inhibitor."
+    },
+    {
+     "role": "cta",
+     "order": 61,
+     "text": "immune checkpoint inhibitors",
+     "href": "/treatment-options/immune-checkpoint-inhibitors.html"
+    },
+    {
+     "role": "cta",
+     "order": 62,
+     "text": "BRCA gene mutation",
+     "href": "/prevention-screening/family-history/hereditary-cancer-syndromes/hereditary-breast-and-ovarian-cancer-syndrome.html"
+    },
+    {
+     "role": "cta",
+     "order": 63,
+     "text": "Learn more about triple-negative breast cancer.",
+     "href": "/cancer-types/breast-cancer/triple-negative-breast-cancer.html"
+    },
+    {
+     "role": "body",
+     "order": 64,
+     "text": "Classifying by cells where the disease starts"
+    },
+    {
+     "role": "body",
+     "order": 65,
+     "text": "Breast cancer can also be classified based on whether and how much it has spread from its original location."
+    },
+    {
+     "role": "heading",
+     "order": 66,
+     "text": "Ductal Carcinoma"
+    },
+    {
+     "role": "body",
+     "order": 67,
+     "text": "Most breast cancers start in the ducts. These are called ductal carcinomas."
+    },
+    {
+     "role": "body",
+     "order": 68,
+     "text": "If abnormal ductal carcinoma cells have not spread outside of the ducts, patients are diagnosed with ductal carcinoma in situ (DCIS). “In situ” is a Latin term meaning, “in its original place.” DCIS a pre-cancerous condition that is also called stage 0 breast cancer."
+    },
+    {
+     "role": "cta",
+     "order": 69,
+     "text": "Learn more about DCIS.",
+     "href": "/cancer-types/breast-cancer/ductal-carcinoma-in-situ.html"
+    },
+    {
+     "role": "body",
+     "order": 70,
+     "text": "If the cancer has spread outside the ducts into nearby breast tissue, it is called an invasive ductal carcinoma."
+    },
+    {
+     "role": "body",
+     "order": 71,
+     "text": "In some cases, ductal carcinoma cells can cause a rash or scaling of the nipple, which may spread to the areola. This is called Paget disease of the breast."
+    },
+    {
+     "role": "cta",
+     "order": 72,
+     "text": "Read more about Paget disease of the breast.",
+     "href": "/cancer-types/breast-cancer/paget-disease-of-the-breast.html"
+    },
+    {
+     "role": "heading",
+     "order": 73,
+     "text": "Lobular carcinoma"
+    },
+    {
+     "role": "body",
+     "order": 74,
+     "text": "Lobular carcinoma forms in the lobules, the parts of the breast that produce milk. These cancer cells do not clump together like ductal carcinoma cells, so they may be harder to see in a mammogram. Based on where the disease starts, it is the second most common type of breast cancer. About 10% to 15% of breast cancers are invasive lobular carcinoma."
+    },
+    {
+     "role": "cta",
+     "order": 75,
+     "text": "Learn more about lobular carcinoma.",
+     "href": "/cancer-types/breast-cancer/invasive-lobular-carcinoma.html"
+    },
+    {
+     "role": "heading",
+     "order": 76,
+     "text": "Phyllodes tumors"
+    },
+    {
+     "role": "body",
+     "order": 77,
+     "text": "Phyllodes tumors are a very rare type of breast tumor. They can be benign (not cancer) or malignant (cancer)."
+    },
+    {
+     "role": "body",
+     "order": 78,
+     "text": "While most breast tumors start in the lobules or ducts, phyllodes tumors form in the cells of breast’s connective tissue and its epithelial tissue, which lines organs and forms glands. They are a type of . At UT MD Anderson, phyllodes tumors are treated in the Sarcoma and Orthopaedic Center."
+    },
+    {
+     "role": "cta",
+     "order": 79,
+     "text": "soft tissue sarcoma",
+     "href": "https://www.mdanderson.org/cancer-types/soft-tissue-sarcoma.html"
+    },
+    {
+     "role": "body",
+     "order": 80,
+     "text": "Phyllodes tumors usually push and compress the tissue around them and form a distinct lump. They also tend to grow quickly, stretching the skin and causing skin changes over the tumor. They are not diagnosed by the standard molecular subtypes of breast tumors."
+    },
+    {
+     "role": "cta",
+     "order": 81,
+     "text": "Learn more about phyllodes tumors.",
+     "href": "/cancer-types/breast-cancer/phyllodes-tumors.html"
+    },
+    {
+     "role": "heading",
+     "order": 82,
+     "text": "Metaplastic breast cancer"
+    },
+    {
+     "role": "body",
+     "order": 83,
+     "text": "Metaplastic breast cancer is rare, making up less than 1% of all breast cancers. Metaplastic breast cancer starts in the ducts."
+    },
+    {
+     "role": "body",
+     "order": 84,
+     "text": "Under a microscope, metaplastic breast cancer cells look like a mix of different cancer types. Doctors believe that it forms from very young cells with the ability to develop into different types of mature cells."
+    },
+    {
+     "role": "body",
+     "order": 85,
+     "text": "Most people with metaplastic breast cancer have a distinct lump that grows quickly. The disease is aggressive but treatable. If you are diagnosed with metaplastic breast cancer, you should seek care from a team that includes a surgeon, radiation oncologist and medical oncologist."
+    },
+    {
+     "role": "cta",
+     "order": 86,
+     "text": "Read more about metaplastic breast cancer.",
+     "href": "/cancer-types/breast-cancer/metaplastic-breast-cancer.html"
+    },
+    {
+     "role": "cta",
+     "order": 87,
+     "text": "More",
+     "href": "#"
+    },
+    {
+     "role": "cta",
+     "order": 88,
+     "text": "Less",
+     "href": "#"
+    },
+    {
+     "role": "body",
+     "order": 89,
+     "text": "Classifying by how far the cancer has spread"
+    },
+    {
+     "role": "body",
+     "order": 90,
+     "text": "Breast cancer can also be classified based on whether and how much it has spread from its original location."
+    },
+    {
+     "role": "body",
+     "order": 91,
+     "text": ".injected-screening-promo .promo-header *, .injected-screening-promo .promo-text * { color: #000; }.injected-screening-promo .promo { background-color: #fff; border: 2px solid #ccc; border-radius: 5px; padding: 20px; margin-bottom: 20px; }.injected-screening-promo .promo-icon-header-wrapper, .injected-screening-promo .promo-header { text-align: left !important; display: block !important; width: 100%; }.injected-screening-promo h3 { text-align: left !important; font-weight: bold; font-size: 24px !important; margin-top: 0; display: block !important; }@media (min-width: 767px) { .injected-screening-promo + h3 { margin-top: 53px; } }@media (max-width: 767px) { .injected-screening-promo { margin: 35px 0; } }"
+    },
+    {
+     "role": "heading",
+     "order": 92,
+     "text": "Schedule a Screening"
+    },
+    {
+     "role": "body",
+     "order": 93,
+     "text": "If you are concerned about your symptoms, the best next step is to schedule an appointment with one of our physicians."
+    },
+    {
+     "role": "cta",
+     "order": 94,
+     "text": "Schedule an appointment at UT MD Anderson",
+     "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/appointments.html"
+    },
+    {
+     "role": "heading",
+     "order": 95,
+     "text": "Localized breast cancer"
+    },
+    {
+     "role": "body",
+     "order": 96,
+     "text": "A small amount of disease is in the breast. The cancer has not spread to any other part of the body."
+    },
+    {
+     "role": "heading",
+     "order": 97,
+     "text": "Locally advanced breast cancer"
+    },
+    {
+     "role": "body",
+     "order": 98,
+     "text": "The cancer has spread from the breast to nearby structures, like the lymph nodes and/or chest wall."
+    },
+    {
+     "role": "heading",
+     "order": 99,
+     "text": "Advanced breast cancer"
+    },
+    {
+     "role": "body",
+     "order": 100,
+     "text": "Cancer has spread to distant parts of the body, like the brain, lungs or liver. This is also called metastatic breast cancer. Even though the disease is found in other organs, it is still considered and treated like breast cancer. Advanced breast cancer is usually treated with cancer drugs alone, without surgery or radiation. This type of breast cancer usually cannot be cured, but it can be managed."
+    },
+    {
+     "role": "body",
+     "order": 101,
+     "text": "One type of breast cancer is always locally advanced or advanced. Called inflammatory breast cancer (IBC), this disease blocks lymph vessels in the skin and soft tissue, causing swelling and skin changes on the breast. It is always stage 3 or stage 4. Learn about breast cancer stages."
+    },
+    {
+     "role": "body",
+     "order": 102,
+     "text": "IBC makes up around 3% of breast cancer diagnoses, but about 10% of all breast cancer deaths in the U.S. While IBC is aggressive, recent studies show that with the right treatment its five-year survival rate is closer to 70% for stage 3 patients, and up to 50% for newly diagnosed stage 4 patients."
+    },
+    {
+     "role": "cta",
+     "order": 103,
+     "text": "Read more about inflammatory breast cancer.",
+     "href": "/cancer-types/inflammatory-breast-cancer.html"
+    },
+    {
+     "role": "cta",
+     "order": 104,
+     "text": "More",
+     "href": "#"
+    },
+    {
+     "role": "cta",
+     "order": 105,
+     "text": "Less",
+     "href": "#"
+    },
+    {
+     "role": "heading",
+     "order": 106,
+     "text": "More about breast cancer"
+    },
+    {
+     "role": "heading",
+     "order": 107,
+     "text": "Symptoms"
+    },
+    {
+     "role": "body",
+     "order": 108,
+     "text": "Breast cancer symptoms include a lump in the breast, skin changes and discharge from the nipple. Learn more about breast cancer symptoms, including other possible diagnoses and when to see a doctor on our"
+    },
+    {
+     "role": "cta",
+     "order": 109,
+     "text": "breast cancer symptoms page.",
+     "href": "/cancer-types/breast-cancer/breast-cancer-symptoms.html"
+    },
+    {
+     "role": "heading",
+     "order": 110,
+     "text": "Diagnosis"
+    },
+    {
+     "role": "body",
+     "order": 111,
+     "text": "Breast cancer is diagnosed through imaging exams like a mammogram and by studying suspected cancer tissue under a microscope."
+    },
+    {
+     "role": "cta",
+     "order": 112,
+     "text": "Read more about how doctors diagnose breast cancer.",
+     "href": "/cancer-types/breast-cancer/breast-cancer-diagnosis.html"
+    },
+    {
+     "role": "heading",
+     "order": 113,
+     "text": "Typical treatment options"
+    },
+    {
+     "role": "body",
+     "order": 114,
+     "text": "Treatments for breast cancer include surgery, radiation therapy and cancer drugs like chemotherapy, hormone blockers, immunotherapy and targeted therapy. Doctors make your treatment plan based on your specific diagnosis."
+    },
+    {
+     "role": "cta",
+     "order": 115,
+     "text": "Learn more about breast cancer treatment.",
+     "href": "/cancer-types/breast-cancer/breast-cancer-treatment.html"
+    },
+    {
+     "role": "heading",
+     "order": 116,
+     "text": "Who gets breast cancer?"
+    },
+    {
+     "role": "body",
+     "order": 117,
+     "text": "While breast cancer can develop in men and women, most cases are diagnosed in women aged 60 or older. People with a family history of breast cancer are at an increased risk."
+    },
+    {
+     "role": "heading",
+     "order": 118,
+     "text": "Breast cancer survival rates"
+    },
+    {
+     "role": "body",
+     "order": 119,
+     "text": "For women, breast cancer’s five-year survival rate is nearly 92%. That figure changes based on how advanced the cancer is when it is diagnosed and the cancer’s molecular subtype."
+    },
+    {
+     "role": "body",
+     "order": 120,
+     "text": "If the cancer is confined to the breast, the survival rate is nearly 100%. If it has spread to nearby lymph nodes, the survival rate is about 87%. Breast cancer that has spread to distant parts of the body, such as the lung, liver or brain, has a survival rate of about 33%. In some cases, even advanced breast cancer is still curable, however."
+    },
+    {
+     "role": "body",
+     "order": 121,
+     "text": "Talk to your care team about how your exact diagnosis impacts your prognosis."
+    },
+    {
+     "role": "heading",
+     "order": 122,
+     "text": "Risk factors"
+    },
+    {
+     "role": "body",
+     "order": 123,
+     "text": "A risk factor is anything that increases the chances of developing a specific disease. Key breast cancer risk factors and causes include:"
+    },
+    {
+     "role": "body",
+     "order": 124,
+     "text": "Age: As women age, their breast cancer risk increases. Most breast cancers are diagnosed after age 60."
+    },
+    {
+     "role": "body",
+     "order": 125,
+     "text": "Inherited genetic mutations: Specific gene mutations that are passed down from parent to child can increase the risk of developing breast cancer. These include . Normal BRCA1 and BRCA2 genes repair damaged DNA. When these genes are mutated in certain ways, they fail at DNA repair, which could lead to breast and/or ovarian cancer. Other mutations that can lead to breast cancer are PALB2, another DNA repair gene; and CHEK2 and PTEN, which suppress tumors. ."
+    },
+    {
+     "role": "cta",
+     "order": 126,
+     "text": "BRCA1 and BRCA2 mutations",
+     "href": "/prevention-screening/family-history/hereditary-cancer-syndromes/hereditary-breast-and-ovarian-cancer-syndrome.html"
+    },
+    {
+     "role": "cta",
+     "order": 127,
+     "text": "Learn more about hereditary cancer syndromes",
+     "href": "/prevention-screening/family-history/hereditary-cancer-syndromes.html"
+    },
+    {
+     "role": "body",
+     "order": 128,
+     "text": "Family history: A woman’s odds of developing breast cancer are higher if a parent, sibling or child has had the disease."
+    },
+    {
+     "role": "body",
+     "order": 129,
+     "text": "Early menstruation: Women who began menstruating before age 12 have a higher risk of developing breast cancer."
+    },
+    {
+     "role": "body",
+     "order": 130,
+     "text": "Women who have no full-term pregnancies or have their first pregnancy after age 30 are at a higher risk of breast cancer."
+    },
+    {
+     "role": "body",
+     "order": 131,
+     "text": "Previous breast cancer diagnosis: A woman who has had breast cancer once has an increased risk of developing cancer again."
+    },
+    {
+     "role": "body",
+     "order": 132,
+     "text": "Previous : People who had radiation therapy to the chest in childhood or early adulthood to treat another cancer are at a higher risk of developing breast cancer. The benefits of these earlier radiation treatments far outweigh the risks, however."
+    },
+    {
+     "role": "cta",
+     "order": 133,
+     "text": "radiation therapy",
+     "href": "/treatment-options/radiation-therapy.html"
+    },
+    {
+     "role": "body",
+     "order": 134,
+     "text": "Obesity: Obesity, particularly after menopause, increases a woman’s breast cancer risk."
+    },
+    {
+     "role": "body",
+     "order": 135,
+     "text": "Dense breast tissue: Dense breast tissue, which is based on its appearance in a mammogram, is a known risk factor for breast cancer."
+    },
+    {
+     "role": "body",
+     "order": 136,
+     "text": "Postmenopausal hormone therapy: Some women use hormone therapies containing estrogen and progesterone to treat the symptoms of menopause. This may increase the risk of breast cancer."
+    },
+    {
+     "role": "body",
+     "order": 137,
+     "text": "Drinking alcohol."
+    },
+    {
+     "role": "heading",
+     "order": 138,
+     "text": "Is breast cancer hereditary?"
+    },
+    {
+     "role": "body",
+     "order": 139,
+     "text": "Some breast cancers can are caused by genetic changes that can be passed down from parent to child."
+    },
+    {
+     "role": "cta",
+     "order": 140,
+     "text": "Learn more about these hereditary cancer syndromes and genetic counseling and testing.",
+     "href": "/prevention-screening/family-history.html"
+    },
+    {
+     "role": "cta",
+     "order": 141,
+     "text": "More",
+     "href": "#"
+    },
+    {
+     "role": "cta",
+     "order": 142,
+     "text": "Less",
+     "href": "#"
+    },
+    {
+     "role": "heading",
+     "order": 143,
+     "text": "Featured Podcast:"
+    },
+    {
+     "role": "heading",
+     "order": 144,
+     "text": "Why are more women under 50 getting cancer?"
+    },
+    {
+     "role": "cta",
+     "order": 145,
+     "text": "View podcast episode page",
+     "href": "https://mdanderson.org/podcast?segitem=66494"
+    },
+    {
+     "role": "cta",
+     "order": 146,
+     "text": "Read transcript",
+     "href": "https://support.doctorpodcasting.com/client/texacc/item/66494-why-are-more-women-under-50-getting-cancer?print=yes"
+    },
+    {
+     "role": "heading",
+     "order": 147,
+     "text": "Facing radiation therapy as a breast cancer doctor and survivor"
+    },
+    {
+     "role": "cta",
+     "order": 148,
+     "text": "View podcast episode page",
+     "href": "https://mdanderson.org/podcast?segitem=68095"
+    },
+    {
+     "role": "cta",
+     "order": 149,
+     "text": "Read transcript",
+     "href": "https://support.doctorpodcasting.com/client/texacc/item/68095-facing-radiation-therapy-as-a-breast-cancer-doctor-and-survivor?print=yes"
+    },
+    {
+     "role": "heading",
+     "order": 150,
+     "text": "Why choose UT for your breast cancer treatment?"
+    },
+    {
+     "role": "body",
+     "order": 151,
+     "text": "MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 152,
+     "text": "Choosing the right hospital may be the most important decision you make as a breast cancer patient. At UT you’ll get treatment from one of the nation’s top-ranked cancer centers. Our expertise starts with the ability to accurately diagnose and stage even extremely rare cancers, then carries on through groundbreaking treatment and into survivorship."
+    },
+    {
+     "role": "body",
+     "order": 153,
+     "text": "MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 154,
+     "text": "At other centers and hospitals, doctors may be expected to develop treatment plans or perform surgery on patients with several different types of cancer and/or non-cancerous conditions. At UT , our core mission is to eliminate cancer. UT MD Anderson breast cancer care is provided by surgeons, radiation oncologists and medical oncologists who are focused exclusively on curing breast cancer, extending the life of breast cancer patients and maximizing their quality of life."
+    },
+    {
+     "role": "body",
+     "order": 155,
+     "text": "MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 156,
+     "text": "This allows them to develop a tremendous amount of experience and skill in treating breast cancer patients, including those with rare forms of the disease. Each doctor brings their skills to our multidisciplinary teams, where they work together to develop treatment plans that address the unique nature of each breast cancer case and patient."
+    },
+    {
+     "role": "body",
+     "order": 157,
+     "text": "As a top-ranked cancer hospital, UT is also a leader in innovating new and better ways to care for patients. Our breast cancer doctors have helped develop new treatments and therapies that have improved survival rates, decreased side effects and resulted in better cosmetic outcomes for breast cancer patients."
+    },
+    {
+     "role": "body",
+     "order": 158,
+     "text": "MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 159,
+     "text": "And at UT MD Anderson you will be surrounded by the strength of one of the nation's largest and most experienced cancer centers. From to to , we have all the services needed to treat not just the disease, but the whole person."
+    },
+    {
+     "role": "cta",
+     "order": 160,
+     "text": "support groups",
+     "href": "/patients-family/diagnosis-treatment/patient-support/support-groups.html"
+    },
+    {
+     "role": "cta",
+     "order": 161,
+     "text": "nutrition counseling",
+     "href": "/patients-family/diagnosis-treatment/patient-support/clinical-nutrition.html"
+    },
+    {
+     "role": "cta",
+     "order": 162,
+     "text": "integrative medicine care",
+     "href": "/patients-family/diagnosis-treatment/care-centers-clinics/integrative-medicine-center.html"
+    },
+    {
+     "role": "cta",
+     "order": 163,
+     "text": "More",
+     "href": "#"
+    },
+    {
+     "role": "cta",
+     "order": 164,
+     "text": "Less",
+     "href": "#"
+    },
+    {
+     "role": "body",
+     "order": 165,
+     "text": "Cancer is mentally and physically challenging, but don't let it shut you down. Dust yourself off and get back up, even if you have to crawl. This is your life, after all, and it's worth fighting for."
+    },
+    {
+     "role": "body",
+     "order": 166,
+     "text": "Mariana Torrado"
+    },
+    {
+     "role": "body",
+     "order": 167,
+     "text": "Survivor"
+    },
+    {
+     "role": "heading",
+     "order": 168,
+     "text": "Treatment at UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 169,
+     "text": "UT MD Anderson breast cancer patients can get treatment at the following locations."
+    },
+    {
+     "role": "cta",
+     "order": 170,
+     "text": "Nellie B. Connally Breast Center",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/breast-center.html"
+    },
+    {
+     "role": "cta",
+     "order": 171,
+     "text": "UT MD Anderson League City",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations/league-city.html"
+    },
+    {
+     "role": "cta",
+     "order": 172,
+     "text": "UT MD Anderson in Sugar Land",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations/sugar-land.html"
+    },
+    {
+     "role": "cta",
+     "order": 173,
+     "text": "UT MD Anderson West Houston",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations/west-houston.html"
+    },
+    {
+     "role": "cta",
+     "order": 174,
+     "text": "UT MD Anderson The Woodlands",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations/the-woodlands.html"
+    },
+    {
+     "role": "heading",
+     "order": 175,
+     "text": "Featured Articles"
+    },
+    {
+     "role": "body",
+     "order": 176,
+     "text": "View more"
+    },
+    {
+     "role": "body",
+     "order": 177,
+     "text": "View less"
+    },
+    {
+     "role": "heading",
+     "order": 178,
+     "text": "Clinical Trials"
+    },
+    {
+     "role": "body",
+     "order": 179,
+     "text": "UT MD Anderson patients have access to clinical trials offering promising new treatments that cannot be found anywhere else."
+    },
+    {
+     "role": "cta",
+     "order": 180,
+     "text": "View Clinical Trials",
+     "href": "https://www.mdanderson.org/patients-family/search-results.html?searchType=clinical%20trials&q=Breast%20Cancer"
+    },
+    {
+     "role": "heading",
+     "order": 181,
+     "text": "Becoming Our Patient"
+    },
+    {
+     "role": "body",
+     "order": 182,
+     "text": "Get information on patient appointments, insurance and billing, and directions to and around"
+    },
+    {
+     "role": "body",
+     "order": 183,
+     "text": "UT MD Anderson."
+    },
+    {
+     "role": "cta",
+     "order": 184,
+     "text": "View new patient resources",
+     "href": "https://www.mdanderson.org/patients-family/becoming-our-patient.html"
+    },
+    {
+     "role": "heading",
+     "order": 185,
+     "text": "myCancerConnection"
+    },
+    {
+     "role": "body",
+     "order": 186,
+     "text": "Talk to someone who shares your cancer diagnosis and be matched with a survivor."
+    },
+    {
+     "role": "cta",
+     "order": 187,
+     "text": "Connect with a cancer survivor",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/mycancerconnection.html"
+    },
+    {
+     "role": "heading",
+     "order": 188,
+     "text": "Prevention & Screening"
+    },
+    {
+     "role": "body",
+     "order": 189,
+     "text": "Many cancers can be prevented with lifestyle changes and regular screening."
+    },
+    {
+     "role": "cta",
+     "order": 190,
+     "text": "View health and screening resources",
+     "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+     "role": "heading",
+     "order": 191,
+     "text": "Counseling"
+    },
+    {
+     "role": "body",
+     "order": 192,
+     "text": "UT MD Anderson has licensed social workers to help patients and their loved ones cope with cancer."
+    },
+    {
+     "role": "cta",
+     "order": 193,
+     "text": "Visit the social work page",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/social-work.html"
+    }
+   ],
+   "imgCount": 12,
+   "repeats": [
+    {
+     "unitSelector": "DIV.",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 6,
+      "imgs": 0,
+      "textRuns": 7
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "A.",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "SECTION.highlight",
+     "count": 2,
+     "unit": {
+      "headings": 3,
+      "ctas": 7,
+      "imgs": 2,
+      "textRuns": 14
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "H3.panel-title",
+     "count": 3,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.panel-container",
+     "count": 3,
+     "unit": {
+      "headings": 3,
+      "ctas": 5,
+      "imgs": 2,
+      "textRuns": 22
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "P.",
+     "count": 3,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "P.extra-text",
+     "count": 6,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 0
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "LI.",
+     "count": 11,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 0
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "LI.link",
+     "count": 5,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "A.blog-summary",
+     "count": 8,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 2,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.col-double",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.cell-t",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "highlight",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Help #EndCancer"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Give Now"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Your gift will help make a tremendous difference."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Donate",
+     "href": "https://gifts.mdanderson.org/Default.aspx?tsid=37435"
+    },
+    {
+     "role": "heading",
+     "order": 4,
+     "text": "Donate Blood"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Our patients depend on blood and platelet donations."
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Make an appointment",
+     "href": "https://www.mdandersonbloodbank.org/"
+    },
+    {
+     "role": "heading",
+     "order": 7,
+     "text": "Shop UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "Show your support for our mission through branded merchandise."
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "View products",
+     "href": "https://shop.mdanderson.org"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.cell-t",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "global-footer",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Subscribe to our Cancerwise newsletter"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": ".st0-desktop { fill: #000; }Explore what your support makes possible",
+     "href": "https://onlypossiblehere.mdanderson.org"
+    },
+    {
+     "role": "eyebrow",
+     "order": 2,
+     "text": "Explore"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Patients & Family",
+     "href": "https://www.mdanderson.org/patients-family.html"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Prevention & Screening",
+     "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Donors & Volunteers",
+     "href": "https://www.mdanderson.org/donors-volunteers.html"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "For Physicians",
+     "href": "https://www.mdanderson.org/for-physicians.html"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "Research",
+     "href": "https://www.mdanderson.org/research.html"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Education & Training",
+     "href": "https://www.mdanderson.org/education-training.html"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Clinical Trials",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "Languages",
+     "href": "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 11,
+     "text": "About"
+    },
+    {
+     "role": "cta",
+     "order": 12,
+     "text": "About UT MD Anderson",
+     "href": "https://www.mdanderson.org/about-md-anderson.html"
+    },
+    {
+     "role": "cta",
+     "order": 13,
+     "text": "Careers",
+     "href": "https://jobs.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 14,
+     "text": "Blog",
+     "href": "https://www.mdanderson.org/cancerwise.html"
+    },
+    {
+     "role": "cta",
+     "order": 15,
+     "text": "Newsroom",
+     "href": "https://www.mdanderson.org/newsroom.html"
+    },
+    {
+     "role": "cta",
+     "order": 16,
+     "text": "Editorial Standards",
+     "href": "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html"
+    },
+    {
+     "role": "cta",
+     "order": 17,
+     "text": "For Employees",
+     "href": "https://www.mdanderson.org/about-md-anderson/employee-resources.html"
+    },
+    {
+     "role": "cta",
+     "order": 18,
+     "text": "Merchandise",
+     "href": "https://shop.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 19,
+     "text": "Title IX Reporting (Sexual Misconduct)",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html"
+    },
+    {
+     "role": "cta",
+     "order": 20,
+     "text": "Price Transparency",
+     "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 21,
+     "text": "Finding Your Way"
+    },
+    {
+     "role": "cta",
+     "order": 22,
+     "text": "Our Doctors",
+     "href": "https://faculty.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 23,
+     "text": "Locations",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+     "role": "cta",
+     "order": 24,
+     "text": "Directions",
+     "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html"
+    },
+    {
+     "role": "cta",
+     "order": 25,
+     "text": "Sitemap",
+     "href": "https://www.mdanderson.org/patients-family/html-sitemap.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 26,
+     "text": "Digital Accessibility"
+    },
+    {
+     "role": "cta",
+     "order": 27,
+     "text": "Accessibility Policy",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 28,
+     "text": "Get in Touch"
+    },
+    {
+     "role": "cta",
+     "order": 29,
+     "text": "Call 1-877-790-1139",
+     "href": "tel:+18777901139"
+    },
+    {
+     "role": "cta",
+     "order": 30,
+     "text": "Ask a question",
+     "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 31,
+     "text": "Stay Connected"
+    },
+    {
+     "role": "body",
+     "order": 32,
+     "text": "Previous"
+    },
+    {
+     "role": "body",
+     "order": 33,
+     "text": "Next"
+    },
+    {
+     "role": "eyebrow",
+     "order": 34,
+     "text": "Cancerwise Podcast"
+    },
+    {
+     "role": "body",
+     "order": 35,
+     "text": "Previous"
+    },
+    {
+     "role": "body",
+     "order": 36,
+     "text": "Next"
+    },
+    {
+     "role": "eyebrow",
+     "order": 37,
+     "text": "More"
+    },
+    {
+     "role": "cta",
+     "order": 38,
+     "text": "Website Privacy Policy",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html"
+    },
+    {
+     "role": "cta",
+     "order": 39,
+     "text": "Legal Statement & Policies",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html"
+    },
+    {
+     "role": "cta",
+     "order": 40,
+     "text": "Reports to the State",
+     "href": "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html"
+    },
+    {
+     "role": "cta",
+     "order": 41,
+     "text": "Emergency Alert Information",
+     "href": "https://www3.mdanderson.org/emergencyalert/"
+    },
+    {
+     "role": "cta",
+     "order": 42,
+     "text": "State of Texas Links",
+     "href": "https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html"
+    },
+    {
+     "role": "cta",
+     "order": 43,
+     "text": "Our Cancer Network",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html"
+    },
+    {
+     "role": "cta",
+     "order": 44,
+     "text": "Vendors & Suppliers",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html"
+    },
+    {
+     "role": "body",
+     "order": 45,
+     "text": "The mission of The University of Texas MD Anderson Cancer Center is to eliminate cancer in Texas, the nation, and the world through outstanding programs that integrate patient care, research and prevention, and through education for undergraduate and graduate students, trainees, professionals, employees and the public."
+    },
+    {
+     "role": "body",
+     "order": 46,
+     "text": "© 2026 The University of Texas Cancer Center. All rights reserved."
+    },
+    {
+     "role": "body",
+     "order": 47,
+     "text": "MD Anderson"
+    }
+   ],
+   "imgCount": 4,
+   "repeats": [
+    {
+     "unitSelector": "DIV.footer-links",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 25,
+      "imgs": 3,
+      "textRuns": 39
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.col2",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 2,
+      "textRuns": 2
+     },
+     "uniform": false
+    }
+   ]
+  }
+ ]
+}

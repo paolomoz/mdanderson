@@ -1,0 +1,14 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:deploy (runtime-detection probe)",
+    "writtenAt": "2026-08-20T04:40:00Z",
+    "probed": ["scripts/scripts.js", "scripts/aem.js", "styles/styles.css"]
+  },
+  "runtime": "vanilla-eds",
+  "blockWrapperClass": "block",
+  "buttonClasses": ".button / .button.primary / .button.secondary / .button.accent, in p.button-wrapper",
+  "buttonization": "formatted-only",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "emptySectionCollapse": true,
+  "notes": "Current aem-boilerplate main: decorateButtons requires strong/em wrapping (formatted-only), emits p.button-wrapper + a.button(.primary|.secondary|.accent); decorateBlock runs wrapTextNodes (#104 media-led cell folding applies) and wraps blocks in div.<name>-wrapper with section .<name>-container; body display:none gate present in styles.css."
+}

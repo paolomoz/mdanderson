@@ -1,0 +1,109 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-08-20T00:20:01.962Z",
+    "readArtifacts": [
+      "stardust/migrated"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-08-20T00:20:01.962Z",
+  "templates": [
+    {
+      "id": "article",
+      "representativeSlug": "cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html",
+      "pages": [
+        "cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html"
+      ],
+      "pageCount": 1,
+      "blocks": [],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 1
+      }
+    },
+    {
+      "id": "form",
+      "representativeSlug": "donors-volunteers-html",
+      "pages": [
+        "donors-volunteers-html"
+      ],
+      "pageCount": 1,
+      "blocks": [],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 1
+      }
+    },
+    {
+      "id": "landing",
+      "representativeSlug": "index",
+      "pages": [
+        "index",
+        "patients-family-html",
+        "prevention-screening-html",
+        "research-html"
+      ],
+      "pageCount": 4,
+      "blocks": [],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 4
+      }
+    },
+    {
+      "id": "listing",
+      "representativeSlug": "about-md-anderson-our-locations-html",
+      "pages": [
+        "about-md-anderson-our-locations-html",
+        "cancerwise-html"
+      ],
+      "pageCount": 2,
+      "blocks": [],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 2
+      }
+    },
+    {
+      "id": "program",
+      "representativeSlug": "cancer-types-breast-cancer-html",
+      "pages": [
+        "cancer-types-breast-cancer-html",
+        "patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html",
+        "patients-family-diagnosis-treatment-clinical-trials-html"
+      ],
+      "pageCount": 3,
+      "blocks": [],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 3
+      }
+    },
+    {
+      "id": "static",
+      "representativeSlug": "about-md-anderson-html",
+      "pages": [
+        "about-md-anderson-html"
+      ],
+      "pageCount": 1,
+      "blocks": [],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 1
+      }
+    }
+  ]
+}

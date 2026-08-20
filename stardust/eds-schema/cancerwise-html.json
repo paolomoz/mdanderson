@@ -1,0 +1,1412 @@
+{
+ "source": "http://localhost:8791/cancerwise-html-proposed.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "cancerwise-hero",
+   "items": [
+    {
+     "role": "cta",
+     "order": 0,
+     "text": "Cancerwise",
+     "href": "/cancerwise.html"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "UT MD Anderson’s blog features stories from survivors and caregivers, and our experts’ insights on cancer treatment, research breakthroughs, healthy living and more."
+    }
+   ],
+   "imgCount": 0,
+   "repeats": []
+  },
+  {
+   "section": "blog-listing",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Search UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "When I was going through in 2006, I remember a coming into my room while I was receiving at UT MD Anderson."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "breast cancer treatment",
+     "href": "/cancer-types/breast-cancer/breast-cancer-treatment.html"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "volunteer",
+     "href": "/donors-volunteers/volunteer.html"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "chemotherapy",
+     "href": "/treatment-options/chemotherapy.html"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "She was a survivor, someone who had already been through what I was going through. So, I wanted to be her — , looking great and past all the ."
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "breast cancer",
+     "href": "/cancer-types/breast-cancer.html"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "cancer-free",
+     "href": "/cancerwise/remission--cancer-free--no-evidence-of-disease--what-is-the-difference-when-talking-about-cancer-treatment-effectiveness-and-results.h00-159460845.html"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "treatments",
+     "href": "/treatment-options.html"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Keep reading",
+     "href": "/cancerwise/20-year-breast-cancer-survivor--it-s-never-too-late-to-volunteer-at-ut-md-anderson.h00-159857712.html"
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "Read the latest stories",
+     "href": "#latest"
+    },
+    {
+     "role": "cta",
+     "order": 11,
+     "text": "Top Stories",
+     "href": "#top"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "Diagnosis & Treatment"
+    },
+    {
+     "role": "cta",
+     "order": 13,
+     "text": "GLP-1s and anesthesia: What to know before surgery",
+     "href": "/cancerwise/glp-1s-and-anesthesia--what-to-know-before-surgery.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "Philanthropy"
+    },
+    {
+     "role": "cta",
+     "order": 15,
+     "text": "Austin banking leader and prostate cancer survivor driven to support UT MD Anderson",
+     "href": "/cancerwise/austin-banking-leader-and-prostate-cancer-survivor-driven-to-support-ut-md-anderson.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 16,
+     "text": "Diagnosis & Treatment"
+    },
+    {
+     "role": "cta",
+     "order": 17,
+     "text": "3 reasons why an accurate bladder cancer diagnosis matters",
+     "href": "/cancerwise/3-reasons-why-an-accurate-bladder-cancer-diagnosis-matters.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 18,
+     "text": "Patient & Caregiver Stories"
+    },
+    {
+     "role": "cta",
+     "order": 19,
+     "text": "20-year breast cancer survivor: It’s never too late to volunteer at UT MD Anderson",
+     "href": "/cancerwise/20-year-breast-cancer-survivor--it-s-never-too-late-to-volunteer-at-ut-md-anderson.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 20,
+     "text": "Healthy Living"
+    },
+    {
+     "role": "cta",
+     "order": 21,
+     "text": "What is white coat syndrome?",
+     "href": "/cancerwise/what-is-white-coat-syndrome.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 22,
+     "text": "Patient & Caregiver Stories"
+    },
+    {
+     "role": "cta",
+     "order": 23,
+     "text": "First patient on clinical trial thankful for UT MD Anderson",
+     "href": "/cancerwise/first-patient-on-phase-1-clinical-trial-thankful-for-ut-md-anderson.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 24,
+     "text": "#adobe-target.at-table { display: flex; justify-content: center; flex-direction: column; width: auto; border-spacing: 5px; margin: 0 auto; max-width: 300px; } #adobe-target .at-table-row { display: table-row; width: auto; clear: both; padding: 10px; } #adobe-target .at-table-column { padding: 10px; max-width: 300px; word-wrap: break-word; } #adobe-target .at-thumbnail { max-width: 758px; max-height: 300px; } #adobe-target .at-light { font-weight: lighter; margin-top: -10px; size: 10em; } #adobe-target .at-thumbnail { width: 100%; }"
+    },
+    {
+     "role": "body",
+     "order": 25,
+     "text": "Healthy Living"
+    },
+    {
+     "role": "cta",
+     "order": 26,
+     "text": "6 tips to lower your blood sugar",
+     "href": "https://www.mdanderson.org/cancerwise/6-tips-to-lower-your-blood-sugar.h00-159856923.html"
+    },
+    {
+     "role": "body",
+     "order": 27,
+     "text": "Healthy Living"
+    },
+    {
+     "role": "cta",
+     "order": 28,
+     "text": "6 things to know about chlorophyll",
+     "href": " https://www.mdanderson.org/cancerwise/what-are-the-benefits-of-drinking-chlorophyll-6-things-to-know.h00-159855345.html"
+    },
+    {
+     "role": "body",
+     "order": 29,
+     "text": "Diagnosis & Treatment"
+    },
+    {
+     "role": "cta",
+     "order": 30,
+     "text": "Swollen collar bone (supraclavicular) lymph nodes: 4 things to know",
+     "href": "https://www.mdanderson.org/cancerwise/swollen-collar-bone--supraclavicular--lymph-nodes--4-things-to-know.h00-159856134.html"
+    },
+    {
+     "role": "body",
+     "order": 31,
+     "text": "Diagnosis & Treatment"
+    },
+    {
+     "role": "cta",
+     "order": 32,
+     "text": "‘How I knew I had endometrial cancer’: Survivors share their stories",
+     "href": "https://www.mdanderson.org/cancerwise/-how-i-knew-i-had-endometrial-cancer---six-survivors-share-their-symptoms-stories.h00-159856134.html"
+    },
+    {
+     "role": "body",
+     "order": 33,
+     "text": "Healthy Living"
+    },
+    {
+     "role": "cta",
+     "order": 34,
+     "text": "Debunking the benefits of nicotine",
+     "href": "https://www.mdanderson.org/cancerwise/debunking-the-health-benefits-of-nicotine.h00-159856134.html"
+    },
+    {
+     "role": "cta",
+     "order": 35,
+     "text": "Request an Appointment",
+     "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/appointments.html"
+    },
+    {
+     "role": "cta",
+     "order": 36,
+     "text": "Subscribe to Newsletters",
+     "href": "https://www.mdanderson.org/publications.html"
+    },
+    {
+     "role": "cta",
+     "order": 37,
+     "text": "Listen to our podcast",
+     "href": "https://www.mdanderson.org/podcast.html"
+    },
+    {
+     "role": "heading",
+     "order": 38,
+     "text": "Find stories by topic"
+    },
+    {
+     "role": "cta",
+     "order": 39,
+     "text": "Diagnosis & Treatment",
+     "href": "#tabs-0"
+    },
+    {
+     "role": "cta",
+     "order": 40,
+     "text": "Patients & Caregivers",
+     "href": "#tabs-1"
+    },
+    {
+     "role": "cta",
+     "order": 41,
+     "text": "Healthy Living",
+     "href": "#tabs-2"
+    },
+    {
+     "role": "cta",
+     "order": 42,
+     "text": "Research",
+     "href": "#tabs-3"
+    },
+    {
+     "role": "cta",
+     "order": 43,
+     "text": "Expert Insights",
+     "href": "#tabs-4"
+    },
+    {
+     "role": "cta",
+     "order": 44,
+     "text": "Philanthropy",
+     "href": "#tabs-5"
+    },
+    {
+     "role": "body",
+     "order": 45,
+     "text": "Find out everything you need to know to navigate a cancer diagnosis and treatment from UT MD Anderson’s experts."
+    },
+    {
+     "role": "cta",
+     "order": 46,
+     "text": "GLP-1s and anesthesia: What to know before surgery",
+     "href": "/cancerwise/glp-1s-and-anesthesia--what-to-know-before-surgery.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 47,
+     "text": "August 19, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 48,
+     "text": "3 reasons why an accurate bladder cancer diagnosis matters",
+     "href": "/cancerwise/3-reasons-why-an-accurate-bladder-cancer-diagnosis-matters.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 49,
+     "text": "August 17, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 50,
+     "text": "Benign vs. malignant tumors: Their differences, explained",
+     "href": "/cancerwise/benign-vs--malignant-tumors--their-differences--explained.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 51,
+     "text": "August 10, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 52,
+     "text": "Does having cancer put you at higher risk of developing sepsis?",
+     "href": "/cancerwise/shifting-opponents-from-fighting-cancer-to-fighting-sepsis.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 53,
+     "text": "August 05, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 54,
+     "text": "What is a cytokine storm?",
+     "href": "/cancerwise/what-is-a-cytokine-storm.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 55,
+     "text": "August 04, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 56,
+     "text": "3 benefits of personalized ovarian cancer treatment",
+     "href": "/cancerwise/3-benefits-of-personalized-ovarian-cancer-treatment.h00-159856923.html"
+    },
+    {
+     "role": "body",
+     "order": 57,
+     "text": "July 30, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 58,
+     "text": "Does red light therapy work for peripheral neuropathy?",
+     "href": "/cancerwise/does-red-light-therapy-work-for-peripheral-neuropathy.h00-159856923.html"
+    },
+    {
+     "role": "body",
+     "order": 59,
+     "text": "July 20, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 60,
+     "text": "What is the blood-brain barrier, and how can we get past it to treat cancer?",
+     "href": "/cancerwise/what-is-the-blood-brain-barrier--and-how-can-we-get-past-it-to-treat-cancer.h00-159856923.html"
+    },
+    {
+     "role": "body",
+     "order": 61,
+     "text": "July 16, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 62,
+     "text": "Read more diagnosis and treatment articles",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/publications/cancerwise/diagnosis-treatment"
+    },
+    {
+     "role": "cta",
+     "order": 63,
+     "text": "Subscribe to Cancerwise newsletter",
+     "href": "https://www.mdanderson.org/publications/subscribe-to-cancerwise.html"
+    },
+    {
+     "role": "body",
+     "order": 64,
+     "text": "Read inspiring stories from patients and caregivers – and get their advice to help you or a loved one through cancer."
+    },
+    {
+     "role": "cta",
+     "order": 65,
+     "text": "20-year breast cancer survivor: It’s never too late to volunteer at UT MD Anderson",
+     "href": "/cancerwise/20-year-breast-cancer-survivor--it-s-never-too-late-to-volunteer-at-ut-md-anderson.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 66,
+     "text": "August 14, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 67,
+     "text": "First patient on clinical trial thankful for UT MD Anderson",
+     "href": "/cancerwise/first-patient-on-phase-1-clinical-trial-thankful-for-ut-md-anderson.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 68,
+     "text": "August 12, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 69,
+     "text": "From cancer care professional to patient: Two-time survivor chooses proton therapy at UT MD Anderson",
+     "href": "/cancerwise/from-cancer-care-professional-to-patient--two-time-survivor-choo.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 70,
+     "text": "August 03, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 71,
+     "text": "Clinical psychologist: A Hodgkin lymphoma diagnosis as a young adult changed my life",
+     "href": "/cancerwise/clinical-psychologist--a-hodgkin-lymphoma-cancer-diagnosis-as-a-young-adult-changed-my-life.h00-159856923.html"
+    },
+    {
+     "role": "body",
+     "order": 72,
+     "text": "July 29, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 73,
+     "text": "Doctor, stomach cancer survivor: 3 things that impressed me about UT MD Anderson",
+     "href": "/cancerwise/doctor--stomach-cancer-survivor--3-things-that-impressed-me-about-ut-md-anderson.h00-159856923.html"
+    },
+    {
+     "role": "body",
+     "order": 74,
+     "text": "July 23, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 75,
+     "text": "4-time cancer survivor finds security and comfort at UT MD Anderson",
+     "href": "/cancerwise/4-time-cancer-survivor-finds-security-and-comfort-at-ut-md-anderson.h00-159856923.html"
+    },
+    {
+     "role": "body",
+     "order": 76,
+     "text": "July 15, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 77,
+     "text": "2-time cancer survivor thankful for UT MD Anderson’s guidance and expertise",
+     "href": "/cancerwise/2-time-cancer-survivor-thankful-for-ut-md-anderson-s-guidance-an.h00-159856923.html"
+    },
+    {
+     "role": "body",
+     "order": 78,
+     "text": "July 06, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 79,
+     "text": "Doctor and stage 4 stomach cancer survivor thankful for clinical trial at UT MD Anderson",
+     "href": "/cancerwise/doctor-and-stage-4-stomach-cancer-survivor-thankful-for-clinical.h00-159856923.html"
+    },
+    {
+     "role": "body",
+     "order": 80,
+     "text": "July 01, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 81,
+     "text": "Read more patient and caregiver stories",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/publications/cancerwise/patient-caregiver-stories"
+    },
+    {
+     "role": "cta",
+     "order": 82,
+     "text": "Subscribe to Cancerwise newsletter",
+     "href": "https://www.mdanderson.org/publications/subscribe-to-cancerwise.html"
+    },
+    {
+     "role": "body",
+     "order": 83,
+     "text": "Get UT MD Anderson experts’ advice to help you stay healthy and reduce your risk of diseases like cancer."
+    },
+    {
+     "role": "cta",
+     "order": 84,
+     "text": "What is white coat syndrome?",
+     "href": "/cancerwise/what-is-white-coat-syndrome.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 85,
+     "text": "August 13, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 86,
+     "text": "Alternatives to meal prepping: A simpler approach to healthy eating",
+     "href": "/cancerwise/alternatives-to-meal-prepping--a-simpler-approach-to-healthy-eating.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 87,
+     "text": "August 11, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 88,
+     "text": "How to get men to go to the doctor: 3 tips from our doctors",
+     "href": "/cancerwise/how-to-get-men-to-go-to-the-doctor--3-tips-from-our-doctors.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 89,
+     "text": "August 07, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 90,
+     "text": "How to make your colonoscopy prep better",
+     "href": "/cancerwise/how-to-make-colonoscopy-prep-better.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 91,
+     "text": "August 06, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 92,
+     "text": "BOSU ball basics: 7 things to know about this ‘two-faced’ exercise equipment",
+     "href": "/cancerwise/bosu-ball-basics--7-things-to-know-about-this--two-faced--exercise-equipment.h00-159856134.html"
+    },
+    {
+     "role": "body",
+     "order": 93,
+     "text": "July 31, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 94,
+     "text": "Vitamin K and cancer: Is there a connection?",
+     "href": "/cancerwise/vitamin-k-and-cancer--is-there-a-connection.h00-159856923.html"
+    },
+    {
+     "role": "body",
+     "order": 95,
+     "text": "July 28, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 96,
+     "text": "Screening vs. diagnostic mammogram: What’s the difference?",
+     "href": "/cancerwise/screening-vs--diagnostic-mammogram--what-is-the-difference.h00-159856923.html"
+    },
+    {
+     "role": "body",
+     "order": 97,
+     "text": "July 27, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 98,
+     "text": "What is the DASH diet to treat high blood pressure?",
+     "href": "/cancerwise/what-is-the-dash-diet-to-treat-high-blood-pressure.h00-159856923.html"
+    },
+    {
+     "role": "body",
+     "order": 99,
+     "text": "July 22, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 100,
+     "text": "Get more healthy living advice",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/publications/cancerwise/healthy-living"
+    },
+    {
+     "role": "cta",
+     "order": 101,
+     "text": "Subscribe to our Focused on Health newsletter",
+     "href": "https://www.mdanderson.org/publications/subscribe-to-focused-on-health.html"
+    },
+    {
+     "role": "body",
+     "order": 102,
+     "text": "Learn how UT MD Anderson researchers are advancing our understanding and treatment of cancer – and get to know the scientists behind this research."
+    },
+    {
+     "role": "cta",
+     "order": 103,
+     "text": "Cell therapy clinical trial could bring hope for patients with T cell lymphoma and beyond",
+     "href": "/cancerwise/cell-therapy-clinical-trial-could-bring-hope-for-patients-with-t-cell-lymphoma-and-beyond.h00-159856923.html"
+    },
+    {
+     "role": "body",
+     "order": 104,
+     "text": "July 21, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 105,
+     "text": "What is the blood-brain barrier, and how can we get past it to treat cancer?",
+     "href": "/cancerwise/what-is-the-blood-brain-barrier--and-how-can-we-get-past-it-to-treat-cancer.h00-159856923.html"
+    },
+    {
+     "role": "body",
+     "order": 106,
+     "text": "July 16, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 107,
+     "text": "Mentorship makes the difference for physician-microbiome researcher",
+     "href": "/cancerwise/mentorship-makes-the-difference-for-physician-microbiome-researcher.h00-159856134.html"
+    },
+    {
+     "role": "body",
+     "order": 108,
+     "text": "June 18, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 109,
+     "text": "Top 5 ASCO studies advancing personalized medicine",
+     "href": "/cancerwise/top-5-asco-studies-advancing-personalized-medicine.h00-159855345.html"
+    },
+    {
+     "role": "body",
+     "order": 110,
+     "text": "May 28, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 111,
+     "text": "Head and neck surgeon-scientist: ‘We can make a real difference’",
+     "href": "/cancerwise/head-and-neck-surgeon-scientist---we-can-make-a-real-difference.h00-159855345.html"
+    },
+    {
+     "role": "body",
+     "order": 112,
+     "text": "May 11, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 113,
+     "text": "Top 3 UT MD Anderson abstracts at AACR 2026",
+     "href": "/cancerwise/top-3-ut-md-anderson-abstracts-at-aacr-2026.h00-159854556.html"
+    },
+    {
+     "role": "body",
+     "order": 114,
+     "text": "April 15, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 115,
+     "text": "How digital twins are making cancer surgery safer",
+     "href": "/cancerwise/how-digital-twins-are-making-cancer-surgery-safer.h00-159853767.html"
+    },
+    {
+     "role": "body",
+     "order": 116,
+     "text": "March 13, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 117,
+     "text": "New advances in our understanding of cancer metabolism",
+     "href": "/cancerwise/new-research-advances-in-our-understanding-of-cancer-metabolism.h00-159852189.html"
+    },
+    {
+     "role": "body",
+     "order": 118,
+     "text": "January 26, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 119,
+     "text": "Read more research articles",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/publications/cancerwise/research"
+    },
+    {
+     "role": "cta",
+     "order": 120,
+     "text": "Subscribe to our Cancer Frontline newsletter",
+     "href": "https://www.mdanderson.org/publications/subscribe-to-frontline.html"
+    },
+    {
+     "role": "body",
+     "order": 121,
+     "text": "Read insights on the latest news and trending topics from UT MD Anderson experts, and see what drives us to end cancer."
+    },
+    {
+     "role": "cta",
+     "order": 122,
+     "text": "GLP-1s and anesthesia: What to know before surgery",
+     "href": "/cancerwise/glp-1s-and-anesthesia--what-to-know-before-surgery.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 123,
+     "text": "August 19, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 124,
+     "text": "How to get men to go to the doctor: 3 tips from our doctors",
+     "href": "/cancerwise/how-to-get-men-to-go-to-the-doctor--3-tips-from-our-doctors.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 125,
+     "text": "August 07, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 126,
+     "text": "Sexual dysfunction after cancer treatment: 4 things to know",
+     "href": "/cancerwise/sexual-dysfunction-after-cancer-treatment--4-things-to-know.h00-159856923.html"
+    },
+    {
+     "role": "body",
+     "order": 127,
+     "text": "July 24, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 128,
+     "text": "12 things to know about donating platelets",
+     "href": "/cancerwise/12-things-to-know-about-donating-platelets.h00-159856134.html"
+    },
+    {
+     "role": "body",
+     "order": 129,
+     "text": "June 30, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 130,
+     "text": "Feeling alone after a cancer diagnosis? Here’s how to break through that isolation",
+     "href": "/cancerwise/feeling-alone-after-a-cancer-diagnosis--here-is-how-to-break-through-that-isolation.h00-159856134.html"
+    },
+    {
+     "role": "body",
+     "order": 131,
+     "text": "June 19, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 132,
+     "text": "Finding the right therapist for you: 3 tips from our experts",
+     "href": "/cancerwise/finding-the-right-therapist-for-you--3-tips-from-our-experts.h00-159856134.html"
+    },
+    {
+     "role": "body",
+     "order": 133,
+     "text": "June 04, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 134,
+     "text": "A passion for personalized medicine and lung cancer care",
+     "href": "/cancerwise/a-passion-for-personalized-medicine-and-lung-cancer-care.h00-159854556.html"
+    },
+    {
+     "role": "body",
+     "order": 135,
+     "text": "April 21, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 136,
+     "text": "What does a clinical ethicist do? Learn about their role in patient care",
+     "href": "/cancerwise/what-does-a-clinical-ethicist-do--learn-about-their-role-in-patient-care.h00-159854556.html"
+    },
+    {
+     "role": "body",
+     "order": 137,
+     "text": "April 17, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 138,
+     "text": "Get more expert insights",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/publications/cancerwise/expert-insights"
+    },
+    {
+     "role": "cta",
+     "order": 139,
+     "text": "Subscribe to Cancerwise newsletter",
+     "href": "https://www.mdanderson.org/publications/subscribe-to-cancerwise.html"
+    },
+    {
+     "role": "body",
+     "order": 140,
+     "text": "Find out what inspires our donors to give to UT MD Anderson, and learn how their generous support advances our mission to end cancer."
+    },
+    {
+     "role": "cta",
+     "order": 141,
+     "text": "Austin banking leader and prostate cancer survivor driven to support UT MD Anderson",
+     "href": "/cancerwise/austin-banking-leader-and-prostate-cancer-survivor-driven-to-support-ut-md-anderson.h00-159857712.html"
+    },
+    {
+     "role": "body",
+     "order": 142,
+     "text": "August 18, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 143,
+     "text": "Why my husband and I support cancer research at UT MD Anderson",
+     "href": "/cancerwise/why-my-husband-and-i-support-cancer-research-at-ut-md-anderson.h00-159856923.html"
+    },
+    {
+     "role": "body",
+     "order": 144,
+     "text": "July 10, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 145,
+     "text": "Leukemia caregiver ensures her husband’s legacy lives on",
+     "href": "/cancerwise/leukemia-caregiver-ensures-her-husband-s-legacy-lives-on.h00-159855345.html"
+    },
+    {
+     "role": "body",
+     "order": 146,
+     "text": "May 15, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 147,
+     "text": "49-year leukemia survivor: Why I support immunotherapy research at UT MD Anderson",
+     "href": "/cancerwise/49-year-leukemia-survivor--why-i-support-immunotherapy-research-at-ut-md-anderson.h00-159855345.html"
+    },
+    {
+     "role": "body",
+     "order": 148,
+     "text": "May 08, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 149,
+     "text": "Follicular lymphoma survivor: Why I participate in UT MD Anderson’s Boot Walk to End Cancer®",
+     "href": "/cancerwise/follicular-lymphoma-survivor--why-i-participate-in-ut-md-anderson-boot-walk-to-end-cancer.h00-159854556.html"
+    },
+    {
+     "role": "body",
+     "order": 150,
+     "text": "April 27, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 151,
+     "text": "Two-time tongue cancer survivor: Why I support research at UT MD Anderson",
+     "href": "/cancerwise/two-time-tongue-cancer-survivor--why-i-support-research-at-ut-mderson.h00-159854556.html"
+    },
+    {
+     "role": "body",
+     "order": 152,
+     "text": "April 16, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 153,
+     "text": "7 ways to support UT MD Anderson",
+     "href": "/cancerwise/7-ways-to-support-md-anderson.h00-159852978.html"
+    },
+    {
+     "role": "body",
+     "order": 154,
+     "text": "February 09, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 155,
+     "text": "After losing their son to cancer, parents support Kinder Children’s Cancer Center",
+     "href": "/cancerwise/after-losing-their-son-to-cancer--parents-support-kinder-childrens-cancer-center.h00-159852189.html"
+    },
+    {
+     "role": "body",
+     "order": 156,
+     "text": "January 22, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 157,
+     "text": "Read more donor stories",
+     "href": "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/publications/cancerwise/philanthropy"
+    },
+    {
+     "role": "cta",
+     "order": 158,
+     "text": "Subscribe to Cancerwise newsletter",
+     "href": "https://www.mdanderson.org/publications/subscribe-to-cancerwise.html"
+    }
+   ],
+   "imgCount": 50,
+   "repeats": [
+    {
+     "unitSelector": "SECTION.bleed-full",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "P.",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 3,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.collection-group",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 2,
+      "textRuns": 2
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "TR.at-table-row",
+     "count": 5,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 2
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.collection-group",
+     "count": 6,
+     "unit": {
+      "headings": 8,
+      "ctas": 10,
+      "imgs": 16,
+      "textRuns": 19
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.cta",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.cta",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.cta",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.cta",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.cta",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.cta",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "highlight",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Help #EndCancer"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Give Now"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Your gift will help make a tremendous difference."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Donate",
+     "href": "https://gifts.mdanderson.org/Default.aspx?tsid=37435"
+    },
+    {
+     "role": "heading",
+     "order": 4,
+     "text": "Donate Blood"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Our patients depend on blood and platelet donations."
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Make an appointment",
+     "href": "https://www.mdandersonbloodbank.org/"
+    },
+    {
+     "role": "heading",
+     "order": 7,
+     "text": "Shop UT MD Anderson"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "Show your support for our mission through branded merchandise."
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "View products",
+     "href": "https://shop.mdanderson.org"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.cell-t",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "global-footer",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Subscribe to our Cancerwise newsletter"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": ".st0-desktop { fill: #000; }Explore what your support makes possible",
+     "href": "https://onlypossiblehere.mdanderson.org"
+    },
+    {
+     "role": "eyebrow",
+     "order": 2,
+     "text": "Explore"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Patients & Family",
+     "href": "https://www.mdanderson.org/patients-family.html"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Prevention & Screening",
+     "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Donors & Volunteers",
+     "href": "https://www.mdanderson.org/donors-volunteers.html"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "For Physicians",
+     "href": "https://www.mdanderson.org/for-physicians.html"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "Research",
+     "href": "https://www.mdanderson.org/research.html"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Education & Training",
+     "href": "https://www.mdanderson.org/education-training.html"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Clinical Trials",
+     "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "Languages",
+     "href": "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 11,
+     "text": "About"
+    },
+    {
+     "role": "cta",
+     "order": 12,
+     "text": "About UT MD Anderson",
+     "href": "https://www.mdanderson.org/about-md-anderson.html"
+    },
+    {
+     "role": "cta",
+     "order": 13,
+     "text": "Careers",
+     "href": "https://jobs.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 14,
+     "text": "Blog",
+     "href": "https://www.mdanderson.org/cancerwise.html"
+    },
+    {
+     "role": "cta",
+     "order": 15,
+     "text": "Newsroom",
+     "href": "https://www.mdanderson.org/newsroom.html"
+    },
+    {
+     "role": "cta",
+     "order": 16,
+     "text": "Editorial Standards",
+     "href": "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html"
+    },
+    {
+     "role": "cta",
+     "order": 17,
+     "text": "For Employees",
+     "href": "https://www.mdanderson.org/about-md-anderson/employee-resources.html"
+    },
+    {
+     "role": "cta",
+     "order": 18,
+     "text": "Merchandise",
+     "href": "https://shop.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 19,
+     "text": "Title IX Reporting (Sexual Misconduct)",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html"
+    },
+    {
+     "role": "cta",
+     "order": 20,
+     "text": "Price Transparency",
+     "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 21,
+     "text": "Finding Your Way"
+    },
+    {
+     "role": "cta",
+     "order": 22,
+     "text": "Our Doctors",
+     "href": "https://faculty.mdanderson.org/"
+    },
+    {
+     "role": "cta",
+     "order": 23,
+     "text": "Locations",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+     "role": "cta",
+     "order": 24,
+     "text": "Directions",
+     "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html"
+    },
+    {
+     "role": "cta",
+     "order": 25,
+     "text": "Sitemap",
+     "href": "https://www.mdanderson.org/patients-family/html-sitemap.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 26,
+     "text": "Digital Accessibility"
+    },
+    {
+     "role": "cta",
+     "order": 27,
+     "text": "Accessibility Policy",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 28,
+     "text": "Get in Touch"
+    },
+    {
+     "role": "cta",
+     "order": 29,
+     "text": "Call 1-877-790-1139",
+     "href": "tel:+18777901139"
+    },
+    {
+     "role": "cta",
+     "order": 30,
+     "text": "Ask a question",
+     "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 31,
+     "text": "Stay Connected"
+    },
+    {
+     "role": "body",
+     "order": 32,
+     "text": "Previous"
+    },
+    {
+     "role": "body",
+     "order": 33,
+     "text": "Next"
+    },
+    {
+     "role": "eyebrow",
+     "order": 34,
+     "text": "Cancerwise Podcast"
+    },
+    {
+     "role": "body",
+     "order": 35,
+     "text": "Previous"
+    },
+    {
+     "role": "body",
+     "order": 36,
+     "text": "Next"
+    },
+    {
+     "role": "eyebrow",
+     "order": 37,
+     "text": "More"
+    },
+    {
+     "role": "cta",
+     "order": 38,
+     "text": "Website Privacy Policy",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html"
+    },
+    {
+     "role": "cta",
+     "order": 39,
+     "text": "Legal Statement & Policies",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html"
+    },
+    {
+     "role": "cta",
+     "order": 40,
+     "text": "Reports to the State",
+     "href": "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html"
+    },
+    {
+     "role": "cta",
+     "order": 41,
+     "text": "Emergency Alert Information",
+     "href": "https://www3.mdanderson.org/emergencyalert/"
+    },
+    {
+     "role": "cta",
+     "order": 42,
+     "text": "State of Texas Links",
+     "href": "https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html"
+    },
+    {
+     "role": "cta",
+     "order": 43,
+     "text": "Our Cancer Network",
+     "href": "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html"
+    },
+    {
+     "role": "cta",
+     "order": 44,
+     "text": "Vendors & Suppliers",
+     "href": "https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html"
+    },
+    {
+     "role": "body",
+     "order": 45,
+     "text": "The mission of The University of Texas MD Anderson Cancer Center is to eliminate cancer in Texas, the nation, and the world through outstanding programs that integrate patient care, research and prevention, and through education for undergraduate and graduate students, trainees, professionals, employees and the public."
+    },
+    {
+     "role": "body",
+     "order": 46,
+     "text": "© 2026 The University of Texas Cancer Center. All rights reserved."
+    },
+    {
+     "role": "body",
+     "order": 47,
+     "text": "MD Anderson"
+    }
+   ],
+   "imgCount": 4,
+   "repeats": [
+    {
+     "unitSelector": "DIV.footer-links",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 25,
+      "imgs": 3,
+      "textRuns": 39
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.col2",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 2,
+      "textRuns": 2
+     },
+     "uniform": false
+    }
+   ]
+  }
+ ]
+}
