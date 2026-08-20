@@ -1,37 +1,405 @@
-.hero-container .hero-wrapper {
-  max-width: unset;
+/* hero — full-bleed hero carousel (replica CSS lifted from the prototypes,
+   scoped under .hero). Variants: carousel/static, left/right (alignment),
+   scroll-cue, overlay, compact, dots. */
+
+main .section.hero-container > div {
+  max-width: var(--max-width);
   padding: 0;
 }
 
-.hero {
+.hero .carousel-hero {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+  background: #000;
 }
 
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+.hero .slick-list {
+  position: relative;
+  overflow: hidden;
 }
 
-.hero picture {
+.hero .slick-track {
+  display: flex;
+  position: relative;
+}
+
+.hero .carousel-item.medium-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 0 0 100%;
+  min-height: 1px;
+  z-index: 900;
+}
+
+/* multi-slide (research): fade deck — slides stack, current shows */
+.hero.dots .slick-track,
+.hero .slick-track:has(.slide-2) {
+  display: block;
+}
+
+.hero .slick-track:has(.slide-2) .carousel-item.medium-hero {
   position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
 }
 
-.hero img {
+.hero .slick-track:has(.slide-2) .carousel-item.medium-hero.slick-current {
+  position: relative;
+  opacity: 1;
+  z-index: 900;
+}
+
+.hero .fade-anim .carousel-item.medium-hero {
+  transition: opacity 0.4s ease;
+}
+
+.hero .carousel-image.media-image {
+  position: relative;
+  height: 450px;
+  background-color: var(--color-gray-light);
+  overflow: hidden;
+}
+
+.hero .carousel-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.hero .carousel-image .hero-bg-mobile,
+.hero .carousel-image .hero-bg-pic-mobile {
+  display: none;
+}
+
+/* overlay variant (prevention): live composites at ~70% luminance */
+.hero .carousel-image.medium-overlay::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  display: block;
+  inset: 0;
+  background: rgb(0 0 0 / 30%);
+}
+
+.hero .carousel-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.hero .carousel-body-inner {
+  display: table;
   width: 100%;
   height: 100%;
 }
 
-@media (width >= 900px) {
-  .hero {
-    padding: 40px 32px;
+.hero .carousel-body-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.hero h1.carousel-body-title,
+.hero div.carousel-body-title {
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  text-align: center;
+  color: var(--color-bg);
+  margin: 0 144px;
+}
+
+.hero.right h1.carousel-body-title,
+.hero.right div.carousel-body-title {
+  text-align: right;
+  padding-bottom: 20px;
+}
+
+.hero.left h1.carousel-body-title,
+.hero.left div.carousel-body-title {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+/* kicker / subtitle */
+.hero .carousel-body-text {
+  position: relative;
+  font-size: 36px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  text-align: center;
+  color: var(--color-bg);
+}
+
+.hero.left .carousel-body-text {
+  font-family: var(--sans-bold-font-family);
+  font-size: 16px;
+  line-height: 20.8px;
+  text-align: left;
+  margin: 0 144px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--color-bg);
+  width: fit-content;
+  max-width: 50%;
+}
+
+/* CTA wrappers */
+.hero .right-aligned-cta.cta {
+  position: relative;
+  text-align: right;
+  margin: 0 144px;
+  padding-top: 14px;
+}
+
+.hero .default-cta.cta {
+  position: relative;
+  text-align: center;
+  margin: 20px 10% 0;
+  padding-top: 14px;
+  clear: both;
+}
+
+.hero .left-aligned-cta.cta {
+  text-align: left;
+  margin: 0 144px;
+  padding-top: 14px;
+  max-width: 50%;
+}
+
+.hero a.cta-block {
+  display: inline-block;
+  padding: 15px 45px;
+  border: 1px solid var(--color-bg);
+  color: var(--color-bg);
+  background: rgb(0 0 0 / 50%);
+  text-align: center;
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: var(--letter-spacing);
+  text-decoration: none;
+}
+
+.hero.right a.cta-block {
+  text-align: right;
+}
+
+.hero a.cta-block:hover {
+  color: var(--color-bg);
+  text-decoration: underline;
+}
+
+/* left variant (research): inline serif CTA with arrow, no border */
+.hero.left a.cta-block {
+  display: inline;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--color-bg);
+  font-family: var(--body-font-family);
+  font-size: 24px;
+  line-height: 31.2px;
+  text-align: left;
+}
+
+.hero i.mdicon-arrow {
+  display: inline;
+  font-style: normal;
+}
+
+.hero i.mdicon-arrow::before {
+  font-family: MDIcons, sans-serif;
+  content: "\e608";
+}
+
+.hero.left a.cta-block i.mdicon-arrow {
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--color-bg);
+  padding-left: 10px;
+}
+
+.hero .carousel-body.mobile {
+  display: none;
+}
+
+/* prev/next + dots (multi-slide) */
+.hero button.slick-prev,
+.hero button.slick-next {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  width: 40px;
+  height: 40px;
+  color: transparent;
+  font-size: 0;
+  z-index: 3;
+  opacity: 0;
+  overflow: hidden;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.hero button.slick-prev { left: 10px; }
+.hero button.slick-next { right: 10px; }
+
+.hero ul.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 100px 0 0;
+  margin: 0;
+  list-style: none;
+}
+
+.hero ul.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.hero ul.slick-dots li button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.hero ul.slick-dots li button::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: var(--color-gray-light);
+}
+
+.hero ul.slick-dots li.slick-active button::before {
+  background: var(--color-accent);
+}
+
+/* scroll cue (replica renders it transparent; kept for DOM parity) */
+.hero a.scroll-down {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  margin-left: -44px;
+  z-index: 500;
+  text-align: center;
+  color: var(--color-bg);
+  opacity: 0;
+}
+
+.hero a.scroll-down p.text {
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  margin: 0 0 10px;
+}
+
+.hero a.scroll-down i.fa {
+  font-style: normal;
+}
+
+.hero a.scroll-down i.fa-chevron-down::before {
+  font-family: FontAwesome, sans-serif;
+  content: "\f078";
+}
+
+/* compact — thin interior title band (interior pages reuse) */
+.hero.compact .carousel-image.media-image { height: 220px; }
+
+.hero.compact h1.carousel-body-title,
+.hero.compact div.carousel-body-title {
+  font-size: 48px;
+  line-height: 1;
+}
+
+@media (width <= 991px) {
+  .hero .carousel-image.media-image { height: 320px; }
+
+  .hero .carousel-image .hero-bg-desktop,
+  .hero .carousel-image .hero-bg-pic-desktop { display: none; }
+
+  .hero .carousel-image .hero-bg-mobile,
+  .hero .carousel-image .hero-bg-pic-mobile { display: block; }
+
+  /* pages authored with a single (desktop) image keep it on mobile */
+  .hero .carousel-image .hero-bg-desktop:only-child,
+  .hero .carousel-image .hero-bg-pic-desktop:only-child { display: block; }
+
+  .hero .carousel-body { display: none; }
+  .hero .carousel-body.mobile { display: block; }
+
+  .hero .carousel-body.mobile .carousel-body-title,
+  .hero.left .carousel-body.mobile .carousel-body-title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 36px;
+  }
+
+  .hero .carousel-body.mobile .carousel-body-text { font-size: 24px; line-height: 31.2px; margin: 0 35px; }
+  .hero.left .carousel-body.mobile .carousel-body-text { font-size: 16px; line-height: 20.8px; margin: 0 36px; }
+  .hero .carousel-body.mobile .right-aligned-cta.cta { margin: 0 36px; }
+  .hero .carousel-body.mobile .default-cta.cta { margin: 20px 10% 0; }
+  .hero .carousel-body.mobile .left-aligned-cta.cta { margin: 0 36px; max-width: 75%; }
+
+  .hero a.cta-block {
+    padding: 12px 30px 10px;
+    font-size: 16px;
+    line-height: 20.8px;
+  }
+
+  .hero.left a.cta-block {
+    padding: 0;
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+
+  .hero ul.slick-dots {
+    bottom: 15px;
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .hero ul.slick-dots li button {
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    margin: 10px;
+  }
+
+  .hero ul.slick-dots li button::before {
+    top: 14px;
+    left: 14px;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
   }
 }

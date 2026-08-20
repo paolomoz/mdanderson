@@ -1,0 +1,877 @@
+/* section-nav — interior sidebar mini-TOC (converts on cancer-types/breast-cancer)
+   Spec: stardust/prototypes/cancer-types-breast-cancer-html-proposed.html
+   (#sidebar / #sidebar-nav / .left-nav-box). This block also OWNS the
+   `interior` template layout per eds-conversion-log §4: two-column grid on
+   body.interior main, column assignment keyed off .section-nav-container. */
+
+/* ===== interior template layout (log §4 contract) ===== */
+@media (width >= 992px) {
+  body.interior main {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    align-items: start;
+  }
+
+  body.interior main > .section {
+    grid-column: 1 / -1;
+  }
+
+  body.interior main > .section.section-nav-container {
+    grid-column: 1;
+    grid-row: span 60;
+  }
+
+  body.interior main > .section.section-nav-container ~ .section {
+    grid-column: 2;
+    margin: 0 18px 0 36px;
+  }
+
+  /* trailing full-width bands (EndCancer trio + newsletter) span both columns */
+  body.interior main > .section:nth-last-child(-n+2) {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
+}
+
+/* interior rhythm: gray-band prose+rail pairs and section padding.
+   Blocks paint their own sections; these rules key ONLY off container/variant
+   classes (log §4 "implementation latitude", D9 variants). */
+body.interior main > .section.quote-container,
+body.interior main > .section:has(> div > .cards.tinted),
+body.interior main > .section:has(> div > .link-list.tinted) {
+  background: var(--color-surface);
+}
+
+@media (width >= 992px) {
+  body.interior main > .section.section-nav-container ~ .section > .default-content-wrapper {
+    padding: 0 36px;
+  }
+
+  /* prose + rail pairs: DC prose beside the rail block (log §4 prose+rail) */
+  body.interior main > .section.quote-container,
+  body.interior main > .section.podcast-container:not(.callout-container),
+  body.interior main > .section:has(> div > .cards.rail),
+  body.interior main > .section:has(> div > .video.teaser),
+  body.interior main > .section.callout-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 358px;
+    padding: 70px 36px;
+    align-items: start;
+  }
+
+  body.interior main > .section.quote-container > .default-content-wrapper,
+  body.interior main > .section.podcast-container > .default-content-wrapper,
+  body.interior main > .section.callout-container > .default-content-wrapper,
+  body.interior main > .section:has(> div > .cards.rail) > .default-content-wrapper,
+  body.interior main > .section:has(> div > .video.teaser) > .default-content-wrapper {
+    grid-column: 1;
+    padding: 0 36px 0 0;
+  }
+
+  body.interior main > .section.quote-container > .quote-wrapper,
+  body.interior main > .section.podcast-container > .podcast-wrapper,
+  body.interior main > .section.callout-container > .callout-wrapper,
+  body.interior main > .section:has(> div > .cards.rail) > .cards-wrapper,
+  body.interior main > .section:has(> div > .video.teaser) > .video-wrapper {
+    grid-column: 2;
+  }
+
+  /* prose+rail section heads (e.g. "More about breast cancer") span both */
+  body.interior main > .section.podcast-container > .default-content-wrapper:first-child h2:first-child {
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: var(--letter-spacing);
+    font-weight: 400;
+    color: var(--color-fg);
+    text-align: center;
+    margin: 0 0 45px;
+    grid-column: 1 / -1;
+  }
+
+  body.interior main > .section.lede > div {
+    padding: 0 36px;
+  }
+}
+
+/* interior prose typography (replica .rte-container) */
+body.interior main .default-content-wrapper h2 {
+  font-size: 27px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-fg);
+  margin: 22px 0 23px;
+}
+
+body.interior main .default-content-wrapper h3 {
+  font-size: 21px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-fg);
+  margin: 21px 0;
+}
+
+body.interior main .default-content-wrapper p,
+body.interior main .default-content-wrapper li {
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  color: #3a3a3a;
+}
+
+body.interior main .default-content-wrapper a:any-link {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* ===== the sidebar itself ===== */
+.section-nav {
+  margin-left: 18px;
+  width: 222px;
+}
+
+.section-nav .jump-menu-label {
+  display: none;
+}
+
+.section-nav .section-nav-inner {
+  padding: 30px 0;
+}
+
+.section-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section-nav .sidebar-back {
+  display: none;
+}
+
+.section-nav li.parent-link > a {
+  display: block;
+  border-top: 1px solid var(--color-gray-light);
+  border-bottom: 1px solid var(--color-gray-light);
+  color: var(--color-accent);
+  padding: 9px 20px 10px;
+  margin: 0 0 10px;
+  font-family: var(--sans-bold-font-family);
+  font-size: 14px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.section-nav ul.child-level li a {
+  display: inline-block;
+  font-family: var(--sans-font-family);
+  font-size: 14px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  color: var(--color-fg);
+  padding: 6px 0 6px 20px;
+  text-decoration: none;
+}
+
+.section-nav ul.child-level li a:hover {
+  text-decoration: underline;
+}
+
+/* promo box (View Clinical Trials) */
+.section-nav .left-nav-box {
+  border: 1px solid var(--color-accent);
+  padding: 20px 10px 25px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.section-nav .left-nav-box-icon {
+  color: var(--color-accent);
+  display: block;
+  text-align: center;
+  line-height: 62px;
+  height: 62px;
+  font-style: normal;
+}
+
+.section-nav .left-nav-box-icon::before {
+  font-family: mda-icons, sans-serif;
+  content: '\e649';
+  font-size: 48px;
+}
+
+.section-nav .left-nav-box p {
+  font-family: var(--body-font-family);
+  font-size: 21px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  color: var(--color-fg);
+  margin: 22px 0 0;
+  text-align: left;
+}
+
+.section-nav .left-nav-box a.left-nav-cta {
+  display: inline-block;
+  margin-top: 21px;
+  position: relative;
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.section-nav .left-nav-box .left-nav-arrow {
+  display: inline;
+  margin-left: 15px;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-style: normal;
+}
+
+.section-nav .left-nav-box .left-nav-arrow::before {
+  font-family: MDIcons, sans-serif;
+  content: '\e608';
+  font-size: 16px;
+}
+
+/* icon glyph fonts for the toggle/back affordances */
+.section-nav .section-nav-burger::before {
+  font-family: mda-icons, sans-serif;
+  content: '\e907';
+  font-style: normal;
+  font-size: 21px;
+}
+
+.section-nav .section-nav-angle-left::before {
+  font-family: FontAwesome, sans-serif;
+  content: '\f104';
+  font-style: normal;
+  margin-right: 6px;
+}
+
+/* mobile: gray jump-menu bar with hamburger; tree collapsed until toggled */
+@media (width <= 991px) {
+  .section-nav {
+    margin: 0;
+    width: auto;
+  }
+
+  .section-nav .section-nav-inner {
+    padding: 0;
+  }
+
+  .section-nav .jump-menu-label {
+    display: table;
+    position: relative;
+    width: 100%;
+    background: #d8d9d7;
+    padding: 10px 0;
+    height: 54px;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: var(--sans-font-family);
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: var(--letter-spacing);
+    color: var(--color-fg);
+  }
+
+  .section-nav .jump-menu-label-text {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 7px 0 0 15px;
+  }
+
+  .section-nav .jump-menu-toggle {
+    display: table-cell;
+    width: 15%;
+    text-align: right;
+    vertical-align: middle;
+    padding-right: 20px;
+    color: var(--color-fg);
+    background: none;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .section-nav .parent-level {
+    display: none;
+    background: var(--color-surface);
+    padding: 10px 0;
+  }
+
+  .section-nav .section-nav-inner.open .parent-level {
+    display: block;
+  }
+
+  .section-nav .left-nav-box {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   PROGRAM-CLUSTER variant additions for REUSED blocks on the interior
+   template (breast-cancer / breast-center / clinical-trials). These style
+   per-instance variants the conversion log assigns to the interior pages
+   ("adds variant", §6.5–6.7) without touching the owning blocks' files while
+   the landing cluster is still writing them. Deploy consolidation may move
+   each rule set into its owning block's CSS. All rules are body.interior-
+   scoped, so landing/static/blog pages are unaffected.
+   ========================================================================== */
+
+/* --- interior band rhythm for reused block sections in the content column - */
+@media (width >= 992px) {
+  body.interior main > .section.section-nav-container ~ .section.cards-container:not(:nth-last-child(-n+2)),
+  body.interior main > .section.section-nav-container ~ .section.link-list-container,
+  body.interior main > .section.section-nav-container ~ .section.columns-container {
+    padding: 70px 36px;
+  }
+
+  body.interior main > .section.section-nav-container ~ .section.carousel-container {
+    padding: 59px 36px 70px;
+  }
+
+  body.interior main > .section.section-nav-container ~ .section.search-container {
+    padding: 0 36px;
+  }
+
+  body.interior main > .section.section-nav-container ~ .section.video-container:has(.video.panorama) {
+    padding: 30px 36px 70px;
+  }
+}
+
+/* gray grounds for per-instance "tinted" reused-block bands (replica
+   highlight+apply); the contact duo band is gray in the replica too */
+body.interior main > .section:has(> div > .cards.tinted),
+body.interior main > .section:has(> div > .link-list.tinted),
+body.interior main > .section:has(> div > .columns.contact) {
+  background: var(--color-surface);
+}
+
+/* --- cards: duo palettes + trio circle cycle (fingerprint #90) ----------- */
+.cards.trials .card-col:nth-child(1) .promo-with-background { background: var(--color-purple); }
+.cards.trials .card-col:nth-child(2) .promo-with-background { background: var(--color-blue-promo); }
+.cards.patient .card-col:nth-child(1) .promo-with-background { background: var(--color-blue-promo); }
+.cards.patient .card-col:nth-child(2) .promo-with-background { background: var(--color-purple); }
+
+.cards.icon.pathways .card-col:nth-child(1) .icon-circle .fa-stack.fa-3x { background: var(--color-purple); }
+.cards.icon.pathways .card-col:nth-child(2) .icon-circle .fa-stack.fa-3x { background: var(--color-blue-light); }
+.cards.icon.pathways .card-col:nth-child(3) .icon-circle .fa-stack.fa-3x { background: #e96613; }
+
+/* icon-font codepoints for the interior pages' authored icons */
+.cards .cicon-clinical-trials::before { content: '\e649'; }
+.cards .cicon-carepages::before { content: '\e607'; }
+.cards .cicon-manage-risks::before { content: '\e640'; }
+.cards .cicon-contact-us::before { content: '\e63b'; }
+
+/* --- cards rail (breast-cancer about rail: badge image + promo card) ----- */
+.cards.rail .cards-table {
+  display: block;
+}
+
+.cards.rail .card-col {
+  display: block;
+  width: auto;
+}
+
+.cards.rail .card-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cards.rail .promo-with-background,
+.cards.rail .promo {
+  background: none;
+  color: var(--color-fg);
+  text-align: center;
+  padding: 0;
+  border-bottom: 2px solid var(--color-gray-light);
+  padding-bottom: 18px;
+}
+
+.cards.rail .promo-header {
+  color: var(--color-fg);
+  padding: 0;
+  margin-top: 35px;
+}
+
+.cards.rail .promo-header h3.title {
+  font-size: 36px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  color: var(--color-fg);
+}
+
+.cards.rail .promo-text {
+  color: var(--color-fg);
+  padding: 0;
+  margin-top: 10px;
+}
+
+.cards.rail a.cta.cta-right-arrow {
+  color: var(--color-accent);
+}
+
+/* --- quote rail (icon quote + author/title, stacked + centered) ---------- */
+body.interior .quote.rail .spotlight-quote {
+  display: block;
+  width: 76%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 15px;
+}
+
+body.interior .quote.rail .spotlight-quote > div {
+  display: block;
+  padding: 0;
+  flex: none;
+}
+
+body.interior .quote.rail .spotlight-quote > div.quote {
+  padding: 0;
+}
+
+body.interior .quote.rail .spotlight-quote > div.quote::after {
+  display: none;
+}
+
+body.interior .quote.rail .quote-icon {
+  margin-bottom: 10px;
+}
+
+body.interior .quote.rail .quote > p {
+  margin: 25px 0;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-fg);
+}
+
+body.interior .quote.rail .info .secondary-info {
+  font-family: var(--body-font-semibold);
+  font-size: 21px;
+  line-height: 1;
+  letter-spacing: var(--letter-spacing);
+  margin: 0;
+  color: var(--color-fg);
+}
+
+body.interior .quote.rail .info .other-info {
+  font-size: 21px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  margin: 0;
+  color: var(--color-fg);
+}
+
+/* --- video teaser inside the interior prose+rail pair -------------------- */
+@media (width >= 992px) {
+  body.interior main > .section.video-container:has(.video.teaser) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 358px;
+    padding: 0 36px 70px;
+    align-items: start;
+  }
+
+  body.interior main > .section.video-container:has(.video.teaser) > .default-content-wrapper {
+    flex: none;
+    grid-column: 1;
+    padding: 0 36px 0 0;
+  }
+
+  body.interior main > .section.video-container:has(.video.teaser) > .video-wrapper {
+    flex: none;
+    grid-column: 2;
+    padding-left: 0;
+  }
+}
+
+/* --- video panorama (360-photo band: static poster + caption panel) ------ */
+.video.panorama .basic-content-media-wrapper {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+}
+
+.video.panorama .basic-content-media-wrapper.video-scrim .media-image::after {
+  display: none;
+}
+
+.video.panorama .media-image {
+  grid-column: 1;
+}
+
+.video.panorama .media-image img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.video.panorama .media-inner {
+  position: static;
+  grid-column: 2;
+  padding: 0 50px;
+  text-align: left;
+  background: none;
+  inset: auto;
+}
+
+.video.panorama .video-play-button {
+  display: none;
+}
+
+.video.panorama .media-body,
+.video.panorama .media-body-text {
+  position: static;
+  display: block;
+  color: var(--color-fg);
+  background: none;
+  padding: 0;
+  height: auto;
+  width: auto;
+}
+
+/* authored order: kicker (strong) / title / description — styled in place */
+.video.panorama .carousel-body-text p {
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-fg);
+  margin: 0;
+}
+
+.video.panorama .carousel-body-text:has(strong) p,
+.video.panorama .carousel-body-text strong {
+  font-family: var(--sans-bold-font-family);
+  font-size: 15px;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+.video.panorama .media-body-text > .carousel-body-text:nth-of-type(2) p {
+  font-size: 27px;
+  line-height: 1.3;
+  margin: 1em 0;
+}
+
+.video.panorama .media-body-text > .carousel-body-text:nth-of-type(3) {
+  border-top: 2px solid #808080;
+  padding-top: 1em;
+  max-width: 90%;
+}
+
+/* Pannellum credit link is viewer chrome — hidden exactly like the replica */
+.video.panorama .panorama-credit {
+  display: none;
+}
+
+/* videos-gallery More/Less: block-owned mobile expander (hidden on desktop) */
+.carousel.videos .videos-toggle {
+  display: none;
+  text-align: center;
+}
+
+.carousel.videos .videos-toggle a {
+  display: inline-block;
+  padding: 13px 30px 11px;
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+/* --- carousel `videos` (clinical-trials video gallery, 2-up cards) ------- */
+body.interior .carousel-container:has(.carousel.videos) > .default-content-wrapper h2 {
+  font-size: 41px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.carousel.videos .slick-prev,
+.carousel.videos .slick-next,
+.carousel.videos .slick-dots,
+.carousel.videos .slick-cloned {
+  display: none;
+}
+
+.carousel.videos .slick-list {
+  overflow: visible;
+}
+
+.carousel.videos .slick-track {
+  display: flex;
+  gap: 12px;
+}
+
+.carousel.videos .carousel-item {
+  flex: 0 0 calc(50% - 6px);
+  width: auto;
+}
+
+.carousel.videos .carousel-item > a {
+  display: block;
+  background: var(--color-surface);
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.carousel.videos .carousel-image {
+  position: relative;
+  background: var(--color-fg);
+}
+
+.carousel.videos .carousel-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.carousel.videos .carousel-image::after {
+  content: '\e605';
+  font-family: MDIcons, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -0.5em 0 0 -0.5em;
+  font-size: 3em;
+  color: rgb(255 255 255 / 80%);
+}
+
+.carousel.videos .carousel-body {
+  padding: 18px;
+  text-align: left;
+}
+
+.carousel.videos .carousel-body h3.body-title {
+  font-family: var(--sans-bold-font-family);
+  font-size: 16px;
+  line-height: 1.3;
+  color: var(--color-blue-promo);
+  text-transform: uppercase;
+  margin: 0 0 16px;
+  font-weight: 400;
+}
+
+.carousel.videos .body-text {
+  font-size: 18px;
+  line-height: 1.3;
+  color: var(--color-gray-text);
+  padding: 0 18px 18px;
+  text-align: left;
+}
+
+/* --- link-list icon-head (breast-cancer treatment locations) ------------- */
+body.interior main > .section.link-list-container:has(.link-list.icon-head) > .default-content-wrapper {
+  text-align: center;
+  padding: 0 36px;
+}
+
+body.interior main > .section.link-list-container:has(.link-list.icon-head) > .default-content-wrapper .icon {
+  display: inline-block;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  background: var(--color-blue-promo);
+  padding: 27px;
+}
+
+body.interior main > .section.link-list-container:has(.link-list.icon-head) > .default-content-wrapper h2 {
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  color: var(--color-fg);
+  margin: 20px 0 0;
+}
+
+body.interior main > .section.link-list-container:has(.link-list.icon-head) > .default-content-wrapper p:last-of-type {
+  font-size: 21px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-gray-text);
+  margin: 13px 0 0;
+}
+
+/* icon-head list is a single stacked column (replica), not the 2-col split */
+.link-list.icon-head .table.ll-table {
+  display: block;
+}
+
+.link-list.icon-head .table.ll-table .col-double {
+  display: block;
+  width: auto;
+  padding: 0;
+}
+
+.link-list.icon-head .link-list-body a.mdicon-linklist,
+.link-list.icon-head .link-list-body a.mda-icon-linkout {
+  padding: 38px 0 37px;
+}
+
+/* second column list loses its top border so the run reads as one list */
+.link-list.icon-head .col-double.last li.link.top-border {
+  border-top: 0;
+}
+
+/* --- link-list columns band head (breast-center resources) --------------- */
+body.interior main > .section.link-list-container:has(.link-list.tinted) > .default-content-wrapper h2 {
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  color: var(--color-fg);
+  text-align: center;
+  margin: -4px 0 50px;
+}
+
+/* --- columns promo cells (breast-center prevention band + contact duo) --- */
+body.interior .columns.image-left .rte-container,
+body.interior .columns.contact .rte-container {
+  text-align: center;
+}
+
+body.interior .columns.image-left .rte-container .icon,
+body.interior .columns.contact .rte-container .icon {
+  display: inline-block;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  padding: 27px;
+  background: var(--color-blue-light);
+}
+
+body.interior .columns.contact .col-double:nth-child(1) .rte-container .icon {
+  background: var(--color-purple);
+}
+
+body.interior .columns.contact .col-double:nth-child(2) .rte-container .icon {
+  background: var(--color-accent);
+}
+
+body.interior .columns.image-left .rte-container h3,
+body.interior .columns.contact .rte-container h3 {
+  font-size: 36px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  color: var(--color-fg);
+  margin: 20px 0 0;
+}
+
+body.interior .columns.image-left .rte-container p,
+body.interior .columns.contact .rte-container p {
+  font-size: 21px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-gray-text);
+  margin: 21px 0 0;
+}
+
+body.interior .columns.image-left .rte-container a,
+body.interior .columns.contact .rte-container a {
+  color: #c50026;
+}
+
+@media (width <= 991px) {
+  body.interior .quote.rail .spotlight-quote {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 35px 35px 40px;
+  }
+
+  body.interior .quote.rail .quote > p {
+    font-size: 21px;
+    line-height: 1;
+  }
+
+  .video.panorama .basic-content-media-wrapper {
+    display: block;
+  }
+
+  .video.panorama .media-image img {
+    height: auto;
+  }
+
+  .video.panorama .media-inner {
+    padding: 20px;
+  }
+
+  .carousel.videos .slick-track {
+    display: block;
+  }
+
+  .carousel.videos .carousel-item {
+    width: auto;
+  }
+
+  /* mobile progressive disclosure (replica More/Less) */
+  .carousel.videos .carousel-shell:not(.videos-expanded) .carousel-item:nth-child(n+2) {
+    display: none;
+  }
+
+  .carousel.videos .carousel-shell:not(.videos-expanded) .videos-toggle.more {
+    display: block;
+  }
+
+  .carousel.videos .carousel-shell.videos-expanded .videos-toggle.less {
+    display: block;
+  }
+}
+
+/* --- interior overrides that must WIN over generic block-CSS heads -------- */
+
+/* lede keeps its foundation drop-cap size (the interior prose rule above
+   would otherwise shrink it) */
+body.interior main .section.lede .default-content-wrapper p {
+  font-size: 36px;
+  line-height: 1.1;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+@media (width <= 991px) {
+  body.interior main .section.lede .default-content-wrapper p {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+}
+
+/* the about prose+rail section is a cards-container, but its DC is body
+   prose, NOT a centered section head (cards.css head rule must not apply) */
+body.interior main > .section.cards-container:has(> div > .cards.rail) > .default-content-wrapper {
+  text-align: left;
+  padding: 0 36px 0 0;
+}
+
+body.interior main > .section.cards-container:has(> div > .cards.rail) > .default-content-wrapper h2 {
+  font-size: 27px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing);
+  text-align: left;
+  color: var(--color-fg);
+  margin: 22px 0 23px;
+}
+
+/* quote rail: quote above author (flex column keeps visual order) */
+body.interior .quote.rail .spotlight-quote {
+  display: flex;
+  flex-direction: column;
+}
+
+body.interior .quote.rail .spotlight-quote > div.quote { order: 1; }
+body.interior .quote.rail .spotlight-quote > div.info { order: 2; }

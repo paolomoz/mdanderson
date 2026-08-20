@@ -1,0 +1,60 @@
+/* breadcrumbs — spec: breast-cancer prototype .breadcrumb-wrapper */
+.breadcrumbs ul.crumbs {
+  margin: 0;
+  padding: 22px 25px;
+  border-bottom: 1px solid #d7d7d7;
+  overflow: hidden;
+  list-style: none;
+}
+
+.breadcrumbs .crumbs li {
+  font-family: var(--sans-light-font-family);
+  font-size: 14px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  list-style: none;
+  float: left;
+  margin-right: 5px;
+  color: var(--color-gray-text);
+}
+
+.breadcrumbs .crumbs li a {
+  font-family: var(--sans-light-font-family);
+  font-size: 14px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  color: var(--color-gray-text);
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+.breadcrumbs .crumbs li a:hover {
+  text-decoration: underline;
+  color: var(--color-gray-text);
+}
+
+.breadcrumbs .crumbs li a.crumb-arrow {
+  padding-right: 20px;
+}
+
+.breadcrumbs .crumbs li a.crumb-arrow::after {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 13px;
+  content: '>';
+  top: 0;
+  right: 2px;
+}
+
+@media (width <= 991px) {
+  .breadcrumbs ul.crumbs {
+    padding: 10px 15px 11px;
+  }
+
+  .breadcrumbs .crumbs li,
+  .breadcrumbs .crumbs li a {
+    font-size: 16px;
+  }
+}

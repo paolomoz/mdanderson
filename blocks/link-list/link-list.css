@@ -1,0 +1,269 @@
+/* link-list — arrow link rails (columns) + outline cards (boxed).
+   Replica CSS from the prevention + research prototypes, scoped. */
+
+main .section.link-list-container {
+  padding: 70px 0;
+}
+
+main .section.link-list-container > div {
+  max-width: var(--max-width);
+  padding: 0 72px;
+}
+
+/* section heads (default content in the same section) */
+
+/* prevention "Manage Your Risk" — big centered title */
+main .section.link-list-container:has(.link-list.columns) > .default-content-wrapper h2 {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  text-align: center;
+  margin: -4px 0 50px;
+}
+
+/* research "Departments, Labs and Institutes" — Univers title + serif desc */
+main .section.link-list-container:has(.link-list.boxed) > .default-content-wrapper h2 {
+  font-family: var(--sans-bold-font-family);
+  font-size: 29px;
+  line-height: 37.7px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  margin: 24.07px 0;
+  text-align: left;
+}
+
+main .section.link-list-container:has(.link-list.boxed) > .default-content-wrapper p {
+  font-size: 24px;
+  line-height: 31.2px;
+  letter-spacing: var(--letter-spacing);
+  margin: 24px 0 35px;
+}
+
+/* ── columns ──────────────────────────────────────────────────────────── */
+.link-list .table.ll-table {
+  display: flex;
+  width: 100%;
+}
+
+.link-list .col-double {
+  flex: 0 0 50%;
+  min-width: 0;
+}
+
+.link-list .col-double.cell-m { padding-right: 72px; }
+.link-list .col-double.last.cell-m { padding-right: 0; padding-left: 72px; }
+
+.link-list .link-list-heading h3 {
+  font-family: var(--sans-bold-font-family);
+  font-size: 24px;
+  line-height: 31.2px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  text-align: left;
+  margin: 0;
+}
+
+.link-list p.subtext {
+  font-size: 21px;
+  line-height: 27.3px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-gray-text);
+  margin: 15px 0 9px;
+}
+
+.link-list .link-list-body ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-list .link-list-body ul li.link { display: block; width: 100%; }
+
+.link-list .link-list-body a.mdicon-linklist,
+.link-list .link-list-body a.mda-icon-linkout {
+  display: block;
+  position: relative;
+  padding: 30px 10px 30px 0;
+  border-bottom: 1px solid var(--color-gray-light);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.link-list .link-list-body a.mdicon-linklist::before {
+  font-family: MDIcons, sans-serif;
+  content: "\e601";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -9px;
+  color: var(--color-accent);
+}
+
+.link-list .link-list-body a.mda-icon-linkout::before {
+  font-family: mda-icons, sans-serif;
+  content: "\e618";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -9px;
+  color: var(--color-accent);
+  font-size: 18px;
+  line-height: 18px;
+}
+
+/* research areas-resources rhythm: headed columns use the taller row */
+.link-list .link-list:has(.link-list-heading) .link-list-body a.mdicon-linklist,
+.link-list .link-list:has(.link-list-heading) .link-list-body a.mda-icon-linkout {
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+.link-list h4.link-title {
+  font-family: var(--sans-font-family);
+  font-size: 14px;
+  line-height: 18.2px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-fg);
+  max-width: 87%;
+  margin: 0;
+}
+
+.link-list p.link-body {
+  font-family: var(--sans-light-font-family);
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-gray-dark);
+  margin: 10px 0 0;
+  max-width: 85%;
+}
+
+/* ── boxed (research departments) ─────────────────────────────────────── */
+.link-list .text-border-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.link-list .border-item-wrapper {
+  height: 270px;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.link-list a.text-border {
+  display: block;
+  height: 100%;
+  text-align: center;
+  background: var(--color-bg);
+  outline: 1px solid var(--color-gray-light);
+  padding: 50px 30px;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.link-list a.text-border h3.title {
+  font-family: var(--sans-boldcn-font-family);
+  font-size: 24px;
+  line-height: 31.2px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  margin: 0 0 24px;
+}
+
+.link-list a.text-border p.description {
+  font-size: 21px;
+  line-height: 27.3px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-fg);
+  margin: 21px 0;
+}
+
+.link-list a.text-border i.teaser-more.mdicon-arrow {
+  display: inline;
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--color-accent);
+  font-style: normal;
+}
+
+.link-list i.mdicon-arrow::before {
+  font-family: MDIcons, sans-serif;
+  content: "\e608";
+}
+
+@media (width <= 991px) {
+  main .section.link-list-container { padding: 0; }
+  main .section.link-list-container > div { padding: 0; }
+
+  main .section.link-list-container:has(.link-list.columns) > .default-content-wrapper h2 {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 35px;
+    margin: 0;
+  }
+
+  main .section.link-list-container:has(.link-list.boxed) > .default-content-wrapper {
+    padding: 38px 30px 0;
+  }
+
+  main .section.link-list-container:has(.link-list.boxed) > .default-content-wrapper h2 {
+    font-size: 21px;
+    line-height: 27.3px;
+    margin: 0 0 17px;
+  }
+
+  main .section.link-list-container:has(.link-list.boxed) > .default-content-wrapper p {
+    font-size: 16px;
+    line-height: 20.8px;
+    margin: 0 0 30px;
+  }
+
+  .link-list .table.ll-table { display: block; width: auto; }
+
+  .link-list .col-double,
+  .link-list .col-double.cell-m,
+  .link-list .col-double.last.cell-m {
+    display: block;
+    width: auto;
+    padding: 0;
+  }
+
+  .link-list .col-double.last.cell-m { padding-top: 48px; }
+  .link-list .link-list { padding: 32px 0; }
+  .link-list .link-list-heading { padding: 0 35px; margin-bottom: 24px; }
+  .link-list .link-list-heading h3 { font-size: 16px; line-height: 20.8px; }
+  .link-list p.subtext { font-size: 16px; line-height: 20.8px; padding: 0 35px; margin: 0 0 16px; }
+
+  .link-list .link-list-body a.mdicon-linklist,
+  .link-list .link-list-body a.mda-icon-linkout {
+    padding: 15px 35px;
+    font-size: 16px;
+  }
+
+  .link-list .link-list-body li.link.top-border a.mdicon-linklist,
+  .link-list .link-list-body li.link.top-border a.mda-icon-linkout { border-top: 1px solid var(--color-gray-light); }
+
+  .link-list .link-list-body li.link:last-child a.mdicon-linklist,
+  .link-list .link-list-body li.link:last-child a.mda-icon-linkout { border-bottom: 0; }
+
+  .link-list .link-list-body a.mdicon-linklist::before { right: 35px; margin-top: -8px; }
+  .link-list .link-list-body a.mda-icon-linkout::before { right: 35px; margin-top: -8px; font-size: 16px; line-height: 16px; }
+  .link-list h4.link-title { font-size: 16px; line-height: 20.8px; }
+  .link-list p.link-body.mda-hide-sm { display: none; }
+
+  .link-list .text-border-container {
+    grid-template-columns: 1fr;
+    padding: 0 30px 20px;
+  }
+
+  .link-list .border-item-wrapper { height: 220px; padding: 0; }
+  .link-list a.text-border { padding: 30px 20px; }
+  .link-list a.text-border h3.title { font-size: 16px; line-height: 20.8px; margin-bottom: 16px; }
+  .link-list a.text-border p.description { font-size: 16px; line-height: 20.8px; margin: 16px 0; }
+  .link-list a.text-border i.teaser-more.mdicon-arrow { font-size: 16px; line-height: 16px; }
+}

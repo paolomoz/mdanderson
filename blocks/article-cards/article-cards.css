@@ -1,0 +1,231 @@
+/* article-cards — spec: breast-cancer prototype .fis-articles (grid),
+   clinical-trials .fis-articles (news) + faculty-experts (experts). */
+
+/* section head styled in place (D1) */
+.article-cards-container > .default-content-wrapper h2 {
+  font-family: var(--sans-bold-font-family);
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  margin: 0 0 20px;
+  color: var(--color-fg);
+}
+
+body.interior main > .section.article-cards-container {
+  padding: 70px 36px;
+}
+
+/* experts band: gray ground + centered display head (per-variant, #90) */
+main .section.article-cards-container:has(.article-cards.experts) {
+  background: var(--color-surface);
+}
+
+main .section.article-cards-container:has(.article-cards.experts) > .default-content-wrapper h2 {
+  font-family: var(--heading-font-family);
+  font-size: 48px;
+  line-height: 1;
+  text-align: center;
+  margin: 0 0 50px;
+}
+
+.article-cards .ac-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px 43px;
+}
+
+.article-cards.news .ac-container {
+  gap: 30px 4%;
+}
+
+.article-cards a.ac-card,
+.article-cards .ac-card {
+  display: block;
+  border: 1px solid var(--color-gray-light);
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  background: var(--color-bg);
+}
+
+.article-cards a.ac-card:hover {
+  text-decoration: none;
+}
+
+.article-cards a.ac-card:hover h3,
+.article-cards .ac-card-link:hover h3 {
+  text-decoration: underline;
+}
+
+.article-cards a.ac-card.ac-hidden,
+.article-cards .ac-card.ac-hidden {
+  display: none;
+}
+
+.article-cards .ac-media {
+  overflow: hidden;
+}
+
+.article-cards.grid .ac-media {
+  height: 265px;
+}
+
+.article-cards .ac-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.article-cards.grid .ac-media img {
+  height: 257px;
+  object-fit: cover;
+}
+
+.article-cards .ac-title {
+  padding: 18px;
+}
+
+.article-cards.news .ac-title {
+  padding: 18px 40px 18px 18px;
+}
+
+.article-cards .ac-title h3 {
+  font-family: var(--body-font-semibold);
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  color: var(--color-fg);
+  margin: 0;
+}
+
+/* experts: summary + Read more CTA below the linked title */
+.article-cards.experts .ac-card {
+  border: 1px solid var(--color-gray-light);
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+.article-cards.experts .ac-card-link {
+  display: block;
+  text-decoration: none;
+}
+
+.article-cards.experts .ac-text {
+  margin-top: 18px;
+  padding: 0 18px 18px;
+}
+
+.article-cards.experts .ac-summary {
+  font-size: 18px;
+  line-height: 1.3;
+  color: var(--color-gray-text);
+  max-height: 47px;
+  overflow: hidden;
+}
+
+.article-cards.experts .ac-cta {
+  position: absolute;
+  bottom: 18px;
+  left: 19px;
+  right: 19px;
+  margin: 0;
+}
+
+.article-cards.experts .ac-cta a {
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.article-cards .ac-arrow {
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  margin-left: 15px;
+  color: var(--color-accent);
+  font-style: normal;
+}
+
+.article-cards .ac-arrow::before {
+  font-family: MDIcons, sans-serif;
+  content: '\e608';
+}
+
+/* View more / View less */
+.article-cards .ac-toggle {
+  clear: both;
+  padding-top: 29px;
+}
+
+.article-cards .ac-toggle button {
+  background: var(--color-bg);
+  border: 1px solid var(--color-accent);
+  display: inline-block;
+  padding: 20px;
+  margin-right: 20px;
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-accent);
+  cursor: pointer;
+}
+
+@media (width <= 991px) {
+  body.interior main > .section.article-cards-container {
+    padding: 20px;
+  }
+
+  .article-cards-container > .default-content-wrapper h2 {
+    font-size: 16px;
+    margin: 0 0 13px;
+  }
+
+  .article-cards .ac-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .article-cards.grid a.ac-card {
+    display: flex;
+    height: 124px;
+  }
+
+  .article-cards.grid .ac-media {
+    width: 128px;
+    height: auto;
+    flex: none;
+    padding: 12px 0 0;
+    box-sizing: border-box;
+  }
+
+  .article-cards.grid .ac-media img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .article-cards.grid .ac-title {
+    padding: 16px;
+    flex: 1;
+  }
+
+  .article-cards .ac-title h3 {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  main .section.article-cards-container:has(.article-cards.experts) > .default-content-wrapper h2 {
+    font-size: 24px;
+    margin: 0 0 20px;
+  }
+
+  .article-cards .ac-toggle button {
+    font-size: 16px;
+  }
+}

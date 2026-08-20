@@ -1,27 +1,304 @@
-.cards > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
+/* cards — promo/icon card bands (replica CSS, scoped under .cards).
+   Layout: duo / trio (default) / closing. Palettes (closed set, log §7):
+   support, screen, closing, prefooter; icon trio = red/lightblue/green. */
+
+main .section.cards-container > div {
+  max-width: var(--max-width);
+  padding: 70px 72px;
 }
 
-.cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+/* the EndCancer head sits in the same section as the closing trio */
+main .section.cards-container > .default-content-wrapper {
+  text-align: center;
+  padding-bottom: 0;
 }
 
-.cards .cards-card-body {
-  margin: 16px;
+main .section.cards-container > .default-content-wrapper h2 {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  text-align: center;
+  margin: -4px 0 0;
 }
 
-.cards .cards-card-image {
-  line-height: 0;
+main .section.cards-container:has(.cards.closing) > .cards-wrapper {
+  padding-top: 50px;
 }
 
-.cards > ul > li img {
+.cards .table.cards-table {
+  display: flex;
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  align-items: stretch;
+}
+
+/* duo layout */
+.cards.duo .card-col { flex: 0 0 50%; min-width: 0; }
+.cards.duo .card-col:first-child { padding-right: 9px; }
+.cards.duo .card-col:last-child { padding-left: 9px; }
+
+/* trio + closing layout */
+.cards.trio .card-col,
+.cards.closing .card-col { flex: 0 0 33.333%; min-width: 0; }
+
+.cards.closing .card-col:nth-child(1),
+.cards.prefooter .card-col:nth-child(1) { padding-right: 11.88px; }
+
+.cards.closing .card-col:nth-child(2),
+.cards.prefooter .card-col:nth-child(2) { padding-left: 5.94px; padding-right: 5.94px; }
+
+.cards.closing .card-col:nth-child(3),
+.cards.prefooter .card-col:nth-child(3) { padding-left: 11.88px; }
+
+.cards .module.m-bleed,
+.cards .card-col > .module > a { display: block; height: 100%; text-decoration: none; }
+
+/* ── promo panels ─────────────────────────────────────────────────────── */
+.cards .promo-with-background {
+  text-align: center;
+  padding: 10px 0 60px;
+  color: var(--color-bg);
+  height: 100%;
+}
+
+.cards .promo-with-background.promo-no-icon {
+  padding: 60px 0;
+}
+
+/* palettes — nth-child cycles, never authored (D6) */
+.cards.support .card-col:nth-child(1) .promo { background: var(--color-accent); }
+.cards.support .card-col:nth-child(2) .promo { background: var(--color-purple); }
+.cards.screen .card-col:nth-child(1) .promo { background: var(--color-purple); }
+.cards.screen .card-col:nth-child(2) .promo { background: var(--color-accent); }
+.cards.closing .card-col:nth-child(1) .promo { background: var(--color-accent); }
+.cards.closing .card-col:nth-child(2) .promo { background: #000; }
+.cards.closing .card-col:nth-child(3) .promo { background: var(--color-blue-promo); }
+.cards.prefooter .card-col:nth-child(1) .promo { background: var(--color-blue-promo); }
+.cards.prefooter .card-col:nth-child(2) .promo { background: #000; }
+.cards.prefooter .card-col:nth-child(3) .promo { background: var(--color-purple); }
+
+.cards .promo-icon { height: 95px; }
+
+.cards .promo-icon .fa-stack {
+  display: inline-block;
+  width: 108px;
+  height: 95px;
+  line-height: 108px;
+}
+
+.cards .promo-icon .mda-stack-1x {
+  display: block;
+  font-size: 54px;
+  line-height: 108px;
+  color: var(--color-bg);
+  font-style: normal;
+}
+
+.cards i.card-icon::before {
+  font-family: mda-icons, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* icon codepoints (canon.css + page-local lifts) */
+.cards .cicon-mycancerconnection::before { content: "\e641"; }
+.cards .cicon-counseling::before { content: "\e600"; }
+.cards .cicon-directions::before { content: "\e60d"; }
+.cards .cicon-publications::before { content: "\e61b"; }
+.cards .cicon-knowledgecenter::before { content: "\e617"; }
+.cards .cicon-screenings::before { content: "\e647"; }
+.cards .cicon-powerinnumbers::before { content: "\e61a"; }
+.cards .cicon-donate::before { content: "\e60f"; }
+.cards .cicon-genetictesting::before { content: "\e614"; }
+.cards .cicon-email::before { content: "\e611"; }
+
+.cards .promo-header { color: var(--color-bg); padding: 0 10%; }
+.cards .promo-no-icon .promo-header { padding: 0 42px; }
+
+.cards .promo-with-background h3.title {
+  font-size: 36px;
+  line-height: 46.8px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  color: var(--color-bg);
+  margin: 0;
+}
+
+.cards .promo-text { padding: 0 10%; }
+.cards .promo-no-icon .promo-text { padding: 0 42px; }
+
+.cards .promo-with-background .body {
+  font-size: 21px;
+  line-height: 27.3px;
+  letter-spacing: var(--letter-spacing);
+  margin: 20px 0;
+}
+
+.cards .promo-with-background .body p { margin: 21px 0; }
+
+.cards a.cta.cta-block {
+  display: inline-block;
+  position: relative;
+  margin-top: 30px;
+  padding: 11px 30px;
+  border: 1px solid var(--color-bg);
+  color: var(--color-bg);
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: var(--letter-spacing);
+  text-decoration: none;
+}
+
+.cards.closing a.cta.cta-block {
+  font-family: var(--sans-bold-font-family);
+  font-size: 24px;
+  line-height: 31.2px;
+}
+
+.cards a.cta.cta-block:hover { color: var(--color-bg); text-decoration: underline; }
+
+.cards .cta-right-arrow-wrapper { margin-top: 30px; height: 23px; }
+
+.cards a.cta.cta-right-arrow {
+  display: inline-block;
+  position: relative;
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-bg);
+  text-decoration: none;
+}
+
+.cards a.cta.cta-right-arrow:hover { color: var(--color-bg); text-decoration: underline; }
+
+.cards .cta-right-arrow i.mdicon-arrow,
+.cards a.cta.cta-right-arrow i.mdicon-arrow {
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  margin-left: 10px;
+  color: var(--color-bg);
+  font-style: normal;
+}
+
+.cards i.mdicon-arrow::before {
+  font-family: MDIcons, sans-serif;
+  content: "\e608";
+}
+
+.cards .mda-icon-linkout::before {
+  font-family: mda-icons, sans-serif;
+  font-style: normal;
+  content: "\e618";
+}
+
+.cards.closing .mda-icon-linkout { font-size: 24px; }
+
+.cards .nowrap { white-space: nowrap; }
+
+/* ── white icon cards (icon trio) ─────────────────────────────────────── */
+.cards.icon .promo-simple {
+  text-align: center;
+}
+
+.cards.icon.trio .card-col { flex: 0 0 auto; width: 417px; margin-right: 21.95px; }
+.cards.icon.trio .card-col:last-child { margin-right: 0; }
+
+.cards.icon .promo-icon .fa-stack {
+  width: 108px;
+  height: 108px;
+  line-height: 108px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.cards.icon.trio .card-col:nth-child(1) .fa-stack { background: var(--color-accent); }
+.cards.icon.trio .card-col:nth-child(2) .fa-stack { background: var(--color-blue-light); }
+.cards.icon.trio .card-col:nth-child(3) .fa-stack { background: var(--color-green); }
+
+.cards.icon .promo-simple h3.title {
+  font-size: 36px;
+  line-height: 46.8px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  color: var(--color-fg);
+  margin: 0;
+}
+
+@media (width <= 991px) {
+  main .section.cards-container > div { padding: 0; }
+
+  main .section.cards-container > .default-content-wrapper h2 {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 35px;
+    margin: 0;
+  }
+
+  main .section.cards-container:has(.cards.closing) > .cards-wrapper { padding-top: 0; }
+
+  .cards .table.cards-table { display: block; width: auto; }
+
+  .cards.duo .card-col,
+  .cards.trio .card-col,
+  .cards.closing .card-col,
+  .cards.prefooter .card-col,
+  .cards.icon.trio .card-col {
+    display: block;
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cards.duo .card-col:last-child,
+  .cards.screen .card-col:last-child { padding-top: 48px; }
+
+  .cards .promo-with-background { padding: 0 0 40px; }
+  .cards .promo-with-background.promo-no-icon { padding: 40px 0; }
+  .cards .promo-icon { height: 88px; }
+  .cards .promo-icon .fa-stack { width: 88px; height: 88px; line-height: 88px; }
+  .cards .promo-icon .mda-stack-1x { font-size: 48px; line-height: 88px; }
+  .cards .promo-header { padding: 0 36px; }
+
+  .cards .promo-with-background h3.title {
+    font-size: 32px;
+    line-height: 41.6px;
+    padding: 0 22px;
+  }
+
+  .cards .promo-text { padding: 0 36px; }
+  .cards .promo-with-background .body { font-size: 16px; line-height: 20.8px; }
+  .cards .promo-with-background .body p { margin: 16px 0; }
+
+  .cards a.cta.cta-block {
+    margin-top: 1px;
+    font-size: 16px;
+    line-height: 20.8px;
+  }
+
+  .cards.closing a.cta.cta-block { font-size: 16px; line-height: 20.8px; }
+  .cards.closing .mda-icon-linkout { font-size: 16px; }
+  .cards .cta-right-arrow-wrapper { margin-top: 20px; height: 21px; }
+  .cards a.cta.cta-right-arrow { font-size: 16px; line-height: 20.8px; }
+
+  .cards .cta-right-arrow i.mdicon-arrow,
+  .cards a.cta.cta-right-arrow i.mdicon-arrow { font-size: 16px; margin-left: 5px; }
+
+  .cards.icon .promo-simple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+  }
+
+  .cards.icon .promo-icon-header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards.icon .promo-icon .fa-stack { margin-bottom: 20px; }
+  .cards.icon .promo-simple h3.title { font-size: 32px; line-height: 41.6px; }
 }

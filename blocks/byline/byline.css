@@ -1,0 +1,67 @@
+/* byline — spec: breast-cancer prototype .medical-reviewer-component */
+.byline {
+  padding: 18px 0 0;
+  min-height: 20px;
+}
+
+.byline-container.byline-empty {
+  min-height: 10px;
+}
+
+.byline .med-review {
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: var(--letter-spacing);
+}
+
+.byline .med-review-check {
+  float: left;
+  font-size: 19px;
+  line-height: 1.2;
+  margin-right: 10px;
+  font-style: normal;
+}
+
+.byline .med-review-check::before {
+  font-family: FontAwesome, sans-serif;
+  content: '\f058';
+  color: #529214;
+}
+
+.byline .med-review-bold {
+  font-weight: 700;
+}
+
+.byline .med-review-pipe {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.byline .med-review a:any-link {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+@media (width <= 991px) {
+  .byline {
+    padding: 10px 35px 30px;
+  }
+
+  .byline .med-review {
+    position: relative;
+    padding-left: 26px;
+  }
+
+  .byline .med-review-check {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    float: none;
+    margin-right: 0;
+  }
+
+  .byline .med-review-date {
+    display: block;
+  }
+}

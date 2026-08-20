@@ -1,33 +1,160 @@
-.columns > div {
-  display: flex;
-  flex-direction: column;
+/* columns — two-column split bands. Variant `badge` = index award band.
+   Replica CSS lifted from the index prototype, scoped under .columns. */
+
+main .section.columns-container > div {
+  max-width: var(--max-width);
+  padding: 70px 72px;
 }
 
-.columns img {
+.columns .table.award-table {
+  display: flex;
+  align-items: center;
   width: 100%;
 }
 
-.columns > div > div {
-  order: 1;
+.columns .col-double {
+  flex: 0 0 50%;
+  min-width: 0;
 }
 
-.columns > div > .columns-img-col {
-  order: 0;
+/* badge panel */
+.columns .badge.scroll-trans {
+  background: var(--color-gray-text);
+  color: var(--color-bg);
+  text-align: center;
+  padding: 44px 30px 38px;
 }
 
-.columns > div > .columns-img-col img {
+.columns .badge-img-container {
+  position: relative;
+  height: 174px;
+  text-align: center;
+}
+
+.columns .badge-img-container img,
+.columns .badge-img-container picture {
+  display: inline-block;
+  width: 165px;
+  height: 174px;
+}
+
+.columns .badge-img-container picture img { width: 165px; height: 174px; }
+
+.columns .badge-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding-top: 23px;
+}
+
+.columns p.badge-countup {
+  font-size: 90px;
+  line-height: 117px;
+  letter-spacing: var(--letter-spacing);
+  margin: 0;
+}
+
+.columns p.countup-label {
+  font-size: 21px;
+  line-height: 27.3px;
+  letter-spacing: var(--letter-spacing);
+  margin: -30px 0 0;
+}
+
+.columns p.badge-heading {
+  font-size: 36px;
+  line-height: 46.8px;
+  letter-spacing: var(--letter-spacing);
+  padding-top: 20px;
+  margin: 0;
+}
+
+.columns p.badge-subhead {
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-gray-light);
+  margin: 5px 0 0;
+}
+
+/* prose column */
+.columns .col-double.last.cell-m { padding-left: 72px; }
+
+.columns .rte-container h1,
+.columns .rte-container h2 {
+  font-size: 36px;
+  line-height: 46.8px;
+  font-weight: 700;
+  margin: 24.12px 0;
+}
+
+.columns .rte-container p {
+  font-size: 18px;
+  line-height: 23.4px;
+  color: #3a3a3a;
+  margin: 0 0 18px;
+}
+
+.columns .rte-container p:last-child { margin-bottom: 0; }
+
+.columns .rte-container span.cta {
   display: block;
+  position: relative;
 }
 
-@media (width >= 900px) {
-  .columns > div {
-    align-items: center;
-    flex-direction: unset;
-    gap: 24px;
+.columns .rte-container span.cta a {
+  color: #c50026;
+  text-decoration: underline;
+}
+
+.columns .nowrap { white-space: nowrap; }
+
+/* generic image split (image-left / image-right reusers) */
+.columns .col-media img { display: block; width: 100%; height: auto; }
+.columns.image-right .table.award-table { flex-direction: row-reverse; }
+
+@media (width <= 991px) {
+  main .section.columns-container > div { padding: 0; }
+
+  .columns .table.award-table {
+    display: block;
+    width: auto;
+    padding-top: 35px;
   }
 
-  .columns > div > div {
-    flex: 1;
-    order: unset;
+  .columns .col-double,
+  .columns .col-double.last.cell-m {
+    display: block;
+    width: auto;
+    padding: 0;
   }
+
+  .columns .badge.scroll-trans { margin: 0 35px; padding: 20px 10px; }
+  .columns .badge-img-container { height: 97px !important; }
+
+  .columns .badge-img-container img,
+  .columns .badge-img-container picture img { width: 110px; height: 116px; }
+
+  .columns .badge-text { padding-top: 10px; }
+  .columns p.badge-countup { font-size: 60px; line-height: 78px; }
+  .columns p.countup-label { margin-top: -26px; }
+
+  .columns p.badge-heading {
+    font-size: 21px;
+    line-height: 27.3px;
+    padding-top: 10px;
+    margin-top: 21px;
+  }
+
+  .columns p.badge-subhead { font-size: 16px; line-height: 20.8px; }
+  .columns .col-double.last.cell-m { padding-top: 48px; }
+  .columns .rte-container.basic-content { padding: 35px; }
+
+  .columns .rte-container h1,
+  .columns .rte-container h2 { font-size: 32px; line-height: 41.6px; margin: 21.44px 0; }
+
+  .columns .rte-container p { font-size: 16px; line-height: 20.8px; margin-bottom: 16px; }
 }

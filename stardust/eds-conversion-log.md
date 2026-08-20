@@ -337,3 +337,64 @@ Page agents MUST emit these rows even though the POC listing blocks are static �
 - **Chrome**: header/footer blocks are template-slotted from canon; `content/nav.html` (brand / links / tools / utility-bar sections) and `content/footer.html` (9 band sections) authored per the §3 contract. Nav decode matches `:scope > a, :scope > p > a` (#98). Mega-menu flyout panels exist in the header template (hidden, canon parity); authored nested `<ul>`s under a top-level nav `<li>` render into them. The replica's flyouts are empty, so nav.html authors plain links.
 - **Favicon**: `https://www.mdanderson.org/favicon.ico` returned **404** (real-Chrome UA) — skipped per protocol; the boilerplate favicon remains.
 - **Chrome logo images** in nav/footer.html are fully-qualified `www.mdanderson.org` clientlib URLs (canon-verbatim). If preview ingestion 403s on them (bot wall), the deploy agent should download-and-rehost to DA `/media/chrome/` per the skill's image rule.
+
+## 12. Program-cluster notes (breast-cancer / breast-center / clinical-trials, written 2026-08-20)
+
+Converted per §5: `breadcrumbs`, `section-nav`, `share`, `byline`, `accordion`,
+`podcast` (rail + wide), `article-cards` (grid + news + experts), `search`
+(trials), `callout` (purple). All per-block AND whole-page `block-roundtrip`
+runs exit 0 on the three pages.
+
+- **Interior template layout** lives in `blocks/section-nav/section-nav.css`
+  (§4 latitude): `body.interior main` = 240px/1fr grid keyed off
+  `.section-nav-container`; sections after the sidebar flow in column 2; the
+  trailing two sections (EndCancer trio + newsletter) span full width via
+  `:nth-last-child(-n+2)` — interior pages MUST keep those as the last two
+  sections. Prose+rail pairs are single sections (DC + rail block) paired via
+  container/`:has()` variant selectors.
+- **Reused-block variant additions** (the log's "adds variant" instances) are
+  implemented WITHOUT rewriting the landing cluster's files while both
+  clusters ran in parallel: variant CSS is appended in section-nav.css under
+  a marked banner (`quote.rail`, `video.panorama`, `carousel.videos`,
+  `link-list.icon-head`, `cards.rail`, duo palettes `trials`/`patient`, trio
+  circle palette `pathways` purple/lightblue/orange, per-instance gray grounds
+  as block-variant class `tinted`); two small ADDITIVE JS edits were made:
+  `cards.js` (card media rendering + icon-card body/CTA — index behavior
+  unchanged), `video.js` (panorama credit link), `carousel.js` (videos
+  More/Less mobile expander). Deploy consolidation may move the CSS into the
+  owning blocks.
+- **Palette additions beyond §7's closed set** (per-instance fingerprints):
+  duo `trials` (purple/blue, breast-cancer), duo `patient` (blue/purple,
+  breast-center), trio circles `pathways` (purple/lightblue/orange, both
+  trios on breast-cancer + clinical-trials). §7's icon-trio default
+  (red/lightblue/green) holds for index only.
+- **Icons**: 10 authored-icon SVGs extracted from `fonts/mda-icons.woff`
+  (white fill, for colored circles) into `icons/` — clinical-trials,
+  carepages, mycancerconnection, screenings, counseling,
+  care-centers-clinics, manage-risks, knowledgecenter, contact-us,
+  directions. cicon codepoints for cards glyphs added for the same names.
+  Breast-center's contact card uses the `directions` glyph e60d (index's
+  directions-stroke) — the replica's e60e variant is a close cousin; accepted.
+- **Media**: all editorial images staged under `media-staging/{breast-cancer,
+  clinical-trials,breast-center}/`; Cancerwise podcast artwork ships as fixed
+  brand assets under `img/podcast/` (#67).
+- **Deliberate drops** (zero-pixel or replica artifacts): after-hours hidden
+  appointment-bar duplicate; mobile lede duplicate; sticky appt bar (§1);
+  empty byline blocks on breast-center/clinical-trials (blank in replica —
+  metadata reviewer rows only on breast-cancer); the empty
+  breast-cancer-facts sidebar link (empty text in replica); the accordion
+  panel-3 "Schedule a Screening" injected promo's white box border (inline-
+  style hack in source; content kept as h3+p+accent button); urldefense
+  wrappers on the two app-store links (unwrapped to direct store URLs).
+  More/Less prose expanders ship as BLOCK-OWNED mobile UI in accordion and
+  carousel(videos) — authored content is fully expanded per §1.
+- **Known harness limits hit** (not defects): body.interior/section-style
+  classes are pipeline-rendered (v2 server-side) so the harness shows a
+  single column and unstyled dark/lede/page-head bands; `:icon-x:` tokens
+  stay literal text locally; content.da.live images 401 anonymously;
+  chrome header/footer render empty (qa-gate ✗ ×2/page); qa-gate's
+  order-based schema unit matcher misaligns because the interior schemas
+  wrap the whole replica body in 1–2 giant sections (page-body /
+  col-content-wrapper / highlight / global-footer) — the actual unit counts
+  render (verified: closing 3, trio 3, duo 2, breadcrumbs 3, risk-list 11,
+  exactly one h1 per page).

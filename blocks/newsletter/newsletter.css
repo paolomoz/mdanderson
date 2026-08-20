@@ -1,0 +1,172 @@
+/* newsletter — Cancerwise signup band (canon.css .subscribe-to, scoped).
+   Variant `cancerwise` = black band (default paint here). */
+
+main .section.newsletter-container > div {
+  max-width: var(--max-width);
+  padding: 0;
+}
+
+.newsletter .subscribe-to {
+  background: #000;
+  padding: 20px 72px;
+  max-width: var(--max-width);
+}
+
+.newsletter .col-single.inner {
+  display: flex;
+  color: var(--color-bg);
+  height: 50px;
+}
+
+.newsletter .icon-circle {
+  position: relative;
+  width: 78px;
+  height: 50px;
+  color: var(--color-accent);
+  flex: 0 0 78px;
+}
+
+.newsletter .icon-circle .fa-stack.fa-2x {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 72px;
+  height: 72px;
+}
+
+.newsletter .icon-circle i {
+  font-style: normal;
+}
+
+.newsletter .icon-circle i.fa-circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  font-size: 72px;
+  line-height: 50.4px;
+  text-align: center;
+  color: var(--color-accent);
+}
+
+.newsletter .icon-circle i.fa-circle::before {
+  font-family: FontAwesome, sans-serif;
+  content: "\f111";
+}
+
+.newsletter .icon-circle i.nl-icon-email {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  color: var(--color-bg);
+}
+
+.newsletter .icon-circle i.nl-icon-email::before {
+  font-family: mda-icons, sans-serif;
+  content: "\e611";
+}
+
+.newsletter .subscribeTitle {
+  font-family: var(--sans-light-font-family);
+  font-size: 16px;
+  line-height: 20.8px;
+  letter-spacing: var(--letter-spacing);
+  width: 204px;
+  padding-right: 5px;
+  margin: 4.2px 0;
+}
+
+.newsletter form {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin: 0;
+}
+
+.newsletter .fieldContainer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.newsletter .fieldContainer > div {
+  margin: 8.5px 0;
+  max-width: 50%;
+}
+
+.newsletter .inputWrapper input {
+  display: inline-block;
+  width: 289px;
+  max-width: 100%;
+  padding: 7px;
+  border-radius: 2px;
+  border: 1px solid #bfbfbf;
+  background: var(--color-surface-alt);
+  color: #666;
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 300;
+  box-shadow: rgb(0 0 0 / 10%) 0 1px 2px 0 inset;
+}
+
+.newsletter .footer-cta-wrapper {
+  padding-left: 0;
+  margin: 9.5px 0;
+  max-width: none;
+}
+
+.newsletter .footer-cta { text-align: right; }
+
+.newsletter input.ftrSubGo {
+  display: inline-block;
+  height: 31px;
+  line-height: 19px;
+  padding: 5px 10px;
+  background: var(--color-accent);
+  color: var(--color-bg);
+  border: 1px solid var(--color-bg);
+  border-radius: 0;
+  text-align: center;
+  font-family: var(--sans-light-font-family);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.newsletter .footer-cta-mobile { display: none; }
+
+.newsletter form.submitted .fieldContainer { visibility: hidden; }
+
+@media (width <= 991px) {
+  .newsletter .subscribe-to { padding: 0; }
+  .newsletter .col-single.inner { display: block; height: auto; }
+  .newsletter .icon-circle { display: none; }
+
+  .newsletter .subscribeTitle {
+    width: auto;
+    text-align: center;
+    padding: 25px 5px;
+    margin: 0;
+  }
+
+  .newsletter form { display: block; }
+
+  .newsletter .fieldContainer {
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+    gap: 0;
+    text-align: center;
+  }
+
+  .newsletter .fieldContainer > div { margin: 0; max-width: 100%; }
+  .newsletter .fieldContainer > div + div { margin-top: 15px; }
+  .newsletter .inputWrapper input { width: 300px; height: 33px; }
+  .newsletter .footer-cta-wrapper { padding: 20px 0 25px; margin: 0; }
+  .newsletter .footer-cta { display: none; }
+  .newsletter .footer-cta-mobile { display: block; text-align: center; }
+  .newsletter .footer-cta-mobile input.ftrSubGo { width: 300px; padding: 5px 15px; height: auto; }
+}

@@ -1,0 +1,159 @@
+/* banner — horizontal text bar (replica .horizontal-text-bar, scoped).
+   Variants: red / blue / purple. */
+
+main .section.banner-container > div {
+  max-width: var(--max-width);
+  padding: 0;
+}
+
+.banner .horizontal-text-bar {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 60px 72px;
+  overflow: hidden;
+}
+
+.banner .horizontal-text-bar.red { background: var(--color-accent); }
+.banner .horizontal-text-bar.blue { background: var(--color-blue-promo); }
+.banner .horizontal-text-bar.purple { background: var(--color-purple); }
+
+.banner i.band-icon {
+  position: relative;
+  flex: 0 0 102px;
+  padding-right: 30px;
+  font-size: 72px;
+  line-height: 72px;
+  text-align: center;
+  color: var(--color-bg);
+  font-style: normal;
+}
+
+.banner i.band-icon::before {
+  font-family: mda-icons, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* band icon codepoints (canon.css) */
+.banner i.bicon-drop::before { content: "\e610"; }
+.banner i.bicon-powerinnumbers::before { content: "\e61a"; }
+.banner i.bicon-user::before { content: "\e632"; }
+.banner i.bicon-counseling::before { content: "\e600"; }
+
+.banner .text-container {
+  flex: 1 1 auto;
+  padding-right: 30px;
+}
+
+.banner h3.title {
+  font-family: var(--sans-bold-font-family);
+  font-size: 21px;
+  line-height: 27.3px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  color: var(--color-bg);
+  margin: 0;
+}
+
+.banner .description {
+  font-family: var(--sans-font-family);
+  font-size: 21px;
+  line-height: 27.3px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-bg);
+  margin-top: 15px;
+}
+
+.banner .description p {
+  margin: 0;
+}
+
+.banner .cta-container {
+  flex: 0 0 371px;
+}
+
+.banner .cta-container .cta {
+  position: relative;
+  margin-top: 12px;
+  text-align: right;
+}
+
+.banner .horizontal-text-bar.red .cta-container { flex-basis: 368px; }
+.banner .horizontal-text-bar.red .cta-container .cta { margin-top: 0; }
+
+.banner a.cta-block {
+  display: inline-block;
+  padding: 24px 45px;
+  border: 1px solid var(--color-bg);
+  color: var(--color-bg);
+  text-align: center;
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: var(--letter-spacing);
+  position: relative;
+  text-decoration: none;
+}
+
+.banner a.cta-block:hover {
+  color: var(--color-bg);
+  text-decoration: underline;
+}
+
+.banner a.cta-block .mda-icon-linkout {
+  font-size: 18px;
+}
+
+.banner .mda-icon-linkout::before {
+  font-family: mda-icons, sans-serif;
+  font-style: normal;
+  content: "\e618";
+}
+
+.banner .visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
+
+.banner .nowrap { white-space: nowrap; }
+
+@media (width <= 991px) {
+  .banner .horizontal-text-bar {
+    display: block;
+    padding: 30px 35px;
+    text-align: center;
+  }
+
+  .banner i.band-icon {
+    display: block;
+    width: auto;
+    height: 64px;
+    overflow: visible;
+    padding-right: 0;
+    margin-bottom: 20px;
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .banner .text-container { display: block; padding-right: 0; }
+  .banner h3.title { font-size: 18px; line-height: 23.4px; }
+  .banner .description { font-size: 18px; line-height: 23.4px; }
+  .banner .cta-container { display: block; width: auto; overflow: hidden; }
+  .banner .cta-container .cta { margin-top: 30px; text-align: center; }
+  .banner .horizontal-text-bar.red .cta-container .cta { margin-top: 30px; }
+
+  .banner a.cta-block {
+    padding: 12px 30px 10px;
+    font-size: 16px;
+    line-height: 20.8px;
+  }
+
+  .banner a.cta-block .mda-icon-linkout { font-size: 16px; }
+}

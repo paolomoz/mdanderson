@@ -1,0 +1,108 @@
+/* stats — Research by the Numbers (research prototype CSS, scoped).
+   Numeral color cycle blue/purple/blue is nth-child (fingerprint-locked). */
+
+main .section.stats-container > div {
+  max-width: var(--max-width);
+  padding: 70px 72px;
+}
+
+.stats .statistics.triple h2.title {
+  font-size: 55px;
+  line-height: 71.5px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 45.65px;
+}
+
+.stats .stat-items {
+  display: flex;
+  width: 100%;
+}
+
+.stats .stat-item {
+  flex: 0 0 33.333%;
+  min-width: 0;
+  padding: 0 15px 40px;
+  text-align: center;
+}
+
+/* fingerprint-locked numeral cycle (log §7): blue / purple / blue */
+.stats .stat-item:nth-child(3n + 1) { color: var(--color-blue-promo); }
+.stats .stat-item:nth-child(3n + 2) { color: var(--color-purple); }
+.stats .stat-item:nth-child(3n) { color: var(--color-blue-promo); }
+
+.stats .stat-item p.statistic {
+  font-family: var(--sans-boldcn-font-family);
+  font-size: 96px;
+  line-height: 124.8px;
+  letter-spacing: var(--letter-spacing);
+  margin: 0;
+}
+
+.stats .stat-item p.description {
+  font-family: var(--sans-font-family);
+  font-size: 21px;
+  line-height: 27.3px;
+  letter-spacing: var(--letter-spacing);
+  margin: 0;
+}
+
+.stats .body-text {
+  border-top: 1px solid var(--color-gray-light);
+  padding-top: 44px;
+}
+
+.stats .body-text p {
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: var(--letter-spacing);
+  margin: 0 0 18px;
+}
+
+.stats .body-text a.cta {
+  display: inline-block;
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: var(--letter-spacing);
+  color: #c50026;
+}
+
+.stats .body-text a.cta .mda-icon-linkout { font-size: 18px; }
+
+.stats .mda-icon-linkout::before {
+  font-family: mda-icons, sans-serif;
+  font-style: normal;
+  content: "\e618";
+}
+
+.stats .visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
+
+@media (width <= 991px) {
+  main .section.stats-container > div { padding: 35px 35px 30px; }
+
+  .stats .statistics.triple h2.title {
+    font-size: 24px;
+    line-height: 31.2px;
+    margin-bottom: 20px;
+  }
+
+  .stats .stat-items { display: block; width: auto; }
+  .stats .stat-item { padding: 0 0 40px; }
+  .stats .stat-item p.statistic { font-size: 36px; line-height: 46.8px; }
+  .stats .stat-item p.description { font-size: 18px; line-height: 23.4px; }
+  .stats .body-text { padding-top: 47px; }
+  .stats .body-text p { font-size: 16px; line-height: 20.8px; margin-bottom: 17px; }
+  .stats .body-text a.cta { font-size: 16px; line-height: 20.8px; }
+  .stats .body-text a.cta .mda-icon-linkout { font-size: 16px; }
+}

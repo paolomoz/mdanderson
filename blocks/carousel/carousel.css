@@ -1,0 +1,183 @@
+/* carousel — highlights carousel (replica .carousel-config-standard, scoped).
+   Section head is default content styled in place. */
+
+main .section.carousel-container > div {
+  max-width: var(--max-width);
+  padding: 0 72px;
+}
+
+main .section.carousel-container {
+  padding: 70px 0;
+}
+
+main .section.carousel-container > .default-content-wrapper h2 {
+  font-size: 42px;
+  line-height: 54.6px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  text-align: center;
+  margin: -11px 0 50px;
+}
+
+.carousel .carousel-shell { position: relative; }
+
+.carousel .carousel-group.carousel-config-standard {
+  position: relative;
+  margin: 0 -13.5px;
+}
+
+.carousel .slick-list {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel .slick-track {
+  display: flex;
+  position: relative;
+}
+
+.carousel .carousel-item {
+  flex: 0 0 313px;
+  margin: 0 9px;
+  min-height: 1px;
+}
+
+.carousel .carousel-item.slick-cloned { display: none; }
+
+.carousel .carousel-item a { text-decoration: none; color: inherit; }
+
+.carousel .carousel-image {
+  position: relative;
+  background: #000;
+}
+
+.carousel .carousel-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.carousel .carousel-body { margin-bottom: 15px; }
+
+.carousel h3.body-title {
+  font-family: var(--body-font-semibold);
+  font-size: 24px;
+  line-height: 31.2px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 700;
+  margin: 0 0 15px;
+  color: var(--color-fg);
+}
+
+.carousel .body-text {
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--color-gray-text);
+  margin-bottom: 30px;
+}
+
+.carousel button.slick-prev.hl-prev,
+.carousel button.slick-next.hl-next {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  width: 40px;
+  height: 40px;
+  color: transparent;
+  font-size: 0;
+  line-height: 40px;
+  overflow: hidden;
+  z-index: 3;
+  opacity: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel button.slick-prev.hl-prev { left: 10px; }
+.carousel button.slick-next.hl-next { right: 10px; }
+
+.carousel ul.slick-dots {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.carousel ul.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel ul.slick-dots li:nth-child(n+3) { display: none; }
+
+.carousel ul.slick-dots li button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel ul.slick-dots li button::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: var(--color-gray-light);
+}
+
+.carousel ul.slick-dots li.slick-active button::before {
+  background: var(--color-accent);
+}
+
+@media (width <= 991px) {
+  main .section.carousel-container { padding: 35px 0; }
+  main .section.carousel-container > div { padding: 0; }
+
+  main .section.carousel-container > .default-content-wrapper h2 {
+    text-align: left;
+    font-size: 24px;
+    line-height: 31.2px;
+    padding: 0 10px 0 15px;
+    margin: -11px 0 5px;
+  }
+
+  .carousel .carousel-group.carousel-config-standard { margin: 0 -12px 30px; }
+  .carousel .slick-list { padding: 0 40px; }
+  .carousel .carousel-item { flex: 0 0 294px; margin: 0 5px; }
+  .carousel .carousel-body { padding-top: 10px; margin-bottom: 35px; }
+  .carousel h3.body-title { font-size: 21px; line-height: 27.3px; padding: 0 18px; }
+  .carousel .body-text { padding: 0 18px; }
+  .carousel ul.slick-dots { position: relative; top: auto; padding: 0 30px; }
+  .carousel ul.slick-dots li:nth-child(n+3) { display: inline-block; }
+
+  .carousel ul.slick-dots li,
+  .carousel ul.slick-dots li button { width: 20px; height: 20px; }
+
+  .carousel ul.slick-dots li button { padding: 10px; }
+
+  .carousel ul.slick-dots li button::before {
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+  }
+}

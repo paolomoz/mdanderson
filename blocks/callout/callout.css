@@ -1,0 +1,74 @@
+/* callout — spec: clinical-trials prototype .did-you-know (purple). */
+.callout .callout-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+  margin: 0 0 30px;
+}
+
+.callout.purple .callout-inner {
+  background: var(--color-purple);
+  color: var(--color-bg);
+  min-height: 240px;
+}
+
+.callout .callout-title {
+  font-family: var(--sans-boldcn-font-family);
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+
+.callout.purple .callout-title {
+  color: var(--color-bg);
+}
+
+.callout .callout-body {
+  font-size: 21px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  margin-top: 25px;
+}
+
+.callout .callout-body p {
+  margin: 0;
+}
+
+/* boxed variant (article key-takeaways): bordered white card, left-aligned */
+.callout.boxed .callout-inner {
+  background: var(--color-bg);
+  border: 2px solid var(--color-gray-light);
+  text-align: left;
+  align-items: flex-start;
+  color: var(--color-fg);
+}
+
+.callout.boxed .callout-body {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.callout.boxed .callout-body ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+@media (width <= 991px) {
+  .callout .callout-inner {
+    padding: 35px;
+  }
+
+  .callout.purple .callout-inner {
+    min-height: 0;
+  }
+
+  .callout .callout-body {
+    font-size: 16px;
+  }
+}
