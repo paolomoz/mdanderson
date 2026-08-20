@@ -124,3 +124,16 @@ verification: content clean, chrome + dark strip correct, 25/25 entrances,
 countup, native scrolling, reduced-motion static fallback, 0 errors. Note:
 programmatic window scroll doesn't drive Lenis — motion QA must scroll via
 mouse.wheel (probe-artifact class, recorded).
+
+## 2026-08-20 — Homepage fidelity refinement (user-driven)
+
+User supplied fresh side-by-side screenshots; 8 differences identified and
+fixed: 48px header reserve collapsing into a white gap above the hero;
+`tinted` gray-band section styles never authored (fixed across all 12 pages,
+computed-sweep verified against every original); carousel-variant CSS leaking
+into the hero (gray CTA + 9px black sliver — carousel rules now scoped
+:not(.hero)); nav item dividers + LANGUAGES caret specificity; footer
+tel/heading nowrap; alert-band drop baseline. Measured deployed-vs-live pixel
+diff: 21.44% → 4.53% at 1440 (prototype benchmark 3.56%; residual = live
+churn). CLS 0.0026. 12 docs redeployed; breast-cancer/donors/research
+regression-checked clean.
