@@ -6,6 +6,12 @@ main .section.banner-container > div {
   padding: 0;
 }
 
+/* the band COLOR bleeds to the viewport edges (section ground); the bar's
+   content stays on the 1440px container above */
+main .section.banner-container:has(.horizontal-text-bar.red) { background: var(--color-accent); }
+main .section.banner-container:has(.horizontal-text-bar.blue) { background: var(--color-blue-promo); }
+main .section.banner-container:has(.horizontal-text-bar.purple) { background: var(--color-purple); }
+
 .banner .horizontal-text-bar {
   display: flex;
   align-items: flex-start;
@@ -18,10 +24,12 @@ main .section.banner-container > div {
 .banner .horizontal-text-bar.blue { background: var(--color-blue-promo); }
 .banner .horizontal-text-bar.purple { background: var(--color-purple); }
 
+/* 14px top padding: the live bar is a table whose icon cell baseline-aligns
+   the 72px glyph with the title row — glyph paints 14px below the band edge */
 .banner i.band-icon {
   position: relative;
   flex: 0 0 102px;
-  padding-right: 30px;
+  padding: 14px 30px 0 0;
   font-size: 72px;
   line-height: 72px;
   text-align: center;
@@ -136,7 +144,7 @@ main .section.banner-container > div {
     width: auto;
     height: 64px;
     overflow: visible;
-    padding-right: 0;
+    padding: 0;
     margin-bottom: 20px;
     font-size: 64px;
     line-height: 64px;

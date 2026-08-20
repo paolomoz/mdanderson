@@ -2,8 +2,10 @@
    scoped under .hero). Variants: carousel/static, left/right (alignment),
    scroll-cue, overlay, compact, dots. */
 
+/* the hero BAND (backdrop image) bleeds to the viewport edges; the body
+   content stays on the 1440px container (carousel-body-inner cap below) */
 main .section.hero-container > div {
-  max-width: var(--max-width);
+  max-width: none;
   padding: 0;
 }
 
@@ -99,6 +101,8 @@ main .section.hero-container > div {
 .hero .carousel-body-inner {
   display: table;
   width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
   height: 100%;
 }
 

@@ -171,6 +171,7 @@ footer .footer-links li.title {
   font-family: var(--sans-bold-font-family);
   text-transform: uppercase;
   padding-bottom: 25px;
+  white-space: nowrap; /* live keeps DIGITAL ACCESSIBILITY on one line */
 }
 
 footer .footer-links li.title .toggle {
@@ -342,6 +343,7 @@ footer .footer-contact-bold {
   line-height: 27.3px;
   letter-spacing: var(--letter-spacing);
   margin-top: -5px;
+  white-space: nowrap; /* the phone number never breaks mid-number (live parity) */
 }
 
 /* social tiles */

@@ -158,13 +158,15 @@ header .mda-cta-list-item.donate i.fa-heart {
   color: var(--color-bg);
 }
 
-/* ===== logo / utility row (canon .mda-nav-top) ===== */
+/* ===== logo / utility row (canon .mda-nav-top) =====
+   48px top padding reserves the fixed utility bar INSIDE the header's 224px
+   flow box — a top MARGIN here collapses through to <header> and pushes the
+   whole fixed-height box down, leaving a 48px white gap above the hero */
 header .mda-nav-top.flex-row {
   display: flex;
   position: relative;
   align-items: center;
-  padding: 27px 40px;
-  margin-top: 48px;
+  padding: 75px 40px 27px;
   background: var(--color-bg);
 }
 
@@ -192,6 +194,11 @@ header .mda-nav-utility.desktop.flex-row {
 header .mda-nav-utility li {
   display: list-item;
   position: relative;
+  border-right: 1px solid var(--color-gray);
+}
+
+header .mda-nav-utility li:last-child {
+  border-right: 0;
 }
 
 header .mda-nav-utility li > a {
@@ -209,7 +216,8 @@ header .mda-nav-utility .mda-icon-linkout {
   font-size: 16px;
 }
 
-header a.mda-nav-utility-languages {
+/* matches the li > a padding rule's specificity so the caret gets its 24px well */
+header .mda-nav-utility li > a.mda-nav-utility-languages {
   position: relative;
   padding-right: 24px;
 }
@@ -286,6 +294,7 @@ header .mda-nav-button-wrapper.dropdown-trigger {
   display: flex;
   height: 60px;
   background: var(--color-accent-alt);
+  border-right: 1px solid var(--color-gray-light);
 }
 
 header .mda-nav-button-wrapper > a {
@@ -418,6 +427,7 @@ header .mda-nav-mobile-tools {
 
   header nav#nav[aria-expanded='true'] .mda-nav-button-wrapper.dropdown-trigger {
     height: 50px;
+    border-right: 0;
     border-bottom: 1px solid rgb(255 255 255 / 25%);
   }
 

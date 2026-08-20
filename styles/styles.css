@@ -391,10 +391,11 @@ span.icon img {
   width: 100%;
 }
 
-/* sections — replica bands stack flush; inner content constrained to 1440px */
+/* sections — replica bands stack flush; full-bleed BANDS (section backgrounds,
+   hero/video media) bleed to the viewport edges while inner CONTENT stays on
+   the 1440px container (main > .section > div caps below) */
 main {
-  max-width: var(--max-width);
-  margin: 0 auto;
+  margin: 0;
 }
 
 main > .section {

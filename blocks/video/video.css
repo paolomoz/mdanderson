@@ -6,6 +6,11 @@ main .section.video-container > div {
   padding: 0;
 }
 
+/* the feature BAND (poster) bleeds to the viewport edges */
+main .section.video-container:has(.video.feature) > div {
+  max-width: none;
+}
+
 .video .basic-content-media-wrapper {
   position: relative;
   display: grid;

@@ -6,6 +6,11 @@ main .section.newsletter-container > div {
   padding: 0;
 }
 
+/* the black band bleeds to the viewport edges; content stays on 1440px */
+main .section.newsletter-container:has(.subscribe-to) {
+  background: #000;
+}
+
 .newsletter .subscribe-to {
   background: #000;
   padding: 20px 72px;
