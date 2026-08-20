@@ -13,3 +13,4 @@
 { "ts": "2026-08-20T04:35:00Z", "skill": "stardust:rollout", "phase": "A-inventory", "event": "end", "detail": "12 pages, 6 templates", "artifact": "stardust/rollout/coverage/pages.json" }
 { "ts": "2026-08-20T04:45:00Z", "skill": "stardust:rollout", "phase": "B-blocks-plan", "event": "end", "detail": "no pre-cataloged modules (prepare-migration not run) — block architecture locked via deploy Steps 1-2b agent; plan order representative-first", "artifact": "stardust/rollout/plan.json" }
 { "ts": "2026-08-20T05:30:00Z", "skill": "stardust:rollout", "phase": "C-deliver", "event": "start", "detail": "foundation+chrome done (33/33 QA); wave 1 cluster agents authoring 7 pages" }
+{ "ts": "2026-08-20T08:00:00Z", "skill": "stardust:rollout", "phase": "C-deliver", "event": "start", "detail": "central deploy: 140 media uploaded (all 201), 14 documents in deploy-batch (PUT->preview->live)" }
