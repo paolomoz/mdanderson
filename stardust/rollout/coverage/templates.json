@@ -7,7 +7,7 @@
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-08-20T00:20:01.962Z",
+  "generatedAt": "2026-08-20T04:42:20.011Z",
   "templates": [
     {
       "id": "article",
@@ -18,10 +18,10 @@
       "pageCount": 1,
       "blocks": [],
       "delivery": {
-        "verified": 0,
+        "verified": 1,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 1
+        "pending": 0
       }
     },
     {
@@ -33,10 +33,10 @@
       "pageCount": 1,
       "blocks": [],
       "delivery": {
-        "verified": 0,
+        "verified": 1,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 1
+        "pending": 0
       }
     },
     {
@@ -51,10 +51,10 @@
       "pageCount": 4,
       "blocks": [],
       "delivery": {
-        "verified": 0,
+        "verified": 4,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 4
+        "pending": 0
       }
     },
     {
@@ -67,10 +67,10 @@
       "pageCount": 2,
       "blocks": [],
       "delivery": {
-        "verified": 0,
+        "verified": 2,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 2
+        "pending": 0
       }
     },
     {
@@ -84,10 +84,10 @@
       "pageCount": 3,
       "blocks": [],
       "delivery": {
-        "verified": 0,
+        "verified": 3,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 3
+        "pending": 0
       }
     },
     {
@@ -99,10 +99,10 @@
       "pageCount": 1,
       "blocks": [],
       "delivery": {
-        "verified": 0,
+        "verified": 1,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 1
+        "pending": 0
       }
     }
   ]

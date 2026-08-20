@@ -8,19 +8,19 @@
   "site": {
     "sourceUrl": "https://www.mdanderson.org",
     "da": {
-      "org": "",
-      "site": "",
+      "org": "paolomoz",
+      "site": "mdanderson",
       "ref": "main"
     },
-    "liveHost": null
+    "liveHost": "main--mdanderson--paolomoz.aem.live"
   },
   "lastRun": {
-    "at": "2026-08-20T00:20:01.962Z",
+    "at": "2026-08-20T04:42:20.011Z",
     "pages": {
       "total": 12,
-      "verified": 0,
+      "verified": 12,
       "deployed": 0,
-      "pending": 12,
+      "pending": 0,
       "contentPending": 0,
       "stale": 0,
       "failed": 0
@@ -30,6 +30,64 @@
       "converted": 0,
       "pending": 0
     },
-    "verifyFailures": 0
+    "verifyFailures": 0,
+    "report": {
+      "at": "2026-08-20T05:38:30.493Z",
+      "phases": "C-bookkeeping,D,E,E2,F,H,I",
+      "pages": {
+        "total": 12,
+        "verified": 12,
+        "deployed": 12,
+        "failed": 0
+      },
+      "chrome": {
+        "nav": "live",
+        "footer": "live"
+      },
+      "staticGates": {
+        "lint": "8x one-cta-per-p P1 = inline-prose false positive (accepted, learnings); media 401s = expected content.da.live anon; .plain.html 0 about:error on all 14 docs",
+        "fixed": [
+          "tel-href-text-mismatch x2 (redeployed)",
+          "link-list thumbs head-row drop on donors (redeployed)"
+        ]
+      },
+      "linkAudit": {
+        "internalDistinct": 15,
+        "dead": 0,
+        "malformed": 0,
+        "mdandersonBounces": 462,
+        "otherExternal": 55
+      },
+      "renderCheck": "7/7 templates: body.appear, sections>0, 0 pageerrors",
+      "cls": 0.039,
+      "lighthousePerf": {
+        "index": 80,
+        "breastCancer": 100
+      },
+      "health": 72,
+      "openFindings": {
+        "P1": 0,
+        "P2": 13,
+        "P3": 1,
+        "acceptedP1": 1
+      },
+      "notAssessed": [
+        "impeccable:critique",
+        "impeccable:audit",
+        "marketing:seo-audit",
+        "marketing:schema",
+        "marketing:ai-seo",
+        "marketing:site-architecture",
+        "stardust:tensions"
+      ],
+      "fastFollows": [
+        "rename cards .icon variant (code commit) — f-97cd97da65",
+        "add ~20 missing icons/*.svg or hide card-media img — f-b97f4faec6",
+        "wire stardust/redirects.tsv (8 rows) into an EDS /redirects.json sheet",
+        "carousel/form mobile overflow CSS — f-4d17dc99dc",
+        "JSON-LD via marketing:schema (12x P2)",
+        "differentiate patients-family title/description from index (sibling-tier clone)"
+      ]
+    }
   }
 }

@@ -1,0 +1,220 @@
+{
+  "generatedAt": "2026-08-20T05:38:30.558Z",
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://www.mdanderson.org",
+    "liveHost": "main--mdanderson--paolomoz.aem.live"
+  },
+  "stageCount": {
+    "identified": 12,
+    "prototyped": 12,
+    "deployed": 12,
+    "optimised": 0
+  },
+  "stageExclusive": {
+    "identified": 0,
+    "prototyped": 0,
+    "deployed": 12,
+    "optimised": 0
+  },
+  "pages": [
+    {
+      "slug": "index",
+      "path": "/",
+      "stage": "deployed",
+      "templateId": "landing",
+      "isTemplate": true,
+      "openFindings": 3
+    },
+    {
+      "slug": "about-md-anderson-html",
+      "path": "/about-md-anderson",
+      "stage": "deployed",
+      "templateId": "static",
+      "isTemplate": true,
+      "openFindings": 1
+    },
+    {
+      "slug": "about-md-anderson-our-locations-html",
+      "path": "/about-md-anderson/our-locations",
+      "stage": "deployed",
+      "templateId": "listing",
+      "isTemplate": true,
+      "openFindings": 1
+    },
+    {
+      "slug": "cancer-types-breast-cancer-html",
+      "path": "/cancer-types/breast-cancer",
+      "stage": "deployed",
+      "templateId": "program",
+      "isTemplate": true,
+      "openFindings": 1
+    },
+    {
+      "slug": "cancerwise-html",
+      "path": "/cancerwise",
+      "stage": "deployed",
+      "templateId": "listing",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html",
+      "path": "/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment",
+      "stage": "deployed",
+      "templateId": "article",
+      "isTemplate": true,
+      "openFindings": 1
+    },
+    {
+      "slug": "donors-volunteers-html",
+      "path": "/donors-volunteers",
+      "stage": "deployed",
+      "templateId": "form",
+      "isTemplate": true,
+      "openFindings": 1
+    },
+    {
+      "slug": "patients-family-html",
+      "path": "/patients-family",
+      "stage": "deployed",
+      "templateId": "landing",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html",
+      "path": "/patients-family/diagnosis-treatment/care-centers-clinics/breast-center",
+      "stage": "deployed",
+      "templateId": "program",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "patients-family-diagnosis-treatment-clinical-trials-html",
+      "path": "/patients-family/diagnosis-treatment/clinical-trials",
+      "stage": "deployed",
+      "templateId": "program",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "prevention-screening-html",
+      "path": "/prevention-screening",
+      "stage": "deployed",
+      "templateId": "landing",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "research-html",
+      "path": "/research",
+      "stage": "deployed",
+      "templateId": "landing",
+      "isTemplate": false,
+      "openFindings": 1
+    }
+  ],
+  "templates": [
+    {
+      "id": "article",
+      "archetype": "cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 1,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "form",
+      "archetype": "donors-volunteers-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 1,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "landing",
+      "archetype": "index",
+      "pageCount": 4,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 4,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "listing",
+      "archetype": "about-md-anderson-our-locations-html",
+      "pageCount": 2,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 2,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "program",
+      "archetype": "cancer-types-breast-cancer-html",
+      "pageCount": 3,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 3,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "static",
+      "archetype": "about-md-anderson-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 1,
+        "optimised": 0
+      }
+    }
+  ],
+  "blocks": {
+    "total": 0,
+    "converted": 0
+  },
+  "quality": {
+    "overall": 72,
+    "dimensions": {
+      "brand-tensions": null,
+      "design-ux": 100,
+      "accessibility": null,
+      "seo": null,
+      "content-conversion": 100,
+      "ai-search": 0,
+      "cross-page": 86
+    },
+    "severity": {
+      "P1": 0,
+      "P2": 13,
+      "P3": 1
+    },
+    "history": [
+      43,
+      72
+    ]
+  },
+  "findings": {
+    "byFixability": {
+      "design-pass": 2,
+      "platform-migration": 12
+    },
+    "byAutofix": {
+      "pending": 13
+    }
+  }
+}

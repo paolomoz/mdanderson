@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<!-- provenance: stardust:uplift — variant B (design-team motivator)
+     what-if: "What if the survivor-voiced photography breathed at editorial scale?"
+     trait amplified: Photography re-foregrounding (catalog candidate 2)
+     evidence: index.json media.imgs[5] 1444x619 story poster vs media.imgs[6..13] 251x141 carousel crops
+     source: https://www.mdanderson.org/ (homepage), capture 2026-08-19 (reused)
+     mode: A brand-faithful — palette #DA291C system + Minion/Univers pinned from DESIGN.json
+     content: verbatim captured copy; composition is the bet, copy is untouched
+     compositionDelta vs A: hero-medium gradient-banner → full-bleed story photograph;
+       highlights uniform 4x2 grid → featured lead + 7-card editorial grid;
+       credential split panel → full-bleed black credential bar;
+       search wells 3-up band → 2-up search + numbered care-planning index
+     motion: static (no cinematic layer)
+     image-scale note: highlight renditions are captured at 251x141 (larger AEM
+       renditions 404) — editorial cards render them at <=400px width to avoid upscale blur.
+     fonts: licensed Minion/Univers via assets/uplift/mda-fonts.css — GATE INSTRUMENTATION ONLY.
+     validation (2026-08-20): PASS — render 1440/768/390 console-clean, 0 failed requests,
+     0 horizontal overflow; 360px mobile-adapt audit pass; WCAG contrast computed: 0 failures;
+     LCP img eager+fetchpriority=high; vision gate pass (editorial grid 4+3, no orphan card).
+     screenshots: stardust/validation/uplift-b/{1440,768,390}.png -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UT MD Anderson: Cancer Treatment &amp; Cancer Research Hospital | UT MD Anderson</title>
+<meta name="description" content="Find the latest information about cancer treatments, research and prevention as well as how to become a patient at UT MD Anderson. 1-877-632-6789.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="assets/uplift/mda-fonts.css">
+<style>
+/* ===== token contract (sourced from root DESIGN.json — Mode A pinned) ===== */
+:root {
+  --heading-font-family: "Minion Regular", "Minion W01 Cap Regular", Arial, Georgia;
+  --body-font-family: "Minion Regular", "Minion W01 Cap Regular", Arial, Georgia;
+
+  --heading-xxl: 60px;
+  --heading-xl:  42px;
+  --heading-lg:  28px;
+  --heading-md:  22px;
+  --body:        18px;
+  --body-sm:     15px;
+
+  --line-height-heading: 1.12;
+  --line-height-body:    1.6;
+
+  --color-bg:     #FFFFFF;
+  --color-fg:     #000000;
+  --color-accent: #DA291C;
+
+  --spacing-xs:  4px;
+  --spacing-sm:  8px;
+  --spacing-md:  16px;
+  --spacing-lg:  24px;
+  --spacing-xl:  48px;
+  --spacing-2xl: 64px;
+
+  --section-padding: 64px;
+  --max-width:       1440px;
+  --radius:          0px;
+
+  --mda-surface:     #F2F3F4;
+  --mda-surface-alt: #F7F7F7;
+  --mda-gray-light:  #D0D0CE;
+  --mda-gray-dark:   #605D5D;
+  --mda-purple:      #783491;
+  --mda-blue:        #3361AD;
+  --mda-blue-light:  #23B8F1;
+  --sans: "Univers LT W01_55 Roman", Arial, sans-serif;
+  --sans-bold: "Univers LT W01_65 Bold", Arial, sans-serif;
+  --sans-cn: "UniversLTW01-67BoldCn", Arial, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body {
+  font-family: var(--body-font-family); font-size: var(--body);
+  line-height: var(--line-height-body); color: var(--color-fg); background: var(--color-bg);
+  letter-spacing: -0.01em;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+.wrap { max-width: var(--max-width); margin: 0 auto; padding-left: 72px; padding-right: 72px; }
+.skip-link { position: absolute; left: -9999px; top: 0; background: #fff; color: #000; padding: 10px 16px; z-index: 300; font-family: var(--sans); }
+.skip-link:focus { left: 0; }
+
+h1, h2, h3, h4 { font-family: var(--heading-font-family); font-weight: 400; line-height: var(--line-height-heading); }
+.eyebrow {
+  display: inline-block; font-family: var(--sans-cn); font-size: 13px; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--color-accent);
+}
+.rule { display: block; width: 48px; height: 4px; background: var(--color-accent); margin: 14px 0 0; }
+
+.btn {
+  display: inline-block; font-family: var(--sans); font-size: 17px; line-height: 1;
+  padding: 15px 26px; text-decoration: none; border: 1px solid transparent;
+  transition: background-color .18s ease, color .18s ease, filter .18s ease;
+}
+.btn--red { background: var(--color-accent); color: #fff; }
+.btn--red:hover { filter: brightness(0.82); }
+.btn--white { background: #fff; color: #000; }
+.btn--white:hover { background: var(--mda-gray-light); }
+.link-red { color: var(--color-accent); font-family: var(--sans); font-size: 16px; text-decoration: none; border-bottom: 1px solid transparent; }
+.link-red:hover { border-bottom-color: var(--color-accent); }
+.link-red .arr { font-family: Arial, sans-serif; }
+
+/* ===== header (shared uplift chrome) ===== */
+.utility { background: #000; color: #fff; font-family: var(--sans); font-size: 13px; }
+.utility .wrap { display: flex; align-items: stretch; justify-content: flex-end; min-height: 40px; }
+.utility a { color: #fff; text-decoration: none; padding: 11px 12px; display: inline-flex; align-items: center; }
+.utility a:hover { text-decoration: underline; }
+.utility .u-cta { font-family: var(--sans-bold); text-transform: uppercase; letter-spacing: .06em; font-size: 12px; }
+.utility .u-appt { background: var(--color-accent); }
+.utility .u-appt:hover { filter: brightness(0.82); text-decoration: none; }
+.utility .u-donate { background: var(--mda-blue); }
+.utility .u-donate:hover { filter: brightness(0.82); text-decoration: none; }
+.masthead { background: #fff; border-bottom: 1px solid var(--mda-gray-light); }
+.masthead .wrap { display: flex; align-items: center; justify-content: space-between; padding-top: 18px; padding-bottom: 18px; }
+.masthead .logo img { width: 210px; height: 88px; object-fit: contain; }
+.masthead-right { display: flex; align-items: center; gap: 22px; font-family: var(--sans); font-size: 14px; }
+.search-chip { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--mda-gray-light); padding: 9px 14px; color: var(--mda-gray-dark); min-width: 170px; }
+.nav-toggle { display: none; }
+.burger { display: none; background: none; border: 1px solid var(--mda-gray-light); font-family: var(--sans); font-size: 14px; padding: 10px 14px; cursor: pointer; }
+.primary-nav { background: #fff; border-bottom: 1px solid var(--mda-gray-light); }
+.primary-nav ul { list-style: none; display: flex; }
+.primary-nav .wrap { padding-left: 60px; padding-right: 60px; }
+.primary-nav a {
+  display: block; color: #000; text-decoration: none; font-family: var(--sans-cn);
+  font-size: 15px; letter-spacing: .08em; text-transform: uppercase;
+  padding: 17px 18px; border-bottom: 4px solid transparent;
+}
+.primary-nav a:hover { border-bottom-color: var(--color-accent); color: var(--color-accent); }
+
+/* ===== contact strip ===== */
+.contact-strip { background: var(--mda-blue); color: #fff; font-family: var(--sans); }
+.contact-strip .wrap { display: flex; justify-content: center; align-items: center; gap: 8px; padding-top: 16px; padding-bottom: 16px; flex-wrap: wrap; text-align: center; }
+.contact-strip strong { font-family: var(--sans-bold); font-weight: 400; }
+.contact-strip a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+
+/* ===== story hero (photography at layout scale) ===== */
+.story-hero { position: relative; background: #000; overflow: hidden; }
+.story-hero img.hero-bg { width: 100%; height: 72vh; min-height: 520px; max-height: 760px; object-fit: cover; object-position: 50% 30%; }
+.story-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 38%, rgba(0,0,0,.72) 100%); }
+.story-hero-overlay { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; }
+.story-hero-overlay .wrap { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; padding-bottom: 56px; }
+.story-hero-overlay .eyebrow { color: #fff; background: var(--color-accent); padding: 6px 10px; letter-spacing: .14em; }
+.story-hero-overlay h1 { color: #fff; font-size: var(--heading-xxl); max-width: 15em; margin-top: 18px; text-wrap: balance; letter-spacing: -0.02em; }
+.play { flex: 0 0 auto; width: 76px; height: 76px; border: 2px solid #fff; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; background: rgba(0,0,0,.25); }
+.play:hover { background: var(--color-accent); border-color: var(--color-accent); }
+
+/* ===== credential bar ===== */
+.credential-bar { background: #000; color: #fff; }
+.credential-bar .wrap { display: flex; align-items: center; gap: 56px; padding-top: 40px; padding-bottom: 40px; flex-wrap: wrap; }
+.cred-stat { display: flex; align-items: baseline; gap: 16px; border-right: 1px solid var(--mda-gray-dark); padding-right: 56px; }
+.cred-stat .num { font-family: var(--heading-font-family); font-size: 84px; line-height: .9; color: var(--color-accent); }
+.cred-stat .lbl { font-family: var(--sans-cn); text-transform: uppercase; letter-spacing: .16em; font-size: 15px; }
+.cred-claim { flex: 1; min-width: 260px; }
+.cred-claim h2 { font-size: 34px; letter-spacing: -0.02em; }
+.cred-claim p { font-family: var(--sans); font-size: 14px; color: var(--mda-gray-light); margin-top: 6px; }
+.cred-claim .sub { font-family: var(--sans); font-size: 14px; color: var(--mda-gray-light); }
+.credential-bar .link-white { color: #fff; font-family: var(--sans); font-size: 15px; text-decoration: underline; text-underline-offset: 4px; }
+.credential-bar .link-white:hover { color: var(--mda-gray-light); }
+
+/* ===== care navigation (2-up search + numbered index) ===== */
+.care { background: var(--mda-surface-alt); padding: var(--section-padding) 0; }
+.care-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+.care-search h3 { font-size: 32px; }
+.care-search + .care-search { margin-top: 44px; }
+.search-form { display: flex; margin-top: 18px; border-bottom: 2px solid #000; }
+.search-form input {
+  flex: 1; min-width: 0; height: 54px; border: none; background: transparent;
+  font-family: var(--sans); font-size: 16px; color: #000; padding: 0 4px;
+}
+.search-form input::placeholder { color: var(--mda-gray-dark); }
+.search-form input:focus { outline: 2px solid var(--mda-blue); outline-offset: 2px; }
+.search-btn { width: 54px; height: 54px; background: var(--color-accent); border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+.search-btn:hover { filter: brightness(0.82); }
+.care-search .link-red { display: inline-block; margin-top: 14px; }
+.plan h3 { font-size: 32px; }
+.plan-index { list-style: none; margin-top: 8px; }
+.plan-index li { border-bottom: 1px solid var(--mda-gray-light); }
+.plan-index li:last-child { border-bottom: none; }
+.plan-index a { display: grid; grid-template-columns: 64px 1fr; gap: 20px; padding: 22px 0; text-decoration: none; }
+.plan-index .idx { font-family: var(--heading-font-family); font-size: 40px; line-height: 1; color: var(--mda-gray-light); }
+.plan-index a:hover .idx { color: var(--color-accent); }
+.plan-index h4 { font-family: "Minion Semi Bold", "Minion W01 SmBd Cap Regular", Arial, Georgia; font-size: 21px; }
+.plan-index p { font-family: var(--sans); font-size: 14px; color: var(--mda-gray-dark); margin-top: 6px; line-height: 1.5; }
+.plan .link-red { display: inline-block; margin-top: 18px; }
+
+/* ===== blood drive notice (editorial row) ===== */
+.blood { background: #fff; border-bottom: 1px solid var(--mda-gray-light); }
+.blood .wrap { display: flex; align-items: center; gap: 32px; padding-top: 36px; padding-bottom: 36px; flex-wrap: wrap; }
+.blood-mark { flex: 0 0 auto; width: 6px; align-self: stretch; background: var(--color-accent); }
+.blood-copy { flex: 1 1 380px; }
+.blood-copy h3 { font-family: "Minion Semi Bold", "Minion W01 SmBd Cap Regular", Arial, Georgia; font-size: 26px; }
+.blood-copy p { margin-top: 6px; max-width: 66ch; }
+.blood .btn-wrap { text-align: right; }
+.blood .note { display: block; margin-top: 8px; font-family: var(--sans); font-size: 12px; color: var(--mda-gray-dark); }
+
+/* ===== why choose (essay) ===== */
+.why { background: #fff; padding: 72px 0; }
+.why-inner { max-width: 880px; }
+.why h2 { font-size: var(--heading-xl); letter-spacing: -0.02em; }
+.why .lede { font-size: 24px; line-height: 1.5; margin-top: 28px; }
+.why .link-red { display: inline-block; margin-top: 28px; font-size: 17px; }
+
+/* ===== highlights (featured editorial grid) ===== */
+.highlights { background: var(--mda-surface-alt); padding: var(--section-padding) 0; border-top: 1px solid var(--mda-gray-light); }
+.hl-head { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.hl-head h2 { font-size: var(--heading-xl); letter-spacing: -0.02em; }
+.featured { display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: center; margin-top: 44px; padding-bottom: 48px; border-bottom: 1px solid var(--mda-gray-light); text-decoration: none; }
+.featured img { width: 100%; max-width: 400px; aspect-ratio: 16/9; object-fit: cover; justify-self: end; }
+.featured-copy h3 { font-size: 40px; letter-spacing: -0.02em; text-wrap: balance; }
+.featured-copy p { font-size: 20px; margin-top: 14px; color: #000; }
+.featured:hover h3 { color: var(--color-accent); }
+.hl-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px 28px; margin-top: 48px; }
+.hl-card { text-decoration: none; display: block; }
+.hl-card img { width: 100%; max-width: 400px; aspect-ratio: 16/9; object-fit: cover; background: var(--mda-gray-light); }
+.hl-card h3 { font-family: "Minion Semi Bold", "Minion W01 SmBd Cap Regular", Arial, Georgia; font-size: 23px; margin-top: 16px; }
+.hl-card p { font-size: 16px; color: var(--mda-gray-dark); margin-top: 6px; }
+.hl-card:hover h3 { color: var(--color-accent); }
+
+/* ===== support duo (editorial panels) ===== */
+.support { background: #fff; padding: var(--section-padding) 0; }
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.duo-card { border: 1px solid var(--mda-gray-light); border-top: 4px solid var(--color-accent); padding: 44px 40px; }
+.duo-card.purple { border-top-color: var(--mda-purple); }
+.duo-card h3 { font-size: 32px; }
+.duo-card p { margin-top: 14px; max-width: 46ch; }
+.duo-card .btn { margin-top: 26px; }
+.btn--purple { background: var(--mda-purple); color: #fff; }
+.btn--purple:hover { filter: brightness(0.82); }
+
+/* ===== quick links (editorial rows) ===== */
+.quick { background: #fff; border-top: 1px solid var(--mda-gray-light); }
+.quick .wrap { display: grid; grid-template-columns: repeat(3, 1fr); }
+.quick a {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 34px 28px; text-decoration: none; border-right: 1px solid var(--mda-gray-light);
+}
+.quick a:first-child { padding-left: 0; }
+.quick a:last-child { border-right: none; }
+.quick h3 { font-size: 27px; }
+.quick .arr { color: var(--color-accent); font-family: Arial, sans-serif; font-size: 26px; }
+.quick a:hover h3 { color: var(--color-accent); }
+
+/* ===== end cancer ===== */
+.endcancer { background: var(--mda-surface); padding: var(--section-padding) 0; }
+.endcancer h2 { font-size: var(--heading-xl); text-align: center; letter-spacing: -0.02em; }
+.endcancer .rule { margin: 14px auto 0; }
+.ec-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 40px; }
+.ec-card { color: #fff; padding: 44px 36px; display: flex; flex-direction: column; align-items: flex-start; min-height: 270px; }
+.ec-card.red { background: var(--color-accent); }
+.ec-card.black { background: #000; }
+.ec-card.blue { background: var(--mda-blue); }
+.ec-card h3 { font-size: 30px; }
+.ec-card p { margin-top: 12px; max-width: 34ch; }
+.ec-card .btn { align-self: flex-start; margin-top: auto; }
+.ec-card p + .btn { margin-top: 26px; }
+.ec-note { font-family: var(--sans); font-size: 12px; opacity: .85; margin-top: 8px; }
+
+/* ===== newsletter (editorial) ===== */
+.newsletter { background: #fff; border-top: 1px solid var(--mda-gray-light); padding: 48px 0; }
+.newsletter .wrap { display: flex; align-items: flex-end; gap: 32px; flex-wrap: wrap; }
+.newsletter h2 { font-size: 32px; flex: 1 1 320px; letter-spacing: -0.02em; }
+.newsletter form { display: flex; gap: 20px; flex: 2 1 560px; flex-wrap: wrap; align-items: flex-end; }
+.newsletter input {
+  flex: 1 1 140px; height: 44px; border: none; border-bottom: 2px solid #000;
+  font-family: var(--sans); font-size: 15px; background: transparent; color: #000; min-width: 0; padding: 0 2px;
+}
+.newsletter input::placeholder { color: var(--mda-gray-dark); }
+.newsletter input:focus { outline: 2px solid var(--mda-blue); outline-offset: 2px; }
+.newsletter .btn { flex: 0 0 auto; }
+
+/* ===== footer ===== */
+.site-footer { background: #000; color: #fff; font-family: var(--sans); font-size: 14px; }
+.site-footer a { color: #fff; text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; }
+.footer-top { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr 1.1fr; gap: 40px; padding: 56px 0 40px; }
+.footer-logo img { width: 220px; height: 92px; object-fit: contain; object-position: left; }
+.footer-col h4 { font-family: var(--sans-cn); font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: var(--mda-gray-light); margin-bottom: 16px; }
+.footer-col h4 + ul + h4 { margin-top: 26px; }
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 10px; line-height: 1.4; }
+.footer-social { display: flex; flex-wrap: wrap; gap: 8px 14px; }
+.footer-legal { border-top: 1px solid #605D5D; padding: 20px 0; }
+.footer-legal ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 26px; font-size: 13px; color: var(--mda-gray-light); }
+.mission { border-top: 1px solid #605D5D; padding: 36px 0 44px; }
+.mission .wrap { display: grid; grid-template-columns: 380px 1fr; gap: 48px; align-items: center; }
+.mission .tagline { font-family: var(--heading-font-family); font-size: 38px; }
+.mission .tagline sup { font-size: 14px; }
+.mission p { font-size: 13px; line-height: 1.6; color: var(--mda-gray-light); }
+.mission .copyright { margin-top: 12px; color: #D0D0CE; }
+
+/* ===== responsive ===== */
+@media (max-width: 1180px) {
+  .wrap { padding-left: 40px; padding-right: 40px; }
+  .primary-nav .wrap { padding-left: 28px; padding-right: 28px; }
+  .primary-nav a { padding: 17px 12px; font-size: 14px; }
+  .footer-top { grid-template-columns: 1fr 1fr 1fr; }
+  .hl-grid { grid-template-columns: repeat(2, 1fr); }
+  .hl-card h3 { font-size: 21px; }
+}
+@media (max-width: 991px) {
+  .utility .u-hide-m { display: none; }
+  .masthead .logo img { width: 160px; height: 67px; }
+  .search-chip { display: none; }
+  .burger { display: inline-block; }
+  .primary-nav { display: none; }
+  .nav-toggle:checked ~ .primary-nav { display: block; }
+  .primary-nav ul { flex-direction: column; }
+  .primary-nav .wrap { padding: 0; }
+  .primary-nav a { border-bottom: 1px solid var(--mda-gray-light); padding: 15px 24px; }
+  .story-hero img.hero-bg { height: 56vh; min-height: 420px; }
+  .story-hero-overlay h1 { font-size: 42px; }
+  .care-grid { grid-template-columns: 1fr; gap: 44px; }
+  .credential-bar .wrap { gap: 32px; }
+  .cred-stat { padding-right: 32px; }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+  .mission .wrap { grid-template-columns: 1fr; gap: 20px; }
+  .featured { grid-template-columns: 1fr; gap: 24px; }
+  .featured img { justify-self: start; }
+}
+@media (max-width: 767px) {
+  .wrap { padding-left: 24px; padding-right: 24px; }
+  .story-hero-overlay .wrap { flex-direction: column; align-items: flex-start; gap: 20px; padding-bottom: 36px; }
+  .story-hero-overlay h1 { font-size: 34px; }
+  .credential-bar .wrap { flex-direction: column; align-items: flex-start; }
+  .cred-stat { border-right: none; padding-right: 0; border-bottom: 1px solid var(--mda-gray-dark); padding-bottom: 24px; }
+  .duo { grid-template-columns: 1fr; }
+  .quick .wrap { grid-template-columns: 1fr; }
+  .quick a { border-right: none; border-bottom: 1px solid var(--mda-gray-light); padding: 24px 0; }
+  .quick a:last-child { border-bottom: none; }
+  .ec-grid { grid-template-columns: 1fr; }
+  .newsletter form { flex-direction: column; align-items: stretch; }
+  .blood .btn-wrap { text-align: left; }
+}
+@media (max-width: 640px) {
+  .utility .wrap { justify-content: center; flex-wrap: wrap; }
+  .utility a { font-size: 12px; padding: 10px 6px; }
+  .duo-card { padding: 28px 22px; }
+  .duo-card h3 { font-size: 24px; overflow-wrap: anywhere; }
+
+  .hl-grid { grid-template-columns: 1fr; }
+  .featured-copy h3 { font-size: 30px; }
+  .hl-head h2, .why h2, .endcancer h2 { font-size: 34px; }
+  .why .lede { font-size: 20px; }
+  .cred-stat .num { font-size: 64px; }
+  .cred-claim h2 { font-size: 27px; }
+  .footer-top { grid-template-columns: 1fr; padding-top: 40px; }
+  .mission .tagline { font-size: 30px; }
+}
+</style>
+</head>
+<body data-template="landing">
+<a class="skip-link" href="#main">Skip to Content</a>
+
+<header data-section="header" data-intent="global wayfinding" data-layout="edge-to-edge" data-nav-collapse="hamburger" data-canon>
+  <div class="utility">
+    <div class="wrap">
+      <a href="https://my.mdanderson.org/MyChart/Home/">MyChart</a>
+      <a class="u-hide-m" href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html">Clinical Trials</a>
+      <a class="u-hide-m" href="https://www.mdanderson.org/about-md-anderson/our-locations.html">Locations</a>
+      <a class="u-hide-m" href="https://jobs.mdanderson.org/">Careers</a>
+      <a class="u-hide-m" href="https://www.mdanderson.org/about-md-anderson/contact-us.html">Contact Us</a>
+      <a class="u-hide-m" href="https://faculty.mdanderson.org/">Our Doctors</a>
+      <a class="u-hide-m" href="https://www.mdanderson.org/about-md-anderson/contact-us/languages.html">Languages</a>
+      <a class="u-cta u-appt" href="https://my.mdanderson.org/RequestAppointment">Request an Appointment</a>
+      <a class="u-cta u-donate" href="https://gifts.mdanderson.org/Default.aspx?tsid=37435">Donate Today</a>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="wrap">
+      <a class="logo" href="https://www.mdanderson.org/" aria-label="The University of Texas MD Anderson Cancer Center — home">
+        <img src="assets/uplift/media/logo.webp" alt="The University of Texas MD Anderson Cancer Center" width="210" height="88" loading="eager" fetchpriority="high">
+      </a>
+      <div class="masthead-right">
+        <span class="search-chip" role="presentation">
+          <svg width="15" height="15" viewBox="0 0 15 15" aria-hidden="true"><circle cx="6.2" cy="6.2" r="5" fill="none" stroke="#605D5D" stroke-width="1.6"/><line x1="10" y1="10" x2="14" y2="14" stroke="#605D5D" stroke-width="1.6"/></svg>
+          Search
+        </span>
+        <label class="burger" for="nav-toggle">Menu</label>
+      </div>
+    </div>
+  </div>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+  <nav class="primary-nav" aria-label="Primary">
+    <div class="wrap">
+      <ul>
+        <li><a href="https://www.mdanderson.org/patients-family.html">Patients &amp; Family</a></li>
+        <li><a href="https://www.mdanderson.org/prevention-screening.html">Prevention &amp; Screening</a></li>
+        <li><a href="https://www.mdanderson.org/donors-volunteers.html">Donors &amp; Volunteers</a></li>
+        <li><a href="https://www.mdanderson.org/for-physicians.html">For Physicians</a></li>
+        <li><a href="https://www.mdanderson.org/research.html">Research</a></li>
+        <li><a href="https://www.mdanderson.org/education-training.html">Education &amp; Training</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="contact-strip" data-section="contact-strip" data-intent="drive action — appointment access" data-layout="full-bleed">
+    <div class="wrap">
+      <span><strong>We're here for you.</strong> Call us at <a href="tel:+18777901139">1-877-790-1139</a> or <a href="/about-md-anderson/contact-us/askmdanderson/appointments.html">request an appointment online.</a></span>
+    </div>
+  </section>
+
+  <section class="story-hero" data-section="hero" data-intent="emotional hook — survivor voice at layout scale" data-layout="full-bleed" data-media="video">
+    <img class="hero-bg" src="assets/uplift/media/story-father-1444.jpg"
+         alt="Dr. Carlos Barcenas (left) with arm around daughter, Juliana (right)"
+         width="1444" height="619" loading="eager" fetchpriority="high">
+    <div class="story-hero-overlay">
+      <div class="wrap">
+        <div>
+          <h1>Father inspires daughter’s career path at UT MD Anderson</h1>
+        </div>
+        <a class="play" href="https://www.mdanderson.org/patients-family.html" aria-label="Watch: Father inspires daughter’s career path at UT MD Anderson">
+          <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4l13 8-13 8z" fill="#fff"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="credential-bar" data-section="credential" data-intent="build trust — national ranking" data-layout="full-bleed">
+    <div class="wrap">
+      <div class="cred-stat">
+        <span class="num">15</span>
+        <span class="lbl">Years<br>Best Hospitals<br>in Cancer Care</span>
+      </div>
+      <div class="cred-claim">
+        <h2>#1 in the nation for cancer care</h2>
+        <p class="sub">U.S. News &amp; World Report</p>
+      </div>
+      <a class="link-white" href="https://www.mdanderson.org/newsroom/ut-md-anderson-ranks-number-one-in-the-nation-for-cancer-care-for-12th-year-in-a-row.h00-159857712.html">Learn more about this ranking</a>
+    </div>
+  </section>
+
+  <section class="care" data-section="care-finder" data-intent="route to care" data-layout="split-media" data-interactive="form">
+    <div class="wrap">
+      <div class="care-grid">
+        <div>
+          <div class="care-search">
+            <h3>Search Cancer Types</h3>
+            <form class="search-form" action="https://www.mdanderson.org/patients-family/diagnosis-treatment/cancer-types.html" method="get">
+              <input type="search" name="q" placeholder="Search by type of cancer or condition" aria-label="Search by type of cancer or condition">
+              <button class="search-btn" type="submit" aria-label="Search cancer types">
+                <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="7.4" cy="7.4" r="6" fill="none" stroke="#fff" stroke-width="2"/><line x1="12" y1="12" x2="17" y2="17" stroke="#fff" stroke-width="2"/></svg>
+              </button>
+            </form>
+            <a class="link-red" href="https://www.mdanderson.org/patients-family/diagnosis-treatment/cancer-types.html">Browse cancer types <span class="arr">→</span></a>
+          </div>
+          <div class="care-search">
+            <h3>Search Clinical Trials</h3>
+            <form class="search-form" action="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html" method="get">
+              <input type="search" name="q" placeholder="search clinical trials" aria-label="Search clinical trials">
+              <button class="search-btn" type="submit" aria-label="Search clinical trials">
+                <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="7.4" cy="7.4" r="6" fill="none" stroke="#fff" stroke-width="2"/><line x1="12" y1="12" x2="17" y2="17" stroke="#fff" stroke-width="2"/></svg>
+              </button>
+            </form>
+            <a class="link-red" href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html">Browse clinical trials <span class="arr">→</span></a>
+          </div>
+        </div>
+        <div class="plan">
+          <h3>Plan Your Care</h3>
+          <ol class="plan-index">
+            <li>
+              <a href="https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/prepare-for-your-first-visit.html">
+                <span class="idx" aria-hidden="true">01</span>
+                <span>
+                  <h4>Prepare for your first visit</h4>
+                  <p>We know getting ready to visit UT MD Anderson may be stressful, so we've created a list to make things easier for you.</p>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/insurance-plans.html">
+                <span class="idx" aria-hidden="true">02</span>
+                <span>
+                  <h4>Check Insurance Coverage</h4>
+                  <p>View our list of accepted health insurance plans to determine if you are covered.</p>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/traveling-to-houston.html">
+                <span class="idx" aria-hidden="true">03</span>
+                <span>
+                  <h4>Plan Travel and Lodging</h4>
+                  <p>We can arrange domestic and international travel to and from Houston and help you find nearby accommodations.</p>
+                </span>
+              </a>
+            </li>
+          </ol>
+          <a class="link-red" href="https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care.html">View planning resources <span class="arr">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blood" data-section="blood-drive" data-intent="community call to action" data-layout="contained">
+    <div class="wrap">
+      <span class="blood-mark" aria-hidden="true"></span>
+      <div class="blood-copy">
+        <h3>Donate blood. Save a life.</h3>
+        <p>Family members, friends and the community are encouraged to donate whole blood and platelets for UT MD Anderson patients.</p>
+      </div>
+      <div class="btn-wrap">
+        <a class="btn btn--red" href="https://www.mdandersonbloodbank.org/" target="_blank" rel="noopener">Schedule a blood donation appointment</a>
+        <span class="note">Opens a new window</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" data-section="why-choose" data-intent="build trust — institutional voice" data-layout="contained">
+    <div class="wrap">
+      <div class="why-inner">
+        <h2>Why Choose UT MD Anderson</h2>
+        <span class="rule"></span>
+        <p class="lede">Every day, people like you choose UT MD Anderson for cancer treatment. But it’s more than our decades of experience, top national rankings and leadership in cancer prevention that set us apart. It goes beyond our groundbreaking research and innovative clinical care that provide new therapies years before they become standard in the community. It’s because we put all of our focus on you.</p>
+        <a class="link-red" href="/patients-family/becoming-our-patient/why-md-anderson.html">Learn more about UT MD Anderson <span class="arr">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="highlights" data-section="highlights" data-intent="editorial discovery — survivor stories foregrounded" data-layout="grid" data-items="8" data-media="image">
+    <div class="wrap">
+      <div class="hl-head">
+        <h2>UT MD Anderson Highlights</h2>
+        <a class="link-red" href="https://www.mdanderson.org/cancerwise.html">Read Our Blog <span class="arr">→</span></a>
+      </div>
+      <a class="featured" href="https://www.mdanderson.org/cancerwise/-how-i-knew-i-had-endometrial-cancer---six-survivors-share-their-symptoms-stories.h00-159856134.html">
+        <div class="featured-copy">
+          <h3>Uterine cancer signs</h3>
+          <p>What six survivors noticed before diagnosis</p>
+        </div>
+        <img src="assets/uplift/media/hl-uterine-cancer-signs.jpg" alt="" width="251" height="141" loading="lazy">
+      </a>
+      <div class="hl-grid">
+        <a class="hl-card" href="https://www.mdanderson.org/newsroom/ut-md-anderson-ranks-number-one-in-the-nation-for-cancer-care-for-12th-year-in-a-row.h00-159857712.html">
+          <img src="assets/uplift/media/hl-top-cancer-hospital.jpg" alt="MD Anderson ranked #1 in the nation for cancer care" width="251" height="141" loading="lazy">
+          <h3>Top cancer hospital</h3>
+          <p>UT MD Anderson earns U.S. News &amp; World Report's top ranking</p>
+        </a>
+        <a class="hl-card" href="https://www.mdanderson.org/cancerwise/multiple-myeloma-caregiver--why-i-ll-keep-donating-blood-products-at-ut-md-anderson-blood-bank.h00-159856134.html">
+          <img src="assets/uplift/media/hl-blood-donation.jpg" alt="" width="251" height="141" loading="lazy">
+          <h3>Blood donation</h3>
+          <p>One caregiver's reasons for giving back</p>
+        </a>
+        <a class="hl-card" href="https://www.mdanderson.org/podcast.html?segitem=68929">
+          <img src="assets/uplift/media/hl-beyond-sunscreen.jpg" alt="" width="251" height="141" loading="lazy">
+          <h3>Beyond sunscreen</h3>
+          <p>Podcast: Preventing skin cancer with UPF clothing</p>
+        </a>
+        <a class="hl-card" href="https://www.mdanderson.org/cancerwise/feeling-alone-after-a-cancer-diagnosis--here-is-how-to-break-through-that-isolation.h00-159856134.html">
+          <img src="assets/uplift/media/hl-finding-connection.jpg" alt="" width="251" height="141" loading="lazy">
+          <h3>Finding connection</h3>
+          <p>Breaking through isolation after a cancer diagnosis</p>
+        </a>
+        <a class="hl-card" href="https://www.mdanderson.org/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134.html">
+          <img src="assets/uplift/media/hl-coping-with-insomnia.jpg" alt="" width="251" height="141" loading="lazy">
+          <h3>Coping with insomnia</h3>
+          <p>Ways to improve sleep during treatment</p>
+        </a>
+        <a class="hl-card" href="https://onlypossiblehere.mdanderson.org/">
+          <img src="assets/uplift/media/hl-only-possible-here.jpg" alt="" width="251" height="141" loading="lazy">
+          <h3>Only Possible Here</h3>
+          <p>Support our effort to transform bold ideas into real impact</p>
+        </a>
+        <a class="hl-card" href="https://www.mdanderson.org/cancerwise/Phase-I-clinical-trials.h00-159855345.html">
+          <img src="assets/uplift/media/hl-phase-i-trials.jpg" alt="" width="251" height="141" loading="lazy">
+          <h3>Phase I trials</h3>
+          <p>What to know before deciding to enroll</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="support" data-section="patient-support" data-intent="build trust — support services" data-layout="grid" data-items="2">
+    <div class="wrap">
+      <div class="duo">
+        <div class="duo-card">
+          <h3>myCancerConnection</h3>
+          <p>Talk to someone who shares your cancer diagnosis and be matched with a survivor.</p>
+          <a class="btn btn--red" href="https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/mycancerconnection.html">Request a match</a>
+        </div>
+        <div class="duo-card purple">
+          <h3>One-on-One Counseling</h3>
+          <p>Take advantage of short-term counseling provided free of charge by our clinical social workers.</p>
+          <a class="btn btn--purple" href="https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/social-work.html">Find a support coach</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick" data-section="wayfinding-trio" data-intent="route to resources" data-layout="grid" data-items="3">
+    <div class="wrap">
+      <a href="https://www.mdanderson.org/about-md-anderson/our-locations.html"><h3>Find Our Locations</h3><span class="arr">→</span></a>
+      <a href="https://www.mdanderson.org/cancerwise.html"><h3>Read Our Blog</h3><span class="arr">→</span></a>
+      <a href="https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html"><h3>Ask a Question</h3><span class="arr">→</span></a>
+    </div>
+  </section>
+
+  <section class="endcancer" data-section="end-cancer" data-intent="drive action — philanthropy" data-layout="grid" data-items="3" data-module="endcancer-trio">
+    <div class="wrap">
+      <h2>Help #EndCancer</h2>
+      <span class="rule"></span>
+      <div class="ec-grid">
+        <div class="ec-card red">
+          <h3>Give Now</h3>
+          <p>Your gift will help make a tremendous difference.</p>
+          <a class="btn btn--white" href="https://gifts.mdanderson.org/Default.aspx?tsid=37435">Donate</a>
+        </div>
+        <div class="ec-card black">
+          <h3>Donate Blood</h3>
+          <p>Our patients depend on blood and platelet donations.</p>
+          <a class="btn btn--white" href="https://www.mdandersonbloodbank.org/" target="_blank" rel="noopener">Make an appointment</a>
+          <span class="ec-note">Opens a new window</span>
+        </div>
+        <div class="ec-card blue">
+          <h3>Shop UT MD Anderson</h3>
+          <p>Show your support for our mission through branded merchandise.</p>
+          <a class="btn btn--white" href="https://shop.mdanderson.org">View products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter" data-section="newsletter" data-intent="capture lead" data-layout="contained" data-interactive="form">
+    <div class="wrap">
+      <h2>Subscribe to our Cancerwise newsletter</h2>
+      <form action="#" method="post">
+        <input type="text" name="first" placeholder="First Name *" aria-label="First Name (required)" required>
+        <input type="text" name="last" placeholder="Last Name *" aria-label="Last Name (required)" required>
+        <input type="email" name="email" placeholder="Email Address *" aria-label="Email Address (required)" required>
+        <button class="btn btn--red" type="submit">Get started</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" data-section="footer" data-intent="global navigation and mission" data-layout="edge-to-edge" data-canon>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-col footer-logo">
+        <img src="assets/uplift/media/footer-logo.webp" alt="UT MD Anderson logo" width="220" height="92" loading="lazy">
+      </div>
+      <nav class="footer-col" aria-label="Explore">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="https://www.mdanderson.org/patients-family.html">Patients &amp; Family</a></li>
+          <li><a href="https://www.mdanderson.org/prevention-screening.html">Prevention &amp; Screening</a></li>
+          <li><a href="https://www.mdanderson.org/donors-volunteers.html">Donors &amp; Volunteers</a></li>
+          <li><a href="https://www.mdanderson.org/for-physicians.html">For Physicians</a></li>
+          <li><a href="https://www.mdanderson.org/research.html">Research</a></li>
+          <li><a href="https://www.mdanderson.org/education-training.html">Education &amp; Training</a></li>
+          <li><a href="https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html">Clinical Trials</a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/contact-us/languages.html">Languages</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="About">
+        <h4>About</h4>
+        <ul>
+          <li><a href="https://www.mdanderson.org/about-md-anderson.html">About UT MD Anderson</a></li>
+          <li><a href="https://jobs.mdanderson.org/">Careers</a></li>
+          <li><a href="https://www.mdanderson.org/cancerwise.html">Blog</a></li>
+          <li><a href="https://www.mdanderson.org/newsroom.html">Newsroom</a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html">Editorial Standards</a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/employee-resources.html">For Employees</a></li>
+          <li><a href="https://shop.mdanderson.org/">Merchandise</a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html">Title IX Reporting (Sexual Misconduct)</a></li>
+          <li><a href="https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html">Price Transparency</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Finding your way">
+        <h4>Finding Your Way</h4>
+        <ul>
+          <li><a href="https://faculty.mdanderson.org/">Our Doctors</a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/our-locations.html">Locations</a></li>
+          <li><a href="https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html">Directions</a></li>
+          <li><a href="https://www.mdanderson.org/patients-family/html-sitemap.html">Sitemap</a></li>
+        </ul>
+        <h4>Digital Accessibility</h4>
+        <ul>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html">Accessibility Policy</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="tel:+18777901139">Call 1-877-790-1139</a></li>
+          <li><a href="https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html">Ask a question</a></li>
+        </ul>
+        <h4>Stay Connected</h4>
+        <ul class="footer-social">
+          <li><a href="https://facebook.com/MDAnderson">Facebook</a></li>
+          <li><a href="https://x.com/UTMDAnderson">X</a></li>
+          <li><a href="https://youtube.com/mdandersonorg">YouTube</a></li>
+          <li><a href="https://instagram.com/mdandersoncancercenter">Instagram</a></li>
+          <li><a href="https://linkedin.com/company/mdandersoncancercenter">LinkedIn</a></li>
+        </ul>
+        <h4>Cancerwise Podcast</h4>
+        <ul class="footer-social">
+          <li><a href="https://podcasts.apple.com/us/podcast/cancerwise-podcast/id1751785346">Apple</a></li>
+          <li><a href="https://open.spotify.com/show/28rgC5nO7OpLhnPlNylNem">Spotify</a></li>
+          <li><a href="http://www.pandora.com/podcast/cancerwise-podcast/PC:1001088873">Pandora</a></li>
+          <li><a href="http://www.iheart.com/podcast/269-cancerwise-podcast-185103717/">iHeart</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-legal">
+    <div class="wrap">
+      <ul>
+        <li><a href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html">Website Privacy Policy</a></li>
+        <li><a href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html">Legal Statement &amp; Policies</a></li>
+        <li><a href="https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html">Reports to the State</a></li>
+        <li><a href="https://www3.mdanderson.org/emergencyalert/">Emergency Alert Information</a></li>
+        <li><a href="https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html">State of Texas Links</a></li>
+        <li><a href="https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html">Our Cancer Network</a></li>
+        <li><a href="https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html">Vendors &amp; Suppliers</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mission" data-section="mission" data-intent="institutional mission" data-layout="contained">
+    <div class="wrap">
+      <p class="tagline">Making Cancer History<sup>®</sup></p>
+      <div>
+        <p>The mission of The University of Texas MD Anderson Cancer Center is to eliminate cancer in Texas, the nation, and the world through outstanding programs that integrate patient care, research and prevention, and through education for undergraduate and graduate students, trainees, professionals, employees and the public.</p>
+        <p class="copyright">© 2026 The University of Texas MD Anderson Cancer Center. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

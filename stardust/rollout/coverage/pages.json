@@ -7,7 +7,7 @@
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-08-20T00:20:01.962Z",
+  "generatedAt": "2026-08-20T04:42:20.011Z",
   "pages": [
     {
       "slug": "about-md-anderson-html",
@@ -21,10 +21,10 @@
       },
       "blocks": [],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--mdanderson--paolomoz.aem.page/about-md-anderson",
+        "deployedAt": "2026-08-20T04:38:17.567Z",
+        "verifiedAt": "2026-08-20T04:42:20.011Z",
         "error": null
       }
     },
@@ -40,10 +40,10 @@
       },
       "blocks": [],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--mdanderson--paolomoz.aem.page/about-md-anderson/our-locations",
+        "deployedAt": "2026-08-20T04:38:17.589Z",
+        "verifiedAt": "2026-08-20T04:42:20.011Z",
         "error": null
       }
     },
@@ -59,16 +59,16 @@
       },
       "blocks": [],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--mdanderson--paolomoz.aem.page/cancer-types/breast-cancer",
+        "deployedAt": "2026-08-20T04:38:17.454Z",
+        "verifiedAt": "2026-08-20T04:42:20.011Z",
         "error": null
       }
     },
     {
       "slug": "cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html",
-      "path": "/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134",
+      "path": "/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment",
       "title": "Insomnia during cancer treatment: Causes, symptoms, coping | UT MD Anderson",
       "templateId": "article",
       "source": {
@@ -78,10 +78,10 @@
       },
       "blocks": [],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--mdanderson--paolomoz.aem.page/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment",
+        "deployedAt": "2026-08-20T04:38:17.631Z",
+        "verifiedAt": "2026-08-20T04:42:20.011Z",
         "error": null
       }
     },
@@ -97,10 +97,10 @@
       },
       "blocks": [],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--mdanderson--paolomoz.aem.page/cancerwise",
+        "deployedAt": "2026-08-20T04:38:17.610Z",
+        "verifiedAt": "2026-08-20T04:42:20.011Z",
         "error": null
       }
     },
@@ -116,10 +116,10 @@
       },
       "blocks": [],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--mdanderson--paolomoz.aem.page/donors-volunteers",
+        "deployedAt": "2026-08-20T04:38:17.653Z",
+        "verifiedAt": "2026-08-20T04:42:20.011Z",
         "error": null
       }
     },
@@ -135,10 +135,10 @@
       },
       "blocks": [],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--mdanderson--paolomoz.aem.page/",
+        "deployedAt": "2026-08-20T04:38:17.402Z",
+        "verifiedAt": "2026-08-20T04:42:20.011Z",
         "error": null
       }
     },
@@ -154,10 +154,10 @@
       },
       "blocks": [],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--mdanderson--paolomoz.aem.page/patients-family/diagnosis-treatment/care-centers-clinics/breast-center",
+        "deployedAt": "2026-08-20T04:38:17.477Z",
+        "verifiedAt": "2026-08-20T04:42:20.011Z",
         "error": null
       }
     },
@@ -173,10 +173,10 @@
       },
       "blocks": [],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--mdanderson--paolomoz.aem.page/patients-family/diagnosis-treatment/clinical-trials",
+        "deployedAt": "2026-08-20T04:38:17.500Z",
+        "verifiedAt": "2026-08-20T04:42:20.011Z",
         "error": null
       }
     },
@@ -192,10 +192,10 @@
       },
       "blocks": [],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--mdanderson--paolomoz.aem.page/patients-family",
+        "deployedAt": "2026-08-20T04:38:17.430Z",
+        "verifiedAt": "2026-08-20T04:42:20.011Z",
         "error": null
       }
     },
@@ -211,10 +211,10 @@
       },
       "blocks": [],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--mdanderson--paolomoz.aem.page/prevention-screening",
+        "deployedAt": "2026-08-20T04:38:17.522Z",
+        "verifiedAt": "2026-08-20T04:42:20.011Z",
         "error": null
       }
     },
@@ -230,10 +230,10 @@
       },
       "blocks": [],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--mdanderson--paolomoz.aem.page/research",
+        "deployedAt": "2026-08-20T04:38:17.545Z",
+        "verifiedAt": "2026-08-20T04:42:20.011Z",
         "error": null
       }
     }

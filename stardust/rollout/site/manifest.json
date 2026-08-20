@@ -1,0 +1,12 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/assemble",
+    "writtenAt": "2026-08-20T04:41:58.942Z",
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-08-20T04:41:58.942Z",
+  "host": "https://main--mdanderson--paolomoz.aem.live",
+  "sitemap": "stardust/rollout/site/sitemap.xml",
+  "robots": "stardust/rollout/site/robots.txt",
+  "fragments": []
+}
