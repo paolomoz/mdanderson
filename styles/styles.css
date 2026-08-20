@@ -378,13 +378,15 @@ button.button.accent:disabled {
   color: var(--color-gray-dark);
 }
 
-.icon {
+/* decorateIcons() output only (span.icon > img) — element-scoped so block
+   variant classes like `.cards.icon` don't collapse to 24px boxes */
+span.icon {
   display: inline-block;
   height: 24px;
   width: 24px;
 }
 
-.icon img {
+span.icon img {
   height: 100%;
   width: 100%;
 }
