@@ -291,6 +291,11 @@ main .section.cards-container:has(.cards.closing) > .cards-wrapper {
 
   .cards.icon .promo-simple {
     display: flex;
+
+    /* column: index's title-only cards center identically, but wave-2 cards
+       with body copy (pathways/resources/visitor/help) must stack — row put
+       .promo-text beside the header and bled up to 51px past 390 */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 35px;
