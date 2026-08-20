@@ -112,3 +112,15 @@ POC preview (Minion/Univers, alerts in styles.css + fonts/LICENSING.md);
 (2) stray repo paolomoz/mdanderson-auto created by an out-of-scope subagent
 — delete or keep; (3) fast-follows: redirects.json wiring, JSON-LD P2s,
 query-index flip for Cancerwise listings at production scale.
+
+## 2026-08-20 — uplift-c cinematic demo live
+
+Deployed on branch `uplift-c` at
+https://uplift-c--mdanderson--paolomoz.aem.page/uplift-c (fallback path:
+per-branch fstab mounts are ignored on this config generation — site-level
+config wins; learnings candidate). 11 template-slotted blocks, motion via
+committed Lenis + runtime imported from block JS (CSP-safe). Deployed-URL
+verification: content clean, chrome + dark strip correct, 25/25 entrances,
+countup, native scrolling, reduced-motion static fallback, 0 errors. Note:
+programmatic window scroll doesn't drive Lenis — motion QA must scroll via
+mouse.wheel (probe-artifact class, recorded).
