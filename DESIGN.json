@@ -33,20 +33,80 @@
     "icons": "MDIcons",
     "htmlFontSize": "16px",
     "ramp": {
-      "display": { "family": "body", "size": "36px", "lineHeight": "46.8px", "weight": 400 },
-      "h3-card": { "family": "bodySemibold", "size": "24px", "lineHeight": "31.2px", "weight": 700 },
-      "lede": { "family": "body", "size": "21px", "lineHeight": "27.3px", "weight": 400 },
-      "bodyText": { "family": "body", "size": "18px", "lineHeight": "23.4px", "weight": 400 },
-      "nav": { "family": "sans", "size": "16px", "lineHeight": "20.8px", "weight": 400 },
-      "navBoldCn": { "family": "sansBoldCn", "size": "16px", "lineHeight": "20.8px", "weight": 400 },
-      "label": { "family": "sans", "size": "12px", "lineHeight": "15.6px", "weight": 400 },
-      "eyebrow": { "family": "sans", "size": "14px", "lineHeight": "18.2px", "weight": 400 },
-      "button": { "family": "sans", "size": "18px", "lineHeight": "23.4px", "weight": 400 }
+      "display": {
+        "family": "body",
+        "size": "36px",
+        "lineHeight": "46.8px",
+        "weight": 400
+      },
+      "h3-card": {
+        "family": "bodySemibold",
+        "size": "24px",
+        "lineHeight": "31.2px",
+        "weight": 700
+      },
+      "lede": {
+        "family": "body",
+        "size": "21px",
+        "lineHeight": "27.3px",
+        "weight": 400
+      },
+      "bodyText": {
+        "family": "body",
+        "size": "18px",
+        "lineHeight": "23.4px",
+        "weight": 400
+      },
+      "nav": {
+        "family": "sans",
+        "size": "16px",
+        "lineHeight": "20.8px",
+        "weight": 400
+      },
+      "navBoldCn": {
+        "family": "sansBoldCn",
+        "size": "16px",
+        "lineHeight": "20.8px",
+        "weight": 400
+      },
+      "label": {
+        "family": "sans",
+        "size": "12px",
+        "lineHeight": "15.6px",
+        "weight": 400
+      },
+      "eyebrow": {
+        "family": "sans",
+        "size": "14px",
+        "lineHeight": "18.2px",
+        "weight": 400
+      },
+      "button": {
+        "family": "sans",
+        "size": "18px",
+        "lineHeight": "23.4px",
+        "weight": 400
+      }
     }
   },
   "rounded": "0px",
-  "spacing": { "container": "1440px", "note": "full-bleed bands with inner max-width 1440px; content wells at 87%/85% of container" },
-  "components": ["mega-nav header", "utility bar", "hero banner (full-bleed image + overlay copy)", "blue contact strip", "alert band", "icon card trio", "highlights carousel", "duo promo cards", "#EndCancer CTA trio", "newsletter bar", "mega footer"],
+  "spacing": {
+    "container": "1440px",
+    "note": "full-bleed bands with inner max-width 1440px; content wells at 87%/85% of container"
+  },
+  "components": [
+    "mega-nav header",
+    "utility bar",
+    "hero banner (full-bleed image + overlay copy)",
+    "blue contact strip",
+    "alert band",
+    "icon card trio",
+    "highlights carousel",
+    "duo promo cards",
+    "#EndCancer CTA trio",
+    "newsletter bar",
+    "mega footer"
+  ],
   "extensions": {
     "fonts": {
       "licensing": "Minion (Adobe) and Univers LT (Monotype/Linotype) are licensed commercial kits served via fonts.com-style GUID woffs. Self-hosted ONLY for local gate measurement; delivery must either use MD Anderson's own licensed kit or metric substitutes. Brand family names kept first in every font stack.",
@@ -57,6 +117,66 @@
       "campaign": "Help #EndCancer",
       "heroClaim": "#1 in the nation for cancer care"
     },
-    "systemComponents": ["header (utility bar + logo + primary nav + mega-menu)", "blue we're-here-for-you strip (call-tracking phone rotates per render)", "Help #EndCancer trio", "newsletter signup bar", "footer (5-column + mission band)"]
+    "systemComponents": [
+      "header (utility bar + logo + primary nav + mega-menu)",
+      "blue we're-here-for-you strip (call-tracking phone rotates per render)",
+      "Help #EndCancer trio",
+      "newsletter signup bar",
+      "footer (5-column + mission band)"
+    ],
+    "canon": {
+      "source": "auto-bootstrap: index",
+      "sourceSlug": "index",
+      "approvedAt": "2026-08-19T20:05:00Z",
+      "bootstrappedAt": "2026-08-20T04:10:00Z",
+      "files": {
+        "header": {
+          "path": "stardust/canon/header.html",
+          "sha": "51090f5"
+        },
+        "footer": {
+          "path": "stardust/canon/footer.html",
+          "sha": "1868d83"
+        },
+        "css": {
+          "path": "stardust/canon/canon.css",
+          "sha": "278066d"
+        }
+      },
+      "pinned": {
+        "sectionPadding.desktop": "70px 72px",
+        "maxWidth": "1440px",
+        "radius": "0px",
+        "breakpoint.mobile": "991px (aligned to live nav breakpoint at migrate; replica-authored value was 767px)",
+        "heading.family": "\"Minion Regular\", \"Minion W01 Cap Regular\", Arial, Georgia",
+        "sans.family": "\"Univers LT W01_55 Roman\", Arial",
+        "heading.xxl": "36px",
+        "heading.lg": "24px",
+        "heading.md": "21px",
+        "body.size": "18px",
+        "lineHeight": 1.3,
+        "letterSpacing": "-.02em",
+        "color.accent": "#DA291C",
+        "color.bg": "#FFFFFF",
+        "color.fg": "#000000"
+      },
+      "compositionalMoves": [
+        "Full-bleed color bands stacked vertically; inner content constrained to 1440px with 72px side padding",
+        "Chrome order is fixed: utility bar + mega-nav header at top, blue we're-here-for-you strip near the top of content, Help #EndCancer trio then newsletter bar + mega footer close every page inside #skip",
+        "Circle-icon wayfinding wells use flat brand-color discs (red / purple / light-blue) with MDIcons glyphs",
+        "Square corners and flat surfaces everywhere; no shadows on primary surfaces",
+        "Display type is Minion serif at capture-lifted sizes; Univers sans is reserved for nav, labels and CTAs"
+      ],
+      "assetPrefixes": [
+        "assets/"
+      ],
+      "history": [
+        {
+          "at": "2026-08-20T04:10:00Z",
+          "from": "index",
+          "kind": "auto-bootstrap (migrate Setup step 4; handsOff)"
+        }
+      ]
+    }
   }
 }

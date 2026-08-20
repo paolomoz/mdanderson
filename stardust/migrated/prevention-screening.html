@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<!-- provenance: stardust:replica — recreation of https://www.mdanderson.org/prevention-screening.html
+     from stardust/current/pages/prevention-screening-html.json +
+     stardust/replica/capture/prevention-screening-html/{1440,360}.json.
+     Recreation, not redesign: all values lifted from capture. -->
+<html lang="en" class="js flexbox flexboxlegacy">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-08-20T04:10:00Z
+  page:             prevention-screening-html
+  slug:             prevention-screening-html
+  pagePath:         stardust/migrated/prevention-screening.html
+  renderBranch:     A
+  sourceProposed:   stardust/prototypes/prevention-screening-html-proposed.html
+  sourceCurrent:    stardust/current/pages/prevention-screening-html.json
+  againstDirection: stardust/direction.md (preserve mode — replica, verbatim content)
+  designMd:         DESIGN.md (sha: a248fde)
+  designJson:       DESIGN.json (sha: d62ea95)
+  canonShas:        header:51090f5 footer:1868d83 css:278066d
+  decisionTrace:    prevention-screening._meta.json
+  brokenInternalLinks: 0
+  stardustVersion:  0.18.1
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cancer Prevention | UT MD Anderson</title>
+<meta name="description" content="Learn about the many cancer prevention and screening resources offered at UT MD Anderson. Discover more ways to help lower your cancer risks today.">
+<meta property="og:title" content="Prevention &amp; Screening">
+<meta property="og:description" content="Learn about the many cancer prevention and screening resources offered at UT MD Anderson. Discover more ways to help lower your cancer risks today.">
+<meta property="og:image" content="https://www.mdanderson.org/mda-logo-sharable.png">
+<meta property="og:type" content="Website">
+<link rel="canonical" href="https://www.mdanderson.org/prevention-screening.html">
+<meta property="og:url" content="https://www.mdanderson.org/prevention-screening.html">
+<meta property="og:site_name" content="MD Anderson Cancer Center">
+<meta name="robots" content="index,follow">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"The University of Texas MD Anderson Cancer Center","url":"https://www.mdanderson.org/","logo":"https://www.mdanderson.org/mda-logo-sharable.png","slogan":"Making Cancer History","telephone":"+1-877-632-6789"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"MD Anderson Cancer Center","url":"https://www.mdanderson.org/"}</script>
+<link rel="stylesheet" href="./assets/mda-fonts.css">
+<link rel="stylesheet" href="./assets/chrome.css">
+<style>
+/* == TOKEN CONTRACT (verbatim copy of assets/chrome.css :root) ==
+   Display-ramp mapping note: DESIGN.json names 36px as the site's largest *system* display size
+   (icon-well/promo h3). We map --heading-xxl/--heading-xl to 36px (reused, not scaled up);
+   --heading-lg = 24px (card h3), --heading-md = 21px (lede/promo body). Page-local hero sizes
+   (72px hero h1, 48px/42px section titles on the homepage) are lifted per-page from capture and
+   intentionally NOT tokens. */
+:root {
+  --heading-font-family: "Minion Regular", "Minion W01 Cap Regular", Arial, Georgia;
+  --body-font-family: "Minion Regular", "Minion W01 Cap Regular", Arial, Georgia;
+  --heading-xxl: 36px;
+  --heading-xl: 36px;
+  --heading-lg: 24px;
+  --heading-md: 21px;
+  --body: 18px;
+  --body-sm: 14px;
+  --line-height-heading: 1.3;
+  --line-height-body: 1.3;
+  --color-bg: #FFFFFF;
+  --color-fg: #000000;
+  --color-accent: #DA291C;
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 30px;
+  --spacing-xl: 40px;
+  --spacing-2xl: 70px;
+  --section-padding: 70px 72px;
+  --max-width: 1440px;
+  --radius: 0px;
+}
+
+/* ===== page shells ===== */
+main.mda-content { display: block; }
+section.highlight { padding: 70px 72px; max-width: 1440px; }
+
+/* ===== hero (centered variant) ===== */
+.carousel-hero { position: relative; background: #000; }
+.carousel-hero .slick-list { position: relative; overflow: hidden; }
+.carousel-hero .slick-track { display: flex; position: relative; }
+.carousel-item.medium-hero { position: relative; width: 100%; min-height: 1px; z-index: 900; }
+.carousel-hero .carousel-image.media-image {
+  position: relative;
+  height: 450px; background-color: #D0D0CE; background-size: cover; background-position: 50% 50%;
+  background-image: url("https://www.mdanderson.org/content/mda/en/prevention-screening/jcr:content/mainparsys/herocarousel/slides/1/image.resize.1400.450.high.jpg/1768783647189.jpg");
+}
+/* live composites the hero at ~70% luminance (measured uniform 0.70 factor):
+   source .mda-media-brightness.medium-overlay:before { background: rgba(0,0,0,.3) } */
+.carousel-hero .carousel-image.mda-media-brightness.medium-overlay::before {
+  content: ""; position: absolute; z-index: 2; display: block;
+  top: 0; right: 0; bottom: 0; left: 0; background: rgba(0,0,0,.3);
+}
+.carousel-hero .carousel-body { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; }
+.carousel-hero .carousel-body-inner { display: table; width: 100%; height: 100%; }
+.carousel-hero .carousel-body-content { display: table-cell; vertical-align: middle; text-align: center; }
+h1.carousel-body-title, .carousel-body.mobile .carousel-body-title {
+  font-size: 72px; line-height: 72px; letter-spacing: -.02em; font-weight: 400;
+  text-align: center; color: #fff; margin: 0 144px;
+}
+.carousel-hero .carousel-body-text.cta {
+  position: relative; font-size: 36px; line-height: 46.8px; letter-spacing: -.02em;
+  text-align: center; color: #fff;
+}
+.carousel-hero .default-cta.cta {
+  position: relative; text-align: center; margin: 20px 10% 0; padding-top: 14px; clear: both;
+}
+.carousel-hero a.cta-block {
+  display: inline-block; padding: 15px 45px; border: 1px solid #fff; color: #fff;
+  background: rgba(0,0,0,.5); text-align: center;
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 18px; line-height: 23.4px;
+  letter-spacing: -.02em;
+}
+.carousel-hero .carousel-body.mobile { display: none; }
+
+/* ===== drop-cap intro ===== */
+section.bleed-bottom { padding: 70px 72px 0; max-width: 1440px; }
+p.headline-content {
+  font-size: 36px; line-height: 39.6px; letter-spacing: -.02em; color: #3F3D3D;
+}
+span.first-large {
+  font-size: 102px; line-height: 1; letter-spacing: -.02em;
+  margin: -7px 0 0; height: 64px; float: left; padding-right: 7px;
+}
+p.headline-content-mobile { display: none; }
+
+/* ===== icon duo promo cards (Get Screened / Family History) ===== */
+.duo-table .col-double { display: table-cell; width: 50%; vertical-align: top; }
+.duo-table .cell-l { padding-right: 9px; }
+.duo-table .cell-r { padding-left: 9px; }
+.promo-with-background { text-align: center; padding: 10px 0 60px; color: #fff; }
+.promo-with-background .promo-icon { height: 95px; }
+.promo-with-background .promo-icon .fa-stack { width: 108px; height: 95px; line-height: 108px; display: inline-block; }
+.promo-with-background .promo-icon .mda-stack-1x { font-size: 54px; line-height: 108px; color: #fff; font-style: normal; display: block; }
+.promo-with-background .promo-header { color: #fff; padding: 0 10%; }
+.promo-with-background h3.title { font-size: 36px; line-height: 46.8px; letter-spacing: -.02em; font-weight: 400; }
+.promo-with-background .promo-text { padding: 0 10%; }
+.promo-with-background .body { font-size: 21px; line-height: 27.3px; letter-spacing: -.02em; margin: 20px 0; }
+.promo-with-background .body p { margin: 21px 0; }
+.promo-with-background .cta-right-arrow-wrapper { margin-top: 30px; height: 23px; }
+.promo-with-background a.cta.cta-right-arrow {
+  display: block; position: relative;
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 18px; line-height: 23.4px;
+  letter-spacing: -.02em; color: #fff;
+}
+.promo-with-background .cta-right-arrow i.mdicon-arrow {
+  display: inline-block; position: relative; font-size: 18px; margin-left: 15px;
+  color: #fff; font-style: normal;
+}
+.mda-icon-screenings::before { content: "\e647"; }
+.mda-icon-powerinnumbers::before { content: "\e61a"; }
+
+/* ===== Manage Your Risk (gray link-list band; bg+padding from chrome section.highlight.apply) ===== */
+.content .nested-section-title h2.section-title {
+  font-size: 48px; line-height: 48px; letter-spacing: -.02em; font-weight: 400;
+  text-align: center; margin: -4px 0 50px;
+}
+.risk-table .col-double { display: table-cell; width: 50%; vertical-align: top; }
+.risk-table .col-double.cell-m { padding-right: 72px; }
+.risk-table .col-double.last.cell-m { padding-left: 72px; padding-right: 0; }
+.link-list-body ul li.link { display: table; width: 100%; }
+.link-list-body a.mdicon-linklist {
+  display: table-cell; position: relative; padding: 30px 10px 30px 0;
+  border-bottom: 1px solid #D0D0CE; font-family: 'MDIcons'; font-size: 18px;
+}
+.link-list-body a.mdicon-linklist::before {
+  content: "\e601"; position: absolute; right: 10px; top: 50%; margin-top: -9px; color: #DA291C;
+}
+h4.link-title {
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 14px; line-height: 18.2px;
+  letter-spacing: -.02em; font-weight: 400; text-transform: uppercase; color: #000; max-width: 87%;
+}
+p.link-body {
+  font-family: 'Univers LT W01_45 Light', Arial; font-size: 14px; line-height: 16.8px;
+  letter-spacing: -.02em; color: #605D5D; margin-top: 10px; max-width: 85%;
+}
+
+/* ===== orange split promo band (Lyda Hill Cancer Prevention Center) ===== */
+.headline-with-image { position: relative; display: table; width: 100%; height: 355px; }
+.headline-with-image .image-container, .headline-with-image .info-container {
+  display: table-cell; width: 50%; vertical-align: middle;
+}
+.headline-with-image .image-container { position: relative; overflow: hidden; }
+.headline-with-image .image-container div { height: 355px; }
+.headline-with-image .image-container img {
+  min-width: 100%; position: absolute; top: -9999px; bottom: -9999px; left: -9999px; right: -9999px; margin: auto;
+}
+.headline-with-image .info-container { color: #fff; }
+.headline-with-image .info-container.orange { background: #E96613; }
+.headline-with-image .info-container .info { padding: 0 20%; }
+.headline-with-image .info-container .heading {
+  font-family: 'Univers LT W01_65 Bold', Arial; font-size: 24px; letter-spacing: -.02em;
+  line-height: 1.3; margin: 0; font-weight: normal;
+}
+.headline-with-image .info-container .description {
+  font-size: 48px; letter-spacing: -.02em; line-height: 1.3; font-weight: normal; margin: 25px 0;
+}
+.headline-with-image .info-container .cta {
+  font-family: 'Univers LT W01_65 Bold', Arial; font-size: 18px; letter-spacing: -.02em;
+  line-height: 1.3; color: #fff; position: relative;
+}
+.headline-with-image .info-container .cta i { margin-left: 15px; font-style: normal; }
+
+/* ===== capture-state live widgets (server-rendered scroll affordances +
+   JS-injected CTA drawer / chat replica) — lifted from live HTML + source CSS ===== */
+a.scrollToTop {
+  position: fixed; top: 82%; right: 20px; z-index: 1000; display: block;
+  width: 52px; height: 52px; padding: 10px; border-radius: 50%; background: #fff;
+  text-align: center; font-weight: bold;
+}
+.cta_icon_top {
+  position: absolute; top: 1px; left: 1px; display: inline-block; width: 50px; height: 50px;
+  border: 2px solid; border-radius: 50%; color: #222121; font-weight: normal; font-size: 35px;
+}
+.cta_icon_top::before { font-family: 'FontAwesome'; content: "\f106"; line-height: 46px; }
+.cta_top_text { position: relative; top: 14px; left: 0; font-size: 13px; color: #222121; }
+.mda-drawer-replica {
+  position: fixed; bottom: 0; right: 0; z-index: 999; opacity: 0; pointer-events: none;
+  font-family: 'Open Sans Light', Arial; font-size: 16px;
+}
+.mda-drawer-replica .drawer-more { font-size: 12px; text-transform: uppercase; }
+.mda-drawer-replica .drawer-title { font-family: 'Univers LT W01_65 Bold', Arial; }
+a.scroll-down {
+  position: absolute; bottom: 15px; left: 50%; margin-left: -44px; z-index: 500;
+  text-align: center; color: #fff; opacity: 0;
+}
+a.scroll-down p.text {
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 16px; line-height: 1.3;
+  letter-spacing: -.02em; margin-bottom: 10px;
+}
+.mda-drawer-replica a { display: block; }
+.mda-drawer-replica .drawer-panel { display: block; }
+.mda-drawer-replica .drawer-bar a.drawer-cell { display: inline-block; }
+.mda-icon-appointments::before { content: "\e601"; }
+.mda-icon-user::before { content: "\e632"; }
+.chat-widget-replica { position: fixed; right: 20px; bottom: 30px; z-index: 998; }
+.chat-widget-replica::before {
+  content: "Chat with us."; display: inline-block; vertical-align: middle;
+  background: #3361AD; color: #fff; font-family: Arial, sans-serif; font-size: 16px;
+  padding: 8px 14px; border-radius: 4px; margin-right: 10px;
+}
+.chat-widget-replica::after {
+  content: ""; display: inline-block; vertical-align: middle; width: 50px; height: 50px;
+  border-radius: 50%; background: #2B4FA2;
+}
+
+/* =========================================================================
+   MOBILE (max-width: 767px)
+   ========================================================================= */
+@media (max-width: 991px) {
+  section.highlight { padding: 0; }
+  /* live mobile widgets */
+  a.scrollToTop { top: 80%; width: 42px; height: 42px; }
+  .cta_icon_top { width: 40px; height: 40px; font-size: 25px; font-weight: bold; }
+  .cta_icon_top::before { line-height: 36px; }
+  .cta_top_text { top: 11px; font-size: 11px; }
+  .mda-drawer-replica {
+    opacity: 0; left: 0; right: 0; bottom: 0; width: 100%;
+    background: #3361AD;
+  }
+  .mda-drawer-replica.scrolled { opacity: 1; }
+  .mda-drawer-replica .drawer-panel { display: none; }
+  .mda-drawer-replica .drawer-title { font-family: var(--body-font-family); }
+  .mda-drawer-replica .drawer-bar { display: flex; height: 75px; }
+  .mda-drawer-replica .drawer-bar a.drawer-cell {
+    flex: 1 1 auto; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 0 12px; white-space: nowrap;
+    color: #fff; font-family: 'Open Sans Regular', Arial, sans-serif; font-size: 15px;
+    border-left: 1px solid rgba(255,255,255,.35); text-align: center; line-height: 22px;
+  }
+  .mda-drawer-replica .drawer-bar a.drawer-cell:first-child { border-left: 0; }
+  .mda-drawer-replica .drawer-ic { display: block; font-size: 22px; line-height: 26px; font-style: normal; }
+  .chat-widget-replica { right: 17px; bottom: 103px; z-index: 1001; }
+  .chat-widget-replica::before { display: none; }
+  .chat-widget-replica::after {
+    width: 44px; height: 44px; background: #2B3990; content: "\2022\2022\2022";
+    color: #fff; font-size: 10px; letter-spacing: 1px; line-height: 40px; text-align: center;
+  }
+  .table, .duo-table, .risk-table { display: block; width: auto; }
+
+  /* hero */
+  .carousel-hero .carousel-image.media-image {
+    height: 320px;
+    background-image: url("https://www.mdanderson.org/content/mda/en/prevention-screening/jcr:content/mainparsys/herocarousel/slides/1/imagesvp.resize.360.290.high.jpg/1768783642814.jpg");
+  }
+  .carousel-hero .carousel-body { display: none; }
+  .carousel-hero .carousel-body.mobile { display: block; }
+  .carousel-body.mobile .carousel-body-title { font-size: 36px; line-height: 36px; margin: 0 35px; }
+  .carousel-body.mobile .carousel-body-text.cta { font-size: 24px; line-height: 31.2px; margin: 0 35px; }
+  .carousel-body.mobile .default-cta.cta { margin: 20px 10% 0; }
+  .carousel-hero a.cta-block { padding: 12px 30px 10px; font-size: 16px; line-height: 20.8px; }
+
+  /* drop-cap intro */
+  section.bleed-bottom { padding: 0; }
+  .headline { padding: 10px 35px 20px; }
+  p.headline-content.mda-hide-md { display: none; }
+  p.headline-content-mobile.mda-show-md {
+    display: block; font-size: 18px; line-height: 23.4px; letter-spacing: -.02em;
+    color: #3F3D3D; margin-top: 5px;
+  }
+
+  /* icon duo promos */
+  .duo-table .col-double { display: block; width: auto; padding: 0; }
+  .promo-with-background { padding: 0 0 40px; }
+  .promo-with-background .promo-icon { height: 88px; }
+  .promo-with-background .promo-icon .fa-stack { width: 88px; height: 88px; line-height: 88px; }
+  .promo-with-background .promo-icon .mda-stack-1x { font-size: 48px; line-height: 88px; }
+  .promo-with-background .promo-header { padding: 0 36px; }
+  .promo-with-background h3.title { font-size: 32px; line-height: 41.6px; padding: 0 22px; }
+  .promo-with-background .promo-text { padding: 0 36px; }
+  .promo-with-background .body { font-size: 16px; line-height: 20.8px; }
+  .promo-with-background .body p { margin: 16px 0; }
+  .promo-with-background .cta-right-arrow-wrapper { margin-top: 20px; height: 21px; }
+  .promo-with-background a.cta.cta-right-arrow { font-size: 16px; line-height: 20.8px; padding-left: 15px; }
+  .promo-with-background .cta-right-arrow i.mdicon-arrow { font-size: 16px; margin-left: 5px; }
+  .duo-table .col-double.last.cell-r { padding-top: 48px; }
+
+  /* Manage Your Risk */
+  .content .nested-section-title h2.section-title {
+    font-size: 24px; line-height: 24px; padding: 35px; margin: 0;
+  }
+  .risk-table .col-double, .risk-table .col-double.cell-m, .risk-table .col-double.last.cell-m {
+    display: block; width: auto; padding: 0;
+  }
+  .risk-table .col-double.last.cell-m { padding-top: 48px; }
+  .link-list { padding: 32px 0; }
+  .link-list-body ul li.link { display: block; }
+  .link-list-body a.mdicon-linklist { display: block; padding: 15px 35px; border-bottom: 1px solid #D0D0CE; font-size: 16px; }
+  .link-list-body li.link.top-border a.mdicon-linklist { border-top: 1px solid #D0D0CE; }
+  .link-list-body li.link:last-child a.mdicon-linklist { border-bottom: 0; }
+  .link-list-body a.mdicon-linklist::before { right: 35px; margin-top: -8px; }
+  h4.link-title { font-size: 16px; line-height: 20.8px; }
+  p.link-body.mda-hide-sm { display: none; }
+
+  /* orange split promo band */
+  .headline-with-image { display: block; height: auto; }
+  .headline-with-image .image-container { display: none; }
+  .headline-with-image .info-container { display: block; width: 100%; padding: 40px; }
+  .headline-with-image .info-container .info { padding: 0; }
+  .headline-with-image .info-container .heading { font-size: 25px; }
+  .headline-with-image .info-container .description { font-size: 45px; }
+  .headline-with-image .info-container .cta { font-size: 19px; }
+}
+</style>
+</head>
+<body class="basepage">
+<!-- CHROME:TOP (verbatim from assets/chrome.html) -->
+<header class="mda-nav" data-canon="chrome-header">
+  <a id="content-skip-btn" href="#skip">Skip to Content</a>
+  <div class="mda-cta-list-container desktop" data-canon="chrome-utility-bar">
+    <ul class="mda-cta-list">
+      <li class="mda-cta-list-item login dropdown">
+        <a class="dropdown-trigger" href="https://my.mdanderson.org/MyChart/Home/"><span class="red-my">My</span><span class="white-chart">Chart</span></a>
+      </li>
+      <li class="mda-cta-list-item appointment dropdown">
+        <button class="dropdown-trigger" type="button">Request an Appointment</button>
+      </li>
+      <li class="mda-cta-list-item donate onlypossiblehere">
+        <a class="dropdown-trigger at-element-click-tracking" href="javascript:void(0);">Donate Today<i class="fa fa-heart mda-inverse"></i></a>
+      </li>
+    </ul>
+  </div>
+  <div class="mda-nav-top flex-row">
+    <a id="nav-logo" href="./index.html">
+      <img src="https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/xmda-logo.png.pagespeed.ic.jLVBCg-7dN.webp" alt="The University of Texas MD Anderson Cancer Center">
+    </a>
+    <div class="spacer desktop"></div>
+    <ul class="mda-nav-utility desktop flex-row">
+      <li><a class="mda-nav-utility-clinical-trials" href="./patients-family/diagnosis-treatment/clinical-trials.html">Clinical Trials</a></li>
+      <li><a class="mda-nav-utility-directions" href="./about-md-anderson/our-locations.html"><span>Locations</span></a></li>
+      <li><a class="careers" href="https://jobs.mdanderson.org/">Careers<span class="mda-icon-linkout"></span></a></li>
+      <li><a class="mda-nav-utility-call" href="https://www.mdanderson.org/about-md-anderson/contact-us.html">Contact Us</a></li>
+      <li><a class="mda-nav-utility-doctors" href="https://faculty.mdanderson.org/">Our Doctors</a></li>
+      <li class="dropdown mda-sublist-container">
+        <button class="mda-nav-utility-sublist-toggle mda-nav-utility-languages dropdown-trigger" type="button">Languages</button>
+      </li>
+    </ul>
+    <div id="nav-search">
+      <form id="nav-search-form" action="#" onsubmit="return false">
+        <i class="search-icon mda-icon-search"></i>
+        <input id="site-search" type="text" placeholder="Search" autocomplete="off">
+      </form>
+      <ul id="search-results"></ul>
+      <div id="live-search-results"></div>
+      <div class="search-options"></div>
+    </div>
+    <div class="mda-nav-mobile-menu mobile">
+      <button class="mda-nav-mobile-search-button open active" type="button">
+        <i class="search-icon mda-icon-search mobile-search"></i>
+        <span class="mda-nav-mobile-search-title">Search</span>
+      </button>
+      <button class="mda-nav-mobile-menu-button open active" type="button">
+        <i class="fa fa-2x mda-icon-menu"></i>
+        <span class="mda-nav-mobile-menu-title">Menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="mda-nav" data-canon="chrome-primary-nav">
+  <div class="mda-nav-wrapper">
+    <div class="mda-nav-main">
+      <ul class="mda-nav-main-list">
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-1" href="./patients-family.html">Patients &amp; Family</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-2" href="./prevention-screening.html">Prevention &amp; Screening</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-3" href="./donors-volunteers.html">Donors &amp; Volunteers</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-4" href="https://www.mdanderson.org/for-physicians.html">For Physicians</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-5" href="./research.html">Research</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+        <li class="dropdown">
+          <div class="mda-nav-button-wrapper dropdown-trigger">
+            <a id="mda-nav-link-6" href="https://www.mdanderson.org/education-training.html">Education &amp; Training</a>
+            <button class="dropdown-trigger-button" type="button"></button>
+          </div>
+          <div class="mda-nav-flyout" hidden></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /CHROME:TOP -->
+<div></div>
+<main class="mda-content" data-template="landing">
+  <!-- Go To Top (server-rendered on live; shown on scroll) -->
+  <a href="#" class="scrollToTop"><span class="cta_icon_top fa-angle-up"></span><span class="cta_top_text">Top</span></a>
+  <!-- capture-state: live JS-injected CTA drawer (offscreen/invisible on live desktop render) -->
+  <div class="mda-drawer-replica" data-canon="capture-state-live-widget">
+    <div class="drawer-panel">
+      <p class="drawer-more">More</p>
+      <p class="drawer-title">Let's get started.</p>
+      <a href="https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/appointments.html">Request an appointment online.</a>
+    </div>
+    <div class="drawer-bar">
+      <a class="drawer-cell" href="tel:+18444296441"><i class="drawer-ic mda-icon-call-stroke"></i>Call</a>
+      <a class="drawer-cell" href="https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/appointments.html"><i class="drawer-ic mda-icon-appointments"></i>Request appointment</a>
+      <a class="drawer-cell" href="https://my.mdanderson.org"><i class="drawer-ic mda-icon-user"></i>MyChart</a>
+    </div>
+  </div>
+  <!-- capture-state: chat widget replica (pixels only; text via pseudo-elements) -->
+  <div class="chat-widget-replica" aria-hidden="true"></div>
+  <div id="skip">
+    <div class="content">
+
+      <!-- hero -->
+      <section class="bleed-full" data-section="hero" data-intent="brand-claim" data-layout="full-bleed" data-media="background-image">
+        <div class="module m-bleed">
+          <div class="carousel-hero">
+            <div class="carousel-group carousel-config-hero slick-initialized">
+              <div class="slick-list draggable">
+                <div class="slick-track">
+                  <div class="carousel-item medium-hero slick-slide">
+                    <div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div class="carousel-image media-image mda-media-brightness medium-overlay"></div>
+                    </div>
+                    <div class="carousel-body">
+                      <div class="carousel-body-inner">
+                        <div class="carousel-body-content">
+                          <h1 class="carousel-body-title">Prevention &amp; Screening</h1>
+                          <div class="carousel-body-text cta">A resource for health and screening information</div>
+                          <div class="default-cta cta">
+                            <a class="cta-block" href="https://www.mdanderson.org/prevention-screening/manage-your-risk.html">Manage Your Risk</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-body mobile">
+                      <div class="carousel-body-inner mobile">
+                        <div class="carousel-body-content mobile">
+                          <div class="carousel-body-title">Prevention &amp; Screening</div>
+                          <div class="carousel-body-text cta">A resource for health and screening information</div>
+                          <div class="default-cta cta">
+                            <a class="cta-block" href="https://www.mdanderson.org/prevention-screening/manage-your-risk.html">Manage Your Risk</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="scroll-down">
+              <p class="text">Scroll Ahead</p>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- blue we're-here-for-you strip (chrome component, page-slotted) -->
+      <section class="appt-section bleed-full" data-canon="chrome-blue-strip" data-section="contact-strip" data-intent="conversion" data-layout="banner">
+        <div class="module">
+          <div class="appointment-bar banner">
+            <div class="appointment-bar-wrapper">
+              <div class="during-hours">
+                <span><span class="bold">We're here for you.</span> Call us at <span class="tel"><a href="tel:+18444296441">1-844-429-6441</a></span> or<br class="appointment-bar-cta-break"> <a href="https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/appointments.html">request an appointment online.</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- drop-cap intro -->
+      <section class="bleed-bottom" data-section="intro" data-intent="editorial-lede" data-layout="single-column">
+        <div class="col-single">
+          <div class="module m-bleed-bottom">
+            <div class="headline">
+              <p class="headline-content mda-hide-md"><span class="first-large">P</span>revention is a cornerstone of UT MD Anderson's approach to eliminating cancer. You can reduce your risk and your family&rsquo;s risk for cancer by making healthy lifestyle choices, getting screened and vaccinating your children.</p>
+              <p class="headline-content-mobile mda-show-md">Prevention is a cornerstone of UT&nbsp;MD&nbsp;Anderson's approach to eliminating cancer. You can reduce your risk and your family&rsquo;s risk for cancer by making healthy lifestyle choices, getting screened and vaccinating your children.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- icon duo promo cards -->
+      <section class="highlight" data-section="icon-duo" data-intent="wayfinding" data-layout="two-column" data-items="2">
+        <div class="table duo-table">
+          <div class="col-double cell-l">
+            <div class="module m-bleed">
+              <div class="promo promo-background-purple promo-with-background">
+                <div class="promo-icon-header-wrapper">
+                  <div class="promo-icon icon-circle">
+                    <span class="fa-stack fa-3x"><i class="fa mda-icon-screenings mda-stack-1x"></i></span>
+                  </div>
+                  <div class="promo-header">
+                    <h3 class="title minion-heading heading-center">Get Screened</h3>
+                  </div>
+                </div>
+                <div class="promo-text">
+                  <div class="body promo-text-small">
+                    <p>Regular screenings help detect cancers early and maximize your chance for successful treatment.</p>
+                  </div>
+                  <div class="cta-wrapper cta-right-arrow-wrapper">
+                    <a class="cta cta-right-arrow" href="https://www.mdanderson.org/prevention-screening/get-screened.html">Read about our screening options<i class="mdicon-arrow"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-double last cell-r">
+            <div class="module m-bleed">
+              <div class="promo promo-background-red promo-with-background">
+                <div class="promo-icon-header-wrapper">
+                  <div class="promo-icon icon-circle">
+                    <span class="fa-stack fa-3x"><i class="fa mda-icon-powerinnumbers mda-stack-1x"></i></span>
+                  </div>
+                  <div class="promo-header">
+                    <h3 class="title minion-heading heading-center">Family History</h3>
+                  </div>
+                </div>
+                <div class="promo-text">
+                  <div class="body promo-text-small">
+                    <p>Knowing your family's health history can help you take steps to reduce your cancer risk.</p>
+                  </div>
+                  <div class="cta-wrapper cta-right-arrow-wrapper">
+                    <a class="cta cta-right-arrow" href="https://www.mdanderson.org/prevention-screening/family-history.html">Read more about family history<i class="mdicon-arrow"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Manage Your Risk link lists -->
+      <section class="highlight apply" data-section="manage-your-risk" data-intent="wayfinding" data-layout="two-column" data-items="7">
+        <div class="nested-section-title">
+          <h2 class="section-title text-center">Manage Your Risk</h2>
+        </div>
+        <div class="table risk-table">
+          <div class="col-double cell-m cell-full-height">
+            <div class="module">
+              <div class="link-list">
+                <div class="link-list-body">
+                  <ul>
+                    <li class="link top-border">
+                      <a class="mdicon-linklist" href="https://www.mdanderson.org/prevention-screening/manage-your-risk/diet.html">
+                        <h4 class="link-title">Diet</h4>
+                        <p class="link-body mda-hide-sm">The food you eat plays a vital role in cancer prevention. Learn how to create a healthy diet with our dietitians&rsquo; tips.</p>
+                      </a>
+                    </li>
+                    <li class="link">
+                      <a class="mdicon-linklist" href="https://www.mdanderson.org/prevention-screening/manage-your-risk/body-weight.html">
+                        <h4 class="link-title">Body Weight</h4>
+                        <p class="link-body mda-hide-sm">Maintaining a healthy body weight lowers your risk for 13 types of cancer. Learn how to get to a healthy weight.</p>
+                      </a>
+                    </li>
+                    <li class="link">
+                      <a class="mdicon-linklist" href="https://www.mdanderson.org/prevention-screening/manage-your-risk/physical-activity.html">
+                        <h4 class="link-title">Physical Activity</h4>
+                        <p class="link-body mda-hide-sm">By increasing your physical activity, you can lower your risk of many types of cancers.</p>
+                      </a>
+                    </li>
+                    <li class="link">
+                      <a class="mdicon-linklist" href="https://www.mdanderson.org/prevention-screening/manage-your-risk/hpv.html">
+                        <h4 class="link-title">HPV</h4>
+                        <p class="link-body mda-hide-sm">Almost everyone will get the human papillomavirus (HPV) in their lifetime. HPV causes almost all cervical cancers.</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-double last cell-m">
+            <div class="module">
+              <div class="link-list">
+                <div class="link-list-body">
+                  <ul>
+                    <li class="link top-border">
+                      <a class="mdicon-linklist" href="https://www.mdanderson.org/prevention-screening/manage-your-risk/hepatitis.html">
+                        <h4 class="link-title">Hepatitis</h4>
+                        <p class="link-body mda-hide-sm">Hepatitis is a leading cause of liver cancer. Learn about the risks, screening and how to protect yourself.</p>
+                      </a>
+                    </li>
+                    <li class="link">
+                      <a class="mdicon-linklist" href="https://www.mdanderson.org/prevention-screening/manage-your-risk/tobacco-control-at-md-anderson/smoking-tobacco.html">
+                        <h4 class="link-title">Smoking and tobacco</h4>
+                        <p class="link-body mda-hide-sm">Smoking and tobacco use raises your cancer risk. Learn how to quit and get tips to avoid secondhand smoke.</p>
+                      </a>
+                    </li>
+                    <li class="link">
+                      <a class="mdicon-linklist" href="https://www.mdanderson.org/prevention-screening/manage-your-risk/skin-safety.html">
+                        <h4 class="link-title">Skin safety</h4>
+                        <p class="link-body mda-hide-sm">Being smart about exposure to UV rays from the sun and tanning beds can help you prevent skin cancer.</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- orange split promo band -->
+      <section class="bleed-full" data-section="prevention-center-promo" data-intent="campaign" data-layout="split-band" data-media="image">
+        <div class="module">
+          <div class="headline-with-image">
+            <div class="image-container left">
+              <div>
+                <img src="https://www.mdanderson.org/content/mda/en/prevention-screening/jcr:content/mainparsys/headlineandimage.resize.700.355.high.jpg/1768753347402.jpg" alt="the star">
+              </div>
+            </div>
+            <div class="info-container orange">
+              <div class="info">
+                <h2 class="heading"></h2>
+                <p class="description">Lyda Hill Cancer Prevention Center</p>
+                <a class="cta" href="https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/cancer-prevention-center.html">Learn more<i class="teaser-more mdicon-arrow"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!-- CHROME:ENDCANCER -->
+    <div class="pre-footer" data-canon="chrome-endcancer">
+      <div class="section"></div>
+      <div class="iparys_inherited">
+        <section class="highlight apply" data-section="endcancer-trio">
+          <div class="nested-section-title">
+            <h2 class="section-title text-center">Help #EndCancer</h2>
+          </div>
+          <div class="table table-3col">
+            <div class="cell-t cell-full-height">
+              <div class="module m-bleed">
+                <div class="promo promo-no-icon promo-background-red">
+                  <div class="promo-icon-header-wrapper">
+                    <div class="promo-header"><h3 class="title minion-heading heading-center">Give Now</h3></div>
+                  </div>
+                  <div class="promo-text">
+                    <div class="body promo-text-normal">Your gift will help make a tremendous difference.</div>
+                    <div class="cta-wrapper cta-block-wrapper">
+                      <a class="cta cta-block" href="https://gifts.mdanderson.org/Default.aspx?tsid=37435">Donate <span class="mda-icon-linkout"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cell-t cell-full-height">
+              <div class="module m-bleed">
+                <div class="promo promo-no-icon promo-background-black">
+                  <div class="promo-icon-header-wrapper">
+                    <div class="promo-header"><h3 class="title minion-heading heading-center">Donate Blood</h3></div>
+                  </div>
+                  <div class="promo-text">
+                    <div class="body promo-text-normal"><p>Our patients depend on blood and platelet donations.</p></div>
+                    <div class="cta-wrapper cta-block-wrapper">
+                      <a class="cta cta-block" href="https://www.mdandersonbloodbank.org/">Make an appointment <span class="mda-icon-linkout"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cell-t last cell-full-height">
+              <div class="module m-bleed">
+                <div class="promo promo-no-icon promo-background-blue">
+                  <div class="promo-icon-header-wrapper">
+                    <div class="promo-header"><h3 class="title minion-heading heading-center">Shop UT MD Anderson</h3></div>
+                  </div>
+                  <div class="promo-text">
+                    <div class="body promo-text-normal"><p>Show your support for our mission through branded merchandise.</p></div>
+                    <div class="cta-wrapper cta-block-wrapper">
+                      <a class="cta cta-block" href="https://shop.mdanderson.org">View products <span class="mda-icon-linkout"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- /CHROME:ENDCANCER -->
+
+    <!-- CHROME:BOTTOM -->
+    <section class="global-footer bleed-full" data-canon="chrome-footer" data-section="footer">
+      <footer>
+        <div class="subscribe-to" data-canon="chrome-newsletter">
+          <div class="col-single inner">
+            <div class="icon-circle">
+              <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa mda-icon-email mda-stack-1x"></i>
+              </span>
+            </div>
+            <div class="subscribeTitle">Subscribe to our Cancerwise newsletter</div>
+            <form id="29" action="#" onsubmit="return false">
+              <div class="fieldContainer">
+                <div id="tfa_23-D"><div class="inputWrapper"><input id="tfa_23" type="text" placeholder="First Name *"></div></div>
+                <div id="tfa_38-D"><div class="inputWrapper"><input id="tfa_38" type="text" placeholder="Last Name *"></div></div>
+                <div id="tfa_20-D"><div class="inputWrapper"><input id="tfa_20" type="text" placeholder="Email Address *"></div></div>
+              </div>
+              <div class="footer-cta-wrapper">
+                <div class="footer-cta"><input class="ftrSubGo" type="submit" value="Get started"></div>
+                <div class="footer-cta-mobile"><input class="ftrSubGo" type="submit" value="Get started"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="col2 mda-logo">
+            <a href="./index.html">
+              <img class="desktop" src="https://www.mdanderson.org/content/mda/en/jcr:content/footer/xdesktoplogo.resize.png.pagespeed.ic.wmDIh2S-LF.webp" alt="UT MD Anderson logo">
+              <img class="mobile" src="https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp" alt="UT MD Anderson logo">
+            </a>
+            <li class="at-sticky-promo-li">
+                  <a class="at-sticky-promo-link-wrapper" href="https://onlypossiblehere.mdanderson.org"><div class="at-sticky-promo-top"><div class="at-promo-svg-wrapper"><svg viewBox="0 0 125 26" width="125" height="26" aria-hidden="true"><style>.st0-desktop { fill: #000; }</style></svg></div><span class="at-promo-arrow"><i class="fa-solid fa-angle-right"></i></span></div><div class="at-sticky-promo-bottom"><span class="at-promo-return-text">Explore what your support makes possible</span></div></a>
+            </li>
+          </div>
+          <div class="col1"></div>
+          <div class="col2">
+            <ul>
+              <li class="title">Explore<div class="toggle"></div></li>
+              <li><a href="./patients-family.html">Patients &amp; Family</a></li>
+              <li><a href="./prevention-screening.html">Prevention &amp; Screening</a></li>
+              <li><a href="./donors-volunteers.html">Donors &amp; Volunteers</a></li>
+              <li><a href="https://www.mdanderson.org/for-physicians.html">For Physicians</a></li>
+              <li><a href="./research.html">Research</a></li>
+              <li><a href="https://www.mdanderson.org/education-training.html">Education &amp; Training</a></li>
+              <li><a href="./patients-family/diagnosis-treatment/clinical-trials.html">Clinical Trials</a></li>
+              <li><a href="https://www.mdanderson.org/about-md-anderson/contact-us/languages.html">Languages</a></li>
+            </ul>
+          </div>
+          <div class="col2">
+            <ul>
+              <li class="title">About<div class="toggle"></div></li>
+              <li><a href="./about-md-anderson.html">About <span class="nowrap">UT MD Anderson</span></a></li>
+              <li><a href="https://jobs.mdanderson.org/">Careers<span class="mda-icon-linkout"></span></a></li>
+              <li><a href="./cancerwise.html">Blog</a></li>
+              <li><a href="https://www.mdanderson.org/newsroom.html">Newsroom</a></li>
+              <li><a href="https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html">Editorial Standards</a></li>
+              <li><a href="https://www.mdanderson.org/about-md-anderson/employee-resources.html">For Employees</a></li>
+              <li><a href="https://shop.mdanderson.org/">Merchandise<span class="mda-icon-linkout"></span></a></li>
+              <li><a href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html">Title IX Reporting (Sexual Misconduct)</a></li>
+              <li><a href="https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html">Price Transparency</a></li>
+            </ul>
+          </div>
+          <div class="col2">
+            <ul>
+              <li class="title">Finding Your Way<div class="toggle"></div></li>
+              <li><a href="https://faculty.mdanderson.org/">Our Doctors</a></li>
+              <li><a href="./about-md-anderson/our-locations.html">Locations</a></li>
+              <li><a href="https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html">Directions</a></li>
+              <li><a href="https://www.mdanderson.org/patients-family/html-sitemap.html">Sitemap</a></li>
+            </ul>
+            <ul id="a11y-block">
+              <li class="title">Digital Accessibility<div class="toggle"></div></li>
+              <li>
+                <a class="a11y-link" href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html">Accessibility Policy</a>
+                <a class="a11y-icon" href="https://www.levelaccess.com/MDAnderson"><img src="https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/eA_Icon_Black.svg" alt="MD Anderson works with Level Access to ensure our website is accessible and functional for all users. Free assistive technology is provided for people with physical disabilities. To learn more or to download the assistive technology tool, visit https://www.levelaccess.com/MDAnderson" width="80" height="30" style="margin-top:20px"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col3 last">
+            <ul id="get-in-touch">
+              <li class="title">Get in Touch<div class="toggle"></div></li>
+              <li class="footer-contact-item">
+                <a class="footerTel" href="tel:+18444296441">
+                  <div class="icon-circle"><span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x"></i><i class="fa mda-icon-call-stroke mda-stack-1x"></i></span></div>
+                  Call
+                  <div class="footer-contact-bold">1-844-429-6441</div>
+                </a>
+              </li>
+              <li class="footer-contact-item onlyLabel">
+                <a id="patients_family_footer" href="https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html">
+                  <div class="icon-circle"><span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x"></i><i class="fa mda-icon-knowledgecenter mda-stack-1x"></i></span></div>
+                  Ask a question
+                  <div class="footer-contact-bold"></div>
+                </a>
+              </li>
+            </ul>
+            <ul id="stay-connected">
+              <li class="title">Stay Connected<div class="toggle"></div></li>
+              <li class="stay-connected">
+                <div class="col-single inner">
+                  <div class="social-links-wrapper">
+                    <div class="social-links">
+                      <div class="social-links-carousel slick-initialized slick-slider">
+                        <button class="slick-prev" type="button">Previous</button>
+                        <div class="slick-list draggable">
+                          <div class="slick-track">
+                            <a class="box slick-slide slick-active" href="https://www.mdanderson.org//facebook.com/MDAnderson"><i class="fa fa-facebook-square fa-2x"></i></a>
+                            <a class="box slick-slide slick-active" href="https://www.mdanderson.org//x.com/UTMDAnderson"><i class="fa fa-x-twitter-square fa-2x"></i></a>
+                            <a class="box slick-slide slick-active" href="https://www.mdanderson.org//youtube.com/mdandersonorg"><i class="fa fa-youtube-play-square fa-2x"></i></a>
+                            <a class="box slick-slide slick-active" href="https://www.mdanderson.org//instagram.com/mdandersoncancercenter"><i class="fa fa-instagram-square fa-2x"></i></a>
+                            <a class="box slick-slide slick-active" href="https://www.mdanderson.org//linkedin.com/company/mdandersoncancercenter"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                            <a class="box slick-slide" href="http://bsky.app/profile/mdanderson.bsky.social"><i class="fa fa-bluesky-square fa-2x"></i></a>
+                            <a class="box slick-slide" href="https://threads.com/@mdandersoncancercenter"><i class="fa fa-threads-square fa-2x"></i></a>
+                          </div>
+                        </div>
+                        <button class="slick-next" type="button">Next</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul id="podcast">
+              <li class="title">Cancerwise Podcast<div class="toggle"></div></li>
+              <li class="podcast">
+                <div class="col-single inner">
+                  <div class="social-links-wrapper">
+                    <div class="social-links">
+                      <div class="social-links-carousel slick-initialized slick-slider">
+                        <button class="slick-prev" type="button">Previous</button>
+                        <div class="slick-list draggable">
+                          <div class="slick-track">
+                            <a class="box slick-slide slick-active" href="https://podcasts.apple.com/us/podcast/cancerwise-podcast/id1751785346"><i class="fa fa-apple-podcast-square fa-2x"></i></a>
+                            <a class="box slick-slide slick-active" href="https://open.spotify.com/show/28rgC5nO7OpLhnPlNylNem"><i class="fa fa-spotify-square fa-2x"></i></a>
+                            <a class="box slick-slide slick-active" href="http://www.youtube.com/playlist?list=PLKscGuVrfI9LvQrf5At-R7TewdfY4OeOP"><i class="fa fa-youtube-play-square fa-2x"></i></a>
+                            <a class="box slick-slide slick-active" href="http://www.pandora.com/podcast/cancerwise-podcast/PC:1001088873"><i class="fa fa-pandora-square fa-2x"></i></a>
+                            <a class="box slick-slide slick-active" href="http://www.iheart.com/podcast/269-cancerwise-podcast-185103717/"><i class="fa fa-iheart-square fa-2x"></i></a>
+                            <a class="box slick-slide" href="https://support.doctorpodcasting.com/podcastfeed/335"><i class="fa fa-rss-feed-square fa-2x"></i></a>
+                          </div>
+                        </div>
+                        <button class="slick-next" type="button">Next</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-links sublink-container">
+          <div class="footer-sublinks">
+            <div class="sublinks-list-container">
+              <ul>
+                <li class="title">More<div class="toggle"></div></li>
+                <li><a id="patients_family_footer_1" href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html">Website Privacy Policy</a></li>
+                <li><a id="patients_family_footer_2" href="https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html">Legal Statement &amp; Policies</a></li>
+                <li><a id="patients_family_footer_3" href="https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html">Reports to the State</a></li>
+                <li><a id="patients_family_footer_4" href="https://www3.mdanderson.org/emergencyalert/">Emergency Alert Information</a></li>
+                <li><a id="patients_family_footer_5" href="https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html">State of Texas Links</a></li>
+                <li><a id="patients_family_footer_6" href="https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html">Our Cancer Network</a></li>
+                <li><a id="patients_family_footer_7" href="https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html">Vendors &amp; Suppliers</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer-bar" data-canon="chrome-mission-band">
+          <div class="footer-bar-logo">
+            <a href="./index.html"><img class="logo" src="https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp" alt="UT MD Anderson logo"></a>
+          </div>
+          <div class="footer-bar-text">
+            <div class="missionstatement">The mission of The University of Texas MD Anderson Cancer Center is to eliminate cancer in Texas, the nation, and the world through outstanding programs that integrate patient care, research and prevention, and through education for undergraduate and graduate students, trainees, professionals, employees and the public.</div>
+            <p class="copyright">&copy; 2026 The University of Texas <span class="nowrap">MD Anderson</span> Cancer Center. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- /CHROME:BOTTOM -->
+  </div>
+</main>
+<script>
+(function () {
+  var d = document.querySelector('.mda-drawer-replica');
+  var on = function () { if (window.scrollY > 50) { d.classList.add('scrolled'); window.removeEventListener('scroll', on); } };
+  window.addEventListener('scroll', on); on();
+})();
+</script>
+</body>
+</html>

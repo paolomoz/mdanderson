@@ -1,0 +1,24 @@
+/* provenance: stardust:replica — @font-face lifted from
+   etc.clientlibs/mda/clientlibs/mda-web/A.clientlib-all.min.css (live site).
+   Minion (Adobe) + Univers LT (Monotype) are LICENSED kits: self-hosted here
+   strictly as local gate instrumentation. Delivery decision pending — see
+   stardust/direction.md § Named assumption (fonts). */
+@font-face { font-family: 'Minion Regular'; src: url(fonts/MinionPro-Regular.woff) format('woff'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Minion Bold'; src: url(fonts/MinionPro-Bold.woff) format('woff'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Minion Semi Bold'; src: url(fonts/MinionPro-Semibold.woff) format('woff'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Minion W01 Cap Regular'; src: url(fonts/c30f5672-a88d-407a-bf93-926f33c9d872.woff) format('woff'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Minion W01 SmBd Cap'; src: url(fonts/ae26e9d5-38bc-42e7-b8d7-18bf09c8418a.woff) format('woff'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Minion W01 SmBd Cap Regular'; src: url(fonts/ae26e9d5-38bc-42e7-b8d7-18bf09c8418a.woff) format('woff'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Univers LT W01_45 Light'; src: url(fonts/ecf89914-1896-43f6-a0a0-fe733d1db6e7.woff) format('woff'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Univers LT W01_55 Roman'; src: url(fonts/7b95cb9a-a288-4405-97a0-13095f56a903.woff) format('woff'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Univers LT W01_65 Bold'; src: url(fonts/b993da84-c1f6-474a-8f00-8aa797b3de8f.woff) format('woff'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'UniversLTW01-57Condense_723821'; src: url(fonts/1eaf27c0-f4de-4273-9f4c-1b3236ad2f3c.woff) format('woff'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'UniversLTW01-67BoldCn'; src: url(fonts/21decb60-b395-4de2-bd04-e38eb2a56d2f.woff) format('woff'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'MDIcons'; src: url(fonts/MDIcons.woff) format('woff'); font-weight: normal; font-display: block; }
+@font-face { font-family: 'mda-icons'; src: url(fonts/mda-icons.woff) format('woff'); font-weight: normal; font-display: block; }
+@font-face { font-family: 'FontAwesome'; src: url(fonts/fontawesome-webfont.woff) format('woff'); font-weight: normal; font-display: block; }
+@font-face { font-family: 'slick'; src: url(fonts/slick.woff) format('woff'); font-weight: normal; font-display: block; }
+@font-face { font-family: 'Open Sans Light'; src: url(fonts/Open-Sans-300.woff2) format('woff2'), url(fonts/Open-Sans-300.woff) format('woff'); font-weight: 300; font-display: swap; }
+@font-face { font-family: 'Open Sans Regular'; src: url(fonts/Open-Sans-regular.woff) format('woff'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Open Sans Semibold'; src: url(fonts/Open-Sans-600.woff) format('woff'); font-weight: 600; font-display: swap; }
+@font-face { font-family: 'Open Sans Bold'; src: url(fonts/Open-Sans-700.woff) format('woff'); font-weight: 700; font-display: swap; }

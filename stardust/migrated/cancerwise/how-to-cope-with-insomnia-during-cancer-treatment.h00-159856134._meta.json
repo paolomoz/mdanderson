@@ -1,0 +1,104 @@
+{
+  "slug": "cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html",
+  "type": "article",
+  "renderBranch": "A",
+  "template": null,
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "gatesPassed": [
+    "replica-pixel-gate-1440",
+    "replica-pixel-gate-360",
+    "mobile-adapt",
+    "placeholder-gate",
+    "content-sourcing"
+  ],
+  "modules": [],
+  "slotsFilled": [],
+  "canonShas": {
+    "header": "51090f5",
+    "footer": "1868d83",
+    "css": "278066d"
+  },
+  "deviations": [
+    {
+      "where": "media-query breakpoints (chrome + page styles)",
+      "reason": "live-DOM probe: nav.mda-nav is display:none below 992px on the live origin; replica desktop mega-nav needs ~1325px and overflowed at a 768px viewport. Alignment matches live chrome behavior and satisfies the no-horizontal-overflow contract at 768. Residual (ledgered): live desktop layout is fluid 992-1440 while the replica is fixed-width, so minor overflow persists between 992px and ~1325px (live itself overflows at 992: 1005/992)."
+    }
+  ],
+  "migrationDecisions": [
+    {
+      "kind": "canon-deviation",
+      "where": "media-query breakpoints (chrome + page styles)",
+      "what": "mobile rules extended from <=767px to <=991px; desktop complements (min-width 767/768px) shifted to >=992px",
+      "reason": "live-DOM probe: nav.mda-nav is display:none below 992px on the live origin; replica desktop mega-nav needs ~1325px and overflowed at a 768px viewport. Alignment matches live chrome behavior and satisfies the no-horizontal-overflow contract at 768. Residual (ledgered): live desktop layout is fluid 992-1440 while the replica is fixed-width, so minor overflow persists between 992px and ~1325px (live itself overflows at 992: 1005/992)."
+    },
+    {
+      "kind": "external-origin-links-kept",
+      "count": 148,
+      "reason": "links to mdanderson.org pages outside the 12-page inventory keep their absolute source URLs (live site — a bounce beats a 404). Not marked data-broken-link: targets resolve on the live origin."
+    },
+    {
+      "kind": "media-reuse-source-cdn",
+      "count": 12,
+      "reason": "images referencing live mdanderson.org renditions are kept as absolute source URLs (they resolve on the live origin; verified during replica gating). No createOptimizedPicture applied. Local media under assets/media/<slug>/ bundled + rewritten relative."
+    },
+    {
+      "kind": "structural-annotation",
+      "what": "data-section added to sections that lacked it (chrome endcancer-trio/footer + minor content bands)",
+      "reason": "strict contract: data-section on every <section>; markup-only, no visual change"
+    }
+  ],
+  "audit": {
+    "adapt": {
+      "pass": true,
+      "viewport": "width=device-width, initial-scale=1",
+      "mediaRules": 3,
+      "mobileBreakpoint": "991px (max-width) after migrate-time alignment to the live nav breakpoint (replica authored 767px); mobile rules active at all viewports <=640px (gated at 360 during replica)"
+    }
+  },
+  "linkRewrites": {
+    "internal": 19,
+    "externalOriginKept": 148,
+    "queryStripped": 0
+  },
+  "metadata": {
+    "title": "Insomnia during cancer treatment: Causes, symptoms, coping | UT MD Anderson",
+    "description": "Insomnia is common during cancer treatment. Radiation oncologist Pamela Schlembach, M.D., explains its causes, symptoms and how to get better sleep.",
+    "og": {
+      "title": "How to cope with insomnia during cancer treatment",
+      "description": "Insomnia is common during cancer treatment. Radiation oncologist Pamela Schlembach, M.D., explains its causes, symptoms and how to get better sleep.",
+      "image": "https://www.mdanderson.org/cancerwise/2026/06/how-to-cope-with-insomnia-during-cancer-treatment/jcr:content/blog/adaptiveimage.resize.702.404.jpg",
+      "type": "Website"
+    },
+    "canonical": "https://www.mdanderson.org/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134.html",
+    "robots": "index,follow"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to cope with insomnia during cancer treatment",
+    "datePublished": "2026-06-08",
+    "author": {
+      "@type": "Person",
+      "name": "Roman Gokhman"
+    },
+    "image": "https://www.mdanderson.org/cancerwise/2026/06/how-to-cope-with-insomnia-during-cancer-treatment/jcr:content/blog/adaptiveimage.resize.702.404.jpg",
+    "publisher": {
+      "@type": "Organization",
+      "name": "The University of Texas MD Anderson Cancer Center",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.mdanderson.org/mda-logo-sharable.png"
+      }
+    },
+    "mainEntityOfPage": "https://www.mdanderson.org/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134.html"
+  },
+  "assetsBundled": 2,
+  "migratedAt": "2026-08-20T04:10:00Z",
+  "outputPath": "cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134.html",
+  "designMdSha": "a248fde",
+  "designJsonSha": "d62ea95",
+  "sourceCurrentSha": "6263fe2",
+  "sourceProposedSha": "9e34f2b",
+  "archetypeSha": null
+}

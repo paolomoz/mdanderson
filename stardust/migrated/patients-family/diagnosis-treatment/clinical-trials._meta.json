@@ -1,0 +1,91 @@
+{
+  "slug": "patients-family-diagnosis-treatment-clinical-trials-html",
+  "type": "program",
+  "renderBranch": "A",
+  "template": null,
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "gatesPassed": [
+    "replica-pixel-gate-1440",
+    "replica-pixel-gate-360",
+    "mobile-adapt",
+    "placeholder-gate",
+    "content-sourcing"
+  ],
+  "modules": [],
+  "slotsFilled": [],
+  "canonShas": {
+    "header": "51090f5",
+    "footer": "1868d83",
+    "css": "278066d"
+  },
+  "deviations": [
+    {
+      "where": "media-query breakpoints (chrome + page styles)",
+      "reason": "live-DOM probe: nav.mda-nav is display:none below 992px on the live origin; replica desktop mega-nav needs ~1325px and overflowed at a 768px viewport. Alignment matches live chrome behavior and satisfies the no-horizontal-overflow contract at 768. Residual (ledgered): live desktop layout is fluid 992-1440 while the replica is fixed-width, so minor overflow persists between 992px and ~1325px (live itself overflows at 992: 1005/992)."
+    }
+  ],
+  "migrationDecisions": [
+    {
+      "kind": "canon-deviation",
+      "where": "media-query breakpoints (chrome + page styles)",
+      "what": "mobile rules extended from <=767px to <=991px; desktop complements (min-width 767/768px) shifted to >=992px",
+      "reason": "live-DOM probe: nav.mda-nav is display:none below 992px on the live origin; replica desktop mega-nav needs ~1325px and overflowed at a 768px viewport. Alignment matches live chrome behavior and satisfies the no-horizontal-overflow contract at 768. Residual (ledgered): live desktop layout is fluid 992-1440 while the replica is fixed-width, so minor overflow persists between 992px and ~1325px (live itself overflows at 992: 1005/992)."
+    },
+    {
+      "kind": "external-origin-links-kept",
+      "count": 50,
+      "reason": "links to mdanderson.org pages outside the 12-page inventory keep their absolute source URLs (live site — a bounce beats a 404). Not marked data-broken-link: targets resolve on the live origin."
+    },
+    {
+      "kind": "media-reuse-source-cdn",
+      "count": 28,
+      "reason": "images referencing live mdanderson.org renditions are kept as absolute source URLs (they resolve on the live origin; verified during replica gating). No createOptimizedPicture applied. Local media under assets/media/<slug>/ bundled + rewritten relative."
+    },
+    {
+      "kind": "structural-annotation",
+      "what": "data-section added to sections that lacked it (chrome endcancer-trio/footer + minor content bands)",
+      "reason": "strict contract: data-section on every <section>; markup-only, no visual change"
+    }
+  ],
+  "audit": {
+    "adapt": {
+      "pass": true,
+      "viewport": "width=device-width, initial-scale=1",
+      "mediaRules": 3,
+      "mobileBreakpoint": "991px (max-width) after migrate-time alignment to the live nav breakpoint (replica authored 767px); mobile rules active at all viewports <=640px (gated at 360 during replica)"
+    }
+  },
+  "linkRewrites": {
+    "internal": 19,
+    "externalOriginKept": 50,
+    "queryStripped": 0
+  },
+  "metadata": {
+    "title": "Cancer Clinical Trials | UT MD Anderson",
+    "description": "UT MD Anderson uses clinical trials to prevent, diagnose and treat cancer. Search for clinical trials here and also learn about the different phases.",
+    "og": {
+      "title": "Clinical Trials",
+      "description": "UT MD Anderson uses clinical trials to prevent, diagnose and treat cancer. Search for clinical trials here and also learn about the different phases.",
+      "image": "https://www.mdanderson.org/mda-logo-sharable.png",
+      "type": "Website"
+    },
+    "canonical": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html",
+    "robots": "index,follow"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Clinical Trials",
+    "description": "UT MD Anderson uses clinical trials to prevent, diagnose and treat cancer. Search for clinical trials here and also learn about the different phases.",
+    "url": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+  },
+  "assetsBundled": 2,
+  "migratedAt": "2026-08-20T04:10:00Z",
+  "outputPath": "patients-family/diagnosis-treatment/clinical-trials.html",
+  "designMdSha": "a248fde",
+  "designJsonSha": "d62ea95",
+  "sourceCurrentSha": "36e2563",
+  "sourceProposedSha": "5a80bbe",
+  "archetypeSha": null
+}

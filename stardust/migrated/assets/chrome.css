@@ -1,0 +1,551 @@
+/* provenance: stardust:replica PATHFINDER (index agent) — shared chrome styles for all
+   mdanderson.org replica prototypes. Values lifted from
+   stardust/replica/capture/index/{1440,360}.json and stardust/replica/capture/css/139355bb13.css.
+   Breakpoint: mobile = max-width 767px (gate widths: 1440 / 360). */
+
+/* == TOKEN CONTRACT — copy this :root block verbatim as the FIRST rule of every page's <style>.
+   Display-ramp mapping note: DESIGN.json names 36px as the site's largest *system* display size
+   (icon-well/promo h3). We map --heading-xxl/--heading-xl to 36px (reused, not scaled up);
+   --heading-lg = 24px (card h3), --heading-md = 21px (lede/promo body). Page-local hero sizes
+   (72px hero h1, 48px/42px section titles on the homepage) are lifted per-page from capture and
+   intentionally NOT tokens. */
+:root {
+  --heading-font-family: "Minion Regular", "Minion W01 Cap Regular", Arial, Georgia;
+  --body-font-family: "Minion Regular", "Minion W01 Cap Regular", Arial, Georgia;
+  --heading-xxl: 36px;
+  --heading-xl: 36px;
+  --heading-lg: 24px;
+  --heading-md: 21px;
+  --body: 18px;
+  --body-sm: 14px;
+  --line-height-heading: 1.3;
+  --line-height-body: 1.3;
+  --color-bg: #FFFFFF;
+  --color-fg: #000000;
+  --color-accent: #DA291C;
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 30px;
+  --spacing-xl: 40px;
+  --spacing-2xl: 70px;
+  --section-padding: 70px 72px;
+  --max-width: 1440px;
+  --radius: 0px;
+}
+
+/* ===== base ===== */
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body.basepage {
+  margin: 0;
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: -.02em;
+  color: var(--color-fg);
+  background: var(--color-bg);
+}
+body.basepage a { text-decoration: none; color: inherit; }
+img { border: 0; }
+ul { list-style: none; margin: 0; padding: 0; }
+h1, h2, h3, h4, p { margin: 0; }
+button { font: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+input { font: inherit; }
+.visuallyhidden {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0 0 0 0); border: 0;
+}
+.nowrap { white-space: nowrap; }
+
+/* icon fonts */
+[class*="mda-icon-"]::before { font-family: 'mda-icons'; font-style: normal; font-weight: 400; }
+.mda-icon-search::before { content: "\e61d"; }
+.mda-icon-menu::before { content: "\e907"; }
+.mda-icon-linkout::before { content: "\e618"; }
+.mda-icon-drop::before { content: "\e610"; }
+.mda-icon-cancertypes::before { content: "\e606"; }
+.mda-icon-clinical_trials_new::before { content: "\e649"; }
+.mda-icon-planning::before { content: "\e619"; }
+.mda-icon-myCancerConnection::before { content: "\e641"; }
+.mda-icon-1on1counseling::before { content: "\e600"; }
+.mda-icon-directions-stroke::before { content: "\e60d"; }
+.mda-icon-publications::before { content: "\e61b"; }
+.mda-icon-knowledgecenter::before { content: "\e617"; }
+.mda-icon-email::before { content: "\e611"; }
+.mda-icon-call-stroke::before { content: "\e604"; }
+.mdicon-arrow::before { font-family: 'MDIcons'; content: "\e608"; font-style: normal; }
+.mdicon-videoplay::before { font-family: 'MDIcons'; content: "\e605"; font-style: normal; }
+i.fa { font-style: normal; }
+i.fa::before, span.at-promo-arrow i::before { font-family: 'FontAwesome'; }
+.fa-search::before { content: "\f002"; }
+.fa-heart::before { content: "\f004"; }
+.fa-circle::before { content: "\f111"; }
+.fa-angle-right::before { content: "\f105"; }
+.fa-facebook-square::before { content: "\f082"; }
+.fa-x-twitter-square::before { content: "\e901"; }
+.fa-youtube-play-square::before { content: "\f2ed"; }
+.fa-instagram-square::before { content: "\f2f2"; }
+.fa-linkedin-square::before { content: "\f08c"; }
+.fa-bluesky-square::before { content: "\f2e9"; }
+.fa-threads-square::before { content: "\f2ea"; }
+.fa-apple-podcast-square::before { content: "\f2eb"; }
+.fa-spotify-square::before { content: "\f2ec"; }
+.fa-pandora-square::before { content: "\f2ee"; }
+.fa-iheart-square::before { content: "\f2f0"; }
+.fa-rss-feed-square::before { content: "\f2f1"; }
+.fa-chevron-down::before { content: "\f078"; }
+.fa-angle-up::before { content: "\f106"; }
+i.fa-solid::before { font-family: 'FontAwesome'; }
+i.fa[class*="mda-icon-"]::before { font-family: 'mda-icons'; }
+
+/* icon circle stacks (shared) */
+.icon-circle { line-height: 0; }
+.fa-stack { position: relative; display: inline-block; }
+.mda-stack-1x { position: absolute; left: 0; top: 0; width: 100%; text-align: center; display: block; }
+
+/* ===== CHROME: utility bar (fixed) ===== */
+#content-skip-btn {
+  display: block; position: fixed; top: 0; left: 0; width: 1px; height: 40px;
+  line-height: 40px; text-align: center; color: #DA291C; background: #fff;
+  overflow: hidden; z-index: 1001;
+}
+.mda-cta-list-container.desktop {
+  position: fixed; top: 0; left: 0; width: 100%; max-width: 1440px; height: 40px;
+  background: #000; border-radius: 0 0 15px; z-index: 1000;
+}
+.mda-cta-list { position: absolute; right: 0; top: 0; display: flex; }
+.mda-cta-list-item { display: list-item; }
+.mda-cta-list-item.login a.dropdown-trigger {
+  display: block; padding: 10px 35px; background: #000;
+  font-family: 'UniversLTW01-67BoldCn', Arial; font-size: 16px; line-height: 20px;
+}
+.mda-cta-list-item.login .red-my { color: #EA0118; font-family: 'Univers LT W01_55 Roman', Arial; }
+.mda-cta-list-item.login .white-chart { color: #fff; font-family: 'Univers LT W01_65 Bold', Arial; }
+.mda-cta-list-item.appointment button.dropdown-trigger {
+  display: inline-block; padding: 10px 35px; background: #3361AD; color: #fff;
+  font-family: 'UniversLTW01-67BoldCn', Arial; font-size: 14px; line-height: 20px;
+  text-transform: uppercase; text-align: center;
+}
+.mda-cta-list-item.donate a.dropdown-trigger {
+  display: block; padding: 10px 15px; background: #614B79; color: #fff;
+  font-family: 'UniversLTW01-67BoldCn', Arial; font-size: 14px; line-height: 20px;
+  text-transform: uppercase; border-radius: 0 0 15px;
+}
+.mda-cta-list-item.donate i.fa-heart { margin-left: 15px; font-size: 14px; color: #fff; }
+
+/* ===== CHROME: header ===== */
+header.mda-nav { display: block; font-family: 'Univers LT W01_55 Roman', Arial; }
+.mda-nav-top.flex-row {
+  display: flex; position: relative; align-items: center;
+  padding: 27px 40px; margin-top: 48px;
+}
+a#nav-logo { display: block; }
+a#nav-logo img { display: inline; width: 134px; height: 56px; }
+.mda-nav-top .spacer.desktop { flex: 1; }
+.mda-nav-utility.desktop.flex-row {
+  display: flex; position: absolute; right: 180px; align-items: center;
+}
+.mda-nav-utility li { display: list-item; position: relative; }
+.mda-nav-utility li > a, .mda-nav-utility li > button {
+  display: inline; padding: 0 10px;
+  font-family: 'UniversLTW01-67BoldCn', Arial; font-size: 16px; line-height: 20.8px;
+  letter-spacing: -.02em; text-transform: uppercase; color: #414042;
+}
+.mda-nav-utility .mda-icon-linkout { font-size: 16px; }
+button.mda-nav-utility-languages { position: relative; padding-right: 24px; }
+button.mda-nav-utility-languages::after {
+  content: ""; position: absolute; right: 8px; top: 7px;
+  border-left: 5px solid transparent; border-right: 5px solid transparent;
+  border-top: 6px solid #414042;
+}
+#nav-search { position: relative; margin-right: 20px; }
+#nav-search-form { display: inline; }
+#nav-search-form .search-icon.mda-icon-search {
+  display: block; position: absolute; margin: 11px 0 0 10px; font-size: 18px;
+  font-weight: 700; z-index: 1; font-style: normal;
+}
+input#site-search {
+  display: inline-block; width: 100px; height: 40px; padding: 4px 10px 4px 36px;
+  border: 1px solid #414042; background: #fff; color: #605D5D;
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 16px; font-weight: 300;
+  letter-spacing: -.02em; border-radius: 0;
+}
+ul#search-results, #live-search-results, .search-options { display: none; }
+
+/* ===== CHROME: red primary nav ===== */
+nav.mda-nav { display: block; }
+ul.mda-nav-main-list { display: flex; position: relative; }
+ul.mda-nav-main-list > li.dropdown { display: list-item; }
+ul.mda-nav-main-list > li.dropdown:nth-child(1) { flex: 0 0 235px; }
+ul.mda-nav-main-list > li.dropdown:nth-child(2) { flex: 0 0 283px; }
+ul.mda-nav-main-list > li.dropdown:nth-child(3) { flex: 0 0 266px; }
+ul.mda-nav-main-list > li.dropdown:nth-child(4) { flex: 0 0 217px; }
+ul.mda-nav-main-list > li.dropdown:nth-child(5) { flex: 0 0 177px; }
+ul.mda-nav-main-list > li.dropdown:nth-child(6) { flex: 1 1 auto; }
+.mda-nav-button-wrapper.dropdown-trigger { display: flex; height: 60px; background: #D82C27; }
+.mda-nav-button-wrapper > a {
+  flex: 1; display: flex; align-items: center; padding: 0 20px;
+  font-family: 'UniversLTW01-67BoldCn', Arial; font-size: 16px; line-height: 20.8px;
+  text-transform: uppercase; color: #fff;
+}
+button.dropdown-trigger-button { display: block; position: relative; width: 32px; padding: 1px 6px; }
+button.dropdown-trigger-button::after {
+  content: ""; position: absolute; left: 5px; top: 27px;
+  border-left: 5px solid transparent; border-right: 5px solid transparent;
+  border-top: 6px solid #fff;
+}
+/* mega-menu markup present but hidden — visual parity only */
+.mda-nav-flyout { display: none; }
+
+/* mobile header controls hidden on desktop */
+.mda-nav-mobile-menu.mobile { display: none; }
+
+/* ===== CHROME: shared section shells (used by chrome fragments) ===== */
+.bleed-full { max-width: 1440px; }
+section.highlight.apply { background: #F2F3F4; padding: 70px 72px; max-width: 1440px; }
+.table { display: table; width: 100%; }
+.table-3col { display: table; width: 100%; }
+
+/* ===== CHROME (shared component): blue "We're here for you" strip.
+   Markup lives per-page (its slot varies); classes are canonical:
+   section.appt-section.bleed-full > div.module > div.appointment-bar.banner >
+   div.appointment-bar-wrapper > div.during-hours > span > [span.bold, " Call us at ",
+   span.tel>a, " or ", br.appointment-bar-cta-break, a]. Phone rotates per render. */
+.appointment-bar.banner {
+  background: #3361AD; color: #fff; text-align: center; padding: 30px 84px;
+  font-family: 'Univers LT W01_45 Light', Arial; font-size: 21px; line-height: 27.3px;
+  letter-spacing: -.02em;
+}
+.appointment-bar .bold { font-family: 'Univers LT W01_65 Bold', Arial; }
+/* body.basepage prefix: must outrank body.basepage a { text-decoration:none } (chrome-owner fix,
+   ported from prevention-screening page-local patch) */
+body.basepage .appointment-bar a, .appointment-bar a { color: #fff; text-decoration: underline; }
+br.appointment-bar-cta-break { display: none; }
+@media (max-width: 991px) {
+  .appointment-bar.banner { padding: 40px 35px; }
+  .appointment-bar .bold {
+    display: block; font-family: var(--body-font-family); font-size: 32px;
+    line-height: 41.6px; letter-spacing: -.02em; margin-bottom: 12px;
+  }
+  br.appointment-bar-cta-break { display: block; }
+}
+
+/* ===== CHROME:ENDCANCER — Help #EndCancer trio (pre-footer, INSIDE main) ===== */
+.pre-footer { text-align: center; }
+.pre-footer .nested-section-title h2.section-title {
+  font-size: 48px; line-height: 48px; letter-spacing: -.02em; text-align: center;
+  margin: -4px 0 50px; font-weight: 400;
+}
+.pre-footer .table-3col .cell-t { display: table-cell; width: 33.333%; vertical-align: top; }
+.pre-footer .table-3col .cell-t:nth-child(1) { padding-right: 11.88px; }
+.pre-footer .table-3col .cell-t:nth-child(2) { padding-left: 5.94px; padding-right: 5.94px; }
+.pre-footer .table-3col .cell-t.last { padding-left: 11.88px; padding-right: 0; }
+.promo-no-icon { text-align: center; padding: 60px 0; height: 100%; }
+.promo-background-red { background: #DA291C; }
+.promo-background-black { background: #000; }
+.promo-background-blue { background: #2F60B2; }
+.promo-background-purple { background: #783491; }
+.promo-background-green { background: #478339; } /* ported from donors-volunteers (Raise Money card) */
+.promo-no-icon .promo-header { color: #fff; padding: 0 42px; }
+.promo-no-icon h3.title {
+  font-size: 36px; line-height: 46.8px; letter-spacing: -.02em; font-weight: 400; color: #fff;
+}
+.promo-no-icon .promo-text { color: #fff; padding: 0 42px; }
+.promo-no-icon .body.promo-text-normal { font-size: 21px; line-height: 27.3px; letter-spacing: -.02em; margin: 20px 0; }
+.promo-no-icon .body.promo-text-normal p { margin: 21px 0; }
+.promo-no-icon a.cta.cta-block {
+  display: inline-block; position: relative; margin-top: 30px; padding: 11px 30px;
+  border: 1px solid #fff; color: #fff;
+  font-family: 'Univers LT W01_65 Bold', Arial; font-size: 24px; line-height: 31.2px;
+  letter-spacing: -.02em;
+}
+.promo-no-icon a.cta.cta-block .mda-icon-linkout { font-size: 24px; }
+
+/* ===== CHROME:BOTTOM — global footer (INSIDE main per live DOM) ===== */
+section.global-footer { max-width: 1440px; }
+
+/* newsletter bar */
+.subscribe-to { background: #000; padding: 20px 72px; max-width: 1440px; }
+.subscribe-to .col-single.inner { display: flex; color: #fff; height: 50px; }
+.subscribe-to .icon-circle { position: relative; width: 78px; height: 50px; color: #DA291C; }
+.subscribe-to .icon-circle .fa-stack.fa-2x { position: absolute; top: 0; left: 0; width: 72px; height: 72px; }
+.subscribe-to .icon-circle i.fa-circle { position: absolute; left: 0; top: 0; width: 100%; font-size: 72px; line-height: 50.4px; text-align: center; color: #DA291C; }
+.subscribe-to .icon-circle i.mda-icon-email { position: absolute; left: 0; top: 0; width: 100%; font-size: 36px; line-height: 54px; text-align: center; color: #fff; }
+.subscribe-to .subscribeTitle {
+  font-family: 'Univers LT W01_45 Light', Arial; font-size: 16px; line-height: 20.8px;
+  letter-spacing: -.02em; width: 204px; padding-right: 5px; margin: 4.2px 0;
+}
+.subscribe-to form { display: flex; flex: 1; justify-content: center; }
+.subscribe-to .fieldContainer { display: flex; justify-content: center; gap: 15px; }
+.subscribe-to .fieldContainer > div { margin: 8.5px 0; max-width: 50%; }
+.subscribe-to .inputWrapper input {
+  display: inline-block; width: 289px; padding: 7px; border-radius: 2px;
+  border: 1px solid #BFBFBF; background: #F7F7F7; color: #666;
+  font-family: var(--body-font-family); font-size: 14px; font-weight: 300;
+  box-shadow: rgba(0,0,0,.1) 0 1px 2px 0 inset;
+}
+.subscribe-to .footer-cta-wrapper { padding-left: 15px; margin: 9.5px 0; }
+.subscribe-to .footer-cta { text-align: right; }
+input.ftrSubGo {
+  display: inline-block; height: 31px; line-height: 19px; padding: 5px 10px; background: #DA291C; color: #fff;
+  border: 1px solid #fff; text-align: center;
+  font-family: 'Univers LT W01_45 Light', Arial; font-size: 16px; cursor: pointer;
+}
+.subscribe-to .footer-cta-mobile { display: none; }
+
+/* footer link columns */
+.footer-links {
+  display: block; padding: 0 64px; margin-top: 65px; max-width: 1440px;
+  font-family: 'Univers LT W01_55 Roman', Arial; font-size: 16px; line-height: 20.8px;
+  letter-spacing: -.02em;
+}
+.footer-links::after { content: ""; display: block; clear: both; }
+.footer-links .col2, .footer-links .col2.mda-logo { float: left; display: flex; flex-direction: column; width: 200px; margin-right: 22.23px; }
+.footer-links .col1 { float: left; width: 89px; height: 0; margin-right: 22.23px; }
+.footer-links .col3.last { float: right; width: 311px; }
+.footer-links .col2.mda-logo { min-height: 444px; }
+.footer-links .col2.mda-logo img.desktop { display: block; width: 200px; padding: 3px 0 0 30px; }
+.footer-links .col2.mda-logo img.mobile { display: none; }
+.footer-links ul { padding-left: 40px; margin-bottom: 16px; }
+.footer-links li { display: list-item; padding-bottom: 17px; }
+.footer-links li.title {
+  font-family: 'Univers LT W01_65 Bold', Arial; text-transform: uppercase; padding-bottom: 25px;
+}
+.footer-links li.title .toggle { display: none; }
+.footer-links a { color: #000; }
+.footer-links .mda-icon-linkout { font-size: 16px; }
+/* Only Possible Here promo card */
+li.at-sticky-promo-li { list-style: none; display: block; margin: auto 0 40px 35px; width: 165px; padding: 0; }
+a.at-sticky-promo-link-wrapper {
+  display: block; border-radius: 12px 12px 0; overflow: hidden;
+  box-shadow: #808080 0 0 0 1px; font-family: sans-serif;
+}
+.at-sticky-promo-top { display: flex; align-items: center; background: #fff; color: #333; padding: 16px 8px 14px 16px; }
+.at-promo-svg-wrapper { width: 125px; height: 26px; position: relative; }
+.at-promo-svg-wrapper svg { position: absolute; left: 0; top: 0; }
+.at-promo-svg-wrapper::before {
+  content: "\2022\2022\2022"; position: absolute; left: 2px; top: -12px;
+  color: #624B79; font-size: 13px; letter-spacing: 1px;
+}
+.at-promo-svg-wrapper::after {
+  content: "Only Possible Here."; position: absolute; left: 0; top: 6px;
+  font-weight: 700; font-size: 13px; color: #000; white-space: nowrap;
+}
+span.at-promo-arrow { display: flex; align-items: center; margin-left: 8px; color: #624B79; font-size: 24px; }
+span.at-promo-arrow i { font-size: 24px; }
+.at-sticky-promo-bottom {
+  display: flex; justify-content: center; align-items: center; text-align: center;
+  background: #624B79; color: #fff; padding: 10px 12px 8px; border-radius: 12px 0 0;
+}
+.at-promo-return-text { font-size: 12px; line-height: 15.6px; font-weight: 600; letter-spacing: .25px; }
+/* get-in-touch */
+.footer-links .col3.last li.footer-contact-item {
+  position: relative; padding-left: 0; padding-bottom: 0; line-height: 40px; height: 79px;
+}
+.footer-links .col3.last li.footer-contact-item.onlyLabel { height: 81px; }
+.footer-links .col3.last li.stay-connected,
+.footer-links .col3.last li.podcast { height: 40px; padding-bottom: 0; overflow: visible; }
+.footer-contact-item .icon-circle { float: left; position: relative; width: 64px; height: 64px; margin: 5px 10px 5px -50px; color: #DA291C; }
+.footer-contact-item.onlyLabel .icon-circle { margin-top: -10px; }
+.footer-contact-item .icon-circle .fa-stack.fa-2x { width: 64px; height: 64px; }
+.footer-contact-item .icon-circle i.fa-circle { position: absolute; left: 0; top: 0; width: 100%; font-size: 64px; line-height: 64px; text-align: center; }
+.footer-contact-item .icon-circle i.mda-stack-1x { position: absolute; left: 0; top: 0; width: 100%; font-size: 32px; line-height: 64px; text-align: center; color: #fff; }
+.footer-contact-item a { display: inline-block; }
+.footer-contact-bold {
+  font-family: 'Univers LT W01_65 Bold', Arial; font-size: 21px; line-height: 27.3px;
+  letter-spacing: -.02em; margin-top: -5px;
+}
+/* social tiles */
+.social-links-wrapper { text-align: center; font-family: 'Univers LT W01_45 Light', Arial; }
+.social-links { position: relative; overflow: hidden; text-align: center; }
+.social-links-carousel { position: relative; margin-bottom: 30px; }
+.social-links-carousel .slick-list { position: relative; overflow: hidden; }
+.social-links-carousel .slick-track { display: inline-flex; position: relative; }
+.social-links-carousel a.box { display: block; position: relative; width: 38px; }
+.social-links-carousel a.box i {
+  display: inline-block; width: 30px; height: 30px; margin: 0 4px; padding: 4.5px;
+  background: #DA291C; color: #fff; font-size: 21px; line-height: 21px; text-align: center;
+}
+.social-links-carousel a.box i.fa-facebook-square,
+.social-links-carousel a.box i.fa-x-twitter-square,
+.social-links-carousel a.box i.fa-linkedin-square,
+.social-links-carousel a.box i.fa-bluesky-square,
+.social-links-carousel a.box i.fa-threads-square { font-size: 23px; line-height: 23px; }
+.social-links-carousel button.slick-prev,
+.social-links-carousel button.slick-next {
+  position: absolute; top: -10px; width: 30px; height: 50px; overflow: hidden;
+  color: transparent; font-size: 16px; line-height: 50px; z-index: 3;
+}
+.social-links-carousel button.slick-prev { left: -30px; }
+.social-links-carousel button.slick-next { right: 0; }
+.footer-links .col3.last ul#stay-connected li.title,
+.footer-links .col3.last ul#podcast li.title { padding-bottom: 10px; }
+.footer-links .col3.last ul#stay-connected li.title,
+.footer-links .col3.last ul#podcast li.title,
+.footer-links .col3.last ul#get-in-touch li.title { margin-left: -50px; }
+.footer-links .col3.last li.stay-connected .col-single.inner,
+.footer-links .col3.last li.podcast .col-single.inner { margin-left: -55px; font-size: 14px; }
+/* sublinks bar */
+.footer-links.sublink-container { display: block; padding: 0; margin: 0; max-width: 1440px; }
+.footer-sublinks {
+  background: #F2F3F4; padding: 30px 48px 40px; max-width: 1440px;
+  font-size: 12px; line-height: 15.6px; letter-spacing: -.02em;
+}
+.footer-sublinks ul { text-align: center; padding: 0; margin: 0; }
+.footer-sublinks li { display: inline-block; margin: 6px 0; padding: 0 20px; border-right: 1px solid #A7A8AA; }
+.footer-sublinks li:last-child { border-right: 0; }
+.footer-sublinks li.title { display: none; }
+/* bottom mission band */
+.bottom-footer-bar {
+  display: flex; position: relative; background: #000;
+  justify-content: space-between; align-items: flex-start;
+}
+.footer-bar-logo { padding: 25px 54px; }
+.footer-bar-logo img.logo { display: block; padding: 25px 30px; width: 377px; max-width: 100%; }
+.footer-bar-text { display: flex; flex-direction: column; width: 955px; padding: 50px 72px 50px 0; }
+.missionstatement {
+  font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20.8px;
+  letter-spacing: -.02em; color: #fff;
+}
+p.copyright {
+  font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 15.6px;
+  letter-spacing: -.02em; color: #BCBEC0; padding-top: 25px;
+}
+
+/* =========================================================================
+   MOBILE (max-width: 767px) — lifted from capture/index/360.json
+   ========================================================================= */
+@media (max-width: 991px) {
+  html { overflow-x: hidden; }
+  /* clip, not hidden: overflow-x hidden makes body a scroll container and breaks
+     position:sticky descendants (verified on breast-cancer's sticky appointment bar) */
+  body.basepage { overflow-x: clip; }
+  body.basepage { font-size: 16px; }
+
+  /* header: hamburger layout */
+  #content-skip-btn { z-index: 1001; }
+  .mda-cta-list-container.desktop { display: none; }
+  header.mda-nav { overflow: hidden auto; }
+  /* height 85px = live 360 header height (chrome previously rendered 89px) */
+  .mda-nav-top.flex-row { padding: 20px; margin-top: 0; height: 85px; }
+  a#nav-logo img { width: 96px; height: 40px; }
+  /* .flex-row variant included: base .mda-nav-utility.desktop.flex-row{display:flex} (0,3,0)
+     otherwise outranks this hide rule and the desktop utility links leak over the mobile header */
+  .mda-nav-utility.desktop.flex-row,
+  .mda-nav-utility.desktop, .mda-nav-top .spacer.desktop, #nav-search { display: none; }
+  .mda-nav-mobile-menu.mobile { display: flex; flex: 1; justify-content: flex-end; }
+  .mda-nav-mobile-menu button {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 1px 6px; background: #fff; text-align: center;
+  }
+  .mda-nav-mobile-menu button.mda-nav-mobile-search-button { margin-right: 10px; }
+  .mda-nav-mobile-menu button i { display: block; font-size: 32px; line-height: 32px; color: #000; }
+  .mda-nav-mobile-menu button span {
+    display: block; font-size: 10px; line-height: 13px; text-transform: uppercase; color: #000;
+    font-family: 'Univers LT W01_55 Roman', Arial;
+  }
+  nav.mda-nav { display: none; }
+
+  /* EndCancer trio */
+  .pre-footer { padding-top: 35px; }
+  .pre-footer .nested-section-title { display: none; }
+  section.highlight.apply { padding: 0; }
+  .pre-footer .table-3col, .pre-footer .table-3col .cell-t { display: block; width: auto; }
+  .pre-footer .table-3col .cell-t { padding: 0 !important; }
+  .promo-no-icon { padding: 35px; }
+  .promo-no-icon h3.title { display: inline-block; font-size: 32px; line-height: 41.6px; }
+  .promo-no-icon .promo-header, .promo-no-icon .promo-text { padding: 0 29px; }
+  .promo-no-icon .body.promo-text-normal { font-size: 16px; line-height: 20.8px; }
+  .promo-no-icon .body.promo-text-normal p { margin: 16px 0; }
+  /* KNOWN DRIFT vs live kept deliberately: live content-sizes this wrapper (46px one-line,
+     67px when the CTA wraps — Donate Blood card renders 9px shorter here). All six gated pages
+     compensate for the 46px clamp; unclamping regressed the pixel gates. Do not "fix" without
+     re-gating every page. padding 11.1px + icon line-height guard = live 45px one-line CTA. */
+  .promo-no-icon .cta-wrapper.cta-block-wrapper { display: inline-block; height: 46px; }
+  .promo-no-icon a.cta.cta-block { font-size: 16px; line-height: 20.8px; margin-top: 1px; padding: 11.1px 30px; }
+  .promo-no-icon a.cta.cta-block .mda-icon-linkout { font-size: 16px; line-height: 18px; }
+
+  /* newsletter */
+  .subscribe-to { padding: 0; }
+  .subscribe-to .col-single.inner { display: block; height: auto; }
+  .subscribe-to .icon-circle { display: none; }
+  .subscribe-to .subscribeTitle { width: auto; text-align: center; padding: 25px 5px; margin: 0; }
+  .subscribe-to form { display: block; }
+  .subscribe-to .fieldContainer { display: grid; grid-template-columns: 300px; justify-content: center; gap: 0; text-align: center; }
+  .subscribe-to .fieldContainer > div { margin: 0; max-width: 100%; }
+  .subscribe-to .fieldContainer > div + div { margin-top: 15px; }
+  .subscribe-to .inputWrapper input { width: 300px; height: 33px; } /* live 360: 33px rows */
+  .subscribe-to .footer-cta-wrapper {
+    padding: 15px 0 35px; margin: 0 auto; max-width: 300px;
+  }
+  .subscribe-to .footer-cta { display: none; }
+  .subscribe-to .footer-cta-mobile { display: block; text-align: center; }
+  .subscribe-to .footer-cta-mobile input.ftrSubGo { width: 300px; padding: 5px 15px; }
+
+  /* footer columns -> accordions.
+     float:none is essential: with the desktop float:left kept, width:auto shrink-wraps the
+     collapsed rows so borders stop early and the +/toggle glyphs land mid-row instead of at
+     the far right (live renders full-bleed 360px rows) */
+  .footer-links { display: block; position: relative; padding: 0; margin: 0; }
+  .footer-links .col1,
+  .footer-links .col2, .footer-links .col3.last { float: none; display: block; width: auto; margin: 0; }
+  .footer-links ul {
+    position: relative; height: 40px; min-height: 40px; overflow: hidden;
+    padding: 0; margin: 0; border-bottom: 1px solid #D0D0CE;
+  }
+  .footer-links li.title { padding: 15px 0 25px 15px; }
+  .footer-links li.title .toggle {
+    display: block; position: absolute; top: 10px; right: 12px; width: 25px; height: 25px;
+    z-index: 500;
+  }
+  .footer-links li.title .toggle::before {
+    content: "+"; display: block; font-size: 22px; line-height: 25px; text-align: center;
+    font-family: 'Univers LT W01_55 Roman', Arial;
+  }
+  .footer-links li { padding: 15px 0 0 15px; }
+  .footer-links li a { display: block; padding-left: 30px; }
+  .footer-links .col2.mda-logo {
+    position: absolute; top: 160px; left: 0; right: 0; width: auto; z-index: 1;
+    background: #000; height: 120px; min-height: 120px; text-align: center;
+  }
+  .footer-links .col2.mda-logo img.desktop { display: none; }
+  .footer-links .col2.mda-logo img.mobile { display: block; width: auto; height: 157px; padding: 28px 0; }
+  /* live-now does not render the Only-Possible-Here promo card at mobile (absent from every
+     360 gate live stitch; 360 capture rects show it clipped to a 40px row) — hide at <=767px */
+  li.at-sticky-promo-li { display: none; }
+  .footer-links .col3.last li.footer-contact-item,
+  .footer-links .col3.last li.footer-contact-item.onlyLabel {
+    padding-left: 15px; text-align: center; border-bottom: 1px solid #D0D0CE;
+    display: inline-block; width: 45%; height: 110px;
+  }
+  .footer-links .col3.last li.stay-connected,
+  .footer-links .col3.last li.podcast { height: 75px; padding-top: 15px; }
+  .footer-contact-item .icon-circle { position: static; display: inline-block; }
+  .footer-links .col3.last ul#stay-connected li.title,
+  .footer-links .col3.last ul#podcast li.title,
+  .footer-links .col3.last ul#get-in-touch li.title { margin-left: 0; }
+  .footer-links .col3.last li.stay-connected .col-single.inner,
+  .footer-links .col3.last li.podcast .col-single.inner { margin-left: 0; font-size: 16px; }
+  .social-links { padding: 0 45px; }
+  .social-links-carousel a.box { width: 90px; }
+  .social-links-carousel a.box i,
+  .social-links-carousel a.box i.fa-facebook-square,
+  .social-links-carousel a.box i.fa-x-twitter-square,
+  .social-links-carousel a.box i.fa-linkedin-square,
+  .social-links-carousel a.box i.fa-bluesky-square,
+  .social-links-carousel a.box i.fa-threads-square {
+    width: 50px; height: 50px; padding: 10px; margin: 0 20px; font-size: 30px; line-height: 30px;
+  }
+  /* sublinks accordion */
+  .footer-sublinks { background: #F2F3F4; padding: 0; font-size: 16px; line-height: 20.8px; }
+  .footer-sublinks ul { text-align: left; height: 40px; min-height: 40px; overflow: hidden; position: relative; border-bottom: 1px solid #D0D0CE; }
+  .footer-sublinks li { display: block; margin: 0; padding: 15px 0 0 15px; border-right: 0; border-bottom: 1px solid #D0D0CE; }
+  .footer-sublinks li.title { display: block; padding: 15px 0 25px 15px; }
+  .footer-sublinks li a { display: block; padding-left: 30px; }
+  /* bottom band */
+  .bottom-footer-bar { display: block; text-align: center; }
+  .footer-bar-logo { padding: 0; }
+  .footer-bar-logo img.logo { display: inline-block; width: 360px; padding: 25px 30px; }
+  .footer-bar-text { display: block; width: auto; padding: 0 16px 25px; }
+}
