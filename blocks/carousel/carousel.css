@@ -148,7 +148,9 @@ main .section.carousel-container > .default-content-wrapper h2 {
 }
 
 @media (width <= 991px) {
-  main .section.carousel-container { padding: 35px 0; }
+  /* overflow-x clip: the carousel-group's -12px gutter margins poke past the
+     unpadded mobile section, adding 12px of page-level horizontal scroll */
+  main .section.carousel-container { padding: 35px 0; overflow-x: clip; }
   main .section.carousel-container > div { padding: 0; }
 
   main .section.carousel-container > .default-content-wrapper h2 {
