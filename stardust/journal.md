@@ -77,3 +77,38 @@ from on-disk state). *clinical-trials 1440 smoke read 8.78 vs ledger 2.55 —
 proven pre-existing/live-drift by revert test.
 
 Next: migrate (Path A ×11 + patients-family sibling) → rollout to EDS.
+
+## 2026-08-20 — Delivery + uplift
+
+**EDS delivery:** 25 blocks (23 content + header/footer chrome), 12 content
+pages + nav/footer documents authored across 4 cluster agents (all lint /
+block-roundtrip / qa-gate green), 140 media binaries rehosted to DA, 14/14
+documents PUT→preview→live with 0 failures. Foundation-first gate green.
+One post-deploy fix: `:icon-x:` tokens double-prefixed icon SVG paths
+(aem.js strips only the first `icon-`), 62 tokens fixed + full redeploy.
+POC live at https://main--mdanderson--paolomoz.aem.page/ (and .aem.live).
+
+**Uplift (shine track):** three validated homepage variants at
+localhost:8791/uplift-{a,b,c}.html — A green-light (6 diagnosed weaknesses
+fixed), B photography-editorial, C cinematic (arrival register, red-strike
+kinetic signature, Lenis + canonical runtime, motion Pass 6 green).
+
+**In flight:** rollout verification agent (coverage, verify, link audit,
+eyeballs, CLS, perf, optimize, report, dashboard).
+
+## 2026-08-20 — POC complete
+
+Rollout verified: 12/12 pages live+verified on aem.page/aem.live, 0 dead
+internal links, CLS 0.039, Lighthouse perf 80 (index, mobile-throttled) /
+100 (breast-cancer), optimize gate 0 open P1. Post-QA fixes shipped: `.icon`
+utility scoped to decorateIcons spans (variant-class collision had collapsed
+8 card blocks on 7 pages), 23 icon glyphs extracted from mda-icons.ttf to
+SVGs, 4 masked layout residues fixed, interior dark-strip link color fixed —
+all re-verified live. Uplift track: 3 validated homepage variants
+(uplift-a/b/c). Learnings ledger has 5 pending entries for upstream.
+
+Open for the user: (1) font licensing before any public/live use beyond the
+POC preview (Minion/Univers, alerts in styles.css + fonts/LICENSING.md);
+(2) stray repo paolomoz/mdanderson-auto created by an out-of-scope subagent
+— delete or keep; (3) fast-follows: redirects.json wiring, JSON-LD P2s,
+query-index flip for Cancerwise listings at production scale.
