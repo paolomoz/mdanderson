@@ -1,0 +1,180 @@
+/* uplift-hero — cinematic hero (uplift-c demo). CSS lifted verbatim from
+   stardust/prototypes/uplift-c.html §hero, scoped under .uplift-hero.
+   This block also carries the page-level motion scaffold it owns:
+   lenis document rules, the .post-hero rising plate, the shared .btn
+   family used by the hero, and the reduced-motion neutralization. */
+
+/* ── lenis (scripts/lenis.min.js adds .lenis to <html>) ── */
+html.lenis,
+html.lenis body { height: auto; }
+html.lenis { scroll-behavior: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+
+/* ── hero ── */
+.uplift-hero {
+  position: relative;
+  background: var(--color-purple-dark);
+  overflow: hidden;
+}
+
+.uplift-hero .hero-marquee {
+  position: relative;
+  will-change: transform;
+}
+
+.uplift-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: #000;
+  opacity: calc(var(--uplift-parallax-progress, 0) * var(--uplift-parallax-fade));
+  pointer-events: none;
+}
+
+@keyframes uplift-enter-up {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: none; }
+}
+
+.uplift-hero .hero-copy h1 {
+  animation: uplift-enter-up var(--uplift-enter-duration) var(--uplift-ease-out-cubic) both;
+}
+
+.uplift-hero .hero-copy .btn {
+  animation: uplift-enter-up var(--uplift-enter-duration) var(--uplift-ease-out-cubic) calc(var(--uplift-enter-stagger)) both;
+}
+
+.uplift-hero .hero-marquee .hero-bg,
+.uplift-hero .hero-marquee .hero-bg-picture img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 36% 50%;
+}
+
+.uplift-hero .hero-marquee::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgb(0 0 0 / 0%) 42%, rgb(0 0 0 / 45%) 78%);
+}
+
+.uplift-hero .wrap {
+  position: relative;
+  z-index: 2;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 520px;
+  padding: 56px 72px;
+}
+
+.uplift-hero .hero-copy {
+  max-width: 560px;
+  text-align: right;
+  color: #fff;
+}
+
+.uplift-hero .hero-copy h1 {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-weight: 400;
+  font-size: var(--uplift-heading-xxl);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.uplift-hero .hero-copy .btn { margin-top: 30px; }
+
+/* ── shared button family (prototype .btn) ── */
+.uplift-hero .btn,
+.post-hero .btn,
+.uplift-support .btn,
+.uplift-endcancer .btn,
+.uplift-newsletter .btn,
+.uplift-blood .btn {
+  display: inline-block;
+  font-family: var(--sans-font-family);
+  font-size: 17px;
+  line-height: 1;
+  padding: 15px 26px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: background-color 0.18s ease, color 0.18s ease;
+}
+
+.btn.btn--red { background: var(--color-accent); color: #fff; }
+.btn.btn--red:hover { filter: brightness(0.82); color: #fff; text-decoration: none; }
+.btn.btn--white { background: #fff; color: #000; }
+.btn.btn--white:hover { background: var(--color-gray-light); color: #000; text-decoration: none; }
+.btn.btn--purple { background: var(--color-purple); color: #fff; }
+.btn.btn--purple:hover { filter: brightness(0.82); color: #fff; text-decoration: none; }
+
+/* ── rising plate (built by uplift-motion around the decorated sections) ── */
+main > .post-hero {
+  margin: 0;
+  position: relative;
+  z-index: 3;
+  background: var(--color-bg);
+  will-change: transform;
+}
+
+main > .post-hero > .section { margin: 0; }
+
+main > .post-hero > .section > div {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0;
+}
+
+/* ── reduced motion: everything forced to final state (prototype parity) ── */
+@media (prefers-reduced-motion: reduce) {
+  .uplift-hero .hero-copy h1,
+  .uplift-hero .hero-copy .btn {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  [data-anim] {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    clip-path: none !important;
+  }
+
+  .uplift-hero .hero-marquee,
+  main > .post-hero { transform: none !important; }
+
+  .site-footer__wordmark { clip-path: none !important; }
+}
+
+/* ── responsive (prototype breakpoints) ── */
+@media (max-width: 1180px) {
+  .uplift-hero .wrap { padding-left: 40px; padding-right: 40px; }
+}
+
+@media (max-width: 991px) {
+  .uplift-hero .wrap { justify-content: flex-start; min-height: 420px; }
+  .uplift-hero .hero-copy { text-align: left; }
+  .uplift-hero .hero-copy h1 { font-size: 46px; }
+
+  .uplift-hero .hero-marquee::after {
+    background: linear-gradient(0deg, rgb(0 0 0 / 55%) 0%, rgb(0 0 0 / 15%) 60%);
+  }
+}
+
+@media (max-width: 767px) {
+  .uplift-hero .wrap { padding-left: 24px; padding-right: 24px; }
+}
+
+@media (max-width: 640px) {
+  .uplift-hero .hero-copy h1 { font-size: 36px; }
+  .uplift-hero .wrap { min-height: 360px; }
+}

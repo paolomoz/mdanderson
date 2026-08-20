@@ -1,0 +1,57 @@
+/* uplift-support — prototype §.support, scoped */
+
+.uplift-support {
+  background: var(--color-surface-alt);
+  padding: var(--uplift-section-pad) 0;
+}
+
+.uplift-support .wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 72px;
+}
+
+.uplift-support .duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.uplift-support .duo-card {
+  background: #fff;
+  padding: 40px 38px;
+  border-top: 6px solid var(--color-accent);
+}
+
+.uplift-support .duo-card.purple { border-top-color: var(--color-purple); }
+
+.uplift-support .duo-card h3 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.uplift-support .duo-card p {
+  margin: 14px 0 0;
+  max-width: 46ch;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.uplift-support .duo-card .btn { margin-top: 26px; }
+
+@media (max-width: 1180px) {
+  .uplift-support .wrap { padding: 0 40px; }
+}
+
+@media (max-width: 767px) {
+  .uplift-support .wrap { padding: 0 24px; }
+  .uplift-support .duo { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .uplift-support .duo-card { padding: 28px 22px; }
+  .uplift-support .duo-card h3 { font-size: 24px; overflow-wrap: anywhere; }
+}

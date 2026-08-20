@@ -1,0 +1,157 @@
+/* uplift-finder — prototype §.finder, scoped */
+
+.uplift-finder {
+  background: var(--color-surface);
+  padding: var(--uplift-section-pad) 0;
+}
+
+.uplift-finder .wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 72px;
+}
+
+.uplift-finder .finder-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.15fr;
+  gap: 28px;
+}
+
+.uplift-finder .finder-card {
+  background: #fff;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.uplift-finder .finder-card h3 {
+  margin: 0;
+  font-family: var(--body-font-semibold);
+  font-weight: 400;
+  font-size: var(--uplift-heading-lg);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.uplift-finder .rule {
+  display: block;
+  width: 48px;
+  height: 4px;
+  background: var(--color-accent);
+  margin: 14px 0 22px;
+}
+
+.uplift-finder .search-form {
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.uplift-finder .search-form input {
+  flex: 1;
+  min-width: 0;
+  height: 52px;
+  border: 1px solid var(--color-gray-dark);
+  border-right: none;
+  padding: 0 16px;
+  font-family: var(--sans-font-family);
+  font-size: 15px;
+  color: #000;
+  background: #fff;
+}
+
+.uplift-finder .search-form input::placeholder { color: var(--color-gray-dark); }
+
+.uplift-finder .search-form input:focus {
+  outline: 2px solid var(--color-blue);
+  outline-offset: -1px;
+}
+
+.uplift-finder .search-btn {
+  width: 56px;
+  height: 52px;
+  background: var(--color-accent);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uplift-finder .search-btn:hover { filter: brightness(0.82); }
+
+.uplift-finder .link-red {
+  margin-top: auto;
+  color: var(--color-accent);
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  align-self: flex-start;
+}
+
+.uplift-finder .link-red:hover {
+  border-bottom-color: var(--color-accent);
+  text-decoration: none;
+}
+
+.uplift-finder .link-red .arr { font-family: Arial, sans-serif; }
+
+.uplift-finder .plan-list {
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0;
+}
+
+.uplift-finder .plan-list li { border-bottom: 1px solid var(--color-gray-light); margin: 0; }
+.uplift-finder .plan-list li:last-child { border-bottom: none; }
+
+.uplift-finder .plan-list a {
+  display: block;
+  padding: 14px 26px 14px 0;
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+}
+
+.uplift-finder .plan-list a::after {
+  content: "\2192";
+  position: absolute;
+  right: 0;
+  top: 14px;
+  color: var(--color-accent);
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+.uplift-finder .plan-list h4 {
+  margin: 0;
+  font-family: var(--sans-bold-font-family);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.uplift-finder .plan-list a:hover h4 { color: var(--color-accent); }
+.uplift-finder .plan-list a:hover { text-decoration: none; }
+
+.uplift-finder .plan-list p {
+  font-family: var(--sans-font-family);
+  font-size: 14px;
+  color: var(--color-gray-dark);
+  margin: 5px 0 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 1180px) {
+  .uplift-finder .wrap { padding: 0 40px; }
+}
+
+@media (max-width: 991px) {
+  .uplift-finder .finder-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 767px) {
+  .uplift-finder .wrap { padding: 0 24px; }
+}

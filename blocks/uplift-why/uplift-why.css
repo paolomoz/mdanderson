@@ -1,0 +1,119 @@
+/* uplift-why — prototype §.why, scoped */
+
+.uplift-why {
+  background: #fff;
+  padding: var(--uplift-section-pad) 0;
+}
+
+.uplift-why .wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 72px;
+}
+
+.uplift-why .why-grid {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 64px;
+  align-items: stretch;
+}
+
+.uplift-why .credential {
+  background: #000;
+  color: #fff;
+  padding: 44px 40px;
+  border-top: 6px solid var(--color-accent);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.uplift-why .credential .num {
+  font-family: var(--heading-font-family);
+  font-size: 120px;
+  line-height: 0.95;
+  color: var(--color-accent);
+}
+
+.uplift-why .credential .num-label {
+  font-family: var(--sans-boldcn-font-family);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 4px;
+}
+
+.uplift-why .credential .cred-title {
+  margin: 22px 0 0;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.uplift-why .credential .cred-src {
+  font-family: var(--sans-font-family);
+  font-size: 14px;
+  color: var(--color-gray-light);
+  margin: 8px 0 0;
+}
+
+.uplift-why .why-copy h2 {
+  margin: 0;
+  font-size: var(--uplift-heading-xl);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.uplift-why .rule {
+  display: block;
+  width: 48px;
+  height: 4px;
+  background: var(--color-accent);
+  margin: 14px 0 0;
+}
+
+.uplift-why .why-copy p {
+  margin: 24px 0 0;
+  max-width: 62ch;
+  font-size: 19px;
+  line-height: 1.55;
+}
+
+.uplift-why .why-copy .link-red {
+  display: inline-block;
+  margin-top: 26px;
+  font-size: 17px;
+  color: var(--color-accent);
+  font-family: var(--sans-font-family);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.uplift-why .why-copy .link-red:hover {
+  border-bottom-color: var(--color-accent);
+  text-decoration: none;
+}
+
+.uplift-why .link-red .arr { font-family: Arial, sans-serif; }
+
+@media (max-width: 1180px) {
+  .uplift-why .wrap { padding: 0 40px; }
+  .uplift-why .why-grid { grid-template-columns: 360px 1fr; gap: 40px; }
+}
+
+@media (max-width: 991px) {
+  .uplift-why .why-grid { grid-template-columns: 1fr; }
+  .uplift-why .credential { padding: 36px 32px; }
+}
+
+@media (max-width: 767px) {
+  .uplift-why .wrap { padding: 0 24px; }
+}
+
+@media (max-width: 640px) {
+  .uplift-why .credential .num { font-size: 88px; }
+  .uplift-why .why-copy h2 { font-size: 34px; }
+}

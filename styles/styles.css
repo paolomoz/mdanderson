@@ -101,6 +101,18 @@
   /* nav height — REAL chrome height measured from replica/capture/index/360.json:
      mobile header row = 85px (no utility bar, no red nav band at <=991px) */
   --nav-height: 85px;
+
+  /* uplift-c cinematic demo tokens (branch uplift-c only — prototype
+     stardust/prototypes/uplift-c.html :root, arrival register defaults) */
+  --uplift-heading-xxl: 64px;
+  --uplift-heading-xl: 44px;
+  --uplift-heading-lg: 28px;
+  --uplift-section-pad: 64px;
+  --uplift-ease-out-cubic: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --uplift-enter-duration: 700ms;
+  --uplift-enter-stagger: 90ms;
+  --uplift-parallax-fade: 0.55;
+  --uplift-parallax-progress: 0; /* JS-driven; 0-1 */
 }
 
 /* desktop chrome: utility bar 48px reserve + logo/utility row 116px + red nav

@@ -1,0 +1,62 @@
+/* uplift-trio — prototype §.trio, scoped */
+
+.uplift-trio {
+  background: #fff;
+  padding: var(--uplift-section-pad) 0;
+}
+
+.uplift-trio .wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 72px;
+}
+
+.uplift-trio .trio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  text-align: center;
+}
+
+.uplift-trio .trio-item {
+  text-decoration: none;
+  padding: 8px 0;
+  color: inherit;
+}
+
+.uplift-trio .trio-item:hover { text-decoration: none; }
+
+.uplift-trio .disc {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uplift-trio .disc--red { background: var(--color-accent); }
+.uplift-trio .disc--blue { background: var(--color-blue-light); }
+.uplift-trio .disc--purple { background: var(--color-purple); }
+
+.uplift-trio .trio-item h3 {
+  margin: 18px 0 0;
+  font-family: var(--body-font-semibold);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+
+.uplift-trio .trio-item:hover h3 { color: var(--color-accent); }
+
+@media (max-width: 1180px) {
+  .uplift-trio .wrap { padding: 0 40px; }
+}
+
+@media (max-width: 767px) {
+  .uplift-trio .wrap { padding: 0 24px; }
+  .uplift-trio .trio-grid { grid-template-columns: 1fr; gap: 40px; }
+}

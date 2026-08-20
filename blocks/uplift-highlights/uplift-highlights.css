@@ -1,0 +1,97 @@
+/* uplift-highlights — prototype §.highlights, scoped. The section head is
+   default content styled in place (zero-pixel-change section-head rule). */
+
+main .uplift-highlights-container {
+  background: #fff;
+  padding: var(--uplift-section-pad) 0;
+}
+
+main .uplift-highlights-container > .default-content-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 72px;
+}
+
+main .uplift-highlights-container > .default-content-wrapper h2 {
+  margin: 0;
+  font-size: var(--uplift-heading-xl);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+/* the prototype's red rule under the head */
+main .uplift-highlights-container > .default-content-wrapper h2::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 4px;
+  background: var(--color-accent);
+  margin: 14px 0 0;
+}
+
+.uplift-highlights .wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 72px;
+}
+
+.uplift-highlights .hl-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.uplift-highlights .hl-card {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+
+.uplift-highlights .hl-card:hover { text-decoration: none; }
+
+.uplift-highlights .hl-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--color-gray-light);
+}
+
+.uplift-highlights .hl-card h3 {
+  margin: 14px 0 0;
+  font-family: var(--body-font-semibold);
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+
+.uplift-highlights .hl-card p {
+  font-family: var(--sans-font-family);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-gray-dark);
+  margin: 6px 0 0;
+}
+
+.uplift-highlights .hl-card:hover h3 { color: var(--color-accent); }
+
+@media (max-width: 1180px) {
+  main .uplift-highlights-container > .default-content-wrapper,
+  .uplift-highlights .wrap { padding-left: 40px; padding-right: 40px; }
+
+  .uplift-highlights .hl-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 767px) {
+  main .uplift-highlights-container > .default-content-wrapper,
+  .uplift-highlights .wrap { padding-left: 24px; padding-right: 24px; }
+
+  main .uplift-highlights-container > .default-content-wrapper h2 { font-size: 34px; }
+}
+
+@media (max-width: 640px) {
+  .uplift-highlights .hl-grid { grid-template-columns: 1fr; }
+}
