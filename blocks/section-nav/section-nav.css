@@ -26,8 +26,11 @@
     margin: 0 18px 0 36px;
   }
 
-  /* trailing full-width bands (EndCancer trio + newsletter) span both columns */
-  body.interior main > .section:nth-last-child(-n+2) {
+  /* trailing full-width bands (EndCancer trio + newsletter) span both columns.
+     Repeats the .section-nav-container ~ combinator to out-specify the
+     column-2 rule above ((0,4,2) vs (0,3,2) — it silently lost before,
+     leaving the bands inset and the newsletter form bleeding ~85px). */
+  body.interior main > .section.section-nav-container ~ .section:nth-last-child(-n+2) {
     grid-column: 1 / -1;
     margin: 0;
   }
@@ -935,8 +938,11 @@ body.interior .quote.rail .spotlight-quote > div.info { order: 2; }
   }
 
   /* trailing full-width bands (EndCancer trio + newsletter) span both —
-     blog-article pages MUST keep those as the last two sections */
-  body.blog-article main > .section:nth-last-child(-n+2) {
+     blog-article pages MUST keep those as the last two sections.
+     The .section-nav-container ~ .section combinator is repeated so this
+     out-specifies the column-2 rule above (it lost at (0,3,2) vs (0,4,2),
+     bleeding the newsletter form ~80px past the viewport). */
+  body.blog-article main > .section.section-nav-container ~ .section:nth-last-child(-n+2) {
     grid-column: 1 / -1;
     margin: 0;
   }

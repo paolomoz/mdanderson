@@ -135,7 +135,10 @@ export default async function decorate(block) {
     const arrow = block.classList.contains('promo');
     cells.forEach((cell, i) => {
       const col = el('div', `col-double${i === cells.length - 1 ? ' last' : ''} cell-m`, table);
-      if (cell.querySelector('picture, img')) {
+      // decorateIcons() imgs (data-icon-name, from :name: tokens) are inline
+      // glyphs, not cell media — contact/prose cells keep the rte path so the
+      // circle-icon rules (.rte-container .icon) apply
+      if (cell.querySelector('picture, img:not([data-icon-name])')) {
         const media = el('div', 'module col-media', col);
         media.append(...cell.childNodes);
       } else {

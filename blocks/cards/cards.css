@@ -203,7 +203,10 @@ main .section.cards-container:has(.cards.closing) > .cards-wrapper {
   text-align: center;
 }
 
-.cards.icon.trio .card-col { flex: 0 0 auto; width: 417px; margin-right: 21.95px; }
+/* flex-shrink allowed: interior pages (breast-cancer/clinical-trials pathways)
+   host the trio in a ~930px content column — fixed 417px cols overflowed the
+   viewport to 1679px. Index's 1296px container fits 3×417+2×21.95 unshrunk. */
+.cards.icon.trio .card-col { flex: 0 1 auto; width: 417px; min-width: 0; margin-right: 21.95px; }
 .cards.icon.trio .card-col:last-child { margin-right: 0; }
 
 .cards.icon .promo-icon .fa-stack {
