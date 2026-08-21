@@ -593,3 +593,38 @@ main .section.page-head .icon {
     margin-bottom: 15px;
   }
 }
+
+/* ===== clinical-trial template (no left nav): description prose beside the
+   info sidebar. Owns the 2fr/1fr grid the trial archetype previously
+   borrowed from cards.css via an empty `cards icon rail` block — that hack
+   painted an unremovable 70px surface strip (2026-08-21 gate finding,
+   trial 2025-1667). Geometry mirrors the borrowed rule the 9 passing
+   pages gated against. ===== */
+@media (width >= 992px) {
+  body.clinical-trial main > .section.callout-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 70px 72px;
+    align-items: start;
+  }
+
+  body.clinical-trial main > .section.callout-container > div {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+
+  body.clinical-trial main > .section.callout-container > .default-content-wrapper {
+    grid-column: 1;
+    text-align: left;
+    padding: 0 36px 0 0;
+  }
+
+  body.clinical-trial main > .section.callout-container > .callout-wrapper {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
