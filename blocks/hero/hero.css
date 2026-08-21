@@ -586,3 +586,13 @@ main .section.hero-container > div {
 
   .hero.department .info-container::before { content: none; }
 }
+
+/* department hero scrim: live .background-image.mda-media-brightness::before
+   IS 50% black on department pages (anatomic-pathology probe 2026-08-21 —
+   64.6% of that page's gate diff was this one missing overlay) */
+.hero.department .background-image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 50%);
+}

@@ -1,0 +1,22 @@
+/* live inline styles, verbatim (2026-08-21) */
+#radiomd-embedded iframe {
+  width: 100%;
+  border: none;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.listen-buttons {
+  text-align: center;
+  padding: 55px 3em 30px;
+}
+
+.listen-buttons a {
+  padding-right: 20px;
+}
+
+@media (max-width: 752px) {
+  .listen-buttons {
+    padding-top: 15px;
+  }
+}
