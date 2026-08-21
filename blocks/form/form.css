@@ -279,8 +279,26 @@ main > .section > .form-wrapper {
    left head, 21px serif description, two 648px table columns with 72px
    gutters, 38px-padded uppercase 14px rows, MDIcons \e601 red arrow. */
 
+main .section.form-container:has(.form.confirmation) {
+  padding: 70px 0;
+}
+
 main .section.form-container:has(.form.confirmation) > .default-content-wrapper {
   padding: 0 72px;
+}
+
+/* the page's "Thank You" band (the section after the breadcrumbs): live
+   .highlight section — 70/72 padding, 27px bold serif h2 */
+main:has(.form.confirmation) .breadcrumbs-container + .section > .default-content-wrapper {
+  padding: 70px 72px;
+}
+
+main:has(.form.confirmation) .breadcrumbs-container + .section h2 {
+  font-size: 27px;
+  line-height: 35.1px;
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing);
+  margin: 22px 0;
 }
 
 main .section.form-container:has(.form.confirmation) > .default-content-wrapper h2 {
