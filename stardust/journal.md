@@ -137,3 +137,14 @@ tel/heading nowrap; alert-band drop baseline. Measured deployed-vs-live pixel
 diff: 21.44% → 4.53% at 1440 (prototype benchmark 3.56%; residual = live
 churn). CLS 0.0026. 12 docs redeployed; breast-cancer/donors/research
 regression-checked clean.
+
+## 2026-08-21 — Canvas + trio corrections (user-driven)
+
+User caught two defects: (1) yesterday's full-bleed change was wrong at wide
+viewports — the live site caps the ENTIRE page at a centered 1440px canvas
+(body max-width, probed at 1920: everything x=240/w=1440); deployed now
+matches exactly. (2) icon-trio label overlapped its circle by 13px — the
+shared 95px .promo-icon wrapper clipped the 108px circle (inline-block
+bottom margins don't grow line boxes); icon-variant wrapper now 128px,
+deployed gap measures 20px = the layout-map original. 5-page regression
+sweep at 1920 clean (no overflow, 0 broken imgs, 0 errors).
