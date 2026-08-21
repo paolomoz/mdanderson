@@ -156,3 +156,38 @@ All header links computed black: the link reset `header nav#nav a:any-link
 Reset de-ID'd; probe-verified vs original: red-nav white, top-line #414042,
 MyChart My=#ea0118/Chart=white span-identical. Learnings: no IDs in reset
 selectors.
+
+## 2026-08-21 — POC-completion execution begins (user-driven)
+
+User: delete paolomoz/mdanderson-auto (BLOCKED: gh + GH_PAT lack delete_repo
+scope — needs `gh auth refresh -h github.com -s delete_repo`), then execute
+POC-COMPLETION.md to the end with faithful replicas as the standing mandate.
+
+Fidelity made mechanical: stardust/scripts/fidelity-gate.mjs (frozen live
+snapshot, pixelmatch @1440, PASS = ≤10% + height Δ ≤10%, log
+stardust/migration-plan/fidelity-log.tsv) + prime-directive entry in
+AGENTS.md § Remember. Homepage regression noted: 10.5% vs POC ref (was ≤4.4%
+at gate time) — cascading section offsets, queued for the QA pass.
+
+Shipped (commits c210dd8, + alert commits): blocks table / sticky-cta /
+search-results (+ scripts/mindbreeze.js GSP client) / hero department /
+callout contact-card + clinical-trials — all values lifted from live
+clientlibs; newsletter footer form now live-parity real-submit (tfa_ fields);
+scripts/consented.js = target martech (alloy 2.19.2 → prod datastream
+9a7a2f87, GA4, interaction-loaded Loyal chat) behind the existing consent
+gate, NO ad pixels (HIPAA hold per PLAN §4); header alert band fetched from
+/fragments/alert (demo verified on deploy — screenshot
+stardust/validation/alert-demo.png — then UNPUBLISHED so gates stay truthful).
+
+Dynamic foundation: config-service query.yaml extended to 4 scoped indexes
+(cancerwise / newsroom / cancer-types / clinical-trials; mirror at
+stardust/migration-plan/query.yaml). Mindbreeze verified CORS-open for
+/search-fis + /search-clinicaltrial from any origin (Origin reflected);
+/search2 (site search) 403s from aem.page origins — non-issue at production
+cutover (same-origin), POC demo limited. Trials filter:
+requiredfields=pagetype:clinical%20trial (2,560 total).
+
+Content: 70 sample pages + 10 trial details crawled into stardust/current
+(all captured OK), typed in state.json (82 pages total). PAGE-PRODUCTION.md
+is the batch brief. Pilot wave running: brachytherapy (static), walking
+article (article + live index check), lung-cancer (disease archetype).

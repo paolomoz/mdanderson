@@ -65,3 +65,12 @@
     display: block;
   }
 }
+
+/* live parity: some articles name a reviewer WITHOUT a profile link
+   ("a UT MD Anderson medical professional") — an empty-href anchor still
+   matches :any-link, so neutralize it back to body text (2026-08-21) */
+.byline .med-review a[href=''] {
+  color: inherit;
+  text-decoration: none;
+  pointer-events: none;
+}

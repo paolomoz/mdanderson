@@ -394,7 +394,7 @@ main .section:has(> div > .cards.tinted) {
 .cards.give .card-col:nth-child(2) .promo { background: var(--color-green); }
 
 /* ── icon rail: about quick-links rail beside the mission prose (log §4) ── */
-main .section.cards-container:has(> div > .cards.icon.rail) {
+body:not(.blog-article) main .section.cards-container:has(> div > .cards.icon.rail) {
   display: grid;
   grid-template-columns: 2fr 1fr;
   max-width: var(--max-width);
@@ -402,7 +402,7 @@ main .section.cards-container:has(> div > .cards.icon.rail) {
   padding: 70px 72px;
 }
 
-main .section.cards-container:has(> div > .cards.icon.rail) > div {
+body:not(.blog-article) main .section.cards-container:has(> div > .cards.icon.rail) > div {
   max-width: none;
   margin: 0;
   padding: 0;
@@ -410,12 +410,12 @@ main .section.cards-container:has(> div > .cards.icon.rail) > div {
 }
 
 /* the paired DC is the mission prose, not a centered section head */
-main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper {
+body:not(.blog-article) main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper {
   text-align: left;
   padding: 0 36px 0 0;
 }
 
-main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper h2 {
+body:not(.blog-article) main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper h2 {
   font-size: 27px;
   line-height: 35.1px;
   letter-spacing: var(--letter-spacing);
@@ -425,7 +425,7 @@ main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-w
   margin: 22.41px 0;
 }
 
-main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper p {
+body:not(.blog-article) main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper p {
   font-size: 18px;
   line-height: 23.4px;
   letter-spacing: var(--letter-spacing);
@@ -433,20 +433,20 @@ main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-w
   margin: 0 0 18px;
 }
 
-main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper ul {
+body:not(.blog-article) main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper ul {
   list-style: disc;
   margin: 0 0 18px;
   padding: 0 0 0 40px;
 }
 
-main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper ul li {
+body:not(.blog-article) main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper ul li {
   font-size: 18px;
   line-height: 23.4px;
   letter-spacing: var(--letter-spacing);
   color: #3a3a3a;
 }
 
-main .section.cards-container:has(> div > .cards.icon.rail) > .cards-wrapper {
+body:not(.blog-article) main .section.cards-container:has(> div > .cards.icon.rail) > .cards-wrapper {
   background: var(--color-surface);
   padding: 20px 0 50px;
 }
@@ -462,28 +462,28 @@ main .section.cards-container:has(> div > .cards.icon.rail) > .cards-wrapper {
 .cards.icon.rail.quicklinks .card-col:nth-child(3) .fa-stack { background: var(--color-green); }
 
 @media (width <= 991px) {
-  main .section.cards-container:has(> div > .cards.icon.rail) {
+  body:not(.blog-article) main .section.cards-container:has(> div > .cards.icon.rail) {
     display: block;
     padding: 0;
   }
 
-  main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper {
+  body:not(.blog-article) main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper {
     padding: 35px;
   }
 
-  main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper h2 {
+  body:not(.blog-article) main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper h2 {
     font-size: 24px;
     line-height: 31.2px;
     margin: 20px 0;
   }
 
-  main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper p,
-  main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper ul li {
+  body:not(.blog-article) main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper p,
+  body:not(.blog-article) main .section.cards-container:has(> div > .cards.icon.rail) > .default-content-wrapper ul li {
     font-size: 16px;
     line-height: 20.8px;
   }
 
-  main .section.cards-container:has(> div > .cards.icon.rail) > .cards-wrapper {
+  body:not(.blog-article) main .section.cards-container:has(> div > .cards.icon.rail) > .cards-wrapper {
     padding: 48px 0 0;
   }
 

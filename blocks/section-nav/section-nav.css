@@ -987,6 +987,13 @@ body.blog-article main .section.quote-container > .default-content-wrapper {
   body.blog-article main .section.quote-container > .article-cards-wrapper {
     padding-right: 20px;
   }
+
+  /* callout-less articles (no key-takeaways on live): col1 row1 would sit
+     empty at the feature image's height, dropping the body ~200px below
+     live — let the body start at row 1 instead (2026-08-21 gate finding) */
+  body.blog-article main .section.quote-container:not(:has(> .callout-wrapper)) > .default-content-wrapper:not(:first-child) {
+    grid-row: 1 / span 8;
+  }
 }
 
 /* feature image (first DC wrapper) */
