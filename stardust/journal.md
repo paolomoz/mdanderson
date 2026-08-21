@@ -148,3 +148,11 @@ shared 95px .promo-icon wrapper clipped the 108px circle (inline-block
 bottom margins don't grow line boxes); icon-variant wrapper now 128px,
 deployed gap measures 20px = the layout-map original. 5-page regression
 sweep at 1920 clean (no overflow, 0 broken imgs, 0 errors).
+
+## 2026-08-21 — Header link colors (user-driven)
+
+All header links computed black: the link reset `header nav#nav a:any-link
+{ color: inherit }` carried an ID, outranking every class-based color rule.
+Reset de-ID'd; probe-verified vs original: red-nav white, top-line #414042,
+MyChart My=#ea0118/Chart=white span-identical. Learnings: no IDs in reset
+selectors.
