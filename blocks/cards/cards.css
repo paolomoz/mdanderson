@@ -111,6 +111,8 @@ main .section.cards-container:has(.cards.closing) > .cards-wrapper {
 .cards .cicon-donate::before { content: "\e60f"; }
 .cards .cicon-genetictesting::before { content: "\e614"; }
 .cards .cicon-email::before { content: "\e611"; }
+.cards .cicon-drop::before { content: "\e610"; }
+.cards .cicon-user::before { content: "\e632"; }
 
 .cards .promo-header { color: var(--color-bg); padding: 0 10%; }
 .cards .promo-no-icon .promo-header { padding: 0 42px; }
@@ -594,7 +596,19 @@ main .section.cards-container:has(> div > .cards.ribbon) > div {
 .cards.rail.story .fa-stack:has(.cicon-appointments) { background: var(--color-blue-promo); }
 .cards.rail.story .fa-stack:has(.cicon-screenings) { background: var(--color-purple); }
 
+/* live circle colors ride the icon (probed 2026-08-21: drug-hunter red/blue/
+   purple = powerinnumbers/genetictesting/user; Donate Blood drop = red) */
+.cards.rail.story .fa-stack:has(.cicon-drop) { background: var(--color-accent); }
+.cards.rail.story .fa-stack:has(.cicon-user) { background: var(--color-purple); }
+.cards.rail.story .fa-stack:has(.cicon-powerinnumbers) { background: var(--color-accent); }
+.cards.rail.story .fa-stack:has(.cicon-genetictesting) { background: var(--color-blue-promo); }
+
 .cards.rail.story .promo-header { margin-top: 0; padding: 0; color: var(--color-fg); }
+
+/* blog rail promos are icon+title only — the interior-rail teaser's
+   .promo-text margin-top:10px inflated every story card to 256px vs the
+   live promo module's 246px (probed all 6 blog pages, 2026-08-21) */
+.cards.rail.story .promo-text { margin-top: 0; }
 
 .cards.rail.story h3.title {
   font-family: var(--heading-font-family);
@@ -796,3 +810,9 @@ main .section.cards-container:has(> div > .cards.ribbon) > div {
   color: var(--color-accent);
   text-decoration: underline;
 }
+
+/* purple/black/red promo trio (live basic-science Resources band:
+   promo-background-purple / black / red — no existing cycle matches) */
+.cards.trio.purple-first .card-col:nth-child(1) .promo { background: var(--color-purple); }
+.cards.trio.purple-first .card-col:nth-child(2) .promo { background: #000; }
+.cards.trio.purple-first .card-col:nth-child(3) .promo { background: var(--color-accent); }

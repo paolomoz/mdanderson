@@ -1023,28 +1023,46 @@ body.blog-article main .section.quote-container .default-content-wrapper {
     display: grid;
 
     /* live @1440 (probed 2026-08-21): body 508 / gap 38 / rail 528 inside
-       the 1074px content column */
+       the 1074px content column. 42px top: live's article table starts at
+       y520 (an empty spacer module rides above it) with 20px internal pad
+       → content top y540; EDS sections sat 22px high on every page */
     grid-template-columns: minmax(0, 1fr) 528px;
     column-gap: 38px;
     align-items: start;
-    padding: 20px 0 0;
+    padding: 42px 0 0;
   }
 
   body.blog-article main .section.quote-container > .article-col { grid-column: 1; }
   body.blog-article main .section.quote-container > .article-rail { grid-column: 2; }
 
-  /* rail rhythm (live 2026-08-21): image-bottom meets quote-top exactly;
-     20px before each promo group and the signup; promos touch each other */
-  body.blog-article .article-rail > .cards-wrapper { margin-top: 20px; }
-  body.blog-article .article-rail > .cards-wrapper + .cards-wrapper { margin-top: 0; }
-  body.blog-article .article-rail > .newsletter-wrapper { margin-top: 20px; }
+  /* rail rhythm (live re-probed 2026-08-21, all 6 pages): modules stack with
+     ZERO gap — image-bottom meets quote-top, promos touch each other and the
+     signup. The single exception is a ~20px gap after the pull quote (live:
+     the .quote-author-title's 1em bottom margin escapes the module box) */
+  body.blog-article .article-rail > .quote-wrapper { margin-bottom: 20px; }
 
-  /* body starts at callout-bottom + 18 (live y810) */
+  /* body starts at callout-bottom + 20 (live y810/y801) */
   body.blog-article .article-col > .callout-wrapper { margin-bottom: 18px; }
 
+  /* live prose opens flush at the section content top (first <p> carries no
+     top margin on live) — specificity must clear the (0,4,1) prose p rule */
+  body.blog-article main .section.quote-container .article-col > .default-content-wrapper:first-child > p:first-child {
+    margin-top: 0;
+  }
+
+  /* EDS callout bottom slack is 38px (ul margin 18 + inner pad 20); live's
+     two callout renderings carry 24px (insomnia white keytakeaway, box 250)
+     and 38px (colorectal relocated green promo, box 241 w/ shorter ul) —
+     one EDS box model splits the difference at −10px (insomnia +7 / colorectal −8) */
+  body.blog-article main .section.quote-container .article-col .callout-body ul:last-child {
+    margin-bottom: 8px;
+  }
+
   /* lever 1 (2026-08-21): live standalone body images sit 52px below the
-     preceding paragraph */
-  body.blog-article .article-col > .default-content-wrapper p:has(> picture) {
+     preceding paragraph (live wraps them in a pad-top-35 module; gap probed
+     y2560→y2612 on walking). Selector restated at (0,5,·) — the original
+     3-class form lost to the (0,4,1) prose p rule and never applied */
+  body.blog-article main .section.quote-container .article-col > .default-content-wrapper p:has(> picture) {
     margin: 52px 0 0;
   }
 
@@ -1055,9 +1073,23 @@ body.blog-article main .section.quote-container .default-content-wrapper {
   }
 }
 
-/* feature image (image-only DC, regrouped into the rail) — live keeps the
-   paragraph's top margin (image top y540 = body text top), bottom cut */
-body.blog-article .article-rail > .default-content-wrapper p { margin: 18px 0 0; }
+/* feature image (image DC regrouped into the rail) — live's standalone-image
+   module sits flush at the rail top (y540), image edge to content edge */
+body.blog-article main .section.quote-container .article-rail > .default-content-wrapper p {
+  margin: 0;
+}
+
+/* rail image caption (live .media-caption, probed zebrafish 2026-08-21:
+   Univers 55 Roman 16/20.8 left, black, 22px above) */
+body.blog-article main .section.quote-container .article-rail > .default-content-wrapper p:not(:has(picture, img)) {
+  margin: 22px 0 0;
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  line-height: 20.8px;
+  letter-spacing: var(--letter-spacing);
+  text-align: left;
+  color: #000;
+}
 
 body.blog-article .article-rail > .default-content-wrapper img {
   display: block;
@@ -1178,11 +1210,12 @@ body.blog-article .quote.rail .info .other-info {
 }
 
 /* live stand-alone-quote icon block = 41h (36px glyph + 5px pad); EDS
-   measured 48h (2026-08-21 gate lever 4) */
+   measured 48h (2026-08-21 gate lever 4) — display block kills the inline
+   line box whose baseline descent inflated the row to 43px */
 body.blog-article .quote.rail .quote-icon i {
   font-size: 36px;
   line-height: 36px;
-  display: inline-block;
+  display: block;
 }
 
 /* --- mobile: single column; live 360 drops the pull quote ----------------- */
@@ -1322,5 +1355,51 @@ body.interior main > .section.white.white {
     font-size: 29px;
     font-weight: 400;
     text-align: left;
+  }
+}
+
+/* ===== interior spacing family (batch-2 gate convergence, 2026-08-21 —
+   live values measured identically on calculators / institutional-profile /
+   basic-science; compensating &zwnj; spacers on earlier pages become
+   redundant and are removed in the sweep) ===== */
+@media (width >= 992px) {
+  /* live h1.section-title: Minion 48px, margin-bottom 40px (EDS was 36/9) */
+  body.interior main .default-content-wrapper h1 {
+    font-family: var(--body-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0 0 40px;
+  }
+
+  /* gray/tinted bands: live section.highlight carries ~70px top padding
+     (band-top → col-container-title = 101px) and sits ~66px below the
+     preceding prose (EDS was 28px / 10px) */
+  body.interior main > .section.section-nav-container ~ .section.tinted:not(:nth-last-child(-n+2)):not(.dark),
+  body.interior main > .section.section-nav-container ~ .section.accordion-container:not(:nth-last-child(-n+2)) {
+    margin-top: 66px;
+    padding-top: 70px;
+  }
+
+  /* stats wrappers: kill the 70/72 double-pad; live adjacent groups sit
+     83px apart (EDS was 214px) */
+  body.interior main > .section.section-nav-container ~ .section.stats-container > .stats-wrapper {
+    padding: 0;
+    max-width: none;
+    margin: 0;
+  }
+
+  body.interior main > .section.section-nav-container ~ .section.stats-container > .stats-wrapper + .stats-wrapper {
+    margin-top: 83px;
+  }
+
+  /* columns 400px-media variant (live AEM textimage img width=400 in the
+     1146px column) — Style on the block: media-400 */
+  body.interior .columns.media-400 .col-double:has(picture, img) {
+    flex: 0 0 435px;
+  }
+
+  body.interior .columns.media-400 .col-double:not(:has(picture, img)) {
+    flex: 1 1 auto;
   }
 }

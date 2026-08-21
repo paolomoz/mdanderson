@@ -355,11 +355,14 @@ function localImagePath(src) {
 
 /* build the SAME authored-row shape the static decode reads, then reuse
    cardFrom so index cards and static cards share one DOM */
-function rowFromEntry(entry, variant) {
+function rowFromEntry(entry, variant, i = 0) {
   const row = document.createElement('div');
   const mediaCell = document.createElement('div');
   const src = localImagePath(entry.image);
-  if (src && src !== '0') {
+  // rail-tab live parity (2026-08-21 gate): only the NEWEST story carries
+  // its feature image in the Latest rail — the rest are text rows
+  const wantsMedia = variant !== 'rail-tab' || i === 0;
+  if (wantsMedia && src && src !== '0') {
     mediaCell.append(createOptimizedPicture(src, cleanTitle(entry.title), false, [{ width: '750' }]));
   }
   const body = document.createElement('div');
@@ -455,8 +458,9 @@ async function decorateIndex(block, variant) {
     groups.forEach(([slug, group]) => {
       const container = document.createElement('div');
       container.className = 'ac-container';
-      group.slice(0, limit)
-        .forEach((entry) => container.append(cardFrom(rowFromEntry(entry, variant), variant)));
+      group.slice(0, limit).forEach((entry, i) => {
+        container.append(cardFrom(rowFromEntry(entry, variant, i), variant));
+      });
       const panel = document.createElement('div');
       panel.className = `ac-panel cat-${slug}`;
       panel.append(container);
@@ -468,7 +472,7 @@ async function decorateIndex(block, variant) {
   const container = document.createElement('div');
   container.className = 'ac-container';
   const cards = entries.slice(0, limit)
-    .map((entry) => cardFrom(rowFromEntry(entry, variant), variant));
+    .map((entry, i) => cardFrom(rowFromEntry(entry, variant, i), variant));
   cards.forEach((c) => container.append(c));
 
   if (variant === 'rail-tab') {
