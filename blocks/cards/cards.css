@@ -872,3 +872,9 @@ main .section.cards-container:has(> div > .cards.ribbon) > div {
 .cards.icon.trio.career .card-col:nth-child(1) .fa-stack { background: var(--color-purple); }
 .cards.icon.trio.career .card-col:nth-child(2) .fa-stack { background: var(--color-green); }
 .cards.icon.trio.career .card-col:nth-child(3) .fa-stack { background: var(--color-accent); }
+
+/* icon-duo gradient circles (live education-training: gradient purple /
+   orange) + education-training glyph (2026-08-21 landing wave) */
+.cards.icon.duo .card-col:nth-child(1) .fa-stack { background: linear-gradient(#783491, #662c7b); }
+.cards.icon.duo .card-col:nth-child(2) .fa-stack { background: linear-gradient(#e96613, #db6e29); }
+.cards .cicon-education-training::before { content: '\e63d'; }

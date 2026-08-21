@@ -40,7 +40,8 @@ export default async function decorate(block) {
     if (media) inner.append(media.closest('picture') || media);
   }
 
-  const infoC = el('div', `info-container${block.classList.contains('orange') ? ' orange' : ''}`);
+  const panelColor = ['orange', 'red'].find((c) => block.classList.contains(c));
+  const infoC = el('div', `info-container${panelColor ? ` ${panelColor}` : ''}`);
   const info = el('div', 'info', infoC);
   const kicker = infoCell ? infoCell.querySelector('h1, h2, h3') : null;
   const heading = el('h2', 'heading', info);

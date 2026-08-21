@@ -165,3 +165,9 @@ main .section.banner-container:has(.horizontal-text-bar.purple) { background: va
 
   .banner a.cta-block .mda-icon-linkout { font-size: 16px; }
 }
+
+/* live banner icon: bicon-support-favorite \e623 (education CARES banner) */
+.banner .bicon-support-favorite::before {
+  font-family: mda-icons, sans-serif;
+  content: '\e623';
+}

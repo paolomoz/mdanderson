@@ -220,3 +220,6 @@ main .section.promo-band-container > div {
 
   .promo-band.left .info-container .cta { font-size: 18px; }
 }
+
+/* live for-physicians panel: .info-container.red #da291c (2026-08-21) */
+.promo-band .info-container.red { background: var(--color-accent); }
