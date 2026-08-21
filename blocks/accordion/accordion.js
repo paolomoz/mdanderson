@@ -61,9 +61,12 @@ export default async function decorate(block) {
 
     const heading = document.createElement('h3');
     heading.className = 'panel-title';
+    // first panel opens by default (breast-cancer replica state); live pages
+    // with all panels closed (careers FAQ) author the `closed` variant
+    const firstOpen = i === 0 && !block.classList.contains('closed');
     const btn = document.createElement('button');
     btn.type = 'button';
-    btn.setAttribute('aria-expanded', i === 0 ? 'true' : 'false');
+    btn.setAttribute('aria-expanded', firstOpen ? 'true' : 'false');
     const inner = titleCell.querySelector('h1,h2,h3,h4,h5,h6') || titleCell;
     const title = inner.textContent.trim();
     btn.innerHTML = `<span class="panel-title-text">${title}</span><i class="panel-icon" aria-hidden="true"></i>`;
@@ -72,9 +75,6 @@ export default async function decorate(block) {
     heading.id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
     const panel = document.createElement('div');
-    // first panel opens by default (breast-cancer replica state); live pages
-    // with all panels closed (careers FAQ) author the `closed` variant
-    const firstOpen = i === 0 && !block.classList.contains('closed');
     panel.className = `panel-container ${firstOpen ? 'open' : 'closed'}`;
     const body = document.createElement('div');
     body.className = 'panel-body';
