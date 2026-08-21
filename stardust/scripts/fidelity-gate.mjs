@@ -32,7 +32,7 @@ async function shot(url, out) {
   // mid-page (the artifact that inflated the homepage gate to 10.5%);
   // applied to BOTH live and EDS shots so the comparison stays symmetric
   await pg.evaluate(() => {
-    document.querySelectorAll('[id*="loyal"],[class*="loyal"],iframe[src*="loyal"],iframe[title*="chat" i],[id*="guide-"],#onetrust-consent-sdk').forEach((n) => { n.style.visibility = 'hidden'; });
+    document.querySelectorAll('[id*="loyal"],[class*="loyal"],iframe[src*="loyal"],iframe[title*="chat" i],[id*="guide-"],#onetrust-consent-sdk,.privacy_prompt').forEach((n) => { n.style.visibility = 'hidden'; });
     document.querySelectorAll('.mda-cta-list-container').forEach((n) => { n.style.position = 'absolute'; });
   });
   await pg.screenshot({ path: out, fullPage: true });
