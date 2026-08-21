@@ -283,3 +283,4 @@
 2026-08-21T16:22:15.885Z	/cancer-types/lung-cancer/lung-cancer-symptoms.html	/cancer-types/lung-cancer/lung-cancer-symptoms	28.06%	heightΔ 6.9%	FAIL	ref:frozen-live
 2026-08-21T16:23:25.676Z	/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center.html	/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center	18.47%	heightΔ 0.3%	FAIL	ref:frozen-live
 2026-08-21T16:23:28.782Z	/donors-volunteers.html	/donors-volunteers	15.54%	heightΔ 1.0%	FAIL	ref:poc-gate
+2026-08-21T16:30:19.316Z	/research/research-resources/core-facilities.html	/research/research-resources/core-facilities	14.83%	heightΔ 79.2%	FAIL	ref:frozen-live
