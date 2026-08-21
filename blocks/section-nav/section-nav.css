@@ -1025,8 +1025,9 @@ body.blog-article main .section.quote-container > .default-content-wrapper {
   }
 }
 
-/* feature image (first DC wrapper) */
-body.blog-article main .section.quote-container > .default-content-wrapper:first-child p { margin: 0; }
+/* feature image (first DC wrapper) — live keeps the paragraph's top margin
+   (image top y540 = body text top, probed 2026-08-21), only bottom is cut */
+body.blog-article main .section.quote-container > .default-content-wrapper:first-child p { margin: 18px 0 0; }
 
 body.blog-article main .section.quote-container > .default-content-wrapper:first-child img {
   display: block;
