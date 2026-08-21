@@ -936,7 +936,10 @@ body.interior .quote.rail .spotlight-quote > div.info { order: 2; }
 
   body.blog-article main > .section.section-nav-container ~ .section {
     grid-column: 2;
-    margin: 0 16px 0 32px;
+
+    /* live @1440 (probed 2026-08-21): .col-content-single x=312 w=1074 →
+       72px left of the 240px sidebar, 54px right margin */
+    margin: 0 54px 0 72px;
   }
 
   /* trailing full-width bands (EndCancer trio + newsletter) span both —
@@ -966,8 +969,11 @@ body.blog-article main .section.quote-container > .default-content-wrapper {
 @media (width >= 992px) {
   body.blog-article main .section.quote-container {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 44%;
-    column-gap: 32px;
+
+    /* live @1440 (probed 2026-08-21): body 508 / gap 38 / rail 528 inside
+       the 1074px content column */
+    grid-template-columns: minmax(0, 1fr) 528px;
+    column-gap: 38px;
     align-items: start;
     padding: 20px 0 0;
   }
