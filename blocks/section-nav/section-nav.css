@@ -1417,3 +1417,12 @@ body.interior main > .section.white.white {
     padding-top: 0;
   }
 }
+
+/* band contiguity (fresh lung probe 2026-08-21): live tinted/accordion
+   bands stack CONTIGUOUSLY (anatomy→D&T→FAQ→why→locations back-to-back);
+   the 66px band margin applies only after prose */
+@media (width >= 992px) {
+  body.interior main > .section.section-nav-container ~ .section:is(.tinted, .accordion-container) + .section:is(.tinted, .accordion-container):not(:nth-last-child(-n+2)):not(.dark) {
+    margin-top: 0;
+  }
+}

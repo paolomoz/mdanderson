@@ -816,3 +816,30 @@ main .section.cards-container:has(> div > .cards.ribbon) > div {
 .cards.trio.purple-first .card-col:nth-child(1) .promo { background: var(--color-purple); }
 .cards.trio.purple-first .card-col:nth-child(2) .promo { background: #000; }
 .cards.trio.purple-first .card-col:nth-child(3) .promo { background: var(--color-accent); }
+
+/* teaser box model refinements (fresh lung probe 2026-08-21): the 1px box
+   wraps IMAGE + text (live img 356x200 inside the border, full-bleed to the
+   box top); header keeps no rail-story padding */
+.cards.rail.teaser .card-col > .module {
+  border: 1px solid #d0d0ce;
+}
+
+.cards.rail.teaser .promo,
+.cards.rail.teaser .promo.promo-simple {
+  border: 0;
+}
+
+.cards.rail.teaser .promo-header {
+  padding: 0;
+  margin-top: 0;
+}
+
+.cards.rail.teaser .card-media {
+  margin: 0;
+  line-height: 0;
+}
+
+.cards.rail.teaser .card-media img {
+  width: 100%;
+  height: auto;
+}

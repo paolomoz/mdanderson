@@ -257,3 +257,10 @@ main .section:has(> div > .columns.tinted) {
   border-top: 1px solid #d0d0ce;
   margin: 18px 0;
 }
+
+/* interior columns gutter: live pairs sit 18px apart (528/18/528 in the
+   1074 column) — the 72px landing-band cell inset shrank right-cell images
+   to 465px @x921 vs live 528 @x858 (2026-08-21 lung probe) */
+body.interior .columns .col-double.last.cell-m {
+  padding-left: 18px;
+}
