@@ -183,6 +183,9 @@ function regroupBlogArticle(main) {
         || w.classList.contains('newsletter-wrapper');
       (isRail ? rail : left).append(w);
     });
+    // the rail feature image is the article LCP — keep it eager
+    const lcpImg = rail.querySelector('.default-content-wrapper img');
+    if (lcpImg) { lcpImg.loading = 'eager'; lcpImg.setAttribute('fetchpriority', 'high'); }
     if (left.children.length) section.append(left);
     if (rail.children.length) section.append(rail);
   });
@@ -269,8 +272,10 @@ async function loadLazy(doc) {
  * without impacting the user experience.
  */
 function loadDelayed() {
-  import('./consent-check.js');
-  // load anything that can be postponed to the latest here
+  // 3s defer (EDS convention): the consent/martech chain must never compete
+  // with the LCP image on throttled mobile (Lighthouse 2026-08-21: home LCP
+  // 6.5s / article 6.0s with an immediate import; CLS/TBT already clean)
+  window.setTimeout(() => import('./consent-check.js'), 3000);
 }
 
 async function loadPage() {
