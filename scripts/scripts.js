@@ -177,6 +177,28 @@ function regroupBlogArticle(main) {
   });
 }
 
+/**
+ * news-article: same column-independence problem as blog-article — the grid
+ * sized row 1 to the contact card, pushing the body +174-205px below live.
+ * Nest the callout-wrappers (contact card, sidebar media) into .news-rail
+ * and everything else into .news-col so each column flows like live
+ * (newsroom-archetype.md §4b lever 1, 2026-08-21).
+ */
+function regroupNewsArticle(main) {
+  if (!document.body.classList.contains('news-article')) return;
+  main.querySelectorAll(':scope > .section').forEach((section) => {
+    if (!section.querySelector(':scope > .callout-wrapper')) return;
+    const col = document.createElement('div');
+    col.className = 'news-col';
+    const rail = document.createElement('div');
+    rail.className = 'news-rail';
+    [...section.children].forEach((w) => {
+      (w.classList.contains('callout-wrapper') ? rail : col).append(w);
+    });
+    section.append(col, rail);
+  });
+}
+
 export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);
@@ -184,6 +206,7 @@ export function decorateMain(main) {
   decorateBlocks(main);
   decorateButtons(main);
   regroupBlogArticle(main);
+  regroupNewsArticle(main);
 }
 
 /**
