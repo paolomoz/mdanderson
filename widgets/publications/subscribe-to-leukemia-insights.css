@@ -3,6 +3,6 @@
    nothing to add at the widget level. */
 
 /* live-parity offset: on live, the form region sits below the page-header
-   band + hr with ~91px more lead-in than the EDS section flow provides
-   (gate measurement, form title y 603 live vs 512 eds @1440). */
-.subscribe-to-leukemia-insights .wFormContainer { margin-top: 91px; }
+   band + hr with ~106px more lead-in than the EDS section flow provides
+   (gate measurement, form title y 603 live vs 512 eds @1440; 15px absorbed by collapse). */
+.subscribe-to-leukemia-insights .wFormContainer { margin-top: 106px; }
