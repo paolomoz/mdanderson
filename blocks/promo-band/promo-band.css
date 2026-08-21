@@ -223,3 +223,13 @@ main .section.promo-band-container > div {
 
 /* live for-physicians panel: .info-container.red #da291c (2026-08-21) */
 .promo-band .info-container.red { background: var(--color-accent); }
+
+/* gap-above — live pages insert an EMPTY highlight row (140px white) between
+   the hero and the band (for-physicians, probed 2026-08-21: hero ends y674,
+   band starts y814). Authored as a promo-band variant since sections carry
+   no vertical rhythm of their own. */
+main .section.promo-band-container:has(.promo-band.gap-above) { padding-top: 140px; }
+
+@media (width <= 991px) {
+  main .section.promo-band-container:has(.promo-band.gap-above) { padding-top: 40px; }
+}
