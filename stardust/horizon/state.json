@@ -2,7 +2,7 @@
   "track": "horizon",
   "writtenBy": "stardust:prototype (horizon track)",
   "page": "index",
-  "status": "approved",
+  "status": "rolled-out",
   "at": "2026-08-21T12:50:00Z",
   "artifacts": {
     "direction": "stardust/horizon/direction.md",
@@ -38,5 +38,20 @@
       "footer placeholder-ribbon"
     ],
     "foldBack": "page-local (horizon track is namespaced; replica direction untouched by construction)"
+  },
+  "rollout": {
+    "at": "2026-08-21T16:40:00Z",
+    "branch": "horizon",
+    "repo": "github.com/paolomoz/mdanderson",
+    "daContent": "/paolomoz/mdanderson/horizon.html + /media/horizon/* (13 images)",
+    "daFolderNote": "per-branch fstab subfolder mounts are ignored on this config (uplift-c learning) \u2014 content rides the shared site mount at path /horizon",
+    "url": "https://horizon--mdanderson--paolomoz.aem.page/horizon",
+    "verification": {
+      "plainHtml": "about:error 0, h1 1, img 13/13",
+      "motionProbe": "5 scroll stops, zero hidden-in-viewport, lenis boot ok",
+      "mobile390": "zero horizontal overflow",
+      "canopy": "renders live, matches prototype",
+      "known404": "/fragments/alert.plain.html \u2014 pre-existing site chrome fetch, hidden on horizon template"
+    }
   }
 }
