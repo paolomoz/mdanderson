@@ -628,3 +628,64 @@ main .section.page-head .icon {
     grid-row: 1;
   }
 }
+
+/* ===== news-article template (newsroom releases, live `newsarticlepage`):
+   body prose beside the 408px media-contact sidebar. Live geometry probed
+   2026-08-21: body 834px at x72, gap 54, sidebar boxes 408px at x960
+   (newsroom-archetype.md §4 — one rule set covers 2,190 pages). No
+   anchoring block exists on these pages, so the template rule lives here,
+   like clinical-trial. ===== */
+@media (width >= 992px) {
+  body.news-article main > .section:has(> .callout-wrapper) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 408px;
+    column-gap: 54px;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 72px;
+    align-items: start;
+  }
+
+  body.news-article main > .section:has(> .callout-wrapper) > div {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+
+  /* row plan (archetype §4): head r1c1, contact card r1c2 (+70px top),
+     body r2c1, sidebar media r2c2 */
+  body.news-article main > .section:has(> .callout-wrapper) > .default-content-wrapper:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  body.news-article main > .section:has(> .callout-wrapper) > .callout-wrapper {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 70px;
+  }
+
+  body.news-article main > .section:has(> .callout-wrapper) > .default-content-wrapper:not(:first-child) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  body.news-article main > .section:has(> .callout-wrapper) > .callout-wrapper ~ .callout-wrapper {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 0;
+    align-self: start;
+  }
+}
+
+/* news-article headline block (live .article-body h1: Minion 36/46.8,
+   padding-bottom 24) */
+body.news-article main h1 {
+  font-family: var(--body-font-family);
+  font-size: 36px;
+  line-height: 1.3;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 24px;
+}
