@@ -20,3 +20,9 @@
     padding-top: 15px;
   }
 }
+
+/* styles.css global `img { display: block }` stacked the badges vertically —
+   live badges are an inline centered row (2026-08-21 gate) */
+.listen-buttons img {
+  display: inline-block;
+}
