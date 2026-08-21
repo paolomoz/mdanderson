@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wireframe C — Care Canvas</title>
+<style>
+  /* LO-FI WIREFRAME — structure & register only, not final art direction */
+  :root {
+    --red: #da291c;
+    --ink: #2b2a29;
+    --gray: #75726f;
+    --ivory: #faf7f2;
+    --tint: #f2ede4;
+    --redtint: #faeae8;
+    --r: 22px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--ivory); color: var(--ink);
+    font-family: -apple-system, 'Segoe UI', helvetica, arial, sans-serif; }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 44px; }
+  .photo { position: relative; background: #e6e2db; overflow: hidden; border-radius: var(--r); }
+  .photo img { width: 100%; height: 100%; object-fit: cover; display: block;
+    filter: grayscale(1) contrast(.8) brightness(1.06); }
+  .photo .ph-label { position: absolute; left: 14px; bottom: 14px; background: rgba(255,255,255,.92);
+    border: 1px dashed #8b8884; padding: 4px 10px; font-size: 11px; color: #66625d;
+    font-family: monospace; z-index: 2; border-radius: 8px; }
+  .placeholder { display: flex; align-items: center; justify-content: center; text-align: center;
+    border: 1px dashed #a09c96; border-radius: var(--r); background:
+    repeating-linear-gradient(45deg, #efeae2, #efeae2 14px, #e6e1d8 14px, #e6e1d8 28px); }
+  .placeholder span { background: rgba(255,255,255,.92); padding: 6px 12px; font-size: 11px;
+    color: #66625d; font-family: monospace; max-width: 78%; border-radius: 8px; }
+  .note { position: absolute; z-index: 20; background: var(--red); color: #fff; font-family: monospace;
+    font-size: 10px; padding: 3px 8px; border-radius: 4px; opacity: .92; }
+  .kicker { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; font-weight: 700; color: var(--red); }
+  h1, h2, h3 { font-weight: 750; letter-spacing: -.02em; }
+  .pill { display: inline-block; border-radius: 999px; text-decoration: none; font-weight: 700; }
+  .pill-red { background: var(--red); color: #fff; padding: 15px 30px; font-size: 15px; }
+  .pill-ghost { border: 1.6px solid var(--ink); color: var(--ink); padding: 14px 28px; font-size: 15px; }
+  .arrowlink { color: var(--red); font-weight: 700; font-size: 14px; text-decoration: none; }
+
+  /* Header */
+  header { padding: 20px 0; position: relative; }
+  .head-row { display: flex; align-items: center; justify-content: space-between; }
+  .logo { font-size: 22px; font-weight: 800; }
+  .logo b { color: var(--red); }
+  nav { display: flex; gap: 28px; font-size: 14.5px; font-weight: 600; }
+  nav a { text-decoration: none; color: var(--ink); }
+  .head-actions { display: flex; gap: 12px; align-items: center; font-size: 14px; }
+
+  /* Hero */
+  .hero { display: grid; grid-template-columns: 1fr 1.05fr; gap: 48px; align-items: center;
+    padding: 46px 0 0; position: relative; }
+  .hero h1 { font-size: 62px; line-height: 1.04; margin: 16px 0 20px; }
+  .hero h1 em { font-style: normal; color: var(--red); }
+  .hero p.dek { font-size: 18px; line-height: 1.55; color: var(--gray); margin-bottom: 26px; max-width: 46ch; }
+  .hero .photo { height: 540px; border-radius: 260px 260px var(--r) var(--r); }
+  .ranking-line { display: flex; align-items: center; gap: 14px; margin-top: 30px; font-size: 14px; color: var(--gray); }
+  .ranking-badge { width: 74px; height: 74px; border-radius: 50%; background: var(--ink); color: #fff;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 9px; }
+  .ranking-badge b { font-size: 22px; }
+  .hero-ctas { display: flex; gap: 14px; }
+
+  /* How can we help — action bar */
+  .helpbar { position: relative; margin-top: -60px; z-index: 5; }
+  .helpbar-in { background: #fff; border-radius: calc(var(--r) + 6px); box-shadow: 0 18px 50px rgba(60,40,20,.12);
+    padding: 30px 34px; }
+  .helpbar h2 { font-size: 22px; margin-bottom: 18px; }
+  .help-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .help-card { border: 1.4px solid #e5dfd5; border-radius: 16px; padding: 20px; text-decoration: none; color: var(--ink); }
+  .help-card .ic { width: 40px; height: 40px; border-radius: 12px; background: var(--redtint); color: var(--red);
+    display: flex; align-items: center; justify-content: center; font-size: 18px; margin-bottom: 12px; }
+  .help-card h3 { font-size: 16.5px; margin-bottom: 5px; }
+  .help-card p { font-size: 13px; color: var(--gray); line-height: 1.45; }
+  .helpbar .tel { text-align: center; margin-top: 18px; font-size: 14.5px; color: var(--gray); }
+  .helpbar .tel b { color: var(--ink); }
+
+  /* Blood callout */
+  .blood { margin: 64px 0; position: relative; }
+  .blood-in { background: var(--redtint); border-radius: calc(var(--r) + 6px); padding: 34px 38px;
+    display: flex; align-items: center; gap: 26px; }
+  .blood .drop { width: 58px; height: 58px; border-radius: 50%; background: var(--red); color: #fff;
+    display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0; }
+  .blood h3 { font-size: 24px; margin-bottom: 4px; }
+  .blood p { font-size: 15px; color: var(--gray); }
+  .blood .pill-red { margin-left: auto; flex-shrink: 0; }
+
+  /* Why choose */
+  .why { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; padding: 30px 0 70px; position: relative; }
+  .why .photo { height: 470px; }
+  .why h2 { font-size: 44px; line-height: 1.08; margin: 14px 0 18px; }
+  .why p { font-size: 16.5px; line-height: 1.6; color: var(--gray); margin-bottom: 22px; }
+  .why-stats { display: flex; gap: 14px; margin-bottom: 26px; }
+  .stat-chip { background: #fff; border: 1.4px solid #e5dfd5; border-radius: 16px; padding: 16px 20px; }
+  .stat-chip b { font-size: 26px; display: block; }
+  .stat-chip.red b { color: var(--red); }
+  .stat-chip span { font-size: 12px; color: var(--gray); }
+
+  /* Video story */
+  .video { position: relative; padding-bottom: 70px; }
+  .video .photo { height: 560px; }
+  .video .overlay { position: absolute; left: 44px; bottom: 114px; z-index: 3; color: #fff; max-width: 480px; }
+  .video .photo::after { content: ""; position: absolute; inset: 0; border-radius: var(--r);
+    background: linear-gradient(200deg, transparent 45%, rgba(30,20,15,.72)); }
+  .video h3 { font-size: 32px; line-height: 1.15; margin: 12px 0 16px; }
+  .playpill { display: inline-flex; align-items: center; gap: 10px; background: #fff; color: var(--ink);
+    border-radius: 999px; padding: 12px 22px; font-weight: 700; font-size: 14px; text-decoration: none; }
+  .playpill i { color: var(--red); font-style: normal; }
+
+  /* Highlights */
+  .highlights { background: var(--tint); border-radius: calc(var(--r) + 10px); padding: 60px 44px; position: relative; }
+  .hl-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 28px; }
+  .hl-head h2 { font-size: 38px; }
+  .hl-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .hl-card { background: #fff; border-radius: 18px; overflow: hidden; }
+  .hl-card .photo { height: 150px; border-radius: 0; }
+  .hl-card .txt { padding: 18px; }
+  .hl-card h3 { font-size: 17px; margin-bottom: 6px; }
+  .hl-card p { font-size: 13px; color: var(--gray); line-height: 1.45; }
+
+  /* Support */
+  .support { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 70px 0 0; position: relative; }
+  .sup-card { border-radius: calc(var(--r) + 6px); padding: 34px; background: #fff; border: 1.4px solid #e5dfd5;
+    display: grid; grid-template-columns: 1fr 150px; gap: 18px; align-items: center; }
+  .sup-card h3 { font-size: 24px; margin-bottom: 8px; }
+  .sup-card p { font-size: 14.5px; color: var(--gray); line-height: 1.5; margin-bottom: 14px; }
+  .sup-card .photo { height: 150px; border-radius: 50%; width: 150px; }
+  .quickpills { display: flex; gap: 12px; margin-top: 20px; }
+  .quickpills a { border: 1.4px solid var(--ink); border-radius: 999px; padding: 11px 20px; font-size: 13.5px;
+    font-weight: 700; text-decoration: none; color: var(--ink); }
+
+  /* End cancer */
+  .endcancer { padding: 70px 0; position: relative; }
+  .endcancer h2 { font-size: 44px; margin-bottom: 8px; }
+  .endcancer .sub { color: var(--gray); margin-bottom: 28px; }
+  .ec-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .ec-card { position: relative; border-radius: calc(var(--r) + 4px); overflow: hidden; height: 340px; color: #fff; }
+  .ec-card .photo { position: absolute; inset: 0; border-radius: 0; }
+  .ec-card .photo::after { content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 35%, rgba(120,15,8,.85)); }
+  .ec-card .txt { position: absolute; left: 22px; right: 22px; bottom: 20px; z-index: 3; }
+  .ec-card h3 { font-size: 23px; margin-bottom: 6px; }
+  .ec-card p { font-size: 13.5px; opacity: .9; margin-bottom: 10px; }
+  .ec-card a { color: #fff; font-weight: 700; font-size: 13.5px; }
+
+  /* Newsletter */
+  .nl { background: var(--ink); border-radius: calc(var(--r) + 10px); color: #fff; padding: 54px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; margin-bottom: 80px; position: relative; }
+  .nl h2 { font-size: 34px; margin: 10px 0; }
+  .nl p { color: #cfcbc6; font-size: 15px; }
+  .nl-form { display: flex; background: #fff; border-radius: 999px; padding: 6px; }
+  .nl-form input { flex: 1; border: 0; background: transparent; padding: 12px 18px; font-size: 15px; }
+  .nl-form button { background: var(--red); color: #fff; border: 0; border-radius: 999px; padding: 12px 26px; font-weight: 700; }
+
+  footer { background: #fff; border-top: 1.4px solid #e5dfd5; padding: 48px 0; font-size: 12px; color: var(--gray); }
+  .foot-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; }
+  .foot-grid div { border-top: 1.4px solid #e5dfd5; padding-top: 12px; height: 110px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <span class="note" style="right:0; top:6px;">C — “CARE CANVAS”: warm ivory, rounded & humanist, task-first (Lilly-adjacent register)</span>
+    <div class="head-row">
+      <span class="logo">MD<b>Anderson</b> Cancer Center</span>
+      <nav>
+        <a href="#">Patients &amp; Family</a><a href="#">Cancer Types</a><a href="#">Clinical Trials</a>
+        <a href="#">Research</a><a href="#">Give</a>
+      </nav>
+      <div class="head-actions">
+        <span>🔍</span>
+        <a class="pill pill-red" style="padding:11px 22px; font-size:14px;" href="#">Request an appointment</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <span class="kicker">Making Cancer History®</span>
+      <h1>Every cancer.<br>Every person.<br><em>One focus: you.</em></h1>
+      <p class="dek">The nation’s #1 cancer center — built around your life, your family and your plan.</p>
+      <div class="hero-ctas">
+        <a class="pill pill-red" href="#">Request an appointment</a>
+        <a class="pill pill-ghost" href="#">Explore cancer types</a>
+      </div>
+      <div class="ranking-line">
+        <div class="ranking-badge"><b>#1</b>US News</div>
+        <span>#1 in the nation for cancer care, 12 years in a row —<br><a class="arrowlink" href="#">about this ranking</a></span>
+      </div>
+    </div>
+    <div class="photo">
+      <img src="https://main--mdanderson--paolomoz.aem.page/media_1f8f55f6617f51dd7e6355d3c02ed6ee9228765bd.jpg?width=1600&format=jpg" alt="">
+      <span class="ph-label">PHOTO arch crop: sunlit, candid patient + care team, warm & optimistic</span>
+    </div>
+    <span class="note" style="left:0; top:-8px;">Arch/organic photo crop = signature shape, softens clinical feel</span>
+  </section>
+
+  <div class="helpbar">
+    <span class="note" style="left:20px; top:-16px;">icon-wells → “How can we help you today?” task bar overlapping the hero</span>
+    <div class="helpbar-in">
+      <h2>How can we help you today?</h2>
+      <div class="help-grid">
+        <a class="help-card" href="#"><div class="ic">◎</div><h3>Find your cancer type</h3><p>Search by type of cancer or condition</p></a>
+        <a class="help-card" href="#"><div class="ic">⚕</div><h3>Request an appointment</h3><p>Online, or call 1-877-790-1139</p></a>
+        <a class="help-card" href="#"><div class="ic">⚗</div><h3>Search clinical trials</h3><p>Find open studies that may fit you</p></a>
+        <a class="help-card" href="#"><div class="ic">✈</div><h3>Plan your visit</h3><p>First visit, insurance, travel &amp; lodging</p></a>
+      </div>
+      <div class="tel"><b>We’re here for you.</b> Call <b>1-877-790-1139</b> — 7 days a week</div>
+    </div>
+  </div>
+
+  <section class="blood">
+    <span class="note" style="left:20px; top:-16px;">Blood-drive banner → soft red-tinted callout, urgent but kind</span>
+    <div class="blood-in">
+      <div class="drop">🩸</div>
+      <div>
+        <h3>Donate blood. Save a life.</h3>
+        <p>Family, friends and the community are encouraged to donate whole blood and platelets for MD Anderson patients.</p>
+      </div>
+      <a class="pill pill-red" href="#">Schedule a donation</a>
+    </div>
+  </section>
+
+  <section class="why">
+    <span class="note" style="right:0; top:0;">Badge becomes stat chips; portrait photography does the persuading</span>
+    <div class="photo placeholder" style="height:470px;"><span>PHOTO: patient portrait, warm daylight, direct gaze</span></div>
+    <div>
+      <span class="kicker">Why choose MD Anderson</span>
+      <h2>People like you choose us every day</h2>
+      <div class="why-stats">
+        <div class="stat-chip red"><b>#1</b><span>in the nation for cancer care</span></div>
+        <div class="stat-chip"><b>15 yrs</b><span>U.S. News Best Hospitals</span></div>
+      </div>
+      <p>It’s more than decades of experience and groundbreaking research delivering new therapies years early. It’s because we put all of our focus on you.</p>
+      <a class="pill pill-ghost" href="#">Learn more about MD Anderson</a>
+    </div>
+  </section>
+
+  <section class="video">
+    <span class="note" style="left:20px; top:-14px;">Video feature: rounded canvas card, story text on-image</span>
+    <div class="photo">
+      <img src="https://main--mdanderson--paolomoz.aem.page/media_1d80435d0fc05ed96b884f031b89a9662e2ee71d8.png?width=2000&format=png" alt="">
+      <span class="ph-label">VIDEO still: Dr. Barcenas & daughter Juliana</span>
+    </div>
+    <div class="overlay">
+      <span class="kicker" style="color:#fff;">Our people</span>
+      <h3>Father inspires daughter’s career path at MD Anderson</h3>
+      <a class="playpill" href="#"><i>▶</i> Watch the video</a>
+    </div>
+  </section>
+
+  <section class="highlights">
+    <span class="note" style="right:24px; top:-14px;">Highlights: warm tinted shelf, 4 story cards + “view all”</span>
+    <div class="hl-head">
+      <h2>This week at MD Anderson</h2>
+      <a class="arrowlink" href="#">All stories →</a>
+    </div>
+    <div class="hl-grid">
+      <div class="hl-card">
+        <div class="photo placeholder" style="height:150px; border-radius:0;"><span>PHOTO: survivor portrait</span></div>
+        <div class="txt"><h3>Uterine cancer signs</h3><p>What six survivors noticed before diagnosis</p></div>
+      </div>
+      <div class="hl-card">
+        <div class="photo placeholder" style="height:150px; border-radius:0;"><span>PHOTO: hands, donation</span></div>
+        <div class="txt"><h3>Blood donation</h3><p>One caregiver’s reasons for giving back</p></div>
+      </div>
+      <div class="hl-card">
+        <div class="photo placeholder" style="height:150px; border-radius:0;"><span>PHOTO: UPF clothing outdoors</span></div>
+        <div class="txt"><h3>Beyond sunscreen</h3><p>Podcast: preventing skin cancer with UPF clothing</p></div>
+      </div>
+      <div class="hl-card">
+        <div class="photo placeholder" style="height:150px; border-radius:0;"><span>PHOTO: two people, connection</span></div>
+        <div class="txt"><h3>Finding connection</h3><p>Breaking isolation after a diagnosis</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="support">
+    <span class="note" style="left:20px; top:44px;">Support duo: human circle-crops, service-desk warmth; icon trio → pills</span>
+    <div class="sup-card">
+      <div>
+        <h3>myCancerConnection</h3>
+        <p>One-on-one support from survivors and caregivers who’ve been there.</p>
+        <a class="arrowlink" href="#">Connect with someone →</a>
+      </div>
+      <div class="photo placeholder"><span>PHOTO circle: survivor smiling</span></div>
+    </div>
+    <div class="sup-card">
+      <div>
+        <h3>One-on-one counseling</h3>
+        <p>Professional counseling for patients, caregivers and families.</p>
+        <a class="arrowlink" href="#">Find support →</a>
+      </div>
+      <div class="photo placeholder"><span>PHOTO circle: counselor</span></div>
+    </div>
+  </section>
+  <div class="quickpills">
+    <a href="#">📍 Find our locations</a><a href="#">✎ Read our blog</a><a href="#">? Ask a question</a>
+  </div>
+
+  <section class="endcancer">
+    <span class="note" style="right:0; top:56px;">Giving: three photographic tiles, red gradient anchors the brand</span>
+    <h2>Help #EndCancer</h2>
+    <p class="sub">Three ways to make a difference today.</p>
+    <div class="ec-grid">
+      <div class="ec-card">
+        <div class="photo placeholder" style="position:absolute; inset:0; border-radius:0;"><span>PHOTO: blood donor</span></div>
+        <div class="txt"><h3>Donate blood</h3><p>Whole blood &amp; platelets for our patients.</p><a href="#">Schedule →</a></div>
+      </div>
+      <div class="ec-card">
+        <div class="photo placeholder" style="position:absolute; inset:0; border-radius:0;"><span>PHOTO: researcher, lab light</span></div>
+        <div class="txt"><h3>Give now</h3><p>Fund research and patient programs.</p><a href="#">Donate →</a></div>
+      </div>
+      <div class="ec-card">
+        <div class="photo placeholder" style="position:absolute; inset:0; border-radius:0;"><span>PHOTO: merch / community event</span></div>
+        <div class="txt"><h3>Shop MD Anderson</h3><p>Every purchase supports the mission.</p><a href="#">Visit store →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nl">
+    <span class="note" style="left:20px; top:-14px;">Cancerwise newsletter: single dark moment on the page = high contrast close</span>
+    <div>
+      <span class="kicker" style="color:#ff8a80;">Cancerwise</span>
+      <h2>Cancer information that helps, weekly</h2>
+      <p>Stories, prevention advice and expert insight from MD Anderson.</p>
+    </div>
+    <div class="nl-form"><input placeholder="Email address"><button>Subscribe</button></div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>PATIENTS &amp; FAMILY</div><div>CANCER TYPES</div><div>RESEARCH</div><div>ABOUT</div><div>CONTACT &amp; LEGAL</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

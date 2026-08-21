@@ -1,0 +1,42 @@
+{
+  "track": "horizon",
+  "writtenBy": "stardust:prototype (horizon track)",
+  "page": "index",
+  "status": "approved",
+  "at": "2026-08-21T12:50:00Z",
+  "artifacts": {
+    "direction": "stardust/horizon/direction.md",
+    "shapeBrief": "stardust/prototypes/horizon-shape.md",
+    "proposed": "stardust/prototypes/horizon-proposed.html",
+    "cinematic": "stardust/prototypes/horizon-cinematic.html"
+  },
+  "gates": {
+    "detector": "1 mechanical fix (layout-transition on rail hover -> transform); 29 design-system-color advisories sanctioned (new-world redesign vs replica DESIGN.md, user-directed)",
+    "audit": "skip-link ok; LCP eager+fetchpriority=high; noscript fallback for canopy + data-anim; prefers-reduced-motion complete; heading order fixed (canopy statement h2->p); contrast AA verified incl. white-on-red 4.6:1",
+    "adapt": "breakpoints 1280/1024/800/640; 360px probe scrollWidth==clientWidth; nav fonts >=12.5px, gaps >=12px; data-nav-collapse=canopy",
+    "motion": "arrival register; lenis boot ok; 5-position probe zero hidden-in-viewport; countup fires on intersection (15); reduced-motion forces final states; zero console errors; pill white-render in full-viewport captures identified as headless backdrop-filter capture artifact (element clip paints correctly)"
+  },
+  "visionCheck": {
+    "verdict": "pass",
+    "observations": [
+      "wordmark strike + Making Cancer History + credential numerals carried",
+      "photography-led register per approved wireframe b-horizon",
+      "red scarce: CTA + chapter numerals + one giving band"
+    ]
+  },
+  "openItems": [
+    "Placeholder photography (4 cinematic surfaces + 4 film portraits) pending MD Anderson DAM originals - listed in _provenance.unsourcedContent",
+    "Minion/Univers licensing decision before public use (fonts/LICENSING.md)"
+  ],
+  "approval": {
+    "at": "2026-08-21T14:55:00Z",
+    "approvedBy": "user",
+    "verbatim": "remove the prototype notes then approve the prototype, then proceed with stardust:migrate and stardust:rollout in a dedicated branch and DA folder",
+    "notesRemoved": [
+      "hero ph-tag",
+      "why-photo figcaption",
+      "footer placeholder-ribbon"
+    ],
+    "foldBack": "page-local (horizon track is namespaced; replica direction untouched by construction)"
+  }
+}

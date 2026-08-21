@@ -1,0 +1,11 @@
+import { chromium } from 'playwright';
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+await page.goto('file:///Users/paolo/stardust/2026-08/mdanderson/stardust/wireframes/b-horizon.html', { waitUntil: 'networkidle', timeout: 45000 }).catch(() => {});
+await page.waitForTimeout(1200);
+await page.screenshot({ path: 'stardust/wireframes/refs/shot-b-header-closed.png' });
+await page.click('.burger');
+await page.waitForTimeout(400);
+await page.screenshot({ path: 'stardust/wireframes/refs/shot-b-header-open.png' });
+await browser.close();
+console.log('done');

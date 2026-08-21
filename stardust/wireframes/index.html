@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MD Anderson — Redesign wireframes (pick one)</title>
+<style>
+  :root { --red: #da291c; --ink: #1c1b1b; --gray: #6b6968; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, helvetica, arial, sans-serif; background: #f5f4f2; color: var(--ink); padding: 56px; }
+  h1 { font-size: 34px; letter-spacing: -.02em; margin-bottom: 8px; }
+  .sub { color: var(--gray); font-size: 16px; max-width: 78ch; line-height: 1.55; margin-bottom: 40px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .card { background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 6px 24px rgba(0,0,0,.07);
+    display: flex; flex-direction: column; }
+  .card iframe { width: 200%; height: 640px; border: 0; transform: scale(.5); transform-origin: 0 0;
+    pointer-events: none; }
+  .frame-clip { height: 320px; overflow: hidden; border-bottom: 1px solid #e8e6e3; }
+  .card .txt { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+  .tag { font-size: 11px; letter-spacing: .18em; font-weight: 700; color: var(--red); text-transform: uppercase; }
+  .card h2 { font-size: 24px; margin: 8px 0 10px; letter-spacing: -.01em; }
+  .card p { font-size: 14px; color: var(--gray); line-height: 1.55; margin-bottom: 10px; }
+  .card ul { font-size: 13.5px; color: var(--gray); line-height: 1.6; padding-left: 18px; margin-bottom: 16px; }
+  .refs { font-size: 12px; color: #999; margin-bottom: 16px; }
+  .open { margin-top: auto; display: inline-block; background: var(--ink); color: #fff; text-decoration: none;
+    text-align: center; font-weight: 700; font-size: 14px; padding: 13px; border-radius: 8px; }
+  .foot { margin-top: 36px; font-size: 13px; color: #999; }
+</style>
+</head>
+<body>
+  <h1>MD Anderson homepage — three photography-led directions</h1>
+  <p class="sub">Low-fidelity wireframes. Same content and brand (red #da291c, Making Cancer History®), three different registers.
+  Photos are current-site images shown desaturated as placeholders — final art direction comes in the prototype phase.
+  Red annotation tags on each page explain the intent of every structural decision.</p>
+  <div class="grid">
+    <div class="card">
+      <div class="frame-clip"><iframe src="a-frontpage.html" scrolling="no"></iframe></div>
+      <div class="txt">
+        <span class="tag">Direction A</span>
+        <h2>The Front Page</h2>
+        <p>Editorial newspaper register: serif display, ink rules, press-stamp badge. The homepage reads like the front page of a trusted publication — authority through journalism, humanity through documentary photography.</p>
+        <ul>
+          <li>Hero = one dominant story photo + banner headline</li>
+          <li>Highlights become a real front-page story grid (no carousel)</li>
+          <li>Red used as “ink”: one full red band (#EndCancer), rules and kickers elsewhere</li>
+        </ul>
+        <div class="refs">Refero refs: Luffu (serif warmth), Christopher Ireland / Cori Corinne (editorial structure)</div>
+        <a class="open" href="a-frontpage.html">Open full wireframe A →</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="frame-clip"><iframe src="b-horizon.html" scrolling="no"></iframe></div>
+      <div class="txt">
+        <span class="tag">Direction B</span>
+        <h2>Horizon</h2>
+        <p>Cinematic and immersive: a 100vh photographic hero, floating glass nav, and a chaptered scroll (Your care → Why → Stories → Take action) with a sticky index rail. Boldest departure from the current site.</p>
+        <ul>
+          <li>Care-finder search panel breaks the hero edge — single task entry point</li>
+          <li>Stories as a draggable full-height filmstrip</li>
+          <li>Dark stat interlude gives the #1 / 15-years numbers real weight</li>
+        </ul>
+        <div class="refs">Refero refs: Superpower (full-bleed portrait + red CTA), until (glass nav, scroll cue), Inversa (anchored type)</div>
+        <a class="open" href="b-horizon.html">Open full wireframe B →</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="frame-clip"><iframe src="c-canvas.html" scrolling="no"></iframe></div>
+      <div class="txt">
+        <span class="tag">Direction C</span>
+        <h2>Care Canvas</h2>
+        <p>Warm, humanist, task-first — the most Lilly-adjacent. Ivory canvas, rounded shapes, arch photo crops, sunlit imagery. Feels like a guide that takes your hand, not an institution.</p>
+        <ul>
+          <li>“How can we help you today?” action bar overlaps the hero</li>
+          <li>Arch/circle photo crops as a signature brand shape</li>
+          <li>Soft red-tinted callouts keep urgency kind (blood drive)</li>
+        </ul>
+        <div class="refs">Refero refs: August Health (people-centered crops), Function Health (warm canvas), Lilly.com (task-first humanism)</div>
+        <a class="open" href="c-canvas.html">Open full wireframe C →</a>
+      </div>
+    </div>
+  </div>
+  <p class="foot">All three keep the full current homepage content: #1 ranking hero · we’re-here-for-you phone strip · blood-drive banner · cancer types / trials / plan-your-care wells · why-choose + US News badge · video feature · 5 highlights · myCancerConnection + counseling · locations/blog/ask · Help #EndCancer (give / blood / shop) · Cancerwise newsletter.</p>
+</body>
+</html>

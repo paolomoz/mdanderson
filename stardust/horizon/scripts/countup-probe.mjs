@@ -1,0 +1,10 @@
+import { chromium } from 'playwright';
+const F = 'file:///Users/paolo/stardust/2026-08/mdanderson/stardust/prototypes/horizon-cinematic.html';
+const b = await chromium.launch();
+const p = await b.newPage({ viewport: { width: 1440, height: 900 } });
+await p.goto(F, { waitUntil: 'networkidle', timeout: 60000 }).catch(()=>{});
+await p.waitForTimeout(1200);
+await p.evaluate(() => document.getElementById('why').scrollIntoView({ block: 'center' }));
+await p.waitForTimeout(2000);
+console.log('countup after scrollIntoView:', await p.evaluate(() => document.querySelector('[data-countup]')?.textContent));
+await b.close();

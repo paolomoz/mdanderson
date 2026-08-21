@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wireframe A — The Front Page</title>
+<style>
+  /* LO-FI WIREFRAME — structure & register only, not final art direction */
+  :root {
+    --red: #da291c;
+    --ink: #1c1b1b;
+    --gray: #6b6968;
+    --line: #c9c7c5;
+    --paper: #fdfcfa;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--paper); color: var(--ink); font-family: georgia, serif; }
+  .sans { font-family: -apple-system, helvetica, arial, sans-serif; }
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 0 48px; }
+  .photo { position: relative; background: #e8e6e3; overflow: hidden; }
+  .photo img { width: 100%; height: 100%; object-fit: cover; display: block;
+    filter: grayscale(1) contrast(.82) brightness(1.05); }
+  .photo .ph-label { position: absolute; left: 12px; bottom: 12px; background: rgba(255,255,255,.9);
+    border: 1px dashed var(--gray); padding: 4px 10px; font-size: 11px; color: var(--gray);
+    font-family: monospace; z-index: 2; }
+  .placeholder { display: flex; align-items: center; justify-content: center; text-align: center;
+    border: 1px dashed var(--gray); background:
+    repeating-linear-gradient(45deg, #f0eeec, #f0eeec 14px, #e7e5e2 14px, #e7e5e2 28px); }
+  .placeholder span { background: rgba(255,255,255,.92); padding: 6px 12px; font-size: 11px;
+    color: var(--gray); font-family: monospace; max-width: 75%; }
+  .note { position: absolute; z-index: 5; background: var(--red); color: #fff; font-family: monospace;
+    font-size: 10px; padding: 3px 8px; border-radius: 2px; opacity: .92; }
+  .kicker { font-family: -apple-system, helvetica, sans-serif; font-size: 12px; letter-spacing: .18em;
+    text-transform: uppercase; color: var(--red); font-weight: 700; }
+  .rule { border: 0; border-top: 1px solid var(--line); }
+  .rule-heavy { border: 0; border-top: 3px solid var(--ink); }
+  a { color: var(--ink); }
+  .textlink { font-family: -apple-system, helvetica, sans-serif; font-size: 14px; font-weight: 600;
+    color: var(--red); text-decoration: none; border-bottom: 1px solid var(--red); padding-bottom: 1px; }
+
+  /* Masthead */
+  .utility { font-size: 12px; color: var(--gray); display: flex; justify-content: flex-end; gap: 24px;
+    padding: 10px 0; }
+  .masthead { padding: 18px 0 0; position: relative; }
+  .masthead-row { display: flex; align-items: baseline; justify-content: space-between; }
+  .wordmark { font-size: 44px; letter-spacing: -.01em; font-weight: 700; }
+  .wordmark em { color: var(--red); font-style: normal; }
+  .mast-date { font-size: 12px; color: var(--gray); font-family: monospace; }
+  nav.mainnav { display: flex; gap: 32px; padding: 16px 0 14px; font-family: -apple-system, helvetica, sans-serif;
+    font-size: 14px; font-weight: 600; }
+  nav.mainnav a { text-decoration: none; }
+  nav.mainnav a.active { color: var(--red); }
+
+  /* Hero */
+  .hero { display: grid; grid-template-columns: 1fr 420px; gap: 40px; padding: 32px 0 40px; position: relative; }
+  .hero .photo { height: 560px; }
+  .hero-txt { display: flex; flex-direction: column; justify-content: flex-end; padding-bottom: 8px; }
+  .hero-txt h1 { font-size: 64px; line-height: 1.02; letter-spacing: -.015em; margin: 14px 0 18px; }
+  .hero-txt h1 .num { color: var(--red); }
+  .hero-txt p.dek { font-size: 18px; line-height: 1.5; color: var(--gray); margin-bottom: 22px; }
+  .hero-cta { display: flex; flex-direction: column; gap: 12px; }
+  .btn { display: inline-block; font-family: -apple-system, helvetica, sans-serif; font-size: 15px;
+    font-weight: 700; padding: 14px 26px; text-decoration: none; text-align: center; }
+  .btn-red { background: var(--red); color: #fff; }
+  .btn-ghost { border: 1.5px solid var(--ink); color: var(--ink); }
+
+  /* Here for you strip */
+  .herefor { background: var(--ink); color: #fff; }
+  .herefor .in { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
+  .herefor .in b { font-size: 17px; }
+  .herefor .tel { font-size: 22px; font-weight: 700; color: #fff; }
+
+  /* Start here directory */
+  .starthere { padding: 56px 0; }
+  .sh-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 48px; margin-top: 28px; }
+  .sh-col h3 { font-size: 26px; margin: 14px 0 10px; }
+  .sh-col p { font-size: 15px; color: var(--gray); line-height: 1.5; margin-bottom: 14px; }
+  .sh-col ul { list-style: none; margin-top: 10px; }
+  .sh-col li { padding: 9px 0; border-bottom: 1px solid var(--line); font-family: -apple-system, helvetica, sans-serif;
+    font-size: 14px; font-weight: 600; }
+  .sh-search { display: flex; border: 1.5px solid var(--ink); margin-top: 4px; }
+  .sh-search input { flex: 1; border: 0; padding: 12px 14px; font-size: 14px; background: transparent; }
+  .sh-search button { background: var(--ink); color: #fff; border: 0; padding: 0 18px; font-weight: 700; }
+
+  /* Feature (why choose) */
+  .feature { background: #f4f2ef; padding: 64px 0; position: relative; }
+  .feat-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: center; }
+  .feature .photo { height: 440px; }
+  .stamp { width: 120px; height: 120px; border: 2px solid var(--ink); border-radius: 50%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: -apple-system, helvetica, sans-serif;
+    text-align: center; font-size: 10px; line-height: 1.3; margin-bottom: 22px; }
+  .stamp b { font-size: 30px; }
+  .feature h2 { font-size: 44px; line-height: 1.08; margin-bottom: 18px; }
+  .feature p { font-size: 17px; line-height: 1.6; color: var(--gray); margin-bottom: 20px; }
+
+  /* Video story */
+  .videostory { position: relative; margin: 72px 0; }
+  .videostory .photo { height: 620px; }
+  .play { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 92px; height: 92px;
+    border-radius: 50%; background: rgba(255,255,255,.92); display: flex; align-items: center; justify-content: center;
+    font-size: 30px; color: var(--red); z-index: 3; }
+  .vs-caption { display: flex; justify-content: space-between; align-items: baseline; padding-top: 14px;
+    border-bottom: 1px solid var(--line); padding-bottom: 20px; }
+  .vs-caption h3 { font-size: 30px; max-width: 60%; line-height: 1.15; }
+
+  /* Highlights front page grid */
+  .highlights { padding: 56px 0 32px; position: relative; }
+  .hl-head { display: flex; justify-content: space-between; align-items: baseline; margin: 14px 0 26px; }
+  .hl-head h2 { font-size: 38px; }
+  .hl-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; }
+  .hl-lead .photo { height: 330px; margin-bottom: 14px; }
+  .hl-lead h3 { font-size: 30px; line-height: 1.15; margin-bottom: 8px; }
+  .story { padding-bottom: 20px; border-bottom: 1px solid var(--line); margin-bottom: 20px; }
+  .story .photo { height: 130px; margin-bottom: 10px; }
+  .story h4 { font-size: 19px; line-height: 1.2; margin-bottom: 6px; }
+  .story p, .hl-lead p { font-size: 14px; color: var(--gray); line-height: 1.45; }
+
+  /* End cancer band */
+  .endcancer { background: var(--red); color: #fff; padding: 60px 0; position: relative; }
+  .endcancer h2 { font-size: 44px; margin-bottom: 30px; }
+  .ec-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2px; background: rgba(255,255,255,.35); }
+  .ec-cell { background: var(--red); padding: 26px 26px 26px 0; }
+  .ec-cell:nth-child(2), .ec-cell:nth-child(3) { padding-left: 26px; }
+  .ec-cell h3 { font-size: 25px; margin-bottom: 8px; }
+  .ec-cell p { font-size: 14px; opacity: .85; line-height: 1.5; margin-bottom: 12px; }
+  .ec-cell a { color: #fff; font-family: -apple-system, helvetica, sans-serif; font-size: 13px; font-weight: 700; }
+
+  /* Support directory + newsletter */
+  .supportrow { padding: 56px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+  .support-card { border-top: 3px solid var(--ink); padding-top: 16px; margin-bottom: 26px; }
+  .support-card h3 { font-size: 24px; margin-bottom: 6px; }
+  .support-card p { font-size: 14px; color: var(--gray); line-height: 1.5; }
+  .quicklinks { display: flex; gap: 14px; margin-top: 8px; flex-wrap: wrap; }
+  .quicklinks a { font-family: -apple-system, helvetica, sans-serif; font-size: 13px; font-weight: 700;
+    border: 1.5px solid var(--ink); padding: 10px 16px; text-decoration: none; }
+  .newsletter { background: #f4f2ef; padding: 36px; position: relative; }
+  .newsletter h3 { font-size: 30px; margin-bottom: 8px; }
+  .newsletter p { font-size: 15px; color: var(--gray); margin-bottom: 18px; line-height: 1.5; }
+  .nl-form { display: flex; border: 1.5px solid var(--ink); background: #fff; }
+  .nl-form input { flex: 1; border: 0; padding: 14px; font-size: 14px; }
+  .nl-form button { background: var(--red); color: #fff; border: 0; padding: 0 22px; font-weight: 700; }
+
+  footer { background: var(--ink); color: #999; padding: 48px 0; font-family: -apple-system, helvetica, sans-serif; font-size: 12px; }
+  .foot-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; }
+  .foot-grid div { border-top: 1px solid #444; padding-top: 12px; height: 120px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="utility sans">MyChart &nbsp;·&nbsp; For Physicians &nbsp;·&nbsp; Careers &nbsp;·&nbsp; En Español &nbsp;·&nbsp; 🔍 Search</div>
+  <hr class="rule">
+  <header class="masthead">
+    <span class="note" style="right:0; top:-6px;">A — “THE FRONT PAGE”: editorial newspaper register, serif display, ink rules</span>
+    <div class="masthead-row">
+      <div class="wordmark">MD&nbsp;Anderson <em>Cancer&nbsp;Center</em></div>
+      <div class="mast-date">Making Cancer History® — Houston, TX</div>
+    </div>
+    <nav class="mainnav">
+      <a href="#" class="active">Patients &amp; Family</a><a href="#">Cancer Types</a><a href="#">Treatment</a>
+      <a href="#">Clinical Trials</a><a href="#">Research</a><a href="#">Prevention</a><a href="#">Donors &amp; Volunteers</a>
+    </nav>
+  </header>
+  <hr class="rule-heavy">
+
+  <section class="hero">
+    <span class="note" style="left:0; top:12px;">Dominant photo = the “story”, headline reads like a front-page banner</span>
+    <div class="photo">
+      <img src="https://main--mdanderson--paolomoz.aem.page/media_1f8f55f6617f51dd7e6355d3c02ed6ee9228765bd.jpg?width=2000&format=jpg" alt="">
+      <span class="ph-label">PHOTO full-col: candid patient + caregiver, documentary style, natural light</span>
+    </div>
+    <div class="hero-txt">
+      <span class="kicker">U.S. News &amp; World Report · 2026</span>
+      <h1><span class="num">#1</span> in the nation for cancer care</h1>
+      <p class="dek">For the 12th year in a row — and for every person who walks through our doors.</p>
+      <div class="hero-cta">
+        <a class="btn btn-red" href="#">Request an appointment</a>
+        <a class="btn btn-ghost" href="#">Learn about this ranking</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="herefor">
+  <div class="wrap in sans">
+    <b>We’re here for you.</b>
+    <span>Call us at <span class="tel">1-877-790-1139</span> &nbsp;or&nbsp; <a class="textlink" style="color:#fff;border-color:#fff;" href="#">request an appointment online</a></span>
+  </div>
+</div>
+
+<div class="wrap">
+  <section class="starthere" style="position:relative;">
+    <span class="note" style="right:0; top:40px;">icon-wells → ruled “directory” columns, index-page feel</span>
+    <span class="kicker">Start here</span>
+    <div class="sh-grid">
+      <div class="sh-col">
+        <h3>Search cancer types</h3>
+        <p>Find information by type of cancer or condition.</p>
+        <div class="sh-search"><input placeholder="e.g. breast cancer"><button>→</button></div>
+      </div>
+      <div class="sh-col">
+        <h3>Search clinical trials</h3>
+        <p>Explore open studies and find one that may be right for you.</p>
+        <div class="sh-search"><input placeholder="condition, drug, phase…"><button>→</button></div>
+      </div>
+      <div class="sh-col">
+        <h3>Plan your care</h3>
+        <ul>
+          <li>Prepare for your first visit →</li>
+          <li>Check insurance coverage →</li>
+          <li>Plan travel &amp; lodging →</li>
+          <li>All planning resources →</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="feature">
+  <div class="wrap feat-grid">
+    <span class="note" style="left:48px; top:-14px;">Why-choose as an editorial feature; US News badge becomes a “press stamp”</span>
+    <div class="photo placeholder" style="height:440px;"><span>PHOTO: patient portrait, honest &amp; hopeful, shallow depth</span></div>
+    <div>
+      <div class="stamp sans"><b>15</b>years<br>Best Hospitals<br>in Cancer Care</div>
+      <h2>Why people choose MD&nbsp;Anderson</h2>
+      <p>It goes beyond decades of experience and groundbreaking research that delivers new therapies years before they become standard. It’s because we put all of our focus on you.</p>
+      <a class="textlink" href="#">Learn more about MD Anderson</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="videostory">
+    <span class="note" style="left:0; top:-14px;">Video feature runs full-width like a photo essay spread</span>
+    <div class="photo">
+      <img src="https://main--mdanderson--paolomoz.aem.page/media_1d80435d0fc05ed96b884f031b89a9662e2ee71d8.png?width=2000&format=png" alt="">
+      <span class="ph-label">PHOTO/VIDEO still: Dr. Barcenas & daughter Juliana — human story, warm</span>
+      <div class="play">▶</div>
+    </div>
+    <div class="vs-caption">
+      <h3>Father inspires daughter’s career path at MD&nbsp;Anderson</h3>
+      <a class="textlink" href="#">Watch the video</a>
+    </div>
+  </section>
+
+  <section class="highlights">
+    <span class="note" style="right:0; top:60px;">Highlights carousel → front-page story grid (1 lead + 4 briefs), no carousel controls</span>
+    <hr class="rule-heavy">
+    <div class="hl-head">
+      <h2>Highlights</h2>
+      <a class="textlink" href="#">All stories from Cancerwise →</a>
+    </div>
+    <div class="hl-grid">
+      <div class="hl-lead">
+        <div class="photo placeholder" style="height:330px; margin-bottom:14px;"><span>PHOTO lead story: campus / ranking moment</span></div>
+        <span class="kicker">Top cancer hospital</span>
+        <h3>MD Anderson earns U.S. News &amp; World Report’s top ranking</h3>
+        <p>The nation’s #1 hospital for cancer care, for the 12th year in a row.</p>
+      </div>
+      <div>
+        <div class="story">
+          <div class="photo placeholder" style="height:130px;"><span>PHOTO: survivor portrait</span></div>
+          <h4>Uterine cancer signs</h4><p>What six survivors noticed before diagnosis</p>
+        </div>
+        <div class="story">
+          <div class="photo placeholder" style="height:130px;"><span>PHOTO: blood donation, hands</span></div>
+          <h4>Blood donation</h4><p>One caregiver’s reasons for giving back</p>
+        </div>
+      </div>
+      <div>
+        <div class="story">
+          <div class="photo placeholder" style="height:130px;"><span>PHOTO: outdoors, UPF clothing</span></div>
+          <h4>Beyond sunscreen</h4><p>Podcast: preventing skin cancer with UPF clothing</p>
+        </div>
+        <div class="story">
+          <div class="photo placeholder" style="height:130px;"><span>PHOTO: two people, connection</span></div>
+          <h4>Finding connection</h4><p>Breaking through isolation after a cancer diagnosis</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="endcancer">
+  <div class="wrap">
+    <span class="note" style="right:48px; top:-14px; background:#1c1b1b;">Red owns exactly one full band per page — this one. Blood-drive banner folds in here as the urgent lead cell</span>
+    <h2>Help #EndCancer</h2>
+    <div class="ec-grid sans">
+      <div class="ec-cell"><h3>Donate blood. Save a life.</h3><p>Family, friends and community are encouraged to donate whole blood and platelets for MD Anderson patients.</p><a href="#">Schedule a blood donation →</a></div>
+      <div class="ec-cell"><h3>Give now</h3><p>Your gift funds research and patient programs.</p><a href="#">Make a donation →</a></div>
+      <div class="ec-cell"><h3>Shop MD Anderson</h3><p>Every purchase supports our mission.</p><a href="#">Visit the store →</a></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="supportrow">
+    <div>
+      <span class="kicker">Support for you</span>
+      <div class="support-card" style="margin-top:14px;">
+        <h3>myCancerConnection</h3>
+        <p>One-on-one support from survivors and caregivers who’ve been there.</p>
+      </div>
+      <div class="support-card">
+        <h3>One-on-one counseling</h3>
+        <p>Professional counseling for patients, caregivers and families.</p>
+      </div>
+      <div class="quicklinks">
+        <a href="#">Find our locations</a><a href="#">Read our blog</a><a href="#">Ask a question</a>
+      </div>
+    </div>
+    <div class="newsletter">
+      <span class="note" style="right:12px; top:-14px;">Cancerwise newsletter as a “subscribe to the paper” unit</span>
+      <span class="kicker">Cancerwise</span>
+      <h3>Get cancer information that helps, weekly</h3>
+      <p>Stories, prevention advice and expert insight from MD Anderson, in your inbox.</p>
+      <div class="nl-form sans"><input placeholder="Email address"><button>Subscribe</button></div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>PATIENTS &amp; FAMILY</div><div>ABOUT</div><div>RESEARCH</div><div>EDUCATION</div><div>CONTACT &amp; LEGAL</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

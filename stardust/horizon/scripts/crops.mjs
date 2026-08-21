@@ -1,0 +1,12 @@
+import { chromium } from 'playwright';
+const F = 'file:///Users/paolo/stardust/2026-08/mdanderson/stardust/prototypes/horizon-proposed.html';
+const b = await chromium.launch();
+const p = await b.newPage({ viewport: { width: 1440, height: 900 } });
+await p.goto(F, { waitUntil: 'networkidle', timeout: 60000 }).catch(()=>{});
+await p.waitForTimeout(1800);
+await p.screenshot({ path: '.impeccable/review/crop-hero.png' });
+await p.locator('.why-photo').scrollIntoViewIfNeeded(); await p.waitForTimeout(500);
+await p.screenshot({ path: '.impeccable/review/crop-why.png' });
+await p.locator('.nl-panel').scrollIntoViewIfNeeded(); await p.waitForTimeout(500);
+await p.screenshot({ path: '.impeccable/review/crop-newsletter.png' });
+await b.close(); console.log('crops ok');
