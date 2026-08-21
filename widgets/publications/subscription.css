@@ -209,10 +209,6 @@ main .section.subscription-container > div { max-width: none; padding: 0; }
 .subscription .oneChoice .label { display: block !important; position: relative; padding-left: 40px; margin-left: 0 !important; }
 .subscription .oneChoice .label .input-checkbox-faux { position: absolute; left: 0; top: 1px; width: 22px; height: 22px; border: 1px solid #63666a; border-radius: 5px; background: #fff; }
 
-/* fieldset UA min-inline-size:min-content pushes the newsletters fieldset below
-   the floated image on EDS; live renders it beside the float (live sheets reset
-   the UA default) */
-.subscription fieldset { min-inline-size: 0; }
 
 /* live basic-info inputs render 44px tall (owning rule in a non-loaded sheet) */
 .subscription .top-form .inputWrapper input[type="text"] { height: 44px; }
