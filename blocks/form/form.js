@@ -25,6 +25,12 @@
  * MDIcons \e601 arrow — the live rhythm differs from link-list.columns'
  * prevention values, so this page's row anatomy lives here, scoped).
  * Authoring: one row per link, single cell, <p><a href>Title</a></p>.
+ *
+ * `rail` variant (contact pages' interior prose+media pair — give-blood
+ * contact-us): stacked right-rail images beside default-content prose.
+ * Authoring: one row per image, single cell, <p><img></p>. The pair-grid
+ * values mirror section-nav.css's interior prose+rail contract (358px rail,
+ * 47/36 section padding); live image gap 35px (probed 2026-08-21).
  */
 
 function el(tag, cls, parent) {
@@ -284,6 +290,18 @@ export default async function decorate(block) {
 
   if (block.classList.contains('confirmation')) {
     decorateConfirmation(block);
+    return;
+  }
+
+  if (block.classList.contains('rail')) {
+    const items = [...new Set([...block.querySelectorAll('picture, img')]
+      .map((m) => (m.closest('picture') || m)))];
+    const railMedia = el('div', 'rail-media');
+    items.forEach((m) => {
+      const item = el('div', 'rail-item', railMedia);
+      item.append(m);
+    });
+    block.replaceChildren(railMedia);
     return;
   }
 
