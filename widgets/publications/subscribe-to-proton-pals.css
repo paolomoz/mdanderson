@@ -1,3 +1,8 @@
 /* subscribe-to-proton-pals — FormAssembly embed. All form styling comes verbatim from the
    live govfa.net stylesheets linked inside the widget HTML (live parity);
    nothing to add at the widget level. */
+
+/* live-parity offset: on live, the form region sits below the page-header
+   band + hr with ~91px more lead-in than the EDS section flow provides
+   (gate measurement, form title y 603 live vs 512 eds @1440). */
+.subscribe-to-proton-pals .wFormContainer { margin-top: 91px; }
