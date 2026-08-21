@@ -900,3 +900,30 @@ main .section.cards-container:has(> div > .cards.ribbon) > div {
 /* live for-physicians promo stack: blue then purple */
 .cards.duo.physician .card-col:nth-child(1) .promo { background: var(--color-blue-promo); }
 .cards.duo.physician .card-col:nth-child(2) .promo { background: var(--color-purple); }
+
+/* --- stacked-pair: live for-physicians card grid — left column stacks 3
+   white cards, right column stacks blue+purple promos (probed 2026-08-21,
+   was a 9.5pt gap). Author 5 rows; column flow places 1-3 left, 4-5 right. */
+.cards.stacked-pair .cards-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: column;
+  gap: 18px;
+  align-items: start;
+}
+
+.cards.stacked-pair .card-col {
+  display: block;
+  width: auto;
+  padding: 0;
+  min-width: 0;
+}
+
+.cards.stacked-pair .card-col:nth-child(-n+3) .promo {
+  background: var(--color-bg);
+  color: var(--color-fg);
+}
+
+.cards.stacked-pair .card-col:nth-child(4) .promo { background: var(--color-blue-promo); }
+.cards.stacked-pair .card-col:nth-child(5) .promo { background: var(--color-purple); }
