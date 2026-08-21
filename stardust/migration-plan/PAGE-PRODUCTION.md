@@ -77,7 +77,10 @@ where the exemplar already uploaded it.
 
 ## Publish + gate loop (per page)
 
-1. `curl -X POST "https://admin.da.live/source/paolomoz/mdanderson<path>.html" -H "authorization: Bearer $DA_TOKEN" -F "data=@page.html;type=text/html"` (path = live path minus `.html`)
+1. `curl -X POST "https://admin.da.live/source/paolomoz/mdanderson<path>.html" -H "authorization: Bearer $DA_TOKEN" -F "data=@page.html;type=text/html"` (path = live path minus `.html`; for
+   cancerwise/newsroom articles ALSO drop the `.h00-…` suffix and any
+   leading/odd dashes — mirror the insomnia exemplar's slug style; then pass
+   the EDS path EXPLICITLY as the gate's 2nd arg)
 2. Preview: `curl -X POST "https://admin.hlx.page/preview/paolomoz/mdanderson/main<path>" -H "authorization: Bearer $DA_TOKEN"`
 3. Publish: `curl -X POST "https://admin.hlx.page/live/paolomoz/mdanderson/main<path>" -H "authorization: Bearer $DA_TOKEN"`
 4. Gate: `node stardust/scripts/fidelity-gate.mjs <livePath>` (from repo root).

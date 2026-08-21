@@ -191,3 +191,23 @@ Content: 70 sample pages + 10 trial details crawled into stardust/current
 (all captured OK), typed in state.json (82 pages total). PAGE-PRODUCTION.md
 is the batch brief. Pilot wave running: brachytherapy (static), walking
 article (article + live index check), lung-cancer (disease archetype).
+
+## 2026-08-21 — Article pipeline validated; homepage exonerated
+
+Gate-driven fixes (all code-level, every page of the type inherits): blog
+grid geometry to live truth (probed: content col 312/1074, body/rail
+508/38/528), rail widgets stretch (margin:0 vs styles.css auto), cards
+icon-img≠media guard, callout-row decoupling (feature image spans rows 1-2),
+standalone-image 52px offset, loose-list p margins, quote box to live 187h.
+Interior template: .section.dark full-width slot, cards rail panel variant
+(live blue promo skin), pair-band 47px, rail stacking cascade fix, serif-head
+section style. RESULTS: walking 24.55→6.99 PASS, insomnia 22.20→6.42 PASS.
+
+Homepage "regression" was REFERENCE NOISE (fixed utility bar repainted
+mid-page in the POC-era screenshot + chat bubble + rotating call-tracking
+number) — clean re-freeze: PASS 3.19%. Gate hardened: pins fixed chrome,
+hides chat on both sides, gate-dir snapshot precedence.
+
+In flight: brachytherapy re-author (full-width dark band + panel variant),
+lung-cancer disease iteration, 10 trial pages generator, 4 cancerwise batch,
+newsroom archetype pair.
