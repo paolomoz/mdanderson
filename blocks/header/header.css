@@ -26,7 +26,10 @@ header nav#nav ul {
   padding: 0;
 }
 
-header nav#nav a:any-link {
+/* low-specificity reset — MUST NOT carry an id: `nav#nav` made this beat
+   every class-based color rule below (red-nav white, utility gray, MyChart
+   red all computed body-black) */
+header a:any-link {
   text-decoration: none;
   color: inherit;
 }
