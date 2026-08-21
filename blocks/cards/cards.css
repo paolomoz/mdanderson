@@ -774,3 +774,25 @@ main .section.cards-container:has(> div > .cards.ribbon) > div {
   width: 100%;
   height: auto;
 }
+
+/* --- rail news: news-release link rail (live ~20px red left title links,
+   no border — basic-science Spotlight rail, 2026-08-21) ------------------ */
+.cards.rail.news-links .promo,
+.cards.rail.news-links .promo.promo-simple {
+  padding: 0 0 20px;
+  text-align: left;
+}
+
+.cards.rail.news-links h3.title {
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.cards.rail.news-links h3.title a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}

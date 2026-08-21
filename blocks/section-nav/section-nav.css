@@ -1284,3 +1284,43 @@ body.interior main > .section.white.white {
     font-size: 24px;
   }
 }
+
+/* static-batch-2 gate levers (2026-08-21, live values probed) */
+@media (width >= 992px) {
+  /* dark-bar gap law: live is FLUSH when a gray band precedes the bar
+     (calculators/parking accordion bands, profile columns band) and ~140px
+     after plain prose (brachytherapy) — the 123px constant applies only
+     after prose */
+  body.interior main > .section:is(.accordion-container, .columns-container, .cards-container, .link-list-container, .carousel-container) + .section.dark {
+    margin-top: 0;
+  }
+
+  /* columns wrapper double-pad inside interior strips (same as cards):
+     live news rows have 0 wrapper padding */
+  body.interior main > .section.section-nav-container ~ .section.columns-container:not(:nth-last-child(-n+2)) > .columns-wrapper {
+    padding: 0;
+    max-width: none;
+    margin: 0;
+  }
+
+  /* interior standard carousels: live carousel-config-standard items are
+     251px 4-up (EDS global 313px clipped the 4th) */
+  body.interior .carousel:not(.hero) .carousel-item {
+    flex: 0 0 251px;
+  }
+
+  /* 50/50 prose+rail pairs (live col-double: basic-science featured video
+     648px poster, lung why-choose) — section-metadata Style: half-rail */
+  body.interior main > .section.half-rail:is(.quote-container, .video-container, :has(> div > .video.teaser), :has(> div > .quote.rail)) {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  /* sans band heads (live h2.col-container-title: Univers 65 Bold 29px
+     left — institutional-profile) — Style: sans-head */
+  body.interior main > .section.sans-head > .default-content-wrapper h2 {
+    font-family: var(--sans-bold-font-family);
+    font-size: 29px;
+    font-weight: 400;
+    text-align: left;
+  }
+}

@@ -106,3 +106,11 @@ main .section.stats-container > div {
   .stats .body-text a.cta { font-size: 16px; line-height: 20.8px; }
   .stats .body-text a.cta .mda-icon-linkout { font-size: 16px; }
 }
+
+/* uniform-color groups + 2-up (live institutional-profile: trio 1 all blue
+   #2f60b2, trio 2 all purple #783491, `statistics double` 2-up — the
+   nth-child cycle is the research-page fingerprint, these variants override
+   it per authored block, 2026-08-21) */
+.stats.blue .stat-item { color: var(--color-blue-promo); }
+.stats.purple .stat-item { color: var(--color-purple); }
+.stats.double .stat-item { flex: 0 0 50%; }

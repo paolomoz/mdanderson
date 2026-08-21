@@ -240,3 +240,11 @@ main .section:has(> div > .columns.tinted) {
     margin-left: 5px;
   }
 }
+
+/* top-aligned columns (live people/award tables are top-aligned; the block
+   default centers — variant `top`, 2026-08-21) */
+.columns.top .cards-table,
+.columns.top .table,
+.columns.top > div {
+  align-items: flex-start;
+}
