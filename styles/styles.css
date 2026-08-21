@@ -143,7 +143,11 @@
 
 body {
   display: none;
-  margin: 0;
+  /* the live site caps the ENTIRE page (header/main/footer) at a centered
+     1440px canvas — body{max-width:1440px;margin:0 auto} on mdanderson.org;
+     nothing is viewport-full-width at wide viewports */
+  max-width: var(--max-width);
+  margin: 0 auto;
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--body-font-family);

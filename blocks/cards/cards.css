@@ -217,6 +217,13 @@ main .section.cards-container:has(.cards.closing) > .cards-wrapper {
   margin-bottom: 20px;
 }
 
+/* the shared .promo-icon height (95px) clips the icon variant's 108px circle
+   and the inline-block's bottom margin can't grow the line box — the live
+   wrapper computes 128px (108 circle + 20 gap before the title) */
+.cards.icon .promo-icon {
+  height: 128px;
+}
+
 .cards.icon.trio .card-col:nth-child(1) .fa-stack { background: var(--color-accent); }
 .cards.icon.trio .card-col:nth-child(2) .fa-stack { background: var(--color-blue-light); }
 .cards.icon.trio .card-col:nth-child(3) .fa-stack { background: var(--color-green); }
