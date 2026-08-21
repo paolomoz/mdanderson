@@ -1305,8 +1305,11 @@ body.interior main > .section.white.white {
   /* 2. pair-section DCWs were double-inset: the strip rule (padding 0 36px)
      beat the pair rule (0 36px 0 0) on specificity — live pair prose is
      x312 w680. Declared last; :is() carries the higher specificity. */
-  body.interior main > .section.section-nav-container ~ .section:is(.quote-container, .podcast-container, .callout-container):not(.dark) > .default-content-wrapper,
-  body.interior main > .section.section-nav-container ~ .section:is(:has(> div > .cards.rail), :has(> div > .video.teaser)) > .default-content-wrapper {
+  /* the strip rule's :not() chain counts toward specificity (0,8,1) — match
+     it so the pair override finally WINS (2026-08-21 cleanup finding: pair
+     prose rendered x348/w644 vs live x312/w680 on every pair page) */
+  body.interior main > .section.section-nav-container ~ .section:is(.quote-container, .podcast-container, .callout-container):not(:nth-last-child(-n+2)):not(.dark):not(.page-head) > .default-content-wrapper,
+  body.interior main > .section.section-nav-container ~ .section:is(:has(> div > .cards.rail), :has(> div > .video.teaser)):not(:nth-last-child(-n+2)):not(.dark):not(.page-head) > .default-content-wrapper {
     padding: 0 36px 0 0;
   }
 
@@ -1401,5 +1404,16 @@ body.interior main > .section.white.white {
 
   body.interior .columns.media-400 .col-double:not(:has(picture, img)) {
     flex: 1 1 auto;
+  }
+}
+
+/* accordion bands are NOT universally gray on live: brachytherapy's is
+   transparent with a ~140px prose gap (vs calculators' flush gray band) —
+   Style: white opts a section out of the band law and gets the prose-gap
+   rhythm instead (2026-08-21 cleanup finding) */
+@media (width >= 992px) {
+  body.interior main > .section.section-nav-container ~ .section.accordion-container.white {
+    margin-top: 123px;
+    padding-top: 0;
   }
 }

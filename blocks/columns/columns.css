@@ -248,3 +248,12 @@ main .section:has(> div > .columns.tinted) {
 .columns.top > div {
   align-items: flex-start;
 }
+
+/* live .horizontal-rule.grey between column segments: 1px #d0d0ce with
+   18px non-collapsing margins (EDS left hr at UA default 9px —
+   2026-08-21 ethics gate) */
+.columns hr {
+  border: 0;
+  border-top: 1px solid #d0d0ce;
+  margin: 18px 0;
+}
