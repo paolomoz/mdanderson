@@ -90,8 +90,12 @@ function collectCard(row) {
     icon = [...row.querySelectorAll('p')].map(iconTokenOf).find(Boolean) || null;
   }
   // program-cluster addition: an authored card image (breast-cancer about
-  // rail, `rail` variant — eds-conversion-log §6.5)
-  const media = row.querySelector('picture, img');
+  // rail, `rail` variant — eds-conversion-log §6.5). Icon-span imgs are NOT
+  // media: authored `:icon-x:` tokens pipeline-convert to span.icon > img,
+  // and once the icon SVGs resolved they rendered as spurious 300px
+  // card-media above every story promo (2026-08-21 gate finding).
+  const media = [...row.querySelectorAll('picture, img')]
+    .find((m) => !m.closest('span.icon')) || null;
   return { icon, heading, headingA, cta, bodyPs, media };
 }
 

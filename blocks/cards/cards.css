@@ -636,3 +636,67 @@ main .section.cards-container:has(> div > .cards.ribbon) > div {
   .cards.rail.story .promo-icon .mda-stack-1x { font-size: 48px; line-height: 88px; }
   .cards.rail.story h3.title { font-size: 32px; }
 }
+
+/* --- rail panel: blue appointments/referrals rail promo (live
+   .promo.promo-background-blue.promo-with-background.promo-icon-white
+   .promo-text-center — values lifted verbatim from clientlib 2026-08-21;
+   recurs on treatment/program interior pages) --------------------------- */
+.cards.rail.panel .promo,
+.cards.rail.panel .promo.promo-simple {
+  background: var(--color-blue-promo);
+  height: 100%;
+  padding: 10px 0 60px;
+  text-align: center;
+}
+
+.cards.rail.panel .promo-icon .fa-stack {
+  background: transparent;
+  height: 95px;
+  margin-bottom: 0;
+}
+
+.cards.rail.panel .promo-icon i {
+  color: var(--color-bg);
+}
+
+.cards.rail.panel .promo-header {
+  padding: 0 10%;
+  margin-top: 0;
+  color: var(--color-bg);
+}
+
+.cards.rail.panel .promo-header h3.title {
+  margin-top: 0;
+  padding: 0;
+  border: none;
+  font-family: var(--body-font-family);
+  font-size: 36px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  text-align: center;
+  color: var(--color-bg);
+}
+
+.cards.rail.panel .promo-text,
+.cards.rail.panel .promo-text .body {
+  padding: 0 10%;
+  font-family: var(--body-font-family);
+  font-size: 21px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  color: var(--color-bg);
+}
+
+.cards.rail.panel .promo-text .body { padding: 0; }
+.cards.rail.panel .promo-text .body a { color: var(--color-bg); }
+
+.cards.rail.panel .cta.cta-block {
+  background: transparent;
+  border: 1px solid var(--color-bg);
+  color: var(--color-bg);
+  margin-top: 1px;
+}
+
+.cards.rail.panel .cta.cta-block:hover {
+  background: rgb(0 0 0 / 20%);
+}

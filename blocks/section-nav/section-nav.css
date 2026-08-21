@@ -34,6 +34,19 @@
     grid-column: 1 / -1;
     margin: 0;
   }
+
+  /* the pre-footer appointment bar (`dark` section style) is a FULL-WIDTH
+     band on live (.appointment-bar, bg #3361ad, centered 21px Univers Light,
+     padding 30px 4em) — span both grid columns and restore the styles.css
+     padding the interior DC strip rule was overriding (2026-08-21) */
+  body.interior main > .section.section-nav-container ~ .section.dark {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
+
+  body.interior main > .section.section-nav-container ~ .section.dark > .default-content-wrapper {
+    padding: 30px 84px;
+  }
 }
 
 /* interior rhythm: gray-band prose+rail pairs and section padding.
@@ -58,7 +71,10 @@ body.interior main > .section:has(> div > .link-list.tinted) {
   body.interior main > .section.callout-container {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 358px;
-    padding: 70px 36px;
+
+    /* 47px vertical (was 70px): measured on live brachytherapy pair band
+       (2026-08-21 gate finding — every prose line shifted +23px) */
+    padding: 47px 36px;
     align-items: start;
   }
 
@@ -959,6 +975,11 @@ body.interior .quote.rail .spotlight-quote > div.info { order: 2; }
 body.blog-article main .section.quote-container > div {
   max-width: none;
   padding: 0;
+
+  /* margin:0 (not auto): styles.css `main > .section > div { margin: auto }`
+     cancels justify-self stretch in this grid — rail widgets shrank to
+     content width (240-349px) instead of live's 528px (2026-08-21 probe) */
+  margin: 0;
 }
 
 body.blog-article main .section.quote-container > .default-content-wrapper {
@@ -991,7 +1012,9 @@ body.blog-article main .section.quote-container > .default-content-wrapper {
   body.blog-article main .section.quote-container > .default-content-wrapper:not(:first-child),
   body.blog-article main .section.quote-container > .callout-wrapper,
   body.blog-article main .section.quote-container > .article-cards-wrapper {
-    padding-right: 20px;
+    /* 0 (was 20px): live body text is the full 508px column (probed p
+       x312 w508); the 508/38/528 grid already reserves the gutter */
+    padding-right: 0;
   }
 
   /* callout-less articles (no key-takeaways on live): col1 row1 would sit
