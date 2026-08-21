@@ -233,3 +233,26 @@ trial pages (9/10 PASS; 2024-1206 residual = share block +33px vs live).
 GATE POLICY for index-driven listing pages: content-set deltas vs live are
 JUSTIFIED DEVIATIONS (the index only holds published pages — live lists
 thousands); their gates measure LAYOUT parity, attributed per zone.
+
+## 2026-08-21 (evening) — POC-completion: families converged; DA token expired
+
+Family results (fidelity gate, frozen live refs @1440, threshold 10%):
+- articles (cancerwise) 6/6 PASS 5.27–6.99 · newsroom 4/4 published PASS
+  4.76–9.51 (polo staged, blocked) · departments 5/5 PASS 3.94–7.81 ·
+  forms 9/10 PASS 3.17–8.45 (film-on-campus 14.91) · trials 9/10 PASS
+  5.31–8.40 (2024-1206 12.61, share-block +33px) · statics 8/9 PASS
+  3.17–9.94 (brachytherapy 11.26 marginal, cause pinned) · breast-cancer
+  8.89 PASS · landings: index 3.19 + publications 9.37 PASS (rest in
+  adoption round) · disease: lung 16.90 + subpages in flight · listing/
+  search pages live + index-driven (content-set deviations documented).
+Convergence pattern proven 3×: page agents report exact live values →
+code laws ship → families flip green (blog regroup, news regroup, interior
+spacing family, dept hero scrim/no-scrim).
+
+Lighthouse mobile (?consent=accept): home perf 67 (LCP 6.5s throttled;
+CLS 0.001, TBT 10ms — delayed-phase martech clean); rest measuring.
+
+BLOCKED 18:22: DA_TOKEN (24h IMS) expired — admin.da.live + admin.hlx.page
+401. Staged, ready to publish on refresh: proton iter-3 (/tmp/ptc-page.html),
+polo release (/tmp/polo-page.html). In-flight publishing agents will stall.
+Also still pending: gh delete_repo scope for paolomoz/mdanderson-auto.
