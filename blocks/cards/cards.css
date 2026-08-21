@@ -700,3 +700,23 @@ main .section.cards-container:has(> div > .cards.ribbon) > div {
 .cards.rail.panel .cta.cta-block:hover {
   background: rgb(0 0 0 / 20%);
 }
+
+/* --- rail stacking (all rail variants): cards stack vertically inside the
+   358px interior rail / 528px blog rail. Declared at end of file so it wins
+   the cascade tie against `.cards .table.cards-table { display: flex }`
+   (2026-08-21 gate finding: rail cards rendered at min-content ~221px) --- */
+.cards.rail .table.cards-table {
+  display: block;
+  width: auto;
+}
+
+.cards.rail .card-col {
+  display: block;
+  width: auto;
+  margin: 0;
+  min-width: 0;
+}
+
+.cards.rail .card-col + .card-col {
+  padding-top: 35px;
+}
