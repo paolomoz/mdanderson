@@ -1413,7 +1413,9 @@ body.interior main > .section.white.white {
    rhythm instead (2026-08-21 cleanup finding) */
 @media (width >= 992px) {
   body.interior main > .section.section-nav-container ~ .section.accordion-container.white {
-    margin-top: 123px;
+    /* 88px (was 123): fresh brachytherapy probe — live prose→accordion gap
+       140px = 88 margin + head margin stack (2026-08-21) */
+    margin-top: 88px;
     padding-top: 0;
   }
 }
@@ -1425,4 +1427,16 @@ body.interior main > .section.white.white {
   body.interior main > .section.section-nav-container ~ .section:is(.tinted, .accordion-container) + .section:is(.tinted, .accordion-container):not(:nth-last-child(-n+2)):not(.dark) {
     margin-top: 0;
   }
+}
+
+/* h1-adjacent rhythm (fresh probes 2026-08-21): live h1→pair-prose gap is
+   59px (h1 mb40 + ~5 pad, EDS pair pt47 gave 101); live h1→h3 gap is 80px */
+@media (width >= 992px) {
+  body.interior main > .section:has(> div > h1:last-child) + .section:is(.quote-container, .podcast-container, .callout-container, :has(> div > .cards.rail), :has(> div > .video.teaser)) {
+    padding-top: 5px;
+  }
+}
+
+body.interior main .default-content-wrapper h1 + h3 {
+  margin-top: 40px;
 }

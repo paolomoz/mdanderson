@@ -255,7 +255,10 @@ main .section:has(> div > .columns.tinted) {
 .columns hr {
   border: 0;
   border-top: 1px solid #d0d0ce;
-  margin: 18px 0;
+
+  /* 25px (was 18): live rules don't margin-collapse with the adjacent p
+     margins — ethics P1→P10 ran -66px across 9 gaps (2026-08-21) */
+  margin: 25px 0;
 }
 
 /* interior columns gutter: live pairs sit 18px apart (528/18/528 in the
