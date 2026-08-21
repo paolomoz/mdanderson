@@ -147,12 +147,43 @@ function decorateButtons(main) {
  * @param {Element} main The main element
  */
 // eslint-disable-next-line import/prefer-default-export
+/**
+ * blog-article: regroup the article-body section (the quote-container) into
+ * two real columns — live flows the left column (callout, prose, More
+ * stories) independently of the right rail (feature image, quote, promos,
+ * newsletter). A grid row-plan cannot express short articles (rail taller
+ * than prose): "More stories" waited below the whole rail, opening a ~450px
+ * void that failed three pages' fidelity gates (2026-08-21).
+ */
+function regroupBlogArticle(main) {
+  if (!document.body.classList.contains('blog-article')) return;
+  main.querySelectorAll(':scope > .section.quote-container').forEach((section) => {
+    const left = document.createElement('div');
+    left.className = 'article-col';
+    const rail = document.createElement('div');
+    rail.className = 'article-rail';
+    const isImageOnlyDC = (w) => w.classList.contains('default-content-wrapper')
+      && w.children.length > 0
+      && [...w.children].every((c) => c.matches('p') && c.querySelector('picture, img') && !c.textContent.trim());
+    [...section.children].forEach((w) => {
+      const isRail = isImageOnlyDC(w)
+        || w.classList.contains('quote-wrapper')
+        || w.classList.contains('cards-wrapper')
+        || w.classList.contains('newsletter-wrapper');
+      (isRail ? rail : left).append(w);
+    });
+    if (left.children.length) section.append(left);
+    if (rail.children.length) section.append(rail);
+  });
+}
+
 export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
   decorateButtons(main);
+  regroupBlogArticle(main);
 }
 
 /**

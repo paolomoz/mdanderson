@@ -998,17 +998,22 @@ body.interior .quote.rail .spotlight-quote > div.info { order: 2; }
 /* --- the article-body section (the only .quote-container on the page):
        article column left, rail (feature image / quote / promos / signup)
        right — replica cell-l / cell-r split ---------------------------------- */
-body.blog-article main .section.quote-container > div {
+/* scripts.js regroupBlogArticle() nests the wrappers into .article-col
+   (callout, prose, More stories) and .article-rail (feature image, quote,
+   promos, newsletter) so each column flows INDEPENDENTLY — live truth: on
+   short articles "More stories" sits beside the rail, which no shared-row
+   grid plan can express (three pages failed on a ~450px void, 2026-08-21) */
+body.blog-article main .section.quote-container > div,
+body.blog-article main .section.quote-container > div > div {
   max-width: none;
   padding: 0;
 
   /* margin:0 (not auto): styles.css `main > .section > div { margin: auto }`
-     cancels justify-self stretch in this grid — rail widgets shrank to
-     content width (240-349px) instead of live's 528px (2026-08-21 probe) */
+     shrank rail widgets to content width instead of live's 528px */
   margin: 0;
 }
 
-body.blog-article main .section.quote-container > .default-content-wrapper {
+body.blog-article main .section.quote-container .default-content-wrapper {
   text-align: left;
   padding: 0;
 }
@@ -1025,39 +1030,21 @@ body.blog-article main .section.quote-container > .default-content-wrapper {
     padding: 20px 0 0;
   }
 
-  /* row plan (live truth 2026-08-21): row 1 sizes to the CALLOUT only —
-     the rail feature image spans rows 1-2 so it never inflates row 1, the
-     body starts at callout-bottom + 18 (live y810), and image-bottom meets
-     quote-top exactly (live 892 = 892) */
-  body.blog-article main .section.quote-container > .default-content-wrapper:first-child { grid-column: 2; grid-row: 1 / span 2; }
-  body.blog-article main .section.quote-container > .callout-wrapper { grid-column: 1; grid-row: 1; }
-  body.blog-article main .section.quote-container > .default-content-wrapper:not(:first-child) { grid-column: 1; grid-row: 2 / span 8; }
-  body.blog-article main .section.quote-container > .article-cards-wrapper { grid-column: 1; grid-row: 10; }
-  body.blog-article main .section.quote-container > .quote-wrapper { grid-column: 2; grid-row: 3; }
-  body.blog-article main .section.quote-container > .cards-wrapper { grid-column: 2; grid-row: 4; }
-  body.blog-article main .section.quote-container > .cards-wrapper + .cards-wrapper { grid-row: 5; }
-  body.blog-article main .section.quote-container > .cards-wrapper + .cards-wrapper + .cards-wrapper { grid-row: 6; }
-  body.blog-article main .section.quote-container > .newsletter-wrapper { grid-column: 2; grid-row: 7; }
+  body.blog-article main .section.quote-container > .article-col { grid-column: 1; }
+  body.blog-article main .section.quote-container > .article-rail { grid-column: 2; }
 
-  body.blog-article main .section.quote-container > .default-content-wrapper:not(:first-child),
-  body.blog-article main .section.quote-container > .callout-wrapper,
-  body.blog-article main .section.quote-container > .article-cards-wrapper {
-    /* 0 (was 20px): live body text is the full 508px column (probed p
-       x312 w508); the 508/38/528 grid already reserves the gutter */
-    padding-right: 0;
-  }
+  /* rail rhythm (live 2026-08-21): image-bottom meets quote-top exactly;
+     20px before each promo group and the signup; promos touch each other */
+  body.blog-article .article-rail > .cards-wrapper { margin-top: 20px; }
+  body.blog-article .article-rail > .cards-wrapper + .cards-wrapper { margin-top: 0; }
+  body.blog-article .article-rail > .newsletter-wrapper { margin-top: 20px; }
 
-  /* callout-less articles (no key-takeaways on live): col1 row1 would sit
-     empty at the feature image's height, dropping the body ~200px below
-     live — let the body start at row 1 instead (2026-08-21 gate finding) */
-  body.blog-article main .section.quote-container:not(:has(> .callout-wrapper)) > .default-content-wrapper:not(:first-child) {
-    grid-row: 1 / span 9;
-  }
+  /* body starts at callout-bottom + 18 (live y810) */
+  body.blog-article .article-col > .callout-wrapper { margin-bottom: 18px; }
 
   /* lever 1 (2026-08-21): live standalone body images sit 52px below the
-     preceding paragraph (live: para bottom 2560 → img top 2612, img bottom
-     flush with the next heading block) */
-  body.blog-article main .section.quote-container > .default-content-wrapper:not(:first-child) p:has(> picture) {
+     preceding paragraph */
+  body.blog-article .article-col > .default-content-wrapper p:has(> picture) {
     margin: 52px 0 0;
   }
 
@@ -1068,11 +1055,11 @@ body.blog-article main .section.quote-container > .default-content-wrapper {
   }
 }
 
-/* feature image (first DC wrapper) — live keeps the paragraph's top margin
-   (image top y540 = body text top, probed 2026-08-21), only bottom is cut */
-body.blog-article main .section.quote-container > .default-content-wrapper:first-child p { margin: 18px 0 0; }
+/* feature image (image-only DC, regrouped into the rail) — live keeps the
+   paragraph's top margin (image top y540 = body text top), bottom cut */
+body.blog-article .article-rail > .default-content-wrapper p { margin: 18px 0 0; }
 
-body.blog-article main .section.quote-container > .default-content-wrapper:first-child img {
+body.blog-article .article-rail > .default-content-wrapper img {
   display: block;
   width: 100%;
   height: auto;
@@ -1201,9 +1188,23 @@ body.blog-article .quote.rail .quote-icon i {
 /* --- mobile: single column; live 360 drops the pull quote ----------------- */
 @media (width <= 991px) {
   body.blog-article main .section.quote-container { padding: 0 35px; }
-  body.blog-article main .section.quote-container > .quote-wrapper { display: none; }
+  body.blog-article .article-rail > .quote-wrapper { display: none; }
 
-  body.blog-article main .section.quote-container > .default-content-wrapper:first-child {
+  /* mobile stacking: the columns dissolve (display: contents) and the
+     feature image orders first, matching live 360 (img, callout, body,
+     stories, promos, signup) */
+  body.blog-article main .section.quote-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body.blog-article main .section.quote-container > .article-col,
+  body.blog-article main .section.quote-container > .article-rail {
+    display: contents;
+  }
+
+  body.blog-article .article-rail > .default-content-wrapper {
+    order: -1;
     margin: 0 0 30px;
   }
 
