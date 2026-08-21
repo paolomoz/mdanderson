@@ -999,3 +999,23 @@ main .section.cards-container:has(> div > .cards.ribbon) > div {
 .cards.rail.panel.black .promo.promo-simple {
   background: #000;
 }
+
+/* landing center-head (live research-resources "Why Research" centered
+   serif ~30px; the interior center-head is body.interior-scoped) */
+body.landing main > .section.center-head > .default-content-wrapper h2 {
+  text-align: center;
+}
+
+/* bare-glyph icon trio (live research-resources top trio: flat red glyphs,
+   no circles) — cards (icon, trio, bare) */
+.cards.icon.trio.bare .promo-icon .fa-stack {
+  background: transparent;
+  width: auto;
+  height: 48px;
+  line-height: 48px;
+  margin-bottom: 10px;
+}
+
+.cards.icon.trio.bare .card-icon {
+  color: var(--color-accent);
+}
