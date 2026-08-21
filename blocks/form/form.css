@@ -396,11 +396,31 @@ main > .section > .form-wrapper:has(.form.confirmation) {
 }
 
 @media (width >= 992px) {
+  /* live blood contact-us rhythm (probed): both columns start at y=489
+     (h1 gap 59 = 15 pad + p margin / 14 rail offset); prose→dark strip
+     gap 70 (not brachytherapy's 123) */
   body.interior main > .section.section-nav-container ~ .section.form-container:has(> div > .form.rail) {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 358px;
-    padding: 47px 36px;
+    padding: 15px 36px 0;
     align-items: start;
+  }
+
+  .form.rail .rail-media {
+    margin-top: 14px;
+  }
+
+  /* live gap prose→dark is 70px; +33 compensates the prose-run deficit
+     (styles.css p margins 14.4/4.5 vs live ~21 — code-level residual) so
+     the dark/EndCancer/newsletter bands sit at live absolute y */
+  body.interior main .section.form-container:has(> div > .form.rail) + .section.dark {
+    margin-top: 98px;
+  }
+
+  /* live keeps the authored empty <h2> spacer (35px line) — the pipeline
+     strips its &nbsp;, leaving a 0-height element */
+  body.interior main .section.form-container:has(> div > .form.rail) .default-content-wrapper h2:empty {
+    min-height: 35px;
   }
 
   body.interior main > .section.section-nav-container ~ .section.form-container:has(> div > .form.rail) > .default-content-wrapper {
