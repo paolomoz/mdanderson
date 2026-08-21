@@ -981,3 +981,21 @@ main .section.cards-container:has(> div > .cards.ribbon) > div {
   }
   .cards.stacked-pair .stack-col.left .card-col + .card-col { margin-top: 0; }
 }
+
+/* landing-iteration backlog (live values, 2026-08-21):
+   help trio body text runs full card width on live (the 10% side padding
+   wrapped 2 extra lines per card, +62px) */
+.cards.icon.trio.help .promo-text {
+  padding: 0;
+}
+
+/* live donors duo circles: purple + flat green */
+.cards.icon.duo.green-second .card-col:nth-child(2) .fa-stack {
+  background: var(--color-green);
+}
+
+/* live STRIDE-style black rail panel */
+.cards.rail.panel.black .promo,
+.cards.rail.panel.black .promo.promo-simple {
+  background: #000;
+}

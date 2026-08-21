@@ -502,3 +502,9 @@ main .section.cards-container.link-list-container > div {
     padding-top: 48px;
   }
 }
+
+/* live research-resources platform head glyph (2026-08-21) */
+.link-list .llicon-powerinnumbers::before {
+  font-family: mda-icons, sans-serif;
+  content: '\e61a';
+}

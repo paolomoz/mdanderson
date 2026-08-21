@@ -72,7 +72,10 @@ export default async function decorate(block) {
     heading.id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
     const panel = document.createElement('div');
-    panel.className = `panel-container ${i === 0 ? 'open' : 'closed'}`;
+    // first panel opens by default (breast-cancer replica state); live pages
+    // with all panels closed (careers FAQ) author the `closed` variant
+    const firstOpen = i === 0 && !block.classList.contains('closed');
+    panel.className = `panel-container ${firstOpen ? 'open' : 'closed'}`;
     const body = document.createElement('div');
     body.className = 'panel-body';
 
