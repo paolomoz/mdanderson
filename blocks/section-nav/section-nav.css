@@ -1256,3 +1256,31 @@ body.interior main > .section.center-head > .default-content-wrapper h2 {
 body.interior main > .section.white.white {
   background: var(--color-bg);
 }
+
+/* breast-cancer gate levers (2026-08-21, live values probed):
+   1. cards.css's `main .section.cards-container > div { padding: 70px 72px }`
+      double-pads wrappers inside interior strip sections that already carry
+      70px 36px — live wrapper padding is 0 (duo cards 528w @x312/x858,
+      trio row 1074w @x312; the +341px lower-page shift came from this) */
+@media (width >= 992px) {
+  body.interior main > .section.section-nav-container ~ .section.cards-container > .cards-wrapper {
+    padding: 0;
+    max-width: none;
+    margin: 0;
+  }
+
+  /* 2. pair-section DCWs were double-inset: the strip rule (padding 0 36px)
+     beat the pair rule (0 36px 0 0) on specificity — live pair prose is
+     x312 w680. Declared last; :is() carries the higher specificity. */
+  body.interior main > .section.section-nav-container ~ .section:is(.quote-container, .podcast-container, .callout-container):not(.dark) > .default-content-wrapper,
+  body.interior main > .section.section-nav-container ~ .section:is(:has(> div > .cards.rail), :has(> div > .video.teaser)) > .default-content-wrapper {
+    padding: 0 36px 0 0;
+  }
+
+  /* 3. Featured-Articles head: live h2.fis-articles-title = Univers 65 Bold
+     24px at x312 (EDS was 27px serif-adjacent) */
+  body.interior main > .section.article-cards-container > .default-content-wrapper h2 {
+    font-family: var(--sans-bold-font-family);
+    font-size: 24px;
+  }
+}

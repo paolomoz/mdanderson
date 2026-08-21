@@ -636,6 +636,7 @@ main .section.page-head .icon {
    anchoring block exists on these pages, so the template rule lives here,
    like clinical-trial. ===== */
 @media (width >= 992px) {
+  body.news-article main > .section:has(> .news-rail),
   body.news-article main > .section:has(> .callout-wrapper) {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 408px;
