@@ -843,3 +843,32 @@ main .section.cards-container:has(> div > .cards.ribbon) > div {
   width: 100%;
   height: auto;
 }
+
+/* --- education-cluster palettes + glyphs (live values, 2026-08-21 program
+   wave: three edu pages share the black/purple/red pre-footer trio; CME/
+   verification rail panels are red/green; codepoints from live clientlib) - */
+.cards.trio.black-first .card-col:nth-child(1) .promo { background: #000; }
+.cards.trio.black-first .card-col:nth-child(2) .promo { background: var(--color-purple); }
+.cards.trio.black-first .card-col:nth-child(3) .promo { background: var(--color-accent); }
+
+.cards.duo.blue .card-col:nth-child(1) .promo,
+.cards.duo.blue .card-col:nth-child(2) .promo { background: var(--color-blue-promo); }
+
+.cards.rail.panel.red .promo,
+.cards.rail.panel.red .promo.promo-simple { background: var(--color-accent); }
+
+.cards.rail.panel.green .promo,
+.cards.rail.panel.green .promo.promo-simple { background: var(--color-green); }
+
+.cards .cicon-cancertypes::before { content: '\e606'; }
+.cards .cicon-ipad-apps::before { content: '\e63e'; }
+.cards .cicon-notebook::before { content: '\e909'; }
+.cards .cicon-compose::before { content: '\e90d'; }
+.cards .cicon-bookshelf::before { content: '\e90e'; }
+.cards .cicon-briefcase::before { content: '\e910'; }
+.cards .cicon-school::before { content: '\e912'; }
+
+/* icon-trio circle palette: career-development page (purple/green/red) */
+.cards.icon.trio.career .card-col:nth-child(1) .fa-stack { background: var(--color-purple); }
+.cards.icon.trio.career .card-col:nth-child(2) .fa-stack { background: var(--color-green); }
+.cards.icon.trio.career .card-col:nth-child(3) .fa-stack { background: var(--color-accent); }
