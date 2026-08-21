@@ -217,6 +217,11 @@ main .section.subscription-container > div { max-width: none; padding: 0; }
    non-loaded sheet; live probe 2026-08-21: top-form 55% and subformimage 45%
    share the first row, fieldsets/actions span 1260px rows below; divider→form
    lead-in 70px = divider margin 35 + form 35) */
-.subscription form.sfmcform { display: flex; flex-wrap: wrap; margin-top: 35px; }
+.subscription form.sfmcform { display: flex; flex-wrap: wrap; margin-top: 70px; }
 .subscription form.sfmcform > fieldset,
 .subscription form.sfmcform > .actions { width: 100%; }
+
+/* live vertical rhythm inside the fieldsets and the submit control
+   (probe-verified live boxes: #tfa_52 h293 vs 256; submit 42px vs 32) */
+.subscription fieldset .oneField { margin-bottom: 12px; }
+.subscription .actions.cta input[type="submit"] { height: 42px; }
