@@ -1,0 +1,88 @@
+/* horizon-header — pill header + canopy (ported from horizon-proposed.html) */
+
+.horizon-header-container { padding: 0 !important; }
+.horizon-header-container .horizon-header-wrapper { max-width: none; padding: 0; margin: 0; }
+
+.horizon-header .hz-nav-bar {
+  position: fixed; inset: 18px 24px auto; z-index: 60;
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  pointer-events: none;
+}
+.horizon-header .npill {
+  pointer-events: auto; display: flex; align-items: center; gap: 20px;
+  background: oklch(16% 0.004 30 / 0.9); color: oklch(100% 0 0);
+  backdrop-filter: blur(16px) saturate(1.3); -webkit-backdrop-filter: blur(16px) saturate(1.3);
+  border: 1px solid oklch(100% 0 0 / 0.09); border-radius: 999px;
+  padding: 13px 24px; box-shadow: 0 10px 36px oklch(10% 0.01 30 / 0.32);
+  transition: background 300ms var(--hz-ease), box-shadow 300ms var(--hz-ease);
+}
+.horizon-header.scrolled .npill { background: oklch(14% 0.004 30 / 0.95); box-shadow: 0 12px 40px oklch(10% 0.01 30 / 0.4); }
+.horizon-header .brand { font-family: var(--hz-sans-bold); font-size: 16.5px; letter-spacing: 0.002em; white-space: nowrap; text-decoration: none; color: inherit; }
+.horizon-header .brand:hover { color: inherit; }
+.horizon-header .strike { position: relative; }
+.horizon-header .strike::after {
+  content: ""; position: absolute; left: -2px; right: -2px; top: 51%; height: 2.5px;
+  background: var(--hz-red); transform: rotate(-1.2deg); border-radius: 2px;
+}
+.horizon-header .burger { background: none; border: 0; color: inherit; cursor: pointer; display: grid; gap: 4.5px; padding: 6px 2px; }
+.horizon-header .burger i { display: block; width: 20px; height: 2px; background: currentcolor; border-radius: 2px; }
+.horizon-header .npill-utility { gap: 18px; padding: 8px 8px 8px 22px; font-size: 14.5px; }
+.horizon-header .npill-utility .util { display: inline-flex; align-items: center; gap: 8px; color: oklch(93% 0.002 80); text-decoration: none; font-family: var(--hz-sans-bold); }
+.horizon-header .npill-utility .util:hover { color: oklch(100% 0 0); }
+.horizon-header .npill-utility .hz-pill-red { padding: 11px 22px; font-size: 14.5px; }
+
+.horizon-header .canopy-scrim { position: fixed; inset: 0; z-index: 65; background: oklch(10% 0.01 30 / 0.45); opacity: 0; visibility: hidden; transition: opacity var(--hz-dur) var(--hz-ease), visibility 0s var(--hz-dur); }
+.horizon-header .canopy-scrim.open { opacity: 1; visibility: visible; transition-delay: 0s; }
+.horizon-header .canopy {
+  position: fixed; top: 12px; left: 12px; right: 12px; z-index: 70;
+  background: oklch(16.5% 0.004 30); color: oklch(100% 0 0);
+  border-radius: var(--hz-chrome-r); padding: 40px 52px 52px;
+  box-shadow: 0 40px 120px oklch(10% 0.01 30 / 0.55);
+  opacity: 0; visibility: hidden; translate: 0 -14px; scale: 0.985;
+  transform-origin: 50% 0;
+  transition: opacity 320ms var(--hz-ease), translate 320ms var(--hz-ease), scale 320ms var(--hz-ease), visibility 0s 320ms;
+}
+.horizon-header .canopy.open { opacity: 1; visibility: visible; translate: 0 0; scale: 1; transition-delay: 0s; }
+.horizon-header .canopy-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+.horizon-header .canopy-top .brand { font-size: 19px; }
+.horizon-header .canopy-close { background: none; border: 1px solid oklch(100% 0 0 / 0.28); color: oklch(93% 0.002 80); width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; cursor: pointer; transition: border-color var(--hz-dur) var(--hz-ease), color var(--hz-dur) var(--hz-ease), rotate var(--hz-dur) var(--hz-ease); }
+.horizon-header .canopy-close:hover { border-color: oklch(100% 0 0 / 0.7); color: oklch(100% 0 0); rotate: 90deg; }
+.horizon-header .canopy-nav { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; padding-bottom: 26px; border-bottom: 1px solid oklch(100% 0 0 / 0.16); }
+.horizon-header .canopy-nav a { font-family: var(--hz-sans-bold); font-size: 15.5px; color: oklch(91% 0.002 80); text-decoration: none; padding: 11px 19px; border-radius: 999px; transition: background var(--hz-dur) var(--hz-ease), color var(--hz-dur) var(--hz-ease); }
+.horizon-header .canopy-nav a:hover { background: oklch(100% 0 0 / 0.09); color: oklch(100% 0 0); }
+.horizon-header .canopy-nav a[aria-current="page"] { background: oklch(100% 0 0 / 0.14); color: oklch(100% 0 0); }
+.horizon-header .canopy-nav .spacer { flex: 1; }
+.horizon-header .canopy-nav .pro { display: inline-flex; align-items: center; gap: 9px; color: oklch(85% 0.002 80); }
+.horizon-header .canopy-body { display: grid; grid-template-columns: 400px 1fr; gap: 60px; padding-top: 38px; align-items: center; }
+.horizon-header .canopy-body .canopy-title { font-family: var(--hz-serif-sb); font-size: 46px; letter-spacing: 0; line-height: 1.06; text-wrap: balance; color: oklch(100% 0 0); }
+.horizon-header .canopy-title em { font-style: normal; color: oklch(68% 0.19 27); }
+.horizon-header .canopy-sub { margin-top: 16px; font-size: 16.5px; color: var(--hz-paper-soft); max-width: 32ch; }
+.horizon-header .canopy-feature { position: relative; display: block; border-radius: 14px; overflow: hidden; height: 300px; color: oklch(100% 0 0); text-decoration: none; }
+.horizon-header .canopy-feature img { width: 100%; height: 100%; object-fit: cover; transition: scale 600ms var(--hz-ease); display: block; }
+.horizon-header .canopy-feature:hover img { scale: 1.03; }
+.horizon-header .canopy-feature::after { content: ""; position: absolute; inset: 0; border-radius: 14px; background: linear-gradient(75deg, oklch(10% 0.01 30 / 0.78) 8%, oklch(10% 0.01 30 / 0) 62%); }
+.horizon-header .canopy-feature figcaption { position: absolute; left: 30px; bottom: 26px; right: 90px; z-index: 2; }
+.horizon-header .canopy-feature figcaption strong { display: block; font-family: var(--hz-heading); font-weight: 400; font-size: 30px; line-height: 1.05; }
+.horizon-header .canopy-feature figcaption span { display: inline-flex; align-items: center; gap: 8px; margin-top: 8px; font-family: var(--hz-sans-bold); font-size: 14px; color: oklch(93% 0.002 80); }
+.horizon-header .canopy-feature .ic-arrow { position: absolute; right: 28px; bottom: 28px; z-index: 2; width: 26px; height: 26px; transition: translate var(--hz-dur) var(--hz-ease); }
+.horizon-header .canopy-feature:hover .ic-arrow { translate: 4px 0; }
+html.hz-canopy-lock { overflow: hidden; }
+
+@media (max-width: 1024px) {
+  .horizon-header .canopy-body { grid-template-columns: 1fr; gap: 34px; }
+  .horizon-header .canopy-sub { max-width: 60ch; }
+}
+@media (max-width: 640px) {
+  .horizon-header .hz-nav-bar { inset: 12px 12px auto; }
+  .horizon-header .npill { gap: 14px; padding: 11px 18px; }
+  .horizon-header .brand { font-size: 14px; }
+  .horizon-header .npill-utility { padding: 6px 6px 6px 14px; gap: 12px; }
+  .horizon-header .npill-utility .util .lbl { display: none; }
+  .horizon-header .npill-utility .hz-pill-red { padding: 10px 16px; font-size: 12.5px; }
+  .horizon-header .canopy { top: 8px; left: 8px; right: 8px; padding: 26px 22px 30px; max-height: calc(100svh - 16px); overflow: auto; }
+  .horizon-header .canopy-nav { flex-direction: column; align-items: stretch; gap: 2px; }
+  .horizon-header .canopy-nav a { font-size: 16px; padding: 13px 14px; }
+  .horizon-header .canopy-nav .spacer { display: none; }
+  .horizon-header .canopy-body .canopy-title { font-size: 34px; }
+  .horizon-header .canopy-feature { height: 210px; }
+}

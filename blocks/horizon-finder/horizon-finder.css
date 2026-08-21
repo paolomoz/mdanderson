@@ -1,0 +1,52 @@
+/* horizon-finder — care-finder panel (ported from horizon-proposed.html) */
+
+.horizon-finder-container { position: relative; z-index: 5; margin-top: -284px !important; margin-bottom: 100px !important; }
+.horizon-finder-container .horizon-finder-wrapper { max-width: var(--hz-max); margin-inline: auto; padding-inline: var(--hz-gutter); }
+
+.horizon-finder .hz-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.horizon-finder .finder-panel {
+  background: oklch(100% 0 0);
+  box-shadow: var(--hz-shadow-ambient), var(--hz-shadow-key);
+  padding: 38px 42px 32px;
+}
+.horizon-finder .finder-form { display: flex; gap: 14px; }
+.horizon-finder .finder-input {
+  flex: 1; display: flex; align-items: center; gap: 14px;
+  border: 1.5px solid oklch(18.5% 0.004 30 / 0.35); padding: 0 20px;
+  transition: border-color var(--hz-dur) var(--hz-ease), box-shadow var(--hz-dur) var(--hz-ease);
+}
+.horizon-finder .finder-input:focus-within { border-color: var(--hz-red); box-shadow: 0 0 0 3px oklch(55.6% 0.197 29.7 / 0.14); }
+.horizon-finder .finder-input .ic { color: var(--hz-ink-soft); }
+.horizon-finder .finder-input input { flex: 1; border: 0; background: none; font: inherit; font-size: 17px; height: 58px; color: var(--hz-fg); margin: 0; }
+.horizon-finder .finder-input input::placeholder { color: var(--hz-ink-soft); }
+.horizon-finder .finder-input input:focus { outline: none; }
+.horizon-finder .finder-form button {
+  border: 0; cursor: pointer; background: var(--hz-red); color: oklch(100% 0 0);
+  font-family: var(--hz-sans-bold); font-size: 16px; padding: 0 34px; margin: 0; border-radius: 0;
+  transition: background var(--hz-dur) var(--hz-ease);
+}
+.horizon-finder .finder-form button:hover { background: var(--hz-red-deep); }
+.horizon-finder .finder-index { display: flex; align-items: baseline; flex-wrap: wrap; row-gap: 10px; margin-top: 20px; font-family: var(--hz-sans-bold); }
+.horizon-finder .fi-label { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--hz-ink-soft); margin-right: 24px; }
+.horizon-finder .finder-index a { text-decoration: none; color: var(--hz-fg); font-size: 15px; }
+.horizon-finder .finder-index a + a { border-left: 1px solid var(--hz-hairline-ink); margin-left: 20px; padding-left: 20px; }
+.horizon-finder .finder-index .w { position: relative; display: inline-block; }
+.horizon-finder .finder-index .w::after {
+  content: ""; position: absolute; left: -2px; right: -2px; top: 52%; height: 2px;
+  background: var(--hz-red); transform: scaleX(0) rotate(-1.2deg); transform-origin: left center;
+  transition: transform 280ms var(--hz-ease);
+}
+.horizon-finder .finder-index a:hover .w::after, .horizon-finder .finder-index a:focus-visible .w::after { transform: scaleX(1) rotate(-1.2deg); }
+.horizon-finder .finder-foot { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--hz-hairline-ink); font-size: 15.5px; color: var(--hz-ink-soft); }
+.horizon-finder .finder-foot strong { color: var(--hz-fg); font-family: var(--hz-sans-bold); font-weight: 400; }
+.horizon-finder .finder-foot .tel { font-family: var(--hz-sans-bold); color: var(--hz-fg); text-decoration: none; }
+.horizon-finder .finder-foot .tel:hover { color: var(--hz-red); }
+
+@media (max-width: 800px) {
+  .horizon-finder .finder-form { flex-direction: column; }
+  .horizon-finder .finder-form button { padding: 17px; }
+}
+@media (max-width: 640px) {
+  .horizon-finder-container { margin-top: -140px !important; }
+  .horizon-finder .finder-panel { padding: 24px 20px; }
+}

@@ -1,0 +1,35 @@
+/* horizon-act — Help #EndCancer red band (ported from horizon-proposed.html) */
+
+.horizon-act-container { position: relative; background: var(--hz-red); color: oklch(100% 0 0); padding-block: var(--hz-pad) !important; overflow: hidden; }
+.horizon-act-container .horizon-act-wrapper { max-width: none; padding: 0; margin: 0; }
+
+.horizon-act .act-media { position: absolute; inset: 0; }
+.horizon-act .act-media img { width: 100%; height: 100%; object-fit: cover; opacity: 0.38; filter: grayscale(0.35) contrast(1.08); mix-blend-mode: luminosity; display: block; }
+.horizon-act .act-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, oklch(55.6% 0.197 29.7 / 0.22), oklch(46% 0.185 29.7 / 0.5)); }
+.horizon-act .hz-wrap { position: relative; z-index: 2; }
+.horizon-act .chap-no { color: oklch(100% 0 0); }
+.horizon-act .chap-head h2 { font-size: clamp(48px, 5.4vw, 76px); color: oklch(100% 0 0); }
+.horizon-act .act-tiles { display: grid; grid-template-columns: 1.35fr 1fr 1fr; gap: 20px; margin-top: 48px; }
+.horizon-act .act-tile {
+  border: 1px solid var(--hz-hairline-paper);
+  background: oklch(100% 0 0 / 0.06); backdrop-filter: blur(4px);
+  padding: 30px 28px 26px; display: grid; gap: 12px; align-content: start;
+  transition: background var(--hz-dur) var(--hz-ease), border-color var(--hz-dur) var(--hz-ease), translate var(--hz-dur) var(--hz-ease);
+}
+.horizon-act .act-tile:hover { background: oklch(100% 0 0 / 0.11); border-color: oklch(100% 0 0 / 0.55); translate: 0 -3px; }
+.horizon-act .act-tile .ic-badge { width: 44px; height: 44px; background: oklch(100% 0 0); color: var(--hz-red); display: grid; place-items: center; }
+.horizon-act .act-tile h3 { font-size: 27px; color: oklch(100% 0 0); }
+.horizon-act .act-tile p { font-size: 15.5px; color: oklch(100% 0 0); }
+.horizon-act .act-tile .tlink { color: oklch(100% 0 0); text-decoration-color: oklch(100% 0 0 / 0.45); margin-top: 4px; }
+.horizon-act .act-tile .tlink:hover { text-decoration-color: oklch(100% 0 0); color: oklch(100% 0 0); }
+
+@media (max-width: 1024px) {
+  .horizon-act .act-tiles { grid-template-columns: 1fr 1fr; }
+  .horizon-act .act-tile:first-child { grid-column: 1 / -1; }
+}
+@media (max-width: 800px) {
+  .horizon-act .act-tiles { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .horizon-act .chap-head h2 { font-size: 44px; }
+}

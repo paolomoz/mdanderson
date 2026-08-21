@@ -1,0 +1,29 @@
+/* horizon-footer — ink footer (ported from horizon-proposed.html) */
+
+.horizon-footer-container { background: var(--hz-fg); color: var(--hz-paper-soft); padding: 84px 0 44px !important; }
+.horizon-footer-container .horizon-footer-wrapper { max-width: none; padding: 0; margin: 0; }
+
+.horizon-footer .foot-top { display: grid; grid-template-columns: 1.2fr repeat(3, 1fr); gap: 48px; padding-bottom: 56px; border-bottom: 1px solid oklch(100% 0 0 / 0.14); }
+.horizon-footer .brand { font-family: var(--hz-sans-bold); font-size: 19px; color: oklch(100% 0 0); display: inline-block; }
+.horizon-footer .strike { position: relative; }
+.horizon-footer .strike::after {
+  content: ""; position: absolute; left: -2px; right: -2px; top: 51%; height: 2.5px;
+  background: var(--hz-red); transform: rotate(-1.2deg); border-radius: 2px;
+}
+.horizon-footer .foot-mission { margin-top: 20px; font-family: var(--hz-serif); font-size: 19px; line-height: 1.5; color: oklch(92% 0.003 80); max-width: 30ch; }
+.horizon-footer .foot-col h3 { font-family: var(--hz-sans-bold); font-weight: 400; font-size: 12.5px; letter-spacing: 0.18em; text-transform: uppercase; color: oklch(70% 0.004 60); margin-bottom: 18px; }
+.horizon-footer .foot-col ul { list-style: none; display: grid; gap: 11px; margin: 0; padding: 0; }
+.horizon-footer .foot-col a { font-size: 14.5px; color: oklch(88% 0.003 80); text-decoration: none; transition: color var(--hz-dur) var(--hz-ease); }
+.horizon-footer .foot-col a:hover { color: oklch(100% 0 0); text-decoration: underline; text-underline-offset: 4px; }
+.horizon-footer .foot-legal { display: flex; flex-wrap: wrap; gap: 8px 22px; padding-top: 30px; font-size: 12.5px; color: oklch(70% 0.004 60); }
+.horizon-footer .foot-legal a { color: inherit; text-decoration: none; }
+.horizon-footer .foot-legal a:hover { color: oklch(95% 0.002 80); }
+.horizon-footer .foot-legal .copy { margin-left: auto; }
+
+@media (max-width: 1024px) {
+  .horizon-footer .foot-top { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .horizon-footer .foot-top { grid-template-columns: 1fr; gap: 34px; }
+  .horizon-footer .foot-legal .copy { margin-left: 0; width: 100%; }
+}

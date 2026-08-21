@@ -1,0 +1,40 @@
+/* horizon-support — support + newsletter (ported from horizon-proposed.html) */
+
+.horizon-support-container { padding-block: var(--hz-pad) !important; }
+.horizon-support-container .horizon-support-wrapper { max-width: none; padding: 0; margin: 0; }
+
+.horizon-support .hz-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.horizon-support .support-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: start; }
+.horizon-support h2 { font-size: 40px; margin-bottom: 12px; }
+.horizon-support .intro { color: var(--hz-ink-soft); max-width: 52ch; margin-bottom: 34px; font-size: 16.5px; }
+.horizon-support .sup-card { border-top: 1px solid var(--hz-hairline-ink); padding: 26px 0 30px; display: grid; grid-template-columns: 44px 1fr; gap: 20px; align-items: start; }
+.horizon-support .sup-card .ic-badge { width: 44px; height: 44px; background: oklch(55.6% 0.197 29.7 / 0.1); color: var(--hz-red); display: grid; place-items: center; }
+.horizon-support .sup-card h3 { font-family: var(--hz-serif-sb); font-size: 24px; letter-spacing: 0; margin: 0; }
+.horizon-support .sup-card p { margin-top: 6px; font-size: 15.5px; color: var(--hz-ink-soft); max-width: 52ch; }
+.horizon-support .sup-card .tlink { margin-top: 12px; }
+.horizon-support .quick-pills { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
+.horizon-support .quick-pills a { display: inline-flex; align-items: center; gap: 9px; font-family: var(--hz-sans-bold); font-size: 13.5px; color: var(--hz-fg); text-decoration: none; border: 1.5px solid var(--hz-fg); padding: 11px 20px; transition: background var(--hz-dur) var(--hz-ease), color var(--hz-dur) var(--hz-ease); }
+.horizon-support .quick-pills a:hover { background: var(--hz-fg); color: var(--hz-bg); }
+.horizon-support .quick-pills .ic { width: 16px; height: 16px; }
+.horizon-support .nl-panel { background: var(--hz-fg); color: oklch(100% 0 0); padding: 44px 42px; position: sticky; top: 110px; }
+.horizon-support .nl-panel .kicker { font-family: var(--hz-sans-bold); font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: oklch(68% 0.19 27); display: block; margin-bottom: 10px; }
+.horizon-support .nl-panel h2 { font-size: 34px; max-width: 17ch; margin: 0; color: oklch(100% 0 0); }
+.horizon-support .nl-panel p { margin-top: 12px; font-size: 15.5px; color: var(--hz-paper-soft); max-width: 36ch; }
+.horizon-support .nl-form { display: flex; margin-top: 26px; background: oklch(100% 0 0); padding: 5px; }
+.horizon-support .nl-form input { flex: 1; min-width: 0; border: 0; background: none; font: inherit; font-size: 15px; padding: 12px 18px; color: var(--hz-fg); margin: 0; }
+.horizon-support .nl-form input:focus { outline: none; }
+.horizon-support .nl-form:focus-within { box-shadow: 0 0 0 3px oklch(55.6% 0.197 29.7 / 0.35); }
+.horizon-support .nl-form button { border: 0; border-radius: 0; cursor: pointer; background: var(--hz-red); color: oklch(100% 0 0); font-family: var(--hz-sans-bold); font-size: 14.5px; padding: 12px 24px; margin: 0; transition: background var(--hz-dur) var(--hz-ease); }
+.horizon-support .nl-form button:hover { background: var(--hz-red-deep); }
+.horizon-support .nl-note { margin-top: 14px; font-size: 12.5px; color: oklch(72% 0.004 60); }
+
+@media (max-width: 1024px) {
+  .horizon-support .support-grid { grid-template-columns: 1fr; }
+  .horizon-support .nl-panel { position: static; }
+}
+@media (max-width: 640px) {
+  .horizon-support .nl-panel { padding: 32px 24px; }
+  .horizon-support .nl-form { flex-direction: column; gap: 8px; background: none; padding: 0; }
+  .horizon-support .nl-form input { background: oklch(100% 0 0); padding: 15px 20px; }
+  .horizon-support .nl-form button { padding: 15px; }
+}

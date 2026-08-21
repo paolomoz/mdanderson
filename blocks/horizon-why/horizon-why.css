@@ -1,0 +1,25 @@
+/* horizon-why — chapter 02 credential interlude (ported from horizon-proposed.html) */
+
+.horizon-why-container { background: var(--hz-fg); color: oklch(100% 0 0); padding-block: var(--hz-pad) !important; }
+.horizon-why-container .horizon-why-wrapper { max-width: none; padding: 0; margin: 0; }
+
+.horizon-why .why-cols { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 64px; align-items: center; }
+.horizon-why .chap-no { color: oklch(68% 0.19 27); }
+.horizon-why .why-stats { display: flex; gap: 56px; margin: 40px 0 30px; }
+.horizon-why .stat b { display: block; font-family: var(--hz-heading); font-weight: 400; font-size: 88px; line-height: 0.95; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+.horizon-why .stat .red, .horizon-why .stat b.red { color: oklch(66% 0.21 27); }
+.horizon-why .stat span { display: block; margin-top: 10px; font-size: 15px; color: var(--hz-paper-soft); max-width: 21ch; }
+.horizon-why p.body { font-size: 17px; color: oklch(89% 0.003 80); max-width: 54ch; }
+.horizon-why .tlink { color: oklch(100% 0 0); text-decoration-color: oklch(100% 0 0 / 0.4); margin-top: 26px; }
+.horizon-why .tlink:hover { text-decoration-color: oklch(100% 0 0); color: oklch(100% 0 0); }
+.horizon-why .why-photo { position: relative; overflow: hidden; aspect-ratio: 4 / 4.6; margin: 0; }
+.horizon-why .why-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+@media (max-width: 1024px) {
+  .horizon-why .why-cols { grid-template-columns: 1fr; gap: 44px; }
+  .horizon-why .why-photo { aspect-ratio: 16 / 10; }
+}
+@media (max-width: 640px) {
+  .horizon-why .why-stats { gap: 36px; }
+  .horizon-why .stat b { font-size: 64px; }
+}
