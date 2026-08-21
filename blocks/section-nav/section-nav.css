@@ -1232,3 +1232,26 @@ body.interior main > .section.serif-head > .default-content-wrapper h2 {
   letter-spacing: var(--letter-spacing);
   color: var(--color-fg);
 }
+
+/* dark appointment band typography: the interior prose rule
+   (.default-content-wrapper p → #3a3a3a 18px) was beating styles.css's
+   .section.dark white — live band is white 21px (2026-08-21 gate) */
+body.interior main .section.dark .default-content-wrapper p {
+  color: var(--color-bg);
+  font-size: 21px;
+}
+
+/* centered band heads (live: section-title text-center on anatomy /
+   #EndCancer-style bands) — compose with serif-head via
+   section-metadata Style: serif-head, center-head */
+body.interior main > .section.center-head > .default-content-wrapper h2 {
+  text-align: center;
+}
+
+/* authorable white band: live renders some accordion/pair bands WHITE
+   (lung-cancer D&T, why-choose) where the container rules force gray —
+   doubled class beats .accordion-container / .quote-container regardless
+   of block-CSS load order (2026-08-21) */
+body.interior main > .section.white.white {
+  background: var(--color-bg);
+}
