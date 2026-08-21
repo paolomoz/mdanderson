@@ -1263,7 +1263,7 @@ body.interior main > .section.white.white {
       70px 36px — live wrapper padding is 0 (duo cards 528w @x312/x858,
       trio row 1074w @x312; the +341px lower-page shift came from this) */
 @media (width >= 992px) {
-  body.interior main > .section.section-nav-container ~ .section.cards-container > .cards-wrapper {
+  body.interior main > .section.section-nav-container ~ .section.cards-container:not(:nth-last-child(-n+2)) > .cards-wrapper {
     padding: 0;
     max-width: none;
     margin: 0;
