@@ -1,315 +1,441 @@
 {
- "detector": {
-  "ignoreRules": [],
-  "ignoreFiles": [],
-  "ignoreValues": [
-   {
-    "rule": "overused-font",
-    "value": "open sans",
-    "createdAt": "2026-08-19T17:00:49.104Z",
-    "reason": "stardust:replica same-design migration \u2014 @font-face lifted verbatim from mdanderson.org's own clientlib CSS; font choice belongs to the source site, any substitution is a fidelity defect (inconsistency register is empty)"
-   },
-   {
-    "rule": "overused-font",
-    "value": "arial",
-    "createdAt": "2026-08-19T18:09:16.462Z",
-    "reason": "stardust:replica \u2014 Arial is the source site's own lifted fallback stack (mdanderson.org clientlib CSS); substitution would be a fidelity defect"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "*",
-    "files": [
-     "stardust/prototypes/assets/chrome.css"
-    ],
-    "createdAt": "2026-08-19T18:09:16.490Z",
-    "reason": "stardust:replica zero-delta migration \u2014 every literal color is capture-lifted from mdanderson.org's own CSS; palette normalization is forbidden by the empty inconsistency register"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "*",
-    "files": [
-     "stardust/prototypes/index-proposed.html"
-    ],
-    "createdAt": "2026-08-19T18:09:16.517Z",
-    "reason": "stardust:replica zero-delta migration \u2014 capture-lifted colors from the live source; normalization forbidden"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "*",
-    "files": [
-     "stardust/prototypes/cancer-types-breast-cancer-html-proposed.html"
-    ],
-    "createdAt": "2026-08-19T18:10:38.561Z",
-    "reason": "stardust:replica zero-delta migration \u2014 capture-lifted colors from the live source; normalization forbidden"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "*",
-    "files": [
-     "stardust/prototypes/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html-proposed.html"
-    ],
-    "createdAt": "2026-08-19T18:10:38.590Z",
-    "reason": "stardust:replica zero-delta migration \u2014 capture-lifted colors from the live source; normalization forbidden"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "*",
-    "files": [
-     "stardust/prototypes/patients-family-diagnosis-treatment-clinical-trials-html-proposed.html"
-    ],
-    "createdAt": "2026-08-19T18:10:38.616Z",
-    "reason": "stardust:replica zero-delta migration \u2014 capture-lifted colors from the live source; normalization forbidden"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "*",
-    "files": [
-     "stardust/prototypes/prevention-screening-html-proposed.html"
-    ],
-    "createdAt": "2026-08-19T18:10:38.642Z",
-    "reason": "stardust:replica zero-delta migration \u2014 capture-lifted colors from the live source; normalization forbidden"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "*",
-    "files": [
-     "stardust/prototypes/research-html-proposed.html"
-    ],
-    "createdAt": "2026-08-19T18:10:38.668Z",
-    "reason": "stardust:replica zero-delta migration \u2014 capture-lifted colors from the live source; normalization forbidden"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "*",
-    "files": [
-     "stardust/prototypes/about-md-anderson-html-proposed.html"
-    ],
-    "createdAt": "2026-08-19T18:10:38.695Z",
-    "reason": "stardust:replica zero-delta migration \u2014 capture-lifted colors from the live source; normalization forbidden"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "*",
-    "files": [
-     "stardust/prototypes/about-md-anderson-our-locations-html-proposed.html"
-    ],
-    "createdAt": "2026-08-19T18:10:38.722Z",
-    "reason": "stardust:replica zero-delta migration \u2014 capture-lifted colors from the live source; normalization forbidden"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "*",
-    "files": [
-     "stardust/prototypes/cancerwise-html-proposed.html"
-    ],
-    "createdAt": "2026-08-19T18:10:38.749Z",
-    "reason": "stardust:replica zero-delta migration \u2014 capture-lifted colors from the live source; normalization forbidden"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "*",
-    "files": [
-     "stardust/prototypes/cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html-proposed.html"
-    ],
-    "createdAt": "2026-08-19T18:10:38.775Z",
-    "reason": "stardust:replica zero-delta migration \u2014 capture-lifted colors from the live source; normalization forbidden"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "*",
-    "files": [
-     "stardust/prototypes/donors-volunteers-html-proposed.html"
-    ],
-    "createdAt": "2026-08-19T18:10:38.801Z",
-    "reason": "stardust:replica zero-delta migration \u2014 capture-lifted colors from the live source; normalization forbidden"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#3f3d3d",
-    "createdAt": "2026-08-19T18:36:08.145Z"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#529144",
-    "createdAt": "2026-08-19T18:36:08.177Z",
-    "reason": "stardust:replica EDS conversion \u2014 capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#3a3a3a",
-    "createdAt": "2026-08-19T18:36:08.206Z",
-    "reason": "stardust:replica EDS conversion \u2014 capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#c50026",
-    "createdAt": "2026-08-19T18:36:08.233Z",
-    "reason": "stardust:replica EDS conversion \u2014 capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#605d5d",
-    "createdAt": "2026-08-19T18:36:08.261Z"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#e96613",
-    "createdAt": "2026-08-19T18:36:08.287Z"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#23b8f1",
-    "createdAt": "2026-08-19T18:36:08.313Z"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#478339",
-    "createdAt": "2026-08-19T18:36:08.339Z"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#3361ad",
-    "createdAt": "2026-08-19T18:36:08.368Z"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#2b4fa2",
-    "createdAt": "2026-08-19T18:36:08.394Z"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#222121",
-    "createdAt": "2026-08-19T18:36:08.421Z"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#d0d0ce",
-    "createdAt": "2026-08-19T18:36:08.448Z"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#f2f3f4",
-    "createdAt": "2026-08-19T18:36:08.475Z"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#783491",
-    "createdAt": "2026-08-19T18:36:08.501Z"
-   },
-   {
-    "rule": "overused-font",
-    "value": "helvetica",
-    "createdAt": "2026-08-19T23:20:57.333Z",
-    "reason": "stardust:replica \u2014 Helvetica appears in mdanderson.org's own clientlib CSS (pannellum panorama widget rules, 14 occurrences in harvested source); lifted verbatim, substitution would be a fidelity defect"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#ea0118",
-    "createdAt": "2026-08-20T01:15:59.109Z",
-    "reason": "stardust:replica EDS conversion \u2014 canon-verbatim value lifted from mdanderson.org capture (MyChart red / OPH promo card / derived hover shade); replica contract forbids palette normalization"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#808080",
-    "createdAt": "2026-08-20T01:15:59.139Z",
-    "reason": "stardust:replica EDS conversion \u2014 canon-verbatim value lifted from mdanderson.org capture (MyChart red / OPH promo card / derived hover shade); replica contract forbids palette normalization"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#333",
-    "createdAt": "2026-08-20T01:15:59.166Z",
-    "reason": "stardust:replica EDS conversion \u2014 canon-verbatim value lifted from mdanderson.org capture (MyChart red / OPH promo card / derived hover shade); replica contract forbids palette normalization"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#624b79",
-    "createdAt": "2026-08-20T01:15:59.193Z",
-    "reason": "stardust:replica EDS conversion \u2014 canon-verbatim value lifted from mdanderson.org capture (MyChart red / OPH promo card / derived hover shade); replica contract forbids palette normalization"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#274f91",
-    "createdAt": "2026-08-20T01:15:59.219Z",
-    "reason": "stardust:replica EDS conversion \u2014 canon-verbatim value lifted from mdanderson.org capture (MyChart red / OPH promo card / derived hover shade); replica contract forbids palette normalization"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#d8d9d7",
-    "createdAt": "2026-08-20T01:42:31.509Z",
-    "reason": "stardust:replica EDS conversion \u2014 capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#d7d7d7",
-    "createdAt": "2026-08-20T01:43:04.478Z",
-    "reason": "stardust:replica EDS conversion \u2014 capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#529214",
-    "createdAt": "2026-08-20T01:44:21.155Z",
-    "reason": "stardust:replica EDS conversion \u2014 capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#dddcd2",
-    "createdAt": "2026-08-20T01:45:50.212Z",
-    "reason": "stardust:replica EDS conversion \u2014 capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#bfbfbf",
-    "createdAt": "2026-08-20T02:21:03.301Z",
-    "reason": "stardust:replica EDS conversion \u2014 canon-verbatim newsletter input-field value from mdanderson.org capture"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#666",
-    "createdAt": "2026-08-20T02:21:03.332Z",
-    "reason": "stardust:replica EDS conversion \u2014 canon-verbatim newsletter input-field value from mdanderson.org capture"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#d6d6d6",
-    "createdAt": "2026-08-20T03:59:13.169Z",
-    "reason": "stardust:replica EDS conversion \u2014 replica-lifted literal in locations block (capture fidelity)"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#bcbcbc",
-    "createdAt": "2026-08-20T03:59:13.198Z",
-    "reason": "stardust:replica EDS conversion \u2014 replica-lifted literal in locations block (capture fidelity)"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#49823c",
-    "createdAt": "2026-08-20T04:18:04.205Z",
-    "reason": "stardust:replica EDS conversion \u2014 capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#cb6015",
-    "createdAt": "2026-08-20T04:18:04.261Z",
-    "reason": "stardust:replica EDS conversion \u2014 capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#e8e8e8",
-    "createdAt": "2026-08-20T04:18:04.287Z",
-    "reason": "stardust:replica EDS conversion \u2014 capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#6485bd",
-    "createdAt": "2026-08-21T10:30:55.010Z",
-    "reason": "lifted verbatim from live mdanderson.org clientlib-all.min.css (.appt-bar-sticky .button-block border-right) \u2014 replica fidelity"
-   },
-   {
-    "rule": "design-system-color",
-    "value": "#f9ca1f",
-    "createdAt": "2026-08-21T13:00:00.000Z",
-    "reason": "lifted verbatim from live mdanderson.org clientlib (.alerts band background) \u2014 replica fidelity, not drift"
-   }
-  ]
- }
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "open sans",
+        "createdAt": "2026-08-19T17:00:49.104Z",
+        "reason": "stardust:replica same-design migration — @font-face lifted verbatim from mdanderson.org's own clientlib CSS; font choice belongs to the source site, any substitution is a fidelity defect (inconsistency register is empty)"
+      },
+      {
+        "rule": "overused-font",
+        "value": "arial",
+        "createdAt": "2026-08-19T18:09:16.462Z",
+        "reason": "stardust:replica — Arial is the source site's own lifted fallback stack (mdanderson.org clientlib CSS); substitution would be a fidelity defect"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/assets/chrome.css"
+        ],
+        "createdAt": "2026-08-19T18:09:16.490Z",
+        "reason": "stardust:replica zero-delta migration — every literal color is capture-lifted from mdanderson.org's own CSS; palette normalization is forbidden by the empty inconsistency register"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/index-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:09:16.517Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/cancer-types-breast-cancer-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.561Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.590Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/patients-family-diagnosis-treatment-clinical-trials-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.616Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/prevention-screening-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.642Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/research-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.668Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/about-md-anderson-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.695Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/about-md-anderson-our-locations-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.722Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/cancerwise-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.749Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.775Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/donors-volunteers-html-proposed.html"
+        ],
+        "createdAt": "2026-08-19T18:10:38.801Z",
+        "reason": "stardust:replica zero-delta migration — capture-lifted colors from the live source; normalization forbidden"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#3f3d3d",
+        "createdAt": "2026-08-19T18:36:08.145Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#529144",
+        "createdAt": "2026-08-19T18:36:08.177Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#3a3a3a",
+        "createdAt": "2026-08-19T18:36:08.206Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#c50026",
+        "createdAt": "2026-08-19T18:36:08.233Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#605d5d",
+        "createdAt": "2026-08-19T18:36:08.261Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#e96613",
+        "createdAt": "2026-08-19T18:36:08.287Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#23b8f1",
+        "createdAt": "2026-08-19T18:36:08.313Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#478339",
+        "createdAt": "2026-08-19T18:36:08.339Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#3361ad",
+        "createdAt": "2026-08-19T18:36:08.368Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#2b4fa2",
+        "createdAt": "2026-08-19T18:36:08.394Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#222121",
+        "createdAt": "2026-08-19T18:36:08.421Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#d0d0ce",
+        "createdAt": "2026-08-19T18:36:08.448Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#f2f3f4",
+        "createdAt": "2026-08-19T18:36:08.475Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#783491",
+        "createdAt": "2026-08-19T18:36:08.501Z"
+      },
+      {
+        "rule": "overused-font",
+        "value": "helvetica",
+        "createdAt": "2026-08-19T23:20:57.333Z",
+        "reason": "stardust:replica — Helvetica appears in mdanderson.org's own clientlib CSS (pannellum panorama widget rules, 14 occurrences in harvested source); lifted verbatim, substitution would be a fidelity defect"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#ea0118",
+        "createdAt": "2026-08-20T01:15:59.109Z",
+        "reason": "stardust:replica EDS conversion — canon-verbatim value lifted from mdanderson.org capture (MyChart red / OPH promo card / derived hover shade); replica contract forbids palette normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#808080",
+        "createdAt": "2026-08-20T01:15:59.139Z",
+        "reason": "stardust:replica EDS conversion — canon-verbatim value lifted from mdanderson.org capture (MyChart red / OPH promo card / derived hover shade); replica contract forbids palette normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#333",
+        "createdAt": "2026-08-20T01:15:59.166Z",
+        "reason": "stardust:replica EDS conversion — canon-verbatim value lifted from mdanderson.org capture (MyChart red / OPH promo card / derived hover shade); replica contract forbids palette normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#624b79",
+        "createdAt": "2026-08-20T01:15:59.193Z",
+        "reason": "stardust:replica EDS conversion — canon-verbatim value lifted from mdanderson.org capture (MyChart red / OPH promo card / derived hover shade); replica contract forbids palette normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#274f91",
+        "createdAt": "2026-08-20T01:15:59.219Z",
+        "reason": "stardust:replica EDS conversion — canon-verbatim value lifted from mdanderson.org capture (MyChart red / OPH promo card / derived hover shade); replica contract forbids palette normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#d8d9d7",
+        "createdAt": "2026-08-20T01:42:31.509Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#d7d7d7",
+        "createdAt": "2026-08-20T01:43:04.478Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#529214",
+        "createdAt": "2026-08-20T01:44:21.155Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#dddcd2",
+        "createdAt": "2026-08-20T01:45:50.212Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#bfbfbf",
+        "createdAt": "2026-08-20T02:21:03.301Z",
+        "reason": "stardust:replica EDS conversion — canon-verbatim newsletter input-field value from mdanderson.org capture"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#666",
+        "createdAt": "2026-08-20T02:21:03.332Z",
+        "reason": "stardust:replica EDS conversion — canon-verbatim newsletter input-field value from mdanderson.org capture"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#d6d6d6",
+        "createdAt": "2026-08-20T03:59:13.169Z",
+        "reason": "stardust:replica EDS conversion — replica-lifted literal in locations block (capture fidelity)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#bcbcbc",
+        "createdAt": "2026-08-20T03:59:13.198Z",
+        "reason": "stardust:replica EDS conversion — replica-lifted literal in locations block (capture fidelity)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#49823c",
+        "createdAt": "2026-08-20T04:18:04.205Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#cb6015",
+        "createdAt": "2026-08-20T04:18:04.261Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#e8e8e8",
+        "createdAt": "2026-08-20T04:18:04.287Z",
+        "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#6485bd",
+        "createdAt": "2026-08-21T10:30:55.010Z",
+        "reason": "lifted verbatim from live mdanderson.org clientlib-all.min.css (.appt-bar-sticky .button-block border-right) — replica fidelity"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#f9ca1f",
+        "createdAt": "2026-08-21T13:00:00.000Z",
+        "reason": "lifted verbatim from live mdanderson.org clientlib (.alerts band background) — replica fidelity, not drift"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(16% 0.004 30 / .9)",
+        "createdAt": "2026-08-21T11:43:39.632Z",
+        "reason": "horizon-track redesign pill ground; new-world palette outside replica DESIGN.md, user-directed 2026-08-21"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(93% 0.002 80)",
+        "createdAt": "2026-08-21T12:26:46.347Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(16.5% 0.004 30)",
+        "createdAt": "2026-08-21T12:26:46.374Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(91% 0.002 80)",
+        "createdAt": "2026-08-21T12:26:46.400Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(68% 0.19 27)",
+        "createdAt": "2026-08-21T12:26:46.426Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(66% 0.21 27)",
+        "createdAt": "2026-08-21T12:26:46.451Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(88% 0.06 27)",
+        "createdAt": "2026-08-21T12:26:46.477Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(18.5% 0.004 30 / .35)",
+        "createdAt": "2026-08-21T12:26:46.509Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(55.6% 0.197 29.7 / .14)",
+        "createdAt": "2026-08-21T12:26:46.535Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(89% 0.003 80)",
+        "createdAt": "2026-08-21T12:26:46.562Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(18.5% 0.004 30 / .08)",
+        "createdAt": "2026-08-21T12:26:46.588Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(88% 0.05 27)",
+        "createdAt": "2026-08-21T12:26:46.616Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(55.6% 0.197 29.7 / .22)",
+        "createdAt": "2026-08-21T12:26:46.642Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(46% 0.185 29.7 / .5)",
+        "createdAt": "2026-08-21T12:26:46.670Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(55.6% 0.197 29.7 / .1)",
+        "createdAt": "2026-08-21T12:26:46.696Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(55.6% 0.197 29.7 / .35)",
+        "createdAt": "2026-08-21T12:26:46.722Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(72% 0.004 60)",
+        "createdAt": "2026-08-21T12:26:46.748Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(92% 0.003 80)",
+        "createdAt": "2026-08-21T12:26:46.776Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(70% 0.004 60)",
+        "createdAt": "2026-08-21T12:26:46.803Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(88% 0.003 80)",
+        "createdAt": "2026-08-21T12:26:46.830Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "oklch(95% 0.002 80)",
+        "createdAt": "2026-08-21T12:26:46.856Z",
+        "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      }
+    ]
+  }
 }

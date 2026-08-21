@@ -2,16 +2,31 @@
 
 Established 2026-08-21 on two releases; 2,190 pages ride this at full
 migration. Read with PAGE-PRODUCTION.md. **Status: composition + metadata
-contract validated end-to-end (publish, index); pixel gate BLOCKED on a
-code-level template gap (no `news-article` layout CSS exists) — see §4.
-Do NOT iterate authoring past this; the gap closes in code, once.**
+contract validated end-to-end (publish, index). The §4 grid CSS SHIPPED
+(styles.css `body.news-article`, 834/54/408) and landed the layout — height
+gates now pass (Δ 1.1% / 2.1%). Pixel gate still FAILS on both pages
+(14.52% / 20.53%); the residual was polish-probed 2026-08-21 (band-profile +
+geometry probes) and is ENTIRELY code-level — see §4b for the exact
+selector → live-value levers. Authoring is exhausted: every alternative
+composition was tried and measured WORSE (see §1 notes). Do NOT iterate
+authoring further; the remaining gap closes in code, once.**
 
 ## 1. Validated pages
 
 | Live path | DA / EDS path | Gate (pixel, height Δ) |
 |---|---|---|
-| `/newsroom/-patients-with-heart-disease-may-be-at-increased-risk-for-advanc.h00-159703068.html` | `/newsroom/patients-with-heart-disease-may-be-at-increased-risk-for-advanc` | 47.40%→32.33% over 3 iters; height +43.4%→+20.8% (FAIL, cause §4) |
-| `/newsroom/---md-anderson-s-institute-for-data-science-in-oncology-establis.h00-159698334.html` | `/newsroom/md-anderson-s-institute-for-data-science-in-oncology-establis` | 19.81%, height +3.1%, 1 iter (FAIL pixel, cause §4) |
+| `/newsroom/-patients-with-heart-disease-may-be-at-increased-risk-for-advanc.h00-159703068.html` | `/newsroom/patients-with-heart-disease-may-be-at-increased-risk-for-advanc` | 20.53%, Δ 2.1% ✓ after §4 CSS (was 32.33%/+20.8%); polish rounds 24.47%→20.53% (FAIL pixel, cause §4b) |
+| `/newsroom/---md-anderson-s-institute-for-data-science-in-oncology-establis.h00-159698334.html` | `/newsroom/md-anderson-s-institute-for-data-science-in-oncology-establis` | 14.52%, Δ 1.1% ✓ after §4 CSS (was 19.81%/+3.1%); polish rounds 18.79%→14.52% (FAIL pixel, cause §4b) |
+
+Polish-round evidence (2026-08-21, do not re-try): (a) adding the live
+footer's newsletter strip as a trailing `newsletter cancerwise` section
+MISALIGNS while §4b offsets are open — HD 20.53→24.47%, reverted; author it
+only together with the §4b fixes. (b) moving the contact-card callout after
+the body (merging head+body into one wrapper) only flips the body offset
+sign (+205px → −28px drifting to −126px via the §4b paragraph-margin drift)
+— IDSO 14.52→18.79% net worse with (a), reverted to canonical §2 order.
+(c) the `tinted` band removal (§2 item 5 correction) is pixelmatch-neutral
+(242-vs-255 gray is below the 0.1 threshold) but is live truth — kept.
 
 Slug rule: live basename minus `.h00-…` suffix minus leading dashes.
 Gate MUST get the EDS path explicitly:
@@ -51,11 +66,19 @@ media). Sections:
      `media` is an UNSTYLED variant today (renders as base callout); it is
      the rail-placement hook for the §4 CSS (rail = all `.callout-wrapper`s).
 5. **Help #EndCancer** — copy VERBATIM from the insomnia exemplar
-   (`<h2>Help #EndCancer</h2>` + `cards promo closing` 3 cards +
-   `section-metadata` style `tinted`). Identical band on live newsroom
-   (`.pre-footer section.highlight`, padding 70px 72px, h2 48px centered).
-   No trailing newsletter section (newsroom's subscribe strip is part of the
-   global footer block).
+   (`<h2>Help #EndCancer</h2>` + `cards promo closing` 3 cards) but with
+   **NO `section-metadata` / NO `tinted` style** — CORRECTED 2026-08-21:
+   the live newsroom band background is WHITE `rgb(255,255,255)` (pixel-
+   sampled on both gated pages), unlike cancerwise's gray. Live band:
+   `.pre-footer section.highlight` padding 70px 72px, h2 48px/48px centered
+   margin -4px 0 50px.
+   No trailing newsletter section YET — the strip IS on live newsroom (it is
+   the live footer's first child: black band h90, padding 20px 72px,
+   "Subscribe to our Cancerwise newsletter"; live footer h900 vs EDS h745),
+   but the EDS global footer block does NOT render it, and authoring the
+   trailing `newsletter cancerwise` section before the §4b offset fixes ship
+   measures WORSE (HD +3.9 pts — see §1). Add the trailing newsletter
+   section in the same change that ships §4b.
 
 ## 3. Metadata contract
 
@@ -78,15 +101,69 @@ Image        https://content.da.live/paolomoz/mdanderson/media/newsroom/<name>.j
   section-nav block, and it would misfire later on pages carrying
   interior-scoped blocks (accordion, article-cards).
 
-## 4. CODE-LEVEL GAP — `news-article` template layout CSS (blocks the gate)
+## 4b. REMAINING CODE LEVERS (block the pixel gate; probed 2026-08-21 @1440)
 
-No stylesheet implements the newsroom two-column page grid, and the existing
-two-column machinery cannot be borrowed: `body.interior` / `body.blog-article`
-grids live in `blocks/section-nav/section-nav.css`, which loads only when a
-section-nav block is on the page (newsroom has none), and their splits key
-off rail widths (358 / 528px) that are not the newsroom's 408px. Result
-without the CSS: contact card renders as a full-width gray band and sidebar
-media stacks below the body — the entire residual on both gated pages.
+The §4 grid shipped and passes the height gate, but its row plan sizes grid
+row 1 to the contact card (row 1 = max(head, card+70) ≈ 378–399px), so the
+body column starts +174px (HD) / +205px (IDSO) below live, shifting body,
+standalone image, pre-footer and footer. Every lever below is selector →
+live value; all EDS values were probed on the deployed pages.
+
+1. **Rail flow (the big one, ~8–10 pts/page).** Live rail is an independent
+   column: body starts at date-bottom + 18px while the card sits beside it.
+   Live: `.col-content.alternate-content` x0 w960 (pad 0 18px 0 36px);
+   `.col-sidebar.publication-sidebar` x960 w480 (pad 70px 72px 0 0); rail
+   boxes w408 at x960; sidebar media top = contact-card bottom + 70px
+   (HD: card 428→757, media 827). CSS alone can't stack two callout-wrappers
+   in one grid cell — recommended fix is a tiny `news-article` template hook
+   (scripts.js) wrapping the section's `.callout-wrapper`s in a rail div
+   (`grid-column: 2; grid-row: 1 / span 2; align-self: start`), rail
+   children in flow (first child margin-top 70px, gap 70px). EDS today:
+   body firstP y780 vs live ~606 (HD); y800 vs ~601 (IDSO).
+2. **Subtitle** — live `.article-subtitle`: Minion 18px/23.4, padding
+   18px 0, margin 0. EDS (`main h1 + p`): margin 14.4px 0 4.5px, no padding
+   → head 36px short. Suggested: `body.news-article main h1 + p
+   { padding: 18px 0; margin: 0; }`
+3. **Date line** — live `p.article-date`: Univers 45 Light 14px/18.2,
+   margin 14px 0. EDS: plain Minion 18px/23.4. Suggested:
+   `body.news-article main h1 + p + p { font: 14px/18.2px <Univers Light>;
+   margin: 14px 0; }`
+4. **Body rhythm (drift, ~100px over IDSO)** — live `.article-body p`
+   gap = 18px (UA 1em margins collapsed); live `ul`: margin 18px 0,
+   padding-left 40px; `li`: 18px/23.4, margin 0. EDS default-content p
+   margins 14.4px 0 4.5px → −3.6px per block, cumulative −~100px by the
+   article end. Suggested: `body.news-article main .default-content-wrapper
+   :is(p, ul) { margin: 18px 0; }` (+ `ul { padding-left: 40px }`).
+5. **`callout media` variant (HD ~5 pts)** — today renders as BASE callout:
+   30px padding + centered flex + Minion 21px body → img 348×522 vs live
+   408×612, caption Minion 21 centered vs live Univers 16px/20.8 left.
+   Live: `.col-sidebar .media-image img` w408; `.media-caption` Univers
+   16px/20.8, margin-top 22px, padding-right 30px, left-aligned. Suggested:
+   `.callout.media .callout-inner { display: block; padding: 0; margin: 0;
+   background: none; text-align: left; }` + caption rules.
+6. **Share strip gutter** — live `.social-share-modal`: h70, padding
+   20px 72px 10px (icons at x72). EDS `.share`: padding 20px 0 10px (icons
+   at x0). Suggested: `body.news-article .share { padding: 20px 72px 10px }`.
+7. **Footer newsletter strip** — live newsroom footer's first child: black
+   strip h90, padding 20px 72px ("Subscribe to our Cancerwise newsletter");
+   EDS footer omits it (h745 vs live h900). Ship together with the
+   composition change in §2 item 5 (trailing `newsletter cancerwise`
+   section), gated on levers 1–4 landing first.
+8. **Contact-card internal rhythm (minor, 21px)** — HD live card h329 vs
+   EDS h308 (content identical; one 16px/20.8 line of spacing). IDSO
+   matches (329 = 329). Re-probe after 1–4.
+
+With 1–6 shipped both pages project ≤5%; today's floor without them is
+14.52% / 20.53% (residual bands: body-text shift smear, standalone-image
+offset +101/+133, pre-footer shift +106/+137, footer strip + shift).
+
+## 4. SHIPPED — `news-article` template layout CSS (2026-08-21, styles.css)
+
+Shipped as `body.news-article main > .section:has(> .callout-wrapper)` grid
+(834/54/408, head r1c1 / contact r1c2 +70px / body r2c1 / media r2c2) in
+styles.css — height gates now pass. Known limitation → §4b lever 1 (row 1
+sizes to the contact card). Original live-truth record kept below for the
+§4b implementation:
 
 Live truth @1440 (probed 2026-08-21 on the heart-disease page; selector →
 value):
@@ -109,7 +186,7 @@ value):
 - Share strip `.social-share-modal`: h70, padding 20px 72px 10px (share
   block matches heights; sits at x0 instead of live x72 without the template).
 
-Suggested shape (NOT shipped — blocks are report-only for page agents):
+Shipped shape (styles.css lines ~632–691; §4b lever 1 amends the row plan):
 ```css
 @media (width >= 992px) {
   body.news-article main .section:has(> .callout-wrapper) {
@@ -129,11 +206,11 @@ Suggested shape (NOT shipped — blocks are report-only for page agents):
 
 - Upload under `/media/newsroom/<descriptive-name>.jpg` (never hotlink;
   live adaptive-image URLs 301 to a `.dir.jpg` variant — use `curl -L`).
-- **Until §4 ships, pre-size uploads to the live DISPLAY width** (body
-  images 834px, sidebar media 408px) — images render at intrinsic width in
-  the unstyled flow, and full-res uploads blow the height gate (heart-disease
-  iter-1 was +43% page height from a 1444×2166 portrait). Once §4 ships,
-  the column caps them and originals can be re-uploaded.
+- Body-column images: the §4 grid now caps them at 834px, so ORIGINALS may
+  replace pre-sized uploads (current 834-wide uploads render 1:1 with live —
+  verified, no action needed on the two gated pages). Sidebar media: keep
+  pre-sizing to 408px until §4b lever 5 ships — the base callout's 30px
+  padding renders any upload at 348px regardless (live shows 408).
 - Uploaded so far: `heart-disease-jama-study.jpg` (834×450),
   `kevin-nead.jpg` (408×612), `idso-advisory-council.jpg` (834×469).
 
