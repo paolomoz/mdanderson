@@ -162,11 +162,22 @@ function regroupBlogArticle(main) {
     left.className = 'article-col';
     const rail = document.createElement('div');
     rail.className = 'article-rail';
-    const isImageOnlyDC = (w) => w.classList.contains('default-content-wrapper')
-      && w.children.length > 0
-      && [...w.children].every((c) => c.matches('p') && c.querySelector('picture, img') && !c.textContent.trim());
+    // feature-image DC → rail: all children are <p>, the first holds a
+    // picture, and any text-only <p> is a caption directly following a
+    // picture (live renders these as the rail's standalone image + its
+    // .media-caption — drug-hunter/zebrafish author image+caption pairs,
+    // which the old image-only test misrouted into the article column)
+    const isFeatureImageDC = (w) => {
+      if (!w.classList.contains('default-content-wrapper')) return false;
+      const kids = [...w.children];
+      const hasPic = (c) => !!c.querySelector('picture, img');
+      return kids.length > 0
+        && kids.every((c) => c.matches('p'))
+        && hasPic(kids[0])
+        && kids.every((c, i) => hasPic(c) || hasPic(kids[i - 1]));
+    };
     [...section.children].forEach((w) => {
-      const isRail = isImageOnlyDC(w)
+      const isRail = isFeatureImageDC(w)
         || w.classList.contains('quote-wrapper')
         || w.classList.contains('cards-wrapper')
         || w.classList.contains('newsletter-wrapper');

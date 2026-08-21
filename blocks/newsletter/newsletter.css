@@ -251,6 +251,10 @@ main .section.newsletter-container:has(.subscribe-to) {
 .newsletter.focused .focused-input input {
   display: inline-block;
   width: 100%;
+
+  /* live SFMC inputs compute 40px (8px pads + 1px borders + normal-lh line);
+     EDS inherited 23.4px line-height made them 41-42px, +6 per card (2026-08-21) */
+  height: 40px;
   color: #3a3a3a;
   padding: 8px;
   background: rgb(255 255 255 / 90%);
@@ -271,9 +275,18 @@ main .section.newsletter-container:has(.subscribe-to) {
   border: 1px solid #dddcd2;
   color: var(--color-bg);
   font-size: 16px;
+  height: 37px; /* live SFMC submit computes 37px (2026-08-21) */
   padding: 8px;
   font-family: var(--body-font-family);
   cursor: pointer;
+}
+
+/* `blue` skin — live authors the "Subscribe to Cancerwise" rail card on the
+   SFMC bg-blue clientlib (rgb(47,96,178) = --color-blue-promo, probed
+   zebrafish/colorectal/5-ways 2026-08-21); Focused on Health / Cancer
+   Frontline cards stay on the green default */
+.newsletter.focused.blue .focused-card {
+  background: var(--color-blue-promo);
 }
 
 .newsletter.focused .focused-form.submitted .focused-field,
