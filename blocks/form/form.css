@@ -49,10 +49,17 @@ main > .section > .form-wrapper {
   color: var(--color-gray-dark);
 }
 
-.form .form-select-group,
-.form .form-text-group {
+.form .form-select-group {
   max-width: 575px;
   margin: 20px 0;
+}
+
+/* inputs are inline-block: their 5px margins don't collapse with the group's,
+   so the group carries 15px for the live 20px inter-group gap (probed pitch
+   103px label-to-label) */
+.form .form-text-group {
+  max-width: 575px;
+  margin: 15px 0;
 }
 
 .form .select-wrapper {
@@ -70,6 +77,13 @@ main > .section > .form-wrapper {
   letter-spacing: -0.02em;
   color: var(--color-gray-dark);
   appearance: none;
+}
+
+/* live disabled state (probed #information): gray well, no UA dimming */
+.form select:disabled {
+  background: #f0f0f0;
+  color: #888;
+  opacity: 1;
 }
 
 .form .select-wrapper .fa-chevron-down {
@@ -210,7 +224,7 @@ main > .section > .form-wrapper {
 /* ── phone promo (live flexpromo promo-background-red) ────────────────── */
 
 .form .phone-promo {
-  margin-top: 30px;
+  margin-top: 20px;
   background: var(--color-accent);
   padding: 10px 0 60px;
   text-align: center;
@@ -224,7 +238,7 @@ main > .section > .form-wrapper {
 
 .form .phone-promo .promo-icon {
   height: 95px;
-  margin: 10px auto 0;
+  margin: 0 auto;
 }
 
 .form .phone-promo .fa-stack {
