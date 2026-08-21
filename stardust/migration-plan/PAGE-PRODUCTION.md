@@ -81,7 +81,9 @@ where the exemplar already uploaded it.
    cancerwise/newsroom articles ALSO drop the `.h00-…` suffix and any
    leading/odd dashes — mirror the insomnia exemplar's slug style; then pass
    the EDS path EXPLICITLY as the gate's 2nd arg)
-2. Preview: `curl -X POST "https://admin.hlx.page/preview/paolomoz/mdanderson/main<path>" -H "authorization: Bearer $DA_TOKEN"`
+2. Preview: `curl -X POST "https://admin.hlx.page/preview/paolomoz/mdanderson/main<path>" -H "authorization: Bearer $DA_TOKEN"` — the
+   auth header is REQUIRED (unauthenticated preview 401s and publish then
+   silently republishes the stale preview)
 3. Publish: `curl -X POST "https://admin.hlx.page/live/paolomoz/mdanderson/main<path>" -H "authorization: Bearer $DA_TOKEN"`
 4. Gate: `node stardust/scripts/fidelity-gate.mjs <livePath>` (from repo root).
    PASS = pixel ≤10% (aim ≤5%) AND height Δ ≤10%. On FAIL, read
