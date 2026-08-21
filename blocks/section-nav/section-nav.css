@@ -59,8 +59,25 @@ body.interior main > .section:has(> div > .link-list.tinted) {
 }
 
 @media (width >= 992px) {
-  body.interior main > .section.section-nav-container ~ .section > .default-content-wrapper {
+  /* :not(:nth-last-child(-n+2)):not(.dark) — the trailing full-width bands
+     (EndCancer trio head) and the dark appointment bar keep their own
+     block/styles padding; this strip rule was overriding them (2026-08-21) */
+  body.interior main > .section.section-nav-container ~ .section:not(:nth-last-child(-n+2)):not(.dark) > .default-content-wrapper {
     padding: 0 36px;
+  }
+
+  /* live pages render SOME prose sections at the full content column
+     (x=276 w=1146, no 36px inset — e.g. post-accordion prose on
+     treatment-options) — authorable via section-metadata Style: bleed */
+  body.interior main > .section.section-nav-container ~ .section.bleed > .default-content-wrapper {
+    padding: 0;
+  }
+
+  /* live keeps ~140px of white between the last prose line and the blue
+     appointment bar (probed 2951→3091 on brachytherapy); col2 prose has no
+     bottom padding of its own, so the bar carries the gap (2026-08-21) */
+  body.interior main > .section.section-nav-container ~ .section.dark {
+    margin-top: 123px;
   }
 
   /* prose + rail pairs: DC prose beside the rail block (log §4 prose+rail) */
@@ -93,6 +110,13 @@ body.interior main > .section:has(> div > .link-list.tinted) {
   body.interior main > .section:has(> div > .cards.rail) > .cards-wrapper,
   body.interior main > .section:has(> div > .video.teaser) > .video-wrapper {
     grid-column: 2;
+
+    /* neutralize cards.css `main .section.cards-container > div
+       { padding: 70px 72px }` inside the 358px rail — the panel rendered
+       214px wide at the wrong y (2026-08-21 gate) */
+    padding: 0;
+    max-width: none;
+    margin: 0;
   }
 
   /* prose+rail section heads (e.g. "More about breast cancer") span both */
@@ -347,7 +371,9 @@ body.interior main .section:not(.dark) .default-content-wrapper a:any-link {
 
 /* --- interior band rhythm for reused block sections in the content column - */
 @media (width >= 992px) {
-  body.interior main > .section.section-nav-container ~ .section.cards-container:not(:nth-last-child(-n+2)),
+  /* :not(.cards.rail) — prose+rail PAIR sections have their own 47px rhythm
+     (this rule's higher specificity silently beat it, 2026-08-21 gate) */
+  body.interior main > .section.section-nav-container ~ .section.cards-container:not(:nth-last-child(-n+2)):not(:has(> div > .cards.rail)),
   body.interior main > .section.section-nav-container ~ .section.link-list-container,
   body.interior main > .section.section-nav-container ~ .section.columns-container {
     padding: 70px 36px;

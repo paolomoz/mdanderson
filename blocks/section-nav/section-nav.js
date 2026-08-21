@@ -87,7 +87,11 @@ export default async function decorate(block) {
           const a = cLi.querySelector('a');
           if (!a || !a.textContent.trim()) return; // tolerate the replica's empty first item
           const nLi = document.createElement('li');
-          nLi.append(a.cloneNode(true));
+          // current-page bold: the hlx pipeline hoists an authored
+          // <a><strong>…</strong></a> to <strong><a>…</a></strong> — keep the
+          // wrapper so the live font-weight:700 current item survives
+          const wrap = a.closest('strong, em');
+          nLi.append((wrap && cLi.contains(wrap) ? wrap : a).cloneNode(true));
           cUl.append(nLi);
         });
         pLi.append(cUl);
