@@ -27,9 +27,13 @@ async function shot(url, out) {
   await pg.waitForTimeout(2500);
   for (let y = 0; y <= 1; y += 0.25) { await pg.evaluate((f) => window.scrollTo(0, document.body.scrollHeight * f), y); await pg.waitForTimeout(400); }
   await pg.evaluate(() => window.scrollTo(0, 0)); await pg.waitForTimeout(800);
-  // hide cross-env noise: chat launcher, consent overlays
+  // hide cross-env noise (chat launcher, consent overlays) and pin the fixed
+  // utility bar to absolute — full-page shots can repaint fixed chrome
+  // mid-page (the artifact that inflated the homepage gate to 10.5%);
+  // applied to BOTH live and EDS shots so the comparison stays symmetric
   await pg.evaluate(() => {
-    document.querySelectorAll('[id*="loyal"],[class*="loyal"],iframe[src*="loyal"],#onetrust-consent-sdk').forEach((n) => { n.style.visibility = 'hidden'; });
+    document.querySelectorAll('[id*="loyal"],[class*="loyal"],iframe[src*="loyal"],iframe[title*="chat" i],[id*="guide-"],#onetrust-consent-sdk').forEach((n) => { n.style.visibility = 'hidden'; });
+    document.querySelectorAll('.mda-cta-list-container').forEach((n) => { n.style.position = 'absolute'; });
   });
   await pg.screenshot({ path: out, fullPage: true });
   await b.close();
@@ -40,11 +44,17 @@ const dir = `stardust/validation/gate/${slug}`;
 fs.mkdirSync(dir, { recursive: true });
 const liveShot = `${dir}/live.png`;
 const edsShot = `${dir}/eds.png`;
-// Prefer an existing POC gate reference; else freeze live on first run.
+// Reference precedence: gate-dir frozen snapshot (this script's methodology:
+// chat hidden, single chrome paint) > POC-era gate ref > fresh freeze.
+// POC refs can carry screenshot-stitching artifacts (fixed utility bar
+// repainted mid-page, chat bubble) — delete the gate-dir live.png only to
+// force a re-freeze, not to fall back to the POC ref.
 const pocRef = `stardust/replica/gates/${slug}-1440/live.png`;
 let refShot = liveShot;
-if (fs.existsSync(pocRef)) refShot = pocRef;
-else if (!fs.existsSync(liveShot)) await shot(`${LIVE}${livePath}`, liveShot);
+if (!fs.existsSync(liveShot)) {
+  if (fs.existsSync(pocRef)) refShot = pocRef;
+  else await shot(`${LIVE}${livePath}`, liveShot);
+}
 await shot(`${EDS}${edsPath}`, edsShot);
 
 const a = PNG.sync.read(fs.readFileSync(refShot));
