@@ -1,0 +1,84 @@
+/* news-archive — newsroom year/month archive listing (workstream B3).
+   Metrics lifted from the live /newsroom/2020/01.html clientlib
+   (mda-web/A.clientlib-all.min.css):
+   - .blog-summary .blog-title: Minion, 24px, letter-spacing -0.02em, lh 1.3
+   - .blog-summary .summary-author-info .author-date:
+     'Univers LT W01_55 Roman', 16px, letter-spacing -0.02em, lh 1.3
+   - link red #da291c (var(--color-accent)); archive title links underlined
+   - row rule #e1e1df ≈ var(--color-gray-light) (.conquest-archive .archive-head) */
+
+.news-archive .na-month {
+  font-family: var(--body-font-semibold);
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  color: var(--color-fg);
+  margin: 0 0 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.news-archive .na-group {
+  margin: 0 0 40px;
+}
+
+.news-archive .na-group:last-child {
+  margin-bottom: 0;
+}
+
+.news-archive .na-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news-archive .na-item {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.news-archive .na-item:last-child {
+  border-bottom: none;
+}
+
+.news-archive .na-title {
+  font-family: var(--heading-font-family);
+  font-size: 24px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.news-archive .na-title:hover {
+  color: var(--link-hover-color);
+}
+
+.news-archive .na-date {
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  color: var(--color-gray-dark);
+  margin: 6px 0 0;
+}
+
+.news-archive .na-empty {
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  color: var(--color-gray-dark);
+  margin: 0;
+}
+
+@media (width <= 767px) {
+  .news-archive .na-title {
+    font-size: 18px;
+  }
+
+  .news-archive .na-month {
+    font-size: 21px;
+  }
+}

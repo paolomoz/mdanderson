@@ -23,7 +23,21 @@
  * Section head ("Featured Articles", "Find stories by topic", …) is DEFAULT
  * CONTENT in the same section, styled in place (D1) — never a block row.
  * Decode is cell-cascade + classifier-based (#48/#53/#62/#72/#104).
+ *
+ * INDEX MODE (production path, stardust/rollout/dynamic-blocks-map.md §1):
+ * add variant `index` and the authored rows become CONFIG (key | value):
+ *   source   — query-index URL (default /cancerwise/query-index.json)
+ *   category — filter to one closed-set topic (label or slug)
+ *   limit    — max cards (default 8; per panel for `topic index`)
+ *   sort     — `<field>-<asc|desc>` (default publishdate-desc)
+ *   label    — tab label for `rail-tab index` (default "Latest")
+ * Index rows hydrate the SAME card DOM the static decode builds, so every
+ * visual variant composes with `index`. `topic index` = one fetch grouped by
+ * category over the closed topic set (panel labels from TOPIC_SLUGS).
+ * Empty index / fetch error → block renders nothing (console.warn).
  */
+
+import { createOptimizedPicture } from '../../scripts/aem.js';
 
 const SHOW_DEFAULT = 2;
 
@@ -219,9 +233,264 @@ function registerTab(host, label, slug, panel) {
   });
 }
 
+function buildTabs() {
+  const tabs = document.createElement('div');
+  tabs.className = 'ac-tabs';
+  const menu = document.createElement('ul');
+  menu.className = 'ac-tab-menu';
+  menu.setAttribute('role', 'tablist');
+  const panels = document.createElement('div');
+  panels.className = 'ac-panels';
+  tabs.append(menu, panels);
+  return tabs;
+}
+
+function mountPanel(block, variant, label, panelParts) {
+  const slug = topicSlug(label);
+  const host = tabHostOf(block, variant);
+  if (host) {
+    // a sibling instance already built the tab UI — this whole BLOCK becomes
+    // the panel and moves into the group (the element survives, so the
+    // runtime's block lifecycle and the round-trip tags stay intact); the
+    // emptied wrapper is retired.
+    const wrapper = block.parentElement?.classList.contains('article-cards-wrapper')
+      ? block.parentElement : null;
+    block.classList.add('ac-panel', `cat-${slug}`);
+    block.replaceChildren(...panelParts);
+    registerTab(host, label, slug, block);
+    if (wrapper && !wrapper.children.length) wrapper.remove();
+    return;
+  }
+  // first instance: build the tab UI; own content rides an inner panel div
+  const panel = document.createElement('div');
+  panel.className = `ac-panel cat-${slug}`;
+  panel.append(...panelParts);
+  const tabs = buildTabs();
+  block.replaceChildren(tabs);
+  registerTab(tabs, label, slug, panel);
+}
+
+function absorbRailHead(block, container) {
+  // reabsorb the "More stories from Cancerwise" head (D1: authored as the
+  // trailing h2 of the preceding default-content prose wrapper) so the
+  // decorated DOM matches the replica's .at-article-list (h2 inside)
+  const prev = block.parentElement?.previousElementSibling;
+  if (prev?.classList?.contains('default-content-wrapper')
+    && prev.lastElementChild?.tagName === 'H2') {
+    const head = prev.lastElementChild;
+    head.classList.add('ac-head');
+    container.prepend(head);
+  }
+}
+
+function appendToggle(block, cards, variant) {
+  // grid/news carry the replica's View more / View less toggle
+  const hidden = cards.slice(SHOW_DEFAULT);
+  hidden.forEach((c) => c.classList.add('ac-hidden'));
+  const bar = document.createElement('div');
+  bar.className = 'ac-toggle';
+  const more = document.createElement('button');
+  more.type = 'button';
+  more.className = 'ac-more';
+  more.textContent = 'View more';
+  const less = document.createElement('button');
+  less.type = 'button';
+  less.className = 'ac-less';
+  less.textContent = 'View less';
+  // replica parity: grid hides "View less" until expanded; news (no hidden
+  // cards) captured both buttons visible — keep the captured state
+  if (variant === 'grid') less.style.display = 'none';
+  more.addEventListener('click', () => {
+    hidden.forEach((c) => c.classList.remove('ac-hidden'));
+    more.style.display = 'none';
+    less.style.display = '';
+  });
+  less.addEventListener('click', () => {
+    hidden.forEach((c) => c.classList.add('ac-hidden'));
+    less.style.display = 'none';
+    more.style.display = '';
+  });
+  bar.append(more, less);
+  block.append(bar);
+}
+
+/* ── index mode (dynamic-blocks-map §1 production path) ──────────────────── */
+
+const DEFAULT_SOURCE = '/cancerwise/query-index.json';
+const DEFAULT_LIMIT = 8;
+
+/* closed-set panel order for `topic index` (map §1) */
+const TOPIC_ORDER = ['diagnosis-treatment', 'patients-caregivers', 'healthy-living',
+  'research', 'expert-insights', 'philanthropy'];
+
+/* slug → display label, derived from TOPIC_SLUGS (first label per slug) */
+const TOPIC_LABELS = Object.entries(TOPIC_SLUGS).reduce((labels, [label, slug]) => {
+  if (!labels[slug]) {
+    labels[slug] = label.replace(/(^|\s)[a-z]/g, (c) => c.toUpperCase());
+  }
+  return labels;
+}, {});
+
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+  'August', 'September', 'October', 'November', 'December'];
+
+/* ISO yyyy-mm-dd → "Month DD, YYYY" (map §1: rendered "August 19, 2026") */
+function formatDate(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || '');
+  if (!m) return '';
+  return `${MONTHS[Number(m[2]) - 1]} ${Number(m[3])}, ${m[1]}`;
+}
+
+/* index titles carry the site suffix ("… | UT MD Anderson") — cards don't */
+function cleanTitle(title) {
+  return (title || '').replace(/\s*\|\s*(UT\s+)?MD Anderson.*$/i, '').trim();
+}
+
+/* index rows may carry absolute DA content URLs (auth-gated) — serve the
+   media path same-origin so createOptimizedPicture hits the delivery host */
+function localImagePath(src) {
+  const m = /^https:\/\/content\.da\.live\/[^/]+\/[^/]+(\/.+)$/.exec(src || '');
+  return m ? m[1] : (src || '');
+}
+
+/* build the SAME authored-row shape the static decode reads, then reuse
+   cardFrom so index cards and static cards share one DOM */
+function rowFromEntry(entry, variant) {
+  const row = document.createElement('div');
+  const mediaCell = document.createElement('div');
+  const src = localImagePath(entry.image);
+  if (src && src !== '0') {
+    mediaCell.append(createOptimizedPicture(src, cleanTitle(entry.title), false, [{ width: '750' }]));
+  }
+  const body = document.createElement('div');
+  if (variant === 'rail-tab' && entry.category) {
+    const cat = document.createElement('p');
+    cat.textContent = TOPIC_LABELS[entry.category] || entry.category;
+    body.append(cat);
+  }
+  const h3 = document.createElement('h3');
+  const titleA = document.createElement('a');
+  titleA.href = entry.path;
+  titleA.textContent = cleanTitle(entry.title);
+  h3.append(titleA);
+  body.append(h3);
+  if ((variant === 'experts' || variant === 'featured') && entry.description) {
+    const summary = document.createElement('p');
+    summary.textContent = entry.description;
+    body.append(summary);
+  }
+  if (variant === 'topic') {
+    const date = formatDate(entry.publishdate);
+    if (date) {
+      const dateP = document.createElement('p');
+      dateP.textContent = date;
+      body.append(dateP);
+    }
+  }
+  if (variant === 'experts' || variant === 'featured') {
+    const ctaP = document.createElement('p');
+    const cta = document.createElement('a');
+    cta.href = entry.path;
+    cta.textContent = variant === 'featured' ? 'Keep reading' : 'Read more';
+    ctaP.append(cta);
+    body.append(ctaP);
+  }
+  row.append(mediaCell, body);
+  return row;
+}
+
+async function decorateIndex(block, variant) {
+  // in index mode the authored rows are CONFIG (key | value), not cards
+  const config = {};
+  [...block.children].forEach((row) => {
+    const [key, value] = [...row.children].map((c) => c.textContent.trim());
+    if (key && value !== undefined) config[key.toLowerCase()] = value;
+  });
+  const source = config.source || DEFAULT_SOURCE;
+  const parsedLimit = Number.parseInt(config.limit, 10);
+  const limit = parsedLimit > 0 ? parsedLimit : DEFAULT_LIMIT;
+  const sortSpec = /^(.+)-(asc|desc)$/.exec(config.sort || '') || [null, 'publishdate', 'desc'];
+  const [, sortField, sortDir] = sortSpec;
+
+  let entries;
+  try {
+    const resp = await fetch(source);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    entries = (await resp.json()).data || [];
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.warn(`article-cards index: fetch failed for ${source}`, e);
+    block.replaceChildren();
+    return;
+  }
+  if (config.category) {
+    const want = topicSlug(config.category);
+    entries = entries.filter((entry) => topicSlug(entry.category) === want);
+  }
+  entries.sort((x, y) => {
+    const a = String(x[sortField] ?? '');
+    const b = String(y[sortField] ?? '');
+    return sortDir === 'asc' ? a.localeCompare(b) : b.localeCompare(a);
+  });
+  if (!entries.length) {
+    // eslint-disable-next-line no-console
+    console.warn(`article-cards index: no entries from ${source}`);
+    block.replaceChildren();
+    return;
+  }
+
+  if (variant === 'topic') {
+    // one fetch, grouped by category over the closed topic set (map §1)
+    const groups = TOPIC_ORDER
+      .map((slug) => [slug, entries.filter((entry) => topicSlug(entry.category) === slug)])
+      .filter(([, group]) => group.length);
+    if (!groups.length) {
+      // eslint-disable-next-line no-console
+      console.warn(`article-cards index: no closed-set categories in ${source}`);
+      block.replaceChildren();
+      return;
+    }
+    const tabs = buildTabs();
+    block.replaceChildren(tabs);
+    groups.forEach(([slug, group]) => {
+      const container = document.createElement('div');
+      container.className = 'ac-container';
+      group.slice(0, limit)
+        .forEach((entry) => container.append(cardFrom(rowFromEntry(entry, variant), variant)));
+      const panel = document.createElement('div');
+      panel.className = `ac-panel cat-${slug}`;
+      panel.append(container);
+      registerTab(tabs, TOPIC_LABELS[slug] || slug, slug, panel);
+    });
+    return;
+  }
+
+  const container = document.createElement('div');
+  container.className = 'ac-container';
+  const cards = entries.slice(0, limit)
+    .map((entry) => cardFrom(rowFromEntry(entry, variant), variant));
+  cards.forEach((c) => container.append(c));
+
+  if (variant === 'rail-tab') {
+    // joins a sibling editorial rail-tab's tab UI (e.g. index "Latest" +
+    // curated "Top Stories"), or builds the tab UI itself
+    mountPanel(block, variant, config.label || 'Latest', [container]);
+    return;
+  }
+  if (variant === 'rail') absorbRailHead(block, container);
+  block.replaceChildren(container);
+  if (variant === 'grid' || variant === 'news') appendToggle(block, cards, variant);
+}
+
 export default async function decorate(block) {
   const variant = ['news', 'experts', 'featured', 'rail-tab', 'topic', 'rail']
     .find((v) => block.classList.contains(v)) || 'grid';
+
+  if (block.classList.contains('index')) {
+    await decorateIndex(block, variant);
+    return;
+  }
+
   const rows = [...block.children];
   const container = document.createElement('div');
   container.className = 'ac-container';
@@ -247,7 +516,6 @@ export default async function decorate(block) {
   if (variant === 'rail-tab' || variant === 'topic') {
     const textRows = rows.filter((r) => !r.querySelector('a') && r.textContent.trim());
     const label = textRows[0]?.textContent.trim() || '';
-    const slug = topicSlug(label);
     const panelParts = [];
     if (variant === 'topic' && textRows[1]) {
       const headline = document.createElement('p');
@@ -256,80 +524,13 @@ export default async function decorate(block) {
       panelParts.push(headline);
     }
     panelParts.push(container, ...panelCtas);
-    const host = tabHostOf(block, variant);
-    if (host) {
-      // a sibling instance already built the tab UI — this whole BLOCK becomes
-      // the panel and moves into the group (the element survives, so the
-      // runtime's block lifecycle and the round-trip tags stay intact); the
-      // emptied wrapper is retired.
-      const wrapper = block.parentElement?.classList.contains('article-cards-wrapper')
-        ? block.parentElement : null;
-      block.classList.add('ac-panel', `cat-${slug}`);
-      block.replaceChildren(...panelParts);
-      registerTab(host, label, slug, block);
-      if (wrapper && !wrapper.children.length) wrapper.remove();
-      return;
-    }
-    // first instance: build the tab UI; own content rides an inner panel div
-    const panel = document.createElement('div');
-    panel.className = `ac-panel cat-${slug}`;
-    panel.append(...panelParts);
-    const tabs = document.createElement('div');
-    tabs.className = 'ac-tabs';
-    const menu = document.createElement('ul');
-    menu.className = 'ac-tab-menu';
-    menu.setAttribute('role', 'tablist');
-    const panels = document.createElement('div');
-    panels.className = 'ac-panels';
-    tabs.append(menu, panels);
-    block.replaceChildren(tabs);
-    registerTab(tabs, label, slug, panel);
+    mountPanel(block, variant, label, panelParts);
     return;
   }
 
-  if (variant === 'rail') {
-    // reabsorb the "More stories from Cancerwise" head (D1: authored as the
-    // trailing h2 of the preceding default-content prose wrapper) so the
-    // decorated DOM matches the replica's .at-article-list (h2 inside)
-    const prev = block.parentElement?.previousElementSibling;
-    if (prev?.classList?.contains('default-content-wrapper')
-      && prev.lastElementChild?.tagName === 'H2') {
-      const head = prev.lastElementChild;
-      head.classList.add('ac-head');
-      container.prepend(head);
-    }
-  }
+  if (variant === 'rail') absorbRailHead(block, container);
 
   block.replaceChildren(container);
 
-  // grid/news carry the replica's View more / View less toggle
-  if (variant === 'grid' || variant === 'news') {
-    const hidden = cards.slice(SHOW_DEFAULT);
-    hidden.forEach((c) => c.classList.add('ac-hidden'));
-    const bar = document.createElement('div');
-    bar.className = 'ac-toggle';
-    const more = document.createElement('button');
-    more.type = 'button';
-    more.className = 'ac-more';
-    more.textContent = 'View more';
-    const less = document.createElement('button');
-    less.type = 'button';
-    less.className = 'ac-less';
-    less.textContent = 'View less';
-    // replica parity: grid hides "View less" until expanded; news (no hidden
-    // cards) captured both buttons visible — keep the captured state
-    if (variant === 'grid') less.style.display = 'none';
-    more.addEventListener('click', () => {
-      hidden.forEach((c) => c.classList.remove('ac-hidden'));
-      more.style.display = 'none';
-      less.style.display = '';
-    });
-    less.addEventListener('click', () => {
-      hidden.forEach((c) => c.classList.add('ac-hidden'));
-      less.style.display = 'none';
-      more.style.display = '';
-    });
-    bar.append(more, less);
-    block.append(bar);
-  }
+  if (variant === 'grid' || variant === 'news') appendToggle(block, cards, variant);
 }
