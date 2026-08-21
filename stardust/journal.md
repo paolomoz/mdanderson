@@ -256,3 +256,17 @@ BLOCKED 18:22: DA_TOKEN (24h IMS) expired — admin.da.live + admin.hlx.page
 401. Staged, ready to publish on refresh: proton iter-3 (/tmp/ptc-page.html),
 polo release (/tmp/polo-page.html). In-flight publishing agents will stall.
 Also still pending: gh delete_repo scope for paolomoz/mdanderson-auto.
+
+## 2026-08-21 (close) — Checkpoint: all lanes reported, blocked on DA token
+
+Final tally this session: 68 pages gated / 44 PASS latest-verdict; every page
+family has a converged archetype + code laws on main. Staged for token
+refresh: /tmp/batch2/RUN-ALL.sh (7 landing pages incl. donors-volunteers
+regression fix), stardust/staging/listings-batch/resume.sh (core-facilities +
+conferences-seminars), /tmp/ptc-page.html (proton iter-3), /tmp/polo-page.html
+(polo release), 4 unpublished disease subpages, education/for-physicians
+re-gates (their levers shipped post-gate). Recorded for the next code wave:
+promo-band left-split layout, video feature scrim/centered title, stacked
+two-column card grid (for-physicians 9.5pts), link-list icon-circle heads,
+columns contact centering, article-cards 3-up. Lighthouse mobile w/ martech:
+all content types perf 100; home 79 (hero critical chain, POC parity).
