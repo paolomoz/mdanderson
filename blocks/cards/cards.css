@@ -878,3 +878,9 @@ main .section.cards-container:has(> div > .cards.ribbon) > div {
 .cards.icon.duo .card-col:nth-child(1) .fa-stack { background: linear-gradient(#783491, #662c7b); }
 .cards.icon.duo .card-col:nth-child(2) .fa-stack { background: linear-gradient(#e96613, #db6e29); }
 .cards .cicon-education-training::before { content: '\e63d'; }
+
+/* core/proton wave glyphs + story circles (live clientlib values 2026-08-21) */
+.cards .cicon-pdf::before { content: '\e629'; }
+.cards .cicon-speechheart::before { content: '\e633'; }
+.cards.rail.story .fa-stack:has(.cicon-speechheart) { background: var(--color-accent); }
+.cards.rail.story .fa-stack:has(.cicon-carepages) { background: var(--color-blue-promo); }
