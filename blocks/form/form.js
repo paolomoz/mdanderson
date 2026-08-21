@@ -19,6 +19,12 @@
  * The form itself has no authored rows. Select option lists (role /
  * information / diagnosis / country) are the live lists frozen in
  * aaq-options.json; on live they load from the CFC endpoints — POC residual.
+ *
+ * `confirmation` variant (ask-a-question/confirmation "Helpful Information"
+ * band): the live two-column uppercase link table (4+3 split, 38px rows,
+ * MDIcons \e601 arrow — the live rhythm differs from link-list.columns'
+ * prevention values, so this page's row anatomy lives here, scoped).
+ * Authoring: one row per link, single cell, <p><a href>Title</a></p>.
  */
 
 function el(tag, cls, parent) {
@@ -251,8 +257,35 @@ function phonePromo(cell) {
   return card;
 }
 
+/** confirmation variant: live 4+3 uppercase link table (col-double split) */
+function decorateConfirmation(block) {
+  const links = [...block.querySelectorAll(':scope > div a[href]')];
+  const table = el('div', 'll-table');
+  const colA = el('div', 'll-col', table);
+  const colB = el('div', 'll-col last', table);
+  const split = Math.ceil(links.length / 2);
+  links.forEach((a, i) => {
+    const list = i < split ? colA : colB;
+    let ul = list.querySelector('ul');
+    if (!ul) ul = el('ul', '', list);
+    const li = el('li', i % split === 0 ? 'link top-border' : 'link', ul);
+    const link = document.createElement('a');
+    link.className = 'mdicon-linklist';
+    link.href = a.getAttribute('href');
+    const h4 = el('h4', 'link-title', link);
+    h4.textContent = a.textContent.trim();
+    li.append(link);
+  });
+  block.replaceChildren(table);
+}
+
 export default async function decorate(block) {
   if (block.dataset && block.dataset.blockName && block.dataset.blockName !== 'form') return;
+
+  if (block.classList.contains('confirmation')) {
+    decorateConfirmation(block);
+    return;
+  }
 
   // decode authored rows (defensively: collect by role, not position)
   let faqTitle = null;

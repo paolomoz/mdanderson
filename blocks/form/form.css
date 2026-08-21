@@ -274,11 +274,107 @@ main > .section > .form-wrapper {
   color: var(--color-bg);
 }
 
+/* ── confirmation variant (ask-a-question/confirmation) ───────────────────
+   Live "Helpful Information" band values (probed @1440): Univers-bold 29px
+   left head, 21px serif description, two 648px table columns with 72px
+   gutters, 38px-padded uppercase 14px rows, MDIcons \e601 red arrow. */
+
+main .section.form-container:has(.form.confirmation) > .default-content-wrapper {
+  padding: 0 72px;
+}
+
+main .section.form-container:has(.form.confirmation) > .default-content-wrapper h2 {
+  font-family: var(--sans-bold-font-family);
+  font-size: 29px;
+  line-height: 37.7px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  text-align: left;
+  margin: 24px 0 0;
+}
+
+main .section.form-container:has(.form.confirmation) > .default-content-wrapper p {
+  font-size: 21px;
+  line-height: 27.3px;
+  letter-spacing: var(--letter-spacing);
+  margin: 21px 0;
+}
+
+main > .section > .form-wrapper:has(.form.confirmation) {
+  padding: 30px 72px 0;
+}
+
+.form.confirmation .ll-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form.confirmation .ll-col {
+  padding-right: 72px;
+  min-width: 0;
+}
+
+.form.confirmation .ll-col.last {
+  padding-right: 0;
+  padding-left: 72px;
+}
+
+.form.confirmation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--color-gray-light);
+}
+
+.form.confirmation a.mdicon-linklist {
+  display: block;
+  position: relative;
+  padding: 38px 10px 38px 0;
+  border-bottom: 1px solid var(--color-gray-light);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.form.confirmation a.mdicon-linklist::before {
+  font-family: MDIcons, sans-serif;
+  content: '\e601';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -9px;
+  color: var(--color-accent);
+}
+
+.form.confirmation h4.link-title {
+  font-family: var(--sans-font-family);
+  font-size: 14px;
+  line-height: 18.2px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-fg);
+  max-width: 87%;
+  margin: 0;
+}
+
 /* ── mobile ───────────────────────────────────────────────────────────── */
 
 @media (width <= 991px) {
   main > .section > .form-wrapper {
     padding: 40px 16px 60px;
+  }
+
+  main > .section > .form-wrapper:has(.form.confirmation) {
+    padding: 20px 16px 0;
+  }
+
+  .form.confirmation .ll-table {
+    grid-template-columns: 1fr;
+  }
+
+  .form.confirmation .ll-col,
+  .form.confirmation .ll-col.last {
+    padding: 0;
   }
 
   .form.ask-a-question {
