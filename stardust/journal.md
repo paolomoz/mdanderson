@@ -270,3 +270,32 @@ promo-band left-split layout, video feature scrim/centered title, stacked
 two-column card grid (for-physicians 9.5pts), link-list icon-circle heads,
 columns contact centering, article-cards 3-up. Lighthouse mobile w/ martech:
 all content types perf 100; home 79 (hero critical chain, POC parity).
+
+## 2026-08-22 — Adoption round: stacked-pair + split-left landed
+
+for-physicians 18.80 → 6.70 PASS (3 iters). The shipped CSS-only
+stacked-pair couldn't reproduce live (shared grid rows vs live's two
+independent columns, left pitch 240px vs 341px panels; promo-kind left
+titles rendered white-on-white) — completed the variant: cards.js wraps
+cols 1-3/4-5 into .stack-col.left/.right, left renders via the icon path;
+CSS carries live-probed geometry (576px cols, 144px gutter, hairline rules,
+35px panel gap). Two more live-truth fixes: hero `tall` was mis-authored
+(live is the 450px medium hero) and live has a 140px white row between
+hero and band → promo-band `gap-above` variant. Residuals: link-list
+icon-circle heads drift (~40px entering EndCancer), call-tracking phone.
+
+education-training 13.62 → 8.71 PASS (1 iter): band re-authored
+`promo-band split-left orange` — matches live (info left, image right);
+residuals: video-feature scrim/title (recorded), hero image frame.
+
+proton-therapy-center 13.04 FAIL (no authoring lever moves it): EndCancer
+section un-tinted (live is white — metric-neutral under pixelmatch),
+story-card circles verified live (speechheart red / carepages blue ✓).
+Residual causes, live values probed: conditions link-list columns pitch
+(live 89px rows, hairlines x312-848/x845-1380; EDS 78px inset), View All
+Cancers CTA (live right-aligned in-band w/ arrow; EDS below band),
+article-cards grid ~130px shorter than live boxes → duo/FAQ drift
+(-173px at duo band, -103px at FAQ rail circle), FAQ head wraps (live
+1 line x312; EDS 2 lines x432 w242), video full-size link column, hero
+-8px. NOTE: staged /tmp/ptc-page.html (iter-3) is STALE — predates hero
+`tall` CSS; applying it would regress the hero by ~110px. Do not publish.

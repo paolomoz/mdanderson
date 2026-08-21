@@ -337,3 +337,10 @@
 2026-08-21T21:32:03.457Z	/donors-volunteers.html	/donors-volunteers	14.10%	heightΔ 0.4%	FAIL	ref:frozen-live
 2026-08-21T21:38:26.214Z	/research/research-resources.html	/research/research-resources	17.85%	heightΔ 1.4%	FAIL	ref:frozen-live
 2026-08-21T21:40:59.914Z	/prevention-screening/get-screened.html	/prevention-screening/get-screened	22.41%	heightΔ 0.3%	FAIL	ref:frozen-live
+2026-08-21T21:52:31.328Z	/cancer-types/lung-cancer/lung-cancer-treatment.html	/cancer-types/lung-cancer/lung-cancer-treatment	14.27%	heightΔ 2.5%	FAIL	ref:frozen-live
+2026-08-21T21:52:36.881Z	/cancer-types/lung-cancer/lung-cancer-symptoms.html	/cancer-types/lung-cancer/lung-cancer-symptoms	25.60%	heightΔ 6.3%	FAIL	ref:frozen-live
+2026-08-21T21:54:18.348Z	/about-md-anderson/careers.html	/about-md-anderson/careers	8.89%	heightΔ 0.1%	PASS	ref:frozen-live
+2026-08-21T21:55:05.457Z	/donors-volunteers.html	/donors-volunteers	15.56%	heightΔ 0.5%	FAIL	ref:frozen-live
+2026-08-21T22:03:41.986Z	/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center.html	/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center	13.04%	heightΔ 0.2%	FAIL	ref:frozen-live
+2026-08-21T22:03:45.626Z	/cancer-types/lung-cancer/lung-cancer-treatment.html	/cancer-types/lung-cancer/lung-cancer-treatment	9.58%	heightΔ 0.8%	PASS	ref:frozen-live
+2026-08-21T22:10:39.374Z	/donors-volunteers/donate.html	/donors-volunteers/donate	26.87%	heightΔ 0.9%	FAIL	ref:frozen-live
