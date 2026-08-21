@@ -596,3 +596,11 @@ main .section.hero-container > div {
   inset: 0;
   background: rgb(0 0 0 / 50%);
 }
+
+/* live dept heroes vary: anatomic-pathology renders the 50% scrim, but
+   abdominal-imaging / behavioral-science / biostatistics render the image
+   UNFILTERED (probed byte-identical to source JPEG, 2026-08-21) —
+   authorable opt-out: hero (department, no-scrim) */
+.hero.department.no-scrim .background-image::before {
+  content: none;
+}
