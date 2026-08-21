@@ -999,15 +999,19 @@ body.blog-article main .section.quote-container > .default-content-wrapper {
     padding: 20px 0 0;
   }
 
-  body.blog-article main .section.quote-container > .default-content-wrapper:first-child { grid-column: 2; grid-row: 1; }
+  /* row plan (live truth 2026-08-21): row 1 sizes to the CALLOUT only —
+     the rail feature image spans rows 1-2 so it never inflates row 1, the
+     body starts at callout-bottom + 18 (live y810), and image-bottom meets
+     quote-top exactly (live 892 = 892) */
+  body.blog-article main .section.quote-container > .default-content-wrapper:first-child { grid-column: 2; grid-row: 1 / span 2; }
   body.blog-article main .section.quote-container > .callout-wrapper { grid-column: 1; grid-row: 1; }
-  body.blog-article main .section.quote-container > .default-content-wrapper:not(:first-child) { grid-column: 1; grid-row: 2 / span 7; }
-  body.blog-article main .section.quote-container > .article-cards-wrapper { grid-column: 1; grid-row: 9; }
-  body.blog-article main .section.quote-container > .quote-wrapper { grid-column: 2; grid-row: 2; }
-  body.blog-article main .section.quote-container > .cards-wrapper { grid-column: 2; grid-row: 3; }
-  body.blog-article main .section.quote-container > .cards-wrapper + .cards-wrapper { grid-row: 4; }
-  body.blog-article main .section.quote-container > .cards-wrapper + .cards-wrapper + .cards-wrapper { grid-row: 5; }
-  body.blog-article main .section.quote-container > .newsletter-wrapper { grid-column: 2; grid-row: 6; }
+  body.blog-article main .section.quote-container > .default-content-wrapper:not(:first-child) { grid-column: 1; grid-row: 2 / span 8; }
+  body.blog-article main .section.quote-container > .article-cards-wrapper { grid-column: 1; grid-row: 10; }
+  body.blog-article main .section.quote-container > .quote-wrapper { grid-column: 2; grid-row: 3; }
+  body.blog-article main .section.quote-container > .cards-wrapper { grid-column: 2; grid-row: 4; }
+  body.blog-article main .section.quote-container > .cards-wrapper + .cards-wrapper { grid-row: 5; }
+  body.blog-article main .section.quote-container > .cards-wrapper + .cards-wrapper + .cards-wrapper { grid-row: 6; }
+  body.blog-article main .section.quote-container > .newsletter-wrapper { grid-column: 2; grid-row: 7; }
 
   body.blog-article main .section.quote-container > .default-content-wrapper:not(:first-child),
   body.blog-article main .section.quote-container > .callout-wrapper,
@@ -1021,7 +1025,20 @@ body.blog-article main .section.quote-container > .default-content-wrapper {
      empty at the feature image's height, dropping the body ~200px below
      live — let the body start at row 1 instead (2026-08-21 gate finding) */
   body.blog-article main .section.quote-container:not(:has(> .callout-wrapper)) > .default-content-wrapper:not(:first-child) {
-    grid-row: 1 / span 8;
+    grid-row: 1 / span 9;
+  }
+
+  /* lever 1 (2026-08-21): live standalone body images sit 52px below the
+     preceding paragraph (live: para bottom 2560 → img top 2612, img bottom
+     flush with the next heading block) */
+  body.blog-article main .section.quote-container > .default-content-wrapper:not(:first-child) p:has(> picture) {
+    margin: 52px 0 0;
+  }
+
+  /* lever 3 (2026-08-21): loose lists (item nesting a ul) get p-wrapped li
+     content whose margins open 17-18px gaps — live li gaps are 0 */
+  body.blog-article main .section.quote-container .default-content-wrapper li > p {
+    margin: 0;
   }
 }
 
@@ -1140,8 +1157,19 @@ body.blog-article .quote.rail .info .other-info {
   font-size: 21px;
   line-height: 1.3;
   letter-spacing: var(--letter-spacing);
-  margin: 0 0 1em;
+
+  /* margin 0 (was 0 0 1em): live keeps the trailing margin OUTSIDE the
+     187px stand-alone-quote box — flex trapped it inside (+21px, 2026-08-21) */
+  margin: 0;
   color: var(--color-fg);
+}
+
+/* live stand-alone-quote icon block = 41h (36px glyph + 5px pad); EDS
+   measured 48h (2026-08-21 gate lever 4) */
+body.blog-article .quote.rail .quote-icon i {
+  font-size: 36px;
+  line-height: 36px;
+  display: inline-block;
 }
 
 /* --- mobile: single column; live 360 drops the pull quote ----------------- */
