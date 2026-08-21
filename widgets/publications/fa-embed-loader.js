@@ -15,6 +15,14 @@
  *   beacons — the replica must not phone home);
  * - the inline tfa_dbElapsedJsTime timer (a no-op on live: it looks up form
  *   id "tfa_0"/"0" but these forms use numeric ids 25/26/27/28/31).
+ *
+ * Known platform residual (2026-08-21): the site CSP (head.html) has no
+ * 'unsafe-eval', and wforms.js's bundled base2 library uses eval — wFORMS
+ * therefore never initializes on EDS (EvalError). Rendering parity holds
+ * (the govfa.net stylesheets carry the visual load; gate 3.2–3.8%) and the
+ * form still submits natively with the verbatim field set — identical to
+ * live's no-JS path — but wForms client-side validation/conditional UX is
+ * inactive. Fix belongs at the CSP/platform level, not here.
  */
 
 const WFORMS_VERSION = '910ede8cddaa51d331c5781cd8fc809dbb1cdd98';
@@ -36,11 +44,15 @@ export default async function decorate() {
   if (!wformsReady) {
     wformsReady = (async () => {
       await loadScript(`${WFORMS_BASE}/wforms.js?v=${WFORMS_VERSION}`);
-      if (window.wFORMS) window.wFORMS.behaviors.prefill.skip = false;
+      // wFORMS is undefined when CSP blocks base2's eval (see doc comment);
+      // localization + the ready event are wFORMS-only — skip them then.
+      if (!window.wFORMS) return false;
+      window.wFORMS.behaviors.prefill.skip = false;
       await loadScript(`${WFORMS_BASE}/localization-en_US.js?v=${WFORMS_VERSION}`);
+      return true;
     })();
   }
-  await wformsReady;
+  if (!(await wformsReady)) return;
   const fire = () => document.dispatchEvent(new CustomEvent('FA__DOMContentLoaded'));
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', fire, { once: true });
