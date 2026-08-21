@@ -3,6 +3,6 @@
    nothing to add at the widget level. */
 
 /* live-parity offset: on live, the form region sits below the page-header
-   band + hr with ~106px more lead-in than the EDS section flow provides
-   (gate measurement, form title y 603 live vs 512 eds @1440; 15px absorbed by collapse). */
-.subscribe-to-frontline .wFormContainer { margin-top: 106px; }
+   band + hr with more lead-in than the EDS section flow provides; this page's
+   header band is taller than the cancerwise one (gate measurement, form title y 570 live vs 602 eds @1440 at 106px). */
+.subscribe-to-frontline .wFormContainer { margin-top: 74px; }
