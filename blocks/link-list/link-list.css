@@ -84,7 +84,10 @@ main .section.link-list-container:has(.link-list.boxed) > .default-content-wrapp
 .link-list .link-list-body a.mda-icon-linkout {
   display: block;
   position: relative;
-  padding: 30px 10px 30px 0;
+
+  /* 36px (was 30): live rows are 95px pitch (probed twice — anatomic dept
+     lists and departments-labs-institutes hub, 2026-08-21) */
+  padding: 36px 10px 36px 0;
   border-bottom: 1px solid var(--color-gray-light);
   font-size: 18px;
   text-decoration: none;
