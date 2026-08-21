@@ -884,3 +884,19 @@ main .section.cards-container:has(> div > .cards.ribbon) > div {
 .cards .cicon-speechheart::before { content: '\e633'; }
 .cards.rail.story .fa-stack:has(.cicon-speechheart) { background: var(--color-accent); }
 .cards.rail.story .fa-stack:has(.cicon-carepages) { background: var(--color-blue-promo); }
+
+/* resume-wave glyphs + palettes (live clientlib values, 2026-08-21 final
+   landing/listing reports) */
+.cards .cicon-carepages::before { content: '\e607'; }
+.cards .cicon-financialplanning::before { content: '\e612'; }
+.cards .cicon-genetictesting::before { content: '\e614'; }
+.cards .cicon-powerinnumbers::before { content: '\e61a'; }
+.cards .cicon-care-centers-clinics::before { content: '\e639'; }
+.cards .cicon-clinical-tools-resources::before { content: '\e63a'; }
+.cards .cicon-clinical-trials-new::before { content: '\e649'; }
+.cards .cicon-diagnosis::before { content: '\e60b'; }
+.cards .cicon-physicians::before { content: '\e643'; }
+
+/* live for-physicians promo stack: blue then purple */
+.cards.duo.physician .card-col:nth-child(1) .promo { background: var(--color-blue-promo); }
+.cards.duo.physician .card-col:nth-child(2) .promo { background: var(--color-purple); }

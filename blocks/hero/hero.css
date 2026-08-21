@@ -604,3 +604,13 @@ main .section.hero-container > div {
 .hero.department.no-scrim .background-image::before {
   content: none;
 }
+
+/* live care-center / physician hero renditions are 558-560px tall (the
+   block fixed 450px — proton -118px shift, for-physicians 2.5% height Δ):
+   authorable hero (carousel, tall) / hero (static, tall) */
+.hero.tall .carousel-image img,
+.hero.tall .carousel-image,
+.hero.static.tall img {
+  height: 560px;
+  object-fit: cover;
+}
