@@ -211,3 +211,25 @@ hides chat on both sides, gate-dir snapshot precedence.
 In flight: brachytherapy re-author (full-width dark band + panel variant),
 lung-cancer disease iteration, 10 trial pages generator, 4 cancerwise batch,
 newsroom archetype pair.
+
+## 2026-08-21 — Template vocabulary + dynamic listings live
+
+Gate-driven code laws now cover the interior template end-to-end: strip/pair
+padding laws, dark-bar flush-after-band law, wrapper double-pad resets,
+authorable section styles (serif-head, sans-head, center-head, white, bleed,
+half-rail) and variant skins (cards rail panel/teaser/news-links, stats
+blue/purple/double, columns top). blog-article and news-article templates
+regrouped into independent-flow columns (scripts.js regroupBlogArticle /
+regroupNewsArticle) — the shared-row grid could not express live's
+short-article behavior. clinical-trial + news-article template layouts live
+in styles.css (no anchoring block on those pages).
+
+Dynamic listings are REAL: article-cards `index` mode (config rows,
+topic-grouped tabs, composes with editorial rail-tabs) + `news-archive`
+block, both verified rendering from the live query-indexes and regression-
+checked against the static POC pages. trials-import.mjs regenerated all 10
+trial pages (9/10 PASS; 2024-1206 residual = share block +33px vs live).
+
+GATE POLICY for index-driven listing pages: content-set deltas vs live are
+JUSTIFIED DEVIATIONS (the index only holds published pages — live lists
+thousands); their gates measure LAYOUT parity, attributed per zone.
