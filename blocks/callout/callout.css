@@ -101,6 +101,197 @@
 
 @media (width <= 991px) {
   .callout.boxed .callout-inner { padding: 25px 25px 20px; }
-  .callout.boxed .callout-body { font-size: 16px; margin: 20px 0 0; }
+
+  .callout.boxed .callout-body {
+    font-size: 16px;
+    margin: 20px 0 0;
+  }
+
   .callout.boxed .callout-body ul li { font-size: 16px; }
+}
+
+/* ==========================================================================
+   contact-card variant — newsroom media-contact sidebar (owning page:
+   heart-disease newsroom article, .publication-sidebar .article-sidebar).
+   Values lifted 1:1 from the live clientlib `.article-sidebar` rules; live
+   paragraph/heading margins are UA defaults (no live override matches the
+   flat markup), restated here because the base callout zeroes them.
+   ========================================================================== */
+
+/* .article-sidebar (live is a plain block, not a flex column) */
+.callout.contact-card .callout-inner {
+  display: block;
+  background: var(--color-surface); /* #f2f3f4 */
+  padding: 2em;
+  text-align: left;
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  overflow-wrap: break-word; /* live: word-wrap (legacy alias) */
+  min-height: 0;
+}
+
+/* .article-sidebar h3 { font: Univers Bold 24px; font-weight: normal;
+   margin-top: 0 } — bottom margin is the UA 1em */
+.callout.contact-card .callout-title {
+  font-family: var(--sans-bold-font-family);
+  font-size: 24px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  font-weight: 400;
+  text-transform: none;
+  margin: 0 0 1em;
+}
+
+.callout.contact-card .callout-body {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+/* live paragraphs keep UA margins (1em 0) */
+.callout.contact-card .callout-body p { margin: 1em 0; }
+
+/* live cascade: `p a { color: #da291c; text-decoration: underline }` */
+.callout.contact-card .callout-body a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* i.fa base (live fontawesome core rule) */
+.callout.contact-card i.fa {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* .fa-x-twitter-square:before { content: "\e901" } */
+.callout.contact-card i.fa-x-twitter-square::before {
+  font-family: FontAwesome, sans-serif;
+  content: "\e901";
+}
+
+/* .mda-icon-linkout { margin-left: 5px } / :before { content: "\e618";
+   font-weight: bold } (mda-icons font) */
+.callout.contact-card .mda-icon-linkout { margin-left: 5px; }
+
+.callout.contact-card .mda-icon-linkout::before {
+  font-family: mda-icons, sans-serif;
+  content: "\e618";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* .visuallyhidden (live h5bp helper) — screen-reader-only linkout text */
+.callout.contact-card .visuallyhidden {
+  border: 0;
+  clip-path: inset(50%); /* live: clip: rect(0 0 0 0) (deprecated) */
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@media (width <= 991px) {
+  /* live: .article-sidebar h3 { font-size: 16px } at max-width 992 */
+  .callout.contact-card .callout-title { font-size: 16px; }
+}
+
+/* ==========================================================================
+   clinical-trials variant — left-nav clinical trials box (owning page:
+   lung-cancer-treatment, #sidebar_left_box .left-nav-box). Values lifted
+   1:1 from the live clientlib `.left-nav-box` rules. The live icon class
+   mda-icon-clinical_trials_new is kebab-cased (glyph \e649, mda-icons).
+   ========================================================================== */
+
+/* .left-nav-box { border: 1px solid #da291c; padding: 20px 10px } */
+.callout.clinical-trials .callout-inner {
+  display: block;
+  border: 1px solid var(--color-accent);
+  padding: 20px 10px;
+  text-align: left;
+  min-height: 0;
+}
+
+/* .left-nav-box i { color: #da291c; display: block; position: relative }
+   + .mda-stack-1x { width: 100%; text-align: center } */
+.callout.clinical-trials i.mda-icon-clinical-trials-new {
+  color: var(--color-accent);
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* .mda-icon-clinical_trials_new:before { content: "\e649" } +
+   .left-nav-box i:before { font-size: 48px } */
+.callout.clinical-trials i.mda-icon-clinical-trials-new::before {
+  font-family: mda-icons, sans-serif;
+  content: "\e649";
+  font-size: 48px;
+}
+
+.callout.clinical-trials .callout-body {
+  font-size: 21px;
+  margin-top: 0;
+}
+
+/* .left-nav-box p { Minion Regular 21px; line-height 1.3; color: #000 } —
+   live margins are UA defaults (1em 0) */
+.callout.clinical-trials .callout-body p {
+  font-family: var(--body-font-family);
+  -webkit-font-smoothing: antialiased;
+  font-size: 21px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  color: var(--color-fg);
+  margin: 1em 0;
+}
+
+/* .left-nav-box a { Univers Roman 16px; color: #da291c; position: relative } */
+.callout.clinical-trials .callout-body a {
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  color: var(--color-accent);
+  position: relative;
+}
+
+/* .left-nav-box a i { display: inline; margin-left: 15px; position:
+   absolute; top: 50%; transform: translateY(-50%) } */
+.callout.clinical-trials .callout-body a i.mdicon-arrow {
+  display: inline;
+  margin-left: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-style: normal;
+}
+
+/* .mdicon-arrow:before { content: "\e608" } (MDIcons) +
+   .left-nav-box a i:before { font-size: 16px } */
+.callout.clinical-trials .callout-body a i.mdicon-arrow::before {
+  font-family: MDIcons, sans-serif;
+  content: "\e608";
+  font-size: 16px;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (width <= 991px) {
+  /* live: .left-nav-box p { font-size: 16px } at max-width 992 */
+  .callout.clinical-trials .callout-body p { font-size: 16px; }
 }

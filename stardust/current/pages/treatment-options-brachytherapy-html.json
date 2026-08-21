@@ -1,0 +1,900 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-08-21T10:18:31.731Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "treatment-options-brachytherapy-html",
+  "url": "https://www.mdanderson.org/treatment-options/brachytherapy.html",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-08-21T10:18:31.731Z",
+  "finalUrl": "https://www.mdanderson.org/treatment-options/brachytherapy.html",
+  "title": "What is Brachytherapy? Know Before Treatment | UT MD Anderson",
+  "description": "Find easy-to-understand information on brachytherapy cancer treatment from MD Anderson.",
+  "og": {
+    "title": "Brachytherapy",
+    "description": "Find easy-to-understand information on brachytherapy cancer treatment from MD Anderson.",
+    "image": "https://www.mdanderson.org/mda-logo-sharable.png",
+    "type": "Website"
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Brachytherapy"
+    },
+    {
+      "tag": "h2",
+      "text": "Types of brachytherapy"
+    },
+    {
+      "tag": "h2",
+      "text": "Brachytherapy side effects"
+    },
+    {
+      "tag": "h3",
+      "text": "Appointments & Referrals"
+    },
+    {
+      "tag": "h3",
+      "text": "Brachytherapy for gynecologic cancers"
+    },
+    {
+      "tag": "h3",
+      "text": "Brachytherapy for cervical cancer"
+    },
+    {
+      "tag": "h3",
+      "text": "Brachytherapy for endometrial cancer"
+    },
+    {
+      "tag": "h3",
+      "text": "Brachytherapy for prostate cancer"
+    },
+    {
+      "tag": "h2",
+      "text": "Brachytherapy at UT MD Anderson"
+    },
+    {
+      "tag": "h2",
+      "text": "Help #EndCancer"
+    },
+    {
+      "tag": "h3",
+      "text": "Give Now"
+    },
+    {
+      "tag": "h3",
+      "text": "Donate Blood"
+    },
+    {
+      "tag": "h3",
+      "text": "Shop UT MD Anderson"
+    }
+  ],
+  "body": [
+    "Treatment Options Ablation Therapy Angiogenesis Inhibitors Awake Craniotomy Brachytherapy Breast Reconstruction Surgery CAR T Cell Therapy Chemotherapy Cryoablation High-Intensity Focused Ultrasound (HIFU) Histotripsy Hyperthermic Intraperitoneal Chemotherapy Immunotherapy Immune Checkpoint Inhibitors Integrative Medicine Interventional Oncology Laser Interstitial Thermal Therapy (LITT) Microwave Ablation Minimally Invasive Surgery MR-Linac Radiation Therapy Palliative Care Proton Therapy Radiation Therapy Radiofrequency Ablation Stem Cell (Bone Marrow) Transplantation Stereotactic Body Radiation Therapy Stereotactic Radiosurgery Surgery Targeted Therapy Theranostics Y90 Radioembolization",
+    "Ablation Therapy",
+    "Angiogenesis Inhibitors",
+    "Awake Craniotomy",
+    "Brachytherapy",
+    "Breast Reconstruction Surgery",
+    "CAR T Cell Therapy",
+    "Chemotherapy",
+    "Cryoablation",
+    "High-Intensity Focused Ultrasound (HIFU)",
+    "Histotripsy",
+    "Hyperthermic Intraperitoneal Chemotherapy",
+    "Immunotherapy",
+    "Immune Checkpoint Inhibitors",
+    "Integrative Medicine",
+    "Interventional Oncology",
+    "Laser Interstitial Thermal Therapy (LITT)",
+    "Microwave Ablation",
+    "Minimally Invasive Surgery",
+    "MR-Linac Radiation Therapy",
+    "Palliative Care",
+    "Proton Therapy",
+    "Radiation Therapy",
+    "Radiofrequency Ablation",
+    "Stem Cell (Bone Marrow) Transplantation",
+    "Stereotactic Body Radiation Therapy",
+    "Stereotactic Radiosurgery",
+    "Surgery",
+    "Targeted Therapy",
+    "Theranostics",
+    "Y90 Radioembolization",
+    "Brachytherapy is a type of internal radiation therapy where tiny radioactive sources are placed within the body to treat cancer. These sources, or seeds, are about the size of a grain of rice. The source is positioned precisely on or inside the patient’s body, close to or inside the tumor. In some cases, the sources remain in place for just a few minutes. This requires an applicator or hollow tube, which is removed after the treatment is complete. In other cases, the radioactive seeds slowly decay and become not radioactive. These seeds can be left in place permanently.",
+    "Brachytherapy allows doctors to deliver radiation directly to the patient’s tumor while limiting radiation exposure to healthy tissue.",
+    "Brachytherapy is typically used when the tumor is easy to reach with minimally invasive techniques, such as the use of an applicator device or needle. It is a common treatment for prostate cancer and gynecologic cancers including cervical cancer, endometrial cancer and vaginal cancer, among other diseases.",
+    "There are three primary ways doctors deliver brachytherapy:",
+    "Low-dose brachytherapy (LDR) places the radioactive pellets in or near the tumor permanently. These seeds are radioactive for a few weeks to several months. Patients undergo this as an outpatient procedure. After the sources are placed, patients can resume their normal activities.",
+    "Pulsed-dose brachytherapy (PDR) requires a hospital stay. At the start of the stay, doctors place an applicator device in or near the tumor. A machine then sends the radioactive pellets into the applicator for roughly 10-15 minutes every hour for about two days. The procedure may be repeated after a few weeks.",
+    "High-dose brachytherapy (HDR) also uses an applicator device. The radiation from the pellet is more powerful than pulsed-dose, so the patient receives just one approximately 10-minute exposure every few days for two to three weeks. High-dose brachytherapy is an outpatient procedure.",
+    "Side effects for brachytherapy are usually limited to the area near where the sources are placed. For example, cervical cancer patients who receive brachytherapy may experience bladder problems such as discomfort when urinating.",
+    "Visit our appointments page to learn about new patient appointments and physian referrals",
+    "Brachytherapy is a common treatment for many gynecologic cancers, including cervical, uterine and vaginal cancers. It is standard for cervical cancer patients to receive brachytherapy after external beam radiation therapy. Uterine cancer patients who can’t undergo surgery also get brachytherapy. Some patients with endometrial cancer will receive brachytherapy after surgery.",
+    "For patients who haven’t had surgery, gynecologic brachytherapy starts with the patient being put under general anesthesia. A radiation oncologist precisely places an applicator inside the patient’s vagina or uterus (depending on the type of cancer), as close to the tumor as possible. Advanced imaging technologies (such as MRI, ultrasound and CT Scans) help ensure the applicator is positioned to deliver the most effective dose of radiation, as well as determine the dose itself.",
+    "The applicator is then attached to a machine that holds a small radioactive pellet. The pellet is sent into the applicator for a short amount of time, where it irradiates the tumor before being pulled back into the machine.",
+    "Patients undergoing treatment for cervical cancer typically receive brachytherapy treatment through internal radiation therapy implants. These are delivered via an applicator that is inserted into the uterus through the vagina. The implants may be inserted under general anesthesia",
+    "Depending on the patient’s specific condition, doctors will recommend one of two approaches to this treatment. Pulsed-dose rate (PDR) brachytherapy is a two-day inpatient procedure that sends the radioactive pellet into the applicator for 15 minutes every hour. PDR patients undergo this process two times about two weeks apart.",
+    "High-dose rate brachytherapy uses a pellet with more active radiation. It is sent into the applicator just one time for 10 minutes. Patients undergo this procedure as an outpatient five times over two to three weeks. Your radiation oncologist can discuss the best approach for your treatment.",
+    "Brachytherapy is also used to treat endometrial cancer following a hysterectomy to eliminate any cancer cells that may remain after surgery. This is a simpler procedure where a small dome is placed into the vagina while the patient is awake. A radioactive source runs into this dome to deliver high-dose brachytherapy.",
+    "Though doctors do their best to prevent radiation from impacting healthy tissue, brachytherapy for gynecologic cancers can have some short-term side effects, including soreness where the applicator was placed or a small amount of bleeding. In the long term, radiation can cause diarrhea and blood in urine or stool. If these symptoms develop and don’t resolve with medications, your oncologist may refer you to a gastroenterologist or urologist to diagnose or treat the problem.",
+    "Choosing where to go for cancer care is one of the most important decisions you can make. At UT MD Anderson, our focus on each patient’s experience and comfort during the process is unique, with a dedicated team that cares for our brachytherapy patients. As part of a top-ranked cancer center, our team of doctors has access to the most advanced technologies, allowing them to deliver the most effective treatment while minimizing side effects.",
+    "UT MD Anderson provides highly personalized treatment plans using cutting-edge technology, and advanced imaging with intraoperative CT (ioCT), intraoperative magnetic resonance imaging (ioMRI) and the MR-LINAC, the first MRI integrated with radiation therapy delivery in the United States, for advanced cancer treatment and research.",
+    "Our treatment options for gynecologic brachytherapy are personalized to each patient’s preferences and clinical situation. We have access to several types of brachytherapy applicators, allowing us to choose the best option for each patient.",
+    "Our team of experts can adapt the brachytherapy treatment plan based on each individual tumor. We use high-quality imaging techniques and a variety of inpatient and outpatient options to develop the best plan for each patient.",
+    "And at UT MD Anderson you will be surrounded by the strength of one of the nation's largest and most experienced cancer centers. From support groups to counseling to integrative medicine care, we have all the services needed to treat not just the disease, but the whole person.",
+    "Our patients depend on blood and platelet donations.",
+    "Show your support for our mission through branded merchandise.",
+    ".st0-desktop { fill: #000; }Explore what your support makes possible",
+    "Explore",
+    "Patients & Family",
+    "Prevention & Screening",
+    "Donors & Volunteers",
+    "For Physicians",
+    "Research",
+    "Education & Training",
+    "Clinical Trials",
+    "Languages",
+    "About",
+    "About UT MD Anderson",
+    "Careers",
+    "Blog",
+    "Newsroom",
+    "Editorial Standards",
+    "For Employees",
+    "Merchandise",
+    "Title IX Reporting (Sexual Misconduct)",
+    "Price Transparency",
+    "Finding Your Way",
+    "Our Doctors",
+    "Locations",
+    "Directions",
+    "Sitemap",
+    "DIGITAL ACCESSIBILITY",
+    "Accessibility Policy",
+    "GET IN TOUCH",
+    "Call 1-877-625-6176",
+    "Ask a question",
+    "Stay Connected",
+    "PreviousNext",
+    "Cancerwise Podcast",
+    "PreviousNext",
+    "Website Privacy Policy",
+    "Legal Statement & Policies",
+    "Reports to the State",
+    "Emergency Alert Information",
+    "State of Texas Links",
+    "Our Cancer Network",
+    "Vendors & Suppliers",
+    "© 2026 The University of Texas MD Anderson Cancer Center. All rights reserved."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "MyChart",
+      "href": "https://my.mdanderson.org/MyChart/Home/"
+    },
+    {
+      "label": "Request an Appointment",
+      "href": null
+    },
+    {
+      "label": "Donate Today",
+      "href": "javascript:void(0);"
+    },
+    {
+      "label": "Clinical Trials",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+      "label": "Locations",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+      "label": "Careers",
+      "href": "https://jobs.mdanderson.org/"
+    },
+    {
+      "label": "Contact Us",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us.html"
+    },
+    {
+      "label": "Our Doctors",
+      "href": "https://faculty.mdanderson.org/"
+    },
+    {
+      "label": "Languages",
+      "href": null
+    },
+    {
+      "label": "Patients & Family",
+      "href": "https://www.mdanderson.org/patients-family.html"
+    },
+    {
+      "label": "Prevention & Screening",
+      "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+      "label": "Donors & Volunteers",
+      "href": "https://www.mdanderson.org/donors-volunteers.html"
+    },
+    {
+      "label": "For Physicians",
+      "href": "https://www.mdanderson.org/for-physicians.html"
+    },
+    {
+      "label": "Research",
+      "href": "https://www.mdanderson.org/research.html"
+    },
+    {
+      "label": "Education & Training",
+      "href": "https://www.mdanderson.org/education-training.html"
+    },
+    {
+      "label": "Diagnosis & Treatment",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment.html"
+    },
+    {
+      "label": "Treatment Options",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/treatment-options.html"
+    },
+    {
+      "label": "Treatment Options",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/treatment-options.html"
+    },
+    {
+      "label": "Ablation Therapy",
+      "href": "https://www.mdanderson.org/treatment-options/ablation-therapy.html"
+    },
+    {
+      "label": "Angiogenesis Inhibitors",
+      "href": "https://www.mdanderson.org/treatment-options/angiogenesis-inhibitors.html"
+    },
+    {
+      "label": "Awake Craniotomy",
+      "href": "https://www.mdanderson.org/treatment-options/awake-craniotomy.html"
+    },
+    {
+      "label": "Brachytherapy",
+      "href": "https://www.mdanderson.org/treatment-options/brachytherapy.html"
+    },
+    {
+      "label": "Breast Reconstruction Surgery",
+      "href": "https://www.mdanderson.org/treatment-options/breast-reconstruction.html"
+    },
+    {
+      "label": "CAR T Cell Therapy",
+      "href": "https://www.mdanderson.org/treatment-options/car-t-cell-therapy.html"
+    },
+    {
+      "label": "Chemotherapy",
+      "href": "https://www.mdanderson.org/treatment-options/chemotherapy.html"
+    },
+    {
+      "label": "Cryoablation",
+      "href": "https://www.mdanderson.org/treatment-options/cryoablation.html"
+    },
+    {
+      "label": "High-Intensity Focused Ultrasound (HIFU)",
+      "href": "https://www.mdanderson.org/treatment-options/high-intensity-focused-ultrasound.html"
+    },
+    {
+      "label": "Histotripsy",
+      "href": "https://www.mdanderson.org/treatment-options/histotripsy.html"
+    },
+    {
+      "label": "Hyperthermic Intraperitoneal Chemotherapy",
+      "href": "https://www.mdanderson.org/treatment-options/hyperthermic-intraperitoneal-chemotherapy.html"
+    },
+    {
+      "label": "Immunotherapy",
+      "href": "https://www.mdanderson.org/treatment-options/immunotherapy.html"
+    },
+    {
+      "label": "Immune Checkpoint Inhibitors",
+      "href": "https://www.mdanderson.org/treatment-options/immune-checkpoint-inhibitors.html"
+    },
+    {
+      "label": "Integrative Medicine",
+      "href": "https://www.mdanderson.org/treatment-options/complementary-and-integrative-medicine.html"
+    },
+    {
+      "label": "Interventional Oncology",
+      "href": "https://www.mdanderson.org/treatment-options/interventional-oncology.html"
+    },
+    {
+      "label": "Laser Interstitial Thermal Therapy (LITT)",
+      "href": "https://www.mdanderson.org/treatment-options/laser-interstitial-thermal-therapy.html"
+    },
+    {
+      "label": "Microwave Ablation",
+      "href": "https://www.mdanderson.org/treatment-options/microwave-ablation.html"
+    },
+    {
+      "label": "Minimally Invasive Surgery",
+      "href": "https://www.mdanderson.org/treatment-options/minimally-invasive-surgery.html"
+    },
+    {
+      "label": "MR-Linac Radiation Therapy",
+      "href": "https://www.mdanderson.org/treatment-options/mr-linac-radiation-therapy.html"
+    },
+    {
+      "label": "Palliative Care",
+      "href": "https://www.mdanderson.org/treatment-options/palliative-care.html"
+    },
+    {
+      "label": "Proton Therapy",
+      "href": "https://www.mdanderson.org/treatment-options/proton-therapy.html"
+    },
+    {
+      "label": "Radiation Therapy",
+      "href": "https://www.mdanderson.org/treatment-options/radiation-therapy.html"
+    },
+    {
+      "label": "Radiofrequency Ablation",
+      "href": "https://www.mdanderson.org/treatment-options/radiofrequency-ablation.html"
+    },
+    {
+      "label": "Stem Cell (Bone Marrow) Transplantation",
+      "href": "https://www.mdanderson.org/treatment-options/stem-cell-transplantation.html"
+    },
+    {
+      "label": "Stereotactic Body Radiation Therapy",
+      "href": "https://www.mdanderson.org/treatment-options/stereotactic-body-radiation-therapy.html"
+    },
+    {
+      "label": "Stereotactic Radiosurgery",
+      "href": "https://www.mdanderson.org/treatment-options/stereotactic-radiosurgery.html"
+    },
+    {
+      "label": "Surgery",
+      "href": "https://www.mdanderson.org/treatment-options/surgery.html"
+    },
+    {
+      "label": "Targeted Therapy",
+      "href": "https://www.mdanderson.org/treatment-options/targeted-therapy.html"
+    },
+    {
+      "label": "Theranostics",
+      "href": "https://www.mdanderson.org/treatment-options/theranostics.html"
+    },
+    {
+      "label": "Y90 Radioembolization",
+      "href": "https://www.mdanderson.org/treatment-options/y90-radioembolization.html"
+    },
+    {
+      "label": "radiation therapy",
+      "href": "/treatment-options/radiation-therapy.html"
+    },
+    {
+      "label": "prostate cancer",
+      "href": "/cancer-types/prostate-cancer.html"
+    },
+    {
+      "label": "cervical cancer",
+      "href": "/cancer-types/cervical-cancer.html"
+    },
+    {
+      "label": "endometrial cancer",
+      "href": "/cancer-types/endometrial-cancer.html"
+    },
+    {
+      "label": "vaginal cancer",
+      "href": "/cancer-types/vaginal-cancer.html"
+    },
+    {
+      "label": "Appointments at UT MD Anderson",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/appointments.html"
+    },
+    {
+      "label": "Brachytherapy for gynecologic cancers",
+      "href": null
+    },
+    {
+      "label": "cervical cancer",
+      "href": "/cancer-types/cervical-cancer.html"
+    },
+    {
+      "label": "endometrial cancer",
+      "href": "/cancer-types/endometrial-cancer.html"
+    },
+    {
+      "label": "Brachytherapy for prostate cancer",
+      "href": null
+    },
+    {
+      "label": "support groups",
+      "href": "/patients-family/diagnosis-treatment/patient-support/support-groups.html"
+    },
+    {
+      "label": "counseling",
+      "href": "/patients-family/diagnosis-treatment/patient-support/social-work.html"
+    },
+    {
+      "label": "integrative medicine care",
+      "href": "/patients-family/diagnosis-treatment/care-centers-clinics/integrative-medicine-center.html"
+    },
+    {
+      "label": "Request an appointment online.",
+      "href": "/about-md-anderson/contact-us/askmdanderson/appointments.html"
+    },
+    {
+      "label": "Donate",
+      "href": "https://gifts.mdanderson.org/Default.aspx?tsid=37435"
+    },
+    {
+      "label": "Make an appointment",
+      "href": "https://www.mdandersonbloodbank.org/"
+    },
+    {
+      "label": "View products",
+      "href": "https://shop.mdanderson.org"
+    },
+    {
+      "label": ".st0-desktop { fill: #000; }Explore what your support makes possible",
+      "href": "https://onlypossiblehere.mdanderson.org"
+    },
+    {
+      "label": "Patients & Family",
+      "href": "https://www.mdanderson.org/patients-family.html"
+    },
+    {
+      "label": "Prevention & Screening",
+      "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+      "label": "Donors & Volunteers",
+      "href": "https://www.mdanderson.org/donors-volunteers.html"
+    },
+    {
+      "label": "For Physicians",
+      "href": "https://www.mdanderson.org/for-physicians.html"
+    },
+    {
+      "label": "Research",
+      "href": "https://www.mdanderson.org/research.html"
+    },
+    {
+      "label": "Education & Training",
+      "href": "https://www.mdanderson.org/education-training.html"
+    },
+    {
+      "label": "Clinical Trials",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+      "label": "Languages",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html"
+    },
+    {
+      "label": "About UT MD Anderson",
+      "href": "https://www.mdanderson.org/about-md-anderson.html"
+    },
+    {
+      "label": "Careers",
+      "href": "https://jobs.mdanderson.org/"
+    },
+    {
+      "label": "Blog",
+      "href": "https://www.mdanderson.org/cancerwise.html"
+    },
+    {
+      "label": "Newsroom",
+      "href": "https://www.mdanderson.org/newsroom.html"
+    },
+    {
+      "label": "Editorial Standards",
+      "href": "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html"
+    },
+    {
+      "label": "For Employees",
+      "href": "https://www.mdanderson.org/about-md-anderson/employee-resources.html"
+    },
+    {
+      "label": "Merchandise",
+      "href": "https://shop.mdanderson.org/"
+    },
+    {
+      "label": "Title IX Reporting (Sexual Misconduct)",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html"
+    },
+    {
+      "label": "Price Transparency",
+      "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html"
+    },
+    {
+      "label": "Our Doctors",
+      "href": "https://faculty.mdanderson.org/"
+    },
+    {
+      "label": "Locations",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+      "label": "Directions",
+      "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html"
+    },
+    {
+      "label": "Sitemap",
+      "href": "https://www.mdanderson.org/patients-family/html-sitemap.html"
+    },
+    {
+      "label": "Accessibility Policy",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html"
+    },
+    {
+      "label": "Call 1-877-625-6176",
+      "href": "tel:+18776256176"
+    },
+    {
+      "label": "Ask a question",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html"
+    },
+    {
+      "label": "Website Privacy Policy",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html"
+    },
+    {
+      "label": "Legal Statement & Policies",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html"
+    },
+    {
+      "label": "Reports to the State",
+      "href": "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html"
+    },
+    {
+      "label": "Emergency Alert Information",
+      "href": "https://www3.mdanderson.org/emergencyalert/"
+    },
+    {
+      "label": "State of Texas Links",
+      "href": "https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html"
+    },
+    {
+      "label": "Our Cancer Network",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html"
+    },
+    {
+      "label": "Vendors & Suppliers",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html"
+    }
+  ],
+  "links": [
+    "https://www.mdanderson.org/treatment-options/brachytherapy.html#skip",
+    "https://my.mdanderson.org/MyChart/Home/",
+    "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/appointments.html",
+    "https://my.mdanderson.org/RequestAppointment",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/returning-patients.html",
+    "https://my.mdanderson.org/physicianreferral",
+    "javascript:void(0);",
+    "https://onlypossiblehere.mdanderson.org/",
+    "https://gifts.mdanderson.org/Default.aspx?tsid=37435",
+    "https://www.mdanderson.org/",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations.html",
+    "https://jobs.mdanderson.org/",
+    "https://www.mdanderson.org/about-md-anderson/contact-us.html",
+    "https://faculty.mdanderson.org/",
+    "https://www.mdanderson.org/es/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/ar/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/zh/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/tr/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/treatment-options/brachytherapy.html#",
+    "https://www.mdanderson.org/patients-family.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/why-md-anderson.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/while-youre-here.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/international-center.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/services-amenities.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/insurance-billing.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/second-opinion-appointments.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/cancer-types.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/a-new-diagnosis.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/treatment-options.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/emotional-physical-effects.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/caregiver-roles-challenges.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/supporting-children-teens.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/taking-care-of-yourself.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/Helping-mdanderson-patient.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/dealing-with-loss.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/followup-care-after-cancer-treatment.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/long-term-effects.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/social-emotional-impacts.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/legal-financial-impacts.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/survivorship-week.html",
+    "https://www.mdanderson.org/prevention-screening.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/tobacco-control-at-md-anderson.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/diet.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/body-weight.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/physical-activity.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/skin-safety.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/hpv.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/hepatitis.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/alcohol.html",
+    "https://www.mdanderson.org/prevention-screening/family-history.html",
+    "https://www.mdanderson.org/prevention-screening/family-history/genetic-testing.html",
+    "https://www.mdanderson.org/prevention-screening/family-history/hereditary-cancer-syndromes.html",
+    "https://www.mdanderson.org/prevention-screening/family-history/faqs.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/breast-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/cervical-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/colorectal-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/endometrial-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/liver-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/lung-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/mobile-mammography.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/ovarian-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/prostate-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/skin-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/women-screening-exams.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/men-screening-exams.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/cancer-prevention-center.html",
+    "https://www.mdanderson.org/donors-volunteers.html",
+    "https://www.mdanderson.org/donors-volunteers/donate.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/raise-money.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/honor-loved-ones.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/planned-giving.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/endowments.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/md-anderson-caring-fund.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/matching-gifts.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/foundation-and-corporation-relations.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/why-volunteer.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/on-site-volunteers.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/endowments.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/patient-experience.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/teen-volunteer-leadership-program.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/childrens-cancer-hospital-councils.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/give-blood.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/shop-md-anderson.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/childrens-art-project.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/donate-goods-or-services.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/attend-events.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/cord-blood-bank.html",
+    "https://www.mdanderson.org/donors-volunteers/corporate-alliances.html",
+    "https://www.mdanderson.org/donors-volunteers/corporate-alliances/current-alliances.html",
+    "https://www.mdanderson.org/for-physicians.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/health-care-provider-resource-center.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/referring-provider-team.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/insurance-information.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/international-referrals.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/mymdanderson-for-physicians.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/second-opinion-pathology.html",
+    "https://www.mdanderson.org/for-physicians/clinical-trials.html",
+    "https://www.mdanderson.org/for-physicians/clinical-tools-resources.html",
+    "https://www.mdanderson.org/for-physicians/clinical-tools-resources/clinical-calculators.html",
+    "https://www.mdanderson.org/for-physicians/clinical-tools-resources/clinical-practice-algorithms.html",
+    "https://www.mdanderson.org/research.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/labs.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/programs-centers.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/institutes.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/spores.html",
+    "https://www.mdanderson.org/research/research-areas.html",
+    "https://www.mdanderson.org/research/research-areas/basic-science.html",
+    "https://www.mdanderson.org/research/research-areas/translational-research.html",
+    "https://www.mdanderson.org/research/research-areas/clinical-research.html",
+    "https://www.mdanderson.org/research/research-areas/prevention-personalized-risk-assessment.html",
+    "https://www.mdanderson.org/research/research-resources.html",
+    "https://www.mdanderson.org/research/research-resources/excellence-in-science.html",
+    "https://www.mdanderson.org/research/research-resources/core-facilities.html",
+    "https://www.mdanderson.org/research/research-resources/conferences-seminars.html",
+    "https://www.mdanderson.org/research/research-resources/why-research.html",
+    "https://www.mdanderson.org/research/research-resources/stride.html",
+    "https://www.mdanderson.org/research/research-resources/nci-designated-cancer-center.html",
+    "https://www.mdanderson.org/research/research-resources/data-resources.html",
+    "https://www.mdanderson.org/education-training.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools/school-of-health-professions.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools/graduate-school-of-biomedical-sciences.html",
+    "https://www.mdanderson.org/education-training/education-resources.html",
+    "https://www.mdanderson.org/education-training/education-resources/alumni-relations.html",
+    "https://www.mdanderson.org/education-training/education-resources/education-design-services.html",
+    "https://www.mdanderson.org/education-training/education-resources/awards-recognitions.html",
+    "https://www.mdanderson.org/education-training/education-resources/academic-mentoring-council.html",
+    "https://www.mdanderson.org/education-training/education-resources/why-train-at-md-anderson-houston.html",
+    "https://www.mdanderson.org/education-training/research-training.html",
+    "https://www.mdanderson.org/education-training/research-training/early-career-pathway-programs.html",
+    "https://www.mdanderson.org/education-training/research-training/predoctoral-training.html",
+    "https://www.mdanderson.org/education-training/research-training/postdoctoral-training.html",
+    "https://www.mdanderson.org/education-training/research-training/mentored-faculty-programs.html",
+    "https://www.mdanderson.org/education-training/research-training/career-development.html",
+    "https://www.mdanderson.org/education-training/clinical-training.html",
+    "https://www.mdanderson.org/education-training/clinical-training/graduate-medical-education.html",
+    "https://www.mdanderson.org/education-training/clinical-training/clinical-education-for-non-physicians.html",
+    "https://www.mdanderson.org/education-training/clinical-training/nursing-education.html",
+    "https://www.mdanderson.org/education-training/clinical-training/certificate-programs-review-courses.html",
+    "https://www.mdanderson.org/education-training/clinical-training/simulation-center.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/continuing-professional-education-conferences.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/administrative-internships-fellowships.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/cancer-survivorship-program.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/leadership-institute.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/patient-home-visits.html",
+    "https://www.mdanderson.org/education-training/outreach-programs.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/project-echo.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/observer-programs.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/comparative-effectiveness-research-training.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/faculty-speakers-bureau.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools/school-of-health-professions/prospective-students.html",
+    "https://www.mdanderson.org/education-training/clinical-training/graduate-medical-education/residencies-fellowships.html",
+    "https://www.mdanderson.org/treatment-options/ablation-therapy.html",
+    "https://www.mdanderson.org/treatment-options/angiogenesis-inhibitors.html",
+    "https://www.mdanderson.org/treatment-options/awake-craniotomy.html",
+    "https://www.mdanderson.org/treatment-options/brachytherapy.html",
+    "https://www.mdanderson.org/treatment-options/breast-reconstruction.html",
+    "https://www.mdanderson.org/treatment-options/car-t-cell-therapy.html",
+    "https://www.mdanderson.org/treatment-options/chemotherapy.html",
+    "https://www.mdanderson.org/treatment-options/cryoablation.html",
+    "https://www.mdanderson.org/treatment-options/high-intensity-focused-ultrasound.html",
+    "https://www.mdanderson.org/treatment-options/histotripsy.html",
+    "https://www.mdanderson.org/treatment-options/hyperthermic-intraperitoneal-chemotherapy.html",
+    "https://www.mdanderson.org/treatment-options/immunotherapy.html",
+    "https://www.mdanderson.org/treatment-options/immune-checkpoint-inhibitors.html",
+    "https://www.mdanderson.org/treatment-options/complementary-and-integrative-medicine.html",
+    "https://www.mdanderson.org/treatment-options/interventional-oncology.html",
+    "https://www.mdanderson.org/treatment-options/laser-interstitial-thermal-therapy.html",
+    "https://www.mdanderson.org/treatment-options/microwave-ablation.html",
+    "https://www.mdanderson.org/treatment-options/minimally-invasive-surgery.html",
+    "https://www.mdanderson.org/treatment-options/mr-linac-radiation-therapy.html",
+    "https://www.mdanderson.org/treatment-options/palliative-care.html",
+    "https://www.mdanderson.org/treatment-options/proton-therapy.html",
+    "https://www.mdanderson.org/treatment-options/radiation-therapy.html",
+    "https://www.mdanderson.org/treatment-options/radiofrequency-ablation.html",
+    "https://www.mdanderson.org/treatment-options/stem-cell-transplantation.html",
+    "https://www.mdanderson.org/treatment-options/stereotactic-body-radiation-therapy.html",
+    "https://www.mdanderson.org/treatment-options/stereotactic-radiosurgery.html",
+    "https://www.mdanderson.org/treatment-options/surgery.html",
+    "https://www.mdanderson.org/treatment-options/targeted-therapy.html",
+    "https://www.mdanderson.org/treatment-options/theranostics.html",
+    "https://www.mdanderson.org/treatment-options/y90-radioembolization.html",
+    "mailto:?subject=UT%20MD%20Anderson%20:%20Brachytherapy&body=I%20thought%20you%27d%20like%20to%20read%20this%3A%20https%3A%2F%2Fwww.mdanderson.org%2Ftreatment-options%2Fbrachytherapy.html",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.mdanderson.org%2Ftreatment-options%2Fbrachytherapy.html",
+    "https://x.com/share?url=https%3A%2F%2Fwww.mdanderson.org%2Ftreatment-options%2Fbrachytherapy.html",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.mdanderson.org%2Ftreatment-options%2Fbrachytherapy.html",
+    "https://bsky.app/intent/compose?text=https%3A%2F%2Fwww.mdanderson.org%2Ftreatment-options%2Fbrachytherapy.html",
+    "https://www.threads.com/intent/post?text=https%3A%2F%2Fwww.mdanderson.org%2Ftreatment-options%2Fbrachytherapy.html",
+    "https://www.mdanderson.org/cancer-types/prostate-cancer.html",
+    "https://www.mdanderson.org/cancer-types/cervical-cancer.html",
+    "https://www.mdanderson.org/cancer-types/endometrial-cancer.html",
+    "https://www.mdanderson.org/cancer-types/vaginal-cancer.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/support-groups.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/social-work.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/integrative-medicine-center.html",
+    "tel:+18776256176",
+    "https://www.mdandersonbloodbank.org/",
+    "https://shop.mdanderson.org/",
+    "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html",
+    "https://www.mdanderson.org/about-md-anderson.html",
+    "https://www.mdanderson.org/cancerwise.html",
+    "https://www.mdanderson.org/newsroom.html",
+    "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html",
+    "https://www.mdanderson.org/about-md-anderson/employee-resources.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html",
+    "https://www.mdanderson.org/patients-family/html-sitemap.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html",
+    "https://www.levelaccess.com/MDAnderson",
+    "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html",
+    "https://facebook.com/MDAnderson",
+    "https://x.com/UTMDAnderson",
+    "https://youtube.com/mdandersonorg",
+    "https://instagram.com/mdandersoncancercenter",
+    "https://linkedin.com/company/mdandersoncancercenter",
+    "http://bsky.app/profile/mdanderson.bsky.social",
+    "https://threads.com/@mdandersoncancercenter",
+    "https://podcasts.apple.com/us/podcast/cancerwise-podcast/id1751785346",
+    "https://open.spotify.com/show/28rgC5nO7OpLhnPlNylNem",
+    "http://www.youtube.com/playlist?list=PLKscGuVrfI9LvQrf5At-R7TewdfY4OeOP",
+    "http://www.pandora.com/podcast/cancerwise-podcast/PC:1001088873",
+    "http://www.iheart.com/podcast/269-cancerwise-podcast-185103717/",
+    "https://support.doctorpodcasting.com/podcastfeed/335",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html",
+    "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html",
+    "https://www3.mdanderson.org/emergencyalert/",
+    "https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html",
+    "https://my.mdanderson.org/"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/hero-images/Integrated%20Media/OPH_Logo_Horizontal_Reverse.png",
+        "alt": "Only Possible Here",
+        "w": 857,
+        "h": 231
+      },
+      {
+        "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/xmda-logo.png.pagespeed.ic.jLVBCg-7dN.webp",
+        "alt": "The University of Texas MD Anderson Cancer Center",
+        "w": 1527,
+        "h": 639
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/focused-on-health/2015/WEB-Tanya-Moseley-3D-mammo.jpg.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 108,
+        "h": 61
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/hero-images/Integrated%20Media/oph-web-promo-image-tagline.png.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 108,
+        "h": 61
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/l2-l3-hero/sujit_prabhu_physicians_nav.jpg.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 108,
+        "h": 61
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/moonshots/researchplatforms/Clinical-Trial/CLL_Jan_Burger_175_resized.jpg.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 108,
+        "h": 61
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/jcr:content/footer/xdesktoplogo.resize.png.pagespeed.ic.wmDIh2S-LF.webp",
+        "alt": "UT MD Anderson logo",
+        "w": 1280,
+        "h": 535
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp",
+        "alt": "UT MD Anderson logo",
+        "w": 837,
+        "h": 95
+      },
+      {
+        "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/eA_Icon_Black.svg",
+        "alt": "MD Anderson works with Level Access to ensure our website is accessible and functional for all users. Free assistive technology is provided for people with physical disabilities. To learn more or to download the assistive technology tool, visit https://www.levelaccess.com/MDAnderson",
+        "w": 300,
+        "h": 113
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp",
+        "alt": "UT MD Anderson logo",
+        "w": 837,
+        "h": 95
+      }
+    ],
+    "allImgCount": 10,
+    "cssBackgrounds": [],
+    "modals": [
+      "Close Share this article Via social media: Or copy the link: Copy to clipboard Copy",
+      "Close Share this article Via social media: Or copy the link: Copy to clipboard Copy"
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {},
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 13,
+    "mainTextLen": 12836,
+    "realImageCount": 10,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "screenshot": "assets/screenshots/treatment-options-brachytherapy-html.png"
+}

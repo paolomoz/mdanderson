@@ -81,17 +81,26 @@ export default async function decorate(block) {
   const titleDiv = el('div', 'subscribeTitle', inner);
   titleDiv.textContent = title;
 
-  const form = el('form', '', inner);
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    form.classList.add('submitted');
-  });
+  // live parity (footer form, captured 2026-08-21): FormAssembly field names
+  // tfa_23/38/20 + hidden tfa_61, GET to /publications.html — REAL submission,
+  // same as the live site's no-JS path. Do not fake-submit.
+  const form = el('form', 'footersfmcform', inner);
+  form.action = 'https://www.mdanderson.org/publications.html';
+  const flag = el('input', '', form);
+  flag.type = 'hidden';
+  flag.name = 'tfa_61';
+  flag.value = '1';
   const fields = el('div', 'fieldContainer', form);
-  [['First Name *', 'text'], ['Last Name *', 'text'], ['Email Address *', 'email']].forEach(([ph, type], i) => {
+  [['First Name *', 'text', 'tfa_23', 'given-name'],
+    ['Last Name *', 'text', 'tfa_38', 'family-name'],
+    ['Email Address *', 'email', 'tfa_20', 'email']].forEach(([ph, type, name, ac], i) => {
     const holder = el('div', '', fields);
     const wrap = el('div', 'inputWrapper', holder);
     const input = el('input', '', wrap);
     input.type = type;
+    input.name = name;
+    input.required = true;
+    input.autocomplete = ac;
     input.placeholder = ph;
     input.id = `newsletter-${uid}-f${i}`;
     input.setAttribute('aria-label', ph.replace(' *', ''));

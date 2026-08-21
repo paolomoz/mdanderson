@@ -1,0 +1,1158 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-08-21T10:22:39.019Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "cancer-types-lung-cancer-lung-cancer-treatment-html",
+  "url": "https://www.mdanderson.org/cancer-types/lung-cancer/lung-cancer-treatment.html",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-08-21T10:22:39.019Z",
+  "finalUrl": "https://www.mdanderson.org/cancer-types/lung-cancer/lung-cancer-treatment.html",
+  "title": "6 Innovative Lung Cancer Treatment Options | UT MD Anderson",
+  "description": "Lung cancer treatments vary by case. Customized treatments options: 1. Surgery 2. Radiation Therapy 3. Proton Therapy 4. Targeted Therapy 5. Chemotherapy 6. Angiogenesis Inhibitors",
+  "og": {
+    "title": "Lung Cancer Treatment",
+    "description": "Lung cancer treatments vary by case. Customized treatments options: 1. Surgery 2. Radiation Therapy 3. Proton Therapy 4. Targeted Therapy 5. Chemotherapy 6. Angiogenesis Inhibitors",
+    "image": "https://www.mdanderson.org/mda-logo-sharable.png",
+    "type": "Website"
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Lung Cancer Treatment"
+    },
+    {
+      "tag": "h2",
+      "text": "Lung cancer surgery"
+    },
+    {
+      "tag": "h3",
+      "text": "Wedge Resection"
+    },
+    {
+      "tag": "h3",
+      "text": "Segmentectomy"
+    },
+    {
+      "tag": "h3",
+      "text": "Lobectomy"
+    },
+    {
+      "tag": "h3",
+      "text": "Sleeve lobectomy"
+    },
+    {
+      "tag": "h3",
+      "text": "Pneumonectomy"
+    },
+    {
+      "tag": "h3",
+      "text": "Lymph node dissection and lung cancer surgery"
+    },
+    {
+      "tag": "h3",
+      "text": "Recovering from a lung cancer surgery"
+    },
+    {
+      "tag": "h3",
+      "text": "Surgery for lung metastases"
+    },
+    {
+      "tag": "h2",
+      "text": "Radiation Therapy"
+    },
+    {
+      "tag": "h3",
+      "text": "Intensity modulated radiation therapy"
+    },
+    {
+      "tag": "h3",
+      "text": "Schedule a Screening"
+    },
+    {
+      "tag": "h3",
+      "text": "Proton therapy"
+    },
+    {
+      "tag": "h3",
+      "text": "Stereotactic body radiation therapy"
+    },
+    {
+      "tag": "h3",
+      "text": "3D conformal radiation therapy"
+    },
+    {
+      "tag": "h3",
+      "text": "Radiation therapy side effects"
+    },
+    {
+      "tag": "h2",
+      "text": "Targeted therapy for lung cancer"
+    },
+    {
+      "tag": "h3",
+      "text": "Getting targeted therapy"
+    },
+    {
+      "tag": "h3",
+      "text": "Targeted therapy side effects"
+    },
+    {
+      "tag": "h2",
+      "text": "Immune checkpoint inhibitors for lung cancer"
+    },
+    {
+      "tag": "h3",
+      "text": "Getting immune checkpoint inhibitors"
+    },
+    {
+      "tag": "h3",
+      "text": "Immune checkpoint inhibitor side effects"
+    },
+    {
+      "tag": "h2",
+      "text": "Chemotherapy for lung cancer"
+    },
+    {
+      "tag": "h3",
+      "text": "Getting chemotherapy"
+    },
+    {
+      "tag": "h3",
+      "text": "Chemotherapy side effects"
+    },
+    {
+      "tag": "h2",
+      "text": "Featured Podcast:"
+    },
+    {
+      "tag": "h2",
+      "text": "How to talk to your children about vaping"
+    },
+    {
+      "tag": "h3",
+      "text": "Treatment at UT MD Anderson"
+    },
+    {
+      "tag": "h4",
+      "text": "Thoracic Center"
+    },
+    {
+      "tag": "h4",
+      "text": "Proton Therapy Center"
+    },
+    {
+      "tag": "h4",
+      "text": "UT MD Anderson League City"
+    },
+    {
+      "tag": "h4",
+      "text": "UT MD Anderson in Sugar Land"
+    },
+    {
+      "tag": "h4",
+      "text": "UT MD Anderson The Woodlands"
+    },
+    {
+      "tag": "h4",
+      "text": "UT MD Anderson West Houston"
+    },
+    {
+      "tag": "h2",
+      "text": "Featured Podcasts:"
+    },
+    {
+      "tag": "h2",
+      "text": "Lung cancer in young adults: A survivor’s story"
+    },
+    {
+      "tag": "h2",
+      "text": "When lung cancer research gets personal"
+    },
+    {
+      "tag": "h3",
+      "text": "Clinical Trials"
+    },
+    {
+      "tag": "h3",
+      "text": "Becoming Our Patient"
+    },
+    {
+      "tag": "h3",
+      "text": "Counseling"
+    },
+    {
+      "tag": "h3",
+      "text": "Ommaya reservoir and its role in cancer care"
+    },
+    {
+      "tag": "h3",
+      "text": "What is a lobectomy?"
+    },
+    {
+      "tag": "h3",
+      "text": "myCancerConnection"
+    },
+    {
+      "tag": "h3",
+      "text": "Prevention & Screening"
+    },
+    {
+      "tag": "h2",
+      "text": "Help #EndCancer"
+    },
+    {
+      "tag": "h3",
+      "text": "Give Now"
+    },
+    {
+      "tag": "h3",
+      "text": "Donate Blood"
+    },
+    {
+      "tag": "h3",
+      "text": "Shop UT MD Anderson"
+    }
+  ],
+  "body": [
+    "Diagnosis & Treatment",
+    "Cancer Types",
+    "Lung Cancer",
+    "Lung Cancer Treatment",
+    "Lung Cancer Lung Cancer Symptoms Lung Cancer Diagnosis Lung Cancer Stages Lung Cancer Treatment Lung Cancer Research",
+    "Lung Cancer Symptoms",
+    "Lung Cancer Diagnosis",
+    "Lung Cancer Stages",
+    "Lung Cancer Treatment",
+    "Lung Cancer Research",
+    "Get details about our clinical trials that are currently enrolling patients.",
+    "At UT MD Anderson, some of the nation’s top lung specialists focus their extraordinary expertise on you. We customize your treatment to deliver the most advanced, effective and least invasive treatments available for lung cancer. And because your peace of mind is important to us, we specialize in techniques and therapies that can help preserve lung function and quality of life.",
+    "We’re constantly researching safer and more effective treatments for lung cancer with fewer side effects. This leads to a large number of active clinical trials at UT MD Anderson and ensures that our patients have access to some of the most cutting-edge therapy anywhere in the world.",
+    "If you are diagnosed with lung cancer, your doctor will discuss the best options to treat it. This depends on several factors, including the stage and type of lung cancer; other lung problems, such as emphysema or chronic bronchitis; other prior or current medical conditions; and possible side effects of treatment.",
+    "Your treatment for lung cancer will be customized to your particular needs. It may include one or more of the following therapies to treat the cancer and help relieve symptoms.",
+    "Surgery is one of the primary treatments for lung cancer.",
+    "In some cases, patients get cancer drugs or radiation therapy before surgery to shrink the tumor. Patients may also get these treatments after surgery to kill any remaining cancer cells, including cells that have spread to other parts of the body.",
+    "During lung cancer surgery, part of the lung with the tumor is removed. Simple procedures remove just a small section of lung. More complicated surgeries remove larger sections or even the entire lung. In some cases, nearby structures are also removed.",
+    "There are different approaches to lung cancer surgery.",
+    "One method is open surgery. This is the traditional approach. Surgeons perform the procedure through a four- to eight-inch incision between the ribs.",
+    "Minimally invasive surgery is the other main approach. These procedures require several smaller incisions, typically between ¼ and ½ inch. Minimally invasive surgery is usually less painful and has a shorter recovery time than open surgery. The two primary methods:",
+    "Video-assisted thoracic surgery (VATS): VATS uses a small camera and instruments that are inserted into the chest cavity. VATS is typically performed on patients with small, early-stage lung cancers.",
+    "Robotic-assisted Surgery: This technique uses robotic arms remotely controlled by the surgeon. Compared to VATS, it can offer better images of the surgical site. The surgical instruments also have more dexterity. These features enable procedures that are more complex than possible with VATS.",
+    "The most common types of lung cancer surgery are below, starting with the simplest surgery that removes the least amount of lung tissue.",
+    "During a wedge resection, the tumor and a wedge-shaped piece of the lung that includes the tumor is removed.",
+    "Wedge resections are typically used to cure the cancer. They are a good option for patients with small, early-stage tumors. They are also performed on patients who have limited lung capacity and can’t tolerate losing a larger section of the lung.",
+    "Wedge resections are performed under general anesthesia. In most cases, doctors can use a minimally invasive technique that requires only a few small incisions. The procedure usually takes around two hours. Patients stay one to two nights in the hospital.",
+    "Segmentectomy involves removing a segment, or part, of the lobe where the cancer is located. This segment is larger than the section of lung taken during a wedge resection. These procedures are generally used to cure the cancer.",
+    "Like the wedge resection, a segmentectomy is usually performed on patients who have limited lung capacity and can’t tolerate losing a large section of the lung. This procedure is also a good option for patients with early-stage tumors generally measuring less than two centimeters.",
+    "Patients undergoing a segmentectomy are put under general anesthesia. Most surgeries use minimally invasive techniques that only need a few small incisions. The procedure usually lasts four to six hours. Patients typically spend two to three nights in the hospital after a segmentectomy.",
+    "In a lobectomy, surgeons remove the lung lobe where the tumor is located. This is the standard procedure for patients whose cancer has advanced past the earliest stages. It is usually meant to help cure the cancer.",
+    "Lobectomies are performed under general anesthesia. In most cases, doctors can use minimally invasive techniques that only require a few small incisions. Based on the extent of the cancer, though, doctors may need to perform an open surgery.",
+    "Lobectomies usually last four to six hours. Patients typically stay two to five nights in the hospital, though two to three nights is the target stay.",
+    "The sleeve lobectomy is a more complex form of lobectomy. It is usually part of a plan to cure the cancer.",
+    "Sleeve lobectomies are typically used when the tumor is in a more central part of the lung. This location places them near key structures like the pulmonary artery, which carries blood from the heart to the lungs, or the central bronchus, which moves air in and out of the lungs.",
+    "During the surgery, doctors remove the lobe with the tumor, along with part of the bronchus. The bronchus is then connected to the remaining lobes.",
+    "A sleeve lobectomy may not always be possible. When it is an option, it is preferred over a pneumonectomy (complete removal of the lung) since it preserves more functioning lung tissue.",
+    "Patients getting a sleeve lobectomy are put under general anesthesia. Most procedures are performed as open surgeries. Select cases may be done with minimally invasive techniques.",
+    "The full surgery usually lasts five to six hours. Patients usually stay in the hospital for three to five nights.",
+    "Pneumonectomy involves removing the entire lung. This surgery is rarely performed. It is used only when the tumor’s location rules out other surgeries.",
+    "Pneumonectomies are performed under general anesthesia. The procedure requires an open surgery most of the time. In select cases, minimally invasive surgery is possible.",
+    "Pneumonectomies usually take five to six hours. Patients typically spend four to five nights in the hospital.",
+    "Patients who undergo a pneumonectomy need to care for their remaining lung for the rest of their lives after surgery. This includes taking steps to prevent lung infections and limit exposure to toxins like tobacco smoke.",
+    "Lymph node dissections are not a separate type of lung cancer surgery. Instead, they are procedures done at the same time as the surgeries above.",
+    "During a lymph node dissection, the surgeon will remove lymph nodes from the chest. Since cancer often spreads through these nodes, doctors will examine them under a microscope to find out if the lung cancer has moved outside the lungs. This will help doctors decide if you need more treatment after surgery, such as chemotherapy, radiation therapy or targeted therapy.",
+    "Surgery for lung cancer permanently impacts the patient’s lung function and, in some cases, their physical capabilities. Full recovery to the patient’s “new normal” usually takes two to three months, though most improvement occurs in the first few weeks after surgery. Despite these changes, patients typically don’t face major limitations after surgery.",
+    "After their procedure, patients should start walking as soon as they can safely do so. Research shows this activity can speed up recovery.",
+    "In most cases, there are few restrictions following surgery. Patients can perform daily tasks like cooking and cleaning as soon as they feel ready. Patients who undergo simpler procedures like a lobectomy can often carry out these tasks the day they leave the hospital. If the patient had a more complex surgery, such as a sleeve lobectomy or pneumonectomy, a few days of recovery is often needed first.",
+    "People who work a desk job can return to work as soon as they feel able. After simple surgeries this usually happens a few weeks following the procedure, though some people return to work just a few days later. If the patient had a more complicated surgery, it often takes a month before they can return to work.",
+    "Returning to a job that requires physical labor takes more time. For simple procedures, the return to work is usually a few weeks after the surgery. More complex surgeries often take two to three months of recovery time before patients can start working again. These patients should start with light-duty jobs when they return.",
+    "Lung cancer can often spread from the original tumor to multiple spots within the lung. Surgery may be a treatment option in these cases.",
+    "The patient’s case should be carefully reviewed by a team of doctors to determine if they are a good candidate for surgery. This decision is based on many factors, including the patient’s overall health, the condition of their lungs and the locations of the growths inside the lungs.",
+    "These patients usually undergo a wedge resection, segmentectomy or lobectomy. These operations can be challenging, so they are more likely to be done as open surgery.",
+    "Radiation therapy uses powerful, focused beams of energy to kill cancer cells. There are several different radiation therapy techniques. Doctors use these to accurately target a tumor while limiting damage to healthy tissue.",
+    "Radiation therapy can be part of a plan to cure lung cancer. It can also be used to manage advanced disease and help relieve symptoms.",
+    "Learn more about radiation therapy.",
+    "Intensity modulated radiation therapy (IMRT) focuses multiple radiation beams of different intensities directly on the tumor for the highest possible dose. Volumetric modulated arc therapy (VMAT) is a type of IMRT that utilizes a rotating treatment machine to deliver radiation at multiple angles.",
+    "IMRT is the most common type of radiation used to treat lung cancer. It can be part of a plan to cure the cancer in combination with other treatments. It is also used to control the growth of advanced cancers and help relieve symptoms.",
+    "IMRT patients with lung cancer typically get three to six weeks of treatment every Monday through Friday. Each session usually lasts less than 30 minutes.",
+    "If you are concerned about your symptoms, the best next step is to schedule an appointment with one of our physicians.",
+    "Proton therapy is similar to standard radiation treatments like IMRT, but it uses a different type of energy that may allow doctors to target tumors more accurately. This limits damage to nearby healthy tissue and allows for the delivery of a more powerful dose of radiation.",
+    "For lung cancer, proton therapy is typically part of a treatment plan to cure the disease.",
+    "Patients typically get three to six weeks of proton therapy. Sessions are held every Monday through Friday. Each treatment lasts around 30 minutes.",
+    "Learn more about proton therapy.",
+    "Stereotactic body radiation therapy (SBRT) uses dozens of tiny radiation beams delivered at different angles to accurately target tumors with a high dose of radiation.",
+    "This treatment can be used to cure the cancer or to help control symptoms in patients with advanced disease.",
+    "Patients typically get one to five sessions, all in consecutive days. In most cases, each session takes under 45 minutes.",
+    "Read more about SBRT.",
+    "3D conformal radiation therapy uses three-dimensional scans to determine the exact shape and size of the tumor. The radiation beams are shaped by tiny metal leaves that are arranged to fit the tumor dimensions. It is typically used on its own, to help manage symptoms in patients with advanced disease.",
+    "Patients usually get this treatment daily, Monday through Friday, for up to 10 days. Each session typically lasts less than 20 minutes.",
+    "Because the treatment is designed to relieve symptoms, it has minimal side effects.",
+    "Radiation therapy side effects often depend on the location of the tumor and the exact treatment the patient receives.",
+    "Short term side effects include:",
+    "Fatigue",
+    "Cough",
+    "Shortness of breath",
+    "Irritation or inflammation of lung tissue",
+    "Long term radiation therapy side effects:",
+    "Scarring of lung tissue",
+    "A narrowing of the esophagus, which can cause swallowing problems",
+    "Heart damage",
+    "Pain in the chest wall",
+    "Rib fractures",
+    "Doctors design radiation treatment plans to prevent or limit these problems and will recommend radiation only when it is the best treatment for the patient.",
+    "Patients should talk to their care team about any side effects they experience. These side effects can often be prevented or minimized with treatment.",
+    "Targeted therapy drugs are designed to stop or slow the growth or spread of cancer. This happens on a cellular level. Cancer cells need specific molecules (often in the form of proteins) to survive, multiply and spread. These molecules are usually made by the genes that cause cancer, as well as the cells themselves. Targeted therapies are designed to interfere with, or target, these molecules or the cancer-causing genes that create them.",
+    "Targeted therapy can be used with surgery or radiation therapy as part of a treatment plan to cure lung cancer.",
+    "Learn more about targeted therapy.",
+    "Lung cancer targeted therapy drugs can be taken as pills or given as injections or IV infusions. The frequency of treatments depends on the patient’s specific needs.",
+    "Side effects depend on the exact drug the patient is prescribed. Short-term side effects include:",
+    "Dry skin and rash",
+    "Changes to the fingernails and toenails",
+    "Fatigue",
+    "Diarrhea",
+    "Liver inflammation",
+    "Long-term side effects include:",
+    "Inflammation or infection of the skin around the nails",
+    "Lung inflammation",
+    "Cardiomyopathy. This is a rare side effect",
+    "In most cases, these side effects can be easily managed. Patients should talk to their care teams about any side effects they experience.",
+    "Read more about targeted therapy side effects.",
+    "Immune checkpoint inhibitors are a type of immunotherapy. They stop the immune system from turning off before cancer is completely eliminated. Patients may receive a single immunotherapy drug or multiple drugs in combination.",
+    "Immune checkpoint inhibitors can be used to help control the cancer. For patients whose cancer has metastasized, it can help manage symptoms and, in some patients, lead to remission.",
+    "Learn more about imune checkpoint inhibitors.",
+    "Immune checkpoint inhibitors are given by IV. Sessions usually last less than an hour.",
+    "Patients getting immune checkpoint inhibitors before surgery usually get three to four infusions, often with chemotherapy.",
+    "Patients treated after surgery typically get one infusion every three to four weeks for about a year.",
+    "If the cancer has spread to distant parts of the body patients generally get treatment for about two years.",
+    "Short-term side effects for lung cancer immune checkpoint inhibitors include fatigue. Long-term side effects can include adverse reactions of the immune system, such as hypothroidism.",
+    "Patients should talk to their care teams about any serious side effects they may encounter and any side effects they are experiencing.",
+    "Read about immune checkpoint inhibotor side effects.",
+    "Chemotherapy drugs kill cancer cells, control their growth or relieve disease-related symptoms. Chemotherapy may involve a single drug or a combination of two or more drugs, depending on the type of cancer and how fast it is growing.",
+    "In many cases, chemotherapy is part of a treatment plan to cure the cancer. For patients with metastatic disease, the treatment can help relieve symptoms and may lead to remission.",
+    "Learn more about chemotherapy.",
+    "Chemotherapy is usually delivered by IV. The number of treatments varies depending on the patient’s specific condition.",
+    "Short-term side effects include:",
+    "Nausea and vomiting",
+    "Fatigue",
+    "Low blood counts",
+    "Mouth sores",
+    "Long-term side effects of chemotherapy include:",
+    "Neuropathy, which causes pain, tingling or numbness in different parts of the body",
+    "Damage to ear tissue, which can cause hearing and balance problems",
+    "Kidney damage",
+    "These side effects can typically be managed with medications and other interventions. Patients should talk to their care team about any side effects they experience.",
+    "Learn about the side efffects of chemotherapy.",
+    "Jennifer Cofer, Dr.P.H., executive director of EndTobacco™, and Mark Moreno, senior vice president for Governmental Relations and Health Policy at UT MD Anderson, share tips for talking to children and teens about these dangers.",
+    "UT MD Anderson lung cancer patients can get treatment at the following locations.",
+    "Thoracic Center",
+    "Proton Therapy Center",
+    "UT MD Anderson League City",
+    "UT MD Anderson in Sugar Land",
+    "UT MD Anderson The Woodlands",
+    "UT MD Anderson West Houston",
+    "UT MD Anderson patients have access to clinical trials offering promising new treatments that cannot be found anywhere else.",
+    "Get information on patient appointments, insurance and billing, and directions to and around UT MD Anderson.",
+    "UT MD Anderson has licensed social workers to help patients and their loved ones cope with cancer.",
+    "Talk to someone who shares your cancer diagnosis and be matched with a survivor.",
+    "Many cancers can be prevented with lifestyle changes and regular screening.",
+    "Our patients depend on blood and platelet donations.",
+    "Show your support for our mission through branded merchandise.",
+    ".st0-desktop { fill: #000; }Explore what your support makes possible",
+    "Explore",
+    "Patients & Family",
+    "Prevention & Screening",
+    "Donors & Volunteers",
+    "For Physicians",
+    "Research",
+    "Education & Training",
+    "Clinical Trials",
+    "Languages",
+    "About",
+    "About UT MD Anderson",
+    "Careers",
+    "Blog",
+    "Newsroom",
+    "Editorial Standards",
+    "For Employees",
+    "Merchandise",
+    "Title IX Reporting (Sexual Misconduct)",
+    "Price Transparency",
+    "Finding Your Way",
+    "Our Doctors",
+    "Locations",
+    "Directions",
+    "Sitemap",
+    "DIGITAL ACCESSIBILITY",
+    "Accessibility Policy",
+    "GET IN TOUCH",
+    "Call 1-866-548-0405",
+    "Ask a question",
+    "Stay Connected",
+    "PreviousNext",
+    "Cancerwise Podcast",
+    "PreviousNext",
+    "Website Privacy Policy",
+    "Legal Statement & Policies",
+    "Reports to the State",
+    "Emergency Alert Information",
+    "State of Texas Links",
+    "Our Cancer Network",
+    "Vendors & Suppliers",
+    "© 2026 The University of Texas MD Anderson Cancer Center. All rights reserved."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "MyChart",
+      "href": "https://my.mdanderson.org/MyChart/Home/"
+    },
+    {
+      "label": "Request an Appointment",
+      "href": null
+    },
+    {
+      "label": "Donate Today",
+      "href": "https://gifts.mdanderson.org/Default.aspx?tsid=37435"
+    },
+    {
+      "label": "Clinical Trials",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+      "label": "Locations",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+      "label": "Careers",
+      "href": "https://jobs.mdanderson.org/"
+    },
+    {
+      "label": "Contact Us",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us.html"
+    },
+    {
+      "label": "Our Doctors",
+      "href": "https://faculty.mdanderson.org/"
+    },
+    {
+      "label": "Languages",
+      "href": null
+    },
+    {
+      "label": "Patients & Family",
+      "href": "https://www.mdanderson.org/patients-family.html"
+    },
+    {
+      "label": "Prevention & Screening",
+      "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+      "label": "Donors & Volunteers",
+      "href": "https://www.mdanderson.org/donors-volunteers.html"
+    },
+    {
+      "label": "For Physicians",
+      "href": "https://www.mdanderson.org/for-physicians.html"
+    },
+    {
+      "label": "Research",
+      "href": "https://www.mdanderson.org/research.html"
+    },
+    {
+      "label": "Education & Training",
+      "href": "https://www.mdanderson.org/education-training.html"
+    },
+    {
+      "label": "Request an appointment online.",
+      "href": "/about-md-anderson/contact-us/askmdanderson/appointments.html"
+    },
+    {
+      "label": "Diagnosis & Treatment",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment.html"
+    },
+    {
+      "label": "Cancer Types",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/cancer-types.html"
+    },
+    {
+      "label": "Lung Cancer",
+      "href": "https://www.mdanderson.org/cancer-types/lung-cancer.html"
+    },
+    {
+      "label": "Lung Cancer",
+      "href": "https://www.mdanderson.org/cancer-types/lung-cancer.html"
+    },
+    {
+      "label": "Lung Cancer Symptoms",
+      "href": "https://www.mdanderson.org/cancer-types/lung-cancer/lung-cancer-symptoms.html"
+    },
+    {
+      "label": "Lung Cancer Diagnosis",
+      "href": "https://www.mdanderson.org/cancer-types/lung-cancer/lung-cancer-diagnosis.html"
+    },
+    {
+      "label": "Lung Cancer Stages",
+      "href": "https://www.mdanderson.org/cancer-types/lung-cancer/lung-cancer-stages.html"
+    },
+    {
+      "label": "Lung Cancer Treatment",
+      "href": "https://www.mdanderson.org/cancer-types/lung-cancer/lung-cancer-treatment.html"
+    },
+    {
+      "label": "Lung Cancer Research",
+      "href": "https://www.mdanderson.org/cancer-types/lung-cancer/lung-cancer-research.html"
+    },
+    {
+      "label": "View Clinical Trials",
+      "href": "https://www.mdanderson.org/patients-family/search-results.html?searchType=clinical%20trials&q=Lung%20Cancer"
+    },
+    {
+      "label": "Julianna Bronk, M.D., Ph.D.",
+      "href": "http://faculty.mdanderson.org/profiles/julianna_bronk.html"
+    },
+    {
+      "label": "Kyle Mitchell, M.D.",
+      "href": "http://faculty.mdanderson.org/profiles/kyle_mitchell.html"
+    },
+    {
+      "label": "Eric Singhi, M.D.",
+      "href": "http://faculty.mdanderson.org/profiles/eric_singhi.html"
+    },
+    {
+      "label": "clinical trials",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+      "label": "radiation therapy",
+      "href": "/treatment-options/radiation-therapy.html"
+    },
+    {
+      "label": "Schedule an appointment at UT MD Anderson",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/appointments.html"
+    },
+    {
+      "label": "proton therapy",
+      "href": "/treatment-options/proton-therapy.html"
+    },
+    {
+      "label": "SBRT",
+      "href": "/treatment-options/stereotactic-body-radiation-therapy.html"
+    },
+    {
+      "label": "targeted therapy",
+      "href": "/treatment-options/targeted-therapy.html"
+    },
+    {
+      "label": "targeted therapy side effects",
+      "href": "/patients-family/diagnosis-treatment/emotional-physical-effects/targeted-therapy-side-effects.html"
+    },
+    {
+      "label": "immunotherapy",
+      "href": "/treatment-options/immunotherapy.html"
+    },
+    {
+      "label": "imune checkpoint inhibitors",
+      "href": "/treatment-options/immune-checkpoint-inhibitors.html"
+    },
+    {
+      "label": "immune checkpoint inhibotor side effects",
+      "href": "/patients-family/diagnosis-treatment/emotional-physical-effects/immune-checkpoint-inhibitor-side-effects.html"
+    },
+    {
+      "label": "chemotherapy",
+      "href": "/treatment-options/chemotherapy.html"
+    },
+    {
+      "label": "side efffects of chemotherapy",
+      "href": "/patients-family/diagnosis-treatment/emotional-physical-effects/chemotherapy-treatment-side-effects.html"
+    },
+    {
+      "label": "View podcast episode page",
+      "href": null
+    },
+    {
+      "label": "Read transcript",
+      "href": "https://support.doctorpodcasting.com/client/texacc/item/67119-how-to-talk-to-your-children-about-vaping?print=yes"
+    },
+    {
+      "label": "Thoracic Center",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/thoracic-center.html"
+    },
+    {
+      "label": "Proton Therapy Center",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center.html"
+    },
+    {
+      "label": "UT MD Anderson League City",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations/league-city.html"
+    },
+    {
+      "label": "UT MD Anderson in Sugar Land",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations/sugar-land.html"
+    },
+    {
+      "label": "UT MD Anderson The Woodlands",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations/the-woodlands.html"
+    },
+    {
+      "label": "UT MD Anderson West Houston",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations/west-houston.html"
+    },
+    {
+      "label": "View podcast episode page",
+      "href": "https://mdanderson.org/podcast?segitem=67587"
+    },
+    {
+      "label": "Read transcript",
+      "href": "https://support.doctorpodcasting.com/client/texacc/item/67587-lung-cancer-in-young-adults-a-survivor-s-story?print=yes"
+    },
+    {
+      "label": "View podcast episode page",
+      "href": "https://mdanderson.org/podcast?segitem=65218"
+    },
+    {
+      "label": "Read transcript",
+      "href": "https://support.doctorpodcasting.com/client/texacc/item/65218-when-lung-cancer-research-gets-personal?print=yes"
+    },
+    {
+      "label": "View Clinical Trials",
+      "href": "https://www.mdanderson.org/patients-family/search-results.html?searchType=clinical%20trials&q=Lung%20Cancer"
+    },
+    {
+      "label": "View new patient resources",
+      "href": "https://www.mdanderson.org/patients-family/becoming-our-patient.html"
+    },
+    {
+      "label": "Visit the social work page",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/social-work.html"
+    },
+    {
+      "label": "Ommaya reservoir and its role in cancer care",
+      "href": "/cancerwise/ommaya-reservoir-and-its-role-in-cancer-care.h00-159694389.html"
+    },
+    {
+      "label": "Read more",
+      "href": "/cancerwise/ommaya-reservoir-and-its-role-in-cancer-care.h00-159694389.html"
+    },
+    {
+      "label": "What is a lobectomy?",
+      "href": "/cancerwise/what-is-a-lobectomy.h00-159774078.html"
+    },
+    {
+      "label": "Read more",
+      "href": "/cancerwise/what-is-a-lobectomy.h00-159774078.html"
+    },
+    {
+      "label": "Connect with a cancer survivor",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/mycancerconnection.html"
+    },
+    {
+      "label": "View health and screening resources",
+      "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+      "label": "Donate",
+      "href": "https://gifts.mdanderson.org/Default.aspx?tsid=37435"
+    },
+    {
+      "label": "Make an appointment",
+      "href": "https://www.mdandersonbloodbank.org/"
+    },
+    {
+      "label": "View products",
+      "href": "https://shop.mdanderson.org"
+    },
+    {
+      "label": ".st0-desktop { fill: #000; }Explore what your support makes possible",
+      "href": "https://onlypossiblehere.mdanderson.org"
+    },
+    {
+      "label": "Patients & Family",
+      "href": "https://www.mdanderson.org/patients-family.html"
+    },
+    {
+      "label": "Prevention & Screening",
+      "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+      "label": "Donors & Volunteers",
+      "href": "https://www.mdanderson.org/donors-volunteers.html"
+    },
+    {
+      "label": "For Physicians",
+      "href": "https://www.mdanderson.org/for-physicians.html"
+    },
+    {
+      "label": "Research",
+      "href": "https://www.mdanderson.org/research.html"
+    },
+    {
+      "label": "Education & Training",
+      "href": "https://www.mdanderson.org/education-training.html"
+    },
+    {
+      "label": "Clinical Trials",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+      "label": "Languages",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html"
+    },
+    {
+      "label": "About UT MD Anderson",
+      "href": "https://www.mdanderson.org/about-md-anderson.html"
+    },
+    {
+      "label": "Careers",
+      "href": "https://jobs.mdanderson.org/"
+    },
+    {
+      "label": "Blog",
+      "href": "https://www.mdanderson.org/cancerwise.html"
+    },
+    {
+      "label": "Newsroom",
+      "href": "https://www.mdanderson.org/newsroom.html"
+    },
+    {
+      "label": "Editorial Standards",
+      "href": "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html"
+    },
+    {
+      "label": "For Employees",
+      "href": "https://www.mdanderson.org/about-md-anderson/employee-resources.html"
+    },
+    {
+      "label": "Merchandise",
+      "href": "https://shop.mdanderson.org/"
+    },
+    {
+      "label": "Title IX Reporting (Sexual Misconduct)",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html"
+    },
+    {
+      "label": "Price Transparency",
+      "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html"
+    },
+    {
+      "label": "Our Doctors",
+      "href": "https://faculty.mdanderson.org/"
+    },
+    {
+      "label": "Locations",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+      "label": "Directions",
+      "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html"
+    },
+    {
+      "label": "Sitemap",
+      "href": "https://www.mdanderson.org/patients-family/html-sitemap.html"
+    },
+    {
+      "label": "Accessibility Policy",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html"
+    },
+    {
+      "label": "Call 1-866-548-0405",
+      "href": "tel:+18665480405"
+    },
+    {
+      "label": "Ask a question",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html"
+    },
+    {
+      "label": "Website Privacy Policy",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html"
+    },
+    {
+      "label": "Legal Statement & Policies",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html"
+    },
+    {
+      "label": "Reports to the State",
+      "href": "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html"
+    },
+    {
+      "label": "Emergency Alert Information",
+      "href": "https://www3.mdanderson.org/emergencyalert/"
+    },
+    {
+      "label": "State of Texas Links",
+      "href": "https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html"
+    },
+    {
+      "label": "Our Cancer Network",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html"
+    },
+    {
+      "label": "Vendors & Suppliers",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html"
+    }
+  ],
+  "links": [
+    "https://www.mdanderson.org/cancer-types/lung-cancer/lung-cancer-treatment.html#skip",
+    "https://my.mdanderson.org/MyChart/Home/",
+    "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/appointments.html",
+    "https://my.mdanderson.org/RequestAppointment",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/returning-patients.html",
+    "https://my.mdanderson.org/physicianreferral",
+    "https://gifts.mdanderson.org/Default.aspx?tsid=37435",
+    "https://www.mdanderson.org/",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations.html",
+    "https://jobs.mdanderson.org/",
+    "https://www.mdanderson.org/about-md-anderson/contact-us.html",
+    "https://faculty.mdanderson.org/",
+    "https://www.mdanderson.org/es/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/ar/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/zh/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/tr/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/cancer-types/lung-cancer/lung-cancer-treatment.html#",
+    "https://www.mdanderson.org/patients-family.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/why-md-anderson.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/while-youre-here.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/international-center.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/services-amenities.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/insurance-billing.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/second-opinion-appointments.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/cancer-types.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/a-new-diagnosis.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/treatment-options.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/emotional-physical-effects.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/caregiver-roles-challenges.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/supporting-children-teens.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/taking-care-of-yourself.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/Helping-mdanderson-patient.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/dealing-with-loss.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/followup-care-after-cancer-treatment.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/long-term-effects.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/social-emotional-impacts.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/legal-financial-impacts.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/survivorship-week.html",
+    "https://www.mdanderson.org/prevention-screening.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/tobacco-control-at-md-anderson.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/diet.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/body-weight.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/physical-activity.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/skin-safety.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/hpv.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/hepatitis.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/alcohol.html",
+    "https://www.mdanderson.org/prevention-screening/family-history.html",
+    "https://www.mdanderson.org/prevention-screening/family-history/genetic-testing.html",
+    "https://www.mdanderson.org/prevention-screening/family-history/hereditary-cancer-syndromes.html",
+    "https://www.mdanderson.org/prevention-screening/family-history/faqs.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/breast-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/cervical-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/colorectal-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/endometrial-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/liver-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/lung-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/mobile-mammography.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/ovarian-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/prostate-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/skin-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/women-screening-exams.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/men-screening-exams.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/cancer-prevention-center.html",
+    "https://www.mdanderson.org/donors-volunteers.html",
+    "https://www.mdanderson.org/donors-volunteers/donate.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/raise-money.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/honor-loved-ones.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/planned-giving.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/endowments.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/md-anderson-caring-fund.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/matching-gifts.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/foundation-and-corporation-relations.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/why-volunteer.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/on-site-volunteers.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/endowments.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/patient-experience.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/teen-volunteer-leadership-program.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/childrens-cancer-hospital-councils.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/give-blood.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/shop-md-anderson.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/childrens-art-project.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/donate-goods-or-services.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/attend-events.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/cord-blood-bank.html",
+    "https://www.mdanderson.org/donors-volunteers/corporate-alliances.html",
+    "https://www.mdanderson.org/donors-volunteers/corporate-alliances/current-alliances.html",
+    "https://onlypossiblehere.mdanderson.org/",
+    "https://www.mdanderson.org/for-physicians.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/health-care-provider-resource-center.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/referring-provider-team.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/insurance-information.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/international-referrals.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/mymdanderson-for-physicians.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/second-opinion-pathology.html",
+    "https://www.mdanderson.org/for-physicians/clinical-trials.html",
+    "https://www.mdanderson.org/for-physicians/clinical-tools-resources.html",
+    "https://www.mdanderson.org/for-physicians/clinical-tools-resources/clinical-calculators.html",
+    "https://www.mdanderson.org/for-physicians/clinical-tools-resources/clinical-practice-algorithms.html",
+    "https://www.mdanderson.org/research.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/labs.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/programs-centers.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/institutes.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/spores.html",
+    "https://www.mdanderson.org/research/research-areas.html",
+    "https://www.mdanderson.org/research/research-areas/basic-science.html",
+    "https://www.mdanderson.org/research/research-areas/translational-research.html",
+    "https://www.mdanderson.org/research/research-areas/clinical-research.html",
+    "https://www.mdanderson.org/research/research-areas/prevention-personalized-risk-assessment.html",
+    "https://www.mdanderson.org/research/research-resources.html",
+    "https://www.mdanderson.org/research/research-resources/excellence-in-science.html",
+    "https://www.mdanderson.org/research/research-resources/core-facilities.html",
+    "https://www.mdanderson.org/research/research-resources/conferences-seminars.html",
+    "https://www.mdanderson.org/research/research-resources/why-research.html",
+    "https://www.mdanderson.org/research/research-resources/stride.html",
+    "https://www.mdanderson.org/research/research-resources/nci-designated-cancer-center.html",
+    "https://www.mdanderson.org/research/research-resources/data-resources.html",
+    "https://www.mdanderson.org/education-training.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools/school-of-health-professions.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools/graduate-school-of-biomedical-sciences.html",
+    "https://www.mdanderson.org/education-training/education-resources.html",
+    "https://www.mdanderson.org/education-training/education-resources/alumni-relations.html",
+    "https://www.mdanderson.org/education-training/education-resources/education-design-services.html",
+    "https://www.mdanderson.org/education-training/education-resources/awards-recognitions.html",
+    "https://www.mdanderson.org/education-training/education-resources/academic-mentoring-council.html",
+    "https://www.mdanderson.org/education-training/education-resources/why-train-at-md-anderson-houston.html",
+    "https://www.mdanderson.org/education-training/research-training.html",
+    "https://www.mdanderson.org/education-training/research-training/early-career-pathway-programs.html",
+    "https://www.mdanderson.org/education-training/research-training/predoctoral-training.html",
+    "https://www.mdanderson.org/education-training/research-training/postdoctoral-training.html",
+    "https://www.mdanderson.org/education-training/research-training/mentored-faculty-programs.html",
+    "https://www.mdanderson.org/education-training/research-training/career-development.html",
+    "https://www.mdanderson.org/education-training/clinical-training.html",
+    "https://www.mdanderson.org/education-training/clinical-training/graduate-medical-education.html",
+    "https://www.mdanderson.org/education-training/clinical-training/clinical-education-for-non-physicians.html",
+    "https://www.mdanderson.org/education-training/clinical-training/nursing-education.html",
+    "https://www.mdanderson.org/education-training/clinical-training/certificate-programs-review-courses.html",
+    "https://www.mdanderson.org/education-training/clinical-training/simulation-center.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/continuing-professional-education-conferences.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/administrative-internships-fellowships.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/cancer-survivorship-program.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/leadership-institute.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/patient-home-visits.html",
+    "https://www.mdanderson.org/education-training/outreach-programs.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/project-echo.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/observer-programs.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/comparative-effectiveness-research-training.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/faculty-speakers-bureau.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools/school-of-health-professions/prospective-students.html",
+    "https://www.mdanderson.org/education-training/clinical-training/graduate-medical-education/residencies-fellowships.html",
+    "tel:+18665480405",
+    "https://www.mdanderson.org/cancer-types/lung-cancer.html",
+    "https://www.mdanderson.org/cancer-types/lung-cancer/lung-cancer-facts.html",
+    "https://www.mdanderson.org/cancer-types/lung-cancer/lung-cancer-symptoms.html",
+    "https://www.mdanderson.org/cancer-types/lung-cancer/lung-cancer-diagnosis.html",
+    "https://www.mdanderson.org/cancer-types/lung-cancer/lung-cancer-stages.html",
+    "https://www.mdanderson.org/cancer-types/lung-cancer/lung-cancer-treatment.html",
+    "https://www.mdanderson.org/cancer-types/lung-cancer/lung-cancer-research.html",
+    "https://www.mdanderson.org/patients-family/search-results.html?searchType=clinical%20trials&q=Lung%20Cancer",
+    "mailto:?subject=UT%20MD%20Anderson%20:%20Lung%20Cancer%20Treatment&body=I%20thought%20you%27d%20like%20to%20read%20this%3A%20https%3A%2F%2Fwww.mdanderson.org%2Fcancer-types%2Flung-cancer%2Flung-cancer-treatment.html",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.mdanderson.org%2Fcancer-types%2Flung-cancer%2Flung-cancer-treatment.html",
+    "https://x.com/share?url=https%3A%2F%2Fwww.mdanderson.org%2Fcancer-types%2Flung-cancer%2Flung-cancer-treatment.html",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.mdanderson.org%2Fcancer-types%2Flung-cancer%2Flung-cancer-treatment.html",
+    "https://bsky.app/intent/compose?text=https%3A%2F%2Fwww.mdanderson.org%2Fcancer-types%2Flung-cancer%2Flung-cancer-treatment.html",
+    "https://www.threads.com/intent/post?text=https%3A%2F%2Fwww.mdanderson.org%2Fcancer-types%2Flung-cancer%2Flung-cancer-treatment.html",
+    "http://faculty.mdanderson.org/profiles/julianna_bronk.html",
+    "http://faculty.mdanderson.org/profiles/kyle_mitchell.html",
+    "http://faculty.mdanderson.org/profiles/eric_singhi.html",
+    "https://www.mdanderson.org/treatment-options/radiation-therapy.html",
+    "https://www.mdanderson.org/treatment-options/proton-therapy.html",
+    "https://www.mdanderson.org/treatment-options/stereotactic-body-radiation-therapy.html",
+    "https://www.mdanderson.org/treatment-options/targeted-therapy.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/emotional-physical-effects/targeted-therapy-side-effects.html",
+    "https://www.mdanderson.org/treatment-options/immunotherapy.html",
+    "https://www.mdanderson.org/treatment-options/immune-checkpoint-inhibitors.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/emotional-physical-effects/immune-checkpoint-inhibitor-side-effects.html",
+    "https://www.mdanderson.org/treatment-options/chemotherapy.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/emotional-physical-effects/chemotherapy-treatment-side-effects.html",
+    "https://support.doctorpodcasting.com/client/texacc/item/67119-how-to-talk-to-your-children-about-vaping?print=yes",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/thoracic-center.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations/league-city.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations/sugar-land.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations/the-woodlands.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations/west-houston.html",
+    "https://mdanderson.org/podcast?segitem=67587",
+    "https://support.doctorpodcasting.com/client/texacc/item/67587-lung-cancer-in-young-adults-a-survivor-s-story?print=yes",
+    "https://mdanderson.org/podcast?segitem=65218",
+    "https://support.doctorpodcasting.com/client/texacc/item/65218-when-lung-cancer-research-gets-personal?print=yes",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/social-work.html",
+    "https://www.mdanderson.org/cancerwise/ommaya-reservoir-and-its-role-in-cancer-care.h00-159694389.html",
+    "https://www.mdanderson.org/cancerwise/what-is-a-lobectomy.h00-159774078.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/mycancerconnection.html",
+    "https://www.mdandersonbloodbank.org/",
+    "https://shop.mdanderson.org/",
+    "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html",
+    "https://www.mdanderson.org/about-md-anderson.html",
+    "https://www.mdanderson.org/cancerwise.html",
+    "https://www.mdanderson.org/newsroom.html",
+    "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html",
+    "https://www.mdanderson.org/about-md-anderson/employee-resources.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html",
+    "https://www.mdanderson.org/patients-family/html-sitemap.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html",
+    "https://www.levelaccess.com/MDAnderson",
+    "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html",
+    "https://facebook.com/MDAnderson",
+    "https://x.com/UTMDAnderson",
+    "https://youtube.com/mdandersonorg",
+    "https://instagram.com/mdandersoncancercenter",
+    "https://linkedin.com/company/mdandersoncancercenter",
+    "http://bsky.app/profile/mdanderson.bsky.social",
+    "https://threads.com/@mdandersoncancercenter",
+    "https://podcasts.apple.com/us/podcast/cancerwise-podcast/id1751785346",
+    "https://open.spotify.com/show/28rgC5nO7OpLhnPlNylNem",
+    "http://www.youtube.com/playlist?list=PLKscGuVrfI9LvQrf5At-R7TewdfY4OeOP",
+    "http://www.pandora.com/podcast/cancerwise-podcast/PC:1001088873",
+    "http://www.iheart.com/podcast/269-cancerwise-podcast-185103717/",
+    "https://support.doctorpodcasting.com/podcastfeed/335",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html",
+    "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html",
+    "https://www3.mdanderson.org/emergencyalert/",
+    "https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html",
+    "https://my.mdanderson.org/"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/xmda-logo.png.pagespeed.ic.jLVBCg-7dN.webp",
+        "alt": "The University of Texas MD Anderson Cancer Center",
+        "w": 1527,
+        "h": 639
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/focused-on-health/2015/WEB-Tanya-Moseley-3D-mammo.jpg.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 108,
+        "h": 61
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/hero-images/Integrated%20Media/oph-web-promo-image-tagline.png.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 216,
+        "h": 122
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/l2-l3-hero/sujit_prabhu_physicians_nav.jpg.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 216,
+        "h": 122
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/moonshots/researchplatforms/Clinical-Trial/CLL_Jan_Burger_175_resized.jpg.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 216,
+        "h": 122
+      },
+      {
+        "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/podcast/xCWPodcast_Wave_Hero_2400x564.jpg.pagespeed.ic.qj8ogjaHXl.webp",
+        "alt": "Cancerwise Podcast",
+        "w": 2800,
+        "h": 564
+      },
+      {
+        "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/podcast/xCancerwise-Podcast.png.pagespeed.ic.TdZ4dZ34O6.webp",
+        "alt": "Cancerwise Podcast",
+        "w": 748,
+        "h": 892
+      },
+      {
+        "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/podcast/xCWPodcast_Wave_Hero_2400x564.jpg.pagespeed.ic.qj8ogjaHXl.webp",
+        "alt": "Cancerwise Podcast",
+        "w": 2800,
+        "h": 564
+      },
+      {
+        "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/podcast/xPodcast_CWandSoundwave_Combo_800x418.png.pagespeed.ic.jrS6Ntr3h_.webp",
+        "alt": "Cancerwise Podcast",
+        "w": 778,
+        "h": 191
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/cancerwise/2024/01/ommaya-reservoir-and-its-role-in-cancer-care/jcr:content/blog/adaptiveimage.resize.450.0.high.jpg",
+        "alt": "",
+        "w": 450,
+        "h": 239
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/cancerwise/2025/02/what-is-a-lobectomy/jcr:content/blog/adaptiveimage.resize.450.0.high.jpg",
+        "alt": "",
+        "w": 450,
+        "h": 243
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/jcr:content/footer/xdesktoplogo.resize.png.pagespeed.ic.wmDIh2S-LF.webp",
+        "alt": "UT MD Anderson logo",
+        "w": 1280,
+        "h": 535
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp",
+        "alt": "UT MD Anderson logo",
+        "w": 837,
+        "h": 95
+      },
+      {
+        "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/eA_Icon_Black.svg",
+        "alt": "MD Anderson works with Level Access to ensure our website is accessible and functional for all users. Free assistive technology is provided for people with physical disabilities. To learn more or to download the assistive technology tool, visit https://www.levelaccess.com/MDAnderson",
+        "w": 300,
+        "h": 113
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp",
+        "alt": "UT MD Anderson logo",
+        "w": 837,
+        "h": 95
+      }
+    ],
+    "allImgCount": 15,
+    "cssBackgrounds": [],
+    "modals": [
+      "Close Share this article Via social media: Or copy the link: Copy to clipboard Copy",
+      "Close Share this article Via social media: Or copy the link: Copy to clipboard Copy"
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {},
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 49,
+    "mainTextLen": 22975,
+    "realImageCount": 15,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "screenshot": "assets/screenshots/cancer-types-lung-cancer-lung-cancer-treatment-html.png"
+}

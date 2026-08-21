@@ -1,0 +1,856 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-08-21T10:19:35.780Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "newsroom-html",
+  "url": "https://www.mdanderson.org/newsroom.html",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-08-21T10:19:35.780Z",
+  "finalUrl": "https://www.mdanderson.org/newsroom.html",
+  "title": "UT MD Anderson Newsroom | UT MD Anderson",
+  "description": "Get the latest news from UT MD Anderson. The UT MD Anderson Newsroom provides reporters and the general public with information about the latest studies and findings from our cancer researchers.",
+  "og": {
+    "title": "Newsroom",
+    "description": "Get the latest news from UT MD Anderson. The UT MD Anderson Newsroom provides reporters and the general public with information about the latest studies and findings from our cancer researchers.",
+    "image": "https://www.mdanderson.org/images/newsroom/science/20191106_TRACTION_Lab_Portraits_046.jpg",
+    "type": "Website"
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Newsroom"
+    },
+    {
+      "tag": "h3",
+      "text": "UT MD Anderson ranks No. 1 in the nation for cancer care for 12th..."
+    },
+    {
+      "tag": "h3",
+      "text": "UT MD Anderson joins global consortium committed to eliminating cervical cancer"
+    },
+    {
+      "tag": "h3",
+      "text": "ASCO: UT MD Anderson faculty honored as 2026 Special Award recipients"
+    },
+    {
+      "tag": "h3",
+      "text": "UT MD Anderson names Albert Koong, M.D., Ph.D., chief scientific..."
+    },
+    {
+      "tag": "h3",
+      "text": "CPRIT awards UT MD Anderson over $19 million for cancer research and faculty recruitment"
+    },
+    {
+      "tag": "h3",
+      "text": "Novel CAR T cell therapy developed by UT MD Anderson researchers moves into clinical studies"
+    },
+    {
+      "tag": "h3",
+      "text": "UT MD Anderson appoints Kim Slusser as chief nurse executive"
+    },
+    {
+      "tag": "h3",
+      "text": "UT MD Anderson establishes Center for Cellular Language Intelligence with $10 million gift from Peggy and Carl Sewell"
+    },
+    {
+      "tag": "h3",
+      "text": "AACR: Jennifer Wargo, M.D., elected Fellow of the AACR Academy"
+    },
+    {
+      "tag": "h3",
+      "text": "AACR: Immunotherapy pioneer James P. Allison, Ph.D., honored with Award for Lifetime Achievement in Cancer Research"
+    },
+    {
+      "tag": "h2",
+      "text": "Help #EndCancer"
+    },
+    {
+      "tag": "h3",
+      "text": "Give Now"
+    },
+    {
+      "tag": "h3",
+      "text": "Donate Blood"
+    },
+    {
+      "tag": "h3",
+      "text": "Shop UT MD Anderson"
+    }
+  ],
+  "body": [
+    "Newsroom Research Newsroom Contact a Media Specialist B-roll Footage Embargo Policy Media Visitation Policy Request to Film on Campus Style Guide Philanthropy Newsroom Archived News",
+    "Research Newsroom",
+    "Contact a Media Specialist",
+    "B-roll Footage",
+    "Embargo Policy",
+    "Media Visitation Policy",
+    "Request to Film on Campus",
+    "Style Guide",
+    "Philanthropy Newsroom",
+    "Archived News",
+    "August 03, 2026",
+    "June 10, 2026",
+    "May 27, 2026",
+    "May 21, 2026",
+    "May 20, 2026",
+    "May 15, 2026",
+    "April 29, 2026",
+    "April 28, 2026",
+    "The University of Texas MD Anderson Cancer Center today announced a $10 million gift from Peggy and Carl Sewell to...",
+    "April 13, 2026",
+    "Jennifer Wargo, M.D., professor of Surgical Oncology and Genomic Medicine at The University of Texas MD Anderson...",
+    "April 13, 2026",
+    "Our patients depend on blood and platelet donations.",
+    "Show your support for our mission through branded merchandise.",
+    ".st0-desktop { fill: #000; }Explore what your support makes possible",
+    "Explore",
+    "Patients & Family",
+    "Prevention & Screening",
+    "Donors & Volunteers",
+    "For Physicians",
+    "Research",
+    "Education & Training",
+    "Clinical Trials",
+    "Languages",
+    "About",
+    "About UT MD Anderson",
+    "Careers",
+    "Blog",
+    "Newsroom",
+    "Editorial Standards",
+    "For Employees",
+    "Merchandise",
+    "Title IX Reporting (Sexual Misconduct)",
+    "Price Transparency",
+    "Finding Your Way",
+    "Our Doctors",
+    "Locations",
+    "Directions",
+    "Sitemap",
+    "DIGITAL ACCESSIBILITY",
+    "Accessibility Policy",
+    "GET IN TOUCH",
+    "Call 1-833-426-1670",
+    "Ask a question",
+    "Stay Connected",
+    "PreviousNext",
+    "Cancerwise Podcast",
+    "PreviousNext",
+    "Website Privacy Policy",
+    "Legal Statement & Policies",
+    "Reports to the State",
+    "Emergency Alert Information",
+    "State of Texas Links",
+    "Our Cancer Network",
+    "Vendors & Suppliers",
+    "© 2026 The University of Texas MD Anderson Cancer Center. All rights reserved."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "MyChart",
+      "href": "https://my.mdanderson.org/MyChart/Home/"
+    },
+    {
+      "label": "Request an Appointment",
+      "href": null
+    },
+    {
+      "label": "Donate Today",
+      "href": "javascript:void(0);"
+    },
+    {
+      "label": "Clinical Trials",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+      "label": "Locations",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+      "label": "Careers",
+      "href": "https://jobs.mdanderson.org/"
+    },
+    {
+      "label": "Contact Us",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us.html"
+    },
+    {
+      "label": "Our Doctors",
+      "href": "https://faculty.mdanderson.org/"
+    },
+    {
+      "label": "Languages",
+      "href": null
+    },
+    {
+      "label": "Patients & Family",
+      "href": "https://www.mdanderson.org/patients-family.html"
+    },
+    {
+      "label": "Prevention & Screening",
+      "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+      "label": "Donors & Volunteers",
+      "href": "https://www.mdanderson.org/donors-volunteers.html"
+    },
+    {
+      "label": "For Physicians",
+      "href": "https://www.mdanderson.org/for-physicians.html"
+    },
+    {
+      "label": "Research",
+      "href": "https://www.mdanderson.org/research.html"
+    },
+    {
+      "label": "Education & Training",
+      "href": "https://www.mdanderson.org/education-training.html"
+    },
+    {
+      "label": "Back",
+      "href": "https://www.mdanderson.org"
+    },
+    {
+      "label": "Newsroom",
+      "href": "https://www.mdanderson.org/newsroom.html"
+    },
+    {
+      "label": "Research Newsroom",
+      "href": "https://www.mdanderson.org/newsroom/research-newsroom.html"
+    },
+    {
+      "label": "Contact a Media Specialist",
+      "href": "https://www.mdanderson.org/newsroom/contact-a-media-specialist.html"
+    },
+    {
+      "label": "B-roll Footage",
+      "href": "https://www.mdanderson.org/newsroom/broll-footage.html"
+    },
+    {
+      "label": "Embargo Policy",
+      "href": "https://www.mdanderson.org/newsroom/embargo-policy.html"
+    },
+    {
+      "label": "Media Visitation Policy",
+      "href": "https://www.mdanderson.org/newsroom/media-visitation-policy.html"
+    },
+    {
+      "label": "Request to Film on Campus",
+      "href": "https://www.mdanderson.org/newsroom/request-to-film-on-campus.html"
+    },
+    {
+      "label": "Style Guide",
+      "href": "https://www.mdanderson.org/newsroom/style-guide.html"
+    },
+    {
+      "label": "Philanthropy Newsroom",
+      "href": "https://www.mdanderson.org/newsroom/philanthropy-newsroom.html"
+    },
+    {
+      "label": "Archived News",
+      "href": "https://www.mdanderson.org/newsroom/archived-news.html"
+    },
+    {
+      "label": "UT MD Anderson ranks No. 1 in the nation for cancer care for 12th...",
+      "href": "/newsroom/ut-md-anderson-ranks-number-one-in-the-nation-for-cancer-care-for-12th-year-in-a-row.h00-159857712.html"
+    },
+    {
+      "label": "Read More",
+      "href": "/newsroom/ut-md-anderson-ranks-number-one-in-the-nation-for-cancer-care-for-12th-year-in-a-row.h00-159857712.html"
+    },
+    {
+      "label": "UT MD Anderson joins global consortium committed to eliminating cervical cancer",
+      "href": "/newsroom/ut-md-anderson-joins-global-consortium-committed-to-eliminating-cervical-cancer.h00-159856134.html"
+    },
+    {
+      "label": "Read More",
+      "href": "/newsroom/ut-md-anderson-joins-global-consortium-committed-to-eliminating-cervical-cancer.h00-159856134.html"
+    },
+    {
+      "label": "ASCO: UT MD Anderson faculty honored as 2026 Special Award recipients",
+      "href": "/newsroom/asco-ut-md-anderson-faculty-honored-as-2026-special-award-recipients.h00-159855345.html"
+    },
+    {
+      "label": "Read More",
+      "href": "/newsroom/asco-ut-md-anderson-faculty-honored-as-2026-special-award-recipients.h00-159855345.html"
+    },
+    {
+      "label": "UT MD Anderson names Albert Koong, M.D., Ph.D., chief scientific...",
+      "href": "/newsroom/ut-md-anderson-names-albert-koong-md-phd-chief-scientific-officer.h00-159855345.html"
+    },
+    {
+      "label": "Read More",
+      "href": "/newsroom/ut-md-anderson-names-albert-koong-md-phd-chief-scientific-officer.h00-159855345.html"
+    },
+    {
+      "label": "CPRIT awards UT MD Anderson over $19 million for cancer research and faculty recruitment",
+      "href": "/newsroom/cprit-awards-ut-md-anderson-over-19-million-for-cancer-research-and-faculty-recruitment.h00-159855345.html"
+    },
+    {
+      "label": "Read More",
+      "href": "/newsroom/cprit-awards-ut-md-anderson-over-19-million-for-cancer-research-and-faculty-recruitment.h00-159855345.html"
+    },
+    {
+      "label": "Novel CAR T cell therapy developed by UT MD Anderson researchers moves into clinical studies",
+      "href": "/newsroom/novel-car-t-cell-therapy-developed-by-ut-md-anderson-researchers-moves-into-clinical-studies.h00-159855345.html"
+    },
+    {
+      "label": "Read More",
+      "href": "/newsroom/novel-car-t-cell-therapy-developed-by-ut-md-anderson-researchers-moves-into-clinical-studies.h00-159855345.html"
+    },
+    {
+      "label": "UT MD Anderson appoints Kim Slusser as chief nurse executive",
+      "href": "/newsroom/ut-md-anderson-appoints-kim-slusser-as-chief-nurse-executive-.h00-159854556.html"
+    },
+    {
+      "label": "Read More",
+      "href": "/newsroom/ut-md-anderson-appoints-kim-slusser-as-chief-nurse-executive-.h00-159854556.html"
+    },
+    {
+      "label": "UT MD Anderson establishes Center for Cellular Language Intelligence with $10 million gift from Peggy and Carl Sewell",
+      "href": "/newsroom/ut-md-anderson-establishes-center-for-cellular-language-Intelligence-with-10-million-gift-from-Peggy-and-Carl-Sewell.h00-159854556.html"
+    },
+    {
+      "label": "Read More",
+      "href": "/newsroom/ut-md-anderson-establishes-center-for-cellular-language-Intelligence-with-10-million-gift-from-Peggy-and-Carl-Sewell.h00-159854556.html"
+    },
+    {
+      "label": "AACR: Jennifer Wargo, M.D., elected Fellow of the AACR Academy",
+      "href": "/newsroom/aacr-jennifer-wargo-md-elected-fellow-of-the-aacr-academy.h00-159854556.html"
+    },
+    {
+      "label": "Read More",
+      "href": "/newsroom/aacr-jennifer-wargo-md-elected-fellow-of-the-aacr-academy.h00-159854556.html"
+    },
+    {
+      "label": "AACR: Immunotherapy pioneer James P. Allison, Ph.D., honored with Award for Lifetime Achievement in Cancer Research",
+      "href": "/newsroom/aacr-immunotherapy-pioneer-james-p-allison-ph-d-honored-with-Award-for-Lifetime-Achievement-in-Cancer-Research.h00-159854556.html"
+    },
+    {
+      "label": "Read More",
+      "href": "/newsroom/aacr-immunotherapy-pioneer-james-p-allison-ph-d-honored-with-Award-for-Lifetime-Achievement-in-Cancer-Research.h00-159854556.html"
+    },
+    {
+      "label": "More",
+      "href": "#"
+    },
+    {
+      "label": "Donate",
+      "href": "https://gifts.mdanderson.org/Default.aspx?tsid=37435"
+    },
+    {
+      "label": "Make an appointment",
+      "href": "https://www.mdandersonbloodbank.org/"
+    },
+    {
+      "label": "View products",
+      "href": "https://shop.mdanderson.org"
+    },
+    {
+      "label": ".st0-desktop { fill: #000; }Explore what your support makes possible",
+      "href": "https://onlypossiblehere.mdanderson.org"
+    },
+    {
+      "label": "Patients & Family",
+      "href": "https://www.mdanderson.org/patients-family.html"
+    },
+    {
+      "label": "Prevention & Screening",
+      "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+      "label": "Donors & Volunteers",
+      "href": "https://www.mdanderson.org/donors-volunteers.html"
+    },
+    {
+      "label": "For Physicians",
+      "href": "https://www.mdanderson.org/for-physicians.html"
+    },
+    {
+      "label": "Research",
+      "href": "https://www.mdanderson.org/research.html"
+    },
+    {
+      "label": "Education & Training",
+      "href": "https://www.mdanderson.org/education-training.html"
+    },
+    {
+      "label": "Clinical Trials",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+      "label": "Languages",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html"
+    },
+    {
+      "label": "About UT MD Anderson",
+      "href": "https://www.mdanderson.org/about-md-anderson.html"
+    },
+    {
+      "label": "Careers",
+      "href": "https://jobs.mdanderson.org/"
+    },
+    {
+      "label": "Blog",
+      "href": "https://www.mdanderson.org/cancerwise.html"
+    },
+    {
+      "label": "Newsroom",
+      "href": "https://www.mdanderson.org/newsroom.html"
+    },
+    {
+      "label": "Editorial Standards",
+      "href": "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html"
+    },
+    {
+      "label": "For Employees",
+      "href": "https://www.mdanderson.org/about-md-anderson/employee-resources.html"
+    },
+    {
+      "label": "Merchandise",
+      "href": "https://shop.mdanderson.org/"
+    },
+    {
+      "label": "Title IX Reporting (Sexual Misconduct)",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html"
+    },
+    {
+      "label": "Price Transparency",
+      "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html"
+    },
+    {
+      "label": "Our Doctors",
+      "href": "https://faculty.mdanderson.org/"
+    },
+    {
+      "label": "Locations",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+      "label": "Directions",
+      "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html"
+    },
+    {
+      "label": "Sitemap",
+      "href": "https://www.mdanderson.org/patients-family/html-sitemap.html"
+    },
+    {
+      "label": "Accessibility Policy",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html"
+    },
+    {
+      "label": "Call 1-833-426-1670",
+      "href": "tel:+18334261670"
+    },
+    {
+      "label": "Ask a question",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html"
+    },
+    {
+      "label": "Website Privacy Policy",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html"
+    },
+    {
+      "label": "Legal Statement & Policies",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html"
+    },
+    {
+      "label": "Reports to the State",
+      "href": "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html"
+    },
+    {
+      "label": "Emergency Alert Information",
+      "href": "https://www3.mdanderson.org/emergencyalert/"
+    },
+    {
+      "label": "State of Texas Links",
+      "href": "https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html"
+    },
+    {
+      "label": "Our Cancer Network",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html"
+    },
+    {
+      "label": "Vendors & Suppliers",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html"
+    }
+  ],
+  "links": [
+    "https://www.mdanderson.org/newsroom.html#skip",
+    "https://my.mdanderson.org/MyChart/Home/",
+    "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/appointments.html",
+    "https://my.mdanderson.org/RequestAppointment",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/returning-patients.html",
+    "https://my.mdanderson.org/physicianreferral",
+    "javascript:void(0);",
+    "https://onlypossiblehere.mdanderson.org/",
+    "https://gifts.mdanderson.org/Default.aspx?tsid=37435",
+    "https://www.mdanderson.org/",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations.html",
+    "https://jobs.mdanderson.org/",
+    "https://www.mdanderson.org/about-md-anderson/contact-us.html",
+    "https://faculty.mdanderson.org/",
+    "https://www.mdanderson.org/es/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/ar/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/zh/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/tr/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/newsroom.html#",
+    "https://www.mdanderson.org/patients-family.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/why-md-anderson.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/while-youre-here.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/international-center.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/services-amenities.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/insurance-billing.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/second-opinion-appointments.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/cancer-types.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/a-new-diagnosis.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/treatment-options.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/emotional-physical-effects.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/caregiver-roles-challenges.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/supporting-children-teens.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/taking-care-of-yourself.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/Helping-mdanderson-patient.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/dealing-with-loss.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/followup-care-after-cancer-treatment.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/long-term-effects.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/social-emotional-impacts.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/legal-financial-impacts.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/survivorship-week.html",
+    "https://www.mdanderson.org/prevention-screening.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/tobacco-control-at-md-anderson.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/diet.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/body-weight.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/physical-activity.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/skin-safety.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/hpv.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/hepatitis.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/alcohol.html",
+    "https://www.mdanderson.org/prevention-screening/family-history.html",
+    "https://www.mdanderson.org/prevention-screening/family-history/genetic-testing.html",
+    "https://www.mdanderson.org/prevention-screening/family-history/hereditary-cancer-syndromes.html",
+    "https://www.mdanderson.org/prevention-screening/family-history/faqs.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/breast-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/cervical-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/colorectal-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/endometrial-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/liver-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/lung-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/mobile-mammography.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/ovarian-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/prostate-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/skin-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/women-screening-exams.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/men-screening-exams.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/cancer-prevention-center.html",
+    "https://www.mdanderson.org/donors-volunteers.html",
+    "https://www.mdanderson.org/donors-volunteers/donate.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/raise-money.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/honor-loved-ones.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/planned-giving.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/endowments.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/md-anderson-caring-fund.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/matching-gifts.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/foundation-and-corporation-relations.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/why-volunteer.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/on-site-volunteers.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/endowments.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/patient-experience.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/teen-volunteer-leadership-program.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/childrens-cancer-hospital-councils.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/give-blood.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/shop-md-anderson.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/childrens-art-project.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/donate-goods-or-services.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/attend-events.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/cord-blood-bank.html",
+    "https://www.mdanderson.org/donors-volunteers/corporate-alliances.html",
+    "https://www.mdanderson.org/donors-volunteers/corporate-alliances/current-alliances.html",
+    "https://www.mdanderson.org/for-physicians.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/health-care-provider-resource-center.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/referring-provider-team.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/insurance-information.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/international-referrals.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/mymdanderson-for-physicians.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/second-opinion-pathology.html",
+    "https://www.mdanderson.org/for-physicians/clinical-trials.html",
+    "https://www.mdanderson.org/for-physicians/clinical-tools-resources.html",
+    "https://www.mdanderson.org/for-physicians/clinical-tools-resources/clinical-calculators.html",
+    "https://www.mdanderson.org/for-physicians/clinical-tools-resources/clinical-practice-algorithms.html",
+    "https://www.mdanderson.org/research.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/labs.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/programs-centers.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/institutes.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/spores.html",
+    "https://www.mdanderson.org/research/research-areas.html",
+    "https://www.mdanderson.org/research/research-areas/basic-science.html",
+    "https://www.mdanderson.org/research/research-areas/translational-research.html",
+    "https://www.mdanderson.org/research/research-areas/clinical-research.html",
+    "https://www.mdanderson.org/research/research-areas/prevention-personalized-risk-assessment.html",
+    "https://www.mdanderson.org/research/research-resources.html",
+    "https://www.mdanderson.org/research/research-resources/excellence-in-science.html",
+    "https://www.mdanderson.org/research/research-resources/core-facilities.html",
+    "https://www.mdanderson.org/research/research-resources/conferences-seminars.html",
+    "https://www.mdanderson.org/research/research-resources/why-research.html",
+    "https://www.mdanderson.org/research/research-resources/stride.html",
+    "https://www.mdanderson.org/research/research-resources/nci-designated-cancer-center.html",
+    "https://www.mdanderson.org/research/research-resources/data-resources.html",
+    "https://www.mdanderson.org/education-training.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools/school-of-health-professions.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools/graduate-school-of-biomedical-sciences.html",
+    "https://www.mdanderson.org/education-training/education-resources.html",
+    "https://www.mdanderson.org/education-training/education-resources/alumni-relations.html",
+    "https://www.mdanderson.org/education-training/education-resources/education-design-services.html",
+    "https://www.mdanderson.org/education-training/education-resources/awards-recognitions.html",
+    "https://www.mdanderson.org/education-training/education-resources/academic-mentoring-council.html",
+    "https://www.mdanderson.org/education-training/education-resources/why-train-at-md-anderson-houston.html",
+    "https://www.mdanderson.org/education-training/research-training.html",
+    "https://www.mdanderson.org/education-training/research-training/early-career-pathway-programs.html",
+    "https://www.mdanderson.org/education-training/research-training/predoctoral-training.html",
+    "https://www.mdanderson.org/education-training/research-training/postdoctoral-training.html",
+    "https://www.mdanderson.org/education-training/research-training/mentored-faculty-programs.html",
+    "https://www.mdanderson.org/education-training/research-training/career-development.html",
+    "https://www.mdanderson.org/education-training/clinical-training.html",
+    "https://www.mdanderson.org/education-training/clinical-training/graduate-medical-education.html",
+    "https://www.mdanderson.org/education-training/clinical-training/clinical-education-for-non-physicians.html",
+    "https://www.mdanderson.org/education-training/clinical-training/nursing-education.html",
+    "https://www.mdanderson.org/education-training/clinical-training/certificate-programs-review-courses.html",
+    "https://www.mdanderson.org/education-training/clinical-training/simulation-center.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/continuing-professional-education-conferences.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/administrative-internships-fellowships.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/cancer-survivorship-program.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/leadership-institute.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/patient-home-visits.html",
+    "https://www.mdanderson.org/education-training/outreach-programs.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/project-echo.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/observer-programs.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/comparative-effectiveness-research-training.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/faculty-speakers-bureau.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools/school-of-health-professions/prospective-students.html",
+    "https://www.mdanderson.org/education-training/clinical-training/graduate-medical-education/residencies-fellowships.html",
+    "https://www.mdanderson.org/newsroom.html",
+    "https://www.mdanderson.org/newsroom/research-newsroom.html",
+    "https://www.mdanderson.org/newsroom/contact-a-media-specialist.html",
+    "https://www.mdanderson.org/newsroom/broll-footage.html",
+    "https://www.mdanderson.org/newsroom/embargo-policy.html",
+    "https://www.mdanderson.org/newsroom/media-visitation-policy.html",
+    "https://www.mdanderson.org/newsroom/request-to-film-on-campus.html",
+    "https://www.mdanderson.org/newsroom/style-guide.html",
+    "https://www.mdanderson.org/newsroom/philanthropy-newsroom.html",
+    "https://www.mdanderson.org/newsroom/archived-news.html",
+    "https://www.mdanderson.org/newsroom/ut-md-anderson-ranks-number-one-in-the-nation-for-cancer-care-for-12th-year-in-a-row.h00-159857712.html",
+    "https://www.mdanderson.org/newsroom/ut-md-anderson-joins-global-consortium-committed-to-eliminating-cervical-cancer.h00-159856134.html",
+    "https://www.mdanderson.org/newsroom.dir.html/author/Jade%20Waddy",
+    "https://www.mdanderson.org/newsroom/asco-ut-md-anderson-faculty-honored-as-2026-special-award-recipients.h00-159855345.html",
+    "https://www.mdanderson.org/newsroom.dir.html/author/McKenna%20Waldrop",
+    "https://www.mdanderson.org/newsroom/ut-md-anderson-names-albert-koong-md-phd-chief-scientific-officer.h00-159855345.html",
+    "https://www.mdanderson.org/newsroom/cprit-awards-ut-md-anderson-over-19-million-for-cancer-research-and-faculty-recruitment.h00-159855345.html",
+    "https://www.mdanderson.org/newsroom.dir.html/author/Julie%20Nagy",
+    "https://www.mdanderson.org/newsroom/novel-car-t-cell-therapy-developed-by-ut-md-anderson-researchers-moves-into-clinical-studies.h00-159855345.html",
+    "https://www.mdanderson.org/newsroom/ut-md-anderson-appoints-kim-slusser-as-chief-nurse-executive-.h00-159854556.html",
+    "https://www.mdanderson.org/newsroom/ut-md-anderson-establishes-center-for-cellular-language-Intelligence-with-10-million-gift-from-Peggy-and-Carl-Sewell.h00-159854556.html",
+    "https://www.mdanderson.org/newsroom.dir.html/author/Andrea%20Bolt",
+    "https://www.mdanderson.org/newsroom/aacr-jennifer-wargo-md-elected-fellow-of-the-aacr-academy.h00-159854556.html",
+    "https://www.mdanderson.org/newsroom/aacr-immunotherapy-pioneer-james-p-allison-ph-d-honored-with-Award-for-Lifetime-Achievement-in-Cancer-Research.h00-159854556.html",
+    "https://www.mdanderson.org/newsroom.dir.html/author/Valerie%20Beesley",
+    "https://www.mdandersonbloodbank.org/",
+    "https://shop.mdanderson.org/",
+    "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html",
+    "https://www.mdanderson.org/about-md-anderson.html",
+    "https://www.mdanderson.org/cancerwise.html",
+    "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html",
+    "https://www.mdanderson.org/about-md-anderson/employee-resources.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html",
+    "https://www.mdanderson.org/patients-family/html-sitemap.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html",
+    "https://www.levelaccess.com/MDAnderson",
+    "tel:+18334261670",
+    "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html",
+    "https://facebook.com/MDAnderson",
+    "https://x.com/UTMDAnderson",
+    "https://youtube.com/mdandersonorg",
+    "https://instagram.com/mdandersoncancercenter",
+    "https://linkedin.com/company/mdandersoncancercenter",
+    "http://bsky.app/profile/mdanderson.bsky.social",
+    "https://threads.com/@mdandersoncancercenter",
+    "https://podcasts.apple.com/us/podcast/cancerwise-podcast/id1751785346",
+    "https://open.spotify.com/show/28rgC5nO7OpLhnPlNylNem",
+    "http://www.youtube.com/playlist?list=PLKscGuVrfI9LvQrf5At-R7TewdfY4OeOP",
+    "http://www.pandora.com/podcast/cancerwise-podcast/PC:1001088873",
+    "http://www.iheart.com/podcast/269-cancerwise-podcast-185103717/",
+    "https://support.doctorpodcasting.com/podcastfeed/335",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html",
+    "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html",
+    "https://www3.mdanderson.org/emergencyalert/",
+    "https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/hero-images/Integrated%20Media/OPH_Logo_Horizontal_Reverse.png",
+        "alt": "Only Possible Here",
+        "w": 857,
+        "h": 231
+      },
+      {
+        "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/xmda-logo.png.pagespeed.ic.jLVBCg-7dN.webp",
+        "alt": "The University of Texas MD Anderson Cancer Center",
+        "w": 1527,
+        "h": 639
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/focused-on-health/2015/WEB-Tanya-Moseley-3D-mammo.jpg.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 108,
+        "h": 61
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/hero-images/Integrated%20Media/oph-web-promo-image-tagline.png.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 108,
+        "h": 61
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/l2-l3-hero/sujit_prabhu_physicians_nav.jpg.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 108,
+        "h": 61
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/moonshots/researchplatforms/Clinical-Trial/CLL_Jan_Burger_175_resized.jpg.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 108,
+        "h": 61
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/newsroom/2026/08/ut-md-anderson-ranks-number-one-in-the-nation-for-cancer-care-for-12th-year-in-a-row/jcr:content/blog/adaptiveimage.resize.450.450.high.jpg",
+        "alt": "",
+        "w": 450,
+        "h": 450
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/newsroom/2026/06/ut-md-anderson-joins-global-consortium-committed-to-eliminating-cervical-cancer/jcr:content/blog/adaptiveimage.resize.450.235.high.jpg",
+        "alt": "",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/newsroom/2026/05/asco-ut-md-anderson-faculty-honored-as-2026-special-award-recipients/jcr:content/blog/adaptiveimage.resize.450.235.high.jpg",
+        "alt": "",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/newsroom/2026/05/ut-md-anderson-names-albert-koong-md-phd-chief-scientific-officer/jcr:content/blog/adaptiveimage.resize.450.450.high.jpg",
+        "alt": "",
+        "w": 450,
+        "h": 450
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/newsroom/2026/05/cprit-awards-ut-md-anderson-over-19-million-for-cancer-research-and-faculty-recruitment/jcr:content/blog/adaptiveimage.resize.450.235.high.jpg",
+        "alt": "",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/newsroom/2026/05/novel-car-t-cell-therapy-developed-by-ut-md-anderson-researchers-moves-into-clinical-studies/jcr:content/blog/adaptiveimage.resize.450.235.high.jpg",
+        "alt": "",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/newsroom/2026/04/ut-md-anderson-appoints-kim-slusser-as-chief-nurse-executive-/jcr:content/blog/adaptiveimage.resize.450.235.high.jpg",
+        "alt": "",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/newsroom/2026/04/ut-md-anderson-establishes-center-for-cellular-language-Intelligence-with-10-million-gift-from-Peggy-and-Carl-Sewell/jcr:content/blog/adaptiveimage.resize.450.235.high.jpg",
+        "alt": "",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/newsroom/2026/04/aacr-jennifer-wargo-md-elected-fellow-of-the-aacr-academy/jcr:content/blog/adaptiveimage.resize.450.235.high.jpg",
+        "alt": "",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/newsroom/2026/04/aacr-immunotherapy-pioneer-james-p-allison-ph-d-honored-with-Award-for-Lifetime-Achievement-in-Cancer-Research/jcr:content/blog/adaptiveimage.resize.450.235.high.jpg",
+        "alt": "",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/jcr:content/footer/xdesktoplogo.resize.png.pagespeed.ic.wmDIh2S-LF.webp",
+        "alt": "UT MD Anderson logo",
+        "w": 1280,
+        "h": 535
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp",
+        "alt": "UT MD Anderson logo",
+        "w": 837,
+        "h": 95
+      },
+      {
+        "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/eA_Icon_Black.svg",
+        "alt": "MD Anderson works with Level Access to ensure our website is accessible and functional for all users. Free assistive technology is provided for people with physical disabilities. To learn more or to download the assistive technology tool, visit https://www.levelaccess.com/MDAnderson",
+        "w": 300,
+        "h": 113
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp",
+        "alt": "UT MD Anderson logo",
+        "w": 837,
+        "h": 95
+      }
+    ],
+    "allImgCount": 20,
+    "cssBackgrounds": [
+      "https://www.mdanderson.org/content/mda/en/newsroom/jcr:content/herocontent.resize.1400.282.high.jpg/1768753295273.jpg"
+    ],
+    "modals": [],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {},
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 15,
+    "mainTextLen": 10423,
+    "realImageCount": 20,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "screenshot": "assets/screenshots/newsroom-html.png"
+}

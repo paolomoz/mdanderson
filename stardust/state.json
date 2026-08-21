@@ -1,883 +1,1486 @@
 {
-  "_provenance": {
-    "writtenBy": "stardust:stardust",
-    "writtenAt": "2026-08-19T00:00:00Z",
-    "stardustVersion": "0.18.1",
-    "note": "Initialized for MD Anderson EDS migration POC. Hands-off replica + uplift run."
-  },
-  "site": {
-    "originUrl": "https://www.mdanderson.org",
-    "deployUrl": null,
-    "extractedAt": "2026-08-19T18:30:00Z",
-    "pageCap": 12,
-    "totalDiscovered": 12,
-    "crawled": 12
-  },
-  "direction": {
-    "resolvedAt": null,
-    "phrase": "POC: migrate mdanderson.org to EDS — replica (same-design) + uplift shine variants on homepage",
-    "directionFile": "stardust/direction.md",
-    "iaFidelity": "preserved"
-  },
-  "handsOff": true,
-  "pages": [
+ "_provenance": {
+  "writtenBy": "stardust:stardust",
+  "writtenAt": "2026-08-19T00:00:00Z",
+  "stardustVersion": "0.18.1",
+  "note": "Initialized for MD Anderson EDS migration POC. Hands-off replica + uplift run."
+ },
+ "site": {
+  "originUrl": "https://www.mdanderson.org",
+  "deployUrl": null,
+  "extractedAt": "2026-08-19T18:30:00Z",
+  "pageCap": 82,
+  "totalDiscovered": 79,
+  "crawled": 79
+ },
+ "direction": {
+  "resolvedAt": null,
+  "phrase": "POC: migrate mdanderson.org to EDS \u2014 replica (same-design) + uplift shine variants on homepage",
+  "directionFile": "stardust/direction.md",
+  "iaFidelity": "preserved"
+ },
+ "handsOff": true,
+ "pages": [
+  {
+   "slug": "index",
+   "url": "https://www.mdanderson.org/",
+   "title": null,
+   "type": "landing",
+   "status": "migrated",
+   "history": [
     {
-      "slug": "index",
-      "url": "https://www.mdanderson.org/",
-      "title": null,
-      "type": "landing",
-      "status": "migrated",
-      "history": [
-        {
-          "status": "extracted",
-          "at": "2026-08-19T18:30:00Z"
-        },
-        {
-          "status": "prototyped",
-          "at": "2026-08-19T20:05:00Z"
-        },
-        {
-          "status": "approved",
-          "at": "2026-08-19T20:05:00Z",
-          "approvedBy": "hands-off"
-        },
-        {
-          "status": "migrated",
-          "at": "2026-08-20T04:10:00Z",
-          "renderBranch": "A"
-        }
-      ],
-      "stale": false,
-      "staleReason": null,
-      "role": "archetype",
-      "currentStatePath": "stardust/current/pages/index.json",
-      "prototypePath": "stardust/prototypes/index-proposed.html",
-      "migratedPath": "stardust/migrated/index.html",
-      "fidelityTier": "archetype"
+     "status": "extracted",
+     "at": "2026-08-19T18:30:00Z"
     },
     {
-      "slug": "patients-family-html",
-      "url": "https://www.mdanderson.org/patients-family.html",
-      "title": null,
-      "type": "landing",
-      "status": "migrated",
-      "history": [
-        {
-          "status": "extracted",
-          "at": "2026-08-19T18:30:00Z"
-        },
-        {
-          "status": "migrated",
-          "at": "2026-08-20T04:10:00Z",
-          "renderBranch": "A'"
-        }
-      ],
-      "stale": false,
-      "staleReason": null,
-      "role": "sibling:index",
-      "currentStatePath": "stardust/current/pages/patients-family-html.json",
-      "prototypePath": null,
-      "migratedPath": "stardust/migrated/patients-family.html",
-      "fidelityTier": "sibling",
-      "archetypeSource": "index"
+     "status": "prototyped",
+     "at": "2026-08-19T20:05:00Z"
     },
     {
-      "slug": "cancer-types-breast-cancer-html",
-      "url": "https://www.mdanderson.org/cancer-types/breast-cancer.html",
-      "title": null,
-      "type": "program",
-      "status": "migrated",
-      "history": [
-        {
-          "status": "extracted",
-          "at": "2026-08-19T18:30:00Z"
-        },
-        {
-          "status": "prototyped",
-          "at": "2026-08-19T22:30:00Z"
-        },
-        {
-          "status": "approved",
-          "at": "2026-08-19T22:30:00Z",
-          "approvedBy": "hands-off"
-        },
-        {
-          "status": "migrated",
-          "at": "2026-08-20T04:10:00Z",
-          "renderBranch": "A"
-        }
-      ],
-      "stale": false,
-      "staleReason": null,
-      "role": "archetype",
-      "currentStatePath": "stardust/current/pages/cancer-types-breast-cancer-html.json",
-      "prototypePath": "stardust/prototypes/cancer-types-breast-cancer-html-proposed.html",
-      "migratedPath": "stardust/migrated/cancer-types/breast-cancer.html",
-      "fidelityTier": "archetype"
+     "status": "approved",
+     "at": "2026-08-19T20:05:00Z",
+     "approvedBy": "hands-off"
     },
     {
-      "slug": "patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html",
-      "url": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/breast-center.html",
-      "title": null,
-      "type": "program",
-      "status": "migrated",
-      "history": [
-        {
-          "status": "extracted",
-          "at": "2026-08-19T18:30:00Z"
-        },
-        {
-          "status": "prototyped",
-          "at": "2026-08-20T02:30:00Z"
-        },
-        {
-          "status": "approved",
-          "at": "2026-08-20T02:30:00Z",
-          "approvedBy": "hands-off"
-        },
-        {
-          "status": "migrated",
-          "at": "2026-08-20T04:10:00Z",
-          "renderBranch": "A"
-        }
-      ],
-      "stale": false,
-      "staleReason": null,
-      "role": "archetype",
-      "currentStatePath": "stardust/current/pages/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html.json",
-      "prototypePath": "stardust/prototypes/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html-proposed.html",
-      "migratedPath": "stardust/migrated/patients-family/diagnosis-treatment/care-centers-clinics/breast-center.html",
-      "fidelityTier": "archetype"
-    },
-    {
-      "slug": "patients-family-diagnosis-treatment-clinical-trials-html",
-      "url": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html",
-      "title": null,
-      "type": "program",
-      "status": "migrated",
-      "history": [
-        {
-          "status": "extracted",
-          "at": "2026-08-19T18:30:00Z"
-        },
-        {
-          "status": "prototyped",
-          "at": "2026-08-19T21:20:00Z"
-        },
-        {
-          "status": "approved",
-          "at": "2026-08-19T21:20:00Z",
-          "approvedBy": "hands-off"
-        },
-        {
-          "status": "migrated",
-          "at": "2026-08-20T04:10:00Z",
-          "renderBranch": "A"
-        }
-      ],
-      "stale": false,
-      "staleReason": null,
-      "role": "archetype",
-      "currentStatePath": "stardust/current/pages/patients-family-diagnosis-treatment-clinical-trials-html.json",
-      "prototypePath": "stardust/prototypes/patients-family-diagnosis-treatment-clinical-trials-html-proposed.html",
-      "migratedPath": "stardust/migrated/patients-family/diagnosis-treatment/clinical-trials.html",
-      "fidelityTier": "archetype"
-    },
-    {
-      "slug": "prevention-screening-html",
-      "url": "https://www.mdanderson.org/prevention-screening.html",
-      "title": null,
-      "type": "landing",
-      "status": "migrated",
-      "history": [
-        {
-          "status": "extracted",
-          "at": "2026-08-19T18:30:00Z"
-        },
-        {
-          "status": "prototyped",
-          "at": "2026-08-19T21:00:00Z"
-        },
-        {
-          "status": "approved",
-          "at": "2026-08-19T21:00:00Z",
-          "approvedBy": "hands-off"
-        },
-        {
-          "status": "migrated",
-          "at": "2026-08-20T04:10:00Z",
-          "renderBranch": "A"
-        }
-      ],
-      "stale": false,
-      "staleReason": null,
-      "role": "archetype",
-      "currentStatePath": "stardust/current/pages/prevention-screening-html.json",
-      "prototypePath": "stardust/prototypes/prevention-screening-html-proposed.html",
-      "migratedPath": "stardust/migrated/prevention-screening.html",
-      "fidelityTier": "archetype"
-    },
-    {
-      "slug": "research-html",
-      "url": "https://www.mdanderson.org/research.html",
-      "title": null,
-      "type": "landing",
-      "status": "migrated",
-      "history": [
-        {
-          "status": "extracted",
-          "at": "2026-08-19T18:30:00Z"
-        },
-        {
-          "status": "prototyped",
-          "at": "2026-08-20T01:30:00Z"
-        },
-        {
-          "status": "approved",
-          "at": "2026-08-20T01:30:00Z",
-          "approvedBy": "hands-off"
-        },
-        {
-          "status": "migrated",
-          "at": "2026-08-20T04:10:00Z",
-          "renderBranch": "A"
-        }
-      ],
-      "stale": false,
-      "staleReason": null,
-      "role": "archetype",
-      "currentStatePath": "stardust/current/pages/research-html.json",
-      "prototypePath": "stardust/prototypes/research-html-proposed.html",
-      "migratedPath": "stardust/migrated/research.html",
-      "fidelityTier": "archetype"
-    },
-    {
-      "slug": "about-md-anderson-html",
-      "url": "https://www.mdanderson.org/about-md-anderson.html",
-      "title": null,
-      "type": "static",
-      "status": "migrated",
-      "history": [
-        {
-          "status": "extracted",
-          "at": "2026-08-19T18:30:00Z"
-        },
-        {
-          "status": "prototyped",
-          "at": "2026-08-20T02:00:00Z"
-        },
-        {
-          "status": "approved",
-          "at": "2026-08-20T02:00:00Z",
-          "approvedBy": "hands-off"
-        },
-        {
-          "status": "migrated",
-          "at": "2026-08-20T04:10:00Z",
-          "renderBranch": "A"
-        }
-      ],
-      "stale": false,
-      "staleReason": null,
-      "role": "archetype",
-      "currentStatePath": "stardust/current/pages/about-md-anderson-html.json",
-      "prototypePath": "stardust/prototypes/about-md-anderson-html-proposed.html",
-      "migratedPath": "stardust/migrated/about-md-anderson.html",
-      "fidelityTier": "archetype"
-    },
-    {
-      "slug": "about-md-anderson-our-locations-html",
-      "url": "https://www.mdanderson.org/about-md-anderson/our-locations.html",
-      "title": null,
-      "type": "listing",
-      "status": "migrated",
-      "history": [
-        {
-          "status": "extracted",
-          "at": "2026-08-19T18:30:00Z"
-        },
-        {
-          "status": "prototyped",
-          "at": "2026-08-20T03:00:00Z"
-        },
-        {
-          "status": "approved",
-          "at": "2026-08-20T03:00:00Z",
-          "approvedBy": "hands-off"
-        },
-        {
-          "status": "migrated",
-          "at": "2026-08-20T04:10:00Z",
-          "renderBranch": "A"
-        }
-      ],
-      "stale": false,
-      "staleReason": null,
-      "role": "archetype",
-      "currentStatePath": "stardust/current/pages/about-md-anderson-our-locations-html.json",
-      "prototypePath": "stardust/prototypes/about-md-anderson-our-locations-html-proposed.html",
-      "migratedPath": "stardust/migrated/about-md-anderson/our-locations.html",
-      "fidelityTier": "archetype"
-    },
-    {
-      "slug": "cancerwise-html",
-      "url": "https://www.mdanderson.org/cancerwise.html",
-      "title": null,
-      "type": "listing",
-      "status": "migrated",
-      "history": [
-        {
-          "status": "extracted",
-          "at": "2026-08-19T18:30:00Z"
-        },
-        {
-          "status": "prototyped",
-          "at": "2026-08-20T01:30:00Z"
-        },
-        {
-          "status": "approved",
-          "at": "2026-08-20T01:30:00Z",
-          "approvedBy": "hands-off"
-        },
-        {
-          "status": "migrated",
-          "at": "2026-08-20T04:10:00Z",
-          "renderBranch": "A"
-        }
-      ],
-      "stale": false,
-      "staleReason": null,
-      "role": "archetype",
-      "currentStatePath": "stardust/current/pages/cancerwise-html.json",
-      "prototypePath": "stardust/prototypes/cancerwise-html-proposed.html",
-      "migratedPath": "stardust/migrated/cancerwise.html",
-      "fidelityTier": "archetype"
-    },
-    {
-      "slug": "cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html",
-      "url": "https://www.mdanderson.org/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134.html",
-      "title": null,
-      "type": "article",
-      "status": "migrated",
-      "history": [
-        {
-          "status": "extracted",
-          "at": "2026-08-19T18:30:00Z"
-        },
-        {
-          "status": "prototyped",
-          "at": "2026-08-19T22:00:00Z"
-        },
-        {
-          "status": "approved",
-          "at": "2026-08-19T22:00:00Z",
-          "approvedBy": "hands-off"
-        },
-        {
-          "status": "migrated",
-          "at": "2026-08-20T04:10:00Z",
-          "renderBranch": "A"
-        }
-      ],
-      "stale": false,
-      "staleReason": null,
-      "role": "archetype",
-      "currentStatePath": "stardust/current/pages/cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html.json",
-      "prototypePath": "stardust/prototypes/cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html-proposed.html",
-      "migratedPath": "stardust/migrated/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134.html",
-      "fidelityTier": "archetype"
-    },
-    {
-      "slug": "donors-volunteers-html",
-      "url": "https://www.mdanderson.org/donors-volunteers.html",
-      "title": null,
-      "type": "form",
-      "status": "migrated",
-      "history": [
-        {
-          "status": "extracted",
-          "at": "2026-08-19T18:30:00Z"
-        },
-        {
-          "status": "prototyped",
-          "at": "2026-08-19T21:40:00Z"
-        },
-        {
-          "status": "approved",
-          "at": "2026-08-19T21:40:00Z",
-          "approvedBy": "hands-off"
-        },
-        {
-          "status": "migrated",
-          "at": "2026-08-20T04:10:00Z",
-          "renderBranch": "A"
-        }
-      ],
-      "stale": false,
-      "staleReason": null,
-      "role": "archetype",
-      "currentStatePath": "stardust/current/pages/donors-volunteers-html.json",
-      "prototypePath": "stardust/prototypes/donors-volunteers-html-proposed.html",
-      "migratedPath": "stardust/migrated/donors-volunteers.html",
-      "fidelityTier": "archetype"
+     "status": "migrated",
+     "at": "2026-08-20T04:10:00Z",
+     "renderBranch": "A"
     }
-  ],
-  "migrate": {
-    "at": "2026-08-20T04:10:00Z",
-    "outputDir": "stardust/migrated/",
-    "selfContained": true,
-    "canon": {
-      "source": "auto-bootstrap: index",
-      "shas": {
-        "header": "51090f5",
-        "footer": "1868d83",
-        "css": "278066d"
-      }
+   ],
+   "stale": false,
+   "staleReason": null,
+   "role": "archetype",
+   "currentStatePath": "stardust/current/pages/index.json",
+   "prototypePath": "stardust/prototypes/index-proposed.html",
+   "migratedPath": "stardust/migrated/index.html",
+   "fidelityTier": "archetype"
+  },
+  {
+   "slug": "patients-family-html",
+   "url": "https://www.mdanderson.org/patients-family.html",
+   "title": null,
+   "type": "landing",
+   "status": "migrated",
+   "history": [
+    {
+     "status": "extracted",
+     "at": "2026-08-19T18:30:00Z"
     },
-    "pageMap": [
-      {
-        "sourceUrl": "/",
-        "outputPath": "index.html",
-        "slug": "index"
-      },
-      {
-        "sourceUrl": "/patients-family.html",
-        "outputPath": "patients-family.html",
-        "slug": "patients-family-html"
-      },
-      {
-        "sourceUrl": "/cancer-types/breast-cancer.html",
-        "outputPath": "cancer-types/breast-cancer.html",
-        "slug": "cancer-types-breast-cancer-html"
-      },
-      {
-        "sourceUrl": "/patients-family/diagnosis-treatment/care-centers-clinics/breast-center.html",
-        "outputPath": "patients-family/diagnosis-treatment/care-centers-clinics/breast-center.html",
-        "slug": "patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html"
-      },
-      {
-        "sourceUrl": "/patients-family/diagnosis-treatment/clinical-trials.html",
-        "outputPath": "patients-family/diagnosis-treatment/clinical-trials.html",
-        "slug": "patients-family-diagnosis-treatment-clinical-trials-html"
-      },
-      {
-        "sourceUrl": "/prevention-screening.html",
-        "outputPath": "prevention-screening.html",
-        "slug": "prevention-screening-html"
-      },
-      {
-        "sourceUrl": "/research.html",
-        "outputPath": "research.html",
-        "slug": "research-html"
-      },
-      {
-        "sourceUrl": "/about-md-anderson.html",
-        "outputPath": "about-md-anderson.html",
-        "slug": "about-md-anderson-html"
-      },
-      {
-        "sourceUrl": "/about-md-anderson/our-locations.html",
-        "outputPath": "about-md-anderson/our-locations.html",
-        "slug": "about-md-anderson-our-locations-html"
-      },
-      {
-        "sourceUrl": "/cancerwise.html",
-        "outputPath": "cancerwise.html",
-        "slug": "cancerwise-html"
-      },
-      {
-        "sourceUrl": "/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134.html",
-        "outputPath": "cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134.html",
-        "slug": "cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html"
-      },
-      {
-        "sourceUrl": "/donors-volunteers.html",
-        "outputPath": "donors-volunteers.html",
-        "slug": "donors-volunteers-html"
-      }
-    ],
-    "totalAssetsBundled": 283,
-    "bundledAssets": [
-      "chrome.css",
-      "fonts/1eaf27c0-f4de-4273-9f4c-1b3236ad2f3c.woff",
-      "fonts/21decb60-b395-4de2-bd04-e38eb2a56d2f.woff",
-      "fonts/7b95cb9a-a288-4405-97a0-13095f56a903.woff",
-      "fonts/MDIcons.woff",
-      "fonts/MinionPro-Bold.woff",
-      "fonts/MinionPro-Regular.woff",
-      "fonts/MinionPro-Semibold.woff",
-      "fonts/Open-Sans-300.woff",
-      "fonts/Open-Sans-300.woff2",
-      "fonts/Open-Sans-600.woff",
-      "fonts/Open-Sans-700.woff",
-      "fonts/Open-Sans-regular.woff",
-      "fonts/ae26e9d5-38bc-42e7-b8d7-18bf09c8418a.woff",
-      "fonts/b993da84-c1f6-474a-8f00-8aa797b3de8f.woff",
-      "fonts/c30f5672-a88d-407a-bf93-926f33c9d872.woff",
-      "fonts/ecf89914-1896-43f6-a0a0-fe733d1db6e7.woff",
-      "fonts/fontawesome-webfont.woff",
-      "fonts/mda-icons.woff",
-      "fonts/slick.woff",
-      "mda-fonts.css",
-      "media/about-md-anderson-html/badges-1400.jpg",
-      "media/about-md-anderson-html/badges-496.jpg",
-      "media/about-md-anderson-html/careers-278.jpg",
-      "media/about-md-anderson-html/careers-648.jpg",
-      "media/about-md-anderson-html/community-278.jpg",
-      "media/about-md-anderson-html/community-648.jpg",
-      "media/about-md-anderson-html/facts-278.jpg",
-      "media/about-md-anderson-html/facts-648.jpg",
-      "media/about-md-anderson-html/hero-1400.jpg",
-      "media/about-md-anderson-html/hero-496.jpg",
-      "media/about-md-anderson-our-locations-html/gyneco.jpg",
-      "media/about-md-anderson-our-locations-html/hero.jpg",
-      "media/about-md-anderson-our-locations-html/leaguecity.jpg",
-      "media/about-md-anderson-our-locations-html/mri.jpg",
-      "media/about-md-anderson-our-locations-html/northwest.jpg",
-      "media/about-md-anderson-our-locations-html/p-banner.jpg",
-      "media/about-md-anderson-our-locations-html/p-baptist.jpg",
-      "media/about-md-anderson-our-locations-html/p-community.jpg",
-      "media/about-md-anderson-our-locations-html/p-cooper.jpg",
-      "media/about-md-anderson-our-locations-html/p-ochsner.jpg",
-      "media/about-md-anderson-our-locations-html/p-rush.jpg",
-      "media/about-md-anderson-our-locations-html/p-uthealth.jpg",
-      "media/about-md-anderson-our-locations-html/proton.jpg",
-      "media/about-md-anderson-our-locations-html/sugarland.jpg",
-      "media/about-md-anderson-our-locations-html/tmc.jpg",
-      "media/about-md-anderson-our-locations-html/vials.jpg",
-      "media/about-md-anderson-our-locations-html/westhouston.jpg",
-      "media/about-md-anderson-our-locations-html/woodlands.jpg",
-      "media/cancerwise-html/041bb5b5f2d2.jpg",
-      "media/cancerwise-html/062d999276c7.jpg",
-      "media/cancerwise-html/074a3becd65d.jpg",
-      "media/cancerwise-html/0767f5a9cf4f.jpg",
-      "media/cancerwise-html/07c845d3f55e.jpg",
-      "media/cancerwise-html/0811b7ddf3fc.jpg",
-      "media/cancerwise-html/0992dddc4e29.jpg",
-      "media/cancerwise-html/0f766a09584d.jpg",
-      "media/cancerwise-html/136d47330fdb.jpg",
-      "media/cancerwise-html/13927610562b.jpg",
-      "media/cancerwise-html/13b9dab0f223.jpg",
-      "media/cancerwise-html/13ce71de933d.jpg",
-      "media/cancerwise-html/15046529d950.jpg",
-      "media/cancerwise-html/1541c102722e.jpg",
-      "media/cancerwise-html/157ee47fdb36.jpg",
-      "media/cancerwise-html/15af5780e9d6.jpg",
-      "media/cancerwise-html/15fee333add7.jpg",
-      "media/cancerwise-html/181952f022fc.jpg",
-      "media/cancerwise-html/196366446d4b.jpg",
-      "media/cancerwise-html/19e27cd3c08a.jpg",
-      "media/cancerwise-html/1adbf3149b7c.jpg",
-      "media/cancerwise-html/1b4d2e48393a.jpg",
-      "media/cancerwise-html/1b7b35aa5e3f.jpg",
-      "media/cancerwise-html/1c8d98362aaa.jpg",
-      "media/cancerwise-html/1e99295a5ed9.jpg",
-      "media/cancerwise-html/2061e74cb905.jpg",
-      "media/cancerwise-html/21a70139ac7e.jpg",
-      "media/cancerwise-html/22f3340427f9.jpg",
-      "media/cancerwise-html/25a7028b7174.jpg",
-      "media/cancerwise-html/281cbf4b1156.jpg",
-      "media/cancerwise-html/284fe0c3288c.jpg",
-      "media/cancerwise-html/2ab1643734d7.jpg",
-      "media/cancerwise-html/2bd33d44a4f8.jpg",
-      "media/cancerwise-html/2cd514a2d10c.jpg",
-      "media/cancerwise-html/2cdd866a4219.jpg",
-      "media/cancerwise-html/2d75f351007f.jpg",
-      "media/cancerwise-html/2e7a1822f084.jpg",
-      "media/cancerwise-html/3058a6919954.jpg",
-      "media/cancerwise-html/32f924095323.jpg",
-      "media/cancerwise-html/33563a2fe748.jpg",
-      "media/cancerwise-html/33afd3a30a9a.jpg",
-      "media/cancerwise-html/33cef030d6d5.jpg",
-      "media/cancerwise-html/345f8ee5845c.jpg",
-      "media/cancerwise-html/35149c57d70a.jpg",
-      "media/cancerwise-html/35494936f165.jpg",
-      "media/cancerwise-html/36df58ac73a4.jpg",
-      "media/cancerwise-html/371e526ff338.jpg",
-      "media/cancerwise-html/3820157c9157.jpg",
-      "media/cancerwise-html/38ffa95ac26e.jpg",
-      "media/cancerwise-html/3a43f18dfd3c.jpg",
-      "media/cancerwise-html/3b933842a424.jpg",
-      "media/cancerwise-html/3beef0c9a2ed.jpg",
-      "media/cancerwise-html/3c3ba56fd728.jpg",
-      "media/cancerwise-html/3c478e2aaed9.jpg",
-      "media/cancerwise-html/3d3d7195d669.jpg",
-      "media/cancerwise-html/3d6c81a69e81.jpg",
-      "media/cancerwise-html/40187e4cad60.jpg",
-      "media/cancerwise-html/414a57bd86b8.jpg",
-      "media/cancerwise-html/41ee343ce11e.jpg",
-      "media/cancerwise-html/42824e5c95b8.jpg",
-      "media/cancerwise-html/45f36d8d4fb4.jpg",
-      "media/cancerwise-html/47884a39d7e7.jpg",
-      "media/cancerwise-html/47985466052a.jpg",
-      "media/cancerwise-html/47dcd3b14a78.jpg",
-      "media/cancerwise-html/4809c1b451a3.jpg",
-      "media/cancerwise-html/48615d9629df.jpg",
-      "media/cancerwise-html/49772e142dd4.jpg",
-      "media/cancerwise-html/4c910a30679d.jpg",
-      "media/cancerwise-html/4ee43d173bc0.jpg",
-      "media/cancerwise-html/4f356b58755b.jpg",
-      "media/cancerwise-html/4f4285ac7f6f.jpg",
-      "media/cancerwise-html/4f4f84871a0e.jpg",
-      "media/cancerwise-html/505919f0bcf9.jpg",
-      "media/cancerwise-html/509f20b60b9c.jpg",
-      "media/cancerwise-html/51d532674194.jpg",
-      "media/cancerwise-html/53f5f23ca28f.jpg",
-      "media/cancerwise-html/54351fd22e01.jpg",
-      "media/cancerwise-html/56055dc64c92.jpg",
-      "media/cancerwise-html/572026ae2c7f.jpg",
-      "media/cancerwise-html/57d6707dd9df.jpg",
-      "media/cancerwise-html/5861c4c5ab95.jpg",
-      "media/cancerwise-html/5888cf1591a0.jpg",
-      "media/cancerwise-html/5900782cafed.jpg",
-      "media/cancerwise-html/5b3fe9498176.jpg",
-      "media/cancerwise-html/5beff58ded54.jpg",
-      "media/cancerwise-html/5d67ef49a903.jpg",
-      "media/cancerwise-html/5f5f99d96ca7.jpg",
-      "media/cancerwise-html/60e673b5905f.jpg",
-      "media/cancerwise-html/60ffce3cf62a.jpg",
-      "media/cancerwise-html/61466cc1b42e.jpg",
-      "media/cancerwise-html/62a23bdd1e59.jpg",
-      "media/cancerwise-html/64585b06b624.jpg",
-      "media/cancerwise-html/646169728b18.jpg",
-      "media/cancerwise-html/6626aea5776f.jpg",
-      "media/cancerwise-html/68ffb76dd7f0.jpg",
-      "media/cancerwise-html/6a35e5164eb7.jpg",
-      "media/cancerwise-html/6a45a84f6fbc.jpg",
-      "media/cancerwise-html/6cb8e4dd4950.jpg",
-      "media/cancerwise-html/6eb2367df950.jpg",
-      "media/cancerwise-html/6f20e9f5e176.jpg",
-      "media/cancerwise-html/6fef4a872f71.jpg",
-      "media/cancerwise-html/70f6cac68c54.jpg",
-      "media/cancerwise-html/76911cdb9282.jpg",
-      "media/cancerwise-html/76d5942fd51f.jpg",
-      "media/cancerwise-html/79df0eabfb18.jpg",
-      "media/cancerwise-html/7a10f03b17b9.jpg",
-      "media/cancerwise-html/7a43911a3149.jpg",
-      "media/cancerwise-html/7a56bbc18b14.jpg",
-      "media/cancerwise-html/7ad6772a72b9.jpg",
-      "media/cancerwise-html/7ad855a5006e.jpg",
-      "media/cancerwise-html/7b7d65fcd79e.jpg",
-      "media/cancerwise-html/7be4bfe6cb86.jpg",
-      "media/cancerwise-html/7d71a0dd7e88.jpg",
-      "media/cancerwise-html/7e337f8fd24d.jpg",
-      "media/cancerwise-html/7e37146a1250.jpg",
-      "media/cancerwise-html/7ea748e15551.jpg",
-      "media/cancerwise-html/7edc5f762af3.jpg",
-      "media/cancerwise-html/7ef97fe5e17e.jpg",
-      "media/cancerwise-html/80bd5f699b14.jpg",
-      "media/cancerwise-html/810eb8ae1570.jpg",
-      "media/cancerwise-html/8137e726cf96.jpg",
-      "media/cancerwise-html/826a4997d2e9.jpg",
-      "media/cancerwise-html/82d1632442f8.jpg",
-      "media/cancerwise-html/82f9c64e0d68.jpg",
-      "media/cancerwise-html/83977c3fdfbf.jpg",
-      "media/cancerwise-html/84811c3f41f2.jpg",
-      "media/cancerwise-html/86a56648d50d.jpg",
-      "media/cancerwise-html/876610cd6d64.jpg",
-      "media/cancerwise-html/876d847d0720.jpg",
-      "media/cancerwise-html/8884c7d00c5a.jpg",
-      "media/cancerwise-html/897ebf34c8ad.jpg",
-      "media/cancerwise-html/8aec3b3fb40f.jpg",
-      "media/cancerwise-html/8cfac5ab8f79.jpg",
-      "media/cancerwise-html/8fd9e5082f38.jpg",
-      "media/cancerwise-html/93cc171fa6f6.jpg",
-      "media/cancerwise-html/991fe6b3485f.jpg",
-      "media/cancerwise-html/997d01f8e9b6.jpg",
-      "media/cancerwise-html/99a66a67b68a.jpg",
-      "media/cancerwise-html/9a64f29200ef.jpg",
-      "media/cancerwise-html/9ac9e51efd78.jpg",
-      "media/cancerwise-html/9b782511f31c.jpg",
-      "media/cancerwise-html/9f2dcd716931.jpg",
-      "media/cancerwise-html/a0ebb445dba9.jpg",
-      "media/cancerwise-html/a339d702b2dc.jpg",
-      "media/cancerwise-html/a3d25c823486.jpg",
-      "media/cancerwise-html/a41c54d39dfe.jpg",
-      "media/cancerwise-html/a683253a9c20.jpg",
-      "media/cancerwise-html/aa1e9c6e50fe.jpg",
-      "media/cancerwise-html/aa636d692e29.jpg",
-      "media/cancerwise-html/aaa5328eaffe.jpg",
-      "media/cancerwise-html/abbb7b8a7752.jpg",
-      "media/cancerwise-html/abbc6c701b3c.jpg",
-      "media/cancerwise-html/ac819ebfbb6c.jpg",
-      "media/cancerwise-html/acd807a55953.jpg",
-      "media/cancerwise-html/acd9e7d996b2.jpg",
-      "media/cancerwise-html/af0b88f0c5ee.jpg",
-      "media/cancerwise-html/af579a7e8365.jpg",
-      "media/cancerwise-html/b115942a4a3a.jpg",
-      "media/cancerwise-html/b136663ec076.jpg",
-      "media/cancerwise-html/b282717d45e9.jpg",
-      "media/cancerwise-html/b35c5ee81996.jpg",
-      "media/cancerwise-html/b35c6fa673e7.jpg",
-      "media/cancerwise-html/b3bf36f26e69.jpg",
-      "media/cancerwise-html/b4eef8763e7d.jpg",
-      "media/cancerwise-html/b560c8e9931e.jpg",
-      "media/cancerwise-html/b5743bfaf9b1.jpg",
-      "media/cancerwise-html/b5d26996ef2f.jpg",
-      "media/cancerwise-html/b7b85f3d6400.jpg",
-      "media/cancerwise-html/b80791d96ac0.jpg",
-      "media/cancerwise-html/b816b82a9c85.jpg",
-      "media/cancerwise-html/b8f5db259bc5.jpg",
-      "media/cancerwise-html/b97df3e737d1.jpg",
-      "media/cancerwise-html/b9df936f7050.jpg",
-      "media/cancerwise-html/ba1f5aff6f8c.jpg",
-      "media/cancerwise-html/bd4dd8bbb7fa.jpg",
-      "media/cancerwise-html/bece0e29c0f4.jpg",
-      "media/cancerwise-html/bfa6b5c251f8.jpg",
-      "media/cancerwise-html/c0576a9db249.jpg",
-      "media/cancerwise-html/c15ef5c31bec.jpg",
-      "media/cancerwise-html/c1f3bcdd7dc3.jpg",
-      "media/cancerwise-html/c2015f1bd4c8.jpg",
-      "media/cancerwise-html/c28d4eb0520b.jpg",
-      "media/cancerwise-html/c838a05c43b3.jpg",
-      "media/cancerwise-html/c86bc96271e1.jpg",
-      "media/cancerwise-html/c97b57af2c18.jpg",
-      "media/cancerwise-html/ccffb33015be.jpg",
-      "media/cancerwise-html/cda478b5e294.jpg",
-      "media/cancerwise-html/cebdc6901d4e.jpg",
-      "media/cancerwise-html/d03cd65b0191.jpg",
-      "media/cancerwise-html/d7b7508fcfc4.jpg",
-      "media/cancerwise-html/d7db5294e6d4.jpg",
-      "media/cancerwise-html/d911485a5565.jpg",
-      "media/cancerwise-html/da56cc354e0a.jpg",
-      "media/cancerwise-html/ddbb2de3cffd.jpg",
-      "media/cancerwise-html/df2206d310b3.jpg",
-      "media/cancerwise-html/dfc945359883.jpg",
-      "media/cancerwise-html/e06d60a23f72.jpg",
-      "media/cancerwise-html/e133bc6ca2ec.jpg",
-      "media/cancerwise-html/e1bfae8fc5e8.jpg",
-      "media/cancerwise-html/e1db7571bbb8.jpg",
-      "media/cancerwise-html/e3424347d04d.jpg",
-      "media/cancerwise-html/e4fb8108999e.jpg",
-      "media/cancerwise-html/e53ef5468cdb.jpg",
-      "media/cancerwise-html/e5ad6a5e8ae6.jpg",
-      "media/cancerwise-html/e5d98878184c.jpg",
-      "media/cancerwise-html/e603ac2e8b80.jpg",
-      "media/cancerwise-html/e6b34353f8b9.jpg",
-      "media/cancerwise-html/e85885d63986.jpg",
-      "media/cancerwise-html/e91ad78b5b84.jpg",
-      "media/cancerwise-html/eb7790a44002.jpg",
-      "media/cancerwise-html/ee308b44ac3c.jpg",
-      "media/cancerwise-html/eec795b7ab9e.jpg",
-      "media/cancerwise-html/f049b9361860.jpg",
-      "media/cancerwise-html/f12a162dee4c.jpg",
-      "media/cancerwise-html/f1d0a9f77bd9.jpg",
-      "media/cancerwise-html/f228714ca2f9.jpg",
-      "media/cancerwise-html/f2d6e7647ef5.jpg",
-      "media/cancerwise-html/f3d8d99cb524.jpg",
-      "media/cancerwise-html/f5db3da455e8.jpg",
-      "media/cancerwise-html/fa42fe6aa5ff.jpg",
-      "media/cancerwise-html/fbd488e5473a.jpg",
-      "media/cancerwise-html/fbd918aff47a.jpg",
-      "media/cancerwise-html/fcee7fdeb951.jpg",
-      "media/cancerwise-html/fdc7ef98d617.jpg",
-      "media/cancerwise-html/fee02283a517.jpg",
-      "media/cancerwise-html/ff1e09684da9.jpg",
-      "media/cancerwise-html/fffa8c6cd842.jpg",
-      "media/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html/hero-1400.jpg",
-      "media/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html/hero-496.jpg",
-      "media/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html/panorama-1440.png",
-      "media/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html/panorama-360.png",
-      "media/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html/prevention-278.jpg",
-      "media/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html/prevention-648.jpg",
-      "media/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html/video-648.jpg"
-    ],
-    "pages": [
-      {
-        "slug": "index",
-        "file": "stardust/migrated/index.html",
-        "assetsBundled": 2,
-        "renderBranch": "A",
-        "fidelityTier": "archetype"
-      },
-      {
-        "slug": "patients-family-html",
-        "file": "stardust/migrated/patients-family.html",
-        "assetsBundled": 2,
-        "renderBranch": "A'",
-        "fidelityTier": "sibling"
-      },
-      {
-        "slug": "cancer-types-breast-cancer-html",
-        "file": "stardust/migrated/cancer-types/breast-cancer.html",
-        "assetsBundled": 2,
-        "renderBranch": "A",
-        "fidelityTier": "archetype"
-      },
-      {
-        "slug": "patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html",
-        "file": "stardust/migrated/patients-family/diagnosis-treatment/care-centers-clinics/breast-center.html",
-        "assetsBundled": 9,
-        "renderBranch": "A",
-        "fidelityTier": "archetype"
-      },
-      {
-        "slug": "patients-family-diagnosis-treatment-clinical-trials-html",
-        "file": "stardust/migrated/patients-family/diagnosis-treatment/clinical-trials.html",
-        "assetsBundled": 2,
-        "renderBranch": "A",
-        "fidelityTier": "archetype"
-      },
-      {
-        "slug": "prevention-screening-html",
-        "file": "stardust/migrated/prevention-screening.html",
-        "assetsBundled": 2,
-        "renderBranch": "A",
-        "fidelityTier": "archetype"
-      },
-      {
-        "slug": "research-html",
-        "file": "stardust/migrated/research.html",
-        "assetsBundled": 2,
-        "renderBranch": "A",
-        "fidelityTier": "archetype"
-      },
-      {
-        "slug": "about-md-anderson-html",
-        "file": "stardust/migrated/about-md-anderson.html",
-        "assetsBundled": 12,
-        "renderBranch": "A",
-        "fidelityTier": "archetype"
-      },
-      {
-        "slug": "about-md-anderson-our-locations-html",
-        "file": "stardust/migrated/about-md-anderson/our-locations.html",
-        "assetsBundled": 20,
-        "renderBranch": "A",
-        "fidelityTier": "archetype"
-      },
-      {
-        "slug": "cancerwise-html",
-        "file": "stardust/migrated/cancerwise.html",
-        "assetsBundled": 229,
-        "renderBranch": "A",
-        "fidelityTier": "archetype"
-      },
-      {
-        "slug": "cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html",
-        "file": "stardust/migrated/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134.html",
-        "assetsBundled": 2,
-        "renderBranch": "A",
-        "fidelityTier": "archetype"
-      },
-      {
-        "slug": "donors-volunteers-html",
-        "file": "stardust/migrated/donors-volunteers.html",
-        "assetsBundled": 2,
-        "renderBranch": "A",
-        "fidelityTier": "archetype"
-      }
-    ],
-    "missingAssets": [],
-    "cleanedAssets": [],
-    "decisions": {
-      "assetSourceRoot": "stardust/prototypes/assets/ (replica prototypes carry the localized media; stardust/current/assets holds fonts + screenshots only)",
-      "externalOriginLinksKept": 807,
-      "externalOriginLinksPolicy": "same-origin links to non-inventory pages keep absolute live URLs; NOT flagged data-broken-link (source site is live; bounce beats 404)",
-      "remoteMediaPolicy": "live mdanderson.org image renditions kept as absolute source URLs (resolve at view time); local media bundled relative",
-      "logo": "header/footer logos are live-origin webp renditions (no local logo captured); kept absolute, recorded as media-reuse-source-cdn",
-      "favicon": "no favicon captured during extract; variants not generated (prepare-migration never ran) — soft-logged, pages render without them",
-      "fonts": "Minion/Univers licensed kits bundled under assets/fonts/ with licensing banner preserved in assets/mda-fonts.css (local gate instrumentation; delivery must license or substitute)"
+    {
+     "status": "migrated",
+     "at": "2026-08-20T04:10:00Z",
+     "renderBranch": "A'"
     }
+   ],
+   "stale": false,
+   "staleReason": null,
+   "role": "sibling:index",
+   "currentStatePath": "stardust/current/pages/patients-family-html.json",
+   "prototypePath": null,
+   "migratedPath": "stardust/migrated/patients-family.html",
+   "fidelityTier": "sibling",
+   "archetypeSource": "index"
+  },
+  {
+   "slug": "cancer-types-breast-cancer-html",
+   "url": "https://www.mdanderson.org/cancer-types/breast-cancer.html",
+   "title": null,
+   "type": "program",
+   "status": "migrated",
+   "history": [
+    {
+     "status": "extracted",
+     "at": "2026-08-19T18:30:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-08-19T22:30:00Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-08-19T22:30:00Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-08-20T04:10:00Z",
+     "renderBranch": "A"
+    }
+   ],
+   "stale": false,
+   "staleReason": null,
+   "role": "archetype",
+   "currentStatePath": "stardust/current/pages/cancer-types-breast-cancer-html.json",
+   "prototypePath": "stardust/prototypes/cancer-types-breast-cancer-html-proposed.html",
+   "migratedPath": "stardust/migrated/cancer-types/breast-cancer.html",
+   "fidelityTier": "archetype"
+  },
+  {
+   "slug": "patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html",
+   "url": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/breast-center.html",
+   "title": null,
+   "type": "program",
+   "status": "migrated",
+   "history": [
+    {
+     "status": "extracted",
+     "at": "2026-08-19T18:30:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-08-20T02:30:00Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-08-20T02:30:00Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-08-20T04:10:00Z",
+     "renderBranch": "A"
+    }
+   ],
+   "stale": false,
+   "staleReason": null,
+   "role": "archetype",
+   "currentStatePath": "stardust/current/pages/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html.json",
+   "prototypePath": "stardust/prototypes/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html-proposed.html",
+   "migratedPath": "stardust/migrated/patients-family/diagnosis-treatment/care-centers-clinics/breast-center.html",
+   "fidelityTier": "archetype"
+  },
+  {
+   "slug": "patients-family-diagnosis-treatment-clinical-trials-html",
+   "url": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html",
+   "title": null,
+   "type": "program",
+   "status": "migrated",
+   "history": [
+    {
+     "status": "extracted",
+     "at": "2026-08-19T18:30:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-08-19T21:20:00Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-08-19T21:20:00Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-08-20T04:10:00Z",
+     "renderBranch": "A"
+    }
+   ],
+   "stale": false,
+   "staleReason": null,
+   "role": "archetype",
+   "currentStatePath": "stardust/current/pages/patients-family-diagnosis-treatment-clinical-trials-html.json",
+   "prototypePath": "stardust/prototypes/patients-family-diagnosis-treatment-clinical-trials-html-proposed.html",
+   "migratedPath": "stardust/migrated/patients-family/diagnosis-treatment/clinical-trials.html",
+   "fidelityTier": "archetype"
+  },
+  {
+   "slug": "prevention-screening-html",
+   "url": "https://www.mdanderson.org/prevention-screening.html",
+   "title": null,
+   "type": "landing",
+   "status": "migrated",
+   "history": [
+    {
+     "status": "extracted",
+     "at": "2026-08-19T18:30:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-08-19T21:00:00Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-08-19T21:00:00Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-08-20T04:10:00Z",
+     "renderBranch": "A"
+    }
+   ],
+   "stale": false,
+   "staleReason": null,
+   "role": "archetype",
+   "currentStatePath": "stardust/current/pages/prevention-screening-html.json",
+   "prototypePath": "stardust/prototypes/prevention-screening-html-proposed.html",
+   "migratedPath": "stardust/migrated/prevention-screening.html",
+   "fidelityTier": "archetype"
+  },
+  {
+   "slug": "research-html",
+   "url": "https://www.mdanderson.org/research.html",
+   "title": null,
+   "type": "landing",
+   "status": "migrated",
+   "history": [
+    {
+     "status": "extracted",
+     "at": "2026-08-19T18:30:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-08-20T01:30:00Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-08-20T01:30:00Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-08-20T04:10:00Z",
+     "renderBranch": "A"
+    }
+   ],
+   "stale": false,
+   "staleReason": null,
+   "role": "archetype",
+   "currentStatePath": "stardust/current/pages/research-html.json",
+   "prototypePath": "stardust/prototypes/research-html-proposed.html",
+   "migratedPath": "stardust/migrated/research.html",
+   "fidelityTier": "archetype"
+  },
+  {
+   "slug": "about-md-anderson-html",
+   "url": "https://www.mdanderson.org/about-md-anderson.html",
+   "title": null,
+   "type": "static",
+   "status": "migrated",
+   "history": [
+    {
+     "status": "extracted",
+     "at": "2026-08-19T18:30:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-08-20T02:00:00Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-08-20T02:00:00Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-08-20T04:10:00Z",
+     "renderBranch": "A"
+    }
+   ],
+   "stale": false,
+   "staleReason": null,
+   "role": "archetype",
+   "currentStatePath": "stardust/current/pages/about-md-anderson-html.json",
+   "prototypePath": "stardust/prototypes/about-md-anderson-html-proposed.html",
+   "migratedPath": "stardust/migrated/about-md-anderson.html",
+   "fidelityTier": "archetype"
+  },
+  {
+   "slug": "about-md-anderson-our-locations-html",
+   "url": "https://www.mdanderson.org/about-md-anderson/our-locations.html",
+   "title": null,
+   "type": "listing",
+   "status": "migrated",
+   "history": [
+    {
+     "status": "extracted",
+     "at": "2026-08-19T18:30:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-08-20T03:00:00Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-08-20T03:00:00Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-08-20T04:10:00Z",
+     "renderBranch": "A"
+    }
+   ],
+   "stale": false,
+   "staleReason": null,
+   "role": "archetype",
+   "currentStatePath": "stardust/current/pages/about-md-anderson-our-locations-html.json",
+   "prototypePath": "stardust/prototypes/about-md-anderson-our-locations-html-proposed.html",
+   "migratedPath": "stardust/migrated/about-md-anderson/our-locations.html",
+   "fidelityTier": "archetype"
+  },
+  {
+   "slug": "cancerwise-html",
+   "url": "https://www.mdanderson.org/cancerwise.html",
+   "title": null,
+   "type": "listing",
+   "status": "migrated",
+   "history": [
+    {
+     "status": "extracted",
+     "at": "2026-08-19T18:30:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-08-20T01:30:00Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-08-20T01:30:00Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-08-20T04:10:00Z",
+     "renderBranch": "A"
+    }
+   ],
+   "stale": false,
+   "staleReason": null,
+   "role": "archetype",
+   "currentStatePath": "stardust/current/pages/cancerwise-html.json",
+   "prototypePath": "stardust/prototypes/cancerwise-html-proposed.html",
+   "migratedPath": "stardust/migrated/cancerwise.html",
+   "fidelityTier": "archetype"
+  },
+  {
+   "slug": "cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html",
+   "url": "https://www.mdanderson.org/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134.html",
+   "title": null,
+   "type": "article",
+   "status": "migrated",
+   "history": [
+    {
+     "status": "extracted",
+     "at": "2026-08-19T18:30:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-08-19T22:00:00Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-08-19T22:00:00Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-08-20T04:10:00Z",
+     "renderBranch": "A"
+    }
+   ],
+   "stale": false,
+   "staleReason": null,
+   "role": "archetype",
+   "currentStatePath": "stardust/current/pages/cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html.json",
+   "prototypePath": "stardust/prototypes/cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html-proposed.html",
+   "migratedPath": "stardust/migrated/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134.html",
+   "fidelityTier": "archetype"
+  },
+  {
+   "slug": "donors-volunteers-html",
+   "url": "https://www.mdanderson.org/donors-volunteers.html",
+   "title": null,
+   "type": "form",
+   "status": "migrated",
+   "history": [
+    {
+     "status": "extracted",
+     "at": "2026-08-19T18:30:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-08-19T21:40:00Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-08-19T21:40:00Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-08-20T04:10:00Z",
+     "renderBranch": "A"
+    }
+   ],
+   "stale": false,
+   "staleReason": null,
+   "role": "archetype",
+   "currentStatePath": "stardust/current/pages/donors-volunteers-html.json",
+   "prototypePath": "stardust/prototypes/donors-volunteers-html-proposed.html",
+   "migratedPath": "stardust/migrated/donors-volunteers.html",
+   "fidelityTier": "archetype"
+  },
+  {
+   "slug": "education-training-html",
+   "url": "https://www.mdanderson.org/education-training.html",
+   "path": "/education-training.html",
+   "type": "landing",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "for-physicians-html",
+   "url": "https://www.mdanderson.org/for-physicians.html",
+   "path": "/for-physicians.html",
+   "type": "landing",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "publications-html",
+   "url": "https://www.mdanderson.org/publications.html",
+   "path": "/publications.html",
+   "type": "landing",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "about-md-anderson-careers-html",
+   "url": "https://www.mdanderson.org/about-md-anderson/careers.html",
+   "path": "/about-md-anderson/careers.html",
+   "type": "landing",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "prevention-screening-get-screened-html",
+   "url": "https://www.mdanderson.org/prevention-screening/get-screened.html",
+   "path": "/prevention-screening/get-screened.html",
+   "type": "landing",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "donors-volunteers-donate-html",
+   "url": "https://www.mdanderson.org/donors-volunteers/donate.html",
+   "path": "/donors-volunteers/donate.html",
+   "type": "landing",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "research-research-resources-html",
+   "url": "https://www.mdanderson.org/research/research-resources.html",
+   "path": "/research/research-resources.html",
+   "type": "landing",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "education-training-degree-granting-schools-html",
+   "url": "https://www.mdanderson.org/education-training/degree-granting-schools.html",
+   "path": "/education-training/degree-granting-schools.html",
+   "type": "landing",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "research-research-areas-html",
+   "url": "https://www.mdanderson.org/research/research-areas.html",
+   "path": "/research/research-areas.html",
+   "type": "landing",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "research-departments-labs-institutes-departments-divisions-abdominal-imaging-html",
+   "url": "https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions/abdominal-imaging.html",
+   "path": "/research/departments-labs-institutes/departments-divisions/abdominal-imaging.html",
+   "type": "program",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "research-departments-labs-institutes-departments-divisions-behavioral-science-html",
+   "url": "https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions/behavioral-science.html",
+   "path": "/research/departments-labs-institutes/departments-divisions/behavioral-science.html",
+   "type": "program",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "research-departments-labs-institutes-departments-divisions-breast-medical-oncology-html",
+   "url": "https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions/breast-medical-oncology.html",
+   "path": "/research/departments-labs-institutes/departments-divisions/breast-medical-oncology.html",
+   "type": "program",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "research-departments-labs-institutes-departments-divisions-biostatistics-html",
+   "url": "https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions/biostatistics.html",
+   "path": "/research/departments-labs-institutes/departments-divisions/biostatistics.html",
+   "type": "program",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "education-training-clinical-training-certificate-programs-review-courses-ahearn-educator-program-html",
+   "url": "https://www.mdanderson.org/education-training/clinical-training/certificate-programs-review-courses/ahearn-educator-program.html",
+   "path": "/education-training/clinical-training/certificate-programs-review-courses/ahearn-educator-program.html",
+   "type": "program",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "education-training-clinical-training-graduate-medical-education-html",
+   "url": "https://www.mdanderson.org/education-training/clinical-training/graduate-medical-education.html",
+   "path": "/education-training/clinical-training/graduate-medical-education.html",
+   "type": "program",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "education-training-research-training-career-development-html",
+   "url": "https://www.mdanderson.org/education-training/research-training/career-development.html",
+   "path": "/education-training/research-training/career-development.html",
+   "type": "program",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "research-research-resources-core-facilities-advanced-technology-genomics-core-html",
+   "url": "https://www.mdanderson.org/research/research-resources/core-facilities/advanced-technology-genomics-core.html",
+   "path": "/research/research-resources/core-facilities/advanced-technology-genomics-core.html",
+   "type": "program",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "research-research-resources-core-facilities-advanced-spatial-genomics-core-html",
+   "url": "https://www.mdanderson.org/research/research-resources/core-facilities/advanced-spatial-genomics-core.html",
+   "path": "/research/research-resources/core-facilities/advanced-spatial-genomics-core.html",
+   "type": "program",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "patients-family-diagnosis-treatment-care-centers-clinics-proton-therapy-center-html",
+   "url": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center.html",
+   "path": "/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center.html",
+   "type": "program",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "about-md-anderson-business-legal-code-of-ethics-html",
+   "url": "https://www.mdanderson.org/about-md-anderson/business-legal/code-of-ethics.html",
+   "path": "/about-md-anderson/business-legal/code-of-ethics.html",
+   "type": "static",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "patients-family-becoming-our-patient-getting-to-md-anderson-parking-html",
+   "url": "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/parking.html",
+   "path": "/patients-family/becoming-our-patient/getting-to-md-anderson/parking.html",
+   "type": "static",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "treatment-options-brachytherapy-html",
+   "url": "https://www.mdanderson.org/treatment-options/brachytherapy.html",
+   "path": "/treatment-options/brachytherapy.html",
+   "type": "static",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "for-physicians-clinical-tools-resources-clinical-calculators-html",
+   "url": "https://www.mdanderson.org/for-physicians/clinical-tools-resources/clinical-calculators.html",
+   "path": "/for-physicians/clinical-tools-resources/clinical-calculators.html",
+   "type": "static",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "research-research-areas-basic-science-html",
+   "url": "https://www.mdanderson.org/research/research-areas/basic-science.html",
+   "path": "/research/research-areas/basic-science.html",
+   "type": "static",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "about-md-anderson-facts-history-institutional-profile-html",
+   "url": "https://www.mdanderson.org/about-md-anderson/facts-history/institutional-profile.html",
+   "path": "/about-md-anderson/facts-history/institutional-profile.html",
+   "type": "static",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "patients-family-becoming-our-patient-planning-for-care-virtual-visits-html",
+   "url": "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/virtual-visits.html",
+   "path": "/patients-family/becoming-our-patient/planning-for-care/virtual-visits.html",
+   "type": "static",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "about-md-anderson-contact-us-helpful-phone-numbers-html",
+   "url": "https://www.mdanderson.org/about-md-anderson/contact-us/helpful-phone-numbers.html",
+   "path": "/about-md-anderson/contact-us/helpful-phone-numbers.html",
+   "type": "static",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "podcast-html",
+   "url": "https://www.mdanderson.org/podcast.html",
+   "path": "/podcast.html",
+   "type": "static",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "research-departments-labs-institutes-departments-divisions-anatomic-pathology-html",
+   "url": "https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions/anatomic-pathology.html",
+   "path": "/research/departments-labs-institutes/departments-divisions/anatomic-pathology.html",
+   "type": "static",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "newsroom-html",
+   "url": "https://www.mdanderson.org/newsroom.html",
+   "path": "/newsroom.html",
+   "type": "listing",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "newsroom-2024-html",
+   "url": "https://www.mdanderson.org/newsroom/2024.html",
+   "path": "/newsroom/2024.html",
+   "type": "listing",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "newsroom-2025-html",
+   "url": "https://www.mdanderson.org/newsroom/2025.html",
+   "path": "/newsroom/2025.html",
+   "type": "listing",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "newsroom-2020-01-html",
+   "url": "https://www.mdanderson.org/newsroom/2020/01.html",
+   "path": "/newsroom/2020/01.html",
+   "type": "listing",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "research-departments-labs-institutes-html",
+   "url": "https://www.mdanderson.org/research/departments-labs-institutes.html",
+   "path": "/research/departments-labs-institutes.html",
+   "type": "listing",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "research-research-resources-core-facilities-html",
+   "url": "https://www.mdanderson.org/research/research-resources/core-facilities.html",
+   "path": "/research/research-resources/core-facilities.html",
+   "type": "listing",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "research-research-resources-conferences-seminars-html",
+   "url": "https://www.mdanderson.org/research/research-resources/conferences-seminars.html",
+   "path": "/research/research-resources/conferences-seminars.html",
+   "type": "listing",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "patients-family-search-results-v2-html",
+   "url": "https://www.mdanderson.org/patients-family/search-results.v2.html",
+   "path": "/patients-family/search-results.v2.html",
+   "type": "listing",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "cancerwise-how-i-knew-i-had-colorectal-cancer-six-survivors-share-symptoms-h00-159781968-html",
+   "url": "https://www.mdanderson.org/cancerwise/-how-i-knew-i-had-colorectal-cancer---six-survivors-share-symptoms.h00-159781968.html",
+   "path": "/cancerwise/-how-i-knew-i-had-colorectal-cancer---six-survivors-share-symptoms.h00-159781968.html",
+   "type": "article",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "cancerwise-drug-hunter-deploys-ai-to-accelerate-path-to-new-therapies-h00-159852189-html",
+   "url": "https://www.mdanderson.org/cancerwise/-drug-hunter--deploys-ai-to-accelerate-path-to-new-therapies.h00-159852189.html",
+   "path": "/cancerwise/-drug-hunter--deploys-ai-to-accelerate-path-to-new-therapies.h00-159852189.html",
+   "type": "article",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "cancerwise-5-ways-our-social-work-counselors-can-help-during-cancer-treatm-h00-158988234-html",
+   "url": "https://www.mdanderson.org/cancerwise/-5-ways-our-social-work-counselors-can-help-during-cancer-treatm.h00-158988234.html",
+   "path": "/cancerwise/-5-ways-our-social-work-counselors-can-help-during-cancer-treatm.h00-158988234.html",
+   "type": "article",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "cancerwise-your-guide-to-walking-as-exercise-h00-159694389-html",
+   "url": "https://www.mdanderson.org/cancerwise/your-guide-to-walking-as-exercise.h00-159694389.html",
+   "path": "/cancerwise/your-guide-to-walking-as-exercise.h00-159694389.html",
+   "type": "article",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "cancerwise-zebrafish-photos-put-researcher-on-cutting-edge-of-science-and-photography-h00-159143667-html",
+   "url": "https://www.mdanderson.org/cancerwise/zebrafish-photos-put-researcher-on-cutting-edge-of-science-and-photography.h00-159143667.html",
+   "path": "/cancerwise/zebrafish-photos-put-researcher-on-cutting-edge-of-science-and-photography.h00-159143667.html",
+   "type": "article",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "newsroom-md-anderson-s-institute-for-data-science-in-oncology-establis-h00-159698334-html",
+   "url": "https://www.mdanderson.org/newsroom/---md-anderson-s-institute-for-data-science-in-oncology-establis.h00-159698334.html",
+   "path": "/newsroom/---md-anderson-s-institute-for-data-science-in-oncology-establis.h00-159698334.html",
+   "type": "article",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "newsroom-two-md-anderson-researchers-elected-aaas-fellows-h00-159774867-html",
+   "url": "https://www.mdanderson.org/newsroom/---two-md-anderson-researchers-elected-aaas-fellows--.h00-159774867.html",
+   "path": "/newsroom/---two-md-anderson-researchers-elected-aaas-fellows--.h00-159774867.html",
+   "type": "article",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "newsroom-md-anderson-research-highlights-for-january-12-2022-h00-159536589-html",
+   "url": "https://www.mdanderson.org/newsroom/-md-anderson-research-highlights-for-january-12--2022.h00-159536589.html",
+   "path": "/newsroom/-md-anderson-research-highlights-for-january-12--2022.h00-159536589.html",
+   "type": "article",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "newsroom-patients-with-heart-disease-may-be-at-increased-risk-for-advanc-h00-159703068-html",
+   "url": "https://www.mdanderson.org/newsroom/-patients-with-heart-disease-may-be-at-increased-risk-for-advanc.h00-159703068.html",
+   "path": "/newsroom/-patients-with-heart-disease-may-be-at-increased-risk-for-advanc.h00-159703068.html",
+   "type": "article",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "newsroom-1-400-west-texans-support-md-anderson-at-39-th-polo-on-the-prai-h00-159775656-html",
+   "url": "https://www.mdanderson.org/newsroom/1-400--west-texans-support-md-anderson-at-39-th-polo-on-the-prai.h00-159775656.html",
+   "path": "/newsroom/1-400--west-texans-support-md-anderson-at-39-th-polo-on-the-prai.h00-159775656.html",
+   "type": "article",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "publications-subscribe-to-cancerwise-html",
+   "url": "https://www.mdanderson.org/publications/subscribe-to-cancerwise.html",
+   "path": "/publications/subscribe-to-cancerwise.html",
+   "type": "form",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "publications-subscribe-to-focused-on-health-html",
+   "url": "https://www.mdanderson.org/publications/subscribe-to-focused-on-health.html",
+   "path": "/publications/subscribe-to-focused-on-health.html",
+   "type": "form",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "publications-subscribe-to-frontline-html",
+   "url": "https://www.mdanderson.org/publications/subscribe-to-frontline.html",
+   "path": "/publications/subscribe-to-frontline.html",
+   "type": "form",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "publications-subscribe-to-leukemia-insights-html",
+   "url": "https://www.mdanderson.org/publications/subscribe-to-leukemia-insights.html",
+   "path": "/publications/subscribe-to-leukemia-insights.html",
+   "type": "form",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "publications-subscribe-to-proton-pals-html",
+   "url": "https://www.mdanderson.org/publications/subscribe-to-proton-pals.html",
+   "path": "/publications/subscribe-to-proton-pals.html",
+   "type": "form",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "about-md-anderson-contact-us-askmdanderson-ask-a-question-html",
+   "url": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html",
+   "path": "/about-md-anderson/contact-us/askmdanderson/ask-a-question.html",
+   "type": "form",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "about-md-anderson-contact-us-askmdanderson-ask-a-question-confirmation-html",
+   "url": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question/confirmation.html",
+   "path": "/about-md-anderson/contact-us/askmdanderson/ask-a-question/confirmation.html",
+   "type": "form",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "newsroom-request-to-film-on-campus-html",
+   "url": "https://www.mdanderson.org/newsroom/request-to-film-on-campus.html",
+   "path": "/newsroom/request-to-film-on-campus.html",
+   "type": "form",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "donors-volunteers-other-ways-to-help-give-blood-contact-us-html",
+   "url": "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/give-blood/contact-us.html",
+   "path": "/donors-volunteers/other-ways-to-help/give-blood/contact-us.html",
+   "type": "form",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "patients-family-diagnosis-treatment-care-centers-clinics-proton-therapy-center-contact-us-html",
+   "url": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/contact-us.html",
+   "path": "/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/contact-us.html",
+   "type": "form",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "cancer-types-lung-cancer-html",
+   "url": "https://www.mdanderson.org/cancer-types/lung-cancer.html",
+   "path": "/cancer-types/lung-cancer.html",
+   "type": "disease",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "cancer-types-brain-tumor-html",
+   "url": "https://www.mdanderson.org/cancer-types/brain-tumor.html",
+   "path": "/cancer-types/brain-tumor.html",
+   "type": "disease",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "cancer-types-acute-myeloid-leukemia-html",
+   "url": "https://www.mdanderson.org/cancer-types/acute-myeloid-leukemia.html",
+   "path": "/cancer-types/acute-myeloid-leukemia.html",
+   "type": "disease",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "cancer-types-colon-cancer-html",
+   "url": "https://www.mdanderson.org/cancer-types/colon-cancer.html",
+   "path": "/cancer-types/colon-cancer.html",
+   "type": "disease",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "cancer-types-lung-cancer-lung-cancer-treatment-html",
+   "url": "https://www.mdanderson.org/cancer-types/lung-cancer/lung-cancer-treatment.html",
+   "path": "/cancer-types/lung-cancer/lung-cancer-treatment.html",
+   "type": "disease",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "cancer-types-lung-cancer-lung-cancer-symptoms-html",
+   "url": "https://www.mdanderson.org/cancer-types/lung-cancer/lung-cancer-symptoms.html",
+   "path": "/cancer-types/lung-cancer/lung-cancer-symptoms.html",
+   "type": "disease",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "cancer-types-brain-tumor-brain-tumor-diagnosis-html",
+   "url": "https://www.mdanderson.org/cancer-types/brain-tumor/brain-tumor-diagnosis.html",
+   "path": "/cancer-types/brain-tumor/brain-tumor-diagnosis.html",
+   "type": "disease",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "cancer-types-colon-cancer-colon-cancer-symptoms-html",
+   "url": "https://www.mdanderson.org/cancer-types/colon-cancer/colon-cancer-symptoms.html",
+   "path": "/cancer-types/colon-cancer/colon-cancer-symptoms.html",
+   "type": "disease",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "cancer-types-bladder-cancer-bladder-cancer-treatment-html",
+   "url": "https://www.mdanderson.org/cancer-types/bladder-cancer/bladder-cancer-treatment.html",
+   "path": "/cancer-types/bladder-cancer/bladder-cancer-treatment.html",
+   "type": "disease",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+  },
+  {
+   "slug": "cancer-types-acute-myeloid-leukemia-acute-myeloid-leukemia-diagnosis-html",
+   "url": "https://www.mdanderson.org/cancer-types/acute-myeloid-leukemia/acute-myeloid-leukemia-diagnosis.html",
+   "path": "/cancer-types/acute-myeloid-leukemia/acute-myeloid-leukemia-diagnosis.html",
+   "type": "disease",
+   "status": "extracted",
+   "extractedAt": "2026-08-21T12:00:00Z",
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
   }
+ ],
+ "migrate": {
+  "at": "2026-08-20T04:10:00Z",
+  "outputDir": "stardust/migrated/",
+  "selfContained": true,
+  "canon": {
+   "source": "auto-bootstrap: index",
+   "shas": {
+    "header": "51090f5",
+    "footer": "1868d83",
+    "css": "278066d"
+   }
+  },
+  "pageMap": [
+   {
+    "sourceUrl": "/",
+    "outputPath": "index.html",
+    "slug": "index"
+   },
+   {
+    "sourceUrl": "/patients-family.html",
+    "outputPath": "patients-family.html",
+    "slug": "patients-family-html"
+   },
+   {
+    "sourceUrl": "/cancer-types/breast-cancer.html",
+    "outputPath": "cancer-types/breast-cancer.html",
+    "slug": "cancer-types-breast-cancer-html"
+   },
+   {
+    "sourceUrl": "/patients-family/diagnosis-treatment/care-centers-clinics/breast-center.html",
+    "outputPath": "patients-family/diagnosis-treatment/care-centers-clinics/breast-center.html",
+    "slug": "patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html"
+   },
+   {
+    "sourceUrl": "/patients-family/diagnosis-treatment/clinical-trials.html",
+    "outputPath": "patients-family/diagnosis-treatment/clinical-trials.html",
+    "slug": "patients-family-diagnosis-treatment-clinical-trials-html"
+   },
+   {
+    "sourceUrl": "/prevention-screening.html",
+    "outputPath": "prevention-screening.html",
+    "slug": "prevention-screening-html"
+   },
+   {
+    "sourceUrl": "/research.html",
+    "outputPath": "research.html",
+    "slug": "research-html"
+   },
+   {
+    "sourceUrl": "/about-md-anderson.html",
+    "outputPath": "about-md-anderson.html",
+    "slug": "about-md-anderson-html"
+   },
+   {
+    "sourceUrl": "/about-md-anderson/our-locations.html",
+    "outputPath": "about-md-anderson/our-locations.html",
+    "slug": "about-md-anderson-our-locations-html"
+   },
+   {
+    "sourceUrl": "/cancerwise.html",
+    "outputPath": "cancerwise.html",
+    "slug": "cancerwise-html"
+   },
+   {
+    "sourceUrl": "/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134.html",
+    "outputPath": "cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134.html",
+    "slug": "cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html"
+   },
+   {
+    "sourceUrl": "/donors-volunteers.html",
+    "outputPath": "donors-volunteers.html",
+    "slug": "donors-volunteers-html"
+   }
+  ],
+  "totalAssetsBundled": 283,
+  "bundledAssets": [
+   "chrome.css",
+   "fonts/1eaf27c0-f4de-4273-9f4c-1b3236ad2f3c.woff",
+   "fonts/21decb60-b395-4de2-bd04-e38eb2a56d2f.woff",
+   "fonts/7b95cb9a-a288-4405-97a0-13095f56a903.woff",
+   "fonts/MDIcons.woff",
+   "fonts/MinionPro-Bold.woff",
+   "fonts/MinionPro-Regular.woff",
+   "fonts/MinionPro-Semibold.woff",
+   "fonts/Open-Sans-300.woff",
+   "fonts/Open-Sans-300.woff2",
+   "fonts/Open-Sans-600.woff",
+   "fonts/Open-Sans-700.woff",
+   "fonts/Open-Sans-regular.woff",
+   "fonts/ae26e9d5-38bc-42e7-b8d7-18bf09c8418a.woff",
+   "fonts/b993da84-c1f6-474a-8f00-8aa797b3de8f.woff",
+   "fonts/c30f5672-a88d-407a-bf93-926f33c9d872.woff",
+   "fonts/ecf89914-1896-43f6-a0a0-fe733d1db6e7.woff",
+   "fonts/fontawesome-webfont.woff",
+   "fonts/mda-icons.woff",
+   "fonts/slick.woff",
+   "mda-fonts.css",
+   "media/about-md-anderson-html/badges-1400.jpg",
+   "media/about-md-anderson-html/badges-496.jpg",
+   "media/about-md-anderson-html/careers-278.jpg",
+   "media/about-md-anderson-html/careers-648.jpg",
+   "media/about-md-anderson-html/community-278.jpg",
+   "media/about-md-anderson-html/community-648.jpg",
+   "media/about-md-anderson-html/facts-278.jpg",
+   "media/about-md-anderson-html/facts-648.jpg",
+   "media/about-md-anderson-html/hero-1400.jpg",
+   "media/about-md-anderson-html/hero-496.jpg",
+   "media/about-md-anderson-our-locations-html/gyneco.jpg",
+   "media/about-md-anderson-our-locations-html/hero.jpg",
+   "media/about-md-anderson-our-locations-html/leaguecity.jpg",
+   "media/about-md-anderson-our-locations-html/mri.jpg",
+   "media/about-md-anderson-our-locations-html/northwest.jpg",
+   "media/about-md-anderson-our-locations-html/p-banner.jpg",
+   "media/about-md-anderson-our-locations-html/p-baptist.jpg",
+   "media/about-md-anderson-our-locations-html/p-community.jpg",
+   "media/about-md-anderson-our-locations-html/p-cooper.jpg",
+   "media/about-md-anderson-our-locations-html/p-ochsner.jpg",
+   "media/about-md-anderson-our-locations-html/p-rush.jpg",
+   "media/about-md-anderson-our-locations-html/p-uthealth.jpg",
+   "media/about-md-anderson-our-locations-html/proton.jpg",
+   "media/about-md-anderson-our-locations-html/sugarland.jpg",
+   "media/about-md-anderson-our-locations-html/tmc.jpg",
+   "media/about-md-anderson-our-locations-html/vials.jpg",
+   "media/about-md-anderson-our-locations-html/westhouston.jpg",
+   "media/about-md-anderson-our-locations-html/woodlands.jpg",
+   "media/cancerwise-html/041bb5b5f2d2.jpg",
+   "media/cancerwise-html/062d999276c7.jpg",
+   "media/cancerwise-html/074a3becd65d.jpg",
+   "media/cancerwise-html/0767f5a9cf4f.jpg",
+   "media/cancerwise-html/07c845d3f55e.jpg",
+   "media/cancerwise-html/0811b7ddf3fc.jpg",
+   "media/cancerwise-html/0992dddc4e29.jpg",
+   "media/cancerwise-html/0f766a09584d.jpg",
+   "media/cancerwise-html/136d47330fdb.jpg",
+   "media/cancerwise-html/13927610562b.jpg",
+   "media/cancerwise-html/13b9dab0f223.jpg",
+   "media/cancerwise-html/13ce71de933d.jpg",
+   "media/cancerwise-html/15046529d950.jpg",
+   "media/cancerwise-html/1541c102722e.jpg",
+   "media/cancerwise-html/157ee47fdb36.jpg",
+   "media/cancerwise-html/15af5780e9d6.jpg",
+   "media/cancerwise-html/15fee333add7.jpg",
+   "media/cancerwise-html/181952f022fc.jpg",
+   "media/cancerwise-html/196366446d4b.jpg",
+   "media/cancerwise-html/19e27cd3c08a.jpg",
+   "media/cancerwise-html/1adbf3149b7c.jpg",
+   "media/cancerwise-html/1b4d2e48393a.jpg",
+   "media/cancerwise-html/1b7b35aa5e3f.jpg",
+   "media/cancerwise-html/1c8d98362aaa.jpg",
+   "media/cancerwise-html/1e99295a5ed9.jpg",
+   "media/cancerwise-html/2061e74cb905.jpg",
+   "media/cancerwise-html/21a70139ac7e.jpg",
+   "media/cancerwise-html/22f3340427f9.jpg",
+   "media/cancerwise-html/25a7028b7174.jpg",
+   "media/cancerwise-html/281cbf4b1156.jpg",
+   "media/cancerwise-html/284fe0c3288c.jpg",
+   "media/cancerwise-html/2ab1643734d7.jpg",
+   "media/cancerwise-html/2bd33d44a4f8.jpg",
+   "media/cancerwise-html/2cd514a2d10c.jpg",
+   "media/cancerwise-html/2cdd866a4219.jpg",
+   "media/cancerwise-html/2d75f351007f.jpg",
+   "media/cancerwise-html/2e7a1822f084.jpg",
+   "media/cancerwise-html/3058a6919954.jpg",
+   "media/cancerwise-html/32f924095323.jpg",
+   "media/cancerwise-html/33563a2fe748.jpg",
+   "media/cancerwise-html/33afd3a30a9a.jpg",
+   "media/cancerwise-html/33cef030d6d5.jpg",
+   "media/cancerwise-html/345f8ee5845c.jpg",
+   "media/cancerwise-html/35149c57d70a.jpg",
+   "media/cancerwise-html/35494936f165.jpg",
+   "media/cancerwise-html/36df58ac73a4.jpg",
+   "media/cancerwise-html/371e526ff338.jpg",
+   "media/cancerwise-html/3820157c9157.jpg",
+   "media/cancerwise-html/38ffa95ac26e.jpg",
+   "media/cancerwise-html/3a43f18dfd3c.jpg",
+   "media/cancerwise-html/3b933842a424.jpg",
+   "media/cancerwise-html/3beef0c9a2ed.jpg",
+   "media/cancerwise-html/3c3ba56fd728.jpg",
+   "media/cancerwise-html/3c478e2aaed9.jpg",
+   "media/cancerwise-html/3d3d7195d669.jpg",
+   "media/cancerwise-html/3d6c81a69e81.jpg",
+   "media/cancerwise-html/40187e4cad60.jpg",
+   "media/cancerwise-html/414a57bd86b8.jpg",
+   "media/cancerwise-html/41ee343ce11e.jpg",
+   "media/cancerwise-html/42824e5c95b8.jpg",
+   "media/cancerwise-html/45f36d8d4fb4.jpg",
+   "media/cancerwise-html/47884a39d7e7.jpg",
+   "media/cancerwise-html/47985466052a.jpg",
+   "media/cancerwise-html/47dcd3b14a78.jpg",
+   "media/cancerwise-html/4809c1b451a3.jpg",
+   "media/cancerwise-html/48615d9629df.jpg",
+   "media/cancerwise-html/49772e142dd4.jpg",
+   "media/cancerwise-html/4c910a30679d.jpg",
+   "media/cancerwise-html/4ee43d173bc0.jpg",
+   "media/cancerwise-html/4f356b58755b.jpg",
+   "media/cancerwise-html/4f4285ac7f6f.jpg",
+   "media/cancerwise-html/4f4f84871a0e.jpg",
+   "media/cancerwise-html/505919f0bcf9.jpg",
+   "media/cancerwise-html/509f20b60b9c.jpg",
+   "media/cancerwise-html/51d532674194.jpg",
+   "media/cancerwise-html/53f5f23ca28f.jpg",
+   "media/cancerwise-html/54351fd22e01.jpg",
+   "media/cancerwise-html/56055dc64c92.jpg",
+   "media/cancerwise-html/572026ae2c7f.jpg",
+   "media/cancerwise-html/57d6707dd9df.jpg",
+   "media/cancerwise-html/5861c4c5ab95.jpg",
+   "media/cancerwise-html/5888cf1591a0.jpg",
+   "media/cancerwise-html/5900782cafed.jpg",
+   "media/cancerwise-html/5b3fe9498176.jpg",
+   "media/cancerwise-html/5beff58ded54.jpg",
+   "media/cancerwise-html/5d67ef49a903.jpg",
+   "media/cancerwise-html/5f5f99d96ca7.jpg",
+   "media/cancerwise-html/60e673b5905f.jpg",
+   "media/cancerwise-html/60ffce3cf62a.jpg",
+   "media/cancerwise-html/61466cc1b42e.jpg",
+   "media/cancerwise-html/62a23bdd1e59.jpg",
+   "media/cancerwise-html/64585b06b624.jpg",
+   "media/cancerwise-html/646169728b18.jpg",
+   "media/cancerwise-html/6626aea5776f.jpg",
+   "media/cancerwise-html/68ffb76dd7f0.jpg",
+   "media/cancerwise-html/6a35e5164eb7.jpg",
+   "media/cancerwise-html/6a45a84f6fbc.jpg",
+   "media/cancerwise-html/6cb8e4dd4950.jpg",
+   "media/cancerwise-html/6eb2367df950.jpg",
+   "media/cancerwise-html/6f20e9f5e176.jpg",
+   "media/cancerwise-html/6fef4a872f71.jpg",
+   "media/cancerwise-html/70f6cac68c54.jpg",
+   "media/cancerwise-html/76911cdb9282.jpg",
+   "media/cancerwise-html/76d5942fd51f.jpg",
+   "media/cancerwise-html/79df0eabfb18.jpg",
+   "media/cancerwise-html/7a10f03b17b9.jpg",
+   "media/cancerwise-html/7a43911a3149.jpg",
+   "media/cancerwise-html/7a56bbc18b14.jpg",
+   "media/cancerwise-html/7ad6772a72b9.jpg",
+   "media/cancerwise-html/7ad855a5006e.jpg",
+   "media/cancerwise-html/7b7d65fcd79e.jpg",
+   "media/cancerwise-html/7be4bfe6cb86.jpg",
+   "media/cancerwise-html/7d71a0dd7e88.jpg",
+   "media/cancerwise-html/7e337f8fd24d.jpg",
+   "media/cancerwise-html/7e37146a1250.jpg",
+   "media/cancerwise-html/7ea748e15551.jpg",
+   "media/cancerwise-html/7edc5f762af3.jpg",
+   "media/cancerwise-html/7ef97fe5e17e.jpg",
+   "media/cancerwise-html/80bd5f699b14.jpg",
+   "media/cancerwise-html/810eb8ae1570.jpg",
+   "media/cancerwise-html/8137e726cf96.jpg",
+   "media/cancerwise-html/826a4997d2e9.jpg",
+   "media/cancerwise-html/82d1632442f8.jpg",
+   "media/cancerwise-html/82f9c64e0d68.jpg",
+   "media/cancerwise-html/83977c3fdfbf.jpg",
+   "media/cancerwise-html/84811c3f41f2.jpg",
+   "media/cancerwise-html/86a56648d50d.jpg",
+   "media/cancerwise-html/876610cd6d64.jpg",
+   "media/cancerwise-html/876d847d0720.jpg",
+   "media/cancerwise-html/8884c7d00c5a.jpg",
+   "media/cancerwise-html/897ebf34c8ad.jpg",
+   "media/cancerwise-html/8aec3b3fb40f.jpg",
+   "media/cancerwise-html/8cfac5ab8f79.jpg",
+   "media/cancerwise-html/8fd9e5082f38.jpg",
+   "media/cancerwise-html/93cc171fa6f6.jpg",
+   "media/cancerwise-html/991fe6b3485f.jpg",
+   "media/cancerwise-html/997d01f8e9b6.jpg",
+   "media/cancerwise-html/99a66a67b68a.jpg",
+   "media/cancerwise-html/9a64f29200ef.jpg",
+   "media/cancerwise-html/9ac9e51efd78.jpg",
+   "media/cancerwise-html/9b782511f31c.jpg",
+   "media/cancerwise-html/9f2dcd716931.jpg",
+   "media/cancerwise-html/a0ebb445dba9.jpg",
+   "media/cancerwise-html/a339d702b2dc.jpg",
+   "media/cancerwise-html/a3d25c823486.jpg",
+   "media/cancerwise-html/a41c54d39dfe.jpg",
+   "media/cancerwise-html/a683253a9c20.jpg",
+   "media/cancerwise-html/aa1e9c6e50fe.jpg",
+   "media/cancerwise-html/aa636d692e29.jpg",
+   "media/cancerwise-html/aaa5328eaffe.jpg",
+   "media/cancerwise-html/abbb7b8a7752.jpg",
+   "media/cancerwise-html/abbc6c701b3c.jpg",
+   "media/cancerwise-html/ac819ebfbb6c.jpg",
+   "media/cancerwise-html/acd807a55953.jpg",
+   "media/cancerwise-html/acd9e7d996b2.jpg",
+   "media/cancerwise-html/af0b88f0c5ee.jpg",
+   "media/cancerwise-html/af579a7e8365.jpg",
+   "media/cancerwise-html/b115942a4a3a.jpg",
+   "media/cancerwise-html/b136663ec076.jpg",
+   "media/cancerwise-html/b282717d45e9.jpg",
+   "media/cancerwise-html/b35c5ee81996.jpg",
+   "media/cancerwise-html/b35c6fa673e7.jpg",
+   "media/cancerwise-html/b3bf36f26e69.jpg",
+   "media/cancerwise-html/b4eef8763e7d.jpg",
+   "media/cancerwise-html/b560c8e9931e.jpg",
+   "media/cancerwise-html/b5743bfaf9b1.jpg",
+   "media/cancerwise-html/b5d26996ef2f.jpg",
+   "media/cancerwise-html/b7b85f3d6400.jpg",
+   "media/cancerwise-html/b80791d96ac0.jpg",
+   "media/cancerwise-html/b816b82a9c85.jpg",
+   "media/cancerwise-html/b8f5db259bc5.jpg",
+   "media/cancerwise-html/b97df3e737d1.jpg",
+   "media/cancerwise-html/b9df936f7050.jpg",
+   "media/cancerwise-html/ba1f5aff6f8c.jpg",
+   "media/cancerwise-html/bd4dd8bbb7fa.jpg",
+   "media/cancerwise-html/bece0e29c0f4.jpg",
+   "media/cancerwise-html/bfa6b5c251f8.jpg",
+   "media/cancerwise-html/c0576a9db249.jpg",
+   "media/cancerwise-html/c15ef5c31bec.jpg",
+   "media/cancerwise-html/c1f3bcdd7dc3.jpg",
+   "media/cancerwise-html/c2015f1bd4c8.jpg",
+   "media/cancerwise-html/c28d4eb0520b.jpg",
+   "media/cancerwise-html/c838a05c43b3.jpg",
+   "media/cancerwise-html/c86bc96271e1.jpg",
+   "media/cancerwise-html/c97b57af2c18.jpg",
+   "media/cancerwise-html/ccffb33015be.jpg",
+   "media/cancerwise-html/cda478b5e294.jpg",
+   "media/cancerwise-html/cebdc6901d4e.jpg",
+   "media/cancerwise-html/d03cd65b0191.jpg",
+   "media/cancerwise-html/d7b7508fcfc4.jpg",
+   "media/cancerwise-html/d7db5294e6d4.jpg",
+   "media/cancerwise-html/d911485a5565.jpg",
+   "media/cancerwise-html/da56cc354e0a.jpg",
+   "media/cancerwise-html/ddbb2de3cffd.jpg",
+   "media/cancerwise-html/df2206d310b3.jpg",
+   "media/cancerwise-html/dfc945359883.jpg",
+   "media/cancerwise-html/e06d60a23f72.jpg",
+   "media/cancerwise-html/e133bc6ca2ec.jpg",
+   "media/cancerwise-html/e1bfae8fc5e8.jpg",
+   "media/cancerwise-html/e1db7571bbb8.jpg",
+   "media/cancerwise-html/e3424347d04d.jpg",
+   "media/cancerwise-html/e4fb8108999e.jpg",
+   "media/cancerwise-html/e53ef5468cdb.jpg",
+   "media/cancerwise-html/e5ad6a5e8ae6.jpg",
+   "media/cancerwise-html/e5d98878184c.jpg",
+   "media/cancerwise-html/e603ac2e8b80.jpg",
+   "media/cancerwise-html/e6b34353f8b9.jpg",
+   "media/cancerwise-html/e85885d63986.jpg",
+   "media/cancerwise-html/e91ad78b5b84.jpg",
+   "media/cancerwise-html/eb7790a44002.jpg",
+   "media/cancerwise-html/ee308b44ac3c.jpg",
+   "media/cancerwise-html/eec795b7ab9e.jpg",
+   "media/cancerwise-html/f049b9361860.jpg",
+   "media/cancerwise-html/f12a162dee4c.jpg",
+   "media/cancerwise-html/f1d0a9f77bd9.jpg",
+   "media/cancerwise-html/f228714ca2f9.jpg",
+   "media/cancerwise-html/f2d6e7647ef5.jpg",
+   "media/cancerwise-html/f3d8d99cb524.jpg",
+   "media/cancerwise-html/f5db3da455e8.jpg",
+   "media/cancerwise-html/fa42fe6aa5ff.jpg",
+   "media/cancerwise-html/fbd488e5473a.jpg",
+   "media/cancerwise-html/fbd918aff47a.jpg",
+   "media/cancerwise-html/fcee7fdeb951.jpg",
+   "media/cancerwise-html/fdc7ef98d617.jpg",
+   "media/cancerwise-html/fee02283a517.jpg",
+   "media/cancerwise-html/ff1e09684da9.jpg",
+   "media/cancerwise-html/fffa8c6cd842.jpg",
+   "media/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html/hero-1400.jpg",
+   "media/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html/hero-496.jpg",
+   "media/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html/panorama-1440.png",
+   "media/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html/panorama-360.png",
+   "media/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html/prevention-278.jpg",
+   "media/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html/prevention-648.jpg",
+   "media/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html/video-648.jpg"
+  ],
+  "pages": [
+   {
+    "slug": "index",
+    "file": "stardust/migrated/index.html",
+    "assetsBundled": 2,
+    "renderBranch": "A",
+    "fidelityTier": "archetype"
+   },
+   {
+    "slug": "patients-family-html",
+    "file": "stardust/migrated/patients-family.html",
+    "assetsBundled": 2,
+    "renderBranch": "A'",
+    "fidelityTier": "sibling"
+   },
+   {
+    "slug": "cancer-types-breast-cancer-html",
+    "file": "stardust/migrated/cancer-types/breast-cancer.html",
+    "assetsBundled": 2,
+    "renderBranch": "A",
+    "fidelityTier": "archetype"
+   },
+   {
+    "slug": "patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html",
+    "file": "stardust/migrated/patients-family/diagnosis-treatment/care-centers-clinics/breast-center.html",
+    "assetsBundled": 9,
+    "renderBranch": "A",
+    "fidelityTier": "archetype"
+   },
+   {
+    "slug": "patients-family-diagnosis-treatment-clinical-trials-html",
+    "file": "stardust/migrated/patients-family/diagnosis-treatment/clinical-trials.html",
+    "assetsBundled": 2,
+    "renderBranch": "A",
+    "fidelityTier": "archetype"
+   },
+   {
+    "slug": "prevention-screening-html",
+    "file": "stardust/migrated/prevention-screening.html",
+    "assetsBundled": 2,
+    "renderBranch": "A",
+    "fidelityTier": "archetype"
+   },
+   {
+    "slug": "research-html",
+    "file": "stardust/migrated/research.html",
+    "assetsBundled": 2,
+    "renderBranch": "A",
+    "fidelityTier": "archetype"
+   },
+   {
+    "slug": "about-md-anderson-html",
+    "file": "stardust/migrated/about-md-anderson.html",
+    "assetsBundled": 12,
+    "renderBranch": "A",
+    "fidelityTier": "archetype"
+   },
+   {
+    "slug": "about-md-anderson-our-locations-html",
+    "file": "stardust/migrated/about-md-anderson/our-locations.html",
+    "assetsBundled": 20,
+    "renderBranch": "A",
+    "fidelityTier": "archetype"
+   },
+   {
+    "slug": "cancerwise-html",
+    "file": "stardust/migrated/cancerwise.html",
+    "assetsBundled": 229,
+    "renderBranch": "A",
+    "fidelityTier": "archetype"
+   },
+   {
+    "slug": "cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html",
+    "file": "stardust/migrated/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134.html",
+    "assetsBundled": 2,
+    "renderBranch": "A",
+    "fidelityTier": "archetype"
+   },
+   {
+    "slug": "donors-volunteers-html",
+    "file": "stardust/migrated/donors-volunteers.html",
+    "assetsBundled": 2,
+    "renderBranch": "A",
+    "fidelityTier": "archetype"
+   }
+  ],
+  "missingAssets": [],
+  "cleanedAssets": [],
+  "decisions": {
+   "assetSourceRoot": "stardust/prototypes/assets/ (replica prototypes carry the localized media; stardust/current/assets holds fonts + screenshots only)",
+   "externalOriginLinksKept": 807,
+   "externalOriginLinksPolicy": "same-origin links to non-inventory pages keep absolute live URLs; NOT flagged data-broken-link (source site is live; bounce beats 404)",
+   "remoteMediaPolicy": "live mdanderson.org image renditions kept as absolute source URLs (resolve at view time); local media bundled relative",
+   "logo": "header/footer logos are live-origin webp renditions (no local logo captured); kept absolute, recorded as media-reuse-source-cdn",
+   "favicon": "no favicon captured during extract; variants not generated (prepare-migration never ran) \u2014 soft-logged, pages render without them",
+   "fonts": "Minion/Univers licensed kits bundled under assets/fonts/ with licensing banner preserved in assets/mda-fonts.css (local gate instrumentation; delivery must license or substitute)"
+  }
+ }
 }

@@ -1,0 +1,912 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-08-21T10:22:17.075Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "cancer-types-acute-myeloid-leukemia-html",
+  "url": "https://www.mdanderson.org/cancer-types/acute-myeloid-leukemia.html",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-08-21T10:22:17.075Z",
+  "finalUrl": "https://www.mdanderson.org/cancer-types/acute-myeloid-leukemia.html",
+  "title": "What is Acute Myeloid Leukemia (AML)? Symptoms, Risk Factors & Treatments | UT MD Anderson",
+  "description": "Acute myeloid leukemia is a type of cancer that affects myeloid stem cells, which produce red blood cells, platelets and granulocytes, a type of white blood cell. Learn about the causes, symptoms and treatments of AML from UT MD Anderson, a top-ranked cancer center.",
+  "og": {
+    "title": "Acute Myeloid Leukemia (AML)",
+    "description": "Acute myeloid leukemia is a type of cancer that affects myeloid stem cells, which produce red blood cells, platelets and granulocytes, a type of white blood cell. Learn about the causes, symptoms and treatments of AML from UT MD Anderson, a top-ranked cancer center.",
+    "image": "https://www.mdanderson.org/mda-logo-sharable.png",
+    "type": "Website"
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Acute Myeloid Leukemia"
+    },
+    {
+      "tag": "h2",
+      "text": "About acute myeloid leukemia (AML)"
+    },
+    {
+      "tag": "h2",
+      "text": "Blood cell creation"
+    },
+    {
+      "tag": "h2",
+      "text": "How is leukemia classified?"
+    },
+    {
+      "tag": "h2",
+      "text": "Risk factors"
+    },
+    {
+      "tag": "h3",
+      "text": "UT MD Anderson is #1 in Cancer Care"
+    },
+    {
+      "tag": "h2",
+      "text": "Why choose UT MD Anderson for acute myeloid leukemia treatment?"
+    },
+    {
+      "tag": "h3",
+      "text": "Schedule a Screening"
+    },
+    {
+      "tag": "h3",
+      "text": "Treatment designed specifically for you"
+    },
+    {
+      "tag": "h3",
+      "text": "Treatment at UT MD Anderson"
+    },
+    {
+      "tag": "h4",
+      "text": "Leukemia Center"
+    },
+    {
+      "tag": "h4",
+      "text": "Stem Cell Transplantation & Cellular Therapy Center"
+    },
+    {
+      "tag": "h2",
+      "text": "In the News"
+    },
+    {
+      "tag": "h3",
+      "text": "Menin inhibitor clinical trial puts pediatric leukemia patient..."
+    },
+    {
+      "tag": "h3",
+      "text": "Clinical Trials"
+    },
+    {
+      "tag": "h3",
+      "text": "Becoming Our Patient"
+    },
+    {
+      "tag": "h3",
+      "text": "myCancerConnection"
+    },
+    {
+      "tag": "h3",
+      "text": "Prevention & Screening"
+    },
+    {
+      "tag": "h3",
+      "text": "Counseling"
+    },
+    {
+      "tag": "h2",
+      "text": "Help #EndCancer"
+    },
+    {
+      "tag": "h3",
+      "text": "Give Now"
+    },
+    {
+      "tag": "h3",
+      "text": "Donate Blood"
+    },
+    {
+      "tag": "h3",
+      "text": "Shop UT MD Anderson"
+    }
+  ],
+  "body": [
+    "Diagnosis & Treatment",
+    "Cancer Types",
+    "Acute Myeloid Leukemia (AML)",
+    "Acute Myeloid Leukemia (AML) Acute Myeloid Leukemia Symptoms Acute Myeloid Leukemia Diagnosis Acute Myeloid Leukemia Treatment",
+    "Acute Myeloid Leukemia Symptoms",
+    "Acute Myeloid Leukemia Diagnosis",
+    "Acute Myeloid Leukemia Treatment",
+    "Acute myeloid leukemia (AML) is an aggressive type of cancer that starts in the blood and blood-forming tissues of the body. It primarily impacts people over the age of 65.",
+    "Acute myeloid leukemia affects myeloid stem cells, which produce red blood cells, platelets and granulocytes, a type of white blood cell.",
+    "It occurs when a myeloid stem cell becomes cancerous. In these cases, the myeloid stem cells produce diseased cells that do not perform their job well. They also multiply rapidly. As the disease progresses, the abnormal cells can crowd out healthy cells.",
+    "As a result, AML may cause patients to develop anemia or have a poor ability to clot blood. It can severely weaken the patient’s immune system, leading to frequent infections.",
+    "There are several subtypes of AML. Many depend on different chromosome abnormalities of the cancer cells and the types of molecules these cells produce. These specific subtypes can impact a patient’s treatment plan and outlook. One example is acute promyelocytic leukemia (APL), a rare subtype of AML. It happens when immature white blood cells called promyelocytes build up in the bone marrow and blood instead of maturing normally. This affects the body’s ability to make healthy blood cells and can lead to problems with bleeding, infection and fatigue.",
+    "More than 20,000 people are diagnosed with AML in the U.S. each year. It is the most common acute leukemia in adults. While pediatric patients can develop the disease, about 60% of all cases are in people age 65 and older.",
+    "As an acute leukemia, AML is aggressive and can be particularly difficult to treat, so patients should begin treatment as soon as possible. AML’s five-year survival rate is about 30%, though that figure differs based on the exact subtype of each person’s cancer and the age of the patient.",
+    "The body produces millions of blood cells each day. Most develop in the bone marrow, the spongy interior of bones that contains immature stem cells.",
+    "In a healthy person, these immature stem cells first become either lymphoid stem cells or myeloid stem cells.",
+    "Lymphoid stem cells develop into white blood cells, which are immune system cells. They start by becoming immature white blood cells known as lymphoblasts, then mature into lymphocytes. The two types of lymphocytes that are usually involved in leukemia are B cells and T cells. B cells produce the antibodies responsible for attacking bacteria and viruses that invade the body. T cells help alert other immune cells to the presence of infection or fight infection directly.",
+    "Myeloid stem cells also develop into white blood cells. The myeloid stem cells first become immature white blood cells known as myeloblasts. They then mature into monocytes and granulocytes, including neutrophils, all of which fight disease. Other myeloid stem cells develop into red blood cells, which carry oxygen throughout the body; and platelets, which help the blood clot.",
+    "Leukemia occurs when the DNA (the genetic instructions that control cell activity) of a bone marrow stem cell mutates at some point in its development. The cell becomes cancerous, begins multiplying rapidly and crowds out healthy cells in the blood and bone marrow. These diseased cells can also gather in specific parts of the body, including the liver, lymph nodes, spleen and skin.",
+    "While there are many types of leukemia, they are typically classified by the type of stem cell that has turned cancerous, either lymphoid or myeloid.",
+    "Many types are also classified as either chronic or acute. Acute leukemia impacts immature cells, preventing them from developing and carrying out their function. These cells tend to multiply rapidly, making acute leukemia more aggressive.",
+    "Chronic leukemia involves mature or partially mature cells. These cells multiply more slowly and are less aggressive, making chronic leukemia less aggressive than acute leukemia.",
+    "A risk factor is anything that increases the chance of developing a disease. Knowing a disease’s risk factors can be an important step towards catching it early. It's important to note that not everyone with risk factors will develop the disease.",
+    "Risk factors for acute myeloid leukemia (AML) include:",
+    "Smoking",
+    "Age: About 60% of all cases are in patients age 65 and older.",
+    "Sex: More males develop AML than females.",
+    "Past treatment with chemotherapy or radiation therapy for a previous cancer. While this these therapies can cause AML, their benefits as cancer treatments far outweigh their risks.",
+    "Myeloproliferative neoplasms (MPNs): MPNs are chronic cancers of the bone marrow and blood. While they are not classified as leukemia, MPNs (especially myelofibrosis) can transform to acute myeloid leukemia. MPNs are treated in the Leukemia Center by our experts at the Clinical Research Center for Myeloproliferative Neoplasms. Learn more about MPNs.",
+    "Myelodysplastic syndrome (MDS): In MDS, the bone marrow does not produce enough healthy blood cells. MDS evolves into AML in 10-20% of patients. Learn more about myelodysplastic syndrome. Learn more about MDS.",
+    "Genetic disorders: Individuals with certain genetic disorders are at a higher risk of developing AML. These include Down syndrome, Fanconi anemia, and hereditary cancer syndromes such as Li-Fraumeni syndrome. Learn more about hereditary cancer syndromes.",
+    "Chemical exposure: Long-term exposure to benzene, a chemical used in the petroleum industry, can cause AML.",
+    "Family History: People with a parent, sibling or child who has had AML may be more likely to develop the disease.",
+    "Some cases of leukemia can be passed down from one generation to the next. Genetic counseling may be right for you. Learn more about the risk to you and your family on our genetic testing page.",
+    "Learn more about acute myeloid leukemia:",
+    "Acute myeloid leukemia symptoms",
+    "Acute myeloid leukemia diagnosis",
+    "Acute myeloid leukemia treatment",
+    "Learn more about clinical trials for acute myeloid leukemia.",
+    "Choosing the right cancer center may be the most important decision you can make as a leukemia patient. At UT MD Anderson’s Leukemia Center and Stem Cell Transplantation and Cellular Therapy Center, you’ll get treatment from one of nation’s the largest, most experienced leukemia teams at a top-ranked cancer center.",
+    "Using a comprehensive team approach, we work together to give you customized care that includes the most advanced diagnostic methods and treatments. These include clinical trials of new drugs and drug combinations. We offer clinical trials for all situations – from patients receiving their first treatment, to patients who have exhausted all standard treatment options.",
+    "As a leading center for leukemia care, we offer access to innovative new therapies and clinical trials that may help increase your chances for successful treatment. Many of these were developed by our own researchers.",
+    "If you are concerned about your symptoms, the best next step is to schedule an appointment with one of our physicians.",
+    "Successful leukemia treatment begins with accurate and precise diagnosis. Many of our leukemia patients have been misdiagnosed before they come to UT MD Anderson. We have the expertise and experience gained from being one of the most active programs in the world, and our specialized pathologists are highly skilled in diagnosing leukemia.",
+    "Our approach to leukemia is customized especially for you. We carefully evaluate your risk factors and the specific characteristics of your leukemia to determine if immediate treatment is necessary. If it is, we recommend the most effective therapies while aiming to limit treatment side effects.",
+    "Whether you are treated as an inpatient or outpatient, our comprehensive program offers all the services needed to care for leukemia and respond to its impact on your body. We aim to accomplish as much care as possible on an outpatient basis. If hospitalization is needed, our expert staff is specially trained to care for patients at every phase of the treatment journey.",
+    "UT MD Anderson is my hope. I know that without it, I wouldn’t be alive today.",
+    "Kenneth Woo",
+    "Survivor",
+    "Leukemia Center",
+    "Stem Cell Transplantation & Cellular Therapy Center",
+    "UT MD Anderson patients have access to clinical trials offering promising new treatments that cannot be found anywhere else.",
+    "Get information on patient appointments, insurance and billing, and directions to and around UT MD Anderson.",
+    "Talk to someone who shares your cancer diagnosis and be matched with a survivor.",
+    "Many cancers can be prevented with lifestyle changes and regular screening.",
+    "UT MD Anderson has licensed social workers to help patients and their loved ones cope with cancer.",
+    "Our patients depend on blood and platelet donations.",
+    "Show your support for our mission through branded merchandise.",
+    ".st0-desktop { fill: #000; }Explore what your support makes possible",
+    "Explore",
+    "Patients & Family",
+    "Prevention & Screening",
+    "Donors & Volunteers",
+    "For Physicians",
+    "Research",
+    "Education & Training",
+    "Clinical Trials",
+    "Languages",
+    "About",
+    "About UT MD Anderson",
+    "Careers",
+    "Blog",
+    "Newsroom",
+    "Editorial Standards",
+    "For Employees",
+    "Merchandise",
+    "Title IX Reporting (Sexual Misconduct)",
+    "Price Transparency",
+    "Finding Your Way",
+    "Our Doctors",
+    "Locations",
+    "Directions",
+    "Sitemap",
+    "DIGITAL ACCESSIBILITY",
+    "Accessibility Policy",
+    "GET IN TOUCH",
+    "Call 1-844-942-3608",
+    "Ask a question",
+    "Stay Connected",
+    "PreviousNext",
+    "Cancerwise Podcast",
+    "PreviousNext",
+    "Website Privacy Policy",
+    "Legal Statement & Policies",
+    "Reports to the State",
+    "Emergency Alert Information",
+    "State of Texas Links",
+    "Our Cancer Network",
+    "Vendors & Suppliers",
+    "© 2026 The University of Texas MD Anderson Cancer Center. All rights reserved."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "MyChart",
+      "href": "https://my.mdanderson.org/MyChart/Home/"
+    },
+    {
+      "label": "Request an Appointment",
+      "href": null
+    },
+    {
+      "label": "Donate Today",
+      "href": "javascript:void(0);"
+    },
+    {
+      "label": "Clinical Trials",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+      "label": "Locations",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+      "label": "Careers",
+      "href": "https://jobs.mdanderson.org/"
+    },
+    {
+      "label": "Contact Us",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us.html"
+    },
+    {
+      "label": "Our Doctors",
+      "href": "https://faculty.mdanderson.org/"
+    },
+    {
+      "label": "Languages",
+      "href": null
+    },
+    {
+      "label": "Patients & Family",
+      "href": "https://www.mdanderson.org/patients-family.html"
+    },
+    {
+      "label": "Prevention & Screening",
+      "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+      "label": "Donors & Volunteers",
+      "href": "https://www.mdanderson.org/donors-volunteers.html"
+    },
+    {
+      "label": "For Physicians",
+      "href": "https://www.mdanderson.org/for-physicians.html"
+    },
+    {
+      "label": "Research",
+      "href": "https://www.mdanderson.org/research.html"
+    },
+    {
+      "label": "Education & Training",
+      "href": "https://www.mdanderson.org/education-training.html"
+    },
+    {
+      "label": "Request an appointment online.",
+      "href": "/about-md-anderson/contact-us/askmdanderson/appointments.html"
+    },
+    {
+      "label": "Diagnosis & Treatment",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment.html"
+    },
+    {
+      "label": "Cancer Types",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/cancer-types.html"
+    },
+    {
+      "label": "Acute Myeloid Leukemia (AML)",
+      "href": "https://www.mdanderson.org/cancer-types/acute-myeloid-leukemia.html"
+    },
+    {
+      "label": "Acute Myeloid Leukemia Symptoms",
+      "href": "https://www.mdanderson.org/cancer-types/acute-myeloid-leukemia/acute-myeloid-leukemia-symptoms.html"
+    },
+    {
+      "label": "Acute Myeloid Leukemia Diagnosis",
+      "href": "https://www.mdanderson.org/cancer-types/acute-myeloid-leukemia/acute-myeloid-leukemia-diagnosis.html"
+    },
+    {
+      "label": "Acute Myeloid Leukemia Treatment",
+      "href": "https://www.mdanderson.org/cancer-types/acute-myeloid-leukemia/acute-myeloid-leukemia-treatment.html"
+    },
+    {
+      "label": "anemia",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/emotional-physical-effects/anemia-cancer.html"
+    },
+    {
+      "label": "acute promyelocytic leukemia",
+      "href": "/cancer-types/leukemia/acute-promyelocytic-leukemia.html"
+    },
+    {
+      "label": "bleeding",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/emotional-physical-effects/bleeding-bruising-cancer.html"
+    },
+    {
+      "label": "infection",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/emotional-physical-effects/infections.html"
+    },
+    {
+      "label": "fatigue",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/emotional-physical-effects/fatigue.html"
+    },
+    {
+      "label": "stem cells",
+      "href": "https://www.mdanderson.org/treatment-options/stem-cell-transplantation.html"
+    },
+    {
+      "label": "radiation therapy",
+      "href": "https://www.mdanderson.org/treatment-options/radiation-therapy.html"
+    },
+    {
+      "label": "Leukemia Center",
+      "href": "/patients-family/diagnosis-treatment/care-centers-clinics/leukemia-center.html"
+    },
+    {
+      "label": "Clinical Research Center for Myeloproliferative Neoplasms",
+      "href": "/research/departments-labs-institutes/programs-centers/clinical-research-center-for-myeloproliferative-neoplasms.html"
+    },
+    {
+      "label": "Learn more about MPNs.",
+      "href": "/cancer-types/myeloproliferative-neoplasm.html"
+    },
+    {
+      "label": "Learn more about MDS.",
+      "href": "/cancer-types/myelodysplastic-syndrome.html"
+    },
+    {
+      "label": "Learn more about hereditary cancer syndromes.",
+      "href": "/prevention-screening/family-history/hereditary-cancer-syndromes.html"
+    },
+    {
+      "label": "genetic testing page",
+      "href": "/prevention-screening/family-history/genetic-testing.html"
+    },
+    {
+      "label": "Acute myeloid leukemia symptoms",
+      "href": "https://www.mdanderson.org/cancer-types/acute-myeloid-leukemia/acute-myeloid-leukemia-symptoms.html"
+    },
+    {
+      "label": "Acute myeloid leukemia diagnosis",
+      "href": "https://www.mdanderson.org/cancer-types/acute-myeloid-leukemia/acute-myeloid-leukemia-diagnosis.html"
+    },
+    {
+      "label": "Acute myeloid leukemia treatment",
+      "href": "https://www.mdanderson.org/cancer-types/acute-myeloid-leukemia/acute-myeloid-leukemia-treatment.html"
+    },
+    {
+      "label": "clinical trials for acute myeloid leukemia",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+      "label": "Find out what makes us different",
+      "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/why-md-anderson.html"
+    },
+    {
+      "label": "Leukemia Center",
+      "href": "/patients-family/diagnosis-treatment/care-centers-clinics/leukemia-center.html"
+    },
+    {
+      "label": "Stem Cell Transplantation and Cellular Therapy Center",
+      "href": "/patients-family/diagnosis-treatment/care-centers-clinics/stem-cell-transplantation-and-cellular-therapy-center.html"
+    },
+    {
+      "label": "clinical trials",
+      "href": "/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+      "label": "Schedule an appointment at UT MD Anderson",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/appointments.html"
+    },
+    {
+      "label": "Leukemia Center",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/leukemia-center.html"
+    },
+    {
+      "label": "Stem Cell Transplantation & Cellular Therapy Center",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/stem-cell-transplantation-and-cellular-therapy-center.html"
+    },
+    {
+      "label": "Menin inhibitor clinical trial puts pediatric leukemia patient...",
+      "href": "https://www.mdanderson.org/cancerwise/menin-inhibitor-clinical-trial-puts-pediatric-leukemia-patient-in-remission.h00-159703068.html"
+    },
+    {
+      "label": "View Clinical Trials",
+      "href": "https://www.mdanderson.org/patients-family/search-results.html?searchType=clinical%20trials&q=Leukemia"
+    },
+    {
+      "label": "View new patient resources",
+      "href": "https://www.mdanderson.org/patients-family/becoming-our-patient.html"
+    },
+    {
+      "label": "Connect with a cancer survivor",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/mycancerconnection.html"
+    },
+    {
+      "label": "View health and screening resources",
+      "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+      "label": "Visit the social work page",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/social-work.html"
+    },
+    {
+      "label": "Donate",
+      "href": "https://gifts.mdanderson.org/Default.aspx?tsid=37435"
+    },
+    {
+      "label": "Make an appointment",
+      "href": "https://www.mdandersonbloodbank.org/"
+    },
+    {
+      "label": "View products",
+      "href": "https://shop.mdanderson.org"
+    },
+    {
+      "label": ".st0-desktop { fill: #000; }Explore what your support makes possible",
+      "href": "https://onlypossiblehere.mdanderson.org"
+    },
+    {
+      "label": "Patients & Family",
+      "href": "https://www.mdanderson.org/patients-family.html"
+    },
+    {
+      "label": "Prevention & Screening",
+      "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+      "label": "Donors & Volunteers",
+      "href": "https://www.mdanderson.org/donors-volunteers.html"
+    },
+    {
+      "label": "For Physicians",
+      "href": "https://www.mdanderson.org/for-physicians.html"
+    },
+    {
+      "label": "Research",
+      "href": "https://www.mdanderson.org/research.html"
+    },
+    {
+      "label": "Education & Training",
+      "href": "https://www.mdanderson.org/education-training.html"
+    },
+    {
+      "label": "Clinical Trials",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+      "label": "Languages",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html"
+    },
+    {
+      "label": "About UT MD Anderson",
+      "href": "https://www.mdanderson.org/about-md-anderson.html"
+    },
+    {
+      "label": "Careers",
+      "href": "https://jobs.mdanderson.org/"
+    },
+    {
+      "label": "Blog",
+      "href": "https://www.mdanderson.org/cancerwise.html"
+    },
+    {
+      "label": "Newsroom",
+      "href": "https://www.mdanderson.org/newsroom.html"
+    },
+    {
+      "label": "Editorial Standards",
+      "href": "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html"
+    },
+    {
+      "label": "For Employees",
+      "href": "https://www.mdanderson.org/about-md-anderson/employee-resources.html"
+    },
+    {
+      "label": "Merchandise",
+      "href": "https://shop.mdanderson.org/"
+    },
+    {
+      "label": "Title IX Reporting (Sexual Misconduct)",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html"
+    },
+    {
+      "label": "Price Transparency",
+      "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html"
+    },
+    {
+      "label": "Our Doctors",
+      "href": "https://faculty.mdanderson.org/"
+    },
+    {
+      "label": "Locations",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+      "label": "Directions",
+      "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html"
+    },
+    {
+      "label": "Sitemap",
+      "href": "https://www.mdanderson.org/patients-family/html-sitemap.html"
+    },
+    {
+      "label": "Accessibility Policy",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html"
+    },
+    {
+      "label": "Call 1-844-942-3608",
+      "href": "tel:+18449423608"
+    },
+    {
+      "label": "Ask a question",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html"
+    },
+    {
+      "label": "Website Privacy Policy",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html"
+    },
+    {
+      "label": "Legal Statement & Policies",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html"
+    },
+    {
+      "label": "Reports to the State",
+      "href": "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html"
+    },
+    {
+      "label": "Emergency Alert Information",
+      "href": "https://www3.mdanderson.org/emergencyalert/"
+    },
+    {
+      "label": "State of Texas Links",
+      "href": "https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html"
+    },
+    {
+      "label": "Our Cancer Network",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html"
+    },
+    {
+      "label": "Vendors & Suppliers",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html"
+    }
+  ],
+  "links": [
+    "https://www.mdanderson.org/cancer-types/acute-myeloid-leukemia.html#skip",
+    "https://my.mdanderson.org/MyChart/Home/",
+    "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/appointments.html",
+    "https://my.mdanderson.org/RequestAppointment",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/returning-patients.html",
+    "https://my.mdanderson.org/physicianreferral",
+    "javascript:void(0);",
+    "https://onlypossiblehere.mdanderson.org/",
+    "https://gifts.mdanderson.org/Default.aspx?tsid=37435",
+    "https://www.mdanderson.org/",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations.html",
+    "https://jobs.mdanderson.org/",
+    "https://www.mdanderson.org/about-md-anderson/contact-us.html",
+    "https://faculty.mdanderson.org/",
+    "https://www.mdanderson.org/es/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/ar/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/zh/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/tr/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/cancer-types/acute-myeloid-leukemia.html#",
+    "https://www.mdanderson.org/patients-family.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/why-md-anderson.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/while-youre-here.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/international-center.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/services-amenities.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/insurance-billing.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/second-opinion-appointments.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/cancer-types.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/a-new-diagnosis.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/treatment-options.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/emotional-physical-effects.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/caregiver-roles-challenges.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/supporting-children-teens.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/taking-care-of-yourself.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/Helping-mdanderson-patient.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/dealing-with-loss.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/followup-care-after-cancer-treatment.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/long-term-effects.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/social-emotional-impacts.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/legal-financial-impacts.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/survivorship-week.html",
+    "https://www.mdanderson.org/prevention-screening.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/tobacco-control-at-md-anderson.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/diet.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/body-weight.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/physical-activity.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/skin-safety.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/hpv.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/hepatitis.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/alcohol.html",
+    "https://www.mdanderson.org/prevention-screening/family-history.html",
+    "https://www.mdanderson.org/prevention-screening/family-history/genetic-testing.html",
+    "https://www.mdanderson.org/prevention-screening/family-history/hereditary-cancer-syndromes.html",
+    "https://www.mdanderson.org/prevention-screening/family-history/faqs.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/breast-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/cervical-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/colorectal-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/endometrial-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/liver-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/lung-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/mobile-mammography.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/ovarian-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/prostate-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/skin-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/women-screening-exams.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/men-screening-exams.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/cancer-prevention-center.html",
+    "https://www.mdanderson.org/donors-volunteers.html",
+    "https://www.mdanderson.org/donors-volunteers/donate.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/raise-money.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/honor-loved-ones.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/planned-giving.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/endowments.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/md-anderson-caring-fund.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/matching-gifts.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/foundation-and-corporation-relations.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/why-volunteer.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/on-site-volunteers.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/endowments.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/patient-experience.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/teen-volunteer-leadership-program.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/childrens-cancer-hospital-councils.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/give-blood.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/shop-md-anderson.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/childrens-art-project.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/donate-goods-or-services.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/attend-events.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/cord-blood-bank.html",
+    "https://www.mdanderson.org/donors-volunteers/corporate-alliances.html",
+    "https://www.mdanderson.org/donors-volunteers/corporate-alliances/current-alliances.html",
+    "https://www.mdanderson.org/for-physicians.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/health-care-provider-resource-center.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/referring-provider-team.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/insurance-information.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/international-referrals.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/mymdanderson-for-physicians.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/second-opinion-pathology.html",
+    "https://www.mdanderson.org/for-physicians/clinical-trials.html",
+    "https://www.mdanderson.org/for-physicians/clinical-tools-resources.html",
+    "https://www.mdanderson.org/for-physicians/clinical-tools-resources/clinical-calculators.html",
+    "https://www.mdanderson.org/for-physicians/clinical-tools-resources/clinical-practice-algorithms.html",
+    "https://www.mdanderson.org/research.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/labs.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/programs-centers.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/institutes.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/spores.html",
+    "https://www.mdanderson.org/research/research-areas.html",
+    "https://www.mdanderson.org/research/research-areas/basic-science.html",
+    "https://www.mdanderson.org/research/research-areas/translational-research.html",
+    "https://www.mdanderson.org/research/research-areas/clinical-research.html",
+    "https://www.mdanderson.org/research/research-areas/prevention-personalized-risk-assessment.html",
+    "https://www.mdanderson.org/research/research-resources.html",
+    "https://www.mdanderson.org/research/research-resources/excellence-in-science.html",
+    "https://www.mdanderson.org/research/research-resources/core-facilities.html",
+    "https://www.mdanderson.org/research/research-resources/conferences-seminars.html",
+    "https://www.mdanderson.org/research/research-resources/why-research.html",
+    "https://www.mdanderson.org/research/research-resources/stride.html",
+    "https://www.mdanderson.org/research/research-resources/nci-designated-cancer-center.html",
+    "https://www.mdanderson.org/research/research-resources/data-resources.html",
+    "https://www.mdanderson.org/education-training.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools/school-of-health-professions.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools/graduate-school-of-biomedical-sciences.html",
+    "https://www.mdanderson.org/education-training/education-resources.html",
+    "https://www.mdanderson.org/education-training/education-resources/alumni-relations.html",
+    "https://www.mdanderson.org/education-training/education-resources/education-design-services.html",
+    "https://www.mdanderson.org/education-training/education-resources/awards-recognitions.html",
+    "https://www.mdanderson.org/education-training/education-resources/academic-mentoring-council.html",
+    "https://www.mdanderson.org/education-training/education-resources/why-train-at-md-anderson-houston.html",
+    "https://www.mdanderson.org/education-training/research-training.html",
+    "https://www.mdanderson.org/education-training/research-training/early-career-pathway-programs.html",
+    "https://www.mdanderson.org/education-training/research-training/predoctoral-training.html",
+    "https://www.mdanderson.org/education-training/research-training/postdoctoral-training.html",
+    "https://www.mdanderson.org/education-training/research-training/mentored-faculty-programs.html",
+    "https://www.mdanderson.org/education-training/research-training/career-development.html",
+    "https://www.mdanderson.org/education-training/clinical-training.html",
+    "https://www.mdanderson.org/education-training/clinical-training/graduate-medical-education.html",
+    "https://www.mdanderson.org/education-training/clinical-training/clinical-education-for-non-physicians.html",
+    "https://www.mdanderson.org/education-training/clinical-training/nursing-education.html",
+    "https://www.mdanderson.org/education-training/clinical-training/certificate-programs-review-courses.html",
+    "https://www.mdanderson.org/education-training/clinical-training/simulation-center.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/continuing-professional-education-conferences.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/administrative-internships-fellowships.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/cancer-survivorship-program.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/leadership-institute.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/patient-home-visits.html",
+    "https://www.mdanderson.org/education-training/outreach-programs.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/project-echo.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/observer-programs.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/comparative-effectiveness-research-training.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/faculty-speakers-bureau.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools/school-of-health-professions/prospective-students.html",
+    "https://www.mdanderson.org/education-training/clinical-training/graduate-medical-education/residencies-fellowships.html",
+    "tel:+18449423608",
+    "https://www.mdanderson.org/cancer-types/acute-myeloid-leukemia.html",
+    "https://www.mdanderson.org/cancer-types/acute-myeloid-leukemia/acute-myeloid-leukemia-symptoms.html",
+    "https://www.mdanderson.org/cancer-types/acute-myeloid-leukemia/acute-myeloid-leukemia-diagnosis.html",
+    "https://www.mdanderson.org/cancer-types/acute-myeloid-leukemia/acute-myeloid-leukemia-treatment.html",
+    "mailto:?subject=UT%20MD%20Anderson%20:%20Acute%20Myeloid%20Leukemia%20(AML)&body=I%20thought%20you%27d%20like%20to%20read%20this%3A%20https%3A%2F%2Fwww.mdanderson.org%2Fcancer-types%2Facute-myeloid-leukemia.html",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.mdanderson.org%2Fcancer-types%2Facute-myeloid-leukemia.html",
+    "https://x.com/share?url=https%3A%2F%2Fwww.mdanderson.org%2Fcancer-types%2Facute-myeloid-leukemia.html",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.mdanderson.org%2Fcancer-types%2Facute-myeloid-leukemia.html",
+    "https://bsky.app/intent/compose?text=https%3A%2F%2Fwww.mdanderson.org%2Fcancer-types%2Facute-myeloid-leukemia.html",
+    "https://www.threads.com/intent/post?text=https%3A%2F%2Fwww.mdanderson.org%2Fcancer-types%2Facute-myeloid-leukemia.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/emotional-physical-effects/anemia-cancer.html",
+    "https://www.mdanderson.org/cancer-types/leukemia/acute-promyelocytic-leukemia.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/emotional-physical-effects/bleeding-bruising-cancer.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/emotional-physical-effects/infections.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/emotional-physical-effects/fatigue.html",
+    "https://www.mdanderson.org/treatment-options/stem-cell-transplantation.html",
+    "https://www.mdanderson.org/treatment-options/radiation-therapy.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/leukemia-center.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/programs-centers/clinical-research-center-for-myeloproliferative-neoplasms.html",
+    "https://www.mdanderson.org/cancer-types/myeloproliferative-neoplasm.html",
+    "https://www.mdanderson.org/cancer-types/myelodysplastic-syndrome.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/stem-cell-transplantation-and-cellular-therapy-center.html",
+    "https://www.mdanderson.org/cancerwise/menin-inhibitor-clinical-trial-puts-pediatric-leukemia-patient-in-remission.h00-159703068.html",
+    "https://www.mdanderson.org/patients-family/search-results.html?searchType=clinical%20trials&q=Leukemia",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/mycancerconnection.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support/social-work.html",
+    "https://www.mdandersonbloodbank.org/",
+    "https://shop.mdanderson.org/",
+    "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html",
+    "https://www.mdanderson.org/about-md-anderson.html",
+    "https://www.mdanderson.org/cancerwise.html",
+    "https://www.mdanderson.org/newsroom.html",
+    "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html",
+    "https://www.mdanderson.org/about-md-anderson/employee-resources.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html",
+    "https://www.mdanderson.org/patients-family/html-sitemap.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html",
+    "https://www.levelaccess.com/MDAnderson",
+    "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html",
+    "https://facebook.com/MDAnderson",
+    "https://x.com/UTMDAnderson",
+    "https://youtube.com/mdandersonorg",
+    "https://instagram.com/mdandersoncancercenter",
+    "https://linkedin.com/company/mdandersoncancercenter",
+    "http://bsky.app/profile/mdanderson.bsky.social",
+    "https://threads.com/@mdandersoncancercenter",
+    "https://podcasts.apple.com/us/podcast/cancerwise-podcast/id1751785346",
+    "https://open.spotify.com/show/28rgC5nO7OpLhnPlNylNem",
+    "http://www.youtube.com/playlist?list=PLKscGuVrfI9LvQrf5At-R7TewdfY4OeOP",
+    "http://www.pandora.com/podcast/cancerwise-podcast/PC:1001088873",
+    "http://www.iheart.com/podcast/269-cancerwise-podcast-185103717/",
+    "https://support.doctorpodcasting.com/podcastfeed/335",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html",
+    "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html",
+    "https://www3.mdanderson.org/emergencyalert/",
+    "https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html",
+    "https://my.mdanderson.org/"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/hero-images/Integrated%20Media/OPH_Logo_Horizontal_Reverse.png",
+        "alt": "Only Possible Here",
+        "w": 857,
+        "h": 231
+      },
+      {
+        "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/xmda-logo.png.pagespeed.ic.jLVBCg-7dN.webp",
+        "alt": "The University of Texas MD Anderson Cancer Center",
+        "w": 1527,
+        "h": 639
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/focused-on-health/2015/WEB-Tanya-Moseley-3D-mammo.jpg.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 108,
+        "h": 61
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/hero-images/Integrated%20Media/oph-web-promo-image-tagline.png.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 108,
+        "h": 61
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/l2-l3-hero/sujit_prabhu_physicians_nav.jpg.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 108,
+        "h": 61
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/moonshots/researchplatforms/Clinical-Trial/CLL_Jan_Burger_175_resized.jpg.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 108,
+        "h": 61
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/patients-family/diagnosis-treatment/cancer-types/acute-myeloid-leukemia/jcr:content/mainparsys/columns_3_copy_copy/column2/adaptiveimage_143528.resize.648.0.medium.jpg/1785795051452.jpg",
+        "alt": "U.S. News & World Report Best Cancer Hospital badge",
+        "w": 648,
+        "h": 648
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/patients-family/diagnosis-treatment/cancer-types/acute-myeloid-leukemia/jcr:content/mainparsys/columns_3_copy_copy/column2/adaptiveimage_copy.resize.648.0.medium.jpg/1768748888905.jpg",
+        "alt": "An image that shows how blood stem cells develop in several steps into various red and white blood cells.",
+        "w": 648,
+        "h": 769
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/patients-family/diagnosis-treatment/cancer-types/acute-myeloid-leukemia/jcr:content/mainparsys/columns_1_copy_copy_/column2/adaptiveimage.resize.648.0.medium.jpg/1768753276648.jpg",
+        "alt": "MD Anderson Leukemia Center location",
+        "w": 648,
+        "h": 432
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/S/FY24_CW_Stan_David_1600x900_V1.jpg.resize.450.235.high.jpg",
+        "alt": "Leukemia survivor David Stan",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/jcr:content/footer/xdesktoplogo.resize.png.pagespeed.ic.wmDIh2S-LF.webp",
+        "alt": "UT MD Anderson logo",
+        "w": 1280,
+        "h": 535
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp",
+        "alt": "UT MD Anderson logo",
+        "w": 837,
+        "h": 95
+      },
+      {
+        "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/eA_Icon_Black.svg",
+        "alt": "MD Anderson works with Level Access to ensure our website is accessible and functional for all users. Free assistive technology is provided for people with physical disabilities. To learn more or to download the assistive technology tool, visit https://www.levelaccess.com/MDAnderson",
+        "w": 300,
+        "h": 113
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp",
+        "alt": "UT MD Anderson logo",
+        "w": 837,
+        "h": 95
+      }
+    ],
+    "allImgCount": 14,
+    "cssBackgrounds": [
+      "https://www.mdanderson.org/content/mda/en/patients-family/diagnosis-treatment/cancer-types/acute-myeloid-leukemia/jcr:content/heroparsys/herocontent.resize.1400.282.high.jpg/1768775564462.jpg"
+    ],
+    "modals": [
+      "Close Share this article Via social media: Or copy the link: Copy to clipboard Copy",
+      "Close Share this article Via social media: Or copy the link: Copy to clipboard Copy"
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {},
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 23,
+    "mainTextLen": 13478,
+    "realImageCount": 14,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "screenshot": "assets/screenshots/cancer-types-acute-myeloid-leukemia-html.png"
+}

@@ -40,6 +40,10 @@ main .section.hero-container > div {
   display: block;
 }
 
+.hero .fade-anim .carousel-item.medium-hero {
+  transition: opacity 0.4s ease;
+}
+
 .hero .slick-track:has(.slide-2) .carousel-item.medium-hero {
   position: absolute;
   top: 0;
@@ -52,10 +56,6 @@ main .section.hero-container > div {
   position: relative;
   opacity: 1;
   z-index: 900;
-}
-
-.hero .fade-anim .carousel-item.medium-hero {
-  transition: opacity 0.4s ease;
 }
 
 .hero .carousel-image.media-image {
@@ -368,11 +368,25 @@ main .section.hero-container > div {
     margin: 0 36px;
   }
 
-  .hero .carousel-body.mobile .carousel-body-text { font-size: 24px; line-height: 31.2px; margin: 0 35px; }
-  .hero.left .carousel-body.mobile .carousel-body-text { font-size: 16px; line-height: 20.8px; margin: 0 36px; }
+  .hero .carousel-body.mobile .carousel-body-text {
+    font-size: 24px;
+    line-height: 31.2px;
+    margin: 0 35px;
+  }
+
+  .hero.left .carousel-body.mobile .carousel-body-text {
+    font-size: 16px;
+    line-height: 20.8px;
+    margin: 0 36px;
+  }
+
   .hero .carousel-body.mobile .right-aligned-cta.cta { margin: 0 36px; }
   .hero .carousel-body.mobile .default-cta.cta { margin: 20px 10% 0; }
-  .hero .carousel-body.mobile .left-aligned-cta.cta { margin: 0 36px; max-width: 75%; }
+
+  .hero .carousel-body.mobile .left-aligned-cta.cta {
+    margin: 0 36px;
+    max-width: 75%;
+  }
 
   .hero a.cta-block {
     padding: 12px 30px 10px;
@@ -434,4 +448,141 @@ main .section.hero-container > div {
     line-height: 24px;
     margin: 0 35px;
   }
+}
+
+/* ==========================================================================
+   department variant — lab-small-hero dark (research department pages;
+   owning page: abdominal-imaging). Values lifted 1:1 from the live
+   clientlib (A.clientlib-all.min.css `.lab-small-hero` rules); underscore
+   class names kebab-cased (lab_hero_info → lab-hero-info, contact_info →
+   contact-info) for lint parity — every value is the live one.
+   ========================================================================== */
+
+.hero.department .lab-small-hero {
+  position: relative;
+  height: 284px;
+  background: #000;
+}
+
+/* .lab-small-hero.dark .lab_hero_info { color: #fff } */
+.hero.department .lab-hero-info {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: var(--color-bg);
+}
+
+.hero.department .background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* live serves a pre-cropped 1400x284 rendition (width:100%/height:284px);
+   the EDS rendition keeps its aspect, so cover-crop to the same frame */
+.hero.department .background-image img {
+  display: block;
+  width: 100%;
+  height: 284px;
+  object-fit: cover;
+}
+
+/* live mda-media-brightness scrim is transparent on this hero — no overlay */
+
+.hero.department .title-container {
+  display: table-cell;
+  width: 66%;
+  height: 100%;
+  position: relative;
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.hero.department .title-container > h1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding-right: 15px;
+  font-weight: 400;
+  font-family: var(--body-font-family);
+  -webkit-font-smoothing: antialiased;
+  font-size: 55px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+}
+
+.hero.department .contact-info {
+  display: table-cell;
+  width: 33%;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 60px;
+  vertical-align: middle;
+}
+
+.hero.department .info-container {
+  position: relative;
+  padding: 0;
+  margin-top: 0;
+  font-family: var(--sans-bold-font-family);
+  font-size: 16px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+}
+
+/* .lab-small-hero.dark ... .info-container:before { background: #fff } */
+.hero.department .info-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -30px;
+  width: 1px;
+  background: var(--color-bg);
+}
+
+.hero.department .info-container .contact { margin-bottom: 25px; }
+
+.hero.department .info-container p { margin: 0; }
+
+@media (width <= 991px) {
+  .hero.department .title-container > h1 { font-size: 36px; }
+}
+
+@media (width <= 752px) {
+  .hero.department .lab-small-hero {
+    display: block;
+    height: auto;
+  }
+
+  .hero.department .background-image img { height: 100%; }
+
+  .hero.department .lab-hero-info {
+    display: block;
+    padding: 70px 35px;
+  }
+
+  .hero.department .title-container,
+  .hero.department .contact-info {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero.department .title-container > h1 { font-size: 24px; }
+
+  .hero.department .contact-info { padding: 0; }
+
+  .hero.department .info-container {
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  .hero.department .info-container::before { content: none; }
 }

@@ -297,6 +297,12 @@
         "value": "#e8e8e8",
         "createdAt": "2026-08-20T04:18:04.287Z",
         "reason": "stardust:replica EDS conversion — capture-locked Cancerwise topic/hairline color lifted from the prototype; replica contract forbids normalization"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#6485bd",
+        "createdAt": "2026-08-21T10:30:55.010Z",
+        "reason": "lifted verbatim from live mdanderson.org clientlib-all.min.css (.appt-bar-sticky .button-block border-right) — replica fidelity"
       }
     ]
   }

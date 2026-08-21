@@ -1,7 +1,7 @@
 {
   "_provenance": {
     "renderedBy": "playwright",
-    "fetchedAt": "2026-08-19T16:17:44.064Z",
+    "fetchedAt": "2026-08-21T10:19:15.242Z",
     "waitMode": "medium",
     "waitMs": 2500,
     "httpStatus": 200
@@ -9,7 +9,7 @@
   "slug": "cancerwise-html",
   "url": "https://www.mdanderson.org/cancerwise.html",
   "renderedBy": "playwright",
-  "fetchedAt": "2026-08-19T16:17:44.064Z",
+  "fetchedAt": "2026-08-21T10:19:15.242Z",
   "finalUrl": "https://www.mdanderson.org/cancerwise.html",
   "title": "Cancerwise Blog | UT MD Anderson",
   "description": "UT MD Anderson's Cancerwise blog features cancer patient and caregiver stories, expert insight, research breakthroughs and clinical innovations, healthy living information and the latest news and cancer updates.",
@@ -26,7 +26,7 @@
     },
     {
       "tag": "h3",
-      "text": "20-year breast cancer survivor: It’s never too late to volunteer at UT MD Anderson"
+      "text": "3 reasons why an accurate bladder cancer diagnosis matters"
     },
     {
       "tag": "h3",
@@ -35,6 +35,10 @@
     {
       "tag": "h3",
       "text": "Top Stories"
+    },
+    {
+      "tag": "h3",
+      "text": "Personalized cancer care helps pancreatic cancer survivor get back to life"
     },
     {
       "tag": "h3",
@@ -55,10 +59,6 @@
     {
       "tag": "h3",
       "text": "What is white coat syndrome?"
-    },
-    {
-      "tag": "h3",
-      "text": "First patient on clinical trial thankful for UT MD Anderson"
     },
     {
       "tag": "h2",
@@ -138,8 +138,8 @@
     }
   ],
   "body": [
-    "When I was going through breast cancer treatment in 2006, I remember a volunteer coming into my room while I was receiving chemotherapy at UT MD Anderson.",
-    "She was a breast cancer survivor, someone who had already been through what I was going through. So, I wanted to be her — cancer-free, looking great and past all the treatments.",
+    "Getting an accurate diagnosis is critical to determining the most appropriate treatment for any disease.",
+    "But with bladder cancer, that first step is particularly important, because a cystectomy — or surgery to remove the entire bladder — is an essential part of many recommended treatment plans.",
     "Read the latest stories",
     "Top Stories",
     "Diagnosis & Treatment",
@@ -187,7 +187,7 @@
     "DIGITAL ACCESSIBILITY",
     "Accessibility Policy",
     "GET IN TOUCH",
-    "Call 1-833-475-0820",
+    "Call 1-877-625-6176",
     "Ask a question",
     "Stay Connected",
     "PreviousNext",
@@ -214,7 +214,7 @@
     },
     {
       "label": "Donate Today",
-      "href": "javascript:void(0);"
+      "href": "https://gifts.mdanderson.org/Default.aspx?tsid=37435"
     },
     {
       "label": "Clinical Trials",
@@ -269,36 +269,28 @@
       "href": "/cancerwise.html"
     },
     {
-      "label": "20-year breast cancer survivor: It’s never too late to volunteer at UT MD Anderson",
-      "href": "/cancerwise/20-year-breast-cancer-survivor--it-s-never-too-late-to-volunteer-at-ut-md-anderson.h00-159857712.html"
+      "label": "3 reasons why an accurate bladder cancer diagnosis matters",
+      "href": "/cancerwise/3-reasons-why-an-accurate-bladder-cancer-diagnosis-matters.h00-159857712.html"
     },
     {
-      "label": "breast cancer treatment",
-      "href": "/cancer-types/breast-cancer/breast-cancer-treatment.html"
+      "label": "accurate diagnosis",
+      "href": "/cancerwise/dual-bladder-cancer-survivor--md-anderson-protected-me-from-both-covid-19-and-an-incomplete-diagnosis.h00-159464790.html"
     },
     {
-      "label": "volunteer",
-      "href": "/donors-volunteers/volunteer.html"
+      "label": "bladder cancer",
+      "href": "/cancer-types/bladder-cancer.html"
     },
     {
-      "label": "chemotherapy",
-      "href": "/treatment-options/chemotherapy.html"
+      "label": "surgery",
+      "href": "/treatment-options/surgery.html"
     },
     {
-      "label": "breast cancer",
-      "href": "/cancer-types/breast-cancer.html"
-    },
-    {
-      "label": "cancer-free",
-      "href": "/cancerwise/remission--cancer-free--no-evidence-of-disease--what-is-the-difference-when-talking-about-cancer-treatment-effectiveness-and-results.h00-159460845.html"
-    },
-    {
-      "label": "treatments",
-      "href": "/treatment-options.html"
+      "label": "treatment",
+      "href": "/cancer-types/bladder-cancer/bladder-cancer-treatment.html"
     },
     {
       "label": "Keep reading",
-      "href": "/cancerwise/20-year-breast-cancer-survivor--it-s-never-too-late-to-volunteer-at-ut-md-anderson.h00-159857712.html"
+      "href": "/cancerwise/3-reasons-why-an-accurate-bladder-cancer-diagnosis-matters.h00-159857712.html"
     },
     {
       "label": "Read the latest stories",
@@ -307,6 +299,10 @@
     {
       "label": "Top Stories",
       "href": "#top"
+    },
+    {
+      "label": "Personalized cancer care helps pancreatic cancer survivor get back to life",
+      "href": "/cancerwise/personalized-cancer-care-helps-pancreatic-cancer-survivor-get-back-to-life.h00-159857712.html"
     },
     {
       "label": "GLP-1s and anesthesia: What to know before surgery",
@@ -327,10 +323,6 @@
     {
       "label": "What is white coat syndrome?",
       "href": "/cancerwise/what-is-white-coat-syndrome.h00-159857712.html"
-    },
-    {
-      "label": "First patient on clinical trial thankful for UT MD Anderson",
-      "href": "/cancerwise/first-patient-on-phase-1-clinical-trial-thankful-for-ut-md-anderson.h00-159857712.html"
     },
     {
       "label": "Request an Appointment",
@@ -513,8 +505,8 @@
       "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html"
     },
     {
-      "label": "Call 1-833-475-0820",
-      "href": "tel:+18334750820"
+      "label": "Call 1-877-625-6176",
+      "href": "tel:+18776256176"
     },
     {
       "label": "Ask a question",
@@ -556,8 +548,6 @@
     "https://my.mdanderson.org/RequestAppointment",
     "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/returning-patients.html",
     "https://my.mdanderson.org/physicianreferral",
-    "javascript:void(0);",
-    "https://onlypossiblehere.mdanderson.org/",
     "https://gifts.mdanderson.org/Default.aspx?tsid=37435",
     "https://www.mdanderson.org/",
     "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html",
@@ -652,6 +642,7 @@
     "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/cord-blood-bank.html",
     "https://www.mdanderson.org/donors-volunteers/corporate-alliances.html",
     "https://www.mdanderson.org/donors-volunteers/corporate-alliances/current-alliances.html",
+    "https://onlypossiblehere.mdanderson.org/",
     "https://www.mdanderson.org/for-physicians.html",
     "https://www.mdanderson.org/for-physicians/refer-a-patient.html",
     "https://www.mdanderson.org/for-physicians/refer-a-patient/health-care-provider-resource-center.html",
@@ -720,24 +711,23 @@
     "https://www.mdanderson.org/education-training/degree-granting-schools/school-of-health-professions/prospective-students.html",
     "https://www.mdanderson.org/education-training/clinical-training/graduate-medical-education/residencies-fellowships.html",
     "https://www.mdanderson.org/cancerwise.html",
-    "https://www.mdanderson.org/cancerwise/20-year-breast-cancer-survivor--it-s-never-too-late-to-volunteer-at-ut-md-anderson.h00-159857712.html",
-    "https://www.mdanderson.org/cancer-types/breast-cancer/breast-cancer-treatment.html",
-    "https://www.mdanderson.org/treatment-options/chemotherapy.html",
-    "https://www.mdanderson.org/cancer-types/breast-cancer.html",
-    "https://www.mdanderson.org/cancerwise/remission--cancer-free--no-evidence-of-disease--what-is-the-difference-when-talking-about-cancer-treatment-effectiveness-and-results.h00-159460845.html",
-    "https://www.mdanderson.org/treatment-options.html",
+    "https://www.mdanderson.org/cancerwise/3-reasons-why-an-accurate-bladder-cancer-diagnosis-matters.h00-159857712.html",
+    "https://www.mdanderson.org/cancerwise/dual-bladder-cancer-survivor--md-anderson-protected-me-from-both-covid-19-and-an-incomplete-diagnosis.h00-159464790.html",
+    "https://www.mdanderson.org/cancer-types/bladder-cancer.html",
+    "https://www.mdanderson.org/treatment-options/surgery.html",
+    "https://www.mdanderson.org/cancer-types/bladder-cancer/bladder-cancer-treatment.html",
     "https://www.mdanderson.org/cancerwise.html#latest",
     "https://www.mdanderson.org/cancerwise.html#top",
+    "https://www.mdanderson.org/cancerwise/personalized-cancer-care-helps-pancreatic-cancer-survivor-get-back-to-life.h00-159857712.html",
     "https://www.mdanderson.org/cancerwise/glp-1s-and-anesthesia--what-to-know-before-surgery.h00-159857712.html",
     "https://www.mdanderson.org/cancerwise/austin-banking-leader-and-prostate-cancer-survivor-driven-to-support-ut-md-anderson.h00-159857712.html",
-    "https://www.mdanderson.org/cancerwise/3-reasons-why-an-accurate-bladder-cancer-diagnosis-matters.h00-159857712.html",
+    "https://www.mdanderson.org/cancerwise/20-year-breast-cancer-survivor--it-s-never-too-late-to-volunteer-at-ut-md-anderson.h00-159857712.html",
     "https://www.mdanderson.org/cancerwise/what-is-white-coat-syndrome.h00-159857712.html",
-    "https://www.mdanderson.org/cancerwise/first-patient-on-phase-1-clinical-trial-thankful-for-ut-md-anderson.h00-159857712.html",
     "https://www.mdanderson.org/cancerwise/6-tips-to-lower-your-blood-sugar.h00-159856923.html",
-    "https://www.mdanderson.org/cancerwise/what-are-the-benefits-of-drinking-chlorophyll-6-things-to-know.h00-159855345.html",
     "https://www.mdanderson.org/cancerwise/swollen-collar-bone--supraclavicular--lymph-nodes--4-things-to-know.h00-159856134.html",
     "https://www.mdanderson.org/cancerwise/-how-i-knew-i-had-endometrial-cancer---six-survivors-share-their-symptoms-stories.h00-159856134.html",
     "https://www.mdanderson.org/cancerwise/debunking-the-health-benefits-of-nicotine.h00-159856134.html",
+    "https://www.mdanderson.org/cancerwise/the-facts-behind-5-detox-myths-should-you-detox-your-body.h00-159856923.html",
     "https://www.mdanderson.org/publications.html",
     "https://www.mdanderson.org/podcast.html",
     "https://www.mdanderson.org/cancerwise.html#tabs-0",
@@ -754,12 +744,12 @@
     "https://www.mdanderson.org/cancerwise/what-is-the-blood-brain-barrier--and-how-can-we-get-past-it-to-treat-cancer.h00-159856923.html",
     "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/publications/cancerwise/diagnosis-treatment",
     "https://www.mdanderson.org/publications/subscribe-to-cancerwise.html",
+    "https://www.mdanderson.org/cancerwise/first-patient-on-phase-1-clinical-trial-thankful-for-ut-md-anderson.h00-159857712.html",
     "https://www.mdanderson.org/cancerwise/from-cancer-care-professional-to-patient--two-time-survivor-choo.h00-159857712.html",
     "https://www.mdanderson.org/cancerwise/clinical-psychologist--a-hodgkin-lymphoma-cancer-diagnosis-as-a-young-adult-changed-my-life.h00-159856923.html",
     "https://www.mdanderson.org/cancerwise/doctor--stomach-cancer-survivor--3-things-that-impressed-me-about-ut-md-anderson.h00-159856923.html",
     "https://www.mdanderson.org/cancerwise/4-time-cancer-survivor-finds-security-and-comfort-at-ut-md-anderson.h00-159856923.html",
     "https://www.mdanderson.org/cancerwise/2-time-cancer-survivor-thankful-for-ut-md-anderson-s-guidance-an.h00-159856923.html",
-    "https://www.mdanderson.org/cancerwise/doctor-and-stage-4-stomach-cancer-survivor-thankful-for-clinical.h00-159856923.html",
     "https://www.mdanderson.org/cancerwise.dir.html/category/content/cq:tags/md-anderson/publications/cancerwise/patient-caregiver-stories",
     "https://www.mdanderson.org/cancerwise/alternatives-to-meal-prepping--a-simpler-approach-to-healthy-eating.h00-159857712.html",
     "https://www.mdanderson.org/cancerwise/how-to-get-men-to-go-to-the-doctor--3-tips-from-our-doctors.h00-159857712.html",
@@ -807,7 +797,7 @@
     "https://www.mdanderson.org/patients-family/html-sitemap.html",
     "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html",
     "https://www.levelaccess.com/MDAnderson",
-    "tel:+18334750820",
+    "tel:+18776256176",
     "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html",
     "https://facebook.com/MDAnderson",
     "https://x.com/UTMDAnderson",
@@ -833,12 +823,6 @@
   "media": {
     "imgs": [
       {
-        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/hero-images/Integrated%20Media/OPH_Logo_Horizontal_Reverse.png",
-        "alt": "Only Possible Here",
-        "w": 857,
-        "h": 231
-      },
-      {
         "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/xmda-logo.png.pagespeed.ic.jLVBCg-7dN.webp",
         "alt": "The University of Texas MD Anderson Cancer Center",
         "w": 1527,
@@ -847,20 +831,20 @@
       {
         "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/focused-on-health/2015/WEB-Tanya-Moseley-3D-mammo.jpg.resize.216.122.high.jpg",
         "alt": "",
-        "w": 108,
-        "h": 61
+        "w": 216,
+        "h": 122
       },
       {
         "src": "https://www.mdanderson.org/content/dam/mdanderson/images/hero-images/Integrated%20Media/oph-web-promo-image-tagline.png.resize.216.122.high.jpg",
         "alt": "",
-        "w": 108,
-        "h": 61
+        "w": 216,
+        "h": 122
       },
       {
         "src": "https://www.mdanderson.org/content/dam/mdanderson/images/l2-l3-hero/sujit_prabhu_physicians_nav.jpg.resize.216.122.high.jpg",
         "alt": "",
-        "w": 108,
-        "h": 61
+        "w": 216,
+        "h": 122
       },
       {
         "src": "https://www.mdanderson.org/content/dam/mdanderson/images/moonshots/researchplatforms/Clinical-Trial/CLL_Jan_Burger_175_resized.jpg.resize.216.122.high.jpg",
@@ -869,14 +853,14 @@
         "h": 122
       },
       {
-        "src": "https://www.mdanderson.org/content/mda/en/cancerwise/2026/08/20-year-breast-cancer-survivor--it-s-never-too-late-to-volunteer-at-ut-md-anderson/jcr:content/blog/adaptiveimage.resize.450.0.high.jpg",
+        "src": "https://www.mdanderson.org/content/mda/en/cancerwise/2026/08/3-reasons-why-an-accurate-bladder-cancer-diagnosis-matters/jcr:content/blog/adaptiveimage.resize.450.0.high.jpg",
         "alt": "",
         "w": 450,
-        "h": 253
+        "h": 252
       },
       {
-        "src": "https://www.mdanderson.org/content/mda/en/cancerwise/2026/08/glp-1s-and-anesthesia--what-to-know-before-surgery/jcr:content/blog/adaptiveimage.resize.450.235.high.jpg",
-        "alt": "GLP-1 injector floating through a spiral tape measure",
+        "src": "https://www.mdanderson.org/content/mda/en/cancerwise/2026/08/personalized-cancer-care-helps-pancreatic-cancer-survivor-get-back-to-life/jcr:content/blog/adaptiveimage.resize.450.235.high.jpg",
+        "alt": "Man and woman sit next to each other in a booth",
         "w": 450,
         "h": 235
       },
@@ -929,6 +913,12 @@
         "h": 235
       },
       {
+        "src": "https://www.mdanderson.org/content/mda/en/cancerwise/2026/08/personalized-cancer-care-helps-pancreatic-cancer-survivor-get-back-to-life/jcr:content/blog/adaptiveimage.resize.450.235.high.jpg",
+        "alt": "Man and woman sit next to each other in a booth",
+        "w": 450,
+        "h": 235
+      },
+      {
         "src": "https://www.mdanderson.org/content/mda/en/cancerwise/2026/08/20-year-breast-cancer-survivor--it-s-never-too-late-to-volunteer-at-ut-md-anderson/jcr:content/blog/adaptiveimage.resize.450.235.high.jpg",
         "alt": "Breast cancer survivor and volunteer Naomi Arbel-Brodd with her son, Ari",
         "w": 450,
@@ -967,12 +957,6 @@
       {
         "src": "https://www.mdanderson.org/content/mda/en/cancerwise/2026/07/2-time-cancer-survivor-thankful-for-ut-md-anderson-s-guidance-an/jcr:content/blog/adaptiveimage.resize.450.235.high.jpg",
         "alt": "A man and woman stand in front of a door decorated for the holidays",
-        "w": 450,
-        "h": 235
-      },
-      {
-        "src": "https://www.mdanderson.org/content/mda/en/cancerwise/2026/07/doctor-and-stage-4-stomach-cancer-survivor-thankful-for-clinical/jcr:content/blog/adaptiveimage.resize.450.235.high.jpg",
-        "alt": "A smiling man and woman stand next to each other",
         "w": 450,
         "h": 235
       },
@@ -1193,7 +1177,7 @@
         "h": 95
       }
     ],
-    "allImgCount": 60,
+    "allImgCount": 59,
     "cssBackgrounds": [],
     "modals": [],
     "videos": [],
@@ -1203,8 +1187,8 @@
   "_signals": {
     "filteredInterstitials": 0,
     "distinctHeadings": 26,
-    "mainTextLen": 10136,
-    "realImageCount": 60,
+    "mainTextLen": 10099,
+    "realImageCount": 59,
     "trackingOnlyMedia": false,
     "spaShellSuspect": false,
     "screenshotMode": "fullPage"

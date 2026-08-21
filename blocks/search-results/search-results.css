@@ -1,0 +1,386 @@
+/* search-results — lifted from live clientlib-search
+   (A.clientlib-search.min.css: .search-wrapper.search-results-search-bar,
+   .search-result, .search-result-summary, .search-result-pagination,
+   .no-results) and clientlib-all (.faculty-results .faculty-result cards,
+   base a{color:#da291c;text-decoration:underline}). Variants: trials
+   (blue band #2f60b2 + diseases/cancer-topics tags), faculty (gray
+   #f1f1f1 two-wide cards, round 200px poster). */
+
+.search-results .sr-visually-hidden,
+.search-results .sr-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* --- search band (live .search-wrapper.search-results-search-bar.vanilla) */
+.search-results .sr-band {
+  background: var(--color-accent);
+  padding: 12px 84px;
+}
+
+.search-results .sr-band-title {
+  font-family: var(--heading-font-family);
+  font-size: 36px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  color: var(--color-bg);
+  margin: 0 0 10px;
+}
+
+.search-results .sr-form {
+  display: flex;
+  height: 56px;
+}
+
+.search-results .sr-field {
+  flex: 1;
+  min-width: 0;
+  height: 56px;
+  padding: 0 0 0 20px;
+  border: 0;
+  border-radius: 0;
+  background: var(--color-bg);
+  color: var(--color-gray-dark);
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  letter-spacing: var(--letter-spacing);
+}
+
+.search-results .sr-submit {
+  width: 15%;
+  min-width: 100px;
+  height: 56px;
+  background: var(--color-accent);
+  border: 1px solid var(--color-bg);
+  color: var(--color-bg);
+  text-align: center;
+  cursor: pointer;
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+}
+
+.search-results.trials .sr-band,
+.search-results.trials .sr-submit {
+  background-color: var(--color-blue-promo);
+}
+
+/* --- results column (live #search-page.search-results) ------------------ */
+.search-results .sr-content {
+  margin-top: 9px;
+  padding-bottom: 35px;
+}
+
+.search-results ul[role='list'] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* loader (live .init-search-loader fa-spinner, 50px, centered) */
+.search-results .sr-loader {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.search-results .sr-spinner {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 4px solid var(--color-gray-light);
+  border-top-color: var(--color-accent);
+  border-radius: 50%;
+  animation: sr-spin 0.8s linear infinite;
+}
+
+@keyframes sr-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* summary count (live .search-result-summary / .search-result-count) */
+.search-results .search-result-summary {
+  position: relative;
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  padding: 30px 15px;
+  border-bottom: 1px solid #dddcd2;
+}
+
+/* result row (live .search-result anatomy) */
+.search-results .search-result {
+  padding: 30px 15px;
+  border-bottom: 1px solid #dddcd2;
+  position: relative;
+}
+
+.search-results .search-result:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.search-results div.search-result-details {
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+}
+
+.search-results .search-result-title a:any-link {
+  color: var(--color-accent);
+  text-decoration: underline;
+  overflow-wrap: break-word; /* live: word-break:break-word (deprecated kw) */
+}
+
+.search-results p.search-result-details {
+  margin: 10px 0 0;
+}
+
+/* live neutralizes appliance <em> italics and bolds the query match */
+.search-results p.search-result-details em {
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* trials tags (diseases / cancer-topics MT fields) */
+.search-results .search-result-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.search-results .search-result-tag {
+  font-family: var(--sans-font-family);
+  font-size: 14px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  color: var(--color-gray-text);
+  border: 1px solid var(--color-gray-light);
+  padding: 4px 10px;
+}
+
+/* no-results (live .no-results + .search-term-red) */
+.search-results .no-results {
+  font-family: var(--sans-font-family);
+  font-size: 21px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  text-align: left;
+  margin-top: 30px;
+  padding-left: 15px;
+}
+
+.search-results .no-results p {
+  font-size: 24px;
+  margin: 30px 0 0;
+}
+
+.search-results .no-results .search-term-red {
+  color: var(--color-accent);
+}
+
+/* error (live .searchError h2) */
+.search-results .search-error h2 {
+  font-family: var(--sans-bold-font-family);
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  margin: 30px 0 0;
+  padding-left: 15px;
+}
+
+/* pagination (live .search-result-pagination: white/red CTA buttons +
+   numeric .pagination links, Univers Light, active bold) */
+.search-results .search-result-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  clear: both;
+  padding: 30px 15px 0;
+}
+
+.search-results .search-results-prev,
+.search-results .search-results-more {
+  width: 135px;
+  background: var(--color-bg);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+}
+
+.search-results .pagination {
+  margin-left: auto;
+  padding: 0 15px;
+}
+
+.search-results .pagination button {
+  display: inline-block;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 14px 4px;
+  color: var(--color-fg);
+  font-family: var(--sans-light-font-family);
+  font-size: 18px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+}
+
+.search-results .pagination button.active {
+  font-family: var(--sans-bold-font-family);
+}
+
+.search-results .search-results-prev[hidden],
+.search-results .search-results-more[hidden] {
+  display: block;
+  visibility: hidden;
+}
+
+/* --- faculty cards (clientlib-all .faculty-results .faculty-result) ----- */
+.search-results .faculty-results {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  overflow: hidden;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.search-results .faculty-result {
+  background: #f1f1f1;
+}
+
+.search-results .faculty-result .container {
+  padding: 40px;
+}
+
+.search-results .faculty-result .container .bio-image {
+  max-width: 200px;
+  max-height: 200px;
+  overflow: hidden;
+  margin: 0 auto 30px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.search-results .faculty-result .container .bio-image img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.search-results .faculty-result .container a:any-link {
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.search-results .faculty-result .container p {
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+  margin: 10px 0 0;
+}
+
+/* --- mobile (live clientlib 991px tier) ---------------------------------- */
+@media (width <= 991px) {
+  .search-results .sr-band {
+    padding: 12px 5%;
+  }
+
+  .search-results .sr-field {
+    font-size: 17px;
+  }
+
+  .search-results .sr-submit {
+    width: 20%;
+    max-width: 135px;
+    font-size: 16px;
+  }
+
+  .search-results .search-result {
+    padding: 20px 35px;
+  }
+
+  .search-results div.search-result-details {
+    font-size: 16px;
+  }
+
+  .search-results .search-result-summary {
+    padding: 25px 35px;
+    font-size: 16px;
+    border-bottom: none;
+  }
+
+  .search-results .no-results {
+    font-size: 18px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .search-results .no-results p {
+    font-size: 16px;
+  }
+
+  .search-results .pagination {
+    display: none;
+  }
+
+  .search-results .search-result-pagination {
+    padding: 30px 35px 0;
+  }
+
+  .search-results .search-results-prev,
+  .search-results .search-results-more {
+    width: 100px;
+    font-size: 16px;
+  }
+
+  .search-results .faculty-results {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .search-results .faculty-result .container {
+    overflow: hidden;
+    padding: 30px 20px;
+  }
+
+  .search-results .faculty-result .container .bio-image {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 0;
+  }
+
+  .search-results .faculty-result .container .bio-text {
+    float: left;
+    width: calc(100% - 100px);
+    padding: 0 15px;
+  }
+}

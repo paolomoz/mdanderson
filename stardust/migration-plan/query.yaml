@@ -1,0 +1,117 @@
+# Production artifact (POC-completion, 2026-08-21; extends Phase B2 draft of 2026-08-20).
+# Mirror of the aem.live config-service file at
+# https://admin.hlx.page/config/paolomoz/sites/mdanderson/content/query.yaml
+# Scoped indexes powering the listing blocks. Metadata contract per
+# stardust/rollout/dynamic-blocks-map.md + stardust/migration-plan/PLAN.md §3c —
+# every page emits its tier-2 fields via the metadata block at author time.
+version: 1
+
+indices:
+  cancerwise-articles:
+    include:
+      - '/cancerwise/**'
+    exclude:
+      - '/cancerwise'
+    target: /cancerwise/query-index.json
+    properties:
+      title:
+        select: head > meta[property="og:title"]
+        value: attribute(el, 'content')
+      image:
+        select: head > meta[property="og:image"]
+        value: attribute(el, 'content')
+      description:
+        select: head > meta[name="description"]
+        value: attribute(el, 'content')
+      author:
+        select: head > meta[name="author"]
+        value: attribute(el, 'content')
+      publishdate:
+        select: head > meta[name="publishdate"]
+        value: attribute(el, 'content')
+      category:
+        select: head > meta[name="category"]
+        value: attribute(el, 'content')
+      readtime:
+        select: head > meta[name="readtime"]
+        value: attribute(el, 'content')
+      lastModified:
+        select: none
+        value: parseTimestamp(headers['last-modified'], 'ddd, DD MMM YYYY hh:mm:ss GMT')
+
+  newsroom-releases:
+    include:
+      - '/newsroom/**'
+    exclude:
+      - '/newsroom'
+      - '/newsroom/2*'
+    target: /newsroom/query-index.json
+    properties:
+      title:
+        select: head > meta[property="og:title"]
+        value: attribute(el, 'content')
+      description:
+        select: head > meta[name="description"]
+        value: attribute(el, 'content')
+      publishdate:
+        select: head > meta[name="publishdate"]
+        value: attribute(el, 'content')
+      releasetype:
+        select: head > meta[name="releasetype"]
+        value: attribute(el, 'content')
+      image:
+        select: head > meta[property="og:image"]
+        value: attribute(el, 'content')
+      lastModified:
+        select: none
+        value: parseTimestamp(headers['last-modified'], 'ddd, DD MMM YYYY hh:mm:ss GMT')
+
+  cancer-types:
+    include:
+      - '/cancer-types/**'
+    exclude:
+      - '/cancer-types'
+    target: /cancer-types/query-index.json
+    properties:
+      title:
+        select: head > meta[property="og:title"]
+        value: attribute(el, 'content')
+      description:
+        select: head > meta[name="description"]
+        value: attribute(el, 'content')
+      cancertype:
+        select: head > meta[name="cancertype"]
+        value: attribute(el, 'content')
+      pagekind:
+        select: head > meta[name="pagekind"]
+        value: attribute(el, 'content')
+      lastModified:
+        select: none
+        value: parseTimestamp(headers['last-modified'], 'ddd, DD MMM YYYY hh:mm:ss GMT')
+
+  clinical-trials:
+    include:
+      - '/patients-family/diagnosis-treatment/clinical-trials/clinical-trials-index/**'
+    target: /patients-family/diagnosis-treatment/clinical-trials/query-index.json
+    properties:
+      title:
+        select: head > meta[property="og:title"]
+        value: attribute(el, 'content')
+      description:
+        select: head > meta[name="description"]
+        value: attribute(el, 'content')
+      protocolid:
+        select: head > meta[name="protocolid"]
+        value: attribute(el, 'content')
+      phase:
+        select: head > meta[name="phase"]
+        value: attribute(el, 'content')
+      diseases:
+        select: head > meta[name="diseases"]
+        value: attribute(el, 'content')
+      trialstatus:
+        select: head > meta[name="trialstatus"]
+        value: attribute(el, 'content')
+      lastModified:
+        select: none
+        value: parseTimestamp(headers['last-modified'], 'ddd, DD MMM YYYY hh:mm:ss GMT')

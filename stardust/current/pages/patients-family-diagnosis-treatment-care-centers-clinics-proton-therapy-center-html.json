@@ -1,0 +1,984 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-08-21T10:18:30.321Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "patients-family-diagnosis-treatment-care-centers-clinics-proton-therapy-center-html",
+  "url": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center.html",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-08-21T10:18:30.321Z",
+  "finalUrl": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center.html",
+  "title": "Proton Therapy Center | UT MD Anderson",
+  "description": "The MD Anderson Proton Therapy Center offers the most advanced radiation available to treat several different cancers. Learn more today.\n",
+  "og": {
+    "title": "Proton Therapy Center",
+    "description": "The MD Anderson Proton Therapy Center offers the most advanced radiation available to treat several different cancers. Learn more today.\n",
+    "image": "https://www.mdanderson.org/mda-logo-sharable.png",
+    "type": "Website"
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Proton Therapy Center"
+    },
+    {
+      "tag": "h3",
+      "text": "What is proton therapy?"
+    },
+    {
+      "tag": "h2",
+      "text": "Conditions We Treat"
+    },
+    {
+      "tag": "h4",
+      "text": "Prostate Cancer"
+    },
+    {
+      "tag": "h4",
+      "text": "Head & Neck Cancer"
+    },
+    {
+      "tag": "h4",
+      "text": "Lung Cancer"
+    },
+    {
+      "tag": "h4",
+      "text": "Esophageal Cancer"
+    },
+    {
+      "tag": "h4",
+      "text": "Lymphomas"
+    },
+    {
+      "tag": "h4",
+      "text": "Pediatric Cancer"
+    },
+    {
+      "tag": "h3",
+      "text": "My brain tumor journey: Finding faith and strength at UT MD..."
+    },
+    {
+      "tag": "h3",
+      "text": "MD Anderson helps Major League Baseball broadcaster overcome..."
+    },
+    {
+      "tag": "h3",
+      "text": "Share Your Story"
+    },
+    {
+      "tag": "h3",
+      "text": "Clinical Trials"
+    },
+    {
+      "tag": "h3",
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "tag": "h4",
+      "text": "What is proton therapy?"
+    },
+    {
+      "tag": "h4",
+      "text": "How is proton radiation different from traditional photon radiation?"
+    },
+    {
+      "tag": "h4",
+      "text": "Why should I choose UT MD Anderson Proton Therapy Center?"
+    },
+    {
+      "tag": "h4",
+      "text": "Is proton therapy experimental?"
+    },
+    {
+      "tag": "h4",
+      "text": "What types of cancer are treated with proton therapy?"
+    },
+    {
+      "tag": "h3",
+      "text": "Refer a Patient"
+    },
+    {
+      "tag": "h3",
+      "text": "Becoming Our Patient"
+    },
+    {
+      "tag": "h4",
+      "text": "Terapia de Protones"
+    },
+    {
+      "tag": "h4",
+      "text": "质子治疗"
+    },
+    {
+      "tag": "h2",
+      "text": "Help #EndCancer"
+    },
+    {
+      "tag": "h3",
+      "text": "Give Now"
+    },
+    {
+      "tag": "h3",
+      "text": "Donate Blood"
+    },
+    {
+      "tag": "h3",
+      "text": "Shop UT MD Anderson"
+    }
+  ],
+  "body": [
+    "Diagnosis & Treatment",
+    "Care Centers & Clinics",
+    "Proton Therapy Center",
+    "Proton Therapy Center What is Proton Therapy? Why Choose UT MD Anderson Proton Therapy? Conditions We Treat Our Team of Experts For Patients For Physicians Clinical Trials Proton Therapy FAQs Parking and Directions Contact Us",
+    "What is Proton Therapy?",
+    "Why Choose UT MD Anderson Proton Therapy?",
+    "Conditions We Treat",
+    "Our Team of Experts",
+    "For Patients",
+    "For Physicians",
+    "Clinical Trials",
+    "Proton Therapy FAQs",
+    "Parking and Directions",
+    "Contact Us",
+    "Welcome to the Proton Therapy Center. Our cancer specialists are international cancer experts and leaders in the research and treatment of cancer.",
+    "The UT MD Anderson Proton Therapy Center offers the most advanced radiation available to treat cancers of the prostate, lung, head and neck, liver, esophagus and brain, as well as for the treatment of lymphoma, pediatric cancers and other rare tumors.",
+    "We pioneered the innovative, extremely precise form of proton therapy known as pencil beam scanning, and our center is part of UT MD Anderson Cancer Center, which has been ranked one of the nation’s top two hospitals for cancer care by U.S. News & World Report every year since 1990.",
+    "Proton therapy is an advanced type of radiation treatment that uses a beam of protons to deliver radiation directly to the tumor, destroying cancer cells while sparing healthy tissues. Protons enter the body with a low radiation dose, stop at the tumor, match its shape and volume or depth, and deposit the bulk of their cancer-fighting energy right at the tumor.",
+    "Read more about proton therapy",
+    "What is Proton Therapy?",
+    "Prostate Cancer",
+    "Head & Neck Cancer",
+    "Lung Cancer",
+    "Esophageal Cancer",
+    "Lymphomas",
+    "Pediatric Cancer",
+    "Tell us how you are confronting cancer. Your story may provide strength and support to others who are facing cancer.",
+    "UT MD Anderson patients have access to clinical trials offering promising new treatments that cannot be found anywhere else.",
+    "What is proton therapy?",
+    "How is proton radiation different from traditional photon radiation?",
+    "Why should I choose UT MD Anderson Proton Therapy Center?",
+    "Is proton therapy experimental?",
+    "What types of cancer are treated with proton therapy?",
+    "Terapia de Protones",
+    "质子治疗",
+    "Our patients depend on blood and platelet donations.",
+    "Show your support for our mission through branded merchandise.",
+    ".st0-desktop { fill: #000; }Explore what your support makes possible",
+    "Explore",
+    "Patients & Family",
+    "Prevention & Screening",
+    "Donors & Volunteers",
+    "For Physicians",
+    "Research",
+    "Education & Training",
+    "Clinical Trials",
+    "Languages",
+    "About",
+    "About UT MD Anderson",
+    "Careers",
+    "Blog",
+    "Newsroom",
+    "Editorial Standards",
+    "For Employees",
+    "Merchandise",
+    "Title IX Reporting (Sexual Misconduct)",
+    "Price Transparency",
+    "Finding Your Way",
+    "Our Doctors",
+    "Locations",
+    "Directions",
+    "Sitemap",
+    "DIGITAL ACCESSIBILITY",
+    "Accessibility Policy",
+    "GET IN TOUCH",
+    "Call 1-833-426-1670",
+    "Ask a question",
+    "Stay Connected",
+    "PreviousNext",
+    "Cancerwise Podcast",
+    "PreviousNext",
+    "Website Privacy Policy",
+    "Legal Statement & Policies",
+    "Reports to the State",
+    "Emergency Alert Information",
+    "State of Texas Links",
+    "Our Cancer Network",
+    "Vendors & Suppliers",
+    "© 2026 The University of Texas MD Anderson Cancer Center. All rights reserved."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "MyChart",
+      "href": "https://my.mdanderson.org/MyChart/Home/"
+    },
+    {
+      "label": "Request an Appointment",
+      "href": null
+    },
+    {
+      "label": "Donate Today",
+      "href": "https://gifts.mdanderson.org/Default.aspx?tsid=37435"
+    },
+    {
+      "label": "Clinical Trials",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+      "label": "Locations",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+      "label": "Careers",
+      "href": "https://jobs.mdanderson.org/"
+    },
+    {
+      "label": "Contact Us",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us.html"
+    },
+    {
+      "label": "Our Doctors",
+      "href": "https://faculty.mdanderson.org/"
+    },
+    {
+      "label": "Languages",
+      "href": null
+    },
+    {
+      "label": "Patients & Family",
+      "href": "https://www.mdanderson.org/patients-family.html"
+    },
+    {
+      "label": "Prevention & Screening",
+      "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+      "label": "Donors & Volunteers",
+      "href": "https://www.mdanderson.org/donors-volunteers.html"
+    },
+    {
+      "label": "For Physicians",
+      "href": "https://www.mdanderson.org/for-physicians.html"
+    },
+    {
+      "label": "Research",
+      "href": "https://www.mdanderson.org/research.html"
+    },
+    {
+      "label": "Education & Training",
+      "href": "https://www.mdanderson.org/education-training.html"
+    },
+    {
+      "label": "Learn More",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/what-is-proton-therapy.html"
+    },
+    {
+      "label": "See Contact Information",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/contact-us.html"
+    },
+    {
+      "label": "1",
+      "href": null
+    },
+    {
+      "label": "2",
+      "href": null
+    },
+    {
+      "label": "Request an appointment online",
+      "href": "/about-md-anderson/contact-us/askmdanderson/appointments.html"
+    },
+    {
+      "label": "Diagnosis & Treatment",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment.html"
+    },
+    {
+      "label": "Care Centers & Clinics",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics.html"
+    },
+    {
+      "label": "Proton Therapy Center",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center.html"
+    },
+    {
+      "label": "What is Proton Therapy?",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/what-is-proton-therapy.html"
+    },
+    {
+      "label": "Why Choose UT MD Anderson Proton Therapy?",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/why-choose-md-anderson-proton-therapy.html"
+    },
+    {
+      "label": "Conditions We Treat",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat.html"
+    },
+    {
+      "label": "Our Team of Experts",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/our-team-of-experts.html"
+    },
+    {
+      "label": "For Patients",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/for-patients.html"
+    },
+    {
+      "label": "For Physicians",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/for-physicians.html"
+    },
+    {
+      "label": "Clinical Trials",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/clinical-trials.html"
+    },
+    {
+      "label": "Proton Therapy FAQs",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/frequently-asked-questions.html"
+    },
+    {
+      "label": "Parking and Directions",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/parking-and-directions.html"
+    },
+    {
+      "label": "Contact Us",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/contact-us.html"
+    },
+    {
+      "label": "prostate",
+      "href": "/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat/prostate-cancer.html"
+    },
+    {
+      "label": "lung",
+      "href": "/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat/lung-cancer.html"
+    },
+    {
+      "label": "head and neck",
+      "href": "/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat/head-and-neck-cancers.html"
+    },
+    {
+      "label": "liver",
+      "href": "/cancer-types/liver-cancer.html"
+    },
+    {
+      "label": "esophagus",
+      "href": "/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat/esophageal-cancer.html"
+    },
+    {
+      "label": "brain",
+      "href": "/cancer-types/brain-tumor.html"
+    },
+    {
+      "label": "lymphoma",
+      "href": "/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat/lymphomas.html"
+    },
+    {
+      "label": "pediatric cancers",
+      "href": "/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat/pediatric-cancer.html"
+    },
+    {
+      "label": "radiation treatment",
+      "href": "/treatment-options/radiation-therapy.html"
+    },
+    {
+      "label": "Read more about proton therapy",
+      "href": "/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/what-is-proton-therapy.html"
+    },
+    {
+      "label": "See full-size video Opens a new window",
+      "href": "https://mediaplayer.mdanderson.org/video-full/390353E2-1903-47D1-97FD-BE37F149CB19"
+    },
+    {
+      "label": "Prostate Cancer",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat/prostate-cancer.html"
+    },
+    {
+      "label": "Head & Neck Cancer",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat/head-and-neck-cancers.html"
+    },
+    {
+      "label": "Lung Cancer",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat/lung-cancer.html"
+    },
+    {
+      "label": "Esophageal Cancer",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat/esophageal-cancer.html"
+    },
+    {
+      "label": "Lymphomas",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat/lymphomas.html"
+    },
+    {
+      "label": "Pediatric Cancer",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat/pediatric-cancer.html"
+    },
+    {
+      "label": "View All Cancers",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat.html"
+    },
+    {
+      "label": "My brain tumor journey: Finding faith and strength at UT MD...",
+      "href": "https://www.mdanderson.org/cancerwise/my-brain-tumor-journey--finding-faith-and-strength-at-ut-md-anderson.h00-159854556.html"
+    },
+    {
+      "label": "MD Anderson helps Major League Baseball broadcaster overcome...",
+      "href": "https://www.mdanderson.org/cancerwise/md-anderson-helps-major-league-baseball-broadcaster-overcome-head-and-neck-cancer-squamous-cell-carcinoma.h00-159542112.html"
+    },
+    {
+      "label": "View more",
+      "href": null
+    },
+    {
+      "label": "Tell us more",
+      "href": "https://www4.mdanderson.org/cancer_survivors/Story.cfc?method=index"
+    },
+    {
+      "label": "View proton therapy clinical trials",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/clinical-trials.html"
+    },
+    {
+      "label": "What is proton therapy?",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/frequently-asked-questions.html"
+    },
+    {
+      "label": "How is proton radiation different from traditional photon radiation?",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/frequently-asked-questions.html"
+    },
+    {
+      "label": "Why should I choose UT MD Anderson Proton Therapy Center?",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/frequently-asked-questions.html"
+    },
+    {
+      "label": "Is proton therapy experimental?",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/frequently-asked-questions.html"
+    },
+    {
+      "label": "What types of cancer are treated with proton therapy?",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/frequently-asked-questions.html"
+    },
+    {
+      "label": "View all FAQs",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/frequently-asked-questions.html"
+    },
+    {
+      "label": "Refer a Patient",
+      "href": "https://my.mdanderson.org/public/physicians/user/"
+    },
+    {
+      "label": "Becoming Our Patient",
+      "href": "https://www.mdanderson.org/patients-family/becoming-our-patient.html"
+    },
+    {
+      "label": "Terapia de Protones",
+      "href": "https://www.mdanderson.org/languages/spanish/terapia-de-protones/index.html"
+    },
+    {
+      "label": "质子治疗",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/质子治疗中心.html"
+    },
+    {
+      "label": "Donate",
+      "href": "https://gifts.mdanderson.org/Default.aspx?tsid=37435"
+    },
+    {
+      "label": "Make an appointment",
+      "href": "https://www.mdandersonbloodbank.org/"
+    },
+    {
+      "label": "View products",
+      "href": "https://shop.mdanderson.org"
+    },
+    {
+      "label": ".st0-desktop { fill: #000; }Explore what your support makes possible",
+      "href": "https://onlypossiblehere.mdanderson.org"
+    },
+    {
+      "label": "Patients & Family",
+      "href": "https://www.mdanderson.org/patients-family.html"
+    },
+    {
+      "label": "Prevention & Screening",
+      "href": "https://www.mdanderson.org/prevention-screening.html"
+    },
+    {
+      "label": "Donors & Volunteers",
+      "href": "https://www.mdanderson.org/donors-volunteers.html"
+    },
+    {
+      "label": "For Physicians",
+      "href": "https://www.mdanderson.org/for-physicians.html"
+    },
+    {
+      "label": "Research",
+      "href": "https://www.mdanderson.org/research.html"
+    },
+    {
+      "label": "Education & Training",
+      "href": "https://www.mdanderson.org/education-training.html"
+    },
+    {
+      "label": "Clinical Trials",
+      "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html"
+    },
+    {
+      "label": "Languages",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html"
+    },
+    {
+      "label": "About UT MD Anderson",
+      "href": "https://www.mdanderson.org/about-md-anderson.html"
+    },
+    {
+      "label": "Careers",
+      "href": "https://jobs.mdanderson.org/"
+    },
+    {
+      "label": "Blog",
+      "href": "https://www.mdanderson.org/cancerwise.html"
+    },
+    {
+      "label": "Newsroom",
+      "href": "https://www.mdanderson.org/newsroom.html"
+    },
+    {
+      "label": "Editorial Standards",
+      "href": "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html"
+    },
+    {
+      "label": "For Employees",
+      "href": "https://www.mdanderson.org/about-md-anderson/employee-resources.html"
+    },
+    {
+      "label": "Merchandise",
+      "href": "https://shop.mdanderson.org/"
+    },
+    {
+      "label": "Title IX Reporting (Sexual Misconduct)",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html"
+    },
+    {
+      "label": "Price Transparency",
+      "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html"
+    },
+    {
+      "label": "Our Doctors",
+      "href": "https://faculty.mdanderson.org/"
+    },
+    {
+      "label": "Locations",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations.html"
+    },
+    {
+      "label": "Directions",
+      "href": "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html"
+    },
+    {
+      "label": "Sitemap",
+      "href": "https://www.mdanderson.org/patients-family/html-sitemap.html"
+    },
+    {
+      "label": "Accessibility Policy",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html"
+    },
+    {
+      "label": "Call 1-833-426-1670",
+      "href": "tel:+18334261670"
+    },
+    {
+      "label": "Ask a question",
+      "href": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html"
+    },
+    {
+      "label": "Website Privacy Policy",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html"
+    },
+    {
+      "label": "Legal Statement & Policies",
+      "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html"
+    },
+    {
+      "label": "Reports to the State",
+      "href": "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html"
+    },
+    {
+      "label": "Emergency Alert Information",
+      "href": "https://www3.mdanderson.org/emergencyalert/"
+    },
+    {
+      "label": "State of Texas Links",
+      "href": "https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html"
+    },
+    {
+      "label": "Our Cancer Network",
+      "href": "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html"
+    }
+  ],
+  "links": [
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center.html#skip",
+    "https://my.mdanderson.org/MyChart/Home/",
+    "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/appointments.html",
+    "https://my.mdanderson.org/RequestAppointment",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/returning-patients.html",
+    "https://my.mdanderson.org/physicianreferral",
+    "https://gifts.mdanderson.org/Default.aspx?tsid=37435",
+    "https://www.mdanderson.org/",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations.html",
+    "https://jobs.mdanderson.org/",
+    "https://www.mdanderson.org/about-md-anderson/contact-us.html",
+    "https://faculty.mdanderson.org/",
+    "https://www.mdanderson.org/es/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/ar/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/zh/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/tr/why-choose-md-anderson.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center.html#",
+    "https://www.mdanderson.org/patients-family.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/why-md-anderson.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/while-youre-here.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/international-center.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/services-amenities.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/insurance-billing.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/second-opinion-appointments.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/cancer-types.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/a-new-diagnosis.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/treatment-options.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/emotional-physical-effects.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/patient-support.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/caregiver-roles-challenges.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/supporting-children-teens.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/taking-care-of-yourself.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/Helping-mdanderson-patient.html",
+    "https://www.mdanderson.org/patients-family/supporting-a-loved-one/dealing-with-loss.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/followup-care-after-cancer-treatment.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/long-term-effects.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/social-emotional-impacts.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/legal-financial-impacts.html",
+    "https://www.mdanderson.org/patients-family/life-after-cancer/survivorship-week.html",
+    "https://www.mdanderson.org/prevention-screening.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/tobacco-control-at-md-anderson.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/diet.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/body-weight.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/physical-activity.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/skin-safety.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/hpv.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/hepatitis.html",
+    "https://www.mdanderson.org/prevention-screening/manage-your-risk/alcohol.html",
+    "https://www.mdanderson.org/prevention-screening/family-history.html",
+    "https://www.mdanderson.org/prevention-screening/family-history/genetic-testing.html",
+    "https://www.mdanderson.org/prevention-screening/family-history/hereditary-cancer-syndromes.html",
+    "https://www.mdanderson.org/prevention-screening/family-history/faqs.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/breast-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/cervical-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/colorectal-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/endometrial-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/liver-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/lung-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/mobile-mammography.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/ovarian-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/prostate-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/skin-cancer-screening.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/women-screening-exams.html",
+    "https://www.mdanderson.org/prevention-screening/get-screened/men-screening-exams.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/cancer-prevention-center.html",
+    "https://www.mdanderson.org/donors-volunteers.html",
+    "https://www.mdanderson.org/donors-volunteers/donate.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/raise-money.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/honor-loved-ones.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/planned-giving.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/endowments.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/md-anderson-caring-fund.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/matching-gifts.html",
+    "https://www.mdanderson.org/donors-volunteers/donate/foundation-and-corporation-relations.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/why-volunteer.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/on-site-volunteers.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/endowments.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/patient-experience.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/teen-volunteer-leadership-program.html",
+    "https://www.mdanderson.org/donors-volunteers/volunteer/childrens-cancer-hospital-councils.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/give-blood.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/shop-md-anderson.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/childrens-art-project.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/donate-goods-or-services.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/attend-events.html",
+    "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/cord-blood-bank.html",
+    "https://www.mdanderson.org/donors-volunteers/corporate-alliances.html",
+    "https://www.mdanderson.org/donors-volunteers/corporate-alliances/current-alliances.html",
+    "https://onlypossiblehere.mdanderson.org/",
+    "https://www.mdanderson.org/for-physicians.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/health-care-provider-resource-center.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/referring-provider-team.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/insurance-information.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/international-referrals.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/mymdanderson-for-physicians.html",
+    "https://www.mdanderson.org/for-physicians/refer-a-patient/second-opinion-pathology.html",
+    "https://www.mdanderson.org/for-physicians/clinical-trials.html",
+    "https://www.mdanderson.org/for-physicians/clinical-tools-resources.html",
+    "https://www.mdanderson.org/for-physicians/clinical-tools-resources/clinical-calculators.html",
+    "https://www.mdanderson.org/for-physicians/clinical-tools-resources/clinical-practice-algorithms.html",
+    "https://www.mdanderson.org/research.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/labs.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/programs-centers.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/institutes.html",
+    "https://www.mdanderson.org/research/departments-labs-institutes/spores.html",
+    "https://www.mdanderson.org/research/research-areas.html",
+    "https://www.mdanderson.org/research/research-areas/basic-science.html",
+    "https://www.mdanderson.org/research/research-areas/translational-research.html",
+    "https://www.mdanderson.org/research/research-areas/clinical-research.html",
+    "https://www.mdanderson.org/research/research-areas/prevention-personalized-risk-assessment.html",
+    "https://www.mdanderson.org/research/research-resources.html",
+    "https://www.mdanderson.org/research/research-resources/excellence-in-science.html",
+    "https://www.mdanderson.org/research/research-resources/core-facilities.html",
+    "https://www.mdanderson.org/research/research-resources/conferences-seminars.html",
+    "https://www.mdanderson.org/research/research-resources/why-research.html",
+    "https://www.mdanderson.org/research/research-resources/stride.html",
+    "https://www.mdanderson.org/research/research-resources/nci-designated-cancer-center.html",
+    "https://www.mdanderson.org/research/research-resources/data-resources.html",
+    "https://www.mdanderson.org/education-training.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools/school-of-health-professions.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools/graduate-school-of-biomedical-sciences.html",
+    "https://www.mdanderson.org/education-training/education-resources.html",
+    "https://www.mdanderson.org/education-training/education-resources/alumni-relations.html",
+    "https://www.mdanderson.org/education-training/education-resources/education-design-services.html",
+    "https://www.mdanderson.org/education-training/education-resources/awards-recognitions.html",
+    "https://www.mdanderson.org/education-training/education-resources/academic-mentoring-council.html",
+    "https://www.mdanderson.org/education-training/education-resources/why-train-at-md-anderson-houston.html",
+    "https://www.mdanderson.org/education-training/research-training.html",
+    "https://www.mdanderson.org/education-training/research-training/early-career-pathway-programs.html",
+    "https://www.mdanderson.org/education-training/research-training/predoctoral-training.html",
+    "https://www.mdanderson.org/education-training/research-training/postdoctoral-training.html",
+    "https://www.mdanderson.org/education-training/research-training/mentored-faculty-programs.html",
+    "https://www.mdanderson.org/education-training/research-training/career-development.html",
+    "https://www.mdanderson.org/education-training/clinical-training.html",
+    "https://www.mdanderson.org/education-training/clinical-training/graduate-medical-education.html",
+    "https://www.mdanderson.org/education-training/clinical-training/clinical-education-for-non-physicians.html",
+    "https://www.mdanderson.org/education-training/clinical-training/nursing-education.html",
+    "https://www.mdanderson.org/education-training/clinical-training/certificate-programs-review-courses.html",
+    "https://www.mdanderson.org/education-training/clinical-training/simulation-center.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/continuing-professional-education-conferences.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/administrative-internships-fellowships.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/cancer-survivorship-program.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/leadership-institute.html",
+    "https://www.mdanderson.org/education-training/continuing-education-professional-development/patient-home-visits.html",
+    "https://www.mdanderson.org/education-training/outreach-programs.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/project-echo.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/observer-programs.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/comparative-effectiveness-research-training.html",
+    "https://www.mdanderson.org/education-training/outreach-programs/faculty-speakers-bureau.html",
+    "https://www.mdanderson.org/education-training/degree-granting-schools/school-of-health-professions/prospective-students.html",
+    "https://www.mdanderson.org/education-training/clinical-training/graduate-medical-education/residencies-fellowships.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/what-is-proton-therapy.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/contact-us.html",
+    "tel:+18553837693",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/why-choose-md-anderson-proton-therapy.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/our-team-of-experts.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/for-patients.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/for-physicians.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/clinical-trials.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/frequently-asked-questions.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/parking-and-directions.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/Centro-de-Terapia-de-Protones.html",
+    "mailto:?subject=UT%20MD%20Anderson%20:%20Proton%20Therapy%20Center&body=I%20thought%20you%27d%20like%20to%20read%20this%3A%20https%3A%2F%2Fwww.mdanderson.org%2Fpatients-family%2Fdiagnosis-treatment%2Fcare-centers-clinics%2Fproton-therapy-center.html",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.mdanderson.org%2Fpatients-family%2Fdiagnosis-treatment%2Fcare-centers-clinics%2Fproton-therapy-center.html",
+    "https://x.com/share?url=https%3A%2F%2Fwww.mdanderson.org%2Fpatients-family%2Fdiagnosis-treatment%2Fcare-centers-clinics%2Fproton-therapy-center.html",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.mdanderson.org%2Fpatients-family%2Fdiagnosis-treatment%2Fcare-centers-clinics%2Fproton-therapy-center.html",
+    "https://bsky.app/intent/compose?text=https%3A%2F%2Fwww.mdanderson.org%2Fpatients-family%2Fdiagnosis-treatment%2Fcare-centers-clinics%2Fproton-therapy-center.html",
+    "https://www.threads.com/intent/post?text=https%3A%2F%2Fwww.mdanderson.org%2Fpatients-family%2Fdiagnosis-treatment%2Fcare-centers-clinics%2Fproton-therapy-center.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat/prostate-cancer.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat/lung-cancer.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat/head-and-neck-cancers.html",
+    "https://www.mdanderson.org/cancer-types/liver-cancer.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat/esophageal-cancer.html",
+    "https://www.mdanderson.org/cancer-types/brain-tumor.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat/lymphomas.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/conditions-we-treat/pediatric-cancer.html",
+    "https://www.mdanderson.org/treatment-options/radiation-therapy.html",
+    "https://mediaplayer.mdanderson.org/video-full/390353E2-1903-47D1-97FD-BE37F149CB19",
+    "https://www.mdanderson.org/cancerwise/my-brain-tumor-journey--finding-faith-and-strength-at-ut-md-anderson.h00-159854556.html",
+    "https://www.mdanderson.org/cancerwise/md-anderson-helps-major-league-baseball-broadcaster-overcome-head-and-neck-cancer-squamous-cell-carcinoma.h00-159542112.html",
+    "https://www.mdanderson.org/cancerwise/adenoid-cystic-carcinoma-treatment-at-md-anderson-saved-my-eyesight.h00-159699912.html",
+    "https://www.mdanderson.org/cancerwise/proton-therapy-saved-my-ability-to-taste-during-treatment-for-tongue-cancer.h00-159702279.html",
+    "https://www.mdanderson.org/cancerwise/why-i-traveled-across-the-world-for-prostate-cancer-treatment.h00-159465579.html",
+    "https://www.mdanderson.org/cancerwise/adenoid-cystic-carcinoma-caregiver--finding-the-right-treatment-for-my-daughter.h00-159464790.html",
+    "https://www4.mdanderson.org/cancer_survivors/Story.cfc?method=index",
+    "https://my.mdanderson.org/public/physicians/user/",
+    "https://www.mdanderson.org/languages/spanish/terapia-de-protones/index.html",
+    "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/%E8%B4%A8%E5%AD%90%E6%B2%BB%E7%96%97%E4%B8%AD%E5%BF%83.html",
+    "https://www.mdandersonbloodbank.org/",
+    "https://shop.mdanderson.org/",
+    "https://www.mdanderson.org/about-md-anderson/contact-us/languages.html",
+    "https://www.mdanderson.org/about-md-anderson.html",
+    "https://www.mdanderson.org/cancerwise.html",
+    "https://www.mdanderson.org/newsroom.html",
+    "https://www.mdanderson.org/about-md-anderson/facts-history/ut-md-anderson-editorial-standards.html",
+    "https://www.mdanderson.org/about-md-anderson/employee-resources.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/title-ix.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/health-care-disclosures.html",
+    "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/wayfinding.html",
+    "https://www.mdanderson.org/patients-family/html-sitemap.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html",
+    "https://www.levelaccess.com/MDAnderson",
+    "tel:+18334261670",
+    "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html",
+    "https://facebook.com/MDAnderson",
+    "https://x.com/UTMDAnderson",
+    "https://youtube.com/mdandersonorg",
+    "https://instagram.com/mdandersoncancercenter",
+    "https://linkedin.com/company/mdandersoncancercenter",
+    "http://bsky.app/profile/mdanderson.bsky.social",
+    "https://threads.com/@mdandersoncancercenter",
+    "https://podcasts.apple.com/us/podcast/cancerwise-podcast/id1751785346",
+    "https://open.spotify.com/show/28rgC5nO7OpLhnPlNylNem",
+    "http://www.youtube.com/playlist?list=PLKscGuVrfI9LvQrf5At-R7TewdfY4OeOP",
+    "http://www.pandora.com/podcast/cancerwise-podcast/PC:1001088873",
+    "http://www.iheart.com/podcast/269-cancerwise-podcast-185103717/",
+    "https://support.doctorpodcasting.com/podcastfeed/335",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements.html",
+    "https://www.mdanderson.org/about-md-anderson/facts-history/u-t-system-reports.html",
+    "https://www3.mdanderson.org/emergencyalert/",
+    "https://www.mdanderson.org/about-md-anderson/state-of-texas-links.html",
+    "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network.html",
+    "https://www.mdanderson.org/about-md-anderson/business-legal/doing-business/vendors-and-suppliers.html",
+    "https://my.mdanderson.org/"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/xmda-logo.png.pagespeed.ic.jLVBCg-7dN.webp",
+        "alt": "The University of Texas MD Anderson Cancer Center",
+        "w": 1527,
+        "h": 639
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/focused-on-health/2015/WEB-Tanya-Moseley-3D-mammo.jpg.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 108,
+        "h": 61
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/hero-images/Integrated%20Media/oph-web-promo-image-tagline.png.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 108,
+        "h": 61
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/l2-l3-hero/sujit_prabhu_physicians_nav.jpg.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 108,
+        "h": 61
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/moonshots/researchplatforms/Clinical-Trial/CLL_Jan_Burger_175_resized.jpg.resize.216.122.high.jpg",
+        "alt": "",
+        "w": 216,
+        "h": 122
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/jcr:content/mainparsys/columns_2/column2/basicvideo.resize.648.0.medium.jpg/1768786717000.jpg",
+        "alt": "What is Proton Therapy video",
+        "w": 648,
+        "h": 440
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/D/CW_Diaz_Alberto_DrManzar_Feb2025.jpg.resize.450.235.high.jpg",
+        "alt": "Alberto Diaz with Gohar Manzar, M.D., Ph.D., and the stuffed ukelele he presented to her",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/M/John_Martinez.jpg.resize.450.235.high.jpg",
+        "alt": "Buck Martinez sitting at a table at a restaurant wearing a black coat and white and striped shirt.",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/M/CW_Morin_Michael_082024.jpg.resize.450.235.high.jpg",
+        "alt": "Michael Morin smiles holding up the Texas Longhorns sign with his hands",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/M/CW_Morera_Carlos_Edleen_Feb2024.jpg.resize.450.235.high.jpg",
+        "alt": "Tongue cancer survivor Carlos Morera and his wife, Edleen",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/A/Naresh_Aggarwal.jpg.resize.450.235.high.jpg",
+        "alt": "Naresh Aggarwal, M.D., stands in front of a white wall beside his wife, Usha",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/J/Preslie_Johnson_PTC_Gong.jpg.resize.450.235.high.jpg",
+        "alt": "Preslie Johnson rings the gong at her last proton therapy treatment on March 5, 2021.",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/jcr:content/footer/xdesktoplogo.resize.png.pagespeed.ic.wmDIh2S-LF.webp",
+        "alt": "UT MD Anderson logo",
+        "w": 1280,
+        "h": 535
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp",
+        "alt": "UT MD Anderson logo",
+        "w": 837,
+        "h": 95
+      },
+      {
+        "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/eA_Icon_Black.svg",
+        "alt": "MD Anderson works with Level Access to ensure our website is accessible and functional for all users. Free assistive technology is provided for people with physical disabilities. To learn more or to download the assistive technology tool, visit https://www.levelaccess.com/MDAnderson",
+        "w": 300,
+        "h": 113
+      },
+      {
+        "src": "https://www.mdanderson.org/content/mda/en/jcr:content/footer/xmobilelogo.resize.png.pagespeed.ic.xpgmMAVNXr.webp",
+        "alt": "UT MD Anderson logo",
+        "w": 837,
+        "h": 95
+      }
+    ],
+    "allImgCount": 16,
+    "cssBackgrounds": [
+      "https://www.mdanderson.org/content/mda/en/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/jcr:content/heroparsys/herocarousel/slides/1/image.resize.1400.560.high.jpg/1776968471261.jpg",
+      "https://www.mdanderson.org/content/mda/en/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/jcr:content/heroparsys/herocarousel/slides/2/image.resize.1400.560.high.jpg/1768753455051.jpg"
+    ],
+    "modals": [
+      "Close Share this article Via social media: Or copy the link: Copy to clipboard Copy",
+      "Close Share this article Via social media: Or copy the link: Copy to clipboard Copy"
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {},
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 26,
+    "mainTextLen": 5945,
+    "realImageCount": 16,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "screenshot": "assets/screenshots/patients-family-diagnosis-treatment-care-centers-clinics-proton-therapy-center-html.png"
+}

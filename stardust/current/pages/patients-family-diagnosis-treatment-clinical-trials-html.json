@@ -1,7 +1,7 @@
 {
   "_provenance": {
     "renderedBy": "playwright",
-    "fetchedAt": "2026-08-19T16:12:33.877Z",
+    "fetchedAt": "2026-08-21T10:20:21.288Z",
     "waitMode": "medium",
     "waitMs": 2500,
     "httpStatus": 200
@@ -9,7 +9,7 @@
   "slug": "patients-family-diagnosis-treatment-clinical-trials-html",
   "url": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html",
   "renderedBy": "playwright",
-  "fetchedAt": "2026-08-19T16:12:33.877Z",
+  "fetchedAt": "2026-08-21T10:20:21.288Z",
   "finalUrl": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials.html",
   "title": "Cancer Clinical Trials | UT MD Anderson",
   "description": "UT MD Anderson uses clinical trials to prevent, diagnose and treat cancer. Search for clinical trials here and also learn about the different phases.",
@@ -66,11 +66,11 @@
     },
     {
       "tag": "h3",
-      "text": "Two-time tongue cancer survivor: Why I support research at..."
+      "text": "After a brachytherapy clinical trial, stage 4 melanoma is now..."
     },
     {
       "tag": "h3",
-      "text": "Astrocytoma survivor: Why I joined a targeted therapy clinical..."
+      "text": "Phase 1 clinical trials, explained: 11 things to know"
     },
     {
       "tag": "h2",
@@ -159,7 +159,7 @@
     "DIGITAL ACCESSIBILITY",
     "Accessibility Policy",
     "GET IN TOUCH",
-    "Call 1-866-378-5346",
+    "Call 1-833-426-1670",
     "Ask a question",
     "Stay Connected",
     "PreviousNext",
@@ -281,12 +281,12 @@
       "href": "https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials/deciding-to-join-a-clinical-trial.html"
     },
     {
-      "label": "Two-time tongue cancer survivor: Why I support research at...",
-      "href": "https://www.mdanderson.org/cancerwise/two-time-tongue-cancer-survivor--why-i-support-research-at-ut-mderson.h00-159854556.html"
+      "label": "After a brachytherapy clinical trial, stage 4 melanoma is now...",
+      "href": "https://www.mdanderson.org/cancerwise/after-a-brachytherapy-clinical-trial--stage-4-melanoma-is-now-cancer-free.h00-159855345.html"
     },
     {
-      "label": "Astrocytoma survivor: Why I joined a targeted therapy clinical...",
-      "href": "https://www.mdanderson.org/cancerwise/astrocytoma-survivor--why-i-joined-a-targeted-therapy-clinical-trial-at-ut-md-anderson.h00-159853767.html"
+      "label": "Phase 1 clinical trials, explained: 11 things to know",
+      "href": "https://www.mdanderson.org/cancerwise/Phase-I-clinical-trials.h00-159855345.html"
     },
     {
       "label": "View more",
@@ -421,8 +421,8 @@
       "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html"
     },
     {
-      "label": "Call 1-866-378-5346",
-      "href": "tel:+18663785346"
+      "label": "Call 1-833-426-1670",
+      "href": "tel:+18334261670"
     },
     {
       "label": "Ask a question",
@@ -638,16 +638,17 @@
     "https://www.mdanderson.org/content/dam/mdanderson/documents/patients-and-family/diagnosis-and-treatment/treatment-options/clinical-trials-booklet.pdf",
     "https://mdanderson.org/podcast?segitem=65445",
     "https://support.doctorpodcasting.com/client/texacc/item/65445-inflammatory-breast-cancer-ibc-clinical-trials-at-md-anderson?print=yes",
+    "https://www.mdanderson.org/cancerwise/after-a-brachytherapy-clinical-trial--stage-4-melanoma-is-now-cancer-free.h00-159855345.html",
+    "https://www.mdanderson.org/cancerwise/Phase-I-clinical-trials.h00-159855345.html",
+    "https://www.mdanderson.org/cancerwise/liver-cancer-survivor-thankful-for-immunotherapy-clinical-trial.h00-159855345.html",
     "https://www.mdanderson.org/cancerwise/two-time-tongue-cancer-survivor--why-i-support-research-at-ut-mderson.h00-159854556.html",
     "https://www.mdanderson.org/cancerwise/astrocytoma-survivor--why-i-joined-a-targeted-therapy-clinical-trial-at-ut-md-anderson.h00-159853767.html",
     "https://www.mdanderson.org/cancerwise/mucosal-melanoma-survivor--4-reasons-i-joined-a-clinical-trial-at-md-anderson.h00-159779601.html",
     "https://www.mdanderson.org/cancerwise/chronic-myeloid-leukemia-survivor--why-i-joined-a-clinical-trial-at-md-anderson.h00-159703068.html",
     "https://www.mdanderson.org/cancerwise/menin-inhibitor-clinical-trial-puts-pediatric-leukemia-patient-in-remission.h00-159703068.html",
-    "https://www.mdanderson.org/cancerwise/lung-cancer-survivor-grateful-for-immunotherapy-clinical-trial.h00-159699123.html",
-    "https://www.mdanderson.org/cancerwise/breast-cancer-survivor--why-i-joined-a-clinical-trial-at-md-anderson.h00-159697545.html",
-    "https://www.mdanderson.org/cancerwise/meeting-with-a-research-nurse-during-a-clinical-trial--what-to-know.h00-159695178.html",
     "https://www.mdanderson.org/content/dam/mdanderson/video/youtube/6/6sgh1UIs3Hw",
     "https://www.mdanderson.org/content/dam/mdanderson/video/youtube/i/IqZtJcdOcCw",
+    "https://www.mdanderson.org/cancerwise/meeting-with-a-research-nurse-during-a-clinical-trial--what-to-know.h00-159695178.html",
     "https://www.mdanderson.org/cancerwise/gastrointestinal-medical-oncologist-and-researcher-driven-to-help-patients-live-longer.h00-159701490.html",
     "https://www.mdandersonbloodbank.org/",
     "https://shop.mdanderson.org/",
@@ -663,7 +664,7 @@
     "https://www.mdanderson.org/patients-family/html-sitemap.html",
     "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html",
     "https://www.levelaccess.com/MDAnderson",
-    "tel:+18663785346",
+    "tel:+18334261670",
     "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html",
     "https://facebook.com/MDAnderson",
     "https://x.com/UTMDAnderson",
@@ -697,26 +698,26 @@
       {
         "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/focused-on-health/2015/WEB-Tanya-Moseley-3D-mammo.jpg.resize.216.122.high.jpg",
         "alt": "",
-        "w": 216,
-        "h": 122
+        "w": 108,
+        "h": 61
       },
       {
         "src": "https://www.mdanderson.org/content/dam/mdanderson/images/hero-images/Integrated%20Media/oph-web-promo-image-tagline.png.resize.216.122.high.jpg",
         "alt": "",
-        "w": 216,
-        "h": 122
+        "w": 108,
+        "h": 61
       },
       {
         "src": "https://www.mdanderson.org/content/dam/mdanderson/images/l2-l3-hero/sujit_prabhu_physicians_nav.jpg.resize.216.122.high.jpg",
         "alt": "",
-        "w": 216,
-        "h": 122
+        "w": 108,
+        "h": 61
       },
       {
         "src": "https://www.mdanderson.org/content/dam/mdanderson/images/moonshots/researchplatforms/Clinical-Trial/CLL_Jan_Burger_175_resized.jpg.resize.216.122.high.jpg",
         "alt": "",
-        "w": 216,
-        "h": 122
+        "w": 108,
+        "h": 61
       },
       {
         "src": "https://www.mdanderson.org/etc.clientlibs/mda/clientlibs/mda-web/clientlib-site/resources/images/podcast/xCWPodcast_Wave_Hero_2400x564.jpg.pagespeed.ic.qj8ogjaHXl.webp",
@@ -729,6 +730,24 @@
         "alt": "Cancerwise Podcast",
         "w": 748,
         "h": 892
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/D/CW_Dixon_Stacy_CWCrop_May2026.jpg.resize.450.235.high.jpg",
+        "alt": "Stage 4 melanoma survivor Stacy Dixon",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/H/CW_Hong_David_052026.jpg.resize.450.235.high.jpg",
+        "alt": "A man in a white lab coat writes with a marker on a dry erase board.",
+        "w": 450,
+        "h": 235
+      },
+      {
+        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/D/CW_Drygalski_Gordon_042026.jpg.resize.450.235.high.jpg",
+        "alt": "Smiling man in a blue shirt stands near a window",
+        "w": 450,
+        "h": 235
       },
       {
         "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/L/CW_Lutterman_Jessica_March2026.png.resize.450.235.high.jpg",
@@ -757,24 +776,6 @@
       {
         "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/S/FY24_CW_Stan_David_1600x900_V1.jpg.resize.450.235.high.jpg",
         "alt": "Leukemia survivor David Stan",
-        "w": 450,
-        "h": 235
-      },
-      {
-        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/C/CW_Callahan_Att_072024.jpg.resize.450.235.high.jpg",
-        "alt": "Att Callahan sits in the passenger side of a car, waving",
-        "w": 450,
-        "h": 235
-      },
-      {
-        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/K/CW_Krupa_Meagan_June2018.jpg.resize.450.235.high.jpg",
-        "alt": "Breast cancer survivor Meagan Krupa, Ph.D., on the John Day River in Oregon in June 2018",
-        "w": 450,
-        "h": 235
-      },
-      {
-        "src": "https://www.mdanderson.org/content/dam/mdanderson/images/publications/cancerwise/N/20240207_Transformation_Research_Nurses_Clinic_ICT_007A.jpg.resize.450.235.high.jpg",
-        "alt": "Investigational Cancer Therapy research nurses Rebecca Lout (left) and Ruben Ramires Da Silva (right) work together in the clinic.",
         "w": 450,
         "h": 235
       },
@@ -840,7 +841,7 @@
   "_signals": {
     "filteredInterstitials": 0,
     "distinctHeadings": 21,
-    "mainTextLen": 7062,
+    "mainTextLen": 7053,
     "realImageCount": 23,
     "trackingOnlyMedia": false,
     "spaShellSuspect": false,

@@ -1,7 +1,7 @@
 {
   "_provenance": {
     "renderedBy": "playwright",
-    "fetchedAt": "2026-08-19T16:21:54.621Z",
+    "fetchedAt": "2026-08-21T10:26:46.145Z",
     "waitMode": "medium",
     "waitMs": 2500,
     "httpStatus": 200
@@ -9,7 +9,7 @@
   "slug": "index",
   "url": "https://www.mdanderson.org/",
   "renderedBy": "playwright",
-  "fetchedAt": "2026-08-19T16:21:54.621Z",
+  "fetchedAt": "2026-08-21T10:26:46.145Z",
   "finalUrl": "https://www.mdanderson.org/",
   "title": "UT MD Anderson: Cancer Treatment & Cancer Research Hospital | UT MD Anderson",
   "description": "Find the latest information about cancer treatments, research and prevention as well as how to become a patient at UT MD Anderson. 1-877-632-6789.",
@@ -179,7 +179,7 @@
     "DIGITAL ACCESSIBILITY",
     "Accessibility Policy",
     "GET IN TOUCH",
-    "Call 1-877-790-1139",
+    "Call 1-844-632-6113",
     "Ask a question",
     "Stay Connected",
     "PreviousNext",
@@ -261,11 +261,7 @@
       "href": "https://www.mdanderson.org/newsroom/ut-md-anderson-ranks-number-one-in-the-nation-for-cancer-care-for-12th-year-in-a-row.h00-159857712.html"
     },
     {
-      "label": "1-877-790-1139",
-      "href": "tel:+18777901139"
-    },
-    {
-      "label": "request an appointment online.",
+      "label": "Request an appointment online.",
       "href": "/about-md-anderson/contact-us/askmdanderson/appointments.html"
     },
     {
@@ -465,8 +461,8 @@
       "href": "https://www.mdanderson.org/about-md-anderson/business-legal/legal-and-policy/legal-statements/privacy-policy/accessibility-policy.html"
     },
     {
-      "label": "Call 1-877-790-1139",
-      "href": "tel:+18777901139"
+      "label": "Call 1-844-632-6113",
+      "href": "tel:+18884342815"
     },
     {
       "label": "Ask a question",
@@ -671,7 +667,7 @@
     "https://www.mdanderson.org/education-training/degree-granting-schools/school-of-health-professions/prospective-students.html",
     "https://www.mdanderson.org/education-training/clinical-training/graduate-medical-education/residencies-fellowships.html",
     "https://www.mdanderson.org/newsroom/ut-md-anderson-ranks-number-one-in-the-nation-for-cancer-care-for-12th-year-in-a-row.h00-159857712.html",
-    "tel:+18777901139",
+    "tel:+18884342815",
     "https://www.mdandersonbloodbank.org/",
     "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/prepare-for-your-first-visit.html",
     "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/insurance-billing-financial-support/insurance-plans.html",
