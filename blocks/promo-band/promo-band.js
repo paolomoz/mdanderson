@@ -29,7 +29,10 @@ export default async function decorate(block) {
   const cells = [...row.children];
   const imgCell = cells.find((c) => c.querySelector('picture, img'));
   const infoCell = cells.find((c) => c !== imgCell) || cells[cells.length - 1];
-  const infoRight = !block.classList.contains('left');
+  // `left` = the donors OVERLAY band; `split-left` = plain 50/50 with the
+  // info panel on the left (live education-training "Prospective Students",
+  // 2026-08-21)
+  const infoRight = !block.classList.contains('left') && !block.classList.contains('split-left');
 
   const band = el('div', 'headline-with-image');
 
