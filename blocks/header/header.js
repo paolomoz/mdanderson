@@ -289,4 +289,46 @@ export default async function decorate(block) {
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
+
+  // ===== alert band (EDS replacement for AEM's uncached siteHeader/alert
+  // include): fetched client-side from the /fragments/alert fragment so an
+  // authored alert publishes instantly with no site republish. Absent or
+  // empty fragment → no band (live parity: band exists only when an alert
+  // is active). Markup/styling lifted from live .alerts rules. =====
+  try {
+    const alertFragment = await loadFragment('/fragments/alert');
+    const alertText = alertFragment ? alertFragment.textContent.trim() : '';
+    if (alertText) {
+      const band = document.createElement('div');
+      band.className = 'alerts';
+      band.setAttribute('role', 'alert');
+      const list = document.createElement('ul');
+      const iconLi = document.createElement('li');
+      iconLi.className = 'alert-icon';
+      const icon = document.createElement('i');
+      icon.className = 'mda-icon-alert';
+      icon.setAttribute('aria-hidden', 'true');
+      iconLi.append(icon);
+      list.append(iconLi);
+      [...alertFragment.querySelectorAll('p, h2, h3')].forEach((p) => {
+        const li = document.createElement('li');
+        const link = p.querySelector('a');
+        if (link && p.textContent.trim() === link.textContent.trim()) {
+          link.className = 'alert-cta';
+          const arrow = document.createElement('i');
+          arrow.className = 'mdicon-arrow';
+          arrow.setAttribute('aria-hidden', 'true');
+          link.append(arrow);
+          li.append(link);
+        } else {
+          li.innerHTML = p.innerHTML;
+        }
+        list.append(li);
+      });
+      band.append(list);
+      nav.prepend(band);
+    }
+  } catch (e) {
+    // no alert fragment — nothing to render
+  }
 }
