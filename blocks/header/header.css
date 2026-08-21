@@ -530,3 +530,14 @@ header .mda-nav-mobile-tools {
   font-style: normal;
   font-size: 16px;
 }
+
+/* when an alert is active, grow the header flow box and shift the fixed
+   chrome down by the measured band height (live parity: .mda-alert offsets) */
+header:has(.header .alerts) {
+  height: calc(var(--nav-height) + var(--alert-height, 62px));
+}
+
+header:has(.alerts) .mda-cta-list-container.desktop,
+header:has(.alerts) #content-skip-btn {
+  top: var(--alert-height, 62px);
+}

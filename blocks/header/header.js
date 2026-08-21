@@ -326,7 +326,10 @@ export default async function decorate(block) {
         list.append(li);
       });
       band.append(list);
-      nav.prepend(band);
+      // in-flow band ABOVE the chrome; fixed utility bar + skip link shift
+      // down by the measured band height (live parity: .mda-alert offsets)
+      block.prepend(band);
+      document.documentElement.style.setProperty('--alert-height', `${band.offsetHeight}px`);
     }
   } catch (e) {
     // no alert fragment — nothing to render
