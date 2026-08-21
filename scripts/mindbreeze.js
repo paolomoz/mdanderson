@@ -61,7 +61,15 @@ export function stripTags(text) {
     }
     i = gt + 1;
   }
-  return out.trim();
+  // the appliance returns entity-escaped text ("&amp;") — decode once for
+  // textContent use (2026-08-21 gate: titles showed "&amp;")
+  return out
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#0?39;/g, "'")
+    .replace(/&amp;/g, '&')
+    .trim();
 }
 
 /**

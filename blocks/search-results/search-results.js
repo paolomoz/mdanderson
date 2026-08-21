@@ -28,7 +28,9 @@ const SOURCES = {
   },
   trials: {
     endpoint: '/search-clinicaltrial',
-    params: { output: 'xml_no_dtd', client: 'clinical_trial_fe', requiredfields: 'collection:mda_aem_prod' },
+    // live front end scopes to trial pages (2026-08-21 gate: without it the
+    // block searched the whole site — 2,560 vs the correct 321 for "breast")
+    params: { output: 'xml_no_dtd', client: 'clinical_trial_fe', requiredfields: 'pagetype:clinical trial' },
     placeholder: 'Search Clinical Trials',
   },
   faculty: {

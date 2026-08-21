@@ -384,3 +384,9 @@
     padding: 0 15px;
   }
 }
+
+/* the hidden attribute must beat display:flex (empty/error states showed
+   Previous/Next, 2026-08-21 gate) */
+.search-results .search-result-pagination[hidden] {
+  display: none;
+}

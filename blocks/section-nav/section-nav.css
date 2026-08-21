@@ -62,7 +62,7 @@ body.interior main > .section:has(> div > .link-list.tinted) {
   /* :not(:nth-last-child(-n+2)):not(.dark) — the trailing full-width bands
      (EndCancer trio head) and the dark appointment bar keep their own
      block/styles padding; this strip rule was overriding them (2026-08-21) */
-  body.interior main > .section.section-nav-container ~ .section:not(:nth-last-child(-n+2)):not(.dark) > .default-content-wrapper {
+  body.interior main > .section.section-nav-container ~ .section:not(:nth-last-child(-n+2)):not(.dark):not(.page-head) > .default-content-wrapper {
     padding: 0 36px;
   }
 
