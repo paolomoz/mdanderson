@@ -1,0 +1,178 @@
+<!-- Publication subscription form (SFMC / FormAssembly workflow processor), captured
+     verbatim from https://www.mdanderson.org/publications.html (2026-08-21).
+     The live page's SFMC AJAX handler is not replayed (no phoning home from the
+     replica); the form still submits natively to the verbatim
+     https://mdanderson.govfa.net/api_v2/workflow/processor action with the
+     verbatim tfa_* field set - identical to live's no-JS path.
+     NEVER test-submit against production (page-production brief, parity rules).
+     The empty live .media-image div (live JS resolves data-imagepath) is
+     materialized as the captured subscription.resize.1444 image, committed
+     alongside as subscription.jpg. -->
+<div class="publication-landing-content col-content alternate-content subform">
+<section class="bleed-sides headline">
+<!-- /* Publication headline text Component Start */-->
+Get cancer information you need – delivered to your inbox. When you subscribe to our email newsletters, you'll receive news and updates from <span style="white-space: nowrap">UT MD Anderson</span>, including survivor and caregiver stories, insights on treatment and new research, and healthy living advice.
+<!-- /* Publication headline text Component End */ -->
+</section>
+<!-- ROW -->
+<section class="bleed-full">
+<!-- /* Publication subscription Start */ -->
+<!-- sfmc init -->
+<div class="formDivider"></div>
+<!-- FORM: BODY SECTION -->
+<div class="module">
+<div class="wFormContainer">
+<div class="wFormHeader"></div>
+<div class="SFMC bg-none">
+<div class="wForm" id="29-WRPR" dir="ltr">
+<div class="codesection" id="code-29"></div>
+<form method="post" action="https://mdanderson.govfa.net/api_v2/workflow/processor" class="sfmcform large labelsLeftAligned" id="29" role="form">
+<div class="top-form">
+<h3 class="wFormTitle" data-testid="form-title" id="29-T">
+Stay informed. Subscribe to UT MD Anderson newsletters.
+</h3>
+<div class="htmlSection" id="pfDesc" style="display: none;">
+You have almost finished subscribing. Complete the subscription process now.
+</div>
+<div class="htmlSection" id="tfa_53">
+<div class="htmlContent SFMC_description" id="tfa_53-HTML">First, we&#39;ll need some basic information about you.</div>
+</div>
+<div class="htmlSection" id="pfDesc">
+<p>Fields with an asterisk (<span style="color: red;">*</span>) are required.</p>
+<p>Fields with an "<em style="color: grey;">(optional)</em>" are optional.</p>
+</div>
+<div class="form-container">
+<!-- First Field: Email -->
+<div class="oneField" id="tfa_20-D">
+<div class="label-container">
+<label id="tfa_20-L" class="label preField reqMark" for="tfa_20">Email</label>
+<span style="color: red;">&nbsp;*</span> <!-- Required Indicator -->
+</div>
+<div class="inputWrapper">
+<input aria-required="true" type="text" id="tfa_20" name="tfa_20" value="" title="Email" maxlength="80" class="required validate-email placeholder mdaclean" autocomplete="email"/>
+</div>
+</div>
+<!-- Second Field: First Name -->
+<div class="oneField" id="tfa_23-D">
+<div class="label-container">
+<label id="tfa_23-L" class="label preField reqMark" for="tfa_23">First Name</label>
+<span style="color: red;">&nbsp;*</span> <!-- Required Indicator -->
+</div>
+<div class="inputWrapper">
+<input type="text" aria-required="true" id="tfa_23" name="tfa_23" value="" title="First Name" maxlength="40" class="required placeholder mdaclean" autocomplete="given-name"/>
+</div>
+</div>
+<!-- Third Field: Last Name -->
+<div class="oneField" id="tfa_38-D">
+<div class="label-container">
+<label id="tfa_38-L" class="label preField reqMark" for="tfa_38">Last Name</label>
+<span style="color: red;">&nbsp;*</span> <!-- Required Indicator -->
+</div>
+<div class="inputWrapper">
+<input aria-required="true" type="text" id="tfa_38" name="tfa_38" value="" title="Last Name" maxlength="80" class="required placeholder mdaclean" autocomplete="family-name"/>
+</div>
+</div>
+</div>
+</div>
+<div class="subformimage">
+<div class="module">
+<div class="basic-content-media bcm-standalone-image adaptive">
+<div class="basic-content-media-wrapper">
+<div class="media-inner">
+<div class="media-image"><img src="/widgets/publications/subscription.jpg" alt="Subscribe to the MD Anderson Newsletter"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<fieldset id="tfa_52" class="section sub required" aria-required="true">
+<label class="header-title" id="tfa_52-L"> Check the email newsletters you would like to sign up for: <span style="color: red;">&nbsp;*</span></label>
+<div class="oneField field-container-D  labelsRemoved  " id="tfa_60-D" role="group" aria-labelledby="tfa_60-L" data-tfa-labelledby="-L tfa_60-L">
+<div class="inputWrapper"><span id="tfa_60" class="choices vertical "><span class="oneChoice"><input type="checkbox" value="tfa_61" class="" id="tfa_61" name="tfa_61" aria-labelledby="tfa_61-L" data-tfa-labelledby="tfa_60-L tfa_61-L" data-tfa-parent-id="tfa_60"/><label class="label postField" id="tfa_61-L" for="tfa_61"><span class="input-checkbox-faux"></span><span><strong>Cancerwise:</strong> Cancerwise features cancer patient and caregiver stories, expert insights, research breakthroughs and clinical innovations, healthy living information and the latest news and updates from UT&nbsp;MD&nbsp;Anderson. <em>(twice a month)</em></span></label></span></span></div>
+</div>
+<div class="oneField field-container-D  labelsRemoved  " id="tfa_64-D" role="group" aria-labelledby="tfa_64-L" data-tfa-labelledby="-L tfa_64-L">
+<div class="inputWrapper"><span id="tfa_64" class="choices vertical "><span class="oneChoice"><input type="checkbox" value="tfa_65" class="" id="tfa_65" name="tfa_65" aria-labelledby="tfa_65-L" data-tfa-labelledby="tfa_64-L tfa_65-L" data-tfa-parent-id="tfa_64"/><label class="label postField" id="tfa_65-L" for="tfa_65"><span class="input-checkbox-faux"></span><strong>Focused on Health:</strong> Focused on Health shares cancer prevention tips and healthy living information from UT&nbsp;MD&nbsp;Anderson's experts. <em>(monthly)</em></label></span></span></div>
+</div>
+<div class="oneField field-container-D  labelsRemoved  " id="tfa_56-D" role="group" aria-labelledby="tfa_56-L" data-tfa-labelledby="-L tfa_56-L">
+<div class="inputWrapper"><span id="tfa_56" class="choices vertical "><span class="oneChoice"><input type="checkbox" value="tfa_57" class="" id="tfa_57" name="tfa_57" aria-labelledby="tfa_57-L" data-tfa-labelledby="tfa_56-L tfa_57-L" data-tfa-parent-id="tfa_56"/><label class="label postField" id="tfa_57-L" for="tfa_57"><span class="input-checkbox-faux"></span><strong>Cancer Frontline:</strong> Cancer Frontline provides health care professionals and researchers with the latest breakthroughs and updates on UT&nbsp;MD&nbsp;Anderson's work to end cancer. <em>(six to eight times a year)</em></label></span></span></div>
+</div>
+</fieldset>
+<fieldset id="tfa_51" class="section sub">
+<div><label class="header-title" id="tfa_51-L">Check all that apply: <em class="optional">(optional)</em></label></div>
+<div class="grid">
+<div class="oneField field-container-D  labelsRemoved  " id="tfa_27-D" role="group" aria-labelledby="tfa_27-L" data-tfa-labelledby="-L tfa_27-L">
+<div class="inputWrapper"><span id="tfa_27" class="choices vertical "><span class="oneChoice"><input type="checkbox" value="tfa_28" class="" id="tfa_28" name="tfa_28" aria-labelledby="tfa_28-L" data-tfa-labelledby="tfa_27-L tfa_28-L" data-tfa-parent-id="tfa_27"/><label class="label postField" id="tfa_28-L" for="tfa_28"><span class="input-checkbox-faux"></span>I am a friend or family member of someone with cancer.</label></span></span></div>
+</div>
+<div class="oneField field-container-D  labelsRemoved  " id="tfa_18-D" role="group" aria-labelledby="tfa_18-L" data-tfa-labelledby="-L tfa_18-L">
+<div class="inputWrapper"><span id="tfa_18" class="choices vertical "><span class="oneChoice"><input type="checkbox" value="tfa_19" class="" id="tfa_19" name="tfa_19" aria-labelledby="tfa_19-L" data-tfa-labelledby="tfa_18-L tfa_19-L" data-tfa-parent-id="tfa_18"/><label class="label postField" id="tfa_19-L" for="tfa_19"><span class="input-checkbox-faux"></span>I am a donor and/or supporter of <span class="nowrap">UT MD&nbsp;Anderson</span>.</label></span></span></div>
+</div>
+<div class="oneField field-container-D  labelsRemoved  " id="tfa_16-D" role="group" aria-labelledby="tfa_16-L" data-tfa-labelledby="-L tfa_16-L">
+<div class="inputWrapper"><span id="tfa_16" class="choices vertical "><span class="oneChoice"><input type="checkbox" value="tfa_17" class="" id="tfa_17" name="tfa_17" aria-labelledby="tfa_17-L" data-tfa-labelledby="tfa_16-L tfa_17-L" data-tfa-parent-id="tfa_16"/><label class="label postField" id="tfa_17-L" for="tfa_17"><span class="input-checkbox-faux"></span>I have completed cancer treatment.</label></span></span></div>
+</div>
+<div class="oneField field-container-D  labelsRemoved  " id="tfa_21-D" role="group" aria-labelledby="tfa_21-L" data-tfa-labelledby="-L tfa_21-L">
+<div class="inputWrapper"><span id="tfa_21" class="choices vertical "><span class="oneChoice"><input type="checkbox" value="tfa_22" class="" id="tfa_22" name="tfa_22" aria-labelledby="tfa_22-L" data-tfa-labelledby="tfa_21-L tfa_22-L" data-tfa-parent-id="tfa_21"/><label class="label postField" id="tfa_22-L" for="tfa_22"><span class="input-checkbox-faux"></span>I am a <span class="nowrap">UT MD&nbsp;Anderson</span> employee or volunteer.</label></span></span></div>
+</div>
+<div class="oneField field-container-D  labelsRemoved  " id="tfa_41-D" role="group" aria-labelledby="tfa_41-L" data-tfa-labelledby="-L tfa_41-L">
+<div class="inputWrapper"><span id="tfa_41" class="choices vertical "><span class="oneChoice"><input type="checkbox" value="tfa_42" class="" id="tfa_42" name="tfa_42" aria-labelledby="tfa_42-L" data-tfa-labelledby="tfa_41-L tfa_42-L" data-tfa-parent-id="tfa_41"/><label class="label postField" id="tfa_42-L" for="tfa_42"><span class="input-checkbox-faux"></span>I work in health care at another organization.</label></span></span></div>
+</div>
+<div class="oneField field-container-D  labelsRemoved  " id="tfa_34-D" role="group" aria-labelledby="tfa_34-L" data-tfa-labelledby="-L tfa_34-L">
+<div class="inputWrapper"><span id="tfa_34" class="choices vertical "><span class="oneChoice"><input type="checkbox" value="tfa_35" class="" id="tfa_35" name="tfa_35" aria-labelledby="tfa_35-L" data-tfa-labelledby="tfa_34-L tfa_35-L" data-tfa-parent-id="tfa_34"/><label class="label postField" id="tfa_35-L" for="tfa_35"><span class="input-checkbox-faux"></span>I am interested in healthy living information.</label></span></span></div>
+</div>
+<div class="oneField field-container-D  labelsRemoved  " id="tfa_36-D" role="group" aria-labelledby="tfa_36-L" data-tfa-labelledby="-L tfa_36-L">
+<div class="inputWrapper"><span id="tfa_36" class="choices vertical "><span class="oneChoice"><input type="checkbox" value="tfa_37" class="" id="tfa_37" name="tfa_37" aria-labelledby="tfa_37-L" data-tfa-labelledby="tfa_36-L tfa_37-L" data-tfa-parent-id="tfa_36"/><label class="label postField" id="tfa_37-L" for="tfa_37"><span class="input-checkbox-faux"></span>I am in cancer treatment or about to start cancer treatment.</label></span></span></div>
+</div>
+<div class="oneField field-container-D  labelsRemoved  " id="tfa_47-D" role="group" aria-labelledby="tfa_47-L" data-tfa-labelledby="-L tfa_47-L">
+<div class="inputWrapper"><span id="tfa_47" class="choices vertical "><span class="oneChoice"><input type="checkbox" value="tfa_48" class="" id="tfa_48" name="tfa_48" aria-labelledby="tfa_48-L" data-tfa-labelledby="tfa_47-L tfa_48-L" data-tfa-parent-id="tfa_47"/><label class="label postField" id="tfa_48-L" for="tfa_48"><span class="input-checkbox-faux"></span>I am interested in the latest research coming out of <span class="nowrap">UT MD&nbsp;Anderson</span>.</label></span></span></div>
+</div>
+<div class="oneField field-container-D  labelsRemoved  " id="tfa_49-D" role="group" aria-labelledby="tfa_49-L" data-tfa-labelledby="-L tfa_49-L">
+<div class="inputWrapper"><span id="tfa_49" class="choices vertical "><span class="oneChoice"><input type="checkbox" value="tfa_50" class="" id="tfa_50" name="tfa_50" aria-labelledby="tfa_50-L" data-tfa-labelledby="tfa_49-L tfa_50-L" data-tfa-parent-id="tfa_49"/><label class="label postField" id="tfa_50-L" for="tfa_50"><span class="input-checkbox-faux"></span>I am interested in working and/or training at <span class="nowrap">UT MD&nbsp;Anderson</span>.</label></span></span></div>
+</div>
+</div>
+</fieldset>
+<div class="form-container grid">
+<div class="oneField field-container-D" id="tfa_29-D">
+<div class="label-container"><label id="tfa_29-L" class="label preField header-title dropdown" for="tfa_29">Gender Identity<br/><em class="optional">&nbsp;(optional)</em></label></div>
+<div class="inputWrapper">
+<select id="tfa_29" name="tfa_29" title="Gender Identity" class="">
+<option value="">Please select...</option>
+<option value="tfa_30" id="tfa_30" class="">Female</option>
+<option value="tfa_31" id="tfa_31" class="">Male</option>
+<option value="tfa_32" id="tfa_32" class="">Non-binary</option>
+<option value="tfa_33" id="tfa_33" class="">Prefer not to answer</option>
+</select>
+</div>
+</div>
+</div>
+<div class="form-container grid">
+<div class="oneField field-container-D" id="tfa_6-D">
+<div class="label-container"><label id="tfa_6-L" class="label preField header-title dropdown" for="tfa_6">Age Range<br/><em class="optional">&nbsp;(optional)</em></label></div>
+<div class="inputWrapper">
+<select id="tfa_6" name="tfa_6" title="Age Range" class="">
+<option value="">Please select...</option>
+<option value="tfa_7" id="tfa_7" class="">Under 25</option>
+<option value="tfa_8" id="tfa_8" class="">25 - 39</option>
+<option value="tfa_9" id="tfa_9" class="">40 - 54</option>
+<option value="tfa_10" id="tfa_10" class="">55 - 64</option>
+<option value="tfa_11" id="tfa_11" class="">65 or Older</option>
+</select>
+</div>
+</div>
+</div>
+<input type="hidden" value="33" name="tfa_dbFormId" id="tfa_dbFormId"/>
+<input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"/>
+<input type="hidden" value="f3633106d3feaa202e5a9d4589dbba7c" name="tfa_dbControl" id="tfa_dbControl"/>
+<input type="hidden" value="" name="tfa_dbWorkflowSessionUuid" id="tfa_dbWorkflowSessionUuid"/>
+<input type="hidden" value="1" name="tfa_dbVersionId" id="tfa_dbVersionId"/>
+<input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff"/>
+<div class="actions cta" id="29-A" data-contentid="submit_button">
+<input type="submit" data-label="Submit" class="primaryAction" id="submit_button" value="Subscribe to newsletter(s)"/>
+</div>
+<p class="formprocess" style="display: none;">Please wait...</p>
+<p class="formresult" style="display: none;">Thank you for subscribing.</p>
+<p class="formerror" style="display: none;">Sorry, an error occurred processing your subscription request. Please try again at a later time.<span class="errorMessage"></span></p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
