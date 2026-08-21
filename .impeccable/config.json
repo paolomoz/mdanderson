@@ -435,6 +435,48 @@
         "value": "oklch(95% 0.002 80)",
         "createdAt": "2026-08-21T12:26:46.856Z",
         "reason": "horizon-track new-world palette (user-directed redesign 2026-08-21); outside replica-era DESIGN.md by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#535353",
+        "createdAt": "2026-08-21T13:54:14.538Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#888",
+        "createdAt": "2026-08-21T14:08:25.474Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#f0f0f0",
+        "createdAt": "2026-08-21T14:08:25.509Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#d8d8d8",
+        "files": [
+          "blocks/cards/cards.css"
+        ],
+        "createdAt": "2026-08-21T20:47:21.229Z",
+        "reason": "stardust:replica — live-site lifted values (horizontal-rule grey hairline probed from mdanderson.org for-physicians; story-promo purple/orange from live clientlib); palette normalization would be a fidelity defect"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#662c7b",
+        "files": [
+          "blocks/cards/cards.css"
+        ],
+        "createdAt": "2026-08-21T20:47:21.229Z",
+        "reason": "stardust:replica — live-site lifted values (horizontal-rule grey hairline probed from mdanderson.org for-physicians; story-promo purple/orange from live clientlib); palette normalization would be a fidelity defect"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#db6e29",
+        "files": [
+          "blocks/cards/cards.css"
+        ],
+        "createdAt": "2026-08-21T20:47:21.229Z",
+        "reason": "stardust:replica — live-site lifted values (horizontal-rule grey hairline probed from mdanderson.org for-physicians; story-promo purple/orange from live clientlib); palette normalization would be a fidelity defect"
       }
     ]
   }

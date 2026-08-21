@@ -24,6 +24,9 @@
  *   EDITORIAL-cluster additions (wave 2): `ribbon` (cancerwise blue link
  *   ribbon — one row per CTA: icon token + link; whole unit is the link),
  *   `story` (article rail promo palette green/blue/purple).
+ *   `stacked-pair` (live for-physicians grid): author FIVE rows — 1-3 become
+ *   white icon-kind cards stacked in a left column, 4-5 blue/purple promo
+ *   panels stacked right (two independent 576px columns, 144px gutter).
  */
 
 function el(tag, cls, parent) {
@@ -147,6 +150,12 @@ export default async function decorate(block) {
   // class-selector harnesses; only decorate our own block element
   if (block.dataset && block.dataset.blockName && block.dataset.blockName !== 'cards') return;
   const isIcon = block.classList.contains('icon');
+  // stacked-pair (live for-physicians grid, 2026-08-21): five authored rows —
+  // 1-3 render as icon-kind white cards stacked LEFT, 4-5 as promo panels
+  // stacked RIGHT. Live is two INDEPENDENT 576px columns (144px gutter);
+  // shared grid rows can't reproduce the left column's 240px pitch, so the
+  // cols are wrapped into .stack-col.left/.stack-col.right below.
+  const stackedPair = block.classList.contains('stacked-pair');
   const arrow = block.classList.contains('arrow');
   const cards = [...block.children].map(collectCard).filter((c) => c.heading || c.cta);
   if (!cards.length) return;
@@ -177,7 +186,8 @@ export default async function decorate(block) {
 
   const table = el('div', 'table cards-table');
 
-  cards.forEach((card) => {
+  cards.forEach((card, idx) => {
+    const iconCard = stackedPair ? idx < 3 : isIcon;
     const col = el('div', 'card-col', table);
     const module = el('div', 'module m-bleed', col);
 
@@ -187,7 +197,7 @@ export default async function decorate(block) {
       mediaDiv.append((card.media.closest && card.media.closest('picture')) || card.media);
     }
 
-    if (isIcon) {
+    if (iconCard) {
       // white icon card — whole card is the link ONLY when there is no
       // separate CTA (nested anchors are invalid); interior trios carry
       // body + CTA (eds-conversion-log §6.5/§6.7)
@@ -221,6 +231,14 @@ export default async function decorate(block) {
     const text = el('div', 'promo-text', promo);
     fillPromoText(text, card, arrow);
   });
+
+  if (stackedPair) {
+    const cols = [...table.children];
+    const left = el('div', 'stack-col left');
+    const right = el('div', 'stack-col right');
+    cols.forEach((c, i) => (i < 3 ? left : right).append(c));
+    table.append(left, right);
+  }
 
   block.replaceChildren(table);
 }

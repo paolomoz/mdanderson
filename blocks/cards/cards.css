@@ -901,17 +901,24 @@ main .section.cards-container:has(> div > .cards.ribbon) > div {
 .cards.duo.physician .card-col:nth-child(1) .promo { background: var(--color-blue-promo); }
 .cards.duo.physician .card-col:nth-child(2) .promo { background: var(--color-purple); }
 
-/* --- stacked-pair: live for-physicians card grid — left column stacks 3
-   white cards, right column stacks blue+purple promos (probed 2026-08-21,
-   was a 9.5pt gap). Author 5 rows; column flow places 1-3 left, 4-5 right. */
+/* --- stacked-pair: live for-physicians card grid — two INDEPENDENT columns
+   (576px each, 144px gutter, probed from live 2026-08-21: panels x792-1368,
+   left cards x72-648, left pitch 240px vs panel heights 341/314px — shared
+   grid rows can't do this, so cards.js wraps cols 1-3 / 4-5 into
+   .stack-col.left / .stack-col.right). Left cards render via the icon path
+   (transparent promo-simple: dark title, gray body, red arrow CTA, hairline
+   rules between); right promos are blue then purple. */
 .cards.stacked-pair .cards-table {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, auto);
-  grid-auto-flow: column;
-  gap: 18px;
-  align-items: start;
+  display: flex;
+  align-items: flex-start;
 }
+
+.cards.stacked-pair .stack-col {
+  flex: 0 0 calc(50% - 72px);
+  min-width: 0;
+}
+
+.cards.stacked-pair .stack-col.left { margin-right: 144px; }
 
 .cards.stacked-pair .card-col {
   display: block;
@@ -920,10 +927,57 @@ main .section.cards-container:has(> div > .cards.ribbon) > div {
   min-width: 0;
 }
 
-.cards.stacked-pair .card-col:nth-child(-n+3) .promo {
-  background: var(--color-bg);
-  color: var(--color-fg);
+/* left column: promo-simple palette (live .promo-simple / .horizontal-rule
+   grey; card pitch 240px = 176 content + 28 pad + rule + 35 margin) */
+.cards.stacked-pair .stack-col.left .card-col:not(:last-child) {
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 28px;
 }
 
-.cards.stacked-pair .card-col:nth-child(4) .promo { background: var(--color-blue-promo); }
-.cards.stacked-pair .card-col:nth-child(5) .promo { background: var(--color-purple); }
+.cards.stacked-pair .stack-col.left .card-col + .card-col { margin-top: 35px; }
+
+.cards.stacked-pair .stack-col.left .promo-simple { text-align: center; }
+
+.cards.stacked-pair .stack-col.left .promo-header,
+.cards.stacked-pair .stack-col.left .promo-text { padding: 0; }
+
+.cards.stacked-pair .stack-col.left .promo-simple h3.title {
+  font-size: 36px;
+  line-height: 46.8px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 400;
+  color: var(--color-fg);
+  margin: 0;
+}
+
+.cards.stacked-pair .stack-col.left .promo-text .body {
+  font-size: 21px;
+  line-height: 27.3px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-gray-text);
+  margin: 20px 0;
+}
+
+.cards.stacked-pair .stack-col.left .promo-text .body p { margin: 21px 0; }
+
+.cards.stacked-pair .stack-col.left a.cta.cta-right-arrow,
+.cards.stacked-pair .stack-col.left a.cta.cta-right-arrow:hover,
+.cards.stacked-pair .stack-col.left a.cta.cta-right-arrow i.mdicon-arrow {
+  color: var(--color-accent);
+}
+
+/* right column: blue then purple promo panels, 35px apart (live probe) */
+.cards.stacked-pair .stack-col.right .card-col + .card-col { margin-top: 35px; }
+
+.cards.stacked-pair .stack-col.right .card-col:nth-child(1) .promo { background: var(--color-blue-promo); }
+.cards.stacked-pair .stack-col.right .card-col:nth-child(2) .promo { background: var(--color-purple); }
+
+@media (width <= 991px) {
+  .cards.stacked-pair .cards-table { display: block; }
+  .cards.stacked-pair .stack-col.left { margin-right: 0; }
+  .cards.stacked-pair .stack-col.left .card-col:not(:last-child) {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .cards.stacked-pair .stack-col.left .card-col + .card-col { margin-top: 0; }
+}
