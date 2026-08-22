@@ -1487,9 +1487,30 @@ body.interior main > .section.byline-container + .section:not(.quote-container, 
   }
 
   /* panorama→cards strip: live keeps 70px total between the 360 image and
-     the promo band (EDS had 140 = pano pb70 law + cards pt70 law stacked) */
-  body.interior main > .section.video-container:has(.video.panorama) + .section.cards-container:not(:nth-last-child(-n+2)) {
+     the promo band (EDS had 140 = pano pb70 law + cards pt70 law stacked).
+     `> div >` in the :has matches the strip law's (0,8,3) so file order
+     decides — plus :not(.dark) to win outright */
+  body.interior main > .section.video-container:has(> div > .video.panorama) + .section.cards-container:not(:nth-last-child(-n+2)):not(.dark) {
     padding-top: 0;
+  }
+
+  /* tinted-PAIR band internals (live computed values, breast-center): the
+     band head <p><strong> carries margin 0 (live 0px; EDS 14.4px top pushed
+     the head +15 and the list +37), lists keep AEM's `0 0 18px` */
+  body.interior main > .section.tinted:is(.quote-container, .podcast-container, .callout-container) > .default-content-wrapper > p:first-child {
+    margin-top: 0;
+  }
+
+  body.interior main > .section.tinted:is(.quote-container, .podcast-container, .callout-container) > .default-content-wrapper ul {
+    margin: 0 0 18px;
+  }
+
+  /* AUTHORABLE (Style: flush) — a tinted band flush to the previous section
+     (live varies: breast-center's contact band starts exactly at the
+     prevention strip's end, 3838 = section end; institutional-profile's
+     research band keeps the 66px margin after its columns strip) */
+  body.interior main > .section.section-nav-container ~ .section.flush.tinted:not(.dark) {
+    margin-top: 0;
   }
 
   /* interior link-list columns sit on the prose column: live rows x312
