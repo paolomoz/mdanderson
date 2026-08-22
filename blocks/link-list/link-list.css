@@ -37,7 +37,10 @@ main .section.link-list-container:has(.link-list.boxed) > .default-content-wrapp
   font-size: 24px;
   line-height: 31.2px;
   letter-spacing: var(--letter-spacing);
-  margin: 24px 0 35px;
+
+  /* 65px bottom (was 35): live p.text-border-desc computed 24px 0 65px —
+     research boxed grid sat 30px high (2026-08-22 recovery probe) */
+  margin: 24px 0 65px;
 }
 
 /* ── columns ──────────────────────────────────────────────────────────── */

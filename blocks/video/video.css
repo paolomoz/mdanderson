@@ -152,6 +152,13 @@ main .section.video-container:has(.video.teaser) > .video-wrapper {
   min-width: 0;
 }
 
+/* live keeps 91px between the teaser content and the highlights band
+   (research probe 2026-08-22: content 1067 → band 1158; the teaser pb70
+   left the band 21px high) — adjacency-scoped to the research pairing */
+main .section.video-container:has(.video.teaser) + .section.carousel-container {
+  margin-top: 21px;
+}
+
 .video.teaser .media-player { position: relative; }
 
 .video.teaser #basic-video-container {
