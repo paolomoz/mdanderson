@@ -989,6 +989,17 @@ main .section.cards-container:has(> div > .cards.ribbon) > div {
   padding: 0;
 }
 
+/* original-POC recovery (2026-08-22 about-md-anderson probes): live runs the
+   SAME full-width promo-text on the about resources trio (body w419/w420 at
+   the card edge; the 10% pad wrapped +27px per card) and the mission
+   quick-links rail (w396 at x954; the pad wrapped body +27 and the row-3
+   title to two lines, +46), and on the our-locations visitor trio family */
+.cards.icon.trio.resources .promo-text,
+.cards.icon.trio.visitor .promo-text,
+.cards.icon.rail .promo-text {
+  padding: 0;
+}
+
 /* live donors duo circles: purple + flat green */
 .cards.icon.duo.green-second .card-col:nth-child(2) .fa-stack {
   background: var(--color-green);

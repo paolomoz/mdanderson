@@ -116,6 +116,11 @@ main .section.columns-container > div {
 .columns .col-media img { display: block; width: 100%; height: auto; }
 .columns.image-right .table.award-table { flex-direction: row-reverse; }
 
+/* image-right flips the visual order but the text cell stays DOM-last —
+   its 72px gutter belongs on the RIGHT (live about careers band: text at
+   x72 flush, 2026-08-22 probe; EDS sat at x144) */
+.columns.image-right .col-double.last.cell-m { padding-left: 0; padding-right: 72px; }
+
 @media (width <= 991px) {
   main .section.columns-container > div { padding: 0; }
 
