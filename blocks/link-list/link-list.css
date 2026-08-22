@@ -508,3 +508,13 @@ main .section.cards-container.link-list-container > div {
   font-family: mda-icons, sans-serif;
   content: '\e61a';
 }
+
+/* `compact` — authorable row rhythm: live resource lists with description
+   rows use 30px row padding (123px pitch, probed on live breast-center
+   2026-08-22); dept hubs keep the 36px/95px law. Authored as
+   `link-list (columns, compact)`. */
+.link-list.compact .link-list-body a.mdicon-linklist,
+.link-list.compact .link-list-body a.mda-icon-linkout {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

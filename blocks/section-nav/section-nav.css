@@ -1458,6 +1458,54 @@ body.interior main > .section.byline-container + .section:not(.quote-container, 
   padding-top: 84px;
 }
 
+/* ===== original-POC recovery levers (2026-08-22, breast-center probes) —
+   the page family authored 2026-08-19/20 (04e4494/b8a8684, gates green) was
+   regressed by the later law waves (dedafa3 pair-47 + wrapper resets,
+   f305ec7 tinted 66/70 family, 99e0469 link-list 36px rows). Live values
+   below probed on live breast-center 2026-08-22. ===== */
+@media (width >= 992px) {
+  /* interior teaser-pair prose keeps AEM's 18px paragraph rhythm (live
+     computed `margin: 0 0 18px`); video.css's landing 50/50 teaser law
+     zeroes it at (0,5,2) — this override outweighs it with body.interior */
+  body.interior main > .section.video-container:has(.video.teaser) > .default-content-wrapper p {
+    margin: 0 0 18px;
+  }
+
+  /* gray PAIR bands are live `highlight` modules: 70px bottom padding to
+     match their 70px top (live computed `padding: 70px 36px`; the WHITE
+     brachytherapy pair keeps the 47px law — tinted-only) */
+  body.interior main > .section.tinted:is(.quote-container, .podcast-container, .callout-container):not(:nth-last-child(-n+2)):not(.dark) {
+    padding-bottom: 70px;
+  }
+
+  /* a tinted band directly after a PADDED pair section is contiguous — the
+     pair's own bottom padding carries the whole gap (live breast-center:
+     prose-end→band-top 69px vs EDS 136 = pair pb70 + tinted mt66 stacked;
+     the 66px margin is the after-BARE-prose law, f305ec7) */
+  body.interior main > .section:is(.quote-container, .podcast-container, .callout-container, .video-container:has(.video.teaser), :has(> div > .cards.rail)) + .section.tinted:not(:nth-last-child(-n+2)):not(.dark) {
+    margin-top: 0;
+  }
+
+  /* panorama→cards strip: live keeps 70px total between the 360 image and
+     the promo band (EDS had 140 = pano pb70 law + cards pt70 law stacked) */
+  body.interior main > .section.video-container:has(.video.panorama) + .section.cards-container:not(:nth-last-child(-n+2)) {
+    padding-top: 0;
+  }
+
+  /* interior link-list columns sit on the prose column: live rows x312
+     w528, hairlines to x848 / col2 845–1380 (probed on breast-center and
+     independently pinned in the proton residuals); the 72px wrapper pad +
+     72px col gutters are the landing-page (prevention/research) geometry */
+  body.interior main > .section.section-nav-container ~ .section.link-list-container:has(.link-list.columns):not(:nth-last-child(-n+2)) > .link-list-wrapper {
+    padding: 0;
+    max-width: none;
+    margin: 0;
+  }
+
+  body.interior .link-list.columns .col-double.cell-m { padding-right: 9px; }
+  body.interior .link-list.columns .col-double.last.cell-m { padding-left: 9px; padding-right: 0; }
+}
+
 /* virtual-visits regression fix (2026-08-22 bisect): 3a0c470 widened pair
    prose to live's w680, removing the line wraps that had been compensating
    for video.css's research-teaser p reset (margin 0) — live interior rte
