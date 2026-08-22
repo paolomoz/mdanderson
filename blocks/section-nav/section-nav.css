@@ -102,6 +102,11 @@ body.interior main > .section:has(> div > .link-list.tinted) {
   body.interior main > .section:has(> div > .video.teaser) > .default-content-wrapper {
     grid-column: 1;
     padding: 0 36px 0 0;
+
+    /* margin 0 (2026-08-22 breast-center): styles.css `main > .section > div
+       { margin: auto }` CENTERS a narrower-than-column DC in the grid cell
+       (short list content sat at x450; live prose column starts x312) */
+    margin: 0;
   }
 
   body.interior main > .section.quote-container > .quote-wrapper,
@@ -1452,10 +1457,15 @@ body.interior main .section:not(.dark) .default-content-wrapper a.button:any-lin
   text-decoration: none;
 }
 
-/* plain-prose pages: live keeps ~85px between the byline strip and the
-   first prose section (brain-tumor probe: EDS had 0) */
-body.interior main > .section.byline-container + .section:not(.quote-container, .callout-container) > .default-content-wrapper {
-  padding-top: 84px;
+/* byline gap law (repaired 2026-08-22): live keeps a UNIFORM 53px between
+   the byline strip and the next content on all four byline pages (probed
+   brain-tumor-diagnosis, lung-cancer, lung-cancer-treatment/-symptoms).
+   The original (0,6,2) form silently lost to the interior DC strip rule
+   (0,8,2) and never applied anywhere — restated with a matching :not()
+   chain. Pair/cards sections are excluded: they already carry their own
+   47px section padding (lung pages) and must not double up. */
+body.interior main > .section.byline-container + .section:not(.quote-container):not(.callout-container):not(.cards-container):not(.podcast-container):not(:nth-last-child(-n+2)):not(.dark):not(.page-head) > .default-content-wrapper {
+  padding-top: 52px;
 }
 
 /* ===== original-POC recovery levers (2026-08-22, breast-center probes) —
