@@ -121,6 +121,25 @@ main .section.columns-container > div {
    x72 flush, 2026-08-22 probe; EDS sat at x144) */
 .columns.image-right .col-double.last.cell-m { padding-left: 0; padding-right: 72px; }
 
+/* PLAIN (non-promo) image bands — live our-locations probes 2026-08-22:
+   27px/35.1 heads (EDS rendered the 36px promo ramp), image-left text col
+   flush at x720 w648 (live cell-f, pad 0), 576px images (EDS 648 stretched
+   the band +48). body:not(.interior) — breast-center's interior image-left
+   band keeps its own icon-column laws. */
+body:not(.interior) .columns:is(.image-left, .image-right):not(.promo) .rte-container h2 {
+  font-size: 27px;
+  line-height: 35.1px;
+  margin: 22.41px 0;
+}
+
+body:not(.interior) .columns.image-left:not(.promo) .col-double.last.cell-m {
+  padding-left: 0;
+}
+
+body:not(.interior) .columns.image-left:not(.promo) .col-double:first-child img {
+  width: 576px;
+}
+
 @media (width <= 991px) {
   main .section.columns-container > div { padding: 0; }
 

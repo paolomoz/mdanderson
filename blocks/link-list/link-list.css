@@ -293,6 +293,12 @@ main .section.link-list-container:has(.link-list.external) > .default-content-wr
   padding: 95px 72px 0;
 }
 
+/* the DC's own 95px IS the live band gap (probed 3507→3602 on live
+   our-locations) — the generic section pt70 stacked on top of it (+70) */
+main .section.link-list-container:has(.link-list.external) {
+  padding-top: 0;
+}
+
 main .section.link-list-container:has(.link-list.external) > .default-content-wrapper h2 {
   font-family: var(--sans-bold-font-family);
   font-size: 29px;
