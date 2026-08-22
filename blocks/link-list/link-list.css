@@ -524,3 +524,11 @@ main .section.cards-container.link-list-container > div {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+/* rows WITH descriptions keep live's 30px padding (123px pitch) — the 36px
+   pitch is for title-only rows (95px). Regression found on
+   prevention-screening, 2026-08-22. */
+.link-list .link-list-body a.mdicon-linklist:has(.link-body) {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
