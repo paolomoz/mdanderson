@@ -1457,3 +1457,35 @@ body.interior main .section:not(.dark) .default-content-wrapper a.button:any-lin
 body.interior main > .section.byline-container + .section:not(.quote-container, .callout-container) > .default-content-wrapper {
   padding-top: 84px;
 }
+
+/* virtual-visits regression fix (2026-08-22 bisect): 3a0c470 widened pair
+   prose to live's w680, removing the line wraps that had been compensating
+   for video.css's research-teaser p reset (margin 0) — live interior rte
+   prose keeps 18px between paragraphs and 22.41 h2 leading. Scoped to the
+   interior video pair so the research page (non-interior) keeps its reset. */
+@media (width >= 992px) {
+  body.interior main > .section.video-container:has(.video.teaser) > .default-content-wrapper p:not(:last-child) {
+    margin: 0 0 18px;
+  }
+
+  /* mid-prose h2s carry live's 22.41 leading (section-head h2s — e.g.
+     basic-science "Featured Video" — keep the teaser-head reset) */
+  body.interior main > .section.video-container:has(.video.teaser) > .default-content-wrapper h2:not(:first-child) {
+    margin: 22.41px 0;
+  }
+
+  /* prose-run video pair opens 59px below a plain-h1 band (live probes 59 on
+     virtual-visits AND parking: h1 mb 40 + 18 pad + 1 rounding). Guarded to
+     multi-paragraph pairs — EDS parking (single-p pair, PASS 6.01) renders
+     its own pre-existing 106px composition; don't move it. */
+  body.interior main > .section:has(> .default-content-wrapper > h1:last-child) + .section.video-container:has(.video.teaser):has(> .default-content-wrapper > p + p) {
+    padding-top: 18px;
+  }
+
+  /* dark appointment bar sits 100px after a video pair (live virtual-visits
+     1466→1566: the pair's own 70px bottom pad + the bar's 30px head) — the
+     123px after-prose law double-counts the pad */
+  body.interior main > .section.video-container:has(.video.teaser) + .section.dark {
+    margin-top: 0;
+  }
+}
