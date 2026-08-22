@@ -299,3 +299,41 @@ article-cards grid ~130px shorter than live boxes → duo/FAQ drift
 1 line x312; EDS 2 lines x432 w242), video full-size link column, hero
 -8px. NOTE: staged /tmp/ptc-page.html (iter-3) is STALE — predates hero
 `tall` CSS; applying it would regress the hero by ~110px. Do not publish.
+
+## 2026-08-22 — Original-POC recovery: 4 pages re-adopted under the law regime
+
+The four originals (authored 08-19/20 pre-law, never re-adopted) are green:
+breast-center 22.45→6.37 (3 iters, Δh 0.0), about-md-anderson 19.67→8.17
+(2 iters), our-locations 11.49→6.51 (2 iters), research 11.42→4.18 (1 iter).
+Guards re-gated after every CSS wave: brachytherapy 7.90 (up from 11.26
+marginal — the interior link-list column fix also healed it),
+institutional-profile 9.94, breast-cancer 8.89 — all unchanged or improved.
+
+Root causes (law vs compensation), all live-probed:
+- breast-center: hero mis-kept `compact` (live is the 276px/72px static
+  band); video.css landing-teaser p margin:0 leaked into interior pairs
+  (live 0 0 18px); tinted 66/70 family stacked on pair pb (live: tinted
+  after a PADDED pair is contiguous); pano pb70 + cards pt70 double-stacked
+  (live 70 total); link-list 95px-pitch law vs live 30px desc rows + the
+  72px landing wrapper/gutter geometry on the interior column; styles.css
+  `section > div { margin:auto }` CENTERED narrow pair DCs (x450 vs live
+  x312). New levers: pair-DC margin 0, tinted-pair pb70 + head-p 0/ul 18,
+  teaser-pair last-p 0, pano→cards pt0, interior link-list.columns wrapper
+  reset + 9px gutters, authorable `compact` rows + `Style: flush`.
+- about: the help-trio full-width-body lever was RIGHT but live also wants
+  it (text AND header) on the resources/visitor trios and the mission
+  quick-links rail; trio cols live 419/438 (417 wrapped +27/card);
+  image-right promo text cell had its 72px gutter on the wrong side.
+- our-locations: EndCancer section was authored tinted — live is WHITE;
+  external link-list head stacked section pt70 onto its own 95px; live
+  varies PER BAND on plain image-bands (proton 648px img/x792 vs
+  laboratory 576px/x720) → authorable `flush` + `media-576` variants +
+  27px heads law for plain (non-promo) image bands off-interior.
+- research: boxed desc live margin is 24/65 (law said 35, −30); live keeps
+  91px between teaser content and the highlights band (pb70 left it 21
+  high) — adjacency-scoped margin. Both drifts predate today (present in
+  the 00:41 baseline vs the POC-era proto shot; live itself unmoved).
+
+Method note: per-row luminance cross-correlation of live/eds full-page
+shots localizes every seam in one pass (offset-vs-y table); computed-style
+probes on BOTH sides then name the owning rule before any edit.
