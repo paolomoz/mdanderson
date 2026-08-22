@@ -996,8 +996,19 @@ main .section.cards-container:has(> div > .cards.ribbon) > div {
    title to two lines, +46), and on the our-locations visitor trio family */
 .cards.icon.trio.resources .promo-text,
 .cards.icon.trio.visitor .promo-text,
-.cards.icon.rail .promo-text {
+.cards.icon.rail .promo-text,
+.cards.icon.trio.resources .promo-header,
+.cards.icon.trio.visitor .promo-header,
+.cards.icon.rail .promo-header {
   padding: 0;
+}
+
+/* live about trio columns are 419px on a 438px stride (probed x72/510/948,
+   w419; the base 417px wrapped the Employee Resources body to 3 lines) */
+.cards.icon.trio.resources .card-col,
+.cards.icon.trio.visitor .card-col {
+  width: 419px;
+  margin-right: 19px;
 }
 
 /* live donors duo circles: purple + flat green */
