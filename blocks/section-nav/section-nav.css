@@ -1432,7 +1432,10 @@ body.interior main > .section.white.white {
 /* h1-adjacent rhythm (fresh probes 2026-08-21): live h1→pair-prose gap is
    59px (h1 mb40 + ~5 pad, EDS pair pt47 gave 101); live h1→h3 gap is 80px */
 @media (width >= 992px) {
-  body.interior main > .section:has(> div > h1:last-child) + .section:is(.quote-container, .podcast-container, .callout-container, :has(> div > .cards.rail), :has(> div > .video.teaser)) {
+  /* AUTHORABLE (Style: tight-top) — live varies: brachytherapy's h1→pair
+     gap is 59px (needs 5px pad) but virtual-visits matches the default 47px
+     (the automatic :has(h1) version regressed it, 2026-08-22 sweep) */
+  body.interior main > .section.tight-top:is(.quote-container, .podcast-container, .callout-container, :has(> div > .cards.rail), :has(> div > .video.teaser)) {
     padding-top: 5px;
   }
 }
