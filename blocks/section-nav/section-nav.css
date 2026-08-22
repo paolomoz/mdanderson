@@ -415,6 +415,12 @@ body.interior main > .section:has(> div > .columns.contact) {
 .cards.icon.pathways .card-col:nth-child(2) .icon-circle .fa-stack.fa-3x { background: var(--color-blue-light); }
 .cards.icon.pathways .card-col:nth-child(3) .icon-circle .fa-stack.fa-3x { background: #e96613; }
 
+/* duo pathways col-2 is blue-promo on live (sampled #2f60b2 on
+   brain-tumor-diagnosis ref) — the f0b92e2 cards.css lever (0,6,0) was
+   inert against the trio cycle above (0,8,0); restated here at (0,9,0).
+   Trios keep the cyan col-2. */
+.cards.icon.duo.pathways .card-col:nth-child(2) .icon-circle .fa-stack.fa-3x { background: var(--color-blue-promo); }
+
 /* icon-font codepoints for the interior pages' authored icons */
 .cards .cicon-clinical-trials::before { content: '\e649'; }
 .cards .cicon-carepages::before { content: '\e607'; }
