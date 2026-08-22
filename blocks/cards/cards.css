@@ -1019,3 +1019,12 @@ body.landing main > .section.center-head > .default-content-wrapper h2 {
 .cards.icon.trio.bare .card-icon {
   color: var(--color-accent);
 }
+
+/* rail icon circles (live lung/bladder rails: purple/blue/orange cycle —
+   EDS rendered white-on-transparent, 2026-08-22) */
+.cards.rail:not(.panel, .teaser, .news-links) .card-col:nth-child(1) .promo-icon .fa-stack { background: var(--color-purple); }
+.cards.rail:not(.panel, .teaser, .news-links) .card-col:nth-child(2) .promo-icon .fa-stack { background: var(--color-blue-promo); }
+.cards.rail:not(.panel, .teaser, .news-links) .card-col:nth-child(3) .promo-icon .fa-stack { background: #e96613; }
+
+/* pathways duo col-2: live is blue-promo, not cyan (2026-08-22) */
+.cards.icon.duo.pathways .card-col:nth-child(2) .fa-stack { background: var(--color-blue-promo); }

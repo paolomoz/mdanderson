@@ -1440,3 +1440,17 @@ body.interior main > .section.white.white {
 body.interior main .default-content-wrapper h1 + h3 {
   margin-top: 40px;
 }
+
+/* disease-wave levers (2026-08-21/22 gate reports):
+   interior buttons: the link-color rule painted a.button red-on-red —
+   buttons keep their own colors */
+body.interior main .section:not(.dark) .default-content-wrapper a.button:any-link {
+  color: var(--color-bg);
+  text-decoration: none;
+}
+
+/* plain-prose pages: live keeps ~85px between the byline strip and the
+   first prose section (brain-tumor probe: EDS had 0) */
+body.interior main > .section.byline-container + .section:not(.quote-container, .callout-container) > .default-content-wrapper {
+  padding-top: 84px;
+}
