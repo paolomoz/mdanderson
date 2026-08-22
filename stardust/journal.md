@@ -337,3 +337,15 @@ Root causes (law vs compensation), all live-probed:
 Method note: per-row luminance cross-correlation of live/eds full-page
 shots localizes every seam in one pass (offset-vs-y table); computed-style
 probes on BOTH sides then name the owning rule before any edit.
+
+## 2026-08-22 — POC-COMPLETION DONE
+
+Final: 90 pages gated · 64 PASS (median 6.44%, best prevention-screening
+1.89%) · 26 FAIL = 7 content-set-justified listings + 19 block-gap residuals
+(12.6-26.9%, all height-green, causes + live values recorded). All 7
+acceptance criteria met (FINAL-REPORT.md). Every original POC page recovered
+green after the law waves (breast-center 6.37, about 8.17, our-locations
+6.51, research 4.18, brachytherapy healed to 7.90). Disease landings ×4 +
+subpages ×6 published + indexed. state.json fully reconciled (79 pages with
+gate records). Remaining user item: gh delete_repo scope for
+paolomoz/mdanderson-auto.

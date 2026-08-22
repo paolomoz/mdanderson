@@ -53,7 +53,13 @@
    "currentStatePath": "stardust/current/pages/index.json",
    "prototypePath": "stardust/prototypes/index-proposed.html",
    "migratedPath": "stardust/migrated/index.html",
-   "fidelityTier": "archetype"
+   "fidelityTier": "archetype",
+   "gate": {
+    "pixel": "3.19%",
+    "heightDelta": "0.1%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:11:39.443Z"
+   }
   },
   {
    "slug": "patients-family-html",
@@ -79,7 +85,13 @@
    "prototypePath": null,
    "migratedPath": "stardust/migrated/patients-family.html",
    "fidelityTier": "sibling",
-   "archetypeSource": "index"
+   "archetypeSource": "index",
+   "gate": {
+    "pixel": "3.20%",
+    "heightDelta": "0.1%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:35:43.254Z"
+   }
   },
   {
    "slug": "cancer-types-breast-cancer-html",
@@ -113,7 +125,13 @@
    "currentStatePath": "stardust/current/pages/cancer-types-breast-cancer-html.json",
    "prototypePath": "stardust/prototypes/cancer-types-breast-cancer-html-proposed.html",
    "migratedPath": "stardust/migrated/cancer-types/breast-cancer.html",
-   "fidelityTier": "archetype"
+   "fidelityTier": "archetype",
+   "gate": {
+    "pixel": "8.89%",
+    "heightDelta": "0.4%",
+    "verdict": "PASS",
+    "at": "2026-08-22T03:24:07.744Z"
+   }
   },
   {
    "slug": "patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html",
@@ -147,7 +165,13 @@
    "currentStatePath": "stardust/current/pages/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html.json",
    "prototypePath": "stardust/prototypes/patients-family-diagnosis-treatment-care-centers-clinics-breast-center-html-proposed.html",
    "migratedPath": "stardust/migrated/patients-family/diagnosis-treatment/care-centers-clinics/breast-center.html",
-   "fidelityTier": "archetype"
+   "fidelityTier": "archetype",
+   "gate": {
+    "pixel": "6.37%",
+    "heightDelta": "0.0%",
+    "verdict": "PASS",
+    "at": "2026-08-22T03:25:08.025Z"
+   }
   },
   {
    "slug": "patients-family-diagnosis-treatment-clinical-trials-html",
@@ -181,7 +205,13 @@
    "currentStatePath": "stardust/current/pages/patients-family-diagnosis-treatment-clinical-trials-html.json",
    "prototypePath": "stardust/prototypes/patients-family-diagnosis-treatment-clinical-trials-html-proposed.html",
    "migratedPath": "stardust/migrated/patients-family/diagnosis-treatment/clinical-trials.html",
-   "fidelityTier": "archetype"
+   "fidelityTier": "archetype",
+   "gate": {
+    "pixel": "36.07%",
+    "heightDelta": "6.5%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T00:16:12.259Z"
+   }
   },
   {
    "slug": "prevention-screening-html",
@@ -215,7 +245,13 @@
    "currentStatePath": "stardust/current/pages/prevention-screening-html.json",
    "prototypePath": "stardust/prototypes/prevention-screening-html-proposed.html",
    "migratedPath": "stardust/migrated/prevention-screening.html",
-   "fidelityTier": "archetype"
+   "fidelityTier": "archetype",
+   "gate": {
+    "pixel": "1.89%",
+    "heightDelta": "0.0%",
+    "verdict": "PASS",
+    "at": "2026-08-22T02:54:48.954Z"
+   }
   },
   {
    "slug": "research-html",
@@ -249,7 +285,13 @@
    "currentStatePath": "stardust/current/pages/research-html.json",
    "prototypePath": "stardust/prototypes/research-html-proposed.html",
    "migratedPath": "stardust/migrated/research.html",
-   "fidelityTier": "archetype"
+   "fidelityTier": "archetype",
+   "gate": {
+    "pixel": "4.18%",
+    "heightDelta": "0.2%",
+    "verdict": "PASS",
+    "at": "2026-08-22T03:22:36.261Z"
+   }
   },
   {
    "slug": "about-md-anderson-html",
@@ -283,7 +325,13 @@
    "currentStatePath": "stardust/current/pages/about-md-anderson-html.json",
    "prototypePath": "stardust/prototypes/about-md-anderson-html-proposed.html",
    "migratedPath": "stardust/migrated/about-md-anderson.html",
-   "fidelityTier": "archetype"
+   "fidelityTier": "archetype",
+   "gate": {
+    "pixel": "8.17%",
+    "heightDelta": "0.7%",
+    "verdict": "PASS",
+    "at": "2026-08-22T03:25:19.039Z"
+   }
   },
   {
    "slug": "about-md-anderson-our-locations-html",
@@ -317,7 +365,13 @@
    "currentStatePath": "stardust/current/pages/about-md-anderson-our-locations-html.json",
    "prototypePath": "stardust/prototypes/about-md-anderson-our-locations-html-proposed.html",
    "migratedPath": "stardust/migrated/about-md-anderson/our-locations.html",
-   "fidelityTier": "archetype"
+   "fidelityTier": "archetype",
+   "gate": {
+    "pixel": "6.51%",
+    "heightDelta": "0.5%",
+    "verdict": "PASS",
+    "at": "2026-08-22T03:25:30.267Z"
+   }
   },
   {
    "slug": "cancerwise-html",
@@ -351,7 +405,13 @@
    "currentStatePath": "stardust/current/pages/cancerwise-html.json",
    "prototypePath": "stardust/prototypes/cancerwise-html-proposed.html",
    "migratedPath": "stardust/migrated/cancerwise.html",
-   "fidelityTier": "archetype"
+   "fidelityTier": "archetype",
+   "gate": {
+    "pixel": "43.09%",
+    "heightDelta": "12.4%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T00:12:37.027Z"
+   }
   },
   {
    "slug": "cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html",
@@ -385,7 +445,13 @@
    "currentStatePath": "stardust/current/pages/cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html.json",
    "prototypePath": "stardust/prototypes/cancerwise-how-to-cope-with-insomnia-during-cancer-treatment-h00-159856134-html-proposed.html",
    "migratedPath": "stardust/migrated/cancerwise/how-to-cope-with-insomnia-during-cancer-treatment.h00-159856134.html",
-   "fidelityTier": "archetype"
+   "fidelityTier": "archetype",
+   "gate": {
+    "pixel": "5.93%",
+    "heightDelta": "0.2%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:12:51.691Z"
+   }
   },
   {
    "slug": "donors-volunteers-html",
@@ -419,610 +485,1018 @@
    "currentStatePath": "stardust/current/pages/donors-volunteers-html.json",
    "prototypePath": "stardust/prototypes/donors-volunteers-html-proposed.html",
    "migratedPath": "stardust/migrated/donors-volunteers.html",
-   "fidelityTier": "archetype"
+   "fidelityTier": "archetype",
+   "gate": {
+    "pixel": "15.57%",
+    "heightDelta": "0.5%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T03:31:03.476Z"
+   }
   },
   {
    "slug": "education-training-html",
    "url": "https://www.mdanderson.org/education-training.html",
    "path": "/education-training.html",
    "type": "landing",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "8.71%",
+    "heightDelta": "0.1%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:13:13.936Z"
+   }
   },
   {
    "slug": "for-physicians-html",
    "url": "https://www.mdanderson.org/for-physicians.html",
    "path": "/for-physicians.html",
    "type": "landing",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "6.70%",
+    "heightDelta": "0.6%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:13:35.362Z"
+   }
   },
   {
    "slug": "publications-html",
    "url": "https://www.mdanderson.org/publications.html",
    "path": "/publications.html",
    "type": "landing",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "9.37%",
+    "heightDelta": "0.7%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:17:03.673Z"
+   }
   },
   {
    "slug": "about-md-anderson-careers-html",
    "url": "https://www.mdanderson.org/about-md-anderson/careers.html",
    "path": "/about-md-anderson/careers.html",
    "type": "landing",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "8.89%",
+    "heightDelta": "0.1%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:11:47.076Z"
+   }
   },
   {
    "slug": "prevention-screening-get-screened-html",
    "url": "https://www.mdanderson.org/prevention-screening/get-screened.html",
    "path": "/prevention-screening/get-screened.html",
    "type": "landing",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "22.41%",
+    "heightDelta": "0.3%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T03:30:46.863Z"
+   }
   },
   {
    "slug": "donors-volunteers-donate-html",
    "url": "https://www.mdanderson.org/donors-volunteers/donate.html",
    "path": "/donors-volunteers/donate.html",
    "type": "landing",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "26.87%",
+    "heightDelta": "0.9%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T03:31:25.175Z"
+   }
   },
   {
    "slug": "research-research-resources-html",
    "url": "https://www.mdanderson.org/research/research-resources.html",
    "path": "/research/research-resources.html",
    "type": "landing",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "12.84%",
+    "heightDelta": "0.7%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T03:30:16.553Z"
+   }
   },
   {
    "slug": "education-training-degree-granting-schools-html",
    "url": "https://www.mdanderson.org/education-training/degree-granting-schools.html",
    "path": "/education-training/degree-granting-schools.html",
    "type": "landing",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "5.04%",
+    "heightDelta": "0.3%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:13:25.065Z"
+   }
   },
   {
    "slug": "research-research-areas-html",
    "url": "https://www.mdanderson.org/research/research-areas.html",
    "path": "/research/research-areas.html",
    "type": "landing",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "2.84%",
+    "heightDelta": "0.0%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:17:44.571Z"
+   }
   },
   {
    "slug": "research-departments-labs-institutes-departments-divisions-abdominal-imaging-html",
    "url": "https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions/abdominal-imaging.html",
    "path": "/research/departments-labs-institutes/departments-divisions/abdominal-imaging.html",
    "type": "program",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "5.06%",
+    "heightDelta": "0.1%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:15:41.724Z"
+   }
   },
   {
    "slug": "research-departments-labs-institutes-departments-divisions-behavioral-science-html",
    "url": "https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions/behavioral-science.html",
    "path": "/research/departments-labs-institutes/departments-divisions/behavioral-science.html",
    "type": "program",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "5.90%",
+    "heightDelta": "0.3%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:17:34.465Z"
+   }
   },
   {
    "slug": "research-departments-labs-institutes-departments-divisions-breast-medical-oncology-html",
    "url": "https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions/breast-medical-oncology.html",
    "path": "/research/departments-labs-institutes/departments-divisions/breast-medical-oncology.html",
    "type": "program",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "5.27%",
+    "heightDelta": "0.3%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:19:05.186Z"
+   }
   },
   {
    "slug": "research-departments-labs-institutes-departments-divisions-biostatistics-html",
    "url": "https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions/biostatistics.html",
    "path": "/research/departments-labs-institutes/departments-divisions/biostatistics.html",
    "type": "program",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "6.84%",
+    "heightDelta": "0.4%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:15:51.233Z"
+   }
   },
   {
    "slug": "education-training-clinical-training-certificate-programs-review-courses-ahearn-educator-program-html",
    "url": "https://www.mdanderson.org/education-training/clinical-training/certificate-programs-review-courses/ahearn-educator-program.html",
    "path": "/education-training/clinical-training/certificate-programs-review-courses/ahearn-educator-program.html",
    "type": "program",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "8.96%",
+    "heightDelta": "0.6%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:13:15.621Z"
+   }
   },
   {
    "slug": "education-training-clinical-training-graduate-medical-education-html",
    "url": "https://www.mdanderson.org/education-training/clinical-training/graduate-medical-education.html",
    "path": "/education-training/clinical-training/graduate-medical-education.html",
    "type": "program",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "19.11%",
+    "heightDelta": "0.6%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T03:30:36.518Z"
+   }
   },
   {
    "slug": "education-training-research-training-career-development-html",
    "url": "https://www.mdanderson.org/education-training/research-training/career-development.html",
    "path": "/education-training/research-training/career-development.html",
    "type": "program",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "6.30%",
+    "heightDelta": "0.2%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:15:09.496Z"
+   }
   },
   {
    "slug": "research-research-resources-core-facilities-advanced-technology-genomics-core-html",
    "url": "https://www.mdanderson.org/research/research-resources/core-facilities/advanced-technology-genomics-core.html",
    "path": "/research/research-resources/core-facilities/advanced-technology-genomics-core.html",
    "type": "program",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "12.73%",
+    "heightDelta": "1.5%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T03:29:42.188Z"
+   }
   },
   {
    "slug": "research-research-resources-core-facilities-advanced-spatial-genomics-core-html",
    "url": "https://www.mdanderson.org/research/research-resources/core-facilities/advanced-spatial-genomics-core.html",
    "path": "/research/research-resources/core-facilities/advanced-spatial-genomics-core.html",
    "type": "program",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "7.04%",
+    "heightDelta": "0.0%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:19:25.732Z"
+   }
   },
   {
    "slug": "patients-family-diagnosis-treatment-care-centers-clinics-proton-therapy-center-html",
    "url": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center.html",
    "path": "/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center.html",
    "type": "program",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "13.28%",
+    "heightDelta": "0.4%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T03:29:32.159Z"
+   }
   },
   {
    "slug": "about-md-anderson-business-legal-code-of-ethics-html",
    "url": "https://www.mdanderson.org/about-md-anderson/business-legal/code-of-ethics.html",
    "path": "/about-md-anderson/business-legal/code-of-ethics.html",
    "type": "static",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "9.52%",
+    "heightDelta": "0.6%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:11:41.140Z"
+   }
   },
   {
    "slug": "patients-family-becoming-our-patient-getting-to-md-anderson-parking-html",
    "url": "https://www.mdanderson.org/patients-family/becoming-our-patient/getting-to-md-anderson/parking.html",
    "path": "/patients-family/becoming-our-patient/getting-to-md-anderson/parking.html",
    "type": "static",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "7.15%",
+    "heightDelta": "0.3%",
+    "verdict": "PASS",
+    "at": "2026-08-22T01:19:48.640Z"
+   }
   },
   {
    "slug": "treatment-options-brachytherapy-html",
    "url": "https://www.mdanderson.org/treatment-options/brachytherapy.html",
    "path": "/treatment-options/brachytherapy.html",
    "type": "static",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "7.90%",
+    "heightDelta": "0.3%",
+    "verdict": "PASS",
+    "at": "2026-08-22T03:23:43.896Z"
+   }
   },
   {
    "slug": "for-physicians-clinical-tools-resources-clinical-calculators-html",
    "url": "https://www.mdanderson.org/for-physicians/clinical-tools-resources/clinical-calculators.html",
    "path": "/for-physicians/clinical-tools-resources/clinical-calculators.html",
    "type": "static",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "3.48%",
+    "heightDelta": "0.1%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:16:53.423Z"
+   }
   },
   {
    "slug": "research-research-areas-basic-science-html",
    "url": "https://www.mdanderson.org/research/research-areas/basic-science.html",
    "path": "/research/research-areas/basic-science.html",
    "type": "static",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "23.87%",
+    "heightDelta": "1.1%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T03:30:02.265Z"
+   }
   },
   {
    "slug": "about-md-anderson-facts-history-institutional-profile-html",
    "url": "https://www.mdanderson.org/about-md-anderson/facts-history/institutional-profile.html",
    "path": "/about-md-anderson/facts-history/institutional-profile.html",
    "type": "static",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "9.94%",
+    "heightDelta": "0.3%",
+    "verdict": "PASS",
+    "at": "2026-08-22T03:23:54.803Z"
+   }
   },
   {
    "slug": "patients-family-becoming-our-patient-planning-for-care-virtual-visits-html",
    "url": "https://www.mdanderson.org/patients-family/becoming-our-patient/planning-for-care/virtual-visits.html",
    "path": "/patients-family/becoming-our-patient/planning-for-care/virtual-visits.html",
    "type": "static",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "7.49%",
+    "heightDelta": "0.3%",
+    "verdict": "PASS",
+    "at": "2026-08-22T01:19:15.583Z"
+   }
   },
   {
    "slug": "about-md-anderson-contact-us-helpful-phone-numbers-html",
    "url": "https://www.mdanderson.org/about-md-anderson/contact-us/helpful-phone-numbers.html",
    "path": "/about-md-anderson/contact-us/helpful-phone-numbers.html",
    "type": "static",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "7.90%",
+    "heightDelta": "0.7%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:11:58.631Z"
+   }
   },
   {
    "slug": "podcast-html",
    "url": "https://www.mdanderson.org/podcast.html",
    "path": "/podcast.html",
    "type": "static",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "3.17%",
+    "heightDelta": "0.1%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:16:53.999Z"
+   }
   },
   {
    "slug": "research-departments-labs-institutes-departments-divisions-anatomic-pathology-html",
    "url": "https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions/anatomic-pathology.html",
    "path": "/research/departments-labs-institutes/departments-divisions/anatomic-pathology.html",
    "type": "static",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "8.37%",
+    "heightDelta": "0.8%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:18:55.872Z"
+   }
   },
   {
    "slug": "newsroom-html",
    "url": "https://www.mdanderson.org/newsroom.html",
    "path": "/newsroom.html",
    "type": "listing",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "32.95%",
+    "heightDelta": "56.9%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T00:13:44.690Z"
+   }
   },
   {
    "slug": "newsroom-2024-html",
    "url": "https://www.mdanderson.org/newsroom/2024.html",
    "path": "/newsroom/2024.html",
    "type": "listing",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "37.25%",
+    "heightDelta": "94.0%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T00:17:21.975Z"
+   }
   },
   {
    "slug": "newsroom-2025-html",
    "url": "https://www.mdanderson.org/newsroom/2025.html",
    "path": "/newsroom/2025.html",
    "type": "listing",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "34.36%",
+    "heightDelta": "86.9%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T00:15:51.167Z"
+   }
   },
   {
    "slug": "newsroom-2020-01-html",
    "url": "https://www.mdanderson.org/newsroom/2020/01.html",
    "path": "/newsroom/2020/01.html",
    "type": "listing",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "51.62%",
+    "heightDelta": "55.5%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T00:14:04.099Z"
+   }
   },
   {
    "slug": "research-departments-labs-institutes-html",
    "url": "https://www.mdanderson.org/research/departments-labs-institutes.html",
    "path": "/research/departments-labs-institutes.html",
    "type": "listing",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "5.21%",
+    "heightDelta": "0.3%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:17:24.569Z"
+   }
   },
   {
    "slug": "research-research-resources-core-facilities-html",
    "url": "https://www.mdanderson.org/research/research-resources/core-facilities.html",
    "path": "/research/research-resources/core-facilities.html",
    "type": "listing",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "3.51%",
+    "heightDelta": "0.0%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:16:15.381Z"
+   }
   },
   {
    "slug": "research-research-resources-conferences-seminars-html",
    "url": "https://www.mdanderson.org/research/research-resources/conferences-seminars.html",
    "path": "/research/research-resources/conferences-seminars.html",
    "type": "listing",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "14.39%",
+    "heightDelta": "0.9%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T03:30:25.961Z"
+   }
   },
   {
    "slug": "patients-family-search-results-v2-html",
    "url": "https://www.mdanderson.org/patients-family/search-results.v2.html",
    "path": "/patients-family/search-results.v2.html",
    "type": "listing",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "38.05%",
+    "heightDelta": "52.0%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T00:18:16.072Z"
+   }
   },
   {
    "slug": "cancerwise-how-i-knew-i-had-colorectal-cancer-six-survivors-share-symptoms-h00-159781968-html",
    "url": "https://www.mdanderson.org/cancerwise/-how-i-knew-i-had-colorectal-cancer---six-survivors-share-symptoms.h00-159781968.html",
    "path": "/cancerwise/-how-i-knew-i-had-colorectal-cancer---six-survivors-share-symptoms.h00-159781968.html",
    "type": "article",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "7.01%",
+    "heightDelta": "0.2%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:12:47.585Z"
+   }
   },
   {
    "slug": "cancerwise-drug-hunter-deploys-ai-to-accelerate-path-to-new-therapies-h00-159852189-html",
    "url": "https://www.mdanderson.org/cancerwise/-drug-hunter--deploys-ai-to-accelerate-path-to-new-therapies.h00-159852189.html",
    "path": "/cancerwise/-drug-hunter--deploys-ai-to-accelerate-path-to-new-therapies.h00-159852189.html",
    "type": "article",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "7.08%",
+    "heightDelta": "0.3%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:12:42.564Z"
+   }
   },
   {
    "slug": "cancerwise-5-ways-our-social-work-counselors-can-help-during-cancer-treatm-h00-158988234-html",
    "url": "https://www.mdanderson.org/cancerwise/-5-ways-our-social-work-counselors-can-help-during-cancer-treatm.h00-158988234.html",
    "path": "/cancerwise/-5-ways-our-social-work-counselors-can-help-during-cancer-treatm.h00-158988234.html",
    "type": "article",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "7.30%",
+    "heightDelta": "0.7%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:12:39.466Z"
+   }
   },
   {
    "slug": "cancerwise-your-guide-to-walking-as-exercise-h00-159694389-html",
    "url": "https://www.mdanderson.org/cancerwise/your-guide-to-walking-as-exercise.h00-159694389.html",
    "path": "/cancerwise/your-guide-to-walking-as-exercise.h00-159694389.html",
    "type": "article",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "5.42%",
+    "heightDelta": "0.3%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:12:53.302Z"
+   }
   },
   {
    "slug": "cancerwise-zebrafish-photos-put-researcher-on-cutting-edge-of-science-and-photography-h00-159143667-html",
    "url": "https://www.mdanderson.org/cancerwise/zebrafish-photos-put-researcher-on-cutting-edge-of-science-and-photography.h00-159143667.html",
    "path": "/cancerwise/zebrafish-photos-put-researcher-on-cutting-edge-of-science-and-photography.h00-159143667.html",
    "type": "article",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "6.84%",
+    "heightDelta": "0.3%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:12:57.416Z"
+   }
   },
   {
    "slug": "newsroom-md-anderson-s-institute-for-data-science-in-oncology-establis-h00-159698334-html",
    "url": "https://www.mdanderson.org/newsroom/---md-anderson-s-institute-for-data-science-in-oncology-establis.h00-159698334.html",
    "path": "/newsroom/---md-anderson-s-institute-for-data-science-in-oncology-establis.h00-159698334.html",
    "type": "article",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "4.76%",
+    "heightDelta": "0.1%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:17:03.223Z"
+   }
   },
   {
    "slug": "newsroom-two-md-anderson-researchers-elected-aaas-fellows-h00-159774867-html",
    "url": "https://www.mdanderson.org/newsroom/---two-md-anderson-researchers-elected-aaas-fellows--.h00-159774867.html",
    "path": "/newsroom/---two-md-anderson-researchers-elected-aaas-fellows--.h00-159774867.html",
    "type": "article",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "5.40%",
+    "heightDelta": "0.1%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:15:31.436Z"
+   }
   },
   {
    "slug": "newsroom-md-anderson-research-highlights-for-january-12-2022-h00-159536589-html",
    "url": "https://www.mdanderson.org/newsroom/-md-anderson-research-highlights-for-january-12--2022.h00-159536589.html",
    "path": "/newsroom/-md-anderson-research-highlights-for-january-12--2022.h00-159536589.html",
    "type": "article",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "9.51%",
+    "heightDelta": "0.3%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:13:55.391Z"
+   }
   },
   {
    "slug": "newsroom-patients-with-heart-disease-may-be-at-increased-risk-for-advanc-h00-159703068-html",
    "url": "https://www.mdanderson.org/newsroom/-patients-with-heart-disease-may-be-at-increased-risk-for-advanc.h00-159703068.html",
    "path": "/newsroom/-patients-with-heart-disease-may-be-at-increased-risk-for-advanc.h00-159703068.html",
    "type": "article",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "5.09%",
+    "heightDelta": "0.1%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:17:12.629Z"
+   }
   },
   {
    "slug": "newsroom-1-400-west-texans-support-md-anderson-at-39-th-polo-on-the-prai-h00-159775656-html",
    "url": "https://www.mdanderson.org/newsroom/1-400--west-texans-support-md-anderson-at-39-th-polo-on-the-prai.h00-159775656.html",
    "path": "/newsroom/1-400--west-texans-support-md-anderson-at-39-th-polo-on-the-prai.h00-159775656.html",
    "type": "article",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "8.71%",
+    "heightDelta": "0.2%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:15:41.743Z"
+   }
   },
   {
    "slug": "publications-subscribe-to-cancerwise-html",
    "url": "https://www.mdanderson.org/publications/subscribe-to-cancerwise.html",
    "path": "/publications/subscribe-to-cancerwise.html",
    "type": "form",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "3.76%",
+    "heightDelta": "0.1%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:15:21.620Z"
+   }
   },
   {
    "slug": "publications-subscribe-to-focused-on-health-html",
    "url": "https://www.mdanderson.org/publications/subscribe-to-focused-on-health.html",
    "path": "/publications/subscribe-to-focused-on-health.html",
    "type": "form",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "3.50%",
+    "heightDelta": "0.1%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:18:36.258Z"
+   }
   },
   {
    "slug": "publications-subscribe-to-frontline-html",
    "url": "https://www.mdanderson.org/publications/subscribe-to-frontline.html",
    "path": "/publications/subscribe-to-frontline.html",
    "type": "form",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "3.17%",
+    "heightDelta": "0.1%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:17:13.603Z"
+   }
   },
   {
    "slug": "publications-subscribe-to-leukemia-insights-html",
    "url": "https://www.mdanderson.org/publications/subscribe-to-leukemia-insights.html",
    "path": "/publications/subscribe-to-leukemia-insights.html",
    "type": "form",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "3.29%",
+    "heightDelta": "0.1%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:15:31.487Z"
+   }
   },
   {
    "slug": "publications-subscribe-to-proton-pals-html",
    "url": "https://www.mdanderson.org/publications/subscribe-to-proton-pals.html",
    "path": "/publications/subscribe-to-proton-pals.html",
    "type": "form",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "3.44%",
+    "heightDelta": "0.1%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:18:46.196Z"
+   }
   },
   {
    "slug": "about-md-anderson-contact-us-askmdanderson-ask-a-question-html",
    "url": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question.html",
    "path": "/about-md-anderson/contact-us/askmdanderson/ask-a-question.html",
    "type": "form",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "4.17%",
+    "heightDelta": "0.3%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:11:51.974Z"
+   }
   },
   {
    "slug": "about-md-anderson-contact-us-askmdanderson-ask-a-question-confirmation-html",
    "url": "https://www.mdanderson.org/about-md-anderson/contact-us/askmdanderson/ask-a-question/confirmation.html",
    "path": "/about-md-anderson/contact-us/askmdanderson/ask-a-question/confirmation.html",
    "type": "form",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "3.72%",
+    "heightDelta": "0.1%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:11:56.158Z"
+   }
   },
   {
    "slug": "newsroom-request-to-film-on-campus-html",
    "url": "https://www.mdanderson.org/newsroom/request-to-film-on-campus.html",
    "path": "/newsroom/request-to-film-on-campus.html",
    "type": "form",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "14.91%",
+    "heightDelta": "2.1%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T03:31:33.731Z"
+   }
   },
   {
    "slug": "donors-volunteers-other-ways-to-help-give-blood-contact-us-html",
    "url": "https://www.mdanderson.org/donors-volunteers/other-ways-to-help/give-blood/contact-us.html",
    "path": "/donors-volunteers/other-ways-to-help/give-blood/contact-us.html",
    "type": "form",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "3.17%",
+    "heightDelta": "0.0%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:13:06.630Z"
+   }
   },
   {
    "slug": "patients-family-diagnosis-treatment-care-centers-clinics-proton-therapy-center-contact-us-html",
    "url": "https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/contact-us.html",
    "path": "/patients-family/diagnosis-treatment/care-centers-clinics/proton-therapy-center/contact-us.html",
    "type": "form",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "8.45%",
+    "heightDelta": "0.6%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:17:40.914Z"
+   }
   },
   {
    "slug": "cancer-types-lung-cancer-html",
    "url": "https://www.mdanderson.org/cancer-types/lung-cancer.html",
    "path": "/cancer-types/lung-cancer.html",
    "type": "disease",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "13.86%",
+    "heightDelta": "0.8%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T03:28:36.248Z"
+   }
   },
   {
    "slug": "cancer-types-brain-tumor-html",
    "url": "https://www.mdanderson.org/cancer-types/brain-tumor.html",
    "path": "/cancer-types/brain-tumor.html",
    "type": "disease",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "22.07%",
+    "heightDelta": "2.5%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T03:19:44.968Z"
+   }
   },
   {
    "slug": "cancer-types-acute-myeloid-leukemia-html",
    "url": "https://www.mdanderson.org/cancer-types/acute-myeloid-leukemia.html",
    "path": "/cancer-types/acute-myeloid-leukemia.html",
    "type": "disease",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "24.24%",
+    "heightDelta": "4.7%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T03:45:56.381Z"
+   }
   },
   {
    "slug": "cancer-types-colon-cancer-html",
    "url": "https://www.mdanderson.org/cancer-types/colon-cancer.html",
    "path": "/cancer-types/colon-cancer.html",
    "type": "disease",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "26.18%",
+    "heightDelta": "8.3%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T03:30:51.574Z"
+   }
   },
   {
    "slug": "cancer-types-lung-cancer-lung-cancer-treatment-html",
    "url": "https://www.mdanderson.org/cancer-types/lung-cancer/lung-cancer-treatment.html",
    "path": "/cancer-types/lung-cancer/lung-cancer-treatment.html",
    "type": "disease",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "9.62%",
+    "heightDelta": "0.8%",
+    "verdict": "PASS",
+    "at": "2026-08-22T02:09:15.747Z"
+   }
   },
   {
    "slug": "cancer-types-lung-cancer-lung-cancer-symptoms-html",
    "url": "https://www.mdanderson.org/cancer-types/lung-cancer/lung-cancer-symptoms.html",
    "path": "/cancer-types/lung-cancer/lung-cancer-symptoms.html",
    "type": "disease",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "25.33%",
+    "heightDelta": "6.3%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T03:28:49.386Z"
+   }
   },
   {
    "slug": "cancer-types-brain-tumor-brain-tumor-diagnosis-html",
    "url": "https://www.mdanderson.org/cancer-types/brain-tumor/brain-tumor-diagnosis.html",
    "path": "/cancer-types/brain-tumor/brain-tumor-diagnosis.html",
    "type": "disease",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "14.91%",
+    "heightDelta": "3.0%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T03:29:21.032Z"
+   }
   },
   {
    "slug": "cancer-types-colon-cancer-colon-cancer-symptoms-html",
    "url": "https://www.mdanderson.org/cancer-types/colon-cancer/colon-cancer-symptoms.html",
    "path": "/cancer-types/colon-cancer/colon-cancer-symptoms.html",
    "type": "disease",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "14.71%",
+    "heightDelta": "2.5%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T03:28:58.561Z"
+   }
   },
   {
    "slug": "cancer-types-bladder-cancer-bladder-cancer-treatment-html",
    "url": "https://www.mdanderson.org/cancer-types/bladder-cancer/bladder-cancer-treatment.html",
    "path": "/cancer-types/bladder-cancer/bladder-cancer-treatment.html",
    "type": "disease",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "14.89%",
+    "heightDelta": "2.1%",
+    "verdict": "FAIL",
+    "at": "2026-08-22T03:29:10.217Z"
+   }
   },
   {
    "slug": "cancer-types-acute-myeloid-leukemia-acute-myeloid-leukemia-diagnosis-html",
    "url": "https://www.mdanderson.org/cancer-types/acute-myeloid-leukemia/acute-myeloid-leukemia-diagnosis.html",
    "path": "/cancer-types/acute-myeloid-leukemia/acute-myeloid-leukemia-diagnosis.html",
    "type": "disease",
-   "status": "extracted",
+   "status": "migrated",
    "extractedAt": "2026-08-21T12:00:00Z",
-   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)"
+   "source": "poc-completion sample batch (crawl.mjs 2026-08-21)",
+   "gate": {
+    "pixel": "9.64%",
+    "heightDelta": "0.3%",
+    "verdict": "PASS",
+    "at": "2026-08-22T00:12:06.607Z"
+   }
   }
  ],
  "migrate": {
@@ -1481,6 +1955,15 @@
    "logo": "header/footer logos are live-origin webp renditions (no local logo captured); kept absolute, recorded as media-reuse-source-cdn",
    "favicon": "no favicon captured during extract; variants not generated (prepare-migration never ran) \u2014 soft-logged, pages render without them",
    "fonts": "Minion/Univers licensed kits bundled under assets/fonts/ with licensing banner preserved in assets/mda-fonts.css (local gate instrumentation; delivery must license or substitute)"
+  },
+  "pocCompletion": {
+   "at": "2026-08-22T04:30:00Z",
+   "pagesGated": 90,
+   "pass": 64,
+   "fail": 26,
+   "contentSetJustified": 7,
+   "blockGapResiduals": 19,
+   "note": "POC-completion final: fidelity-log.tsv is the record; FINAL-REPORT.md summarizes"
   }
  }
 }
